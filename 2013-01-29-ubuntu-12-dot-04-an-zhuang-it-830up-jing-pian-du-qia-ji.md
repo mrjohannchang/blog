@@ -1,0 +1,13 @@
+Title: 在 Ubuntu 12.04 安裝 IT-830UP 晶片讀卡機與使用 WebATM
+Date: 2013-01-29 01:33
+Tags: Software
+
+![IT-830UP](http://www.ittec.com.tw/images/IT-830UP%28DM%29.jpg)
+
+## 步驟 1. 安裝所需套件
+    ::::sh
+    sudo apt-get install pcscd pcsc-tools libccid
+
+完成後可能需要自行重新啟動電腦才會生效。
+
+## 步驟 2. 依照 WebATM 提供的方法安裝所需程式，如：[玉山銀行](http://netbank.esunbank.com.tw/webatm/Q&A_016.htm#01)
