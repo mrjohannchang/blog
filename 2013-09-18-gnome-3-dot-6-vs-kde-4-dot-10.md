@@ -1,7 +1,7 @@
 Title: Gnome 3.6 與 KDE 4.10 於工作場所使用一年心得
 Date: 2013-09-18
 Tags: Software
-Author: Chang Yu-heng (張昱珩)
+Author: 張昱珩 (Chang Yu-heng)
 
 在工作上使用 [KDE](http://www.kde.org/) 一年有餘，從 4.8 用到 4.10。最近同時也在使用 [Gnome](http://www.gnome.org/) 3.6，網路上的比較文章不少，再增加一篇，希望我能提供較新版本的使用經驗與不同的看法。
 
