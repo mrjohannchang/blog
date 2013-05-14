@@ -43,3 +43,7 @@ KDE 提供的 Dolphin 比 Gnome 的 Nautilus 來得強大許多，尤其是整�
 而對於成熟的 Linux 使用者，在軟體的穩定性都達到堪用的情形下，我認為選擇的重點該放在「設計哲學」。活躍的開發團隊要提供更穩定的環境是遲早的事，Gnome 或 KDE 所欠缺的功能也大都有第三方的程式可以完成。透過什麼引擎來呈現，對於沒有特殊信仰的非開發者來說，根本沒有差別。但設計哲學直接影響到使用習慣以及工作效率和可能的發展方向。譬如說輕量化的桌面環境首推 LXDE，而 Gnome 和 KDE 同樣強調使用經驗、美觀和完整度，同質性非常高，對於操作方式的設計哲學即是最重要的差異。放下微小 bug 所帶來的不悅，以及引擎、授權等所產生的先入為主，直接體驗使用經驗，才能公平地選擇。
 
 我比較喜歡 Gnome 3，因為操作模式比較簡單。而且我很享受按下 Gnome 3 提供的各類大顆按鈕的明確反差的感覺。
+
+相關資料：
+
+* [GNOME or KDE? The Old Question Is New Today](http://www.datamation.com/open-source/gnome-or-kde-the-old-question-is-new-today-1.html)
