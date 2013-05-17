@@ -11,7 +11,7 @@ Author: 張昱珩 (Chang Yu-heng)
 ## 步驟 2：指定預設輸入法平台為 gcin，完成後重新啟動電腦
 
     ::::sh
-    sudo im-switch
+    im-switch
 
 ## 步驟 3：下載並解壓縮嘸蝦米官方提供的 gcin 用表格，接著開啟終端機並進入解壓縮目錄
 
