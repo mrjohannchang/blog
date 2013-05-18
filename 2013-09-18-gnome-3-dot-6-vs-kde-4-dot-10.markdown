@@ -30,7 +30,7 @@ Gnome 和 KDE 都提供了許多功能，不過 KDE 所提供的功能、自定�
 
 6. 與應用軟體的整合度：
 都很優異，不過單以 file manager 來說，KDE 的 Dolphin 做得比 Gnome 的 Nautilus 更多。
-題外話，個人覺得 Okula 比 Document Viewer 好用，用習慣 Paint.NET 的我對於 Krita 的接受度也比 GIMP 高。Konsole 獨有的 copy on select 我也很喜歡。
+題外話，個人覺得 Okular 比 Document Viewer 好，因為他支援畫記與註解，適合用來讀電子書；不過 Document Viewer 的搜尋速度快很多。Konsole 獨有的 copy on select 我也很喜歡。
 
 7. 檔案總管：
 承上，Dolphin 比 Nautilus 來得強大許多，尤其是整合 terminal 的功能，絕對稱得上是 killer feature。
