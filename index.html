@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>A Programmer's Blog</title>
+  <meta name="author" content="<a href="mailto: mr.changyuheng@gmail.com">Chang Yu-heng (張昱珩)</a>">
+
+    
+  
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="/favicon.png" rel="icon">
+  <link href="/theme/css/main.css" media="screen, projection"
+        rel="stylesheet" type="text/css">
+  <script src="/theme/js/modernizr-2.0.js"></script>
+  <script src="/theme/js/ender.js"></script>
+  <script src="/theme/js/octopress.js" type="text/javascript"></script>
+
+  <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+</head><body>
+  <header role="banner"><hgroup>
+  <h1><a href="/">A Programmer's Blog</a></h1>
+  </hgroup></header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/" rel="subscribe-rss">RSS</a></li>
+  </ul>
+
+<form action="https://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:changyuheng.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+            <!-- TODO: add categories here? -->
+  </ul></nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+    	  		<article>
+    		<header>
+          <h1 class="entry-title">
+        <a href="/windows-photo-viewer-mouse-plug-in.html">Windows Photo Viewer Mouse Plug-in</a>
+      </h1>
+          <p class="meta"><time datetime="2013-02-08T11:26:00" pubdate>Fri 08 February 2013</time></p>
+</header>
+
+  <div class="entry-content"><p>This simple tool gives Windows Photo Viewer the following features:</p>
+<ol>
+<li>Middle click to toggle window's size between normal and maximum.</li>
+<li>Scroll up/down to show previous/next image.</li>
+<li>Ctrl + scroll up/down to zoom in/out.</li>
+<li>A to show actual size.</li>
+<li>F to show fit size.</li>
+<li>Ctrl + A to ...</li></ol></div>
+  <footer>
+    <a rel="full-article" href="/windows-photo-viewer-mouse-plug-in.html">Read On &crarr;</a>
+  </footer>
+  		</article>
+  	  		<article>
+    		<header>
+          <h1 class="entry-title">
+        <a href="/zai-ubuntu-1204-an-zhuang-it-830up-jing-pian-du-qia-ji-yu-shi-yong-webatm.html">在 Ubuntu 12.04 安裝 IT-830UP 晶片讀卡機與使用 WebATM</a>
+      </h1>
+          <p class="meta"><time datetime="2013-01-29T01:33:00" pubdate>Tue 29 January 2013</time></p>
+</header>
+
+  <div class="entry-content"><p><img alt="IT-830UP" src="http://www.ittec.com.tw/images/IT-830UP%28DM%29.jpg" /></p>
+<h2>步驟 1. 安裝所需套件</h2>
+<div class="highlight"><pre>sudo apt-get install pcscd pcsc-tools libccid
+</pre></div>
+
+
+<p>完成後可能需要自行重新啟動電腦才會生效。</p>
+<h2>步驟 2. 依照 WebATM 提供的方法安裝所需程式，如：<a href="http://netbank.esunbank.com.tw/webatm/Q&amp;A_016.htm#01">玉山銀行</a></h2></div>
+  <footer>
+    <a rel="full-article" href="/zai-ubuntu-1204-an-zhuang-it-830up-jing-pian-du-qia-ji-yu-shi-yong-webatm.html">Read On &crarr;</a>
+  </footer>
+  		</article>
+  	  		<article>
+    		<header>
+          <h1 class="entry-title">
+        <a href="/zai-ubuntu-1210-de-gcin-shu-ru-fa-ping-tai-an-zhuang-fu-xia-mi-shu-ru-fa.html">在 Ubuntu 12.10 的 gcin 輸入法平台安裝嘸蝦米輸入法</a>
+      </h1>
+          <p class="meta"><time datetime="2013-01-25T01:02:00" pubdate>Fri 25 January 2013</time></p>
+</header>
+
+  <div class="entry-content"><h2>步驟 1：安裝 gcin 及 im-switch</h2>
+<div class="highlight"><pre>sudo apt-get install gcin im-switch
+</pre></div>
+
+
+<h2>步驟 2：指定預設輸入法平台為 gcin，完成後重新啟動電腦</h2>
+<div class="highlight"><pre>sudo im-switch
+</pre></div>
+
+
+<h2>步驟 3：下載並解壓縮嘸蝦米官方提供的 gcin 用表格，接著開啟終端機並進入解壓縮目錄</h2>
+<h2>步驟 4：將表格等檔案複製到系統中</h2>
+<h3>1. 前置作業</h3>
+<div class="highlight"><pre>sudo updatedb
+</pre></div>
+
+
+<h3>2. 複製 *.gtab 到 gcin 表格目錄</h3>
+<div class="highlight"><pre>sudo cp *.gtab <span class="k">${</span><span class="nv">locate</span><span class="p"> gtab | grep gcin/table | while read line; do dirname ...</span></pre></div></div>
+  <footer>
+    <a rel="full-article" href="/zai-ubuntu-1210-de-gcin-shu-ru-fa-ping-tai-an-zhuang-fu-xia-mi-shu-ru-fa.html">Read On &crarr;</a>
+  </footer>
+  		</article>
+  	  		<article>
+    		<header>
+          <h1 class="entry-title">
+        <a href="/syncing-samba-accounts-with-unix-login-accounts.html">Syncing Samba Accounts with Unix Login Accounts</a>
+      </h1>
+          <p class="meta"><time datetime="2012-07-16T00:00:00" pubdate>Mon 16 July 2012</time></p>
+</header>
+
+  <div class="entry-content"><p>libpam-smbpass</p></div>
+  <footer>
+    <a rel="full-article" href="/syncing-samba-accounts-with-unix-login-accounts.html">Read On &crarr;</a>
+  </footer>
+  		</article>
+  	  	<div class="pagination">
+  
+    <br />
+</div>  </div>
+      <aside class="sidebar">
+  <section>
+    <h1>Recent Posts</h1>
+    <ul id="recent_posts">
+            <li class="post">
+          <a href="/windows-photo-viewer-mouse-plug-in.html">Windows Photo Viewer Mouse Plug-in</a>
+      </li>
+            <li class="post">
+          <a href="/zai-ubuntu-1204-an-zhuang-it-830up-jing-pian-du-qia-ji-yu-shi-yong-webatm.html">在 Ubuntu 12.04 安裝 IT-830UP 晶片讀卡機與使用 WebATM</a>
+      </li>
+            <li class="post">
+          <a href="/zai-ubuntu-1210-de-gcin-shu-ru-fa-ping-tai-an-zhuang-fu-xia-mi-shu-ru-fa.html">在 Ubuntu 12.10 的 gcin 輸入法平台安裝嘸蝦米輸入法</a>
+      </li>
+            <li class="post">
+          <a href="/syncing-samba-accounts-with-unix-login-accounts.html">Syncing Samba Accounts with Unix Login Accounts</a>
+      </li>
+          </ul>
+  </section>
+
+  <section>
+  <h1>Tags</h1>
+      <a href="/tag/programming.html">Programming</a>,      <a href="/tag/software.html">Software</a>    </section>
+</aside>    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  <a rel="license"         href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">         <img alt="Creative Commons License" style="border-width:0"         src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a> : <a href="mailto: mr.changyuheng@gmail.com">Chang Yu-heng (張昱珩)</a> -
+  <span class="credit">Powered by <a href="http://getpelican.com">Pelican</a></span>
+</p></footer>
+  </body>
+</html>
