@@ -48,12 +48,10 @@
   </ul></nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
-    	  		<article>
-    		<header>
-          <h1 class="entry-title">
-        <a href="/deployment-of-ncku-csie-gitit-theme.html">Deployment of NCKU CSIE Gitit Theme</a>
-      </h1>
+      <div>
+  <article class="hentry" role="article">
+    <header>
+          <h1 class="entry-title">Deployment of NCKU CSIE Gitit Theme</h1>
           <p class="meta"><time datetime="2013-08-25T00:00:00" pubdate>Sun 25 August 2013</time></p>
 </header>
 
@@ -69,99 +67,21 @@
 將包裏解開後，取代 Gitit 原來的 static 和 templates 資料夾</p>
 </li>
 </ol>
-<p>到此為止都和這套佈景的官方安裝教學一樣。如果是採用發行版如 Ubuntu 所提供的 Gitit package，則已經完成 ...</p></div>
-  <footer>
-    <a rel="full-article" href="/deployment-of-ncku-csie-gitit-theme.html">Read On &crarr;</a>
-  </footer>
-  		</article>
-  	  		<article>
-    		<header>
-          <h1 class="entry-title">
-        <a href="/windows-photo-viewer-mouse-plug-in.html">Windows Photo Viewer Mouse Plug-in</a>
-      </h1>
-          <p class="meta"><time datetime="2013-02-08T11:26:00" pubdate>Fri 08 February 2013</time></p>
-</header>
+<p>到此為止都和這套佈景的官方安裝教學一樣。如果是採用發行版如 Ubuntu 所提供的 Gitit package，則已經完成。若是用 cabal 安裝, 則必須再安裝相依的套件，以 Ubuntu 為例：</p>
+<div class="highlight"><pre>sudo apt-get install libghc-filestore-data libc6 libffi6 libgmp10 libpcre3 zlib1g libjs-jquery libjs-jquery-ui
+</pre></div></div>
+    <footer>
+      <p class="meta">
+  <span class="byline author vcard">
+    Posted by <span class="fn">Chang Yu-heng (張昱珩)</span>
+  </span>
+  <time datetime="2013-08-25T00:00:00" pubdate>Sun 25 August 2013</time>    <span class="categories">
+        <a class="category" href="/tag/software.html">Software</a>
+      </span>
+  </p>    </footer>
+  </article>
 
-  <div class="entry-content"><p>This simple tool gives Windows Photo Viewer the following features:</p>
-<ol>
-<li>Middle click to toggle window's size between normal and maximum.</li>
-<li>Scroll up/down to show previous/next image.</li>
-<li>Ctrl + scroll up/down to zoom in/out.</li>
-<li>A to show actual size.</li>
-<li>F to show fit size.</li>
-<li>Ctrl + A to ...</li></ol></div>
-  <footer>
-    <a rel="full-article" href="/windows-photo-viewer-mouse-plug-in.html">Read On &crarr;</a>
-  </footer>
-  		</article>
-  	  		<article>
-    		<header>
-          <h1 class="entry-title">
-        <a href="/zai-ubuntu-1204-an-zhuang-it-830up-jing-pian-du-qia-ji-yu-shi-yong-webatm.html">在 Ubuntu 12.04 安裝 IT-830UP 晶片讀卡機與使用 WebATM</a>
-      </h1>
-          <p class="meta"><time datetime="2013-01-29T01:33:00" pubdate>Tue 29 January 2013</time></p>
-</header>
-
-  <div class="entry-content"><p><img alt="IT-830UP" src="http://www.ittec.com.tw/images/IT-830UP%28DM%29.jpg" /></p>
-<h2>步驟 1. 安裝所需套件</h2>
-<div class="highlight"><pre>sudo apt-get install pcscd pcsc-tools libccid
-</pre></div>
-
-
-<p>完成後可能需要自行重新啟動電腦才會生效。</p>
-<h2>步驟 2. 依照 WebATM 提供的方法安裝所需程式，如：<a href="http://netbank.esunbank.com.tw/webatm/Q&amp;A_016.htm#01">玉山銀行</a></h2></div>
-  <footer>
-    <a rel="full-article" href="/zai-ubuntu-1204-an-zhuang-it-830up-jing-pian-du-qia-ji-yu-shi-yong-webatm.html">Read On &crarr;</a>
-  </footer>
-  		</article>
-  	  		<article>
-    		<header>
-          <h1 class="entry-title">
-        <a href="/zai-ubuntu-1210-de-gcin-shu-ru-fa-ping-tai-an-zhuang-fu-xia-mi-shu-ru-fa.html">在 Ubuntu 12.10 的 gcin 輸入法平台安裝嘸蝦米輸入法</a>
-      </h1>
-          <p class="meta"><time datetime="2013-01-25T01:02:00" pubdate>Fri 25 January 2013</time></p>
-</header>
-
-  <div class="entry-content"><h2>步驟 1：安裝 gcin 及 im-switch</h2>
-<div class="highlight"><pre>sudo apt-get install gcin im-switch
-</pre></div>
-
-
-<h2>步驟 2：指定預設輸入法平台為 gcin，完成後重新啟動電腦</h2>
-<div class="highlight"><pre>sudo im-switch
-</pre></div>
-
-
-<h2>步驟 3：下載並解壓縮嘸蝦米官方提供的 gcin 用表格，接著開啟終端機並進入解壓縮目錄</h2>
-<h2>步驟 4：將表格等檔案複製到系統中</h2>
-<h3>1. 前置作業</h3>
-<div class="highlight"><pre>sudo updatedb
-</pre></div>
-
-
-<h3>2. 複製 *.gtab 到 gcin 表格目錄</h3>
-<div class="highlight"><pre>sudo cp *.gtab <span class="k">${</span><span class="nv">locate</span><span class="p"> gtab | grep gcin/table | while read line; do dirname ...</span></pre></div></div>
-  <footer>
-    <a rel="full-article" href="/zai-ubuntu-1210-de-gcin-shu-ru-fa-ping-tai-an-zhuang-fu-xia-mi-shu-ru-fa.html">Read On &crarr;</a>
-  </footer>
-  		</article>
-  	  		<article>
-    		<header>
-          <h1 class="entry-title">
-        <a href="/syncing-samba-accounts-with-unix-login-accounts.html">Syncing Samba Accounts with Unix Login Accounts</a>
-      </h1>
-          <p class="meta"><time datetime="2012-07-16T00:00:00" pubdate>Mon 16 July 2012</time></p>
-</header>
-
-  <div class="entry-content"><p>libpam-smbpass</p></div>
-  <footer>
-    <a rel="full-article" href="/syncing-samba-accounts-with-unix-login-accounts.html">Read On &crarr;</a>
-  </footer>
-  		</article>
-  	  	<div class="pagination">
-  
-    <br />
-</div>  </div>
+  </div>
       <aside class="sidebar">
   <section>
     <h1>Recent Posts</h1>

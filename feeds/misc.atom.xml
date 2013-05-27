@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>A Programmer's Blog</title><link href="/" rel="alternate"></link><link href="http://changyuheng.github.io/feeds/misc.atom.xml" rel="self"></link><id>/</id><updated>2013-02-08T11:26:00+01:00</updated><entry><title>Windows Photo Viewer Mouse Plug-in</title><link href="/windows-photo-viewer-mouse-plug-in.html" rel="alternate"></link><updated>2013-02-08T11:26:00+01:00</updated><author><name>Chang-Yu-heng (張昱珩)</name></author><id>tag:,2013-02-08:windows-photo-viewer-mouse-plug-in.html</id><summary type="html">&lt;p&gt;This simple tool gives Windows Photo Viewer the following features:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A Programmer's Blog</title><link href="/" rel="alternate"></link><link href="http://changyuheng.github.io/feeds/misc.atom.xml" rel="self"></link><id>/</id><updated>2013-08-25T00:00:00+02:00</updated><entry><title>Deployment of NCKU CSIE Gitit Theme</title><link href="/deployment-of-ncku-csie-gitit-theme.html" rel="alternate"></link><updated>2013-08-25T00:00:00+02:00</updated><author><name>Chang Yu-heng (張昱珩)</name></author><id>tag:,2013-08-25:deployment-of-ncku-csie-gitit-theme.html</id><summary type="html">&lt;p&gt;&lt;a href="http://gitit.net/"&gt;Gitit&lt;/a&gt; 是一套以 Git 作為 base 的 wiki 系統。這套 wiki 的優點可以在&lt;a href="http://walkingice.blogspot.tw/2011/11/gitit-git-based-wiki.html"&gt;只放拖鞋的鞋櫃&lt;/a&gt;看到。在網路上的高手 &lt;a href="http://macropodus.github.io/gitit_mix_vimwiki.html"&gt;Macropodus&lt;/a&gt; 研究出如何和 Vimwiki 結合後，又更強化了他的優勢。&lt;/p&gt;
+&lt;p&gt;不過 Gitit 預設的模版很沒有設計感，尤其是那個 logo 讓人看了很不舒服。所幸在 &lt;a href="https://groups.google.com/forum/#!topic/gitit-discuss/g6rZWIOmiu8"&gt;Google Group&lt;/a&gt; 發現了一套由成大資工所製作的好看佈景。以下將介紹如何安裝這套佈景：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;下載佈景
+打包好的佈景可以在 &lt;a href="https://github.com/CrBoy/csiewiki"&gt;GitHub&lt;/a&gt; 上找到&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安裝佈景
+將包裏解開後，取代 Gitit 原來的 static 和 templates 資料夾&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;到此為止都和這套佈景的官方安裝教學一樣。如果是採用發行版如 Ubuntu 所提供的 Gitit package，則已經完成。若是用 cabal 安裝, 則必須再安裝相依的套件，以 Ubuntu 為例：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo apt-get install libghc-filestore-data libc6 libffi6 libgmp10 libpcre3 zlib1g libjs-jquery libjs-jquery-ui
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="Software"></category></entry><entry><title>Windows Photo Viewer Mouse Plug-in</title><link href="/windows-photo-viewer-mouse-plug-in.html" rel="alternate"></link><updated>2013-02-08T11:26:00+01:00</updated><author><name>Chang-Yu-heng (張昱珩)</name></author><id>tag:,2013-02-08:windows-photo-viewer-mouse-plug-in.html</id><summary type="html">&lt;p&gt;This simple tool gives Windows Photo Viewer the following features:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Middle click to toggle window's size between normal and maximum.&lt;/li&gt;
 &lt;li&gt;Scroll up/down to show previous/next image.&lt;/li&gt;
