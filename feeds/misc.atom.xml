@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>A Programmer's Blog</title><link href="/" rel="alternate"></link><link href="http://changyuheng.github.io/feeds/misc.atom.xml" rel="self"></link><id>/</id><updated>2013-09-18T00:00:00+02:00</updated><entry><title>Gnome 3.6 與 KDE 4.10 於工作場所使用一年的心得</title><link href="/gnome-36-yu-kde-410-yu-gong-zuo-chang-suo-shi-yong-nian-de-xin-de.html" rel="alternate"></link><updated>2013-09-18T00:00:00+02:00</updated><author><name>Chang Yu-heng (張昱珩)</name></author><id>tag:,2013-09-18:gnome-36-yu-kde-410-yu-gong-zuo-chang-suo-shi-yong-nian-de-xin-de.html</id><summary type="html">&lt;p&gt;在工作上使用 &lt;a href="http://www.kde.org/"&gt;KDE&lt;/a&gt; 一年有餘，從 4.8 用到 4.10。最近同時也在使用 &lt;a href="http://www.gnome.org/"&gt;Gnome&lt;/a&gt; 3.6，網路上的比較文章不少，再增加一篇，希望我能提供較新版本的使用經驗與不同的看法。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A Programmer's Blog</title><link href="/" rel="alternate"></link><link href="http://changyuheng.github.io/feeds/misc.atom.xml" rel="self"></link><id>/</id><updated>2013-09-18T00:00:00+02:00</updated><entry><title>Gnome 3.6 與 KDE 4.10 於工作場所使用一年心得</title><link href="/gnome-36-yu-kde-410-yu-gong-zuo-chang-suo-shi-yong-nian-xin-de.html" rel="alternate"></link><updated>2013-09-18T00:00:00+02:00</updated><author><name>Chang Yu-heng (張昱珩)</name></author><id>tag:,2013-09-18:gnome-36-yu-kde-410-yu-gong-zuo-chang-suo-shi-yong-nian-xin-de.html</id><summary type="html">&lt;p&gt;在工作上使用 &lt;a href="http://www.kde.org/"&gt;KDE&lt;/a&gt; 一年有餘，從 4.8 用到 4.10。最近同時也在使用 &lt;a href="http://www.gnome.org/"&gt;Gnome&lt;/a&gt; 3.6，網路上的比較文章不少，再增加一篇，希望我能提供較新版本的使用經驗與不同的看法。&lt;/p&gt;
 &lt;p&gt;KDE 和 Gnome 的地位是一樣的，他們同樣是&lt;a href="http://zh.wikipedia.org/zh-tw/%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83"&gt;桌面環境&lt;/a&gt;。桌面環境簡言之即是一般使用者面對電腦的軟體介面，他包含了圖形、操作方法（如視窗的概念）、硬體管理、提供應用程式表現的方式……等，族繁不及備載。&lt;/p&gt;
 &lt;p&gt;KDE 與 Gnome 所使用的圖形引擎的不同，是一個很重要的差別。但若著重於桌面環境對工作效率的影響，這就不見得是一件重要的事。&lt;/p&gt;
 &lt;p&gt;概括來說，KDE 和 Gnome 都提供了漂亮且成熟的界面，兩者都能提供一般操作之所需。&lt;/p&gt;
@@ -19,7 +19,7 @@ Gnome 和 KDE 都提供了許多功能，不過 KDE 所提供的功能、自定�
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;效能：
-沒有仔細比較過，不過編譯 AOSP 程式碼的感覺都一樣，相信是差不多的。&lt;/p&gt;
+沒有仔細比較過，不過編譯 AOSP 程式碼的感覺都一樣，相信是差不多的。不過在做視窗拖曳時，KDE 的視窗跟隨游標比 Gnome 來得緊。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;資源：
