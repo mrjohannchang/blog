@@ -7,7 +7,7 @@
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;穩定度：
-KDE 4.8 到 4.10 之間，穩定性都非常棒，似乎沒有 UI crash 的印象。Gnome 3.6 的穩定性比起稍早之前的版本，已經好很多，但偶爾還是會發生一些怪異的情況，例如視窗鍵按了沒反應。&lt;/p&gt;
+KDE 4.8 到 4.10 之間，穩定性都非常棒，似乎沒有 UI crash 的印象。Gnome 3.6 的穩定性比起稍早之前的版本，已經好很多，但偶爾還是會發生一些怪異的情況，例如視窗鍵按了沒反應。過去一年的經驗中，KDE 的穩定度幾乎是 Windows 7 等級的，而 Gnome 則還有待加強。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;功能豐富度：
@@ -19,11 +19,11 @@ Gnome 和 KDE 都提供了許多功能，不過 KDE 所提供的功能、自定�
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;效能：
-沒有仔細比較過，不過編譯 AOSP 程式碼的感覺都一樣，相信是差不多的。不過在做視窗拖曳時，KDE 的視窗跟隨游標比 Gnome 來得緊。&lt;/p&gt;
+沒有仔細比較過，至少編譯 AOSP 程式碼時的瓶頸不在桌面環境。不過在做視窗拖曳時，KDE 的視窗跟隨游標明顯比 Gnome 來得緊。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;資源：
-網路上 Gnome 或 GTK 的使用教學或問答比較多。不過插個話，很多人說 Qt 比較好寫。&lt;/p&gt;
+網路上 Gnome 或 GTK 的使用教學或問答比較多。插個話，很多人說 Qt 比較好寫。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;與應用軟體的整合度：
@@ -32,7 +32,7 @@ Firefox 是 GTK-based 的，所以在 KDE 上的整合度略差。不過其他�
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;檔案總管：
-KDE 提供的 Dolphin 比 Gnome 的 Nautilus 來得強大許多&lt;/p&gt;
+KDE 提供的 Dolphin 比 Gnome 的 Nautilus 來得強大許多，尤其是整合 terminal 的功能，絕對稱得上是 killer feature&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;輸入法：
