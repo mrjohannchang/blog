@@ -11,7 +11,7 @@ KDE 4.8 到 4.10 之間，穩定性都非常棒，似乎沒有 UI crash 的印�
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;功能豐富度：
-Gnome 和 KDE 都提供了許多功能，不過 KDE 所提供的功能、自定性更加多元和完整，也調整了更多細節。&lt;/p&gt;
+Gnome 和 KDE 都提供了許多功能，不過 KDE 所提供的功能、自定性更加多元和完整，也優化了更多細節。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;美觀：
@@ -41,7 +41,7 @@ KDE 提供的 Dolphin 比 Gnome 的 Nautilus 來得強大許多，尤其是整�
 &lt;/ol&gt;
 &lt;p&gt;目前的情形下我推薦初次使用 Linux 的朋友 KDE，因為他功能較多，穩定性也較高，不太需要再自行安裝其他工具來補強，或是拿出終端機敲打命令。&lt;/p&gt;
 &lt;p&gt;而對於成熟的 Linux 使用者，在軟體的穩定性都達到堪用的情形下，我認為選擇的重點該放在「設計哲學」。活躍的開發團隊要提供更穩定的操作介面是遲早的事，Gnome 或 KDE 欠缺的功能也大都有第三方的程式可以完成。透過什麼引擎來呈現，對於沒有特殊信仰的非開發者來說，根本沒有感覺。但設計哲學直接影響到使用習慣以及工作效率和可能的發展方向。譬如說輕量化的桌面環境首推 LXDE，而 Gnome 和 KDE 同樣強調使用經驗、美觀和完整度，同質性非常高，對於操作方式的設計就將是最重要的差異。建議大家先放下微小 bug 所帶來的不悅以及引擎、授權等所產生的先入為主，直接體驗使用經驗再作選擇。&lt;/p&gt;
-&lt;p&gt;我比較喜歡 Gnome，因為我覺得操作較較易也比較炫麗。尤其是那大顆的按扭，不論是右上角關閉視窗的按鈕還是對話框裡的取消、確定按鈕，我很享受按下那種大顆按鈕明確反差的感覺。&lt;/p&gt;</summary><category term="Software"></category></entry><entry><title>Deployment of NCKU CSIE Gitit Theme</title><link href="http://changyuheng.github.io/deployment-of-ncku-csie-gitit-theme.html" rel="alternate"></link><updated>2013-08-25T00:00:00+02:00</updated><author><name>張昱珩 (Chang Yu-heng)</name></author><id>tag:changyuheng.github.io,2013-08-25:deployment-of-ncku-csie-gitit-theme.html</id><summary type="html">&lt;p&gt;&lt;a href="http://gitit.net/"&gt;Gitit&lt;/a&gt; 是一套以 Git 作為 base 的 wiki 系統。這套 wiki 的優點可以在&lt;a href="http://walkingice.blogspot.tw/2011/11/gitit-git-based-wiki.html"&gt;只放拖鞋的鞋櫃&lt;/a&gt;看到。在網路上的高手 &lt;a href="http://macropodus.github.io/gitit_mix_vimwiki.html"&gt;Macropodus&lt;/a&gt; 研究出如何和 Vimwiki 結合後，又更強化了他的優勢。&lt;/p&gt;
+&lt;p&gt;我比較喜歡 Gnome 3，因為操作模式比較簡單。加上我很喜歡按下 Gnome 3 那種大顆按鈕的明確反差的感覺。&lt;/p&gt;</summary><category term="Software"></category></entry><entry><title>Deployment of NCKU CSIE Gitit Theme</title><link href="http://changyuheng.github.io/deployment-of-ncku-csie-gitit-theme.html" rel="alternate"></link><updated>2013-08-25T00:00:00+02:00</updated><author><name>張昱珩 (Chang Yu-heng)</name></author><id>tag:changyuheng.github.io,2013-08-25:deployment-of-ncku-csie-gitit-theme.html</id><summary type="html">&lt;p&gt;&lt;a href="http://gitit.net/"&gt;Gitit&lt;/a&gt; 是一套以 Git 作為 base 的 wiki 系統。這套 wiki 的優點可以在&lt;a href="http://walkingice.blogspot.tw/2011/11/gitit-git-based-wiki.html"&gt;只放拖鞋的鞋櫃&lt;/a&gt;看到。在網路上的高手 &lt;a href="http://macropodus.github.io/gitit_mix_vimwiki.html"&gt;Macropodus&lt;/a&gt; 研究出如何和 Vimwiki 結合後，又更強化了他的優勢。&lt;/p&gt;
 &lt;p&gt;不過 Gitit 預設的模版很沒有設計感，尤其是那個 logo 讓人看了很不舒服。所幸在 &lt;a href="https://groups.google.com/forum/#!topic/gitit-discuss/g6rZWIOmiu8"&gt;Google Group&lt;/a&gt; 發現了一套由成大資工所製作的好看佈景。以下將介紹如何安裝這套佈景：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
