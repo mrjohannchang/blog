@@ -80,8 +80,8 @@ KDE 提供的 Dolphin 比 Gnome 的 Nautilus 來得強大許多，尤其是整�
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h2&gt;步驟 2：指定預設輸入法平台為 gcin，完成後重新啟動電腦&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;sudo im-switch
+&lt;h2&gt;步驟 2：指定預設輸入法平台為 gcin，完成後重新啟動電腦 (注意：不用 root 權限)&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;im-switch
 &lt;/pre&gt;&lt;/div&gt;
 
 

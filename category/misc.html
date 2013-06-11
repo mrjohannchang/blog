@@ -148,8 +148,8 @@ KDE 4.8 到 4 ...</p></li></ol></div>
 </pre></div>
 
 
-<h2>步驟 2：指定預設輸入法平台為 gcin，完成後重新啟動電腦</h2>
-<div class="highlight"><pre>sudo im-switch
+<h2>步驟 2：指定預設輸入法平台為 gcin，完成後重新啟動電腦 (注意：不用 root 權限)</h2>
+<div class="highlight"><pre>im-switch
 </pre></div>
 
 
@@ -161,7 +161,7 @@ KDE 4.8 到 4 ...</p></li></ol></div>
 
 
 <h3>2. 複製 *.gtab 到 gcin 表格目錄</h3>
-<div class="highlight"><pre>sudo cp *.gtab <span class="k">${</span><span class="nv">locate</span><span class="p"> gtab | grep gcin/table | while read line; do dirname ...</span></pre></div></div>
+<div class="highlight"><pre>sudo cp *.gtab <span class="k">${</span><span class="nv">locate</span><span class="p"> gtab | grep gcin/table | while read ...</span></pre></div></div>
   <footer>
     <a rel="full-article" href="http://changyuheng.github.io/zai-ubuntu-1210-de-gcin-shu-ru-fa-ping-tai-an-zhuang-fu-xia-mi-shu-ru-fa.html">Read On &crarr;</a>
   </footer>
