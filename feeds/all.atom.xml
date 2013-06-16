@@ -81,7 +81,7 @@ Gnome 和 KDE 都提供了許多功能，不過 KDE 所提供的功能、自定�
 
 
 &lt;h2&gt;步驟 2：指定預設輸入法平台為 gcin，完成後重新啟動電腦&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;sudo im-switch
+&lt;div class="highlight"&gt;&lt;pre&gt;im-switch
 &lt;/pre&gt;&lt;/div&gt;
 
 
