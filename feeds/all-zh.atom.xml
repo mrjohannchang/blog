@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A Programmer's Blog</title><link href="http://changyuheng.github.io/" rel="alternate"></link><link href="http://changyuheng.github.io/feeds/all-zh.atom.xml" rel="self"></link><id>http://changyuheng.github.io/</id><updated>2013-09-18T00:00:00+02:00</updated><entry><title>Gnome 3.6 與 KDE 4.10 於工作場所使用一年心得</title><link href="http://changyuheng.github.io/gnome-36-yu-kde-410-yu-gong-zuo-chang-suo-shi-yong-nian-xin-de.html" rel="alternate"></link><updated>2013-09-18T00:00:00+02:00</updated><author><name>張昱珩 (Chang Yu-heng)</name></author><id>tag:changyuheng.github.io,2013-09-18:gnome-36-yu-kde-410-yu-gong-zuo-chang-suo-shi-yong-nian-xin-de.html</id><summary type="html">&lt;p&gt;在工作上使用 &lt;a href="http://www.kde.org/"&gt;KDE&lt;/a&gt; 一年有餘，從 4.8 用到 4.10。最近同時也在使用 &lt;a href="http://www.gnome.org/"&gt;Gnome&lt;/a&gt; 3.6，網路上的比較文章不少，再增加一篇，希望我能提供較新版本的使用經驗與不同的看法。&lt;/p&gt;
+&lt;p&gt;KDE 和 Gnome 的地位是一樣的，他們同樣是&lt;a href="http://zh.wikipedia.org/zh-tw/%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83"&gt;桌面環境&lt;/a&gt;。桌面環境簡言之即是一般使用者面對電腦的軟體介面，他包含了圖形、操作方法（如視窗的概念）、硬體管理、提供應用程式表現的方式……等，族繁不及備載。&lt;/p&gt;
+&lt;p&gt;KDE 與 Gnome 所使用的圖形引擎的不同，是一個很重要的差別。但若著重於桌面環境對工作效率的影響，這就不見得是一件重要的事。&lt;/p&gt;
+&lt;p&gt;概括來說，KDE 和 Gnome 都提供了漂亮且成熟的界面，兩者都能提供一般操作之所需。&lt;/p&gt;
+&lt;p&gt;以下逐項比較我所重視的部分：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;穩定度：
+KDE 4.8 到 4.10 之間，穩定性都非常棒，似乎沒有 UI crash 的印象。Gnome 3.6 的穩定性比起稍早之前的版本，已經好很多，但偶爾還是會發生一些怪異的情況，例如視窗鍵按了沒反應。過去一年的經驗中，KDE 的穩定度幾乎是 Windows 7 等級的，而 Gnome 則還有待加強。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;功能豐富度：
+Gnome 和 KDE 都提供了許多功能，不過 KDE 所提供的功能、自定性更加多元和完整，也優化了更多細節。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;美觀：
+同樣注重外觀設計，我比較喜歡 Gnome 的 UI，不過 KDE 的特效比較多。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;效能：
+沒有仔細比較過，至少編譯 AOSP 程式碼的瓶頸不在桌面環境。不過在做視窗拖曳時，KDE 的視窗跟隨游標明顯比 Gnome 來得緊。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;資源：
+網路上 Gnome 或 GTK 的使用教學或問答比較多。但以 GUI 程式開發來說 Qt 比較被推薦。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;與應用軟體的整合度：
+都很優異，不過單以 file manager 來說，KDE 的 Dolphin 做得比 Gnome 的 Nautilus 更多。
+題外話，個人覺得 Okula 比 Document Viewer 好用，用習慣 Paint.NET 的我對於 Krita 的接受度也比 GIMP 高。Konsole 獨有的 copy on select 我也很喜歡。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;檔案總管：
+承上，Dolphin 比 Nautilus 來得強大許多，尤其是整合 terminal 的功能，絕對稱得上是 killer feature。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;輸入法：
+我使用 Gcin 或 Hime 框架搭配嘸蝦米都沒遇到問題。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;目前的情形下我推薦初次使用 Linux 的朋友 KDE，因為他功能較多，穩定性也較高，不太需要再自行安裝其他工具來補強，或是拿出終端機敲打命令。&lt;/p&gt;
+&lt;p&gt;而對於成熟的 Linux 使用者，在軟體的穩定性都達到堪用的情形下，我認為選擇的重點該放在「設計哲學」。活躍的開發團隊要提供更穩定的環境是遲早的事，Gnome 或 KDE 所欠缺的功能也大都有第三方的程式可以完成。透過什麼引擎來呈現，對於沒有特殊信仰的非開發者來說，根本沒有差別。但設計哲學直接影響到使用習慣以及工作效率和可能的發展方向。譬如說輕量化的桌面環境首推 LXDE，而 Gnome 和 KDE 同樣強調使用經驗、美觀和完整度，同質性非常高，對於操作方式的設計哲學即是最重要的差異。放下微小 bug 所帶來的不悅，以及引擎、授權等所產生的先入為主，直接體驗使用經驗，才能公平地選擇。&lt;/p&gt;
+&lt;p&gt;我比較喜歡 Gnome 3，因為操作比較簡單。而且我很享受按下 Gnome 3 提供的各類大顆按鈕的明確反差的感覺。&lt;/p&gt;
+&lt;p&gt;相關資料：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.datamation.com/open-source/gnome-or-kde-the-old-question-is-new-today-1.html"&gt;GNOME or KDE? The Old Question Is New Today&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="Software"></category></entry><entry><title>Deployment of NCKU CSIE Gitit Theme</title><link href="http://changyuheng.github.io/deployment-of-ncku-csie-gitit-theme.html" rel="alternate"></link><updated>2013-08-25T00:00:00+02:00</updated><author><name>張昱珩 (Chang Yu-heng)</name></author><id>tag:changyuheng.github.io,2013-08-25:deployment-of-ncku-csie-gitit-theme.html</id><summary type="html">&lt;p&gt;&lt;a href="http://gitit.net/"&gt;Gitit&lt;/a&gt; 是一套以 Git 作為 base 的 wiki 系統。這套 wiki 的優點可以在&lt;a href="http://walkingice.blogspot.tw/2011/11/gitit-git-based-wiki.html"&gt;只放拖鞋的鞋櫃&lt;/a&gt;看到。在網路上的高手 &lt;a href="http://macropodus.github.io/gitit_mix_vimwiki.html"&gt;Macropodus&lt;/a&gt; 研究出如何和 Vimwiki 結合後，又更強化了他的優勢。&lt;/p&gt;
+&lt;p&gt;不過 Gitit 預設的模版很沒有設計感，尤其是那個 logo 讓人看了很不舒服。所幸在 &lt;a href="https://groups.google.com/forum/#!topic/gitit-discuss/g6rZWIOmiu8"&gt;Google Group&lt;/a&gt; 發現了一套由成大資工所製作的好看佈景。以下將介紹如何安裝這套佈景：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;下載佈景
+打包好的佈景可以在 &lt;a href="https://github.com/CrBoy/csiewiki"&gt;GitHub&lt;/a&gt; 上找到&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安裝佈景
+將包裏解開後，取代 Gitit 原來的 static 和 templates 資料夾&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;到此為止都和這套佈景的官方安裝教學一樣。如果是採用發行版如 Ubuntu 所提供的 Gitit package，則已經完成。若是用 cabal 安裝, 則必須再安裝相依的套件，以 Ubuntu 為例：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo apt-get install libghc-filestore-data libc6 libffi6 libgmp10 libpcre3 zlib1g libjs-jquery libjs-jquery-ui
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="Software"></category></entry><entry><title>Windows Photo Viewer Mouse Plug-in</title><link href="http://changyuheng.github.io/windows-photo-viewer-mouse-plug-in.html" rel="alternate"></link><updated>2013-02-08T11:26:00+01:00</updated><author><name>Chang-Yu-heng (張昱珩)</name></author><id>tag:changyuheng.github.io,2013-02-08:windows-photo-viewer-mouse-plug-in.html</id><summary type="html">&lt;p&gt;This simple tool gives Windows Photo Viewer the following features:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Middle click to toggle window's size between normal and maximum.&lt;/li&gt;
+&lt;li&gt;Scroll up/down to show previous/next image.&lt;/li&gt;
+&lt;li&gt;Ctrl + scroll up/down to zoom in/out.&lt;/li&gt;
+&lt;li&gt;A to show actual size.&lt;/li&gt;
+&lt;li&gt;F to show fit size.&lt;/li&gt;
+&lt;li&gt;Ctrl + A to toggle deafult presenting style between actual size and fit size.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt; &lt;a href="https://docs.google.com/file/d/0B-EPD3xEnb7PQ0FLcVZZR2xaT2s/edit?usp=sharing"&gt;Download&lt;/a&gt; &lt;/strong&gt;&lt;/p&gt;</summary><category term="Programming"></category></entry><entry><title>在 Ubuntu 12.04 安裝 IT-830UP 晶片讀卡機與使用 WebATM</title><link href="http://changyuheng.github.io/zai-ubuntu-1204-an-zhuang-it-830up-jing-pian-du-qia-ji-yu-shi-yong-webatm.html" rel="alternate"></link><updated>2013-01-29T01:33:00+01:00</updated><author><name>張昱珩 (Chang Yu-heng)</name></author><id>tag:changyuheng.github.io,2013-01-29:zai-ubuntu-1204-an-zhuang-it-830up-jing-pian-du-qia-ji-yu-shi-yong-webatm.html</id><summary type="html">&lt;p&gt;&lt;img alt="IT-830UP" src="http://www.ittec.com.tw/images/IT-830UP%28DM%29.jpg" /&gt;&lt;/p&gt;
+&lt;h2&gt;步驟 1. 安裝所需套件&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo apt-get install pcscd pcsc-tools libccid
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;完成後可能需要自行重新啟動電腦才會生效。&lt;/p&gt;
+&lt;h2&gt;步驟 2. 依照 WebATM 提供的方法安裝所需程式，如：&lt;a href="http://netbank.esunbank.com.tw/webatm/Q&amp;amp;A_016.htm#01"&gt;玉山銀行&lt;/a&gt;&lt;/h2&gt;</summary><category term="Software"></category></entry><entry><title>在 Ubuntu 12.10 的 gcin 輸入法平台安裝嘸蝦米輸入法</title><link href="http://changyuheng.github.io/zai-ubuntu-1210-de-gcin-shu-ru-fa-ping-tai-an-zhuang-fu-xia-mi-shu-ru-fa.html" rel="alternate"></link><updated>2013-01-25T01:02:00+01:00</updated><author><name>張昱珩 (Chang Yu-heng)</name></author><id>tag:changyuheng.github.io,2013-01-25:zai-ubuntu-1210-de-gcin-shu-ru-fa-ping-tai-an-zhuang-fu-xia-mi-shu-ru-fa.html</id><summary type="html">&lt;h2&gt;步驟 1：安裝 gcin 及 im-switch&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo apt-get install gcin im-switch
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;步驟 2：指定預設輸入法平台為 gcin，完成後重新啟動電腦&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo im-switch
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;步驟 3：下載並解壓縮嘸蝦米官方提供的 gcin 用表格，接著開啟終端機並進入解壓縮目錄&lt;/h2&gt;
+&lt;h2&gt;步驟 4：將表格等檔案複製到系統中&lt;/h2&gt;
+&lt;h3&gt;1. 前置作業&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo updatedb
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;2. 複製 *.gtab 到 gcin 表格目錄&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo cp *.gtab &lt;span class="k"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;locate&lt;/span&gt;&lt;span class="p"&gt; gtab | grep gcin/table | while read line; do dirname &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;$line&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;; done | sort | uniq&lt;/span&gt;&lt;span class="k"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;3. 複製 *.png 到 gcin icon 目錄&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo cp *.png &lt;span class="k"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;locate&lt;/span&gt;&lt;span class="p"&gt; pinyin.png | grep gcin | while read line; do dirname &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;$line&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;; done | sort | uniq&lt;/span&gt;&lt;span class="k"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;步驟 5：編輯 gtab.list&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;嘸蝦米(繁) 1 boshiamy-t.gtab boshiamy-t.png&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt; ~/.gcin/gtab.list
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;步驟 6：重新啟動 gcin&lt;/h2&gt;
+&lt;h2&gt;步驟 7：調整 gcin 設定&lt;/h2&gt;
+&lt;h3&gt;1. 在【內定輸入法 &amp;amp; 開啟/關閉】中調整嘸蝦米是否為預設輸入法、可否由 ctrl + shift 切換&lt;/h3&gt;
+&lt;h3&gt;2. 在【倉頡/行列/嘸蝦米/大易設定】中將【預覽/預選 字】調整為【全部開啟】&lt;/h3&gt;</summary><category term="Software"></category></entry><entry><title>Codeforces 快速入門</title><link href="http://changyuheng.github.io/codeforces-kuai-su-ru-men.html" rel="alternate"></link><updated>2012-11-24T00:00:00+01:00</updated><author><name>張昱珩 (Chang Yu-heng)</name></author><id>tag:changyuheng.github.io,2012-11-24:codeforces-kuai-su-ru-men.html</id><summary type="html">&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;什麼是 &lt;a href="http://codeforces.com/"&gt;Codeforces&lt;/a&gt;？&lt;/p&gt;
+&lt;p&gt;Codeforces 是一個知名的程式競賽 (programming contest) 網站。我們可以在此網站上討論程式設計，練習或比賽解題，也可以舉辦比賽。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;支援哪些語言？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;C&lt;/li&gt;
+&lt;li&gt;C++&lt;/li&gt;
+&lt;li&gt;C#&lt;/li&gt;
+&lt;li&gt;Delphi&lt;/li&gt;
+&lt;li&gt;Free Pascal&lt;/li&gt;
+&lt;li&gt;Haskell&lt;/li&gt;
+&lt;li&gt;Java&lt;/li&gt;
+&lt;li&gt;OCaml&lt;/li&gt;
+&lt;li&gt;PHP&lt;/li&gt;
+&lt;li&gt;Python&lt;/li&gt;
+&lt;li&gt;Ruby&lt;/li&gt;
+&lt;li&gt;Scala&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;怎麼開始？&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;註冊&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;進入 &lt;a href="http://codeforces.com/"&gt;Codeforces&lt;/a&gt; 首頁&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;點選右上角「Register」以進入註冊頁面&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/-XfEvaDBCOTk/ULM8IT2DcXI/AAAAAAAAACs/c1h6HPfQEyU/s1600/begin_to_register.png"&gt;&lt;img alt="" src="http://4.bp.blogspot.com/-XfEvaDBCOTk/ULM8IT2DcXI/AAAAAAAAACs/c1h6HPfQEyU/s1600/begin_to_register.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;填寫註冊表單，完成後按下「Register (確定註冊)」&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/-llYPYqqCEdA/ULM_auEZaQI/AAAAAAAAADM/95hG-xkdYuo/s1600/registration_form.png"&gt;&lt;img alt="" src="http://1.bp.blogspot.com/-llYPYqqCEdA/ULM_auEZaQI/AAAAAAAAADM/95hG-xkdYuo/s1600/registration_form.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;經過以上步驟即可完成註冊。&lt;/p&gt;
+&lt;p&gt;以下為選擇性設定：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;登入&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;點選右上角自己的帳號，進入個人資料頁面&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;點選導覽列上的「SETTINGS」&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在「GENERAL」這一頁，可以上傳個人頭像、重新設定密碼、電子信箱等&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在「SOCIAL」這一頁，可以輸入真名及國家和城市。(有輸入國家和城市才能和自己國家的國民一起排名)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;進行一次練習&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;解題&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;點選導覽列上的 &lt;a href="http://codeforces.com/problemset"&gt;PROBLEMSET&lt;/a&gt; 進入考古題庫&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;點選最右邊的欄位標題「&lt;a href="http://codeforces.com/problemset?order=BY_SOLVED_DESC"&gt;Solved&lt;/a&gt;」&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;進入「&lt;a href="http://codeforces.com/problemset/problem/1/A"&gt;Theater Square&lt;/a&gt;」&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href="http://2.bp.blogspot.com/-6Ci3mHL_wD4/ULNiXNDzf6I/AAAAAAAAADc/KnH3HOrCPS8/s1600/problemset.png"&gt;&lt;img alt="" src="http://2.bp.blogspot.com/-6Ci3mHL_wD4/ULNiXNDzf6I/AAAAAAAAADc/KnH3HOrCPS8/s1600/problemset.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;題目最上方的：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;time limit per test: 2 seconds
+memory limit per test: 64 megabytes
+input: standard input
+output: standard output
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;分別表示：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;時間限制：2 秒
+使用記憶體大小限制：64 MB
+輸入方式：標準輸入
+輸出方式：標準輸出
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;接著是題目：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;Theatre Square in the capital city of Berland has a rectangular shape with the size n × m meters. On the occasion of the city&amp;#39;s anniversary, a decision was taken to pave the Square with square granite flagstones. Each flagstone is of the size a × a.
+
+What is the least number of flagstones needed to pave the Square? It&amp;#39;s allowed to cover the surface larger than the Theatre Square, but the Square has to be covered.
+It&amp;#39;s not allowed to break the flagstones. The sides of flagstones should be parallel to the sides of the Square.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;中文大意：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;有一塊&amp;amp;nbsp;n × m (長 n，寬 m) 平方公尺矩形的地需要舖滿石磚，每塊石磚大小為正方形&amp;amp;nbsp;a × a。在不切割石磚、不重疊石的前題下，必需舖滿此地。石磚可以超出需要被舖的地，但石磚的邊必需與此地的邊平行。
+
+請問最少需要多少石磚才能完成？
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Input (說明測試程式會餵給我們的程式的資料)：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;The input contains three positive integer numbers in the first line: n,  m and a (1 ≤  n, m, a ≤ 10^9).
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;中文說明：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;輸入共一行，此行中包含三個整數：n, m, a，整數間以空白字元分隔。其中 1 ≤  n, m, a ≤ 10^9。
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Output (說明我們的程式應該輸出什麼)：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;Write the needed number of flagstones.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;中文說明：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;請輸出需要的石磚數。
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;範例：&lt;/p&gt;
+&lt;p&gt;Input:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;6 6 4
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Output&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;4
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;註：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;第一個&lt;/span&gt; &lt;span class="mi"&gt;6&lt;/span&gt; &lt;span class="err"&gt;表示&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="err"&gt;，第二個&lt;/span&gt; &lt;span class="mi"&gt;6&lt;/span&gt; &lt;span class="err"&gt;表示&lt;/span&gt; &lt;span class="n"&gt;m&lt;/span&gt;&lt;span class="err"&gt;，&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt; &lt;span class="err"&gt;表示&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="err"&gt;。亦即，在&lt;/span&gt; &lt;span class="mi"&gt;6&lt;/span&gt; &lt;span class="err"&gt;×&lt;/span&gt; &lt;span class="mi"&gt;6&lt;/span&gt; &lt;span class="err"&gt;大小的地上，舖以&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt; &lt;span class="err"&gt;×&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt; &lt;span class="err"&gt;大小的石磚，最少需要&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt; &lt;span class="err"&gt;塊石磚才能將其舖滿。&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;題解：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;假設需要&lt;/span&gt; &lt;span class="n"&gt;p&lt;/span&gt; &lt;span class="err"&gt;×&lt;/span&gt; &lt;span class="n"&gt;q&lt;/span&gt; &lt;span class="err"&gt;塊石磚，其必需符合此條件：&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="err"&gt;×&lt;/span&gt; &lt;span class="n"&gt;p&lt;/span&gt; &lt;span class="err"&gt;≥&lt;/span&gt; &lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="err"&gt;且&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="err"&gt;×&lt;/span&gt; &lt;span class="n"&gt;q&lt;/span&gt; &lt;span class="err"&gt;≥&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="err"&gt;。&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;將我們的解法用程式寫出來，並上傳到 Codeforces 即完成此題練習。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;上傳&lt;/p&gt;
+&lt;p&gt;在題目頁點選導覽列上的「SUBMIT」，確定 problem 是我們要解決的，選擇我們的程式的 language，接著貼上 source code 並按下「Submit」按鈕。&lt;/p&gt;
+&lt;p&gt;按下按鈕後，會跳到 Status 這一頁，若我們的答案成功在題目的要求下解決此問題，在「Verdict」這一欄會出現綠色的 「Accepted」。&lt;/p&gt;
+&lt;p&gt;如果我們在第 # 個測試中輸出的答案與測試器期望的答案不同，會出現「Wrong answer on test #」, 若是 source code 編譯錯誤，會出現「Compilation error」。若在第 # 次的測試中超過記憶體大小限制，會出現「Memory limit exceeded on test #」。若在第 # 次的測試中超過時限制，會出現「Time limit exceeded on test #」。此時我們可以按下左邊的流水號，以檢視出現錯誤的測項、錯誤訊息等。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;參考其他人的答案&lt;/p&gt;
+&lt;p&gt;寫完一道題目後，最重要的是檢討自己的答案。檢討的方法有很多，其中之一是觀察別人的解法。由導覽列 → PROBLEMSET 中找出我們的題目，並按下右方解題人數，即可看到大家對此題所寫的解法。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://4.bp.blogspot.com/-tnc7IUZhb1Y/ULNpNbdg2AI/AAAAAAAAADs/dclmNcnjMWE/s1600/solved.png"&gt;&lt;img alt="" src="http://4.bp.blogspot.com/-tnc7IUZhb1Y/ULNpNbdg2AI/AAAAAAAAADs/dclmNcnjMWE/s1600/solved.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在頁面最下方可以自訂排序規則，我們可以依照 Solution Size (source code 大小) 或 Execution Time (執行時間長短) 來排序，以方便我們找出想要參考的答案。右方可以選擇我們想要看到的語言。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://1.bp.blogspot.com/-0UMrCC6I4wE/ULNqulcBplI/AAAAAAAAAD0/uIQyrdnF9gE/s1600/solved_lang.png"&gt;&lt;img alt="" src="http://1.bp.blogspot.com/-0UMrCC6I4wE/ULNqulcBplI/AAAAAAAAAD0/uIQyrdnF9gE/s1600/solved_lang.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;讀者可參考此題的 &lt;a href="http://codeforces.com/contest/1/submission/1647521"&gt;Python 版解法&lt;/a&gt;、&lt;a href="http://codeforces.com/contest/1/submission/2337277"&gt;Ruby 版解法&lt;/a&gt;、&lt;a href="http://codeforces.com/contest/1/submission/889578"&gt;PHP 版解法&lt;/a&gt;、&lt;a href="http://codeforces.com/contest/1/submission/1337822"&gt;C 版解法&lt;/a&gt;、&lt;a href="http://codeforces.com/contest/1/submission/759"&gt;C++ 版解法&lt;/a&gt;、&lt;a href="http://codeforces.com/contest/1/submission/2032793"&gt;C# 版解法&lt;/a&gt;、&lt;a href="http://codeforces.com/contest/1/submission/604386"&gt;Java 版解法&lt;/a&gt;、&lt;a href="http://codeforces.com/contest/1/submission/1903268"&gt;Scala 版解法&lt;/a&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</summary><category term="Algorithm"></category></entry><entry><title>Syncing Samba Accounts with Unix Login Accounts</title><link href="http://changyuheng.github.io/syncing-samba-accounts-with-unix-login-accounts.html" rel="alternate"></link><updated>2012-07-16T00:00:00+02:00</updated><author><name>張昱珩 (Chang Yu-heng)</name></author><id>tag:changyuheng.github.io,2012-07-16:syncing-samba-accounts-with-unix-login-accounts.html</id><summary type="html">&lt;p&gt;libpam-smbpass&lt;/p&gt;</summary><category term="Software"></category></entry></feed>
