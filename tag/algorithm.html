@@ -4,11 +4,9 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>A Programmer's Blog</title>
+  <title>A Programmer's Blog - Algorithm</title>
   <meta name="author" content="張昱珩 (Chang Yu-heng)">
 
-  <link href="http://changyuheng.github.io/feeds/atom.xml" type="application/atom+xml" rel="alternate"
-        title="A Programmer's Blog Atom Feed" />
 
 
   <!-- http://t.co/dKP3o1e -->
@@ -27,12 +25,15 @@
         rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
         rel="stylesheet" type="text/css">
-</head><body>
-  <header role="banner"><hgroup>
+</head>
+
+<body>
+<a href="">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub">
+</a>  <header role="banner"><hgroup>
   <h1><a href="http://changyuheng.github.io/">A Programmer's Blog</a></h1>
 </hgroup></header>
   <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="http://changyuheng.github.io/feeds/atom.xml" rel="subscribe-rss">RSS</a></li>
 </ul>
 
 <form action="https://google.com/search" method="get">
@@ -43,8 +44,9 @@
 </form>
 
 <ul class="main-navigation">
-  <li><a href="http://changyuheng.github.io/">Blog</a></li>
-    <!-- TODO: add categories here? -->
+    <li >
+    <a href="http://changyuheng.github.io/category/misc.html">Misc</a>
+    </li>
 </ul></nav>
   <div id="main">
     <div id="content">
@@ -138,19 +140,27 @@
 </aside>    </div>
   </div>
   <footer role="contentinfo"><p>
-  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">A Programmer's Blog</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="mailto:mr.changyuheng@gmail.com" property="cc:attributionName" rel="cc:attributionURL">張昱珩 (Chang Yu-heng)</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://changyuheng.github.io" rel="dct:source">http://changyuheng.github.io</a>.<br />
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<br />
   <span class="credit">Powered by <a href="http://getpelican.com">Pelican</a></span>
 </p></footer>
     <script type="text/javascript">
-	    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-	    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-	    try {
-	        var pageTracker = _gat._getTracker("UA-44162683-1");
-	    pageTracker._trackPageview();
-	    } catch(err) {}
-	</script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-44162683-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-44162683-1');
+    ga('send', 'pageview');
+</script>
 	<script type="text/javascript">
 	  var disqus_shortname = 'aprogrammersblog';
 	  (function() {
