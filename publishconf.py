@@ -13,6 +13,9 @@ from pelicanconf import *
 SITEURL = 'http://changyuheng.github.io'
 RELATIVE_URLS = False
 
+SITESEARCH = 'https://google.com/search'
+SITESEARCHFILTER = 'changyuheng.github.io'
+
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 
