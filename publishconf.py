@@ -18,6 +18,8 @@ SITESEARCHFILTER = 'changyuheng.github.io'
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
+FEED_DOMAIN = 'http://' + SITESEARCHFILTER
+FEED_ATOM = FEED_ALL_ATOM
 
 DELETE_OUTPUT_DIRECTORY = True
 
