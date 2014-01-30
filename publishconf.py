@@ -21,6 +21,11 @@ FEED_ATOM =  'feeds/atom.xml'
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 
+FEED_RSS = None
+FEED_ALL_RSS = None
+CATEGORY_FEED_RSS = None
+TAG_FEED_ATOM = None
+
 DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
