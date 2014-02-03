@@ -32,3 +32,5 @@ DELETE_OUTPUT_DIRECTORY = True
 
 DISQUS_SITENAME = "aprogrammersblog"
 GOOGLE_ANALYTICS = "UA-44162683-1"
+
+GITHUB_URL = 'https://github.com/changyuheng'
