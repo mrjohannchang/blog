@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
@@ -13,24 +12,16 @@ from pelicanconf import *
 SITEURL = 'http://changyuheng.github.io'
 RELATIVE_URLS = False
 
-SITESEARCH = 'https://google.com/search'
-SITESEARCHFILTER = 'changyuheng.github.io'
-
-FEED_DOMAIN = 'http://' + SITESEARCHFILTER
-FEED_ATOM =  'feeds/atom.xml'
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
+CATEGORY_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
 
-FEED_RSS = None
-FEED_ALL_RSS = None
-CATEGORY_FEED_RSS = None
-TAG_FEED_ATOM = None
+SEARCH_BOX = True
+SITESEARCH = 'https://google.com/search'
 
 DELETE_OUTPUT_DIRECTORY = True
-
-# Following items are often useful when publishing
 
 DISQUS_SITENAME = "aprogrammersblog"
 GOOGLE_ANALYTICS = "UA-44162683-1"
 
-GITHUB_URL = 'https://github.com/changyuheng'
+# Following items are often useful when publishing
