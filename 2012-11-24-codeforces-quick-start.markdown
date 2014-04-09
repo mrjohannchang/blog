@@ -1,7 +1,7 @@
 Title: Codeforces 快速入門
 Date: 2012-11-24
 Tags: Algorithm
-Author: 張昱珩 (Chang Yu-heng)
+Author: Chang Yu-heng (張昱珩)
 
 1. 什麼是 [Codeforces](http://codeforces.com/)？
 
