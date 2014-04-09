@@ -3,7 +3,6 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Chang Yu-heng (張昱珩)'
 SITENAME = "A Programmer's Blog"
-SITEURL = ''
 
 TIMEZONE = 'Asia/Taipei'
 
