@@ -2,3 +2,7 @@
 	path = content
 	url = git@github.com:changyuheng/changyuheng.github.com.git
 	branch = content
+[submodule "themes/pelican-octopress-theme"]
+	path = themes/pelican-octopress-theme
+	url = https://github.com/duilio/pelican-octopress-theme.git
+    branch = master
