@@ -6,3 +6,7 @@
 	path = themes/pelican-octopress-theme
 	url = https://github.com/duilio/pelican-octopress-theme.git
     branch = master
+[submodule "plugins"]
+	path = plugins
+	url = https://github.com/getpelican/pelican-plugins.git
+    branch = master
