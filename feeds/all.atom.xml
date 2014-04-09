@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>A Programmer's Blog</title><link href="http://changyuheng.github.io/" rel="alternate"></link><link href="http://changyuheng.github.io/feeds/all.atom.xml" rel="self"></link><id>http://changyuheng.github.io/</id><updated>2014-04-04T18:02:00+02:00</updated><entry><title>My Longest Streak on GitHub</title><link href="http://changyuheng.github.io/my-longest-streak-on-github.html" rel="alternate"></link><updated>2014-04-04T18:02:00+02:00</updated><author><name>張昱珩 (Chang Yu-heng)</name></author><id>tag:changyuheng.github.io,2014-04-04:my-longest-streak-on-github.html</id><summary type="html">&lt;p&gt;這不是什麼光榮的事，總之突然興致起來，就洗了一下我在 GitHub 的 longest streak。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="GitHub Longest Streak" src="https://lh5.googleusercontent.com/-AJzPWfGumT0/Uz6ErcMsvcI/AAAAAAAAAmw/mDBNv92_F64/w1043-h426-no/github-longest-streak.png" /&gt;&lt;/p&gt;</summary><category term="Programming"></category></entry><entry><title>Gnome 3.6 與 KDE 4.10 於工作場所使用一年心得</title><link href="http://changyuheng.github.io/gnome-36-yu-kde-410-yu-gong-zuo-chang-suo-shi-yong-nian-xin-de.html" rel="alternate"></link><updated>2013-09-18T00:00:00+02:00</updated><author><name>張昱珩 (Chang Yu-heng)</name></author><id>tag:changyuheng.github.io,2013-09-18:gnome-36-yu-kde-410-yu-gong-zuo-chang-suo-shi-yong-nian-xin-de.html</id><summary type="html">&lt;p&gt;在工作上使用 &lt;a href="http://www.kde.org/"&gt;KDE&lt;/a&gt; 一年有餘，從 4.8 用到 4.10。最近同時也在使用 &lt;a href="http://www.gnome.org/"&gt;Gnome&lt;/a&gt; 3.6，網路上的比較文章不少，再增加一篇，希望我能提供較新版本的使用經驗與不同的看法。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A Programmer's Blog</title><link href="http://changyuheng.github.io/" rel="alternate"></link><link href="http://changyuheng.github.io/feeds/all.atom.xml" rel="self"></link><id>http://changyuheng.github.io/</id><updated>2014-04-04T18:02:00+08:00</updated><entry><title>My Longest Streak on GitHub</title><link href="http://changyuheng.github.io/my-longest-streak-on-github.html" rel="alternate"></link><updated>2014-04-04T18:02:00+08:00</updated><author><name>Chang Yu-heng (張昱珩)</name></author><id>tag:changyuheng.github.io,2014-04-04:my-longest-streak-on-github.html</id><summary type="html">&lt;p&gt;這不是什麼光榮的事，總之突然興致起來，就洗了一下我在 GitHub 的 longest streak。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="GitHub Longest Streak" src="https://lh5.googleusercontent.com/-AJzPWfGumT0/Uz6ErcMsvcI/AAAAAAAAAmw/mDBNv92_F64/w1043-h426-no/github-longest-streak.png" /&gt;&lt;/p&gt;</summary><category term="Programming"></category></entry><entry><title>Gnome 3.6 與 KDE 4.10 於工作場所使用一年心得</title><link href="http://changyuheng.github.io/gnome-36-yu-kde-410-yu-gong-zuo-chang-suo-shi-yong-nian-xin-de.html" rel="alternate"></link><updated>2013-09-18T00:00:00+08:00</updated><author><name>Chang Yu-heng (張昱珩)</name></author><id>tag:changyuheng.github.io,2013-09-18:gnome-36-yu-kde-410-yu-gong-zuo-chang-suo-shi-yong-nian-xin-de.html</id><summary type="html">&lt;p&gt;在工作上使用 &lt;a href="http://www.kde.org/"&gt;KDE&lt;/a&gt; 一年有餘，從 4.8 用到 4.10。最近同時也在使用 &lt;a href="http://www.gnome.org/"&gt;Gnome&lt;/a&gt; 3.6，網路上的比較文章不少，再增加一篇，希望我能提供較新版本的使用經驗與不同的看法。&lt;/p&gt;
 &lt;p&gt;KDE 和 Gnome 的地位是一樣的，他們同樣是&lt;a href="http://zh.wikipedia.org/zh-tw/%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83"&gt;桌面環境&lt;/a&gt;。桌面環境簡言之即是一般使用者面對電腦的軟體介面，他包含了圖形、操作方法（如視窗的概念）、硬體管理、提供應用程式表現的方式……等，族繁不及備載。&lt;/p&gt;
 &lt;p&gt;KDE 與 Gnome 所使用的圖形引擎的不同，是一個很重要的差別。但若著重於桌面環境對工作效率的影響，這就不見得是一件重要的事。&lt;/p&gt;
 &lt;p&gt;概括來說，KDE 和 Gnome 都提供了漂亮且成熟的界面，兩者都能提供一般操作之所需。&lt;/p&gt;
@@ -46,7 +46,7 @@ Gnome 和 KDE 都提供了許多功能，不過 KDE 所提供的功能、自定�
 &lt;p&gt;相關資料：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.datamation.com/open-source/gnome-or-kde-the-old-question-is-new-today-1.html"&gt;GNOME or KDE? The Old Question Is New Today&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="Software"></category></entry><entry><title>Deployment of NCKU CSIE Gitit Theme</title><link href="http://changyuheng.github.io/deployment-of-ncku-csie-gitit-theme.html" rel="alternate"></link><updated>2013-08-25T00:00:00+02:00</updated><author><name>張昱珩 (Chang Yu-heng)</name></author><id>tag:changyuheng.github.io,2013-08-25:deployment-of-ncku-csie-gitit-theme.html</id><summary type="html">&lt;p&gt;&lt;a href="http://gitit.net/"&gt;Gitit&lt;/a&gt; 是一套以 Git 作為 base 的 wiki 系統。這套 wiki 的優點可以在&lt;a href="http://walkingice.blogspot.tw/2011/11/gitit-git-based-wiki.html"&gt;只放拖鞋的鞋櫃&lt;/a&gt;看到。在網路上的高手 &lt;a href="http://macropodus.github.io/gitit_mix_vimwiki.html"&gt;Macropodus&lt;/a&gt; 研究出如何和 Vimwiki 結合後，又更強化了他的優勢。&lt;/p&gt;
+&lt;/ul&gt;</summary><category term="Software"></category></entry><entry><title>Deployment of NCKU CSIE Gitit Theme</title><link href="http://changyuheng.github.io/deployment-of-ncku-csie-gitit-theme.html" rel="alternate"></link><updated>2013-08-25T00:00:00+08:00</updated><author><name>Chang Yu-heng (張昱珩)</name></author><id>tag:changyuheng.github.io,2013-08-25:deployment-of-ncku-csie-gitit-theme.html</id><summary type="html">&lt;p&gt;&lt;a href="http://gitit.net/"&gt;Gitit&lt;/a&gt; 是一套以 Git 作為 base 的 wiki 系統。這套 wiki 的優點可以在&lt;a href="http://walkingice.blogspot.tw/2011/11/gitit-git-based-wiki.html"&gt;只放拖鞋的鞋櫃&lt;/a&gt;看到。在網路上的高手 &lt;a href="http://macropodus.github.io/gitit_mix_vimwiki.html"&gt;Macropodus&lt;/a&gt; 研究出如何和 Vimwiki 結合後，又更強化了他的優勢。&lt;/p&gt;
 &lt;p&gt;不過 Gitit 預設的模版很沒有設計感，尤其是那個 logo 讓人看了很不舒服。所幸在 &lt;a href="https://groups.google.com/forum/#!topic/gitit-discuss/g6rZWIOmiu8"&gt;Google Group&lt;/a&gt; 發現了一套由成大資工所製作的好看佈景。以下將介紹如何安裝這套佈景：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -60,7 +60,7 @@ Gnome 和 KDE 都提供了許多功能，不過 KDE 所提供的功能、自定�
 &lt;/ol&gt;
 &lt;p&gt;到此為止都和這套佈景的官方安裝教學一樣。如果是採用發行版如 Ubuntu 所提供的 Gitit package，則已經完成。若是用 cabal 安裝, 則必須再安裝相依的套件，以 Ubuntu 為例：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;sudo apt-get install libghc-filestore-data libc6 libffi6 libgmp10 libpcre3 zlib1g libjs-jquery libjs-jquery-ui
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="Software"></category></entry><entry><title>Windows Photo Viewer Mouse Plug-in</title><link href="http://changyuheng.github.io/windows-photo-viewer-mouse-plug-in.html" rel="alternate"></link><updated>2013-02-08T11:26:00+01:00</updated><author><name>Chang-Yu-heng (張昱珩)</name></author><id>tag:changyuheng.github.io,2013-02-08:windows-photo-viewer-mouse-plug-in.html</id><summary type="html">&lt;p&gt;This simple tool gives Windows Photo Viewer the following features:&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="Software"></category></entry><entry><title>Windows Photo Viewer Mouse Plug-in</title><link href="http://changyuheng.github.io/windows-photo-viewer-mouse-plug-in.html" rel="alternate"></link><updated>2013-02-08T11:26:00+08:00</updated><author><name>Chang-Yu-heng (張昱珩)</name></author><id>tag:changyuheng.github.io,2013-02-08:windows-photo-viewer-mouse-plug-in.html</id><summary type="html">&lt;p&gt;This simple tool gives Windows Photo Viewer the following features:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Middle click to toggle window's size between normal and maximum.&lt;/li&gt;
 &lt;li&gt;Scroll up/down to show previous/next image.&lt;/li&gt;
@@ -69,14 +69,14 @@ Gnome 和 KDE 都提供了許多功能，不過 KDE 所提供的功能、自定�
 &lt;li&gt;F to show fit size.&lt;/li&gt;
 &lt;li&gt;Ctrl + A to toggle deafult presenting style between actual size and fit size.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt; &lt;a href="https://docs.google.com/file/d/0B-EPD3xEnb7PQ0FLcVZZR2xaT2s/edit?usp=sharing"&gt;Download&lt;/a&gt; &lt;/strong&gt;&lt;/p&gt;</summary><category term="Programming"></category></entry><entry><title>在 Ubuntu 12.04 安裝 IT-830UP 晶片讀卡機與使用 WebATM</title><link href="http://changyuheng.github.io/zai-ubuntu-1204-an-zhuang-it-830up-jing-pian-du-qia-ji-yu-shi-yong-webatm.html" rel="alternate"></link><updated>2013-01-29T01:33:00+01:00</updated><author><name>張昱珩 (Chang Yu-heng)</name></author><id>tag:changyuheng.github.io,2013-01-29:zai-ubuntu-1204-an-zhuang-it-830up-jing-pian-du-qia-ji-yu-shi-yong-webatm.html</id><summary type="html">&lt;p&gt;&lt;img alt="IT-830UP" src="http://www.ittec.com.tw/images/IT-830UP%28DM%29.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt; &lt;a href="https://docs.google.com/file/d/0B-EPD3xEnb7PQ0FLcVZZR2xaT2s/edit?usp=sharing"&gt;Download&lt;/a&gt; &lt;/strong&gt;&lt;/p&gt;</summary><category term="Programming"></category></entry><entry><title>在 Ubuntu 12.04 安裝 IT-830UP 晶片讀卡機與使用 WebATM</title><link href="http://changyuheng.github.io/zai-ubuntu-1204-an-zhuang-it-830up-jing-pian-du-qia-ji-yu-shi-yong-webatm.html" rel="alternate"></link><updated>2013-01-29T01:33:00+08:00</updated><author><name>Chang Yu-heng (張昱珩)</name></author><id>tag:changyuheng.github.io,2013-01-29:zai-ubuntu-1204-an-zhuang-it-830up-jing-pian-du-qia-ji-yu-shi-yong-webatm.html</id><summary type="html">&lt;p&gt;&lt;img alt="IT-830UP" src="http://www.ittec.com.tw/images/IT-830UP%28DM%29.jpg" /&gt;&lt;/p&gt;
 &lt;h2&gt;步驟 1. 安裝所需套件&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;sudo apt-get install pcscd pcsc-tools libccid
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;完成後可能需要自行重新啟動電腦才會生效。&lt;/p&gt;
-&lt;h2&gt;步驟 2. 依照 WebATM 提供的方法安裝所需程式，如：&lt;a href="http://netbank.esunbank.com.tw/webatm/Q&amp;amp;A_016.htm#01"&gt;玉山銀行&lt;/a&gt;&lt;/h2&gt;</summary><category term="Software"></category></entry><entry><title>在 Ubuntu 12.10 的 gcin 輸入法平台安裝嘸蝦米輸入法</title><link href="http://changyuheng.github.io/zai-ubuntu-1210-de-gcin-shu-ru-fa-ping-tai-an-zhuang-fu-xia-mi-shu-ru-fa.html" rel="alternate"></link><updated>2013-01-25T01:02:00+01:00</updated><author><name>張昱珩 (Chang Yu-heng)</name></author><id>tag:changyuheng.github.io,2013-01-25:zai-ubuntu-1210-de-gcin-shu-ru-fa-ping-tai-an-zhuang-fu-xia-mi-shu-ru-fa.html</id><summary type="html">&lt;h2&gt;步驟 1：安裝 gcin 及 im-switch&lt;/h2&gt;
+&lt;h2&gt;步驟 2. 依照 WebATM 提供的方法安裝所需程式，如：&lt;a href="http://netbank.esunbank.com.tw/webatm/Q&amp;amp;A_016.htm#01"&gt;玉山銀行&lt;/a&gt;&lt;/h2&gt;</summary><category term="Software"></category></entry><entry><title>在 Ubuntu 12.10 的 gcin 輸入法平台安裝嘸蝦米輸入法</title><link href="http://changyuheng.github.io/zai-ubuntu-1210-de-gcin-shu-ru-fa-ping-tai-an-zhuang-fu-xia-mi-shu-ru-fa.html" rel="alternate"></link><updated>2013-01-25T01:02:00+08:00</updated><author><name>Chang Yu-heng (張昱珩)</name></author><id>tag:changyuheng.github.io,2013-01-25:zai-ubuntu-1210-de-gcin-shu-ru-fa-ping-tai-an-zhuang-fu-xia-mi-shu-ru-fa.html</id><summary type="html">&lt;h2&gt;步驟 1：安裝 gcin 及 im-switch&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;sudo apt-get install gcin im-switch
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -111,7 +111,37 @@ Gnome 和 KDE 都提供了許多功能，不過 KDE 所提供的功能、自定�
 &lt;h2&gt;步驟 6：重新啟動 gcin&lt;/h2&gt;
 &lt;h2&gt;步驟 7：調整 gcin 設定&lt;/h2&gt;
 &lt;h3&gt;1. 在【內定輸入法 &amp;amp; 開啟/關閉】中調整嘸蝦米是否為預設輸入法、可否由 ctrl + shift 切換&lt;/h3&gt;
-&lt;h3&gt;2. 在【倉頡/行列/嘸蝦米/大易設定】中將【預覽/預選 字】調整為【全部開啟】&lt;/h3&gt;</summary><category term="Software"></category></entry><entry><title>Codeforces 快速入門</title><link href="http://changyuheng.github.io/codeforces-kuai-su-ru-men.html" rel="alternate"></link><updated>2012-11-24T00:00:00+01:00</updated><author><name>張昱珩 (Chang Yu-heng)</name></author><id>tag:changyuheng.github.io,2012-11-24:codeforces-kuai-su-ru-men.html</id><summary type="html">&lt;ol&gt;
+&lt;h3&gt;2. 在【倉頡/行列/嘸蝦米/大易設定】中將【預覽/預選 字】調整為【全部開啟】&lt;/h3&gt;&lt;script type= "text/javascript"&gt;
+    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+        var mathjaxscript = document.createElement('script');
+        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+        mathjaxscript.type = 'text/javascript';
+        mathjaxscript.src = 'https:' == document.location.protocol
+                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
+                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+            "MathJax.Hub.Config({" +
+            "    config: ['MMLorHTML.js']," +
+            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+            "    displayAlign: 'center'," +
+            "    displayIndent: '0em'," +
+            "    showMathMenu: true," +
+            "    tex2jax: { " +
+            "        inlineMath: [ ['$','$'] ], " +
+            "        displayMath: [ ['$$','$$'] ]," +
+            "        processEscapes: true," +
+            "        preview: 'TeX'," +
+            "    }, " +
+            "    'HTML-CSS': { " +
+            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+            "    } " +
+            "}); ";
+        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+    }
+&lt;/script&gt;
+</summary><category term="Software"></category></entry><entry><title>Codeforces 快速入門</title><link href="http://changyuheng.github.io/codeforces-kuai-su-ru-men.html" rel="alternate"></link><updated>2012-11-24T00:00:00+08:00</updated><author><name>Chang Yu-heng (張昱珩)</name></author><id>tag:changyuheng.github.io,2012-11-24:codeforces-kuai-su-ru-men.html</id><summary type="html">&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;什麼是 &lt;a href="http://codeforces.com/"&gt;Codeforces&lt;/a&gt;？&lt;/p&gt;
 &lt;p&gt;Codeforces 是一個知名的程式競賽 (programming contest) 網站。我們可以在此網站上討論程式設計，練習或比賽解題，也可以舉辦比賽。&lt;/p&gt;
@@ -280,4 +310,4 @@ It&amp;#39;s not allowed to break the flagstones. The sides of flagstones should
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
-&lt;/ol&gt;</summary><category term="Algorithm"></category></entry><entry><title>Syncing Samba Accounts with Unix Login Accounts</title><link href="http://changyuheng.github.io/syncing-samba-accounts-with-unix-login-accounts.html" rel="alternate"></link><updated>2012-07-16T00:00:00+02:00</updated><author><name>張昱珩 (Chang Yu-heng)</name></author><id>tag:changyuheng.github.io,2012-07-16:syncing-samba-accounts-with-unix-login-accounts.html</id><summary type="html">&lt;p&gt;libpam-smbpass&lt;/p&gt;</summary><category term="Software"></category></entry></feed>
+&lt;/ol&gt;</summary><category term="Algorithm"></category></entry><entry><title>Syncing Samba Accounts with Unix Login Accounts</title><link href="http://changyuheng.github.io/syncing-samba-accounts-with-unix-login-accounts.html" rel="alternate"></link><updated>2012-07-16T00:00:00+08:00</updated><author><name>Chang Yu-heng (張昱珩)</name></author><id>tag:changyuheng.github.io,2012-07-16:syncing-samba-accounts-with-unix-login-accounts.html</id><summary type="html">&lt;p&gt;libpam-smbpass&lt;/p&gt;</summary><category term="Software"></category></entry></feed>

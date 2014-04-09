@@ -4,7 +4,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>在 Ubuntu 12.04 安裝 IT-830UP 晶片讀卡機與使用 WebATM</title>
+  <title>A Programmer's Blog</title>
   <meta name="author" content="Chang Yu-heng (張昱珩)">
 
 
@@ -45,44 +45,131 @@
 
 <ul class="main-navigation">
       <li><a href="http://changyuheng.github.io/pages/about.html">About</a></li>
-    <li class="active">
+    <li >
     <a href="http://changyuheng.github.io/category/posts.html">Posts</a>
     </li>
 </ul></nav>
   <div id="main">
     <div id="content">
-<div>
-  <article class="hentry" role="article">
+<div class="blog-index">
+  		<article>
 <header>
-      <h1 class="entry-title">在 Ubuntu 12.04 安裝 IT-830UP 晶片讀卡機與使用 WebATM</h1>
-      <p class="meta"><time datetime="2013-01-29T01:33:00" pubdate>Tue 29 January 2013</time></p>
+      <h1 class="entry-title">
+        <a href="http://changyuheng.github.io/zai-ubuntu-1210-de-gcin-shu-ru-fa-ping-tai-an-zhuang-fu-xia-mi-shu-ru-fa.html">在 Ubuntu 12.10 的 gcin 輸入法平台安裝嘸蝦米輸入法</a>
+      </h1>
+      <p class="meta"><time datetime="2013-01-25T01:02:00" pubdate>Fri 25 January 2013</time></p>
 </header>
 
-  <div class="entry-content"><p><img alt="IT-830UP" src="http://www.ittec.com.tw/images/IT-830UP%28DM%29.jpg" /></p>
-<h2>步驟 1. 安裝所需套件</h2>
-<div class="highlight"><pre>sudo apt-get install pcscd pcsc-tools libccid
+  <div class="entry-content"><h2>步驟 1：安裝 gcin 及 im-switch</h2>
+<div class="highlight"><pre>sudo apt-get install gcin im-switch
 </pre></div>
 
 
-<p>完成後可能需要自行重新啟動電腦才會生效。</p>
-<h2>步驟 2. 依照 WebATM 提供的方法安裝所需程式，如：<a href="http://netbank.esunbank.com.tw/webatm/Q&amp;A_016.htm#01">玉山銀行</a></h2></div>
-    <footer>
-<p class="meta">
-  <span class="byline author vcard">
-    Posted by <span class="fn">Chang Yu-heng (張昱珩)</span>
-  </span>
-<time datetime="2013-01-29T01:33:00" pubdate>Tue 29 January 2013</time>  <span class="categories">
-    <a class="category" href="http://changyuheng.github.io/tag/software.html">Software</a>
-  </span>
-</p><div class="sharing">
-</div>    </footer>
-  </article>
+<h2>步驟 2：指定預設輸入法平台為 gcin，完成後重新啟動電腦</h2>
+<div class="highlight"><pre>im-switch
+</pre></div>
 
-  <section>
-    <h1>Comments</h1>
-    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
-  </section>
-</div>
+
+<h2>步驟 3：下載並解壓縮嘸蝦米官方提供的 gcin 用表格，接著開啟終端機並進入解壓縮目錄</h2>
+<h2>步驟 4：將表格等檔案複製到系統中</h2>
+<h3>1. 前置作業</h3>
+<div class="highlight"><pre>sudo updatedb
+</pre></div>
+
+
+<h3>2. 複製 *.gtab 到 gcin 表格目錄</h3>
+<div class="highlight"><pre>sudo cp *.gtab <span class="k">${</span><span class="nv">locate</span><span class="p"> gtab | grep gcin/table | while read line; do dirname </span><span class="s2">&quot;$line ...</span></pre></div></div>
+  <footer>
+    <a rel="full-article" href="http://changyuheng.github.io/zai-ubuntu-1210-de-gcin-shu-ru-fa-ping-tai-an-zhuang-fu-xia-mi-shu-ru-fa.html">Read On &crarr;</a>
+  </footer>
+  		</article>
+  		<article>
+<header>
+      <h1 class="entry-title">
+        <a href="http://changyuheng.github.io/codeforces-kuai-su-ru-men.html">Codeforces 快速入門</a>
+      </h1>
+      <p class="meta"><time datetime="2012-11-24T00:00:00" pubdate>Sat 24 November 2012</time></p>
+</header>
+
+  <div class="entry-content"><ol>
+<li>
+<p>什麼是 <a href="http://codeforces.com/">Codeforces</a>？</p>
+<p>Codeforces 是一個知名的程式競賽 (programming contest) 網站。我們可以在此網站上討論程式設計，練習或比賽解題，也可以舉辦比賽。</p>
+</li>
+<li>
+<p>支援哪些語言？</p>
+<ul>
+<li>C</li>
+<li>C++</li>
+<li>C#</li>
+<li>Delphi</li>
+<li>Free Pascal</li>
+<li>Haskell</li>
+<li>Java</li>
+<li>OCaml</li>
+<li>PHP</li>
+<li>Python</li>
+<li>Ruby</li>
+<li>Scala</li>
+</ul>
+</li>
+<li>
+<p>怎麼開始？</p>
+<ol>
+<li>
+<p>註冊</p>
+<ol>
+<li>
+<p>進入 <a href="http://codeforces.com/">Codeforces</a> 首頁</p>
+</li>
+<li>
+<p>點選右上角「Register」以進入註冊頁面</p>
+<p><a href="http://4.bp.blogspot.com/-XfEvaDBCOTk/ULM8IT2DcXI/AAAAAAAAACs/c1h6HPfQEyU/s1600/begin_to_register.png"><img alt="" src="http://4.bp.blogspot.com/-XfEvaDBCOTk/ULM8IT2DcXI/AAAAAAAAACs/c1h6HPfQEyU/s1600/begin_to_register.png" /></a></p>
+</li>
+<li>
+<p>填寫註冊表單，完成後按下「Register (確定註冊)」</p>
+<p><a href="http://1.bp.blogspot.com/-llYPYqqCEdA/ULM_auEZaQI/AAAAAAAAADM/95hG-xkdYuo/s1600/registration_form.png"><img alt="" src="http://1.bp.blogspot.com/-llYPYqqCEdA/ULM_auEZaQI/AAAAAAAAADM/95hG-xkdYuo/s1600/registration_form.png" /></a></p>
+</li>
+</ol>
+<p>經過以上步驟即可完成註冊。</p>
+<p>以下為選擇性設定：</p>
+<ol>
+<li>
+<p>登入</p>
+</li>
+<li>
+<p>點選右上角自己的帳號，進入個人資料頁面</p>
+</li>
+<li>
+<p>點選導覽列上的「SETTINGS」</p>
+</li>
+<li>
+<p>在「GENERAL」這一頁，可以上傳個人頭像、重新設定密碼、電子信箱等</p>
+</li>
+<li>
+<p>在 ...</p></li></ol></li></ol></li></ol></div>
+  <footer>
+    <a rel="full-article" href="http://changyuheng.github.io/codeforces-kuai-su-ru-men.html">Read On &crarr;</a>
+  </footer>
+  		</article>
+  		<article>
+<header>
+      <h1 class="entry-title">
+        <a href="http://changyuheng.github.io/syncing-samba-accounts-with-unix-login-accounts.html">Syncing Samba Accounts with Unix Login Accounts</a>
+      </h1>
+      <p class="meta"><time datetime="2012-07-16T00:00:00" pubdate>Mon 16 July 2012</time></p>
+</header>
+
+  <div class="entry-content"><p>libpam-smbpass</p></div>
+  <footer>
+    <a rel="full-article" href="http://changyuheng.github.io/syncing-samba-accounts-with-unix-login-accounts.html">Read On &crarr;</a>
+  </footer>
+  		</article>
+<div class="pagination">
+
+    <a class="next" href="http://changyuheng.github.io/index.html">Newer &rarr;</a>
+  <br />
+</div></div>
 <aside class="sidebar">
   <section>
     <h1>Recent Posts</h1>
@@ -134,9 +221,6 @@
 </script>
 	<script type="text/javascript">
 	  var disqus_shortname = 'aprogrammersblog';
-          var disqus_identifier = '/zai-ubuntu-1204-an-zhuang-it-830up-jing-pian-du-qia-ji-yu-shi-yong-webatm.html';
-          var disqus_url = 'http://changyuheng.github.io/zai-ubuntu-1204-an-zhuang-it-830up-jing-pian-du-qia-ji-yu-shi-yong-webatm.html';
-          var disqus_title = '在 Ubuntu 12.04 安裝 IT-830UP 晶片讀卡機與使用 WebATM';
 	  (function() {
 	    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
 	    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
