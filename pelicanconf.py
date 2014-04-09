@@ -36,5 +36,8 @@ GITHUB_URL = 'https://github.com/changyuheng'
 
 THEME = 'themes/pelican-octopress-theme'
 
+PLUGIN_PATH = 'plugins'
+PLUGINS = ['render_math']
+
 # Sepecific for Pelican Octopress Theme
 LICENSE = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a> This work by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Chang Yu-heng (張昱珩)</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<br />'
