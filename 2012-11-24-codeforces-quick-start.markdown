@@ -152,6 +152,6 @@ Tags: Algorithm
 
             在頁面最下方可以自訂排序規則，我們可以依照 Solution Size (source code 大小) 或 Execution Time (執行時間長短) 來排序，以方便我們找出想要參考的答案。右方可以選擇我們想要看到的語言。
 
-            [![languages](images/codeforces-solved.png)](images/codeforces-solved.png)
+            [![languages](images/codeforces-solved-languages.png)](images/codeforces-solved-languages.png)
 
             讀者可參考此題的 [Python 版解法](http://codeforces.com/contest/1/submission/1647521)、[Ruby 版解法](http://codeforces.com/contest/1/submission/2337277)、[PHP 版解法](http://codeforces.com/contest/1/submission/889578)、[C 版解法](http://codeforces.com/contest/1/submission/1337822)、[C++ 版解法](http://codeforces.com/contest/1/submission/759)、[C# 版解法](http://codeforces.com/contest/1/submission/2032793)、[Java 版解法](http://codeforces.com/contest/1/submission/604386)、[Scala 版解法](http://codeforces.com/contest/1/submission/1903268)、[JavaScript 版解法](http://codeforces.com/contest/1/submission/5482791)。
