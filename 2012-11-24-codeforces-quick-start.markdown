@@ -1,7 +1,6 @@
 Title: Codeforces 快速入門
 Date: 2012-11-24
 Tags: Algorithm
-Author: Chang Yu-heng (張昱珩)
 
 1. 什麼是 [Codeforces](http://codeforces.com/)？
 
@@ -12,10 +11,12 @@ Author: Chang Yu-heng (張昱珩)
     * C
     * C++
     * C#
+    * D
     * Delphi
     * Free Pascal
     * Haskell
     * Java
+    * JavaScript
     * OCaml
     * PHP
     * Python
@@ -30,11 +31,11 @@ Author: Chang Yu-heng (張昱珩)
 
         2. 點選右上角「Register」以進入註冊頁面
 
-            [![](http://4.bp.blogspot.com/-XfEvaDBCOTk/ULM8IT2DcXI/AAAAAAAAACs/c1h6HPfQEyU/s1600/begin_to_register.png)](http://4.bp.blogspot.com/-XfEvaDBCOTk/ULM8IT2DcXI/AAAAAAAAACs/c1h6HPfQEyU/s1600/begin_to_register.png)
+            [![begin to register](images/codeforces-begin-to-register.png)](images/codeforces-begin-to-register.png)
 
         3. 填寫註冊表單，完成後按下「Register (確定註冊)」
 
-            [![](http://1.bp.blogspot.com/-llYPYqqCEdA/ULM_auEZaQI/AAAAAAAAADM/95hG-xkdYuo/s1600/registration_form.png)](http://1.bp.blogspot.com/-llYPYqqCEdA/ULM_auEZaQI/AAAAAAAAADM/95hG-xkdYuo/s1600/registration_form.png)
+            [![registration form](images/codeforces-registration-form.png)](images/codeforces-registration-form.png)
 
         經過以上步驟即可完成註冊。
 
@@ -60,7 +61,7 @@ Author: Chang Yu-heng (張昱珩)
 
             3. 進入「[Theater Square](http://codeforces.com/problemset/problem/1/A)」
 
-            [![](http://2.bp.blogspot.com/-6Ci3mHL_wD4/ULNiXNDzf6I/AAAAAAAAADc/KnH3HOrCPS8/s1600/problemset.png)](http://2.bp.blogspot.com/-6Ci3mHL_wD4/ULNiXNDzf6I/AAAAAAAAADc/KnH3HOrCPS8/s1600/problemset.png)
+            [![problemset](codeforces-problemset.png)](codeforces-problemset.png)
 
             題目最上方的：
 
@@ -147,10 +148,10 @@ Author: Chang Yu-heng (張昱珩)
 
             寫完一道題目後，最重要的是檢討自己的答案。檢討的方法有很多，其中之一是觀察別人的解法。由導覽列 → PROBLEMSET 中找出我們的題目，並按下右方解題人數，即可看到大家對此題所寫的解法。
 
-            [![](http://4.bp.blogspot.com/-tnc7IUZhb1Y/ULNpNbdg2AI/AAAAAAAAADs/dclmNcnjMWE/s1600/solved.png)](http://4.bp.blogspot.com/-tnc7IUZhb1Y/ULNpNbdg2AI/AAAAAAAAADs/dclmNcnjMWE/s1600/solved.png)
+            [![solved](images/codeforces-solved.png)](images/codeforces-solved.png)
 
             在頁面最下方可以自訂排序規則，我們可以依照 Solution Size (source code 大小) 或 Execution Time (執行時間長短) 來排序，以方便我們找出想要參考的答案。右方可以選擇我們想要看到的語言。
 
-            [![](http://1.bp.blogspot.com/-0UMrCC6I4wE/ULNqulcBplI/AAAAAAAAAD0/uIQyrdnF9gE/s1600/solved_lang.png)](http://1.bp.blogspot.com/-0UMrCC6I4wE/ULNqulcBplI/AAAAAAAAAD0/uIQyrdnF9gE/s1600/solved_lang.png)
+            [![languages](images/codeforces-solved-languages.png)](images/codeforces-solved-languages.png)
 
-            讀者可參考此題的 [Python 版解法](http://codeforces.com/contest/1/submission/1647521)、[Ruby 版解法](http://codeforces.com/contest/1/submission/2337277)、[PHP 版解法](http://codeforces.com/contest/1/submission/889578)、[C 版解法](http://codeforces.com/contest/1/submission/1337822)、[C++ 版解法](http://codeforces.com/contest/1/submission/759)、[C# 版解法](http://codeforces.com/contest/1/submission/2032793)、[Java 版解法](http://codeforces.com/contest/1/submission/604386)、[Scala 版解法](http://codeforces.com/contest/1/submission/1903268)。
+            讀者可參考此題的 [Python 版解法](http://codeforces.com/contest/1/submission/1647521)、[Ruby 版解法](http://codeforces.com/contest/1/submission/2337277)、[PHP 版解法](http://codeforces.com/contest/1/submission/889578)、[C 版解法](http://codeforces.com/contest/1/submission/1337822)、[C++ 版解法](http://codeforces.com/contest/1/submission/759)、[C# 版解法](http://codeforces.com/contest/1/submission/2032793)、[Java 版解法](http://codeforces.com/contest/1/submission/604386)、[Scala 版解法](http://codeforces.com/contest/1/submission/1903268)、[JavaScript 版解法](http://codeforces.com/contest/1/submission/5482791)。

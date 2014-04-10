@@ -1,7 +1,6 @@
 Title: Windows Photo Viewer Mouse Plug-in
 Date: 2013-02-08 11:26
 Tags: Programming
-Author: Chang-Yu-heng (張昱珩)
 
 This simple tool gives Windows Photo Viewer the following features:
 
