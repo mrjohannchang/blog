@@ -222,7 +222,7 @@ Gnome 和 KDE 都提供了許多功能，不過 KDE 所提供的功能、自定�
 &lt;p&gt;進入「&lt;a href="http://codeforces.com/problemset/problem/1/A"&gt;Theater Square&lt;/a&gt;」&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;a href="codeforces-problemset.png"&gt;&lt;img alt="problemset" src="codeforces-problemset.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="images/codeforces-problemset.png"&gt;&lt;img alt="problemset" src="images/codeforces-problemset.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;題目最上方的：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;time limit per test: 2 seconds
 memory limit per test: 64 megabytes
@@ -308,7 +308,7 @@ It&amp;#39;s not allowed to break the flagstones. The sides of flagstones should
 &lt;p&gt;寫完一道題目後，最重要的是檢討自己的答案。檢討的方法有很多，其中之一是觀察別人的解法。由導覽列 → PROBLEMSET 中找出我們的題目，並按下右方解題人數，即可看到大家對此題所寫的解法。&lt;/p&gt;
 &lt;p&gt;&lt;a href="images/codeforces-solved.png"&gt;&lt;img alt="solved" src="images/codeforces-solved.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;在頁面最下方可以自訂排序規則，我們可以依照 Solution Size (source code 大小) 或 Execution Time (執行時間長短) 來排序，以方便我們找出想要參考的答案。右方可以選擇我們想要看到的語言。&lt;/p&gt;
-&lt;p&gt;&lt;a href="images/codeforces-solved-languages.png"&gt;&lt;img alt="languages" src="images/codeforces-solved-languages.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="images/codeforces-solved.png"&gt;&lt;img alt="languages" src="images/codeforces-solved.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;讀者可參考此題的 &lt;a href="http://codeforces.com/contest/1/submission/1647521"&gt;Python 版解法&lt;/a&gt;、&lt;a href="http://codeforces.com/contest/1/submission/2337277"&gt;Ruby 版解法&lt;/a&gt;、&lt;a href="http://codeforces.com/contest/1/submission/889578"&gt;PHP 版解法&lt;/a&gt;、&lt;a href="http://codeforces.com/contest/1/submission/1337822"&gt;C 版解法&lt;/a&gt;、&lt;a href="http://codeforces.com/contest/1/submission/759"&gt;C++ 版解法&lt;/a&gt;、&lt;a href="http://codeforces.com/contest/1/submission/2032793"&gt;C# 版解法&lt;/a&gt;、&lt;a href="http://codeforces.com/contest/1/submission/604386"&gt;Java 版解法&lt;/a&gt;、&lt;a href="http://codeforces.com/contest/1/submission/1903268"&gt;Scala 版解法&lt;/a&gt;、&lt;a href="http://codeforces.com/contest/1/submission/5482791"&gt;JavaScript 版解法&lt;/a&gt;。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
