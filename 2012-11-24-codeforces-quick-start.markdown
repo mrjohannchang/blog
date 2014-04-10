@@ -1,4 +1,4 @@
-Title: Codeforces 快速入門
+Title: Codeforces 快速入門 (簡介、介紹、教學)
 Date: 2012-11-24
 Tags: Algorithm
 
