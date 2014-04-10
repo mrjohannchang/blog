@@ -144,7 +144,7 @@ Gnome 和 KDE 都提供了許多功能，不過 KDE 所提供的功能、自定�
         (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
     }
 &lt;/script&gt;
-</summary><category term="Software"></category></entry><entry><title>Codeforces 快速入門</title><link href="http://changyuheng.github.io/codeforces-kuai-su-ru-men.html" rel="alternate"></link><updated>2012-11-24T00:00:00+08:00</updated><author><name>Chang Yu-heng (張昱珩)</name></author><id>tag:changyuheng.github.io,2012-11-24:codeforces-kuai-su-ru-men.html</id><summary type="html">&lt;ol&gt;
+</summary><category term="Software"></category></entry><entry><title>Codeforces 快速入門 (簡介、介紹、教學)</title><link href="http://changyuheng.github.io/codeforces-kuai-su-ru-men-jian-jie-jie-shao-jiao-xue.html" rel="alternate"></link><updated>2012-11-24T00:00:00+08:00</updated><author><name>Chang Yu-heng (張昱珩)</name></author><id>tag:changyuheng.github.io,2012-11-24:codeforces-kuai-su-ru-men-jian-jie-jie-shao-jiao-xue.html</id><summary type="html">&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;什麼是 &lt;a href="http://codeforces.com/"&gt;Codeforces&lt;/a&gt;？&lt;/p&gt;
 &lt;p&gt;Codeforces 是一個知名的程式競賽 (programming contest) 網站。我們可以在此網站上討論程式設計，練習或比賽解題，也可以舉辦比賽。&lt;/p&gt;
