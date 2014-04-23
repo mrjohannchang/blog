@@ -4,7 +4,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>A Programmer's Blog</title>
+  <title>A Programmer's Blog - Software</title>
   <meta name="author" content="Chang Yu-heng (張昱珩)">
 
   <link href="http://changyuheng.github.io/feeds/atom.xml" type="application/atom+xml" rel="alternate"
@@ -47,152 +47,13 @@
 
 <ul class="main-navigation">
       <li><a href="http://changyuheng.github.io/pages/about.html">About</a></li>
-    <li class="active">
+    <li >
     <a href="http://changyuheng.github.io/category/posts.html">Posts</a>
     </li>
 </ul></nav>
   <div id="main">
     <div id="content">
 <div class="blog-index">
-  		<article>
-<header>
-      <h1 class="entry-title">
-        <a href="http://changyuheng.github.io/windows-photo-viewer-mouse-plug-in.html">Windows Photo Viewer Mouse Plug-in</a>
-      </h1>
-      <p class="meta"><time datetime="2013-02-08T11:26:00" pubdate>Fri 08 February 2013</time></p>
-</header>
-
-  <div class="entry-content"><p>This simple tool gives Windows Photo Viewer the following features:</p>
-<ol>
-<li>Middle click to toggle window's size between normal and maximum.</li>
-<li>Scroll up/down to show previous/next image.</li>
-<li>Ctrl + scroll up/down to zoom in/out.</li>
-<li>A to show actual size.</li>
-<li>F to show fit size.</li>
-<li>Ctrl + A to ...</li></ol></div>
-  <footer>
-    <a rel="full-article" href="http://changyuheng.github.io/windows-photo-viewer-mouse-plug-in.html">Read On &crarr;</a>
-  </footer>
-  		</article>
-  		<article>
-<header>
-      <h1 class="entry-title">
-        <a href="http://changyuheng.github.io/zai-ubuntu-1204-an-zhuang-it-830up-jing-pian-du-qia-ji-yu-shi-yong-webatm.html">在 Ubuntu 12.04 安裝 IT-830UP 晶片讀卡機與使用 WebATM</a>
-      </h1>
-      <p class="meta"><time datetime="2013-01-29T01:33:00" pubdate>Tue 29 January 2013</time></p>
-</header>
-
-  <div class="entry-content"><p><img alt="IT-830UP" src="http://www.ittec.com.tw/images/IT-830UP%28DM%29.jpg" /></p>
-<h2>步驟 1. 安裝所需套件</h2>
-<div class="highlight"><pre>sudo apt-get install pcscd pcsc-tools libccid
-</pre></div>
-
-
-<p>完成後可能需要自行重新啟動電腦才會生效。</p>
-<h2>步驟 2. 依照 WebATM 提供的方法安裝所需程式，如：<a href="http://netbank.esunbank.com.tw/webatm/Q&amp;A_016.htm#01">玉山銀行</a></h2></div>
-  <footer>
-    <a rel="full-article" href="http://changyuheng.github.io/zai-ubuntu-1204-an-zhuang-it-830up-jing-pian-du-qia-ji-yu-shi-yong-webatm.html">Read On &crarr;</a>
-  </footer>
-  		</article>
-  		<article>
-<header>
-      <h1 class="entry-title">
-        <a href="http://changyuheng.github.io/zai-ubuntu-1210-de-gcin-shu-ru-fa-ping-tai-an-zhuang-fu-xia-mi-shu-ru-fa.html">在 Ubuntu 12.10 的 gcin 輸入法平台安裝嘸蝦米輸入法</a>
-      </h1>
-      <p class="meta"><time datetime="2013-01-25T01:02:00" pubdate>Fri 25 January 2013</time></p>
-</header>
-
-  <div class="entry-content"><h2>步驟 1：安裝 gcin 及 im-switch</h2>
-<div class="highlight"><pre>sudo apt-get install gcin im-switch
-</pre></div>
-
-
-<h2>步驟 2：指定預設輸入法平台為 gcin，完成後重新啟動電腦</h2>
-<div class="highlight"><pre>im-switch
-</pre></div>
-
-
-<h2>步驟 3：下載並解壓縮嘸蝦米官方提供的 gcin 用表格，接著開啟終端機並進入解壓縮目錄</h2>
-<h2>步驟 4：將表格等檔案複製到系統中</h2>
-<h3>1. 前置作業</h3>
-<div class="highlight"><pre>sudo updatedb
-</pre></div>
-
-
-<h3>2. 複製 *.gtab 到 gcin 表格目錄</h3>
-<div class="highlight"><pre>sudo cp *.gtab <span class="k">$(</span>locate gtab | grep gcin/table | <span class="k">while </span><span class="nb">read </span>line; <span class="k">do </span>dirname <span class="s2">&quot;$line ...</span></pre></div></div>
-  <footer>
-    <a rel="full-article" href="http://changyuheng.github.io/zai-ubuntu-1210-de-gcin-shu-ru-fa-ping-tai-an-zhuang-fu-xia-mi-shu-ru-fa.html">Read On &crarr;</a>
-  </footer>
-  		</article>
-  		<article>
-<header>
-      <h1 class="entry-title">
-        <a href="http://changyuheng.github.io/codeforces-kuai-su-ru-men-jian-jie-jie-shao-jiao-xue.html">Codeforces 快速入門 (簡介、介紹、教學)</a>
-      </h1>
-      <p class="meta"><time datetime="2012-11-24T00:00:00" pubdate>Sat 24 November 2012</time></p>
-</header>
-
-  <div class="entry-content"><ol>
-<li>
-<p>什麼是 <a href="http://codeforces.com/">Codeforces</a>？</p>
-<p>Codeforces 是一個知名的程式競賽 (programming contest) 網站。我們可以在此網站上討論程式設計，練習或比賽解題，也可以舉辦比賽。</p>
-</li>
-<li>
-<p>支援哪些語言？</p>
-<ul>
-<li>C</li>
-<li>C++</li>
-<li>C#</li>
-<li>D</li>
-<li>Delphi</li>
-<li>Free Pascal</li>
-<li>Haskell</li>
-<li>Java</li>
-<li>JavaScript</li>
-<li>OCaml</li>
-<li>PHP</li>
-<li>Python</li>
-<li>Ruby</li>
-<li>Scala</li>
-</ul>
-</li>
-<li>
-<p>怎麼開始？</p>
-<ol>
-<li>
-<p>註冊</p>
-<ol>
-<li>
-<p>進入 <a href="http://codeforces.com/">Codeforces</a> 首頁</p>
-</li>
-<li>
-<p>點選右上角「Register」以進入註冊頁面</p>
-<p><a href="images/codeforces-begin-to-register.png"><img alt="begin to register" src="images/codeforces-begin-to-register.png" /></a></p>
-</li>
-<li>
-<p>填寫註冊表單，完成後按下「Register (確定註冊)」</p>
-<p><a href="images/codeforces-registration-form.png"><img alt="registration form" src="images/codeforces-registration-form.png" /></a></p>
-</li>
-</ol>
-<p>經過以上步驟即可完成註冊。</p>
-<p>以下為選擇性設定：</p>
-<ol>
-<li>
-<p>登入</p>
-</li>
-<li>
-<p>點選右上角自己的帳號，進入個人資料頁面</p>
-</li>
-<li>
-<p>點選導覽列上的「SETTINGS」</p>
-</li>
-<li>
-<p>在「GENERAL」這一頁，可以上傳個人頭像、重新設定密碼 ...</p></li></ol></li></ol></li></ol></div>
-  <footer>
-    <a rel="full-article" href="http://changyuheng.github.io/codeforces-kuai-su-ru-men-jian-jie-jie-shao-jiao-xue.html">Read On &crarr;</a>
-  </footer>
-  		</article>
   		<article>
 <header>
       <h1 class="entry-title">
@@ -208,7 +69,7 @@
   		</article>
 <div class="pagination">
 
-    <a class="next" href="http://changyuheng.github.io/category/posts.html">Newer &rarr;</a>
+    <a class="next" href="http://changyuheng.github.io/tag/software.html">Newer &rarr;</a>
   <br />
 </div></div>
 <aside class="sidebar">
@@ -219,16 +80,16 @@
           <a href="http://changyuheng.github.io/my-ubuntu-gnome-tweaks.html">My Ubuntu GNOME Tweaks</a>
       </li>
       <li class="post">
-          <a href="http://changyuheng.github.io/codeforces-problem-1b.html">Codeforces Problem 1B</a>
-      </li>
-      <li class="post">
-          <a href="http://changyuheng.github.io/my-longest-streak-on-github.html">My Longest Streak on GitHub</a>
-      </li>
-      <li class="post">
           <a href="http://changyuheng.github.io/gnome-36-yu-kde-410-yu-gong-zuo-chang-suo-shi-yong-nian-xin-de.html">Gnome 3.6 與 KDE 4.10 於工作場所使用一年心得</a>
       </li>
       <li class="post">
           <a href="http://changyuheng.github.io/deployment-of-ncku-csie-gitit-theme.html">Deployment of NCKU CSIE Gitit Theme</a>
+      </li>
+      <li class="post">
+          <a href="http://changyuheng.github.io/zai-ubuntu-1204-an-zhuang-it-830up-jing-pian-du-qia-ji-yu-shi-yong-webatm.html">在 Ubuntu 12.04 安裝 IT-830UP 晶片讀卡機與使用 WebATM</a>
+      </li>
+      <li class="post">
+          <a href="http://changyuheng.github.io/zai-ubuntu-1210-de-gcin-shu-ru-fa-ping-tai-an-zhuang-fu-xia-mi-shu-ru-fa.html">在 Ubuntu 12.10 的 gcin 輸入法平台安裝嘸蝦米輸入法</a>
       </li>
     </ul>
   </section>
