@@ -3,23 +3,30 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Chang Yu-heng (張昱珩)'
 SITENAME = "A Programmer's Blog"
+SITEURL = ''
 
 TIMEZONE = 'Asia/Taipei'
 
 DEFAULT_LANG = 'zh'
 LOCALE = 'en_US.UTF-8'
 
-DEFAULT_CATEGORY = 'Posts'
+DEFAULT_CATEGORY = 'Blog'
+
+MENUITEMS = (
+        ('Archives', SITEURL + '/archives.html'),
+        )
 
 # Blogroll
 LINKS = (
         ('SAY something', 'http://sayuan.github.io/'),
-        ("Yongjhih's Octopress Blog", 'http://yongjhih.github.io/')
+        ("Yongjhih's Octopress Blog", 'http://yongjhih.github.io/'),
         )
 
 # Social widget
-SOCIAL = (('Facebook', 'https://facebook.com/mr.changyuheng'),
-        ('Github', 'https://github.com/changyuheng'),)
+SOCIAL = (
+        ('Facebook', 'https://facebook.com/mr.changyuheng'),
+        ('Github', 'https://github.com/changyuheng'),
+        )
 
 DEFAULT_PAGINATION = 5
 
@@ -34,7 +41,6 @@ STATIC_PATHS = [
 GITHUB_URL = 'https://github.com/changyuheng'
 
 THEME = 'themes/pelican-octopress-theme'
-
 PLUGIN_PATH = 'plugins'
 PLUGINS = ['render_math']
 
