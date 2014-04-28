@@ -24,8 +24,10 @@ LINKS = (
 
 # Social widget
 SOCIAL = (
+        ('Codeforces', 'http://codeforces.com/profile/changyuheng'),
         ('Facebook', 'https://facebook.com/mr.changyuheng'),
         ('Github', 'https://github.com/changyuheng'),
+        ('LinkedIn', 'http://www.linkedin.com/pub/yu-heng-chang/56/583/6b8'),
         )
 
 DEFAULT_PAGINATION = 5
