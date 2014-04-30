@@ -416,4 +416,25 @@ It&amp;#39;s not allowed to break the flagstones. The sides of flagstones should
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
-&lt;/ol&gt;</summary><category term="Algorithm"></category></entry><entry><title>Syncing Samba Accounts with Unix Login Accounts</title><link href="http://changyuheng.github.io/syncing-samba-accounts-with-unix-login-accounts.html" rel="alternate"></link><updated>2012-07-16T00:00:00+08:00</updated><author><name>Chang Yu-heng (張昱珩)</name></author><id>tag:changyuheng.github.io,2012-07-16:syncing-samba-accounts-with-unix-login-accounts.html</id><summary type="html">&lt;p&gt;libpam-smbpass&lt;/p&gt;</summary><category term="Software"></category></entry></feed>
+&lt;/ol&gt;</summary><category term="Algorithm"></category></entry><entry><title>Syncing Samba Accounts with Unix Login Accounts</title><link href="http://changyuheng.github.io/syncing-samba-accounts-with-unix-login-accounts.html" rel="alternate"></link><updated>2012-07-16T00:00:00+08:00</updated><author><name>Chang Yu-heng (張昱珩)</name></author><id>tag:changyuheng.github.io,2012-07-16:syncing-samba-accounts-with-unix-login-accounts.html</id><summary type="html">&lt;p&gt;libpam-smbpass&lt;/p&gt;</summary><category term="Software"></category></entry><entry><title>AutoCheckIn for Garena</title><link href="http://changyuheng.github.io/autocheckin-for-garena.html" rel="alternate"></link><updated>2010-03-25T00:00:00+08:00</updated><author><name>Chang Yu-heng (張昱珩)</name></author><id>tag:changyuheng.github.io,2010-03-25:autocheckin-for-garena.html</id><summary type="html">&lt;p&gt;&lt;img alt="screenshot" src="https://raw.githubusercontent.com/changyuheng/garena-autocheckin/master/screenshot.png" /&gt;&lt;/p&gt;
+&lt;p&gt;支援：Garena 3.x 中文版 &amp;amp; 2010 (4.0.1.6127) English Version、中文版&lt;/p&gt;
+&lt;p&gt;作業系統：Windows 2000 / XP / Vista / 7 32-bit &amp;amp; 64-bit&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;特色&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;背景自動擠房&lt;/li&gt;
+&lt;li&gt;開放原始碼&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;使用方法&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;執行 AutoCheckIn&lt;/li&gt;
+&lt;li&gt;雙擊房間即可自動擠房&lt;/li&gt;
+&lt;li&gt;開始擠房後，可以最小化 Garena。&lt;/li&gt;
+&lt;li&gt;進入房間後，若 Garena 提示：「您仍在房間裡，要離開房間嗎？」，把它關掉就好了。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;成功加入房間後，程式會彈到最上層提示。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;類似的軟體&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="http://kloerhe.pixnet.net/blog/post/23885234-[-作品-]-garena-room-joiner-2-#-支援-xp---vista-#-05-19-"&gt;Garena Room Joiner 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;[&lt;strong&gt;&lt;a href="https://raw.githubusercontent.com/changyuheng/garena-autocheckin/master/AutoCheckIn.exe"&gt;下載&lt;/a&gt;&lt;/strong&gt;]
+[&lt;strong&gt;&lt;a href="https://github.com/changyuheng/garena-autocheckin"&gt;原始碼&lt;/a&gt;&lt;/strong&gt;]&lt;/p&gt;</summary><category term="Software"></category></entry></feed>
