@@ -1,5 +1,5 @@
 Title: Deployment of NCKU CSIE Gitit Theme
-Date: 2013-08-25
+Date: 2010-04-22
 Tags: Software
 
 [Gitit](http://gitit.net/) 是一套以 Git 作為 base 的 wiki 系統。這套 wiki 的優點可以在[只放拖鞋的鞋櫃](http://walkingice.blogspot.tw/2011/11/gitit-git-based-wiki.html)看到。在網路上的高手 [Macropodus](http://macropodus.github.io/gitit_mix_vimwiki.html) 研究出如何和 Vimwiki 結合後，又更強化了他的優勢。

@@ -1,5 +1,5 @@
 Title: Codeforces 快速入門 (簡介、介紹、教學)
-Date: 2012-11-24
+Date: 2010-04-20
 Tags: Algorithm
 
 1. 什麼是 [Codeforces](http://codeforces.com/)？
