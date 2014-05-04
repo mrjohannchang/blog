@@ -1,6 +1,6 @@
 Title: PTT Efficient Poster
 Date: 2007-11-06
-Tags: Software
+Tags: Programming, Software
 
 
 ![screenshot](https://raw.githubusercontent.com/changyuheng/ptt-efficient-poster/master/screenshot.png)

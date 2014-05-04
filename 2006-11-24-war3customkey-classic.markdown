@@ -1,6 +1,6 @@
 Title: War3Customkey Classic
 Date: 2006-11-24
-Tags: Software
+Tags: Programming, Software
 
 
 ![screenshot](https://raw.githubusercontent.com/changyuheng/war3customkey-classic/master/screenshot.png)
