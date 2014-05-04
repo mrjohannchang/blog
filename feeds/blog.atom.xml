@@ -147,24 +147,7 @@ Gnome 和 KDE 都提供了許多功能，不過 KDE 所提供的功能、自定�
 &lt;p&gt;相關資料：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.datamation.com/open-source/gnome-or-kde-the-old-question-is-new-today-1.html"&gt;GNOME or KDE? The Old Question Is New Today&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="Software"></category></entry><entry><title>Deployment of NCKU CSIE Gitit Theme</title><link href="http://changyuheng.github.io/deployment-of-ncku-csie-gitit-theme.html" rel="alternate"></link><updated>2013-08-25T00:00:00+08:00</updated><author><name>Chang Yu-heng (張昱珩)</name></author><id>tag:changyuheng.github.io,2013-08-25:deployment-of-ncku-csie-gitit-theme.html</id><summary type="html">&lt;p&gt;&lt;a href="http://gitit.net/"&gt;Gitit&lt;/a&gt; 是一套以 Git 作為 base 的 wiki 系統。這套 wiki 的優點可以在&lt;a href="http://walkingice.blogspot.tw/2011/11/gitit-git-based-wiki.html"&gt;只放拖鞋的鞋櫃&lt;/a&gt;看到。在網路上的高手 &lt;a href="http://macropodus.github.io/gitit_mix_vimwiki.html"&gt;Macropodus&lt;/a&gt; 研究出如何和 Vimwiki 結合後，又更強化了他的優勢。&lt;/p&gt;
-&lt;p&gt;不過 Gitit 預設的模版很沒有設計感，尤其是那個 logo 讓人看了很不舒服。所幸在 &lt;a href="https://groups.google.com/forum/#!topic/gitit-discuss/g6rZWIOmiu8"&gt;Google Group&lt;/a&gt; 發現了一套由成大資工所製作的好看佈景。以下將介紹如何安裝這套佈景：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;下載佈景
-打包好的佈景可以在 &lt;a href="https://github.com/CrBoy/csiewiki"&gt;GitHub&lt;/a&gt; 上找到&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;安裝佈景
-將包裏解開後，取代 Gitit 原來的 static 和 templates 資料夾&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;到此為止都和這套佈景的官方安裝教學一樣。如果是採用發行版如 Ubuntu 所提供的 Gitit package，則已經完成。若是用 cabal 安裝, 則必須再安裝相依的套件，以 Ubuntu 為例：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;sudo apt-get install libghc-filestore-data libc6 libffi6 libgmp10 libpcre3 zlib1g libjs-jquery libjs-jquery-ui
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;完成的樣子可以參考&lt;a href="http://wiki.csie.ncku.edu.tw/"&gt;成大資工 Wiki&lt;/a&gt;。&lt;/p&gt;</summary><category term="Software"></category></entry><entry><title>在 Ubuntu 12.04 安裝 IT-830UP 晶片讀卡機與使用 WebATM</title><link href="http://changyuheng.github.io/zai-ubuntu-1204-an-zhuang-it-830up-jing-pian-du-qia-ji-yu-shi-yong-webatm.html" rel="alternate"></link><updated>2013-01-29T01:33:00+08:00</updated><author><name>Chang Yu-heng (張昱珩)</name></author><id>tag:changyuheng.github.io,2013-01-29:zai-ubuntu-1204-an-zhuang-it-830up-jing-pian-du-qia-ji-yu-shi-yong-webatm.html</id><summary type="html">&lt;p&gt;&lt;img alt="IT-830UP" src="http://www.ittec.com.tw/images/IT-830UP%28DM%29.jpg" /&gt;&lt;/p&gt;
+&lt;/ul&gt;</summary><category term="Software"></category></entry><entry><title>在 Ubuntu 12.04 安裝 IT-830UP 晶片讀卡機與使用 WebATM</title><link href="http://changyuheng.github.io/zai-ubuntu-1204-an-zhuang-it-830up-jing-pian-du-qia-ji-yu-shi-yong-webatm.html" rel="alternate"></link><updated>2013-01-29T01:33:00+08:00</updated><author><name>Chang Yu-heng (張昱珩)</name></author><id>tag:changyuheng.github.io,2013-01-29:zai-ubuntu-1204-an-zhuang-it-830up-jing-pian-du-qia-ji-yu-shi-yong-webatm.html</id><summary type="html">&lt;p&gt;&lt;img alt="IT-830UP" src="http://www.ittec.com.tw/images/IT-830UP%28DM%29.jpg" /&gt;&lt;/p&gt;
 &lt;h2&gt;步驟 1. 安裝所需套件&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;sudo apt-get install pcscd pcsc-tools libccid
 &lt;/pre&gt;&lt;/div&gt;
@@ -236,7 +219,24 @@ Gnome 和 KDE 都提供了許多功能，不過 KDE 所提供的功能、自定�
         (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
     }
 &lt;/script&gt;
-</summary><category term="Software"></category></entry><entry><title>Codeforces 快速入門 (簡介、介紹、教學)</title><link href="http://changyuheng.github.io/codeforces-kuai-su-ru-men-jian-jie-jie-shao-jiao-xue.html" rel="alternate"></link><updated>2012-11-24T00:00:00+08:00</updated><author><name>Chang Yu-heng (張昱珩)</name></author><id>tag:changyuheng.github.io,2012-11-24:codeforces-kuai-su-ru-men-jian-jie-jie-shao-jiao-xue.html</id><summary type="html">&lt;ol&gt;
+</summary><category term="Software"></category></entry><entry><title>Syncing Samba Accounts with Unix Login Accounts</title><link href="http://changyuheng.github.io/syncing-samba-accounts-with-unix-login-accounts.html" rel="alternate"></link><updated>2011-12-06T00:00:00+08:00</updated><author><name>Chang Yu-heng (張昱珩)</name></author><id>tag:changyuheng.github.io,2011-12-06:syncing-samba-accounts-with-unix-login-accounts.html</id><summary type="html">&lt;p&gt;libpam-smbpass&lt;/p&gt;</summary><category term="Software"></category></entry><entry><title>Deployment of NCKU CSIE Gitit Theme</title><link href="http://changyuheng.github.io/deployment-of-ncku-csie-gitit-theme.html" rel="alternate"></link><updated>2010-04-22T00:00:00+08:00</updated><author><name>Chang Yu-heng (張昱珩)</name></author><id>tag:changyuheng.github.io,2010-04-22:deployment-of-ncku-csie-gitit-theme.html</id><summary type="html">&lt;p&gt;&lt;a href="http://gitit.net/"&gt;Gitit&lt;/a&gt; 是一套以 Git 作為 base 的 wiki 系統。這套 wiki 的優點可以在&lt;a href="http://walkingice.blogspot.tw/2011/11/gitit-git-based-wiki.html"&gt;只放拖鞋的鞋櫃&lt;/a&gt;看到。在網路上的高手 &lt;a href="http://macropodus.github.io/gitit_mix_vimwiki.html"&gt;Macropodus&lt;/a&gt; 研究出如何和 Vimwiki 結合後，又更強化了他的優勢。&lt;/p&gt;
+&lt;p&gt;不過 Gitit 預設的模版很沒有設計感，尤其是那個 logo 讓人看了很不舒服。所幸在 &lt;a href="https://groups.google.com/forum/#!topic/gitit-discuss/g6rZWIOmiu8"&gt;Google Group&lt;/a&gt; 發現了一套由成大資工所製作的好看佈景。以下將介紹如何安裝這套佈景：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;下載佈景
+打包好的佈景可以在 &lt;a href="https://github.com/CrBoy/csiewiki"&gt;GitHub&lt;/a&gt; 上找到&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安裝佈景
+將包裏解開後，取代 Gitit 原來的 static 和 templates 資料夾&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;到此為止都和這套佈景的官方安裝教學一樣。如果是採用發行版如 Ubuntu 所提供的 Gitit package，則已經完成。若是用 cabal 安裝, 則必須再安裝相依的套件，以 Ubuntu 為例：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo apt-get install libghc-filestore-data libc6 libffi6 libgmp10 libpcre3 zlib1g libjs-jquery libjs-jquery-ui
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;完成的樣子可以參考&lt;a href="http://wiki.csie.ncku.edu.tw/"&gt;成大資工 Wiki&lt;/a&gt;。&lt;/p&gt;</summary><category term="Software"></category></entry><entry><title>Codeforces 快速入門 (簡介、介紹、教學)</title><link href="http://changyuheng.github.io/codeforces-kuai-su-ru-men-jian-jie-jie-shao-jiao-xue.html" rel="alternate"></link><updated>2010-04-20T00:00:00+08:00</updated><author><name>Chang Yu-heng (張昱珩)</name></author><id>tag:changyuheng.github.io,2010-04-20:codeforces-kuai-su-ru-men-jian-jie-jie-shao-jiao-xue.html</id><summary type="html">&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;什麼是 &lt;a href="http://codeforces.com/"&gt;Codeforces&lt;/a&gt;？&lt;/p&gt;
 &lt;p&gt;Codeforces 是一個知名的程式競賽 (programming contest) 網站。我們可以在此網站上討論程式設計，練習或比賽解題，也可以舉辦比賽。&lt;/p&gt;
@@ -407,7 +407,7 @@ It&amp;#39;s not allowed to break the flagstones. The sides of flagstones should
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
-&lt;/ol&gt;</summary><category term="Algorithm"></category></entry><entry><title>Syncing Samba Accounts with Unix Login Accounts</title><link href="http://changyuheng.github.io/syncing-samba-accounts-with-unix-login-accounts.html" rel="alternate"></link><updated>2012-07-16T00:00:00+08:00</updated><author><name>Chang Yu-heng (張昱珩)</name></author><id>tag:changyuheng.github.io,2012-07-16:syncing-samba-accounts-with-unix-login-accounts.html</id><summary type="html">&lt;p&gt;libpam-smbpass&lt;/p&gt;</summary><category term="Software"></category></entry><entry><title>Windows Photo Viewer Mouse Plug-in</title><link href="http://changyuheng.github.io/windows-photo-viewer-mouse-plug-in.html" rel="alternate"></link><updated>2009-09-23T00:00:00+08:00</updated><author><name>Chang Yu-heng (張昱珩)</name></author><id>tag:changyuheng.github.io,2009-09-23:windows-photo-viewer-mouse-plug-in.html</id><summary type="html">&lt;p&gt;This simple tool gives Windows Photo Viewer the following features:&lt;/p&gt;
+&lt;/ol&gt;</summary><category term="Algorithm"></category></entry><entry><title>Windows Photo Viewer Mouse Plug-in</title><link href="http://changyuheng.github.io/windows-photo-viewer-mouse-plug-in.html" rel="alternate"></link><updated>2009-09-23T00:00:00+08:00</updated><author><name>Chang Yu-heng (張昱珩)</name></author><id>tag:changyuheng.github.io,2009-09-23:windows-photo-viewer-mouse-plug-in.html</id><summary type="html">&lt;p&gt;This simple tool gives Windows Photo Viewer the following features:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Middle click to toggle window's size between normal and maximum.&lt;/li&gt;
 &lt;li&gt;Scroll up/down to show previous/next image.&lt;/li&gt;
@@ -416,7 +416,8 @@ It&amp;#39;s not allowed to break the flagstones. The sides of flagstones should
 &lt;li&gt;F to show fit size.&lt;/li&gt;
 &lt;li&gt;Ctrl + A to toggle deafult presenting style between actual size and fit size.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt; &lt;a href="https://docs.google.com/file/d/0B-EPD3xEnb7PQ0FLcVZZR2xaT2s/edit?usp=sharing"&gt;Download&lt;/a&gt; &lt;/strong&gt;&lt;/p&gt;</summary><category term="Programming"></category><category term="Software"></category></entry><entry><title>AutoCheckIn for Garena</title><link href="http://changyuheng.github.io/autocheckin-for-garena.html" rel="alternate"></link><updated>2008-06-08T00:00:00+08:00</updated><author><name>Chang Yu-heng (張昱珩)</name></author><id>tag:changyuheng.github.io,2008-06-08:autocheckin-for-garena.html</id><summary type="html">&lt;p&gt;&lt;img alt="screenshot" src="https://raw.githubusercontent.com/changyuheng/garena-autocheckin/master/screenshot.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://raw.githubusercontent.com/changyuheng/windows-photo-viewer-mouse-plug-in/master/bin/windows-photo-viewer-mouse-plug-in.exe"&gt;Download&lt;/a&gt;&lt;/strong&gt;
+&lt;strong&gt;&lt;a href="https://github.com/changyuheng/windows-photo-viewer-mouse-plug-in"&gt;Source code&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</summary><category term="Programming"></category><category term="Software"></category></entry><entry><title>AutoCheckIn for Garena</title><link href="http://changyuheng.github.io/autocheckin-for-garena.html" rel="alternate"></link><updated>2008-06-08T00:00:00+08:00</updated><author><name>Chang Yu-heng (張昱珩)</name></author><id>tag:changyuheng.github.io,2008-06-08:autocheckin-for-garena.html</id><summary type="html">&lt;p&gt;&lt;img alt="screenshot" src="https://raw.githubusercontent.com/changyuheng/garena-autocheckin/master/screenshot.png" /&gt;&lt;/p&gt;
 &lt;p&gt;支援：Garena 3.x 中文版 &amp;amp; 2010 (4.0.1.6127) English Version、中文版&lt;/p&gt;
 &lt;p&gt;作業系統：Windows 2000 / XP / Vista / 7 32-bit &amp;amp; 64-bit&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;特色&lt;/strong&gt;&lt;/p&gt;
