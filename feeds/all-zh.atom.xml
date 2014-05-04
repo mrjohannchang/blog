@@ -154,7 +154,7 @@ Gnome 和 KDE 都提供了許多功能，不過 KDE 所提供的功能、自定�
 
 
 &lt;p&gt;完成後可能需要自行重新啟動電腦才會生效。&lt;/p&gt;
-&lt;h2&gt;步驟 2. 依照 WebATM 提供的方法安裝所需程式，如：&lt;a href="http://netbank.esunbank.com.tw/webatm/Q&amp;amp;A_016.htm#01"&gt;玉山銀行&lt;/a&gt;&lt;/h2&gt;</summary><category term="Software"></category></entry><entry><title>在 Ubuntu 12.10 的 gcin 輸入法平台安裝嘸蝦米輸入法</title><link href="http://changyuheng.github.io/zai-ubuntu-1210-de-gcin-shu-ru-fa-ping-tai-an-zhuang-fu-xia-mi-shu-ru-fa.html" rel="alternate"></link><updated>2013-01-25T01:02:00+08:00</updated><author><name>Chang Yu-heng (張昱珩)</name></author><id>tag:changyuheng.github.io,2013-01-25:zai-ubuntu-1210-de-gcin-shu-ru-fa-ping-tai-an-zhuang-fu-xia-mi-shu-ru-fa.html</id><summary type="html">&lt;h2&gt;步驟 1：安裝 gcin 及 im-switch&lt;/h2&gt;
+&lt;h2&gt;步驟 2. 依照 WebATM 提供的方法安裝所需程式，如：&lt;a href="http://netbank.esunbank.com.tw/webatm/Q&amp;amp;A_016.htm#01"&gt;玉山銀行&lt;/a&gt;&lt;/h2&gt;</summary><category term="Software"></category></entry><entry><title>在 Ubuntu 12.10 的 gcin 輸入法平台安裝嘸蝦米輸入法</title><link href="http://changyuheng.github.io/zai-ubuntu-1210-de-gcin-shu-ru-fa-ping-tai-an-zhuang-fu-xia-mi-shu-ru-fa.html" rel="alternate"></link><updated>2012-06-06T00:00:00+08:00</updated><author><name>Chang Yu-heng (張昱珩)</name></author><id>tag:changyuheng.github.io,2012-06-06:zai-ubuntu-1210-de-gcin-shu-ru-fa-ping-tai-an-zhuang-fu-xia-mi-shu-ru-fa.html</id><summary type="html">&lt;h2&gt;步驟 1：安裝 gcin 及 im-switch&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;sudo apt-get install gcin im-switch
 &lt;/pre&gt;&lt;/div&gt;
 
