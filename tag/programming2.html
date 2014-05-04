@@ -4,7 +4,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>在 Ubuntu 12.10 的 gcin 輸入法平台安裝嘸蝦米輸入法</title>
+  <title>A Programmer's Blog - Programming</title>
   <meta name="author" content="Chang Yu-heng (張昱珩)">
 
   <link href="http://changyuheng.github.io/feeds/atom.xml" type="application/atom+xml" rel="alternate"
@@ -48,120 +48,62 @@
 <ul class="main-navigation">
     <li><a href="/archives.html">Archives</a></li>
       <li><a href="http://changyuheng.github.io/pages/about.html">About</a></li>
-    <li class="active">
+    <li >
     <a href="http://changyuheng.github.io/category/blog.html">Blog</a>
     </li>
 </ul></nav>
   <div id="main">
     <div id="content">
-<div>
-  <article class="hentry" role="article">
+<div class="blog-index">
+  		<article>
 <header>
-      <h1 class="entry-title">在 Ubuntu 12.10 的 gcin 輸入法平台安裝嘸蝦米輸入法</h1>
-      <p class="meta"><time datetime="2013-01-25T01:02:00" pubdate>Fri 25 January 2013</time></p>
+      <h1 class="entry-title">
+        <a href="http://changyuheng.github.io/war3customkey.html">War3Customkey</a>
+      </h1>
+      <p class="meta"><time datetime="2005-02-19T00:00:00" pubdate>Sat 19 February 2005</time></p>
 </header>
 
-  <div class="entry-content"><h2>步驟 1：安裝 gcin 及 im-switch</h2>
-<div class="highlight"><pre>sudo apt-get install gcin im-switch
-</pre></div>
+  <div class="entry-content"><p><img alt="screenshot" src="https://raw.githubusercontent.com/changyuheng/war3customkey/master/screenshot.png" /></p>
+<p>支援：Warcraft III<br />
+作業系統：Windows 2000 / XP / Vista / 7 32-bit &amp; 64-bit</p>
+<p><strong>特色</strong></p>
+<ol>
+<li>自定按鍵對應</li>
+<li>罐頭訊息</li>
+<li>巨集</li>
+<li>滑鼠連點</li>
+</ol>
+<p><strong>使用方法</strong></p>
+<p>請見說明文件</p>
+<p>[<strong><a href="https://raw.githubusercontent.com/changyuheng/war3customkey/master/War3Customkey.exe">下載</a></strong>]
+[<strong><a href="https://github.com/changyuheng/war3customkey">原始碼</a></strong>]</p></div>
+  <footer>
+    <a rel="full-article" href="http://changyuheng.github.io/war3customkey.html">Read On &crarr;</a>
+  </footer>
+  		</article>
+<div class="pagination">
 
-
-<h2>步驟 2：指定預設輸入法平台為 gcin，完成後重新啟動電腦</h2>
-<div class="highlight"><pre>im-switch
-</pre></div>
-
-
-<h2>步驟 3：下載並解壓縮嘸蝦米官方提供的 gcin 用表格，接著開啟終端機並進入解壓縮目錄</h2>
-<h2>步驟 4：將表格等檔案複製到系統中</h2>
-<h3>1. 前置作業</h3>
-<div class="highlight"><pre>sudo updatedb
-</pre></div>
-
-
-<h3>2. 複製 *.gtab 到 gcin 表格目錄</h3>
-<div class="highlight"><pre>sudo cp *.gtab <span class="k">$(</span>locate gtab | grep gcin/table | <span class="k">while </span><span class="nb">read </span>line; <span class="k">do </span>dirname <span class="s2">&quot;$line&quot;</span>; <span class="k">done</span> | sort -u<span class="k">)</span>
-</pre></div>
-
-
-<h3>3. 複製 *.png 到 gcin icon 目錄</h3>
-<div class="highlight"><pre>sudo cp *.png <span class="k">$(</span>locate pinyin.png | grep gcin | <span class="k">while </span><span class="nb">read </span>line; <span class="k">do </span>dirname <span class="s2">&quot;$line&quot;</span>; <span class="k">done</span> | sort -u<span class="k">)</span>
-</pre></div>
-
-
-<h2>步驟 5：編輯 gtab.list</h2>
-<div class="highlight"><pre><span class="nb">echo</span> <span class="s2">&quot;嘸蝦米(繁) 1 boshiamy-t.gtab boshiamy-t.png&quot;</span> &gt;&gt; ~/.gcin/gtab.list
-</pre></div>
-
-
-<h2>步驟 6：重新啟動 gcin</h2>
-<h2>步驟 7：調整 gcin 設定</h2>
-<h3>1. 在【內定輸入法 &amp; 開啟/關閉】中調整嘸蝦米是否為預設輸入法、可否由 ctrl + shift 切換</h3>
-<h3>2. 在【倉頡/行列/嘸蝦米/大易設定】中將【預覽/預選 字】調整為【全部開啟】</h3><script type= "text/javascript">
-    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-        var mathjaxscript = document.createElement('script');
-        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-        mathjaxscript.type = 'text/javascript';
-        mathjaxscript.src = 'https:' == document.location.protocol
-                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
-                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
-        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
-            "MathJax.Hub.Config({" +
-            "    config: ['MMLorHTML.js']," +
-            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
-            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-            "    displayAlign: 'center'," +
-            "    displayIndent: '0em'," +
-            "    showMathMenu: true," +
-            "    tex2jax: { " +
-            "        inlineMath: [ ['$','$'] ], " +
-            "        displayMath: [ ['$$','$$'] ]," +
-            "        processEscapes: true," +
-            "        preview: 'TeX'," +
-            "    }, " +
-            "    'HTML-CSS': { " +
-            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
-            "    } " +
-            "}); ";
-        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-    }
-</script>
-</div>
-    <footer>
-<p class="meta">
-  <span class="byline author vcard">
-    Posted by <span class="fn">Chang Yu-heng (張昱珩)</span>
-  </span>
-<time datetime="2013-01-25T01:02:00" pubdate>Fri 25 January 2013</time>  <span class="categories">
-    <a class="category" href="http://changyuheng.github.io/tag/software.html">Software</a>
-  </span>
-</p><div class="sharing">
-</div>    </footer>
-  </article>
-
-  <section>
-    <h1>Comments</h1>
-    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
-  </section>
-</div>
+    <a class="next" href="http://changyuheng.github.io/tag/programming.html">Newer &rarr;</a>
+  <br />
+</div></div>
 <aside class="sidebar">
   <section>
     <h1>Recent Posts</h1>
     <ul id="recent_posts">
       <li class="post">
-          <a href="http://changyuheng.github.io/my-ubuntu-gnome-tweaks.html">My Ubuntu GNOME Tweaks</a>
-      </li>
-      <li class="post">
-          <a href="http://changyuheng.github.io/codeforces-problem-1b.html">Codeforces Problem 1B</a>
-      </li>
-      <li class="post">
           <a href="http://changyuheng.github.io/my-longest-streak-on-github.html">My Longest Streak on GitHub</a>
       </li>
       <li class="post">
-          <a href="http://changyuheng.github.io/gnome-36-yu-kde-410-yu-gong-zuo-chang-suo-shi-yong-nian-xin-de.html">Gnome 3.6 與 KDE 4.10 於工作場所使用一年心得</a>
+          <a href="http://changyuheng.github.io/windows-photo-viewer-mouse-plug-in.html">Windows Photo Viewer Mouse Plug-in</a>
       </li>
       <li class="post">
-          <a href="http://changyuheng.github.io/deployment-of-ncku-csie-gitit-theme.html">Deployment of NCKU CSIE Gitit Theme</a>
+          <a href="http://changyuheng.github.io/autocheckin-for-garena.html">AutoCheckIn for Garena</a>
+      </li>
+      <li class="post">
+          <a href="http://changyuheng.github.io/ptt-efficient-poster.html">PTT Efficient Poster</a>
+      </li>
+      <li class="post">
+          <a href="http://changyuheng.github.io/war3customkey-classic.html">War3Customkey Classic</a>
       </li>
     </ul>
   </section>
@@ -223,9 +165,6 @@
 </script>
 	<script type="text/javascript">
 	  var disqus_shortname = 'aprogrammersblog';
-          var disqus_identifier = '/zai-ubuntu-1210-de-gcin-shu-ru-fa-ping-tai-an-zhuang-fu-xia-mi-shu-ru-fa.html';
-          var disqus_url = 'http://changyuheng.github.io/zai-ubuntu-1210-de-gcin-shu-ru-fa-ping-tai-an-zhuang-fu-xia-mi-shu-ru-fa.html';
-          var disqus_title = '在 Ubuntu 12.10 的 gcin 輸入法平台安裝嘸蝦米輸入法';
 	  (function() {
 	    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
 	    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
