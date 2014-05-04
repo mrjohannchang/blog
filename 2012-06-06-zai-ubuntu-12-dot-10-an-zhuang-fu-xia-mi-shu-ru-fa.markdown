@@ -1,5 +1,5 @@
 Title: 在 Ubuntu 12.10 的 gcin 輸入法平台安裝嘸蝦米輸入法
-Date: 2013-01-25 01:02
+Date: 2012-06-06
 Tags: Software
 
 ## 步驟 1：安裝 gcin 及 im-switch
