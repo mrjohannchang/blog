@@ -47,7 +47,6 @@
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;安裝後由 user 權限執行 im-config，由其中選擇 HIME 作為預設輸入法框架。&lt;/p&gt;
 &lt;h3&gt;&lt;a name="java8"&gt;&lt;/a&gt;Java 8&lt;/h3&gt;
 &lt;p&gt;&lt;a href="http://www.webupd8.org/2012/09/install-oracle-java-8-in-ubuntu-via-ppa.html"&gt;Install Oracle Java 8 In Ubuntu Via PPA Repository&lt;/a&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;sudo add-apt-repository ppa:webupd8team/java
