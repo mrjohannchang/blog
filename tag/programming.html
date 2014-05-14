@@ -58,6 +58,26 @@
   		<article>
 <header>
       <h1 class="entry-title">
+        <a href="http://changyuheng.github.io/stack-overflow-in-python.html">Stack Overflow in Python</a>
+      </h1>
+      <p class="meta"><time datetime="2014-05-14T00:00:00" pubdate>Wed 14 May 2014</time></p>
+</header>
+
+  <div class="entry-content"><p>這兩天遇到一件有趣的事：</p>
+<p>下面這兩份 code 的演算法是一模一樣的，差別只在於一個在 dfs() 中用遞迴，另一個用迴圈。不過結果不同。</p>
+<ul>
+<li><a href="http://codeforces.com/contest/429/submission/6605261">http://codeforces.com/contest/429/submission/6605261</a></li>
+<li><a href="http://codeforces.com/contest/429/submission/6609602">http://codeforces.com/contest/429/submission/6609602</a></li>
+</ul>
+<p>遞迴版的會發生 stack overflow，迴圈版的可以正常運轉。</p>
+<p>C++, FPC, Go 這些語言的遞迴版本都是正常的。為什麼 Python 不行？有一個可能是 Python 的 stack frame 比較大，所以 stack 比其他語言用得兇。Python 的 stack frame 比較大是可以預期的，但是 dfs ...</p></div>
+  <footer>
+    <a rel="full-article" href="http://changyuheng.github.io/stack-overflow-in-python.html">Read On &crarr;</a>
+  </footer>
+  		</article>
+  		<article>
+<header>
+      <h1 class="entry-title">
         <a href="http://changyuheng.github.io/my-longest-streak-on-github.html">My Longest Streak on GitHub</a>
       </h1>
       <p class="meta"><time datetime="2014-04-04T18:02:00" pubdate>Fri 04 April 2014</time></p>
@@ -142,23 +162,6 @@
     <a rel="full-article" href="http://changyuheng.github.io/ptt-efficient-poster.html">Read On &crarr;</a>
   </footer>
   		</article>
-  		<article>
-<header>
-      <h1 class="entry-title">
-        <a href="http://changyuheng.github.io/war3customkey-classic.html">War3Customkey Classic</a>
-      </h1>
-      <p class="meta"><time datetime="2006-11-24T00:00:00" pubdate>Fri 24 November 2006</time></p>
-</header>
-
-  <div class="entry-content"><p><img alt="screenshot" src="https://raw.githubusercontent.com/changyuheng/war3customkey-classic/master/screenshot.png" /></p>
-<p>支援：Warcraft III<br />
-作業系統：Windows 2000 / XP / Vista / 7 32-bit &amp; 64-bit</p>
-<p>[<strong><a href="https://raw.githubusercontent.com/changyuheng/war3customkey-classic/master/War3Customkey.exe">下載</a></strong>]
-[<strong><a href="https://github.com/changyuheng/war3customkey-classic">原始碼</a></strong>]</p></div>
-  <footer>
-    <a rel="full-article" href="http://changyuheng.github.io/war3customkey-classic.html">Read On &crarr;</a>
-  </footer>
-  		</article>
 <div class="pagination">
     <a class="prev" href="http://changyuheng.github.io/tag/programming2.html">&larr; Older</a>
 
@@ -168,6 +171,9 @@
   <section>
     <h1>Recent Posts</h1>
     <ul id="recent_posts">
+      <li class="post">
+          <a href="http://changyuheng.github.io/stack-overflow-in-python.html">Stack Overflow in Python</a>
+      </li>
       <li class="post">
           <a href="http://changyuheng.github.io/my-longest-streak-on-github.html">My Longest Streak on GitHub</a>
       </li>
@@ -179,9 +185,6 @@
       </li>
       <li class="post">
           <a href="http://changyuheng.github.io/ptt-efficient-poster.html">PTT Efficient Poster</a>
-      </li>
-      <li class="post">
-          <a href="http://changyuheng.github.io/war3customkey-classic.html">War3Customkey Classic</a>
       </li>
     </ul>
   </section>
@@ -196,7 +199,7 @@
 
   <section>
   <h1>Tags</h1>
-    <a href="http://changyuheng.github.io/tag/software.html">Software</a>,    <a href="http://changyuheng.github.io/tag/programming.html">Programming</a>,    <a href="http://changyuheng.github.io/tag/algorithm.html">Algorithm</a>  </section>
+    <a href="http://changyuheng.github.io/tag/programming.html">Programming</a>,    <a href="http://changyuheng.github.io/tag/software.html">Software</a>,    <a href="http://changyuheng.github.io/tag/algorithm.html">Algorithm</a>  </section>
 
 
     <section>
