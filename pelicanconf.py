@@ -18,6 +18,7 @@ MENUITEMS = (
 
 # Blogroll
 LINKS = (
+        ("JChien's Blog", 'http://jeffchien.github.io/'),
         ('SAY something', 'http://sayuan.github.io/'),
         ("Yongjhih's Octopress Blog", 'http://yongjhih.github.io/'),
         )
