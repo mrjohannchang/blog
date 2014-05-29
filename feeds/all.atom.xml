@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>A Programmer's Blog</title><link href="http://changyuheng.github.io/" rel="alternate"></link><link href="http://changyuheng.github.io/feeds/all.atom.xml" rel="self"></link><id>http://changyuheng.github.io/</id><updated>2014-05-07T00:00:00+08:00</updated><entry><title>Implementations of DFS and BFS in Python</title><link href="http://changyuheng.github.io/implementations-of-dfs-and-bfs-in-python.html" rel="alternate"></link><updated>2014-05-07T00:00:00+08:00</updated><author><name>Chang Yu-heng (張昱珩)</name></author><id>tag:changyuheng.github.io,2014-05-07:implementations-of-dfs-and-bfs-in-python.html</id><summary type="html">&lt;p&gt;&lt;a href="http://zh.wikipedia.org/zh-tw/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2"&gt;DFS&lt;/a&gt; 和 &lt;a href="http://zh.wikipedia.org/zh-tw/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2"&gt;BFS&lt;/a&gt; 在資料結構裡有教，是很基礎的演算法。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A Programmer's Blog</title><link href="http://changyuheng.github.io/" rel="alternate"></link><link href="http://changyuheng.github.io/feeds/all.atom.xml" rel="self"></link><id>http://changyuheng.github.io/</id><updated>2014-05-29T00:00:00+08:00</updated><entry><title>Understanding Python Decorators</title><link href="http://changyuheng.github.io/understanding-python-decorators.html" rel="alternate"></link><updated>2014-05-29T00:00:00+08:00</updated><author><name>Chang Yu-heng (張昱珩)</name></author><id>tag:changyuheng.github.io,2014-05-29:understanding-python-decorators.html</id><summary type="html">&lt;p&gt;Decorator 是一個 Python 中較為進階的語法，因為較難理解故常被提出來討論。這邊提供一個簡潔的說明。&lt;/p&gt;
+&lt;p&gt;假設有一名為 func 的 function 被名為 decor1 和 decor2 的二 decorator 修飾如下：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nd"&gt;@decor1&lt;/span&gt;
+&lt;span class="nd"&gt;@decor2&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;pass&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;則當我們如下呼叫 func() 時：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;可以將之理解為：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;decor1&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;decor2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;))(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;更詳細的說明可以參考：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/"&gt;Understanding Python Decorators in 12 Easy Steps!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://stackoverflow.com/a/739679"&gt;How can I make a chain of function decorators in Python?&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</summary><category term="Programming"></category></entry><entry><title>Implementations of DFS and BFS in Python</title><link href="http://changyuheng.github.io/implementations-of-dfs-and-bfs-in-python.html" rel="alternate"></link><updated>2014-05-07T00:00:00+08:00</updated><author><name>Chang Yu-heng (張昱珩)</name></author><id>tag:changyuheng.github.io,2014-05-07:implementations-of-dfs-and-bfs-in-python.html</id><summary type="html">&lt;p&gt;&lt;a href="http://zh.wikipedia.org/zh-tw/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2"&gt;DFS&lt;/a&gt; 和 &lt;a href="http://zh.wikipedia.org/zh-tw/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2"&gt;BFS&lt;/a&gt; 在資料結構裡有教，是很基礎的演算法。&lt;/p&gt;
 &lt;p&gt;在 &lt;a href="http://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/"&gt;Edd Mann 的網誌&lt;/a&gt;上看到 Python 的實作，由其中學到 &lt;code&gt;yield from&lt;/code&gt; 的用法。下面利用 &lt;code&gt;yield from&lt;/code&gt; 的特性，將該網誌中提到的實作改寫成 generator 的型式。同步放在 Gist 上：&lt;a href="https://gist.github.com/changyuheng/08ffb779d83679393926"&gt;DFS&lt;/a&gt;、&lt;a href="https://gist.github.com/changyuheng/97d320206af9a0018d7d"&gt;BFS&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;DFS&lt;/strong&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;dfs&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;graph&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;start&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;visited&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="p"&gt;()):&lt;/span&gt;

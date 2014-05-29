@@ -58,6 +58,41 @@
   		<article>
 <header>
       <h1 class="entry-title">
+        <a href="http://changyuheng.github.io/understanding-python-decorators.html">Understanding Python Decorators</a>
+      </h1>
+      <p class="meta"><time datetime="2014-05-29T00:00:00" pubdate>Thu 29 May 2014</time></p>
+</header>
+
+  <div class="entry-content"><p>Decorator 是一個 Python 中較為進階的語法，因為較難理解故常被提出來討論。這邊提供一個簡潔的說明。</p>
+<p>假設有一名為 func 的 function 被名為 decor1 和 decor2 的二 decorator 修飾如下：</p>
+<div class="highlight"><pre><span class="nd">@decor1</span>
+<span class="nd">@decor2</span>
+<span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="k">pass</span>
+</pre></div>
+
+
+<p>則當我們如下呼叫 func() 時：</p>
+<div class="highlight"><pre><span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</pre></div>
+
+
+<p>可以將之理解為：</p>
+<div class="highlight"><pre><span class="n">decor1</span><span class="p">(</span><span class="n">decor2</span><span class="p">(</span><span class="n">func</span><span class="p">))(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</pre></div>
+
+
+<p>更詳細的說明可以參考：</p>
+<ol>
+<li><a href="http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/">Understanding Python Decorators in 12 Easy Steps!</a></li>
+<li><a href="http://stackoverflow.com/a/739679">How can I make a chain ...</a></li></ol></div>
+  <footer>
+    <a rel="full-article" href="http://changyuheng.github.io/understanding-python-decorators.html">Read On &crarr;</a>
+  </footer>
+  		</article>
+  		<article>
+<header>
+      <h1 class="entry-title">
         <a href="http://changyuheng.github.io/my-longest-streak-on-github.html">My Longest Streak on GitHub</a>
       </h1>
       <p class="meta"><time datetime="2014-04-04T18:02:00" pubdate>Fri 04 April 2014</time></p>
@@ -142,23 +177,6 @@
     <a rel="full-article" href="http://changyuheng.github.io/ptt-efficient-poster.html">Read On &crarr;</a>
   </footer>
   		</article>
-  		<article>
-<header>
-      <h1 class="entry-title">
-        <a href="http://changyuheng.github.io/war3customkey-classic.html">War3Customkey Classic</a>
-      </h1>
-      <p class="meta"><time datetime="2006-11-24T00:00:00" pubdate>Fri 24 November 2006</time></p>
-</header>
-
-  <div class="entry-content"><p><img alt="screenshot" src="https://raw.githubusercontent.com/changyuheng/war3customkey-classic/master/screenshot.png" /></p>
-<p>支援：Warcraft III<br />
-作業系統：Windows 2000 / XP / Vista / 7 32-bit &amp; 64-bit</p>
-<p>[<strong><a href="https://raw.githubusercontent.com/changyuheng/war3customkey-classic/master/War3Customkey.exe">下載</a></strong>]
-[<strong><a href="https://github.com/changyuheng/war3customkey-classic">原始碼</a></strong>]</p></div>
-  <footer>
-    <a rel="full-article" href="http://changyuheng.github.io/war3customkey-classic.html">Read On &crarr;</a>
-  </footer>
-  		</article>
 <div class="pagination">
     <a class="prev" href="http://changyuheng.github.io/tag/programming2.html">&larr; Older</a>
 
@@ -168,6 +186,9 @@
   <section>
     <h1>Recent Posts</h1>
     <ul id="recent_posts">
+      <li class="post">
+          <a href="http://changyuheng.github.io/understanding-python-decorators.html">Understanding Python Decorators</a>
+      </li>
       <li class="post">
           <a href="http://changyuheng.github.io/my-longest-streak-on-github.html">My Longest Streak on GitHub</a>
       </li>
@@ -179,9 +200,6 @@
       </li>
       <li class="post">
           <a href="http://changyuheng.github.io/ptt-efficient-poster.html">PTT Efficient Poster</a>
-      </li>
-      <li class="post">
-          <a href="http://changyuheng.github.io/war3customkey-classic.html">War3Customkey Classic</a>
       </li>
     </ul>
   </section>
@@ -196,7 +214,7 @@
 
   <section>
   <h1>Tags</h1>
-    <a href="http://changyuheng.github.io/tag/algorithm.html">Algorithm</a>,    <a href="http://changyuheng.github.io/tag/programming.html">Programming</a>,    <a href="http://changyuheng.github.io/tag/software.html">Software</a>  </section>
+    <a href="http://changyuheng.github.io/tag/programming.html">Programming</a>,    <a href="http://changyuheng.github.io/tag/software.html">Software</a>,    <a href="http://changyuheng.github.io/tag/algorithm.html">Algorithm</a>  </section>
 
 
     <section>
