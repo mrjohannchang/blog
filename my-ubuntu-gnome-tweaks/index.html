@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-  <title>Codeforces Problem 1B | A Programmer’s Blog</title>
+  <title>My Ubuntu GNOME Tweaks | A Programmer’s Blog</title>
   <meta name="description" content="" />
   <meta name="HandheldFriendly" content="True" />
   <meta name="MobileOptimized" content="320" />
@@ -111,7 +111,7 @@
                 
                 <div id="nav-container">
                     <div class="post-navbar" style="line-height: 63px;display:none">
-                        <li id="navbar-title"><a href="#">Codeforces Problem 1B</a></li>
+                        <li id="navbar-title"><a href="#">My Ubuntu GNOME Tweaks</a></li>
                         <li id="navbar-toc" style="border-left: none">
                             <a style="padding-right: 15px">
                                 <span id="toc-content" >Introduction</span><i class="fa fa-chevron-down" ></i>
@@ -139,32 +139,105 @@
     <span class="post-meta">
                   <div class="tag-tile">
                       
-                      
-                      <a data-pjax href='/tags/algorithm/' style='color:#D5D5D5'>Algorithm</a>
-                      
-                      
                   </div>
-                <h1 class="post-title" style="margin: 14px 0;color:#50585D">Codeforces Problem 1B</h1>
+                <h1 class="post-title" style="margin: 14px 0;color:#50585D">My Ubuntu GNOME Tweaks</h1>
 
                     <div class="post-meta">
                         Post on<span class="fa fa-clock-o"></span>
-                        <time datetime="2014-07-29T02:11:56.000Z"
+                        <time datetime="2014-07-29T03:35:02.000Z"
                               itemprop="datePublished">Jul 29 2014</time>
                     </div>
     </span>
 
         <section class="post-content">
-            <p><a href="http://codeforces.com/problemset/problem/1/B">Codeforces Problem 1B</a></p>
-<p>這題考的是經典的試算表 (spreadsheet) 座標轉換。這個問題的重點在對數字進位的處理。訣竅在於把 one-based column 當成 zero-based 來處理。</p>
-<p><a href="http://codeforces.com/contest/1/submission/6457739">我的 Python 解法</a></p>
+            <p>以 Ubuntu GNOME 14.04 LTS 英文語系為基礎。</p>
+<h2 id="安裝軟體">安裝軟體</h2>
+<ul>
+<li><a href="#7z">7z</a></li>
+<li><a href="#clipit">ClipIt</a></li>
+<li><a href="#gnome-gmail">Gnome Gmail</a></li>
+<li><a href="#hime">Hime</a></li>
+<li><a href="#java8">Java 8</a></li>
+<li><a href="#ubuntu-restricted-extras">ubuntu-restricted-extras</a></li>
+<li><a href="#vim">Vim</a></li>
+<li><a href="#vlc">VLC</a></li>
+<li><a href="#wen-quan-yi-fonts">文泉驛中文字型</a></li>
+<li><a href="#boshiamy">嘸蝦米輸入法</a></li>
+</ul>
+<h2 id="Firefox_附加元件">Firefox 附加元件</h2>
+<ul>
+<li><a href="#gmail-notifier">Gmail Notifier</a></li>
+<li><a href="#gnotifier">GNotifier</a></li>
+</ul>
+<h2 id="設定">設定</h2>
+<ul>
+<li><a href="#apt">APT</a></li>
+<li><a href="#gnome-tweak-tool">Gnome Tweak Tool</a></li>
+<li><a href="#im-config">Input Method Configuration</a></li>
+<li><a href="#online-accounts">Online Accounts</a></li>
+</ul>
+<h3 id="7z"><a name="7z"></a>7z</h3>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt install p7zip-full</div></pre></td></tr></table></figure>
+
+<h3 id="ClipIt"><a name="clipit"></a>ClipIt</h3>
+<p>剪貼簿管理程序，安裝的主要目的是要他同步剪貼簿的功能。因為 X11 的剪貼簿在「貼上」時，若來源程序已暫停或結束，會因無法讀取來源而無法貼上。可參考：<a href="http://www.jwz.org/doc/x-cut-and-paste.html">X Selections, Cut Buffers, and Kill Rings.</a></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt install clipit</div></pre></td></tr></table></figure>
+
+<h3 id="Gnome_Gmail"><a name="gnome-gmail"></a>Gnome Gmail</h3>
+<p>讓預設郵件客戶端可被設定為 Gmail。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt install gnome-gmail</div></pre></td></tr></table></figure>
+
+<h3 id="Hime"><a name="hime"></a>Hime</h3>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt install hime</div></pre></td></tr></table></figure>
+
+<h3 id="Java_8"><a name="java8"></a>Java 8</h3>
+<p><a href="http://www.webupd8.org/2012/09/install-oracle-java-8-in-ubuntu-via-ppa.html">Install Oracle Java 8 In Ubuntu Via PPA Repository</a></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> add-apt-repository ppa:webupd8team/java</div><div class="line"><span class="built_in">sudo</span> apt update</div><div class="line"><span class="built_in">sudo</span> apt install oracle-java8-installer</div></pre></td></tr></table></figure>
+
+<h3 id="ubuntu-restricted-extras"><a name="ubuntu-restricted-extras"></a>ubuntu-restricted-extras</h3>
+<p>RAR、Flash Player 等非開源的程式之集合。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt install ubuntu-restricted-extras</div></pre></td></tr></table></figure>
+
+<h3 id="Vim"><a name="vim"></a>Vim</h3>
+<p>Vim with GNOME specific support.</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt install vim-gnome</div></pre></td></tr></table></figure>
+
+<h3 id="VLC"><a name="vlc"></a>VLC</h3>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt install vlc</div></pre></td></tr></table></figure>
+
+<h3 id="文泉驛中文字型"><a name="wen-quan-yi-fonts"></a>文泉驛中文字型</h3>
+<p>開源的中文字型。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt install ttf-wqy-*</div></pre></td></tr></table></figure>
+
+<h3 id="嘸蝦米輸入法"><a name="boshiamy"></a>嘸蝦米輸入法</h3>
+<ol>
+<li>安裝 <a href="#hime">Hime</a>。</li>
+<li>由<a href="http://boshiamy.com/download.html">嘸蝦米官方網站</a> → 「嘸蝦米輸入法 for Unix-like」，下載 gcin 適用的表格檔。</li>
+<li>解壓縮 <code>boshiamy-gcin.tar.gz</code>，將其中的 <code>boshiamy-t.gtab</code> 複製到 <code>/usr/lib/hime/table</code>。</li>
+<li>開啟 <code>~/.config/hime/gtab.list</code>，將嘸蝦米那一行的 <code>noseeing.gtab</code> 取代成 <code>boshiamy-t.gtab</code>。</li>
+</ol>
+<h3 id="Gmail_Notifier"><a name="gmail-notifier"></a>Gmail Notifier</h3>
+<p>偵測到 Gmail 的新進信件時會由 Firefox 發出提醒。<br><a href="https://addons.mozilla.org/zh-tw/firefox/addon/gmail-notifier-restartless/?src=search">Gmail Notifier</a></p>
+<h3 id="GNotifier"><a name="gnotifier"></a>GNotifier</h3>
+<p>讓 Firefox 使用 GNOME、KDE、Xfce 或 OS X 桌面環境的提醒 (notification) 介面。<br><a href="https://addons.mozilla.org/zh-tw/firefox/addon/gnotifier/">GNotifier</a></p>
+<h3 id="APT"><a name="apt"></a>APT</h3>
+<p>以國網中心的 APT 伺服器取代台灣大學的：將 <code>/etc/apt/sources.list</code> 內的 <code>tw.archive.ubuntu.com</code> 取代為 <code>free.nchc.org.tw</code>。</p>
+<h3 id="Gnome_Tweak_Tool"><a name="gnome-tweak-tool"></a>Gnome Tweak Tool</h3>
+<p>依個人喜好調整預設設定。</p>
+<h3 id="Input_Method_Configuration"><a name="im-config"></a>Input Method Configuration</h3>
+<p>先安裝 <a href="#hime">Hime</a>，接著由 <code>Activities</code> → <code>Input Method</code> 選擇 hime。</p>
+<h3 id="Online_Accounts"><a name="online-accounts"></a>Online Accounts</h3>
+<p>由 <code>Activities</code> → <code>System Settings</code> → <code>Online Accounts</code> 登入 Google 帳戶，登入後可將右方不希望同步的功能關閉。若有開啟 Calendar 同步，可由螢幕最上方正中央的 Calendar 下拉選單中看到將近的活動，提醒時間到時也會由 Evolution 彈出視窗提醒。</p>
 
         </section>
         <hr/>
         <nav class="pagination" style="width:auto" role="pagination">
             
-            <a data-pjax class="newer-posts" href="/hello-world/">← Prev Post</a>
+            <a style="cursor:default" class="newer-posts" href="#">This is the First Post</a>
             
             <a class="share-button" data-original-title title>Share this Post</a>
+            
+            <a data-pjax class="older-posts" href="/hello-world/">Next Post →</a>
             
         </nav>
         <br/>
