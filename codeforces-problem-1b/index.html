@@ -18,6 +18,36 @@
 
   
 
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 </head>
 <body>
 <div class="container">
@@ -42,11 +72,15 @@
                                 <div class="mp-scroll">
                                 
                                 <li class="search-archive-li mp-pjax">
-                                    <a href="/hello-world/">Hello World</a>
+                                    <a href="/code-and-math-test/">Code and Math Test</a>
                                 </li>
                                 
                                 <li class="search-archive-li mp-pjax">
                                     <a href="/my-ubuntu-gnome-tweaks/">My Ubuntu GNOME Tweaks</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/hello-world/">Hello World</a>
                                 </li>
                                 
                                 <li class="search-archive-li mp-pjax">
@@ -102,9 +136,11 @@
         <div id="pjax">
             <div class="pjax-hidden" style="display: none">
                 
-                    <a  data-pjax href="/hello-world/">Hello World</a>
+                    <a  data-pjax href="/code-and-math-test/">Code and Math Test</a>
                 
                     <a  data-pjax href="/my-ubuntu-gnome-tweaks/">My Ubuntu GNOME Tweaks</a>
+                
+                    <a  data-pjax href="/hello-world/">Hello World</a>
                 
                     <a  data-pjax href="/codeforces-problem-1b/">Codeforces Problem 1B</a>
                 
@@ -177,7 +213,7 @@
         <hr/>
         <nav class="pagination" style="width:auto" role="pagination">
             
-            <a data-pjax class="newer-posts" href="/my-ubuntu-gnome-tweaks/">← Prev Post</a>
+            <a data-pjax class="newer-posts" href="/hello-world/">← Prev Post</a>
             
             <a class="share-button" data-original-title title>Share this Post</a>
             
