@@ -209,7 +209,7 @@ pre {
     border: 1px solid #E3EDF3;
     width: 100%;
     padding: 10px;
-    font-size: 0.8em;
+    font-size: 0.9em;
     white-space: pre;
     overflow: auto;
     background: #F7FAFB;
@@ -615,37 +615,37 @@ margin on the iframe, cause it breaks stuff. */
 
 /* Hexo: Syntax Highlighter */
 
-figure.highlight {
-    background:#fff;
-    border-radius:0.3em;
-    border:1px solid #e1e1e1;
-    line-height:1.45em;
-    font-size:.9em;
-    margin-bottom:2.1em;
-    color:#222;
-    overflow:auto;
-    white-space:pre;
-    word-wrap:normal;
-}
-figure.highlight figcaption {
-    padding: 7px 10px;
-    font-size: .8em;
-}
-figure.highlight table {
-    margin: 0;
-}
-figure.highlight table > tbody > tr > td {
-    padding: 0;
-    background: #fff !important;
-}
-figure.highlight table > tbody > tr > td.gutter {
-    max-width: 40px;
-    text-align: right;
-}
-figure.highlight pre {
-    border: none;
-    margin: 0;
-}
+/* figure.highlight { */
+    /* background:#fff; */
+    /* border-radius:0.3em; */
+    /* border:1px solid #e1e1e1; */
+    /* line-height:1.45em; */
+    /* font-size:.9em; */
+    /* margin-bottom:2.1em; */
+    /* color:#222; */
+    /* overflow:auto; */
+    /* white-space:pre; */
+    /* word-wrap:normal; */
+/* } */
+/* figure.highlight figcaption { */
+    /* padding: 7px 10px; */
+    /* font-size: .8em; */
+/* } */
+/* figure.highlight table { */
+    /* margin: 0; */
+/* } */
+/* figure.highlight table > tbody > tr > td { */
+    /* padding: 0; */
+    /* background: #fff !important; */
+/* } */
+/* figure.highlight table > tbody > tr > td.gutter { */
+    /* max-width: 40px; */
+    /* text-align: right; */
+/* } */
+/* figure.highlight pre { */
+    /* border: none; */
+    /* margin: 0; */
+/* } */
 
 figure img {
     display: block;
