@@ -1,25 +1,21 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
   <title>Archives | A Programmer’s Blog</title>
-  <meta name="author" content="Chang Yu-heng (張昱珩)">
+  <meta name="description" content="" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="/css/component.css" />
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <meta name="generator" content="A Programmer’s Blog">
   
   
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
 
-  
-  <meta property="og:site_name" content="A Programmer’s Blog"/>
-
-  
-    <meta property="og:image" content="undefined"/>
-  
-
-  <link href="/favicon.png" rel="icon">
-  <link rel="alternate" href="/atom.xml" title="A Programmer’s Blog" type="application/atom+xml">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   
 
 <!-- mathjax config similar to math.stackexchange -->
@@ -53,421 +49,347 @@
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 </head>
-
-
 <body>
-  <header id="header" class="inner"><div class="alignleft">
-  <h1><a href="/">A Programmer’s Blog</a></h1>
-  <h2><a href="/"></a></h2>
-</div>
-<nav id="main-nav" class="alignright">
-  <ul>
+<div class="container">
+    <div class="mp-pusher" id="mp-pusher">
+        <i id="scroll-up" class="fa fa-angle-up"></i>
+        <nav id="mp-menu" class="mp-menu">
+            <div class="mp-level">
+                <a data-pjax class="back-home" style="font-size: 20px" href="/"><h2 ><i class="fa fa-home"></i>
+                        Home</h2></a>
+                <ul class="first-level">
+                    <li>
+                        <a class="fa fa-archive" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Archive</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-archive"></i>
+                                Archive</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-archive" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/code-and-math-test/">Code and Math Test</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/my-ubuntu-gnome-tweaks/">My Ubuntu GNOME Tweaks</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/hello-world/">Hello World</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/codeforces-problem-1b/">Codeforces Problem 1B</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/gnome-36-yu-kde-410-yu-gong-zuo-chang-suo-shi-yong-nian-xin-de/">Gnome 3.6 與 KDE 4.10 於工作場所使用一年心得</a>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    
+                    <li>
+                        <a class="fa fa-tags" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Tags</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-tags"></i>
+                                Tags</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-tag" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/algorithm/">&nbsp;&nbsp;&nbsp;Algorithm</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/software/">&nbsp;&nbsp;&nbsp;Software</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    
+                    <li class="mp-pjax"><a class="fa fa-user" href="/about">&nbsp;&nbsp;&nbsp;About me</a></li>
+                    <li><a class="fa fa-github" href='http://github.com/changyuheng'>&nbsp;&nbsp;&nbsp;Github</a></li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <div id="pjax">
+            <div class="pjax-hidden" style="display: none">
+                
+                    <a  data-pjax href="/code-and-math-test/">Code and Math Test</a>
+                
+                    <a  data-pjax href="/my-ubuntu-gnome-tweaks/">My Ubuntu GNOME Tweaks</a>
+                
+                    <a  data-pjax href="/hello-world/">Hello World</a>
+                
+                    <a  data-pjax href="/codeforces-problem-1b/">Codeforces Problem 1B</a>
+                
+                    <a  data-pjax href="/gnome-36-yu-kde-410-yu-gong-zuo-chang-suo-shi-yong-nian-xin-de/">Gnome 3.6 與 KDE 4.10 於工作場所使用一年心得</a>
+                
+                
+                
+                    <a data-pjax href="/tags/algorithm/">&nbsp;&nbsp;Algorithm</a>
+                
+                    <a data-pjax href="/tags/software/">&nbsp;&nbsp;Software</a>
+                
+                <a data-pjax class="fa fa-user" href="/about">&nbsp;&nbsp;&nbsp;About me</a>
+            </div>
+            <nav class="nexus">
+                <li  style="border-left: 1px solid #c6d0da;">
+                    <a id="trigger" href="#"><i class="fa fa-bars"></i></a>
+                </li>
+                <li ><a id="nexus-back" data-pjax href="/">A Programmer’s Blog</a></li>
+                
+                <div id="nav-container">
+                    <div class="post-navbar" style="line-height: 63px;display:none">
+                        <li id="navbar-title"><a href="#">undefined</a></li>
+                        <li id="navbar-toc" style="border-left: none">
+                            <a style="padding-right: 15px">
+                                <span id="toc-content" >Introduction</span><i class="fa fa-chevron-down" ></i>
+                            </a>
+                            <div class="hidden-box">
+                                <ul id="toc"></ul>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                
+            </nav>
+
+            <div class="scroller">
+            <div class="scroller-inner">
+
+
+<!-- -->
+<!--<body class="home-template">-->
+<!---->
+  
+<main class="content" role="main">
+
     
-      <li><a href="/">Home</a></li>
+    <article class="post">
+
+        <header class="post-header">
+            <div class="tag-tile">
+                
+            </div>
+            <h1 class="post-title"><a data-pjax href="/code-and-math-test/">Code and Math Test</a>
+            </h1>
+
+            <div class="post-meta">
+                Post on<span class="fa fa-clock-o"></span>
+                <time datetime="2014-07-30T01:49:14.000Z"
+                      itemprop="datePublished">Jul 30 2014</time>
+            </div>
+        </header>
+        <section class="post-excerpt">
+            <p>
+                
+                
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.
+
+
+
+
+
+
+                
+            </p>
+            
+        </section>
+    </article>
     
-      <li><a href="/archives">Archives</a></li>
+    <article class="post">
+
+        <header class="post-header">
+            <div class="tag-tile">
+                
+            </div>
+            <h1 class="post-title"><a data-pjax href="/my-ubuntu-gnome-tweaks/">My Ubuntu GNOME Tweaks</a>
+            </h1>
+
+            <div class="post-meta">
+                Post on<span class="fa fa-clock-o"></span>
+                <time datetime="2014-07-29T03:35:02.000Z"
+                      itemprop="datePublished">Jul 29 2014</time>
+            </div>
+        </header>
+        <section class="post-excerpt">
+            <p>
+                
+                以 Ubuntu GNOME 14.04 LTS 英文語系為基礎。
+安裝軟體
+
+7z
+ClipIt
+Gnome Gmail
+Hime
+Java 8
+ubuntu-restricted-extras
+Vim
+VLC
+文泉驛中文字型
+嘸蝦米輸入法
+
+Firefox 附加元件
+
+Gmail Notifier
+GNotifier
+
+設定
+
+APT
+Gnome Tweak Tool
+Input Method Configuration
+Onlin
+                
+            </p>
+            
+        </section>
+    </article>
     
-  </ul>
-  <div class="clearfix"></div>
-</nav>
-<div class="clearfix"></div></header>
-  <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
-<h2 class="archive-title">Archives</h2>
-
-
-  
     <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-07-30T01:49:14.000Z"><a href="/code-and-math-test/">Jul 30 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/code-and-math-test/">Code and Math Test</a></h1>
-  
 
-    </header>
-    <div class="entry">
-      
-        <blockquote>
+        <header class="post-header">
+            <div class="tag-tile">
+                
+            </div>
+            <h1 class="post-title"><a data-pjax href="/hello-world/">Hello World</a>
+            </h1>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.</p>
-</blockquote>
-
-
-<blockquote>
-
-<p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p>
-<footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote>
-
-
-<blockquote>
-
-<p>NEW: DevDocs now comes with syntax highlighting. <a href="http://devdocs.io">http://devdocs.io</a></p>
-<footer><strong>@DevDocs</strong><cite><a href="https://twitter.com/devdocs/status/356095192085962752">twitter.com/devdocs/status/&hellip;</a></cite></footer></blockquote>
-
-
-<blockquote>
-
-<p>Every interaction is both precious and an opportunity to delight.</p>
-<footer><strong>Seth Godin</strong><cite><a href="http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html">Welcome to Island Marketing</a></cite></footer></blockquote>
-
-
-<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="preprocessor">#<span class="keyword">include</span> &lt;stdio.h&gt;</span></div><div class="line"><span class="preprocessor">#<span class="keyword">include</span> &lt;string.h&gt;</span></div><div class="line"><span class="keyword">void</span> reverse_char_array(<span class="keyword">char</span> * first, <span class="keyword">char</span> * last) {</div><div class="line">    <span class="keyword">while</span> (first != last &amp;&amp; first != --last) {</div><div class="line">        *first ^= *last;</div><div class="line">        *last ^= *first;</div><div class="line">        *first++ ^= *last;</div><div class="line">    }</div><div class="line">}</div><div class="line"><span class="keyword">void</span> reverse_string(<span class="keyword">char</span> * sentence) {</div><div class="line">    reverse_char_array(sentence, &amp;sentence[<span class="built_in">strlen</span>(sentence)]);</div><div class="line">}</div><div class="line"><span class="keyword">void</span> reverse_word(<span class="keyword">char</span> * sentence) {</div><div class="line">    <span class="keyword">char</span> * end_s = &amp;sentence[<span class="built_in">strlen</span>(sentence)], * end_w;</div><div class="line">    <span class="keyword">while</span> (end_w != end_s) {</div><div class="line">        <span class="keyword">if</span> (!(end_w = <span class="built_in">strchr</span>(sentence, <span class="string">' '</span>))) end_w = end_s;</div><div class="line">        reverse_char_array(sentence, end_w);</div><div class="line">        sentence = end_w + <span class="number">1</span>;</div><div class="line">    }</div><div class="line">}</div><div class="line"><span class="keyword">int</span> main(<span class="keyword">int</span> argc, <span class="keyword">char</span> ** argv) {</div><div class="line">    <span class="keyword">char</span> sentence[] = <span class="string">"how are you"</span>;</div><div class="line">    reverse_string(sentence);</div><div class="line">    reverse_word(sentence);</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"%s\n"</span>, sentence);</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">}</div></pre></td></tr></table></figure>
-
-<figure class="highlight py"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#!/usr/bin/env python</span></div><div class="line"><span class="comment"># -*- coding: utf-8 -*-</span></div><div class="line"><span class="keyword">import</span> Queue</div><div class="line"><span class="keyword">import</span> argparse</div><div class="line"><span class="keyword">import</span> os</div><div class="line"><span class="keyword">import</span> random</div><div class="line"><span class="keyword">import</span> subprocess</div><div class="line"><span class="keyword">import</span> sys</div><div class="line"><span class="keyword">import</span> threading</div><div class="line"><span class="keyword">import</span> time</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Tester</span><span class="params">(threading.Thread)</span>:</span></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, testee, answer_queue, counter_queue)</span>:</span></div><div class="line">        threading.Thread.__init__(self)</div><div class="line">        self.testee = testee</div><div class="line">        self.answer_queue = answer_queue</div><div class="line">        self.counter_queue = counter_queue</div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">(self)</span>:</span></div><div class="line">        <span class="keyword">while</span> <span class="keyword">True</span>:</div><div class="line">            ans = self.answer_queue.get()</div><div class="line">            counter = <span class="number">1</span></div><div class="line">            p = subprocess.Popen(self.testee,</div><div class="line">                    stdin=subprocess.PIPE, stdout=subprocess.PIPE)</div><div class="line">            <span class="keyword">while</span> <span class="keyword">True</span>:</div><div class="line">                guess = p.stdout.readline().strip()</div><div class="line">                bulls = sum(<span class="number">1</span> <span class="keyword">for</span> i, j <span class="keyword">in</span> zip(ans, guess) <span class="keyword">if</span> i == j)</div><div class="line">                cows = sum(<span class="number">1</span> <span class="keyword">for</span> i, j <span class="keyword">in</span> zip(ans, guess)<span class="keyword">if</span> i != j <span class="keyword">and</span> j <span class="keyword">in</span> ans)</div><div class="line">                score = str(bulls) + <span class="string">'a'</span> + str(cows) + <span class="string">'b'</span> + <span class="string">'\n'</span></div><div class="line">                p.stdin.write(score)</div><div class="line">                <span class="keyword">if</span> bulls == <span class="number">4</span>:</div><div class="line">                    self.answer_queue.task_done()</div><div class="line">                    self.counter_queue.put(counter)</div><div class="line">                    counter = <span class="number">1</span></div><div class="line">                    <span class="keyword">break</span></div><div class="line">                counter += <span class="number">1</span></div><div class="line">            <span class="keyword">if</span> self.answer_queue.empty():</div><div class="line">                <span class="keyword">break</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_args</span><span class="params">()</span>:</span></div><div class="line">    args_parser = argparse.ArgumentParser(</div><div class="line">            formatter_class=argparse.RawDescriptionHelpFormatter,</div><div class="line">            description=<span class="string">'Profile a bulls-and-cows guesser.'</span>,</div><div class="line">            epilog=<span class="string">'EXAMPLE:\n'</span> \</div><div class="line">                    <span class="string">"  {} -j 8 './bulls-and-cows-guesser.py'"</span>.format(os.path.basename(__file__))</div><div class="line">                    )</div><div class="line">    args_parser.add_argument(<span class="string">'testee'</span> , metavar=<span class="string">'TESTEE'</span>,</div><div class="line">            help=<span class="string">'the guesser you want to evaluate'</span>)</div><div class="line">    args_parser.add_argument(<span class="string">'-j'</span>, <span class="string">'--jobs'</span>, metavar=<span class="string">'N'</span>, type=int, default=<span class="number">1</span>,</div><div class="line">            help=<span class="string">'allow N jobs at once'</span>)</div><div class="line">    args_parser.add_argument(<span class="string">'--no-shuffle'</span>, action=<span class="string">'store_true'</span>,</div><div class="line">            help=<span class="string">'do not shuffle the test casees'</span>)</div><div class="line">    <span class="keyword">return</span> args_parser.parse_args()</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_all_answers</span><span class="params">(shuffle)</span>:</span></div><div class="line">    answer_candidates = [str(i) + str(j) + str(k) + str(l) \</div><div class="line">                <span class="keyword">for</span> i <span class="keyword">in</span> xrange(<span class="number">0</span>, <span class="number">10</span>) <span class="keyword">for</span> j <span class="keyword">in</span> xrange(<span class="number">0</span>, <span class="number">10</span>) \</div><div class="line">                <span class="keyword">for</span> k <span class="keyword">in</span> xrange(<span class="number">0</span>, <span class="number">10</span>) <span class="keyword">for</span> l <span class="keyword">in</span> xrange(<span class="number">0</span>, <span class="number">10</span>) \</div><div class="line">                <span class="keyword">if</span> len(set(str(i) + str(j) + str(k) + str(l))) == <span class="number">4</span>]</div><div class="line"></div><div class="line">    <span class="keyword">if</span> shuffle:</div><div class="line">        random.shuffle(answer_candidates)</div><div class="line"></div><div class="line">    <span class="keyword">return</span> answer_candidates</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></div><div class="line">    args = get_args()</div><div class="line">    answer_candidates = get_all_answers(<span class="keyword">not</span> args.no_shuffle)</div><div class="line"></div><div class="line">    answer_queue = Queue.Queue()</div><div class="line">    counter_queue = Queue.Queue()</div><div class="line">    <span class="keyword">for</span> ans <span class="keyword">in</span> answer_candidates:</div><div class="line">        answer_queue.put(ans)</div><div class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> xrange(args.jobs):</div><div class="line">        t = Tester(args.testee, answer_queue, counter_queue)</div><div class="line">        t.daemon = <span class="keyword">True</span></div><div class="line">        t.start()</div><div class="line"></div><div class="line">    answer_queue.join()</div><div class="line">    <span class="keyword">while</span> <span class="keyword">True</span>:</div><div class="line">        <span class="keyword">if</span> counter_queue.qsize() == len(answer_candidates):</div><div class="line">            <span class="keyword">break</span></div><div class="line"></div><div class="line">    counter = []</div><div class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> xrange(len(answer_candidates)):</div><div class="line">        counter.append(counter_queue.get())</div><div class="line"></div><div class="line">    <span class="keyword">print</span> <span class="string">'avg: '</span>, float(sum(counter)) / len(counter)</div><div class="line">    d = {}</div><div class="line">    <span class="keyword">for</span> v <span class="keyword">in</span> counter:</div><div class="line">        <span class="keyword">if</span> v <span class="keyword">not</span> <span class="keyword">in</span> d:</div><div class="line">            d[v] = <span class="number">1</span></div><div class="line">            <span class="keyword">continue</span></div><div class="line">        d[v] += <span class="number">1</span></div><div class="line">    <span class="keyword">print</span> str(d)[<span class="number">1</span>:len(str(d))-<span class="number">1</span>]</div><div class="line"></div><div class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</div><div class="line">    main()</div></pre></td></tr></table></figure>
-
-<figure class="highlight"><figcaption><span>.compact</span><a href="http://underscorejs.org/#compact">Underscore.js</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">.compact([<span class="number">0</span>, <span class="number">1</span>, <span class="keyword">false</span>, <span class="number">2</span>, ‘’, <span class="number">3</span>]);</div><div class="line"><span class="output"><span class="status">=&gt;</span> [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span></div></pre></td></tr></table></figure>
-
-<script src="https://gist.github.com/9265765.js"></script>
-
-<p>$a = b + c$<br>$A = B + C$</p>
-<p>$$\frac{\partial u}{\partial t}<br>= h^2 \left( \frac{\partial^2 u}{\partial x^2} +<br>\frac{\partial^2 u}{\partial y^2} +<br>\frac{\partial^2 u}{\partial z^2}\right)$$</p>
-<p>This equation <span>$\cos 2\theta = \cos^2 \theta - \sin^2 \theta =  2 \cos^2 \theta - 1$</span> is inline.</p>
-<span>$$\begin{aligned}
-\dot{x} & = \sigma(y-x) \\
-\dot{y} & = \rho x - y - xz \\
-\dot{z} & = -\beta z + xy
-\end{aligned}$$</span>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  
+            <div class="post-meta">
+                Post on<span class="fa fa-clock-o"></span>
+                <time datetime="2014-07-29T03:33:39.000Z"
+                      itemprop="datePublished">Jul 29 2014</time>
+            </div>
+        </header>
+        <section class="post-excerpt">
+            <p>
+                
+                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in trobuleshooting or you can ask me on GitHub.
+Quick Start
+Create a new 
+                
+            </p>
+            
+        </section>
+    </article>
+    
     <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-07-29T03:35:02.000Z"><a href="/my-ubuntu-gnome-tweaks/">Jul 29 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/my-ubuntu-gnome-tweaks/">My Ubuntu GNOME Tweaks</a></h1>
-  
 
-    </header>
-    <div class="entry">
-      
-        <p>以 Ubuntu GNOME 14.04 LTS 英文語系為基礎。</p>
-<h2 id="安裝軟體">安裝軟體</h2>
-<ul>
-<li><a href="#7z">7z</a></li>
-<li><a href="#clipit">ClipIt</a></li>
-<li><a href="#gnome-gmail">Gnome Gmail</a></li>
-<li><a href="#hime">Hime</a></li>
-<li><a href="#java8">Java 8</a></li>
-<li><a href="#ubuntu-restricted-extras">ubuntu-restricted-extras</a></li>
-<li><a href="#vim">Vim</a></li>
-<li><a href="#vlc">VLC</a></li>
-<li><a href="#wen-quan-yi-fonts">文泉驛中文字型</a></li>
-<li><a href="#boshiamy">嘸蝦米輸入法</a></li>
-</ul>
-<h2 id="Firefox_附加元件">Firefox 附加元件</h2>
-<ul>
-<li><a href="#gmail-notifier">Gmail Notifier</a></li>
-<li><a href="#gnotifier">GNotifier</a></li>
-</ul>
-<h2 id="設定">設定</h2>
-<ul>
-<li><a href="#apt">APT</a></li>
-<li><a href="#gnome-tweak-tool">Gnome Tweak Tool</a></li>
-<li><a href="#im-config">Input Method Configuration</a></li>
-<li><a href="#online-accounts">Online Accounts</a></li>
-</ul>
-<h3 id="7z"><a name="7z"></a>7z</h3>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt install p7zip-full</div></pre></td></tr></table></figure>
+        <header class="post-header">
+            <div class="tag-tile">
+                
+                
+                <a data-pjax href='/tags/algorithm/'>Algorithm</a>
+                
+                
+            </div>
+            <h1 class="post-title"><a data-pjax href="/codeforces-problem-1b/">Codeforces Problem 1B</a>
+            </h1>
 
-<h3 id="ClipIt"><a name="clipit"></a>ClipIt</h3>
-<p>剪貼簿管理程序，安裝的主要目的是要他同步剪貼簿的功能。因為 X11 的剪貼簿在「貼上」時，若來源程序已暫停或結束，會因無法讀取來源而無法貼上。可參考：<a href="http://www.jwz.org/doc/x-cut-and-paste.html">X Selections, Cut Buffers, and Kill Rings.</a></p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt install clipit</div></pre></td></tr></table></figure>
+            <div class="post-meta">
+                Post on<span class="fa fa-clock-o"></span>
+                <time datetime="2014-07-29T02:11:56.000Z"
+                      itemprop="datePublished">Jul 29 2014</time>
+            </div>
+        </header>
+        <section class="post-excerpt">
+            <p>
+                
+                Codeforces Problem 1B
+這題考的是經典的試算表 (spreadsheet) 座標轉換。這個問題的重點在對數字進位的處理。訣竅在於把 one-based column 當成 zero-based 來處理。
+我的 Python 解法
 
-<h3 id="Gnome_Gmail"><a name="gnome-gmail"></a>Gnome Gmail</h3>
-<p>讓預設郵件客戶端可被設定為 Gmail。</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt install gnome-gmail</div></pre></td></tr></table></figure>
-
-<h3 id="Hime"><a name="hime"></a>Hime</h3>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt install hime</div></pre></td></tr></table></figure>
-
-<h3 id="Java_8"><a name="java8"></a>Java 8</h3>
-<p><a href="http://www.webupd8.org/2012/09/install-oracle-java-8-in-ubuntu-via-ppa.html">Install Oracle Java 8 In Ubuntu Via PPA Repository</a></p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> add-apt-repository ppa:webupd8team/java</div><div class="line"><span class="built_in">sudo</span> apt update</div><div class="line"><span class="built_in">sudo</span> apt install oracle-java8-installer</div></pre></td></tr></table></figure>
-
-<h3 id="ubuntu-restricted-extras"><a name="ubuntu-restricted-extras"></a>ubuntu-restricted-extras</h3>
-<p>RAR、Flash Player 等非開源的程式之集合。</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt install ubuntu-restricted-extras</div></pre></td></tr></table></figure>
-
-<h3 id="Vim"><a name="vim"></a>Vim</h3>
-<p>Vim with GNOME specific support.</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt install vim-gnome</div></pre></td></tr></table></figure>
-
-<h3 id="VLC"><a name="vlc"></a>VLC</h3>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt install vlc</div></pre></td></tr></table></figure>
-
-<h3 id="文泉驛中文字型"><a name="wen-quan-yi-fonts"></a>文泉驛中文字型</h3>
-<p>開源的中文字型。</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt install ttf-wqy-*</div></pre></td></tr></table></figure>
-
-<h3 id="嘸蝦米輸入法"><a name="boshiamy"></a>嘸蝦米輸入法</h3>
-<ol>
-<li>安裝 <a href="#hime">Hime</a>。</li>
-<li>由<a href="http://boshiamy.com/download.html">嘸蝦米官方網站</a> → 「嘸蝦米輸入法 for Unix-like」，下載 gcin 適用的表格檔。</li>
-<li>解壓縮 <code>boshiamy-gcin.tar.gz</code>，將其中的 <code>boshiamy-t.gtab</code> 複製到 <code>/usr/lib/hime/table</code>。</li>
-<li>開啟 <code>~/.config/hime/gtab.list</code>，將嘸蝦米那一行的 <code>noseeing.gtab</code> 取代成 <code>boshiamy-t.gtab</code>。</li>
-</ol>
-<h3 id="Gmail_Notifier"><a name="gmail-notifier"></a>Gmail Notifier</h3>
-<p>偵測到 Gmail 的新進信件時會由 Firefox 發出提醒。<br><a href="https://addons.mozilla.org/zh-tw/firefox/addon/gmail-notifier-restartless/?src=search">Gmail Notifier</a></p>
-<h3 id="GNotifier"><a name="gnotifier"></a>GNotifier</h3>
-<p>讓 Firefox 使用 GNOME、KDE、Xfce 或 OS X 桌面環境的提醒 (notification) 介面。<br><a href="https://addons.mozilla.org/zh-tw/firefox/addon/gnotifier/">GNotifier</a></p>
-<h3 id="APT"><a name="apt"></a>APT</h3>
-<p>以國網中心的 APT 伺服器取代台灣大學的：將 <code>/etc/apt/sources.list</code> 內的 <code>tw.archive.ubuntu.com</code> 取代為 <code>free.nchc.org.tw</code>。</p>
-<h3 id="Gnome_Tweak_Tool"><a name="gnome-tweak-tool"></a>Gnome Tweak Tool</h3>
-<p>依個人喜好調整預設設定。</p>
-<h3 id="Input_Method_Configuration"><a name="im-config"></a>Input Method Configuration</h3>
-<p>先安裝 <a href="#hime">Hime</a>，接著由 <code>Activities</code> → <code>Input Method</code> 選擇 hime。</p>
-<h3 id="Online_Accounts"><a name="online-accounts"></a>Online Accounts</h3>
-<p>由 <code>Activities</code> → <code>System Settings</code> → <code>Online Accounts</code> 登入 Google 帳戶，登入後可將右方不希望同步的功能關閉。若有開啟 Calendar 同步，可由螢幕最上方正中央的 Calendar 下拉選單中看到將近的活動，提醒時間到時也會由 Evolution 彈出視窗提醒。</p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  
+                
+            </p>
+            
+        </section>
+    </article>
+    
     <article class="post">
+
+        <header class="post-header">
+            <div class="tag-tile">
+                
+                
+                <a data-pjax href='/tags/software/'>Software</a>
+                
+                
+            </div>
+            <h1 class="post-title"><a data-pjax href="/gnome-36-yu-kde-410-yu-gong-zuo-chang-suo-shi-yong-nian-xin-de/">Gnome 3.6 與 KDE 4.10 於工作場所使用一年心得</a>
+            </h1>
+
+            <div class="post-meta">
+                Post on<span class="fa fa-clock-o"></span>
+                <time datetime="2014-07-28T16:00:00.000Z"
+                      itemprop="datePublished">Jul 29 2014</time>
+            </div>
+        </header>
+        <section class="post-excerpt">
+            <p>
+                
+                在工作上使用 KDE 一年有餘，從 4.8 用到 4.10。最近同時也在使用 Gnome 3.6，網路上的比較文章不少，再增加一篇，希望我能提供較新版本的使用經驗與不同的看法。
+KDE 和 Gnome 的地位是一樣的，他們同樣是桌面環境。桌面環境簡言之即是一般使用者面對電腦的軟體介面，他包含了圖形、操作方法（如視窗的概念）、硬體管理、提供應用程式表現的方式……等，族繁不及備載。
+KDE 與 Gnome 所使用的圖形引擎的不同，是一個很重
+                
+            </p>
+            
+        </section>
+    </article>
+    
+    <nav class="pagination" role="pagination">
+        
+        <span class="page-number">Page 1 of 1</span>
+        
+    </nav>
+</main>
+
+
   
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-07-29T03:33:39.000Z"><a href="/hello-world/">Jul 29 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/hello-world/">Hello World</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>Welcome to <a href="http://hexo.io/">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2>
-<h3 id="Create_a_new_post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run_server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/deployment.html">Deployment</a></p>
-
-      
+<footer class="site-footer">
+    
+    <div class="inner">
+        <section class="copyright"><a href="/"></a> &copy; A Programmer’s Blog 2014</section>
+        <section class="poweredby">Published with <a target="_blank" href="http://hexo.io/">Hexo   </a> and Theme by <a target="_blank" href="https://github.com/yuche/hexo-theme-kael">Kael</a></section>
     </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  
-    <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-07-29T02:11:56.000Z"><a href="/codeforces-problem-1b/">Jul 29 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/codeforces-problem-1b/">Codeforces Problem 1B</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p><a href="http://codeforces.com/problemset/problem/1/B">Codeforces Problem 1B</a></p>
-<p>這題考的是經典的試算表 (spreadsheet) 座標轉換。這個問題的重點在對數字進位的處理。訣竅在於把 one-based column 當成 zero-based 來處理。</p>
-<p><a href="http://codeforces.com/contest/1/submission/6457739">我的 Python 解法</a></p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  
-    <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-07-28T16:00:00.000Z"><a href="/gnome-36-yu-kde-410-yu-gong-zuo-chang-suo-shi-yong-nian-xin-de/">Jul 29 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/gnome-36-yu-kde-410-yu-gong-zuo-chang-suo-shi-yong-nian-xin-de/">Gnome 3.6 與 KDE 4.10 於工作場所使用一年心得</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>在工作上使用 <a href="http://www.kde.org/">KDE</a> 一年有餘，從 4.8 用到 4.10。最近同時也在使用 <a href="http://www.gnome.org/">Gnome</a> 3.6，網路上的比較文章不少，再增加一篇，希望我能提供較新版本的使用經驗與不同的看法。</p>
-<p>KDE 和 Gnome 的地位是一樣的，他們同樣是<a href="http://zh.wikipedia.org/zh-tw/%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83">桌面環境</a>。桌面環境簡言之即是一般使用者面對電腦的軟體介面，他包含了圖形、操作方法（如視窗的概念）、硬體管理、提供應用程式表現的方式……等，族繁不及備載。</p>
-<p>KDE 與 Gnome 所使用的圖形引擎的不同，是一個很重要的差別。但若著重於桌面環境對工作效率的影響，這就不見得是一件重要的事。</p>
-<p>概括來說，KDE 和 Gnome 都提供了漂亮且成熟的界面，兩者都能提供一般操作之所需。</p>
-<p>以下逐項比較我所重視的部分：</p>
-<ol>
-<li><p>穩定度：<br>KDE 4.8 到 4.10 之間，穩定性都非常棒，似乎沒有 UI crash 的印象。Gnome 3.6 的穩定性比起稍早之前的版本，已經好很多，但偶爾還是會發生一些怪異的情況，例如視窗鍵按了沒反應。過去一年的經驗中，KDE 的穩定度幾乎是 Windows 7 等級的，而 Gnome 則還有待加強。</p>
-</li>
-<li><p>功能豐富度：<br>Gnome 和 KDE 都提供了許多功能，不過 KDE 所提供的功能、自定性更加多元和完整，也優化了更多細節。</p>
-</li>
-<li><p>美觀：<br>同樣注重外觀設計，我比較喜歡 Gnome 的 UI，不過 KDE 的特效比較多。</p>
-</li>
-<li><p>效能：<br>沒有仔細比較過，至少編譯 AOSP 程式碼的瓶頸不在桌面環境。不過在做視窗拖曳時，KDE 的視窗跟隨游標明顯比 Gnome 來得緊。</p>
-</li>
-<li><p>資源：<br>網路上 Gnome 或 GTK 的使用教學或問答比較多。但以 GUI 程式開發來說 Qt 比較被推薦。</p>
-</li>
-<li><p>與應用軟體的整合度：<br>都很優異，不過單以 file manager 來說，KDE 的 Dolphin 做得比 Gnome 的 Nautilus 更多。<br>題外話，個人覺得 Okular 比 Document Viewer 好，因為他支援畫記與註解，適合用來讀電子書；不過 Document Viewer 的搜尋速度快很多。Konsole 獨有的 copy on select 我也很喜歡。</p>
-</li>
-<li><p>檔案總管：<br>承上，Dolphin 比 Nautilus 來得強大許多，尤其是整合 terminal 的功能，絕對稱得上是 killer feature。</p>
-</li>
-<li><p>輸入法：<br>我使用 Gcin 或 Hime 框架搭配嘸蝦米都沒遇到問題。</p>
-</li>
-</ol>
-<p>目前的情形下我推薦初次使用 Linux 的朋友 KDE，因為他功能較多，穩定性也較高，不太需要再自行安裝其他工具來補強，或是拿出終端機敲打命令。</p>
-<p>而對於成熟的 Linux 使用者，在軟體的穩定性都達到堪用的情形下，我認為選擇的重點該放在「設計哲學」。活躍的開發團隊要提供更穩定的環境是遲早的事，Gnome 或 KDE 所欠缺的功能也大都有第三方的程式可以完成。透過什麼引擎來呈現，對於沒有特殊信仰的非開發者來說，根本沒有差別。但設計哲學直接影響到使用習慣以及工作效率和可能的發展方向。譬如說輕量化的桌面環境首推 LXDE，而 Gnome 和 KDE 同樣強調使用經驗、美觀和完整度，同質性非常高，對於操作方式的設計哲學即是最重要的差異。放下微小 bug 所帶來的不悅，以及引擎、授權等所產生的先入為主，直接體驗使用經驗，才能公平地選擇。</p>
-<p>我比較喜歡 Gnome 3，因為操作比較簡單。而且我很享受按下 Gnome 3 提供的各類大顆按鈕的明確反差的感覺。</p>
-<p>相關資料：</p>
-<ul>
-<li><a href="http://www.datamation.com/open-source/gnome-or-kde-the-old-question-is-new-today-1.html">GNOME or KDE? The Old Question Is New Today</a></li>
-</ul>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  
-
-  <nav id="pagination">
-  
-  
-  <div class="clearfix"></div>
-</nav>
-</div></div>
-    <aside id="sidebar" class="alignright">
-  <div class="search">
-  <form action="//google.com/search" method="get" accept-charset="utf-8">
-    <input type="search" name="q" results="0" placeholder="Search">
-    <input type="hidden" name="q" value="site:changyuheng.github.io">
-  </form>
+</footer>
 </div>
+</div><!-- /scroller -->
 
-  
-<div class="widget tag">
-  <h3 class="title">Tags</h3>
-  <ul class="entry">
-  
-    <li><a href="/tags/algorithm/">Algorithm</a><small>1</small></li>
-  
-    <li><a href="/tags/software/">Software</a><small>1</small></li>
-  
-  </ul>
+</div><!-- /pusher -->
+</div><!-- /container -->
 </div>
-
-</aside>
-    <div class="clearfix"></div>
-  </div>
-  <footer id="footer" class="inner"><div class="alignleft">
   
-  &copy; 2014 Chang Yu-heng (張昱珩)
-  
-</div>
-<div class="clearfix"></div></footer>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
-
-
-<script type="text/javascript">
-var disqus_shortname = 'aprogrammersblog';
-
-(function(){
-  var dsq = document.createElement('script');
-  dsq.type = 'text/javascript';
-  dsq.async = true;
-  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
-  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-}());
-</script>
+<script src="//cdn.staticfile.org/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="/js/lib.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
 
 
 
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-(function($){
-  $('.fancybox').fancybox();
-})(jQuery);
-</script>
+
+
 
 </body>
 </html>
