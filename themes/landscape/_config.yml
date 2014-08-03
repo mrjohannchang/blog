@@ -10,13 +10,10 @@ excerpt_link: Read More
 fancybox: true
 
 # Sidebar
-sidebar: false
+sidebar: left
 widgets:
-- category
-- tag
-- tagcloud
-- archive
 - recent_posts
+- tag
 
 # Miscellaneous
 google_analytics: UA-44162683-1
