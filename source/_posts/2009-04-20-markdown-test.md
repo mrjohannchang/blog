@@ -1,8 +1,10 @@
-title: Code and Math Test
+title: Markdown Test
 date: 2009-04-20
 tags:
 - misc
 ---
+
+<!-- more -->
 
 {% blockquote %}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.
@@ -175,3 +177,47 @@ This equation {% math \cos 2\theta = \cos^2 \theta - \sin^2 \theta =  2 \cos^2 \
 \dot{z} & = -\beta z + xy
 \end{aligned}
 {% endmath-block %}
+
+| Left-Aligned  | Center Aligned  | Right Aligned |
+| :------------ | :-------------: | ------------: |
+| col 3 is      | some wordy text |         $1600 |
+| col 2 is      | centered        |           $12 |
+| zebra stripes | are neat        |            $1 |
+
+| Left-Aligned  | Center Aligned  | Right Aligned |
+| :------------ | :-------------- | :------------ |
+| col 3 is      | some wordy text |         $1600 |
+| col 2 is      | centered        |           $12 |
+| zebra stripes | are neat        |            $1 |
+
+| Left-Aligned  | Center Aligned  | Right Aligned | Left-Aligned  | Center Aligned  | Right Aligned | Left-Aligned  | Center Aligned  | Right Aligned | Left-Aligned  | Center Aligned  | Right Aligned |
+| :-----------: | :-------------: | :-----------: | :-----------: | :-------------: | :-----------: | :-----------: | :-------------: | :-----------: | :-----------: | :-------------: | :-----------: |
+| col 3 is      | some wordy text |         $1600 | col 3 is      | some wordy text |         $1600 | col 3 is      | some wordy text |         $1600 | col 3 is      | some wordy text |         $1600 |
+| col 2 is      | centered        |           $12 | col 2 is      | centered        |           $12 | col 2 is      | centered        |           $12 | col 2 is      | centered        |           $12 |
+| zebra stripes | are neat        |            $1 | zebra stripes | are neat        |            $1 | zebra stripes | are neat        |            $1 | zebra stripes | are neat        |            $1 |
+
+| Left-Aligned  | Center Aligned  | Right Aligned |
+| ------------: | --------------: | ------------: |
+| col 3 is      | some wordy text |         $1600 |
+| col 2 is      | centered        |           $12 |
+| zebra stripes | are neat        |            $1 |
+
+perform_complicated_task
+do_this_and_do_that_and_another_thing
+
+http://example.com
+
+~~deleted.~~
+
+{% rawblock %}
+content<br />
+1. a<br />
+1. b<br />
+    1. A<br />
+    1. B<br />
+    * C<br />
+ABCDEFG<br />
+1234567<br />
+{% endrawblock /%}
+
+{% jsfiddle QkPBF %}
