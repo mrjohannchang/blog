@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://changyuheng.github.io/"/>
-  <updated>2014-08-04T16:16:49.991Z</updated>
+  <updated>2014-08-04T16:22:13.330Z</updated>
   <id>http://changyuheng.github.io/</id>
   
   <author>
@@ -19,10 +19,10 @@
     <link href="http://changyuheng.github.io/%E8%87%AA%E8%A1%8C%E7%B5%84%E5%90%88%E5%AE%89%E5%85%A8%E3%80%81%E5%A5%BD%E8%A8%98%E4%B8%94%E6%AF%8F%E5%80%8B%E7%B6%B2%E7%AB%99%E7%9B%B8%E7%95%B0%E7%9A%84%E5%AF%86%E7%A2%BC/"/>
     <id>http://changyuheng.github.io/自行組合安全、好記且每個網站相異的密碼/</id>
     <published>2014-08-03T16:00:00.000Z</published>
-    <updated>2014-08-04T16:16:29.000Z</updated>
+    <updated>2014-08-04T16:21:55.000Z</updated>
     <content type="html"><![CDATA[<p>資訊應用和我們的結合愈來愈緊密，保護隱私和機敏資料的最後一道防線－－密碼，顯得更為重要。</p>
 <p>我們知道密碼不應該過於簡單或容易猜測，像是不該用生日、電話、或是常見的單字、人名。更安全的做法是用密碼產生器產生隨機不同大小寫的字母、數字、符號組合。此外，網站被駭客入侵時有所聞，為了避免因為一個網站的密碼被竊而影響到所有的密碼，應該讓每個網站採用不同的密碼。當密碼太多不容易記，又有人發展了密碼管理軟體。但是一旦我們把密碼都放進管理軟體，不就又將雞蛋丟進同一個籠子裡了嗎？</p>
-<p>一個不同的密碼產生方法：</p>
+<p>一個不同的密碼產生方法：token + pattern。</p>
 <p><strong>優點</strong></p>
 <ol>
 <li>不需要額外管理軟體</li>
@@ -35,7 +35,6 @@
 <li>安全性較密碼產生器產生的密碼弱</li>
 <li>有被破解的風險</li>
 </ol>
-<p>密碼由 token + pattern 所組成。</p>
 <p>Token 是一串自訂定的短密碼，例如 TAIPEI 的變形 T@iP31。<br>Pattern 是一種能套用到不同網站名稱的模板。例如產生的密碼要給 Google 使用，就取前四個字 goog；要給 Yahoo 用就取 yaho。</p>
 <p>如此一來在 Google 的密碼就會是 T@iP31goog，在 Yahoo 的密碼是 T@iP31yaho。我們只要記 token，pattern 可以透過網址產生，所以非常容易記憶，且在不同的網站有不同的密碼。Pattern 的制定可以更加複雜，像是加上<a href="http://zh.wikipedia.org/zh-tw/%E5%87%B1%E6%92%92%E5%AF%86%E7%A2%BC">凱撒密碼</a>來模糊化。整體的組合也可以再加以變化，像是改成 token + pattern + token + pattern 來作為密碼產生方式。</p>
 <p>相關文章</p>
