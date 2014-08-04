@@ -164,6 +164,8 @@ Scala
         
           <a class="main-nav-link" href="https://github.com/changyuheng">GitHub</a>
         
+          <a class="main-nav-link" href="/about">About</a>
+        
       </nav>
       <nav id="sub-nav">
         
@@ -258,34 +260,46 @@ Scala
 </li>
 <li><p>進入「<a href="http://codeforces.com/problemset/problem/1/A">Theater Square</a>」</p>
 <p><a href="images/codeforces-problemset.png"><img src="images/codeforces-problemset.png" alt="problemset"></a></p>
-<p>題目最上方的：</p>
-<p> :::text<br> time limit per test: 2 seconds<br> memory limit per test: 64 megabytes<br> input: standard input<br> output: standard output</p>
-<p>分別表示：</p>
-<p> :::text<br> 時間限制：2 秒<br> 使用記憶體大小限制：64 MB<br> 輸入方式：標準輸入<br> 輸出方式：標準輸出</p>
-<p>接著是題目：</p>
-<p> :::text<br> Theatre Square in the capital city of Berland has a rectangular shape with the size n × m meters. On the occasion of the city’s anniversary, a decision was taken to pave the Square with square granite flagstones. Each flagstone is of the size a × a.</p>
-<p> What is the least number of flagstones needed to pave the Square? It’s allowed to cover the surface larger than the Theatre Square, but the Square has to be covered.<br> It’s not allowed to break the flagstones. The sides of flagstones should be parallel to the sides of the Square.</p>
-<p>中文大意：</p>
-<p> :::text<br> 有一塊&nbsp;n × m (長 n，寬 m) 平方公尺矩形的地需要舖滿石磚，每塊石磚大小為正方形&nbsp;a × a。在不切割石磚、不重疊石的前題下，必需舖滿此地。石磚可以超出需要被舖的地，但石磚的邊必需與此地的邊平行。</p>
-<p> 請問最少需要多少石磚才能完成？</p>
-<p>Input (說明測試程式會餵給我們的程式的資料)：</p>
-<p> :::text<br> The input contains three positive integer numbers in the first line: n,  m and a (1 ≤  n, m, a ≤ 10^9).</p>
-<p>中文說明：</p>
-<p> :::text<br> 輸入共一行，此行中包含三個整數：n, m, a，整數間以空白字元分隔。其中 1 ≤  n, m, a ≤ 10^9。</p>
-<p>Output (說明我們的程式應該輸出什麼)：</p>
-<p> :::text<br> Write the needed number of flagstones.</p>
-<p>中文說明：</p>
-<p> :::text<br> 請輸出需要的石磚數。</p>
-<p>範例：</p>
+<ul>
+<li><p>題目最上方的</p>
+<p>time limit per test: 2 seconds<br>memory limit per test: 64 megabytes<br>input: standard input<br>output: standard output</p>
+</li>
+<li><p>分別表示</p>
+<p>時間限制：2 秒<br>使用記憶體大小限制：64 MB<br>輸入方式：標準輸入<br>輸出方式：標準輸出</p>
+</li>
+<li><p>接著是題目：</p>
+<p>Theatre Square in the capital city of Berland has a rectangular shape with the size n × m meters. On the occasion of the city’s anniversary, a decision was taken to pave the Square with square granite flagstones. Each flagstone is of the size a × a.</p>
+<p>What is the least number of flagstones needed to pave the Square? It’s allowed to cover the surface larger than the Theatre Square, but the Square has to be covered.<br>It’s not allowed to break the flagstones. The sides of flagstones should be parallel to the sides of the Square.</p>
+</li>
+<li><p>中文大意：</p>
+<p>有一塊&nbsp;n × m (長 n，寬 m) 平方公尺矩形的地需要舖滿石磚，每塊石磚大小為正方形&nbsp;a × a。在不切割石磚、不重疊石的前題下，必需舖滿此地。石磚可以超出需要被舖的地，但石磚的邊必需與此地的邊平行。</p>
+<p>請問最少需要多少石磚才能完成？</p>
+</li>
+<li><p>Input (說明測試程式會餵給我們的程式的資料)：</p>
+<p>The input contains three positive integer numbers in the first line: n,  m and a (1 ≤  n, m, a ≤ 10^9).</p>
+</li>
+<li><p>中文說明：</p>
+<p>輸入共一行，此行中包含三個整數：n, m, a，整數間以空白字元分隔。其中 1 ≤  n, m, a ≤ 10^9。</p>
+</li>
+<li><p>Output (說明我們的程式應該輸出什麼)：</p>
+<p>Write the needed number of flagstones.</p>
+</li>
+<li><p>中文說明：</p>
+<p>請輸出需要的石磚數。</p>
+</li>
+<li><p>範例：</p>
 <p>Input:</p>
-<p> :::text<br> 6 6 4</p>
-<p>Output</p>
-<p> :::text<br> 4</p>
+<p>6 6 4</p>
+<p>Output:</p>
+<p>4</p>
 <p>註：</p>
-<p> 第一個 6 表示 n，第二個 6 表示 m，4 表示 a。亦即，在 6 × 6 大小的地上，舖以 4 × 4 大小的石磚，最少需要 4 塊石磚才能將其舖滿。</p>
-<p>題解：</p>
-<p> 假設需要 p × q 塊石磚，其必需符合此條件：a × p ≥ m 且 a × q ≥ n。</p>
+<p>第一個 6 表示 n，第二個 6 表示 m，4 表示 a。亦即，在 6 × 6 大小的地上，舖以 4 × 4 大小的石磚，最少需要 4 塊石磚才能將其舖滿。</p>
+</li>
+<li><p>題解：</p>
+<p>假設需要 p × q 塊石磚，其必需符合此條件：a × p ≥ m 且 a × q ≥ n。</p>
 <p>將我們的解法用程式寫出來，並上傳到 Codeforces 即完成此題練習。</p>
+</li>
+</ul>
 </li>
 </ol>
 </li>
@@ -310,7 +324,7 @@ Scala
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://changyuheng.github.io/codeforces-quick-start/" data-id="37v0a60h3mipbrhw" class="article-share-link">Share</a>
+      <a data-url="http://changyuheng.github.io/codeforces-quick-start/" data-id="cov2vrqimwdniady" class="article-share-link">Share</a>
       
         <a href="http://changyuheng.github.io/codeforces-quick-start/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -413,6 +427,8 @@ Scala
     <a href="/archives" class="mobile-nav-link">Archives</a>
   
     <a href="https://github.com/changyuheng" class="mobile-nav-link">GitHub</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
   
 </nav>
     

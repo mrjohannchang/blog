@@ -90,6 +90,8 @@
         
           <a class="main-nav-link" href="https://github.com/changyuheng">GitHub</a>
         
+          <a class="main-nav-link" href="/about">About</a>
+        
       </nav>
       <nav id="sub-nav">
         
@@ -130,18 +132,15 @@
       
         <p>Decorator 是一個 Python 中較為進階的語法，因為較難理解故常被提出來討論。這邊提供一個簡潔的說明。</p>
 <p>假設有一名為 func 的 function 被名為 decor1 和 decor2 的二 decorator 修飾如下：</p>
-<pre><code>:::Python
-<span class="decorator">@decor1</span>
-<span class="decorator">@decor2</span>
-<span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">(*args, **kwargs)</span>:</span>
-    <span class="keyword">pass</span>
-</code></pre><p>則當我們如下呼叫 func() 時：</p>
-<pre><code><span class="attribute">:::Python</span>
-func(<span class="strong">*args, *</span><span class="strong">*kwargs)</span>
-</code></pre><p>可以將之理解為：</p>
-<pre><code><span class="attribute">:::Python</span>
-decor1(decor2(func))(<span class="strong">*args, *</span><span class="strong">*kwargs)</span>
-</code></pre><p>更詳細的說明可以參考：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="decorator">@decor1</span></div><div class="line"><span class="decorator">@decor2</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">(*args, **kwargs)</span>:</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure>
+
+<p>則當我們如下呼叫 func() 時：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">func(*args, **kwargs)</div></pre></td></tr></table></figure>
+
+<p>可以將之理解為：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">decor1(decor2(func))(*args, **kwargs)</div></pre></td></tr></table></figure>
+
+<p>更詳細的說明可以參考：</p>
 <ol>
 <li><a href="http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/">Understanding Python Decorators in 12 Easy Steps!</a></li>
 <li><a href="http://stackoverflow.com/a/739679">How can I make a chain of function decorators in Python?</a></li>
@@ -150,7 +149,7 @@ decor1(decor2(func))(<span class="strong">*args, *</span><span class="strong">*k
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://changyuheng.github.io/understanding-python-decorators/" data-id="dnqdi15064dr5von" class="article-share-link">Share</a>
+      <a data-url="http://changyuheng.github.io/understanding-python-decorators/" data-id="gygih7z0uxv8dodv" class="article-share-link">Share</a>
       
         <a href="http://changyuheng.github.io/understanding-python-decorators/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -187,12 +186,12 @@ decor1(decor2(func))(<span class="strong">*args, *</span><span class="strong">*k
     <div class="article-entry" itemprop="articleBody">
       
         <p>這不是什麼值得驕傲的事，只是一時興致起來，洗了一下 GitHub 的 longest streak。</p>
-<p><a href="images/github-longest-streak.png"><img src="images/github-longest-streak.png" alt="GitHub Longest Streak"></a></p>
+<p><img src="github-longest-streak.png" alt="GitHub Longest Streak"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://changyuheng.github.io/github-streak/" data-id="cohyzznax91k9wir" class="article-share-link">Share</a>
+      <a data-url="http://changyuheng.github.io/github-streak/" data-id="0cri24oq4s1lm3lh" class="article-share-link">Share</a>
       
         <a href="http://changyuheng.github.io/github-streak/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -242,7 +241,7 @@ decor1(decor2(func))(<span class="strong">*args, *</span><span class="strong">*k
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://changyuheng.github.io/windows-photo-viewer-mouse-plug-in/" data-id="6iggfarx16de8nwo" class="article-share-link">Share</a>
+      <a data-url="http://changyuheng.github.io/windows-photo-viewer-mouse-plug-in/" data-id="4birrukm8ge2e91x" class="article-share-link">Share</a>
       
         <a href="http://changyuheng.github.io/windows-photo-viewer-mouse-plug-in/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -303,7 +302,7 @@ decor1(decor2(func))(<span class="strong">*args, *</span><span class="strong">*k
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://changyuheng.github.io/autocheckin-for-garena/" data-id="t3q3bz9bxe1cy5bq" class="article-share-link">Share</a>
+      <a data-url="http://changyuheng.github.io/autocheckin-for-garena/" data-id="iz9z6q7wxgz2wj6n" class="article-share-link">Share</a>
       
         <a href="http://changyuheng.github.io/autocheckin-for-garena/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -386,6 +385,8 @@ decor1(decor2(func))(<span class="strong">*args, *</span><span class="strong">*k
     <a href="/archives" class="mobile-nav-link">Archives</a>
   
     <a href="https://github.com/changyuheng" class="mobile-nav-link">GitHub</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
   
 </nav>
     

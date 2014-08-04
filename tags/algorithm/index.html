@@ -90,6 +90,8 @@
         
           <a class="main-nav-link" href="https://github.com/changyuheng">GitHub</a>
         
+          <a class="main-nav-link" href="/about">About</a>
+        
       </nav>
       <nav id="sub-nav">
         
@@ -131,66 +133,16 @@
         <p><a href="http://zh.wikipedia.org/zh-tw/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">DFS</a> 和 <a href="http://zh.wikipedia.org/zh-tw/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">BFS</a> 在資料結構裡有教，是很基礎的演算法。</p>
 <p>在 <a href="http://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/">Edd Mann 的網誌</a>上看到 Python 的實作，由其中學到 <code>yield from</code> 的用法。下面利用 <code>yield from</code> 的特性，將該網誌中提到的實作改寫成 generator 的型式。同步放在 Gist 上：<a href="https://gist.github.com/changyuheng/08ffb779d83679393926">DFS</a>、<a href="https://gist.github.com/changyuheng/97d320206af9a0018d7d">BFS</a>。</p>
 <p><strong>DFS</strong></p>
-<pre><code>:::python
-<span class="function"><span class="keyword">def</span> <span class="title">dfs</span><span class="params">(graph, start, visited=set<span class="params">()</span>)</span>:</span>
-    <span class="keyword">if</span> start <span class="keyword">in</span> visited:
-        <span class="keyword">return</span>
-    <span class="keyword">yield</span> start
-    visited.add(start)
-    <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - visited:
-        <span class="keyword">yield</span> <span class="keyword">from</span> dfs(graph, vertex, visited=visited)
+<figure class="highlight py"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">dfs</span><span class="params">(graph, start, visited=set<span class="params">()</span>)</span>:</span></div><div class="line">    <span class="keyword">if</span> start <span class="keyword">in</span> visited:</div><div class="line">        <span class="keyword">return</span></div><div class="line">    <span class="keyword">yield</span> start</div><div class="line">    visited.add(start)</div><div class="line">    <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - visited:</div><div class="line">        <span class="keyword">yield</span> <span class="keyword">from</span> dfs(graph, vertex, visited=visited)</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">dfs_paths</span><span class="params">(graph, start, goal, path=list<span class="params">()</span>)</span>:</span></div><div class="line">    <span class="keyword">if</span> <span class="keyword">not</span> path:</div><div class="line">        path.append(start)</div><div class="line">    <span class="keyword">if</span> start == goal:</div><div class="line">        <span class="keyword">yield</span> path</div><div class="line">    <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - set(path):</div><div class="line">        <span class="keyword">yield</span> <span class="keyword">from</span> dfs_paths(graph, vertex, goal, path=path + [vertex])</div><div class="line"></div><div class="line">graph = {<span class="string">'A'</span>: set([<span class="string">'B'</span>, <span class="string">'C'</span>]),</div><div class="line">         <span class="string">'B'</span>: set([<span class="string">'A'</span>, <span class="string">'D'</span>, <span class="string">'E'</span>]),</div><div class="line">         <span class="string">'C'</span>: set([<span class="string">'A'</span>, <span class="string">'F'</span>]),</div><div class="line">         <span class="string">'D'</span>: set([<span class="string">'B'</span>]),</div><div class="line">         <span class="string">'E'</span>: set([<span class="string">'B'</span>, <span class="string">'F'</span>]),</div><div class="line">         <span class="string">'F'</span>: set([<span class="string">'C'</span>, <span class="string">'E'</span>])}</div><div class="line"></div><div class="line">print(repr([vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> dfs(graph, <span class="string">'A'</span>)]))</div><div class="line">print(repr([path <span class="keyword">for</span> path <span class="keyword">in</span> dfs_paths(graph, <span class="string">'A'</span>, <span class="string">'F'</span>)]))</div></pre></td></tr></table></figure>
 
-<span class="function"><span class="keyword">def</span> <span class="title">dfs_paths</span><span class="params">(graph, start, goal, path=list<span class="params">()</span>)</span>:</span>
-    <span class="keyword">if</span> <span class="keyword">not</span> path:
-        path.append(start)
-    <span class="keyword">if</span> start == goal:
-        <span class="keyword">yield</span> path
-    <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - set(path):
-        <span class="keyword">yield</span> <span class="keyword">from</span> dfs_paths(graph, vertex, goal, path=path + [vertex])
+<p><strong>BFS</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">bfs</span><span class="params">(graph, queue, visited=set<span class="params">()</span>)</span>:</span></div><div class="line">    <span class="keyword">if</span> <span class="keyword">not</span> queue:</div><div class="line">        <span class="keyword">return</span></div><div class="line">    start = queue.pop(<span class="number">0</span>)</div><div class="line">    <span class="keyword">yield</span> start</div><div class="line">    visited.add(start)</div><div class="line">    queue += [vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - set(queue) - visited]</div><div class="line">    <span class="keyword">yield</span> <span class="keyword">from</span> bfs(graph, queue, visited=visited)</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">bfs_paths</span><span class="params">(graph, queue, goal)</span>:</span></div><div class="line">    <span class="keyword">if</span> <span class="keyword">not</span> queue:</div><div class="line">        <span class="keyword">return</span></div><div class="line">    (start, path) = queue.pop(<span class="number">0</span>)</div><div class="line">    <span class="keyword">if</span> start == goal:</div><div class="line">        <span class="keyword">yield</span> path</div><div class="line">    queue += [(vertex, path + [vertex]) <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - set(path)]</div><div class="line">    <span class="keyword">yield</span> <span class="keyword">from</span> bfs_paths(graph, queue, goal)</div><div class="line"></div><div class="line">graph = {<span class="string">'A'</span>: set([<span class="string">'B'</span>, <span class="string">'C'</span>]),</div><div class="line">         <span class="string">'B'</span>: set([<span class="string">'A'</span>, <span class="string">'D'</span>, <span class="string">'E'</span>]),</div><div class="line">         <span class="string">'C'</span>: set([<span class="string">'A'</span>, <span class="string">'F'</span>]),</div><div class="line">         <span class="string">'D'</span>: set([<span class="string">'B'</span>]),</div><div class="line">         <span class="string">'E'</span>: set([<span class="string">'B'</span>, <span class="string">'F'</span>]),</div><div class="line">         <span class="string">'F'</span>: set([<span class="string">'C'</span>, <span class="string">'E'</span>])}</div><div class="line"></div><div class="line">print(repr([vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> bfs(graph, [<span class="string">'A'</span>])]))</div><div class="line">print(repr([path <span class="keyword">for</span> path <span class="keyword">in</span> bfs_paths(graph, [(<span class="string">'A'</span>, [<span class="string">'A'</span>])], <span class="string">'F'</span>)]))</div></pre></td></tr></table></figure>
 
-graph = {<span class="string">'A'</span>: set([<span class="string">'B'</span>, <span class="string">'C'</span>]),
-         <span class="string">'B'</span>: set([<span class="string">'A'</span>, <span class="string">'D'</span>, <span class="string">'E'</span>]),
-         <span class="string">'C'</span>: set([<span class="string">'A'</span>, <span class="string">'F'</span>]),
-         <span class="string">'D'</span>: set([<span class="string">'B'</span>]),
-         <span class="string">'E'</span>: set([<span class="string">'B'</span>, <span class="string">'F'</span>]),
-         <span class="string">'F'</span>: set([<span class="string">'C'</span>, <span class="string">'E'</span>])}
 
-print(repr([vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> dfs(graph, <span class="string">'A'</span>)]))
-print(repr([path <span class="keyword">for</span> path <span class="keyword">in</span> dfs_paths(graph, <span class="string">'A'</span>, <span class="string">'F'</span>)]))
-</code></pre><p><strong>BFS</strong></p>
-<pre><code>:::python
-<span class="function"><span class="keyword">def</span> <span class="title">bfs</span><span class="params">(graph, queue, visited=set<span class="params">()</span>)</span>:</span>
-    <span class="keyword">if</span> <span class="keyword">not</span> queue:
-        <span class="keyword">return</span>
-    start = queue.pop(<span class="number">0</span>)
-    <span class="keyword">yield</span> start
-    visited.add(start)
-    queue += [vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - set(queue) - visited]
-    <span class="keyword">yield</span> <span class="keyword">from</span> bfs(graph, queue, visited=visited)
-
-<span class="function"><span class="keyword">def</span> <span class="title">bfs_paths</span><span class="params">(graph, queue, goal)</span>:</span>
-    <span class="keyword">if</span> <span class="keyword">not</span> queue:
-        <span class="keyword">return</span>
-    (start, path) = queue.pop(<span class="number">0</span>)
-    <span class="keyword">if</span> start == goal:
-        <span class="keyword">yield</span> path
-    queue += [(vertex, path + [vertex]) <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - set(path)]
-    <span class="keyword">yield</span> <span class="keyword">from</span> bfs_paths(graph, queue, goal)
-
-graph = {<span class="string">'A'</span>: set([<span class="string">'B'</span>, <span class="string">'C'</span>]),
-         <span class="string">'B'</span>: set([<span class="string">'A'</span>, <span class="string">'D'</span>, <span class="string">'E'</span>]),
-         <span class="string">'C'</span>: set([<span class="string">'A'</span>, <span class="string">'F'</span>]),
-         <span class="string">'D'</span>: set([<span class="string">'B'</span>]),
-         <span class="string">'E'</span>: set([<span class="string">'B'</span>, <span class="string">'F'</span>]),
-         <span class="string">'F'</span>: set([<span class="string">'C'</span>, <span class="string">'E'</span>])}
-
-print(repr([vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> bfs(graph, [<span class="string">'A'</span>])]))
-print(repr([path <span class="keyword">for</span> path <span class="keyword">in</span> bfs_paths(graph, [(<span class="string">'A'</span>, [<span class="string">'A'</span>])], <span class="string">'F'</span>)]))
-</code></pre>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://changyuheng.github.io/implementations-of-dfs-and-bfs-in-python/" data-id="md3vsu4iz8xbo4nz" class="article-share-link">Share</a>
+      <a data-url="http://changyuheng.github.io/implementations-of-dfs-and-bfs-in-python/" data-id="oewjqcdmvkkg1ghd" class="article-share-link">Share</a>
       
         <a href="http://changyuheng.github.io/implementations-of-dfs-and-bfs-in-python/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -233,7 +185,7 @@ print(repr([path <span class="keyword">for</span> path <span class="keyword">in<
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://changyuheng.github.io/codeforces-problem-1b/" data-id="yrnhzprarlu41bmk" class="article-share-link">Share</a>
+      <a data-url="http://changyuheng.github.io/codeforces-problem-1b/" data-id="ztpg1tci3x6vprb7" class="article-share-link">Share</a>
       
         <a href="http://changyuheng.github.io/codeforces-problem-1b/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -327,34 +279,46 @@ print(repr([path <span class="keyword">for</span> path <span class="keyword">in<
 </li>
 <li><p>進入「<a href="http://codeforces.com/problemset/problem/1/A">Theater Square</a>」</p>
 <p><a href="images/codeforces-problemset.png"><img src="images/codeforces-problemset.png" alt="problemset"></a></p>
-<p>題目最上方的：</p>
-<p> :::text<br> time limit per test: 2 seconds<br> memory limit per test: 64 megabytes<br> input: standard input<br> output: standard output</p>
-<p>分別表示：</p>
-<p> :::text<br> 時間限制：2 秒<br> 使用記憶體大小限制：64 MB<br> 輸入方式：標準輸入<br> 輸出方式：標準輸出</p>
-<p>接著是題目：</p>
-<p> :::text<br> Theatre Square in the capital city of Berland has a rectangular shape with the size n × m meters. On the occasion of the city’s anniversary, a decision was taken to pave the Square with square granite flagstones. Each flagstone is of the size a × a.</p>
-<p> What is the least number of flagstones needed to pave the Square? It’s allowed to cover the surface larger than the Theatre Square, but the Square has to be covered.<br> It’s not allowed to break the flagstones. The sides of flagstones should be parallel to the sides of the Square.</p>
-<p>中文大意：</p>
-<p> :::text<br> 有一塊&nbsp;n × m (長 n，寬 m) 平方公尺矩形的地需要舖滿石磚，每塊石磚大小為正方形&nbsp;a × a。在不切割石磚、不重疊石的前題下，必需舖滿此地。石磚可以超出需要被舖的地，但石磚的邊必需與此地的邊平行。</p>
-<p> 請問最少需要多少石磚才能完成？</p>
-<p>Input (說明測試程式會餵給我們的程式的資料)：</p>
-<p> :::text<br> The input contains three positive integer numbers in the first line: n,  m and a (1 ≤  n, m, a ≤ 10^9).</p>
-<p>中文說明：</p>
-<p> :::text<br> 輸入共一行，此行中包含三個整數：n, m, a，整數間以空白字元分隔。其中 1 ≤  n, m, a ≤ 10^9。</p>
-<p>Output (說明我們的程式應該輸出什麼)：</p>
-<p> :::text<br> Write the needed number of flagstones.</p>
-<p>中文說明：</p>
-<p> :::text<br> 請輸出需要的石磚數。</p>
-<p>範例：</p>
+<ul>
+<li><p>題目最上方的</p>
+<p>time limit per test: 2 seconds<br>memory limit per test: 64 megabytes<br>input: standard input<br>output: standard output</p>
+</li>
+<li><p>分別表示</p>
+<p>時間限制：2 秒<br>使用記憶體大小限制：64 MB<br>輸入方式：標準輸入<br>輸出方式：標準輸出</p>
+</li>
+<li><p>接著是題目：</p>
+<p>Theatre Square in the capital city of Berland has a rectangular shape with the size n × m meters. On the occasion of the city’s anniversary, a decision was taken to pave the Square with square granite flagstones. Each flagstone is of the size a × a.</p>
+<p>What is the least number of flagstones needed to pave the Square? It’s allowed to cover the surface larger than the Theatre Square, but the Square has to be covered.<br>It’s not allowed to break the flagstones. The sides of flagstones should be parallel to the sides of the Square.</p>
+</li>
+<li><p>中文大意：</p>
+<p>有一塊&nbsp;n × m (長 n，寬 m) 平方公尺矩形的地需要舖滿石磚，每塊石磚大小為正方形&nbsp;a × a。在不切割石磚、不重疊石的前題下，必需舖滿此地。石磚可以超出需要被舖的地，但石磚的邊必需與此地的邊平行。</p>
+<p>請問最少需要多少石磚才能完成？</p>
+</li>
+<li><p>Input (說明測試程式會餵給我們的程式的資料)：</p>
+<p>The input contains three positive integer numbers in the first line: n,  m and a (1 ≤  n, m, a ≤ 10^9).</p>
+</li>
+<li><p>中文說明：</p>
+<p>輸入共一行，此行中包含三個整數：n, m, a，整數間以空白字元分隔。其中 1 ≤  n, m, a ≤ 10^9。</p>
+</li>
+<li><p>Output (說明我們的程式應該輸出什麼)：</p>
+<p>Write the needed number of flagstones.</p>
+</li>
+<li><p>中文說明：</p>
+<p>請輸出需要的石磚數。</p>
+</li>
+<li><p>範例：</p>
 <p>Input:</p>
-<p> :::text<br> 6 6 4</p>
-<p>Output</p>
-<p> :::text<br> 4</p>
+<p>6 6 4</p>
+<p>Output:</p>
+<p>4</p>
 <p>註：</p>
-<p> 第一個 6 表示 n，第二個 6 表示 m，4 表示 a。亦即，在 6 × 6 大小的地上，舖以 4 × 4 大小的石磚，最少需要 4 塊石磚才能將其舖滿。</p>
-<p>題解：</p>
-<p> 假設需要 p × q 塊石磚，其必需符合此條件：a × p ≥ m 且 a × q ≥ n。</p>
+<p>第一個 6 表示 n，第二個 6 表示 m，4 表示 a。亦即，在 6 × 6 大小的地上，舖以 4 × 4 大小的石磚，最少需要 4 塊石磚才能將其舖滿。</p>
+</li>
+<li><p>題解：</p>
+<p>假設需要 p × q 塊石磚，其必需符合此條件：a × p ≥ m 且 a × q ≥ n。</p>
 <p>將我們的解法用程式寫出來，並上傳到 Codeforces 即完成此題練習。</p>
+</li>
+</ul>
 </li>
 </ol>
 </li>
@@ -379,7 +343,7 @@ print(repr([path <span class="keyword">for</span> path <span class="keyword">in<
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://changyuheng.github.io/codeforces-quick-start/" data-id="37v0a60h3mipbrhw" class="article-share-link">Share</a>
+      <a data-url="http://changyuheng.github.io/codeforces-quick-start/" data-id="cov2vrqimwdniady" class="article-share-link">Share</a>
       
         <a href="http://changyuheng.github.io/codeforces-quick-start/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -458,6 +422,8 @@ print(repr([path <span class="keyword">for</span> path <span class="keyword">in<
     <a href="/archives" class="mobile-nav-link">Archives</a>
   
     <a href="https://github.com/changyuheng" class="mobile-nav-link">GitHub</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
   
 </nav>
     

@@ -90,6 +90,8 @@
         
           <a class="main-nav-link" href="https://github.com/changyuheng">GitHub</a>
         
+          <a class="main-nav-link" href="/about">About</a>
+        
       </nav>
       <nav id="sub-nav">
         
@@ -129,26 +131,26 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="步驟_1：安裝_gcin_及_im-switch">步驟 1：安裝 gcin 及 im-switch</h2>
-<pre><code><span class="attribute">:::sh</span>
-sudo apt-get install gcin im-switch
-</code></pre><h2 id="步驟_2：指定預設輸入法平台為_gcin，完成後重新啟動電腦">步驟 2：指定預設輸入法平台為 gcin，完成後重新啟動電腦</h2>
-<pre><code><span class="attribute">:::sh</span>
-im-switch
-</code></pre><h2 id="步驟_3：下載並解壓縮嘸蝦米官方提供的_gcin_用表格，接著開啟終端機並進入解壓縮目錄">步驟 3：下載並解壓縮嘸蝦米官方提供的 gcin 用表格，接著開啟終端機並進入解壓縮目錄</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt-get install gcin im-switch</div></pre></td></tr></table></figure>
+
+<h2 id="步驟_2：指定預設輸入法平台為_gcin，完成後重新啟動電腦">步驟 2：指定預設輸入法平台為 gcin，完成後重新啟動電腦</h2>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">im-switch</div></pre></td></tr></table></figure>
+
+<h2 id="步驟_3：下載並解壓縮嘸蝦米官方提供的_gcin_用表格，接著開啟終端機並進入解壓縮目錄">步驟 3：下載並解壓縮嘸蝦米官方提供的 gcin 用表格，接著開啟終端機並進入解壓縮目錄</h2>
 <h2 id="步驟_4：將表格等檔案複製到系統中">步驟 4：將表格等檔案複製到系統中</h2>
 <h3 id="1-_前置作業">1. 前置作業</h3>
-<pre><code><span class="attribute">:::sh</span>
-sudo updatedb
-</code></pre><h3 id="2-_複製_*-gtab_到_gcin_表格目錄">2. 複製 *.gtab 到 gcin 表格目錄</h3>
-<pre><code><span class="attribute">:::sh</span>
-sudo cp <span class="strong">*.gtab $(locate gtab | grep gcin/table | while read line; do dirname "$line"; done | sort -u)</span>
-</code></pre><h3 id="3-_複製_*-png_到_gcin_icon_目錄">3. 複製 *.png 到 gcin icon 目錄</h3>
-<pre><code><span class="attribute">:::sh</span>
-sudo cp <span class="strong">*.png $(locate pinyin.png | grep gcin | while read line; do dirname "$line"; done | sort -u)</span>
-</code></pre><h2 id="步驟_5：編輯_gtab-list">步驟 5：編輯 gtab.list</h2>
-<pre><code><span class="attribute">:::sh</span>
-echo "嘸蝦米(繁) 1 boshiamy-t.gtab boshiamy-t.png" &gt;&gt; ~/.gcin/gtab.list
-</code></pre><h2 id="步驟_6：重新啟動_gcin">步驟 6：重新啟動 gcin</h2>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> updatedb</div></pre></td></tr></table></figure>
+
+<h3 id="2-_複製_*-gtab_到_gcin_表格目錄">2. 複製 *.gtab 到 gcin 表格目錄</h3>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> cp *.gtab $(locate gtab | grep gcin/table | <span class="keyword">while</span> <span class="built_in">read</span> line; <span class="keyword">do</span> dirname <span class="string">"<span class="variable">$line</span>"</span>; <span class="keyword">done</span> | sort -u)</div></pre></td></tr></table></figure>
+
+<h3 id="3-_複製_*-png_到_gcin_icon_目錄">3. 複製 *.png 到 gcin icon 目錄</h3>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> cp *.png $(locate pinyin.png | grep gcin | <span class="keyword">while</span> <span class="built_in">read</span> line; <span class="keyword">do</span> dirname <span class="string">"<span class="variable">$line</span>"</span>; <span class="keyword">done</span> | sort -u)</div></pre></td></tr></table></figure>
+
+<h2 id="步驟_5：編輯_gtab-list">步驟 5：編輯 gtab.list</h2>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">echo</span> <span class="string">"嘸蝦米(繁) 1 boshiamy-t.gtab boshiamy-t.png"</span> &gt;&gt; ~/.gcin/gtab.list</div></pre></td></tr></table></figure>
+
+<h2 id="步驟_6：重新啟動_gcin">步驟 6：重新啟動 gcin</h2>
 <h2 id="步驟_7：調整_gcin_設定">步驟 7：調整 gcin 設定</h2>
 <h3 id="1-_在【內定輸入法_&amp;_開啟/關閉】中調整嘸蝦米是否為預設輸入法、可否由_ctrl_+_shift_切換">1. 在【內定輸入法 &amp; 開啟/關閉】中調整嘸蝦米是否為預設輸入法、可否由 ctrl + shift 切換</h3>
 <h3 id="2-_在【倉頡/行列/嘸蝦米/大易設定】中將【預覽/預選_字】調整為【全部開啟】">2. 在【倉頡/行列/嘸蝦米/大易設定】中將【預覽/預選 字】調整為【全部開啟】</h3>
@@ -156,7 +158,7 @@ echo "嘸蝦米(繁) 1 boshiamy-t.gtab boshiamy-t.png" &gt;&gt; ~/.gcin/gtab.lis
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://changyuheng.github.io/zai-ubuntu-12-dot-10-an-zhuang-fu-xia-mi-shu-ru-fa/" data-id="8vbm4s56hqzp0or0" class="article-share-link">Share</a>
+      <a data-url="http://changyuheng.github.io/zai-ubuntu-12-dot-10-an-zhuang-fu-xia-mi-shu-ru-fa/" data-id="j9yf8yulzjf42q1w" class="article-share-link">Share</a>
       
         <a href="http://changyuheng.github.io/zai-ubuntu-12-dot-10-an-zhuang-fu-xia-mi-shu-ru-fa/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -197,7 +199,7 @@ echo "嘸蝦米(繁) 1 boshiamy-t.gtab boshiamy-t.png" &gt;&gt; ~/.gcin/gtab.lis
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://changyuheng.github.io/syncing-samba-accounts-with-unix-login-accounts/" data-id="sowccqpyydex0yc4" class="article-share-link">Share</a>
+      <a data-url="http://changyuheng.github.io/syncing-samba-accounts-with-unix-login-accounts/" data-id="rv9yozi4rczzg7cd" class="article-share-link">Share</a>
       
         <a href="http://changyuheng.github.io/syncing-samba-accounts-with-unix-login-accounts/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -242,14 +244,14 @@ echo "嘸蝦米(繁) 1 boshiamy-t.gtab boshiamy-t.png" &gt;&gt; ~/.gcin/gtab.lis
 </li>
 </ol>
 <p>到此為止都和這套佈景的官方安裝教學一樣。如果是採用發行版如 Ubuntu 所提供的 Gitit package，則已經完成。若是用 cabal 安裝, 則必須再安裝相依的套件，以 Ubuntu 為例：</p>
-<pre><code><span class="attribute">:::sh</span>
-sudo apt-get install libghc-filestore-data libc6 libffi6 libgmp10 libpcre3 zlib1g libjs-jquery libjs-jquery-ui
-</code></pre><p>完成的樣子可以參考<a href="http://wiki.csie.ncku.edu.tw/">成大資工 Wiki</a>。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt-get install libghc-filestore-data libc6 libffi6 libgmp10 libpcre3 zlib1g libjs-jquery libjs-jquery-ui</div></pre></td></tr></table></figure>
+
+<p>完成的樣子可以參考<a href="http://wiki.csie.ncku.edu.tw/">成大資工 Wiki</a>。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://changyuheng.github.io/deployment-of-ncku-csie-gitit-theme/" data-id="0ma4n4ftc4hroqs2" class="article-share-link">Share</a>
+      <a data-url="http://changyuheng.github.io/deployment-of-ncku-csie-gitit-theme/" data-id="qr3ywvgccd3yc3km" class="article-share-link">Share</a>
       
         <a href="http://changyuheng.github.io/deployment-of-ncku-csie-gitit-theme/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -343,34 +345,46 @@ sudo apt-get install libghc-filestore-data libc6 libffi6 libgmp10 libpcre3 zlib1
 </li>
 <li><p>進入「<a href="http://codeforces.com/problemset/problem/1/A">Theater Square</a>」</p>
 <p><a href="images/codeforces-problemset.png"><img src="images/codeforces-problemset.png" alt="problemset"></a></p>
-<p>題目最上方的：</p>
-<p> :::text<br> time limit per test: 2 seconds<br> memory limit per test: 64 megabytes<br> input: standard input<br> output: standard output</p>
-<p>分別表示：</p>
-<p> :::text<br> 時間限制：2 秒<br> 使用記憶體大小限制：64 MB<br> 輸入方式：標準輸入<br> 輸出方式：標準輸出</p>
-<p>接著是題目：</p>
-<p> :::text<br> Theatre Square in the capital city of Berland has a rectangular shape with the size n × m meters. On the occasion of the city’s anniversary, a decision was taken to pave the Square with square granite flagstones. Each flagstone is of the size a × a.</p>
-<p> What is the least number of flagstones needed to pave the Square? It’s allowed to cover the surface larger than the Theatre Square, but the Square has to be covered.<br> It’s not allowed to break the flagstones. The sides of flagstones should be parallel to the sides of the Square.</p>
-<p>中文大意：</p>
-<p> :::text<br> 有一塊&nbsp;n × m (長 n，寬 m) 平方公尺矩形的地需要舖滿石磚，每塊石磚大小為正方形&nbsp;a × a。在不切割石磚、不重疊石的前題下，必需舖滿此地。石磚可以超出需要被舖的地，但石磚的邊必需與此地的邊平行。</p>
-<p> 請問最少需要多少石磚才能完成？</p>
-<p>Input (說明測試程式會餵給我們的程式的資料)：</p>
-<p> :::text<br> The input contains three positive integer numbers in the first line: n,  m and a (1 ≤  n, m, a ≤ 10^9).</p>
-<p>中文說明：</p>
-<p> :::text<br> 輸入共一行，此行中包含三個整數：n, m, a，整數間以空白字元分隔。其中 1 ≤  n, m, a ≤ 10^9。</p>
-<p>Output (說明我們的程式應該輸出什麼)：</p>
-<p> :::text<br> Write the needed number of flagstones.</p>
-<p>中文說明：</p>
-<p> :::text<br> 請輸出需要的石磚數。</p>
-<p>範例：</p>
+<ul>
+<li><p>題目最上方的</p>
+<p>time limit per test: 2 seconds<br>memory limit per test: 64 megabytes<br>input: standard input<br>output: standard output</p>
+</li>
+<li><p>分別表示</p>
+<p>時間限制：2 秒<br>使用記憶體大小限制：64 MB<br>輸入方式：標準輸入<br>輸出方式：標準輸出</p>
+</li>
+<li><p>接著是題目：</p>
+<p>Theatre Square in the capital city of Berland has a rectangular shape with the size n × m meters. On the occasion of the city’s anniversary, a decision was taken to pave the Square with square granite flagstones. Each flagstone is of the size a × a.</p>
+<p>What is the least number of flagstones needed to pave the Square? It’s allowed to cover the surface larger than the Theatre Square, but the Square has to be covered.<br>It’s not allowed to break the flagstones. The sides of flagstones should be parallel to the sides of the Square.</p>
+</li>
+<li><p>中文大意：</p>
+<p>有一塊&nbsp;n × m (長 n，寬 m) 平方公尺矩形的地需要舖滿石磚，每塊石磚大小為正方形&nbsp;a × a。在不切割石磚、不重疊石的前題下，必需舖滿此地。石磚可以超出需要被舖的地，但石磚的邊必需與此地的邊平行。</p>
+<p>請問最少需要多少石磚才能完成？</p>
+</li>
+<li><p>Input (說明測試程式會餵給我們的程式的資料)：</p>
+<p>The input contains three positive integer numbers in the first line: n,  m and a (1 ≤  n, m, a ≤ 10^9).</p>
+</li>
+<li><p>中文說明：</p>
+<p>輸入共一行，此行中包含三個整數：n, m, a，整數間以空白字元分隔。其中 1 ≤  n, m, a ≤ 10^9。</p>
+</li>
+<li><p>Output (說明我們的程式應該輸出什麼)：</p>
+<p>Write the needed number of flagstones.</p>
+</li>
+<li><p>中文說明：</p>
+<p>請輸出需要的石磚數。</p>
+</li>
+<li><p>範例：</p>
 <p>Input:</p>
-<p> :::text<br> 6 6 4</p>
-<p>Output</p>
-<p> :::text<br> 4</p>
+<p>6 6 4</p>
+<p>Output:</p>
+<p>4</p>
 <p>註：</p>
-<p> 第一個 6 表示 n，第二個 6 表示 m，4 表示 a。亦即，在 6 × 6 大小的地上，舖以 4 × 4 大小的石磚，最少需要 4 塊石磚才能將其舖滿。</p>
-<p>題解：</p>
-<p> 假設需要 p × q 塊石磚，其必需符合此條件：a × p ≥ m 且 a × q ≥ n。</p>
+<p>第一個 6 表示 n，第二個 6 表示 m，4 表示 a。亦即，在 6 × 6 大小的地上，舖以 4 × 4 大小的石磚，最少需要 4 塊石磚才能將其舖滿。</p>
+</li>
+<li><p>題解：</p>
+<p>假設需要 p × q 塊石磚，其必需符合此條件：a × p ≥ m 且 a × q ≥ n。</p>
 <p>將我們的解法用程式寫出來，並上傳到 Codeforces 即完成此題練習。</p>
+</li>
+</ul>
 </li>
 </ol>
 </li>
@@ -395,7 +409,7 @@ sudo apt-get install libghc-filestore-data libc6 libffi6 libgmp10 libpcre3 zlib1
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://changyuheng.github.io/codeforces-quick-start/" data-id="37v0a60h3mipbrhw" class="article-share-link">Share</a>
+      <a data-url="http://changyuheng.github.io/codeforces-quick-start/" data-id="cov2vrqimwdniady" class="article-share-link">Share</a>
       
         <a href="http://changyuheng.github.io/codeforces-quick-start/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -478,6 +492,8 @@ sudo apt-get install libghc-filestore-data libc6 libffi6 libgmp10 libpcre3 zlib1
     <a href="/archives" class="mobile-nav-link">Archives</a>
   
     <a href="https://github.com/changyuheng" class="mobile-nav-link">GitHub</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
   
 </nav>
     

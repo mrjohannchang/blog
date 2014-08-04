@@ -90,6 +90,8 @@
         
           <a class="main-nav-link" href="https://github.com/changyuheng">GitHub</a>
         
+          <a class="main-nav-link" href="/about">About</a>
+        
       </nav>
       <nav id="sub-nav">
         
@@ -172,7 +174,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://changyuheng.github.io/code-and-math-test/" data-id="si7oivgb4vgidwb0" class="article-share-link">Share</a>
+      <a data-url="http://changyuheng.github.io/code-and-math-test/" data-id="am804m0qc2wo007q" class="article-share-link">Share</a>
       
         <a href="http://changyuheng.github.io/code-and-math-test/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -210,18 +212,15 @@
       
         <p>Decorator 是一個 Python 中較為進階的語法，因為較難理解故常被提出來討論。這邊提供一個簡潔的說明。</p>
 <p>假設有一名為 func 的 function 被名為 decor1 和 decor2 的二 decorator 修飾如下：</p>
-<pre><code>:::Python
-<span class="decorator">@decor1</span>
-<span class="decorator">@decor2</span>
-<span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">(*args, **kwargs)</span>:</span>
-    <span class="keyword">pass</span>
-</code></pre><p>則當我們如下呼叫 func() 時：</p>
-<pre><code><span class="attribute">:::Python</span>
-func(<span class="strong">*args, *</span><span class="strong">*kwargs)</span>
-</code></pre><p>可以將之理解為：</p>
-<pre><code><span class="attribute">:::Python</span>
-decor1(decor2(func))(<span class="strong">*args, *</span><span class="strong">*kwargs)</span>
-</code></pre><p>更詳細的說明可以參考：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="decorator">@decor1</span></div><div class="line"><span class="decorator">@decor2</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">(*args, **kwargs)</span>:</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure>
+
+<p>則當我們如下呼叫 func() 時：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">func(*args, **kwargs)</div></pre></td></tr></table></figure>
+
+<p>可以將之理解為：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">decor1(decor2(func))(*args, **kwargs)</div></pre></td></tr></table></figure>
+
+<p>更詳細的說明可以參考：</p>
 <ol>
 <li><a href="http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/">Understanding Python Decorators in 12 Easy Steps!</a></li>
 <li><a href="http://stackoverflow.com/a/739679">How can I make a chain of function decorators in Python?</a></li>
@@ -230,7 +229,7 @@ decor1(decor2(func))(<span class="strong">*args, *</span><span class="strong">*k
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://changyuheng.github.io/understanding-python-decorators/" data-id="dnqdi15064dr5von" class="article-share-link">Share</a>
+      <a data-url="http://changyuheng.github.io/understanding-python-decorators/" data-id="gygih7z0uxv8dodv" class="article-share-link">Share</a>
       
         <a href="http://changyuheng.github.io/understanding-python-decorators/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -269,66 +268,16 @@ decor1(decor2(func))(<span class="strong">*args, *</span><span class="strong">*k
         <p><a href="http://zh.wikipedia.org/zh-tw/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">DFS</a> 和 <a href="http://zh.wikipedia.org/zh-tw/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">BFS</a> 在資料結構裡有教，是很基礎的演算法。</p>
 <p>在 <a href="http://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/">Edd Mann 的網誌</a>上看到 Python 的實作，由其中學到 <code>yield from</code> 的用法。下面利用 <code>yield from</code> 的特性，將該網誌中提到的實作改寫成 generator 的型式。同步放在 Gist 上：<a href="https://gist.github.com/changyuheng/08ffb779d83679393926">DFS</a>、<a href="https://gist.github.com/changyuheng/97d320206af9a0018d7d">BFS</a>。</p>
 <p><strong>DFS</strong></p>
-<pre><code>:::python
-<span class="function"><span class="keyword">def</span> <span class="title">dfs</span><span class="params">(graph, start, visited=set<span class="params">()</span>)</span>:</span>
-    <span class="keyword">if</span> start <span class="keyword">in</span> visited:
-        <span class="keyword">return</span>
-    <span class="keyword">yield</span> start
-    visited.add(start)
-    <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - visited:
-        <span class="keyword">yield</span> <span class="keyword">from</span> dfs(graph, vertex, visited=visited)
+<figure class="highlight py"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">dfs</span><span class="params">(graph, start, visited=set<span class="params">()</span>)</span>:</span></div><div class="line">    <span class="keyword">if</span> start <span class="keyword">in</span> visited:</div><div class="line">        <span class="keyword">return</span></div><div class="line">    <span class="keyword">yield</span> start</div><div class="line">    visited.add(start)</div><div class="line">    <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - visited:</div><div class="line">        <span class="keyword">yield</span> <span class="keyword">from</span> dfs(graph, vertex, visited=visited)</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">dfs_paths</span><span class="params">(graph, start, goal, path=list<span class="params">()</span>)</span>:</span></div><div class="line">    <span class="keyword">if</span> <span class="keyword">not</span> path:</div><div class="line">        path.append(start)</div><div class="line">    <span class="keyword">if</span> start == goal:</div><div class="line">        <span class="keyword">yield</span> path</div><div class="line">    <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - set(path):</div><div class="line">        <span class="keyword">yield</span> <span class="keyword">from</span> dfs_paths(graph, vertex, goal, path=path + [vertex])</div><div class="line"></div><div class="line">graph = {<span class="string">'A'</span>: set([<span class="string">'B'</span>, <span class="string">'C'</span>]),</div><div class="line">         <span class="string">'B'</span>: set([<span class="string">'A'</span>, <span class="string">'D'</span>, <span class="string">'E'</span>]),</div><div class="line">         <span class="string">'C'</span>: set([<span class="string">'A'</span>, <span class="string">'F'</span>]),</div><div class="line">         <span class="string">'D'</span>: set([<span class="string">'B'</span>]),</div><div class="line">         <span class="string">'E'</span>: set([<span class="string">'B'</span>, <span class="string">'F'</span>]),</div><div class="line">         <span class="string">'F'</span>: set([<span class="string">'C'</span>, <span class="string">'E'</span>])}</div><div class="line"></div><div class="line">print(repr([vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> dfs(graph, <span class="string">'A'</span>)]))</div><div class="line">print(repr([path <span class="keyword">for</span> path <span class="keyword">in</span> dfs_paths(graph, <span class="string">'A'</span>, <span class="string">'F'</span>)]))</div></pre></td></tr></table></figure>
 
-<span class="function"><span class="keyword">def</span> <span class="title">dfs_paths</span><span class="params">(graph, start, goal, path=list<span class="params">()</span>)</span>:</span>
-    <span class="keyword">if</span> <span class="keyword">not</span> path:
-        path.append(start)
-    <span class="keyword">if</span> start == goal:
-        <span class="keyword">yield</span> path
-    <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - set(path):
-        <span class="keyword">yield</span> <span class="keyword">from</span> dfs_paths(graph, vertex, goal, path=path + [vertex])
+<p><strong>BFS</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">bfs</span><span class="params">(graph, queue, visited=set<span class="params">()</span>)</span>:</span></div><div class="line">    <span class="keyword">if</span> <span class="keyword">not</span> queue:</div><div class="line">        <span class="keyword">return</span></div><div class="line">    start = queue.pop(<span class="number">0</span>)</div><div class="line">    <span class="keyword">yield</span> start</div><div class="line">    visited.add(start)</div><div class="line">    queue += [vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - set(queue) - visited]</div><div class="line">    <span class="keyword">yield</span> <span class="keyword">from</span> bfs(graph, queue, visited=visited)</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">bfs_paths</span><span class="params">(graph, queue, goal)</span>:</span></div><div class="line">    <span class="keyword">if</span> <span class="keyword">not</span> queue:</div><div class="line">        <span class="keyword">return</span></div><div class="line">    (start, path) = queue.pop(<span class="number">0</span>)</div><div class="line">    <span class="keyword">if</span> start == goal:</div><div class="line">        <span class="keyword">yield</span> path</div><div class="line">    queue += [(vertex, path + [vertex]) <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - set(path)]</div><div class="line">    <span class="keyword">yield</span> <span class="keyword">from</span> bfs_paths(graph, queue, goal)</div><div class="line"></div><div class="line">graph = {<span class="string">'A'</span>: set([<span class="string">'B'</span>, <span class="string">'C'</span>]),</div><div class="line">         <span class="string">'B'</span>: set([<span class="string">'A'</span>, <span class="string">'D'</span>, <span class="string">'E'</span>]),</div><div class="line">         <span class="string">'C'</span>: set([<span class="string">'A'</span>, <span class="string">'F'</span>]),</div><div class="line">         <span class="string">'D'</span>: set([<span class="string">'B'</span>]),</div><div class="line">         <span class="string">'E'</span>: set([<span class="string">'B'</span>, <span class="string">'F'</span>]),</div><div class="line">         <span class="string">'F'</span>: set([<span class="string">'C'</span>, <span class="string">'E'</span>])}</div><div class="line"></div><div class="line">print(repr([vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> bfs(graph, [<span class="string">'A'</span>])]))</div><div class="line">print(repr([path <span class="keyword">for</span> path <span class="keyword">in</span> bfs_paths(graph, [(<span class="string">'A'</span>, [<span class="string">'A'</span>])], <span class="string">'F'</span>)]))</div></pre></td></tr></table></figure>
 
-graph = {<span class="string">'A'</span>: set([<span class="string">'B'</span>, <span class="string">'C'</span>]),
-         <span class="string">'B'</span>: set([<span class="string">'A'</span>, <span class="string">'D'</span>, <span class="string">'E'</span>]),
-         <span class="string">'C'</span>: set([<span class="string">'A'</span>, <span class="string">'F'</span>]),
-         <span class="string">'D'</span>: set([<span class="string">'B'</span>]),
-         <span class="string">'E'</span>: set([<span class="string">'B'</span>, <span class="string">'F'</span>]),
-         <span class="string">'F'</span>: set([<span class="string">'C'</span>, <span class="string">'E'</span>])}
 
-print(repr([vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> dfs(graph, <span class="string">'A'</span>)]))
-print(repr([path <span class="keyword">for</span> path <span class="keyword">in</span> dfs_paths(graph, <span class="string">'A'</span>, <span class="string">'F'</span>)]))
-</code></pre><p><strong>BFS</strong></p>
-<pre><code>:::python
-<span class="function"><span class="keyword">def</span> <span class="title">bfs</span><span class="params">(graph, queue, visited=set<span class="params">()</span>)</span>:</span>
-    <span class="keyword">if</span> <span class="keyword">not</span> queue:
-        <span class="keyword">return</span>
-    start = queue.pop(<span class="number">0</span>)
-    <span class="keyword">yield</span> start
-    visited.add(start)
-    queue += [vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - set(queue) - visited]
-    <span class="keyword">yield</span> <span class="keyword">from</span> bfs(graph, queue, visited=visited)
-
-<span class="function"><span class="keyword">def</span> <span class="title">bfs_paths</span><span class="params">(graph, queue, goal)</span>:</span>
-    <span class="keyword">if</span> <span class="keyword">not</span> queue:
-        <span class="keyword">return</span>
-    (start, path) = queue.pop(<span class="number">0</span>)
-    <span class="keyword">if</span> start == goal:
-        <span class="keyword">yield</span> path
-    queue += [(vertex, path + [vertex]) <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - set(path)]
-    <span class="keyword">yield</span> <span class="keyword">from</span> bfs_paths(graph, queue, goal)
-
-graph = {<span class="string">'A'</span>: set([<span class="string">'B'</span>, <span class="string">'C'</span>]),
-         <span class="string">'B'</span>: set([<span class="string">'A'</span>, <span class="string">'D'</span>, <span class="string">'E'</span>]),
-         <span class="string">'C'</span>: set([<span class="string">'A'</span>, <span class="string">'F'</span>]),
-         <span class="string">'D'</span>: set([<span class="string">'B'</span>]),
-         <span class="string">'E'</span>: set([<span class="string">'B'</span>, <span class="string">'F'</span>]),
-         <span class="string">'F'</span>: set([<span class="string">'C'</span>, <span class="string">'E'</span>])}
-
-print(repr([vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> bfs(graph, [<span class="string">'A'</span>])]))
-print(repr([path <span class="keyword">for</span> path <span class="keyword">in</span> bfs_paths(graph, [(<span class="string">'A'</span>, [<span class="string">'A'</span>])], <span class="string">'F'</span>)]))
-</code></pre>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://changyuheng.github.io/implementations-of-dfs-and-bfs-in-python/" data-id="md3vsu4iz8xbo4nz" class="article-share-link">Share</a>
+      <a data-url="http://changyuheng.github.io/implementations-of-dfs-and-bfs-in-python/" data-id="oewjqcdmvkkg1ghd" class="article-share-link">Share</a>
       
         <a href="http://changyuheng.github.io/implementations-of-dfs-and-bfs-in-python/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -446,7 +395,7 @@ print(repr([path <span class="keyword">for</span> path <span class="keyword">in<
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://changyuheng.github.io/my-ubuntu-gnome-tweaks/" data-id="voyap0naqmkqmcye" class="article-share-link">Share</a>
+      <a data-url="http://changyuheng.github.io/my-ubuntu-gnome-tweaks/" data-id="dsdvsjhx9bpe0xjw" class="article-share-link">Share</a>
       
         <a href="http://changyuheng.github.io/my-ubuntu-gnome-tweaks/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -529,6 +478,8 @@ print(repr([path <span class="keyword">for</span> path <span class="keyword">in<
     <a href="/archives" class="mobile-nav-link">Archives</a>
   
     <a href="https://github.com/changyuheng" class="mobile-nav-link">GitHub</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
   
 </nav>
     
