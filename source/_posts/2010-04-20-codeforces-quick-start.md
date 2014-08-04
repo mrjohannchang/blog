@@ -64,78 +64,68 @@ tags: algorithm
 
             [![problemset](images/codeforces-problemset.png)](images/codeforces-problemset.png)
 
-            題目最上方的：
+                * 題目最上方的
 
-                :::text
                 time limit per test: 2 seconds
                 memory limit per test: 64 megabytes
                 input: standard input
                 output: standard output
 
-            分別表示：
+                * 分別表示
 
-                :::text
                 時間限制：2 秒
                 使用記憶體大小限制：64 MB
                 輸入方式：標準輸入
                 輸出方式：標準輸出
 
-            接著是題目：
+                * 接著是題目：
 
-                :::text
                 Theatre Square in the capital city of Berland has a rectangular shape with the size n × m meters. On the occasion of the city's anniversary, a decision was taken to pave the Square with square granite flagstones. Each flagstone is of the size a × a.
 
                 What is the least number of flagstones needed to pave the Square? It's allowed to cover the surface larger than the Theatre Square, but the Square has to be covered.
                 It's not allowed to break the flagstones. The sides of flagstones should be parallel to the sides of the Square.
 
-            中文大意：
+                * 中文大意：
 
-                :::text
                 有一塊&nbsp;n × m (長 n，寬 m) 平方公尺矩形的地需要舖滿石磚，每塊石磚大小為正方形&nbsp;a × a。在不切割石磚、不重疊石的前題下，必需舖滿此地。石磚可以超出需要被舖的地，但石磚的邊必需與此地的邊平行。
 
                 請問最少需要多少石磚才能完成？
 
-            Input (說明測試程式會餵給我們的程式的資料)：
+                * Input (說明測試程式會餵給我們的程式的資料)：
 
-                :::text
                 The input contains three positive integer numbers in the first line: n,  m and a (1 ≤  n, m, a ≤ 10^9).
 
-            中文說明：
+                * 中文說明：
 
-                :::text
                 輸入共一行，此行中包含三個整數：n, m, a，整數間以空白字元分隔。其中 1 ≤  n, m, a ≤ 10^9。
 
-            Output (說明我們的程式應該輸出什麼)：
+                * Output (說明我們的程式應該輸出什麼)：
 
-                :::text
                 Write the needed number of flagstones.
 
-            中文說明：
+                * 中文說明：
 
-                :::text
                 請輸出需要的石磚數。
 
-            範例：
+                * 範例：
 
-            Input:
+                Input:
 
-                :::text
                 6 6 4
 
-            Output
+                Output:
 
-                :::text
                 4
 
-            註：
+                註：
 
                 第一個 6 表示 n，第二個 6 表示 m，4 表示 a。亦即，在 6 × 6 大小的地上，舖以 4 × 4 大小的石磚，最少需要 4 塊石磚才能將其舖滿。
 
-            題解：
+                * 題解：
 
                 假設需要 p × q 塊石磚，其必需符合此條件：a × p ≥ m 且 a × q ≥ n。
 
-            將我們的解法用程式寫出來，並上傳到 Codeforces 即完成此題練習。
+                將我們的解法用程式寫出來，並上傳到 Codeforces 即完成此題練習。
 
         2. 上傳
 

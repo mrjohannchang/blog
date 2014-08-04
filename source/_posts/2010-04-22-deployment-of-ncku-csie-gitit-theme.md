@@ -16,7 +16,8 @@ tags:
 
 到此為止都和這套佈景的官方安裝教學一樣。如果是採用發行版如 Ubuntu 所提供的 Gitit package，則已經完成。若是用 cabal 安裝, 則必須再安裝相依的套件，以 Ubuntu 為例：
 
-    :::sh
+    ```sh
     sudo apt-get install libghc-filestore-data libc6 libffi6 libgmp10 libpcre3 zlib1g libjs-jquery libjs-jquery-ui
+    ```
 
 完成的樣子可以參考[成大資工 Wiki](http://wiki.csie.ncku.edu.tw/)。

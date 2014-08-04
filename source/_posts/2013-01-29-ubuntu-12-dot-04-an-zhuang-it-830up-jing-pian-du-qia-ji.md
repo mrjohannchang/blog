@@ -7,8 +7,10 @@ tags:
 ![IT-830UP](http://www.ittec.com.tw/images/IT-830UP%28DM%29.jpg)
 
 ## 步驟 1. 安裝所需套件
-    :::sh
+
+    ```bash
     sudo apt-get install pcscd pcsc-tools libccid
+    ```
 
 完成後可能需要自行重新啟動電腦才會生效。
 

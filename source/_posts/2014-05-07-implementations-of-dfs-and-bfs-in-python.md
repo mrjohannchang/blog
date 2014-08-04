@@ -10,7 +10,7 @@ tags:
 
 **DFS**
 
-    :::python
+    ```py
     def dfs(graph, start, visited=set()):
         if start in visited:
             return
@@ -36,10 +36,11 @@ tags:
 
     print(repr([vertex for vertex in dfs(graph, 'A')]))
     print(repr([path for path in dfs_paths(graph, 'A', 'F')]))
+    ```
 
 **BFS**
 
-    :::python
+    ``` python
     def bfs(graph, queue, visited=set()):
         if not queue:
             return
@@ -67,3 +68,4 @@ tags:
 
     print(repr([vertex for vertex in bfs(graph, ['A'])]))
     print(repr([path for path in bfs_paths(graph, [('A', ['A'])], 'F')]))
+    ```
