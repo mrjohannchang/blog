@@ -1198,6 +1198,7 @@ a.article-title:hover {
   margin: 0;
   padding: 0;
   border: none;
+  font-size: 0.85em;
 }
 .article-entry .gist .gist-file .gist-meta {
   background: #fdf6e3;
