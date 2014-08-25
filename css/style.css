@@ -124,7 +124,7 @@ body,
 }
 body {
   background: #eee;
-  font: 18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-text-size-adjust: 100%;
 }
 .outer {
@@ -179,7 +179,7 @@ body {
 .mobile-nav-on #wrap {
   left: 280px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   #main {
     display: inline;
     float: left;
@@ -379,12 +379,12 @@ body {
   letter-spacing: 2px;
 }
 #subtitle {
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 16px;
   letter-spacing: 1px;
 }
 #subtitle-wrap {
-  margin-top: 18px;
+  margin-top: 16px;
 }
 #main-nav {
   float: left;
@@ -411,9 +411,9 @@ body {
 .nav-icon {
   font-family: FontAwesome;
   text-align: center;
-  font-size: 18px;
-  width: 18px;
-  height: 18px;
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
   padding: 20px 15px;
   position: relative;
   cursor: pointer;
@@ -422,7 +422,7 @@ body {
   font-weight: 300;
   letter-spacing: 1px;
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 796px) {
   .main-nav-link {
     display: none;
   }
@@ -433,7 +433,7 @@ body {
 #main-nav-toggle:before {
   content: "\f0c9";
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 796px) {
   #main-nav-toggle {
     display: block;
   }
@@ -464,7 +464,7 @@ body {
   opacity: 1;
   right: 0;
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 796px) {
   #search-form-wrap {
     width: 100%;
     right: -100%;
@@ -634,7 +634,7 @@ a.article-title:hover {
   text-align: center;
 }
 .article-entry blockquote footer {
-  font-size: 18px;
+  font-size: 16px;
   margin: 1.6em 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -754,7 +754,7 @@ a.article-title:hover {
 #article-nav:after {
   clear: both;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   #article-nav {
     margin: 50px 0;
   }
@@ -788,20 +788,20 @@ a.article-title:hover {
 .article-nav-link-wrap:hover {
   color: #555;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   .article-nav-link-wrap {
     width: 50%;
     margin-top: 0;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   #article-nav-newer {
     float: left;
     text-align: right;
     padding-right: 20px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   #article-nav-older {
     float: right;
     text-align: left;
@@ -982,14 +982,14 @@ a.article-title:hover {
   -moz-column-gap: 10px;
   column-gap: 10px;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 797px) and (max-width: 999px) {
   .archives {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   .archives {
     -webkit-column-count: 3;
     -moz-column-count: 3;
@@ -1071,7 +1071,7 @@ a.article-title:hover {
 #page-nav .page-number {
   display: inline-block;
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 796px) {
   #page-nav .page-number {
     display: none;
   }
@@ -1110,7 +1110,7 @@ a.article-title:hover {
   border-width: 1px 0;
   overflow: auto;
   color: #073642;
-  line-height: 21.599999999999998px;
+  line-height: 19.2px;
 }
 .article-entry .highlight .gutter pre,
 .article-entry .gist .gist-file .gist-data .line-numbers {
@@ -1167,7 +1167,7 @@ a.article-title:hover {
   padding-right: 20px;
 }
 .article-entry .highlight .line {
-  height: 21.599999999999998px;
+  height: 19.2px;
 }
 .article-entry .gist {
   margin: 0 -20px;
@@ -1272,7 +1272,7 @@ pre .keyword,
 pre .javascript .function {
   color: #d33682;
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 796px) {
   #mobile-nav {
     position: absolute;
     top: 0;
@@ -1283,7 +1283,7 @@ pre .javascript .function {
     border-right: 1px solid #fff;
   }
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 796px) {
   .mobile-nav-link {
     display: block;
     color: #999;
@@ -1295,7 +1295,7 @@ pre .javascript .function {
     color: #fff;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   #sidebar {
     display: inline;
     float: left;
