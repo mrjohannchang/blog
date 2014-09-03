@@ -25,17 +25,19 @@
   <link rel="stylesheet" href="/css/style.css" type="text/css">
 
   
+<!-- Google Analytics -->
 <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-44162683-1']);
-  _gaq.push(['_trackPageview']);
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+ga('create', 'UA-44162683-1', 'auto');
+ga('send', 'pageview');
+
 </script>
+<!-- End Google Analytics -->
+
 
 <!-- mathjax config similar to math.stackexchange -->
 
@@ -114,6 +116,52 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-ubuntu-12-dot-04-an-zhuang-it-830up-jing-pian-du-qia-ji" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/ubuntu-12-dot-04-an-zhuang-it-830up-jing-pian-du-qia-ji/" class="article-date">
+  <time datetime="2013-01-28T17:33:00.000Z" itemprop="datePublished">Jan 29 2013</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/ubuntu-12-dot-04-an-zhuang-it-830up-jing-pian-du-qia-ji/">在 Ubuntu 12.04 安裝 IT-830UP 晶片讀卡機與使用 WebATM</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="http://www.ittec.com.tw/images/IT-830UP%28DM%29.jpg" alt="IT-830UP"></p>
+<h2 id="步驟_1-_安裝所需套件">步驟 1. 安裝所需套件</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt-get install pcscd pcsc-tools libccid</div></pre></td></tr></table></figure>
+
+<p>完成後可能需要自行重新啟動電腦才會生效。</p>
+<h2 id="步驟_2-_依照_WebATM_提供的方法安裝所需程式，如：玉山銀行">步驟 2. 依照 WebATM 提供的方法安裝所需程式，如：<a href="http://netbank.esunbank.com.tw/webatm/Q&amp;A_016.htm#01">玉山銀行</a></h2>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://changyuheng.github.io/ubuntu-12-dot-04-an-zhuang-it-830up-jing-pian-du-qia-ji/" data-id="jhu4sykut2qfl2xa" class="article-share-link">Share</a>
+      
+        <a href="http://changyuheng.github.io/ubuntu-12-dot-04-an-zhuang-it-830up-jing-pian-du-qia-ji/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/software/">software</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-zai-ubuntu-12-dot-10-an-zhuang-fu-xia-mi-shu-ru-fa" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/zai-ubuntu-12-dot-10-an-zhuang-fu-xia-mi-shu-ru-fa/" class="article-date">
@@ -164,7 +212,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://changyuheng.github.io/zai-ubuntu-12-dot-10-an-zhuang-fu-xia-mi-shu-ru-fa/" data-id="e1ndn5yk7k50w4fi" class="article-share-link">Share</a>
+      <a data-url="http://changyuheng.github.io/zai-ubuntu-12-dot-10-an-zhuang-fu-xia-mi-shu-ru-fa/" data-id="e7yyj74z24lizqx2" class="article-share-link">Share</a>
       
         <a href="http://changyuheng.github.io/zai-ubuntu-12-dot-10-an-zhuang-fu-xia-mi-shu-ru-fa/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -205,7 +253,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://changyuheng.github.io/syncing-samba-accounts-with-unix-login-accounts/" data-id="w9lkr89qysm4hqks" class="article-share-link">Share</a>
+      <a data-url="http://changyuheng.github.io/syncing-samba-accounts-with-unix-login-accounts/" data-id="9sb26qq628tust9t" class="article-share-link">Share</a>
       
         <a href="http://changyuheng.github.io/syncing-samba-accounts-with-unix-login-accounts/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -257,170 +305,12 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://changyuheng.github.io/deployment-of-ncku-csie-gitit-theme/" data-id="5pxmc81085im9wrz" class="article-share-link">Share</a>
+      <a data-url="http://changyuheng.github.io/deployment-of-ncku-csie-gitit-theme/" data-id="kgyqvxszryxjb5ci" class="article-share-link">Share</a>
       
         <a href="http://changyuheng.github.io/deployment-of-ncku-csie-gitit-theme/#disqus_thread" class="article-comment-link">Comments</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/software/">software</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-codeforces-quick-start" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/codeforces-quick-start/" class="article-date">
-  <time datetime="2010-04-19T16:00:00.000Z" itemprop="datePublished">Apr 20 2010</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/codeforces-quick-start/">Codeforces 快速入門 (簡介、介紹、教學)</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ol>
-<li><p>什麼是 <a href="http://codeforces.com/">Codeforces</a>？</p>
-<p> Codeforces 是一個知名的程式競賽 (programming contest) 網站。我們可以在此網站上討論程式設計，練習或比賽解題，也可以舉辦比賽。</p>
-</li>
-<li><p>支援哪些語言？</p>
-<ul>
-<li>C</li>
-<li>C++</li>
-<li>C#</li>
-<li>D</li>
-<li>Delphi</li>
-<li>Free Pascal</li>
-<li>Haskell</li>
-<li>Java</li>
-<li>JavaScript</li>
-<li>OCaml</li>
-<li>PHP</li>
-<li>Python</li>
-<li>Ruby</li>
-<li>Scala</li>
-</ul>
-</li>
-<li><p>怎麼開始？</p>
-<ol>
-<li><p>註冊</p>
-<ol>
-<li><p>進入 <a href="http://codeforces.com/">Codeforces</a> 首頁</p>
-</li>
-<li><p>點選右上角「Register」以進入註冊頁面</p>
-<p> <a href="images/codeforces-begin-to-register.png"><img src="images/codeforces-begin-to-register.png" alt="begin to register"></a></p>
-</li>
-<li><p>填寫註冊表單，完成後按下「Register (確定註冊)」</p>
-<p> <a href="images/codeforces-registration-form.png"><img src="images/codeforces-registration-form.png" alt="registration form"></a></p>
-<p>經過以上步驟即可完成註冊。</p>
-<p>以下為選擇性設定：</p>
-</li>
-<li><p>登入</p>
-</li>
-<li><p>點選右上角自己的帳號，進入個人資料頁面</p>
-</li>
-<li><p>點選導覽列上的「SETTINGS」</p>
-</li>
-<li><p>在「GENERAL」這一頁，可以上傳個人頭像、重新設定密碼、電子信箱等</p>
-</li>
-<li><p>在「SOCIAL」這一頁，可以輸入真名及國家和城市。(有輸入國家和城市才能和自己國家的國民一起排名)</p>
-</li>
-</ol>
-</li>
-<li><p>進行一次練習</p>
-<ol>
-<li><p>解題</p>
-<ol>
-<li><p>點選導覽列上的 <a href="http://codeforces.com/problemset">PROBLEMSET</a> 進入考古題庫</p>
-</li>
-<li><p>點選最右邊的欄位標題「<a href="http://codeforces.com/problemset?order=BY_SOLVED_DESC">Solved</a>」</p>
-</li>
-<li><p>進入「<a href="http://codeforces.com/problemset/problem/1/A">Theater Square</a>」</p>
-<p><a href="images/codeforces-problemset.png"><img src="images/codeforces-problemset.png" alt="problemset"></a></p>
-<ul>
-<li><p>題目最上方的</p>
-<p>time limit per test: 2 seconds<br>memory limit per test: 64 megabytes<br>input: standard input<br>output: standard output</p>
-</li>
-<li><p>分別表示</p>
-<p>時間限制：2 秒<br>使用記憶體大小限制：64 MB<br>輸入方式：標準輸入<br>輸出方式：標準輸出</p>
-</li>
-<li><p>接著是題目：</p>
-<p>Theatre Square in the capital city of Berland has a rectangular shape with the size n × m meters. On the occasion of the city’s anniversary, a decision was taken to pave the Square with square granite flagstones. Each flagstone is of the size a × a.</p>
-<p>What is the least number of flagstones needed to pave the Square? It’s allowed to cover the surface larger than the Theatre Square, but the Square has to be covered.<br>It’s not allowed to break the flagstones. The sides of flagstones should be parallel to the sides of the Square.</p>
-</li>
-<li><p>中文大意：</p>
-<p>有一塊&nbsp;n × m (長 n，寬 m) 平方公尺矩形的地需要舖滿石磚，每塊石磚大小為正方形&nbsp;a × a。在不切割石磚、不重疊石的前題下，必需舖滿此地。石磚可以超出需要被舖的地，但石磚的邊必需與此地的邊平行。</p>
-<p>請問最少需要多少石磚才能完成？</p>
-</li>
-<li><p>Input (說明測試程式會餵給我們的程式的資料)：</p>
-<p>The input contains three positive integer numbers in the first line: n,  m and a (1 ≤  n, m, a ≤ 10^9).</p>
-</li>
-<li><p>中文說明：</p>
-<p>輸入共一行，此行中包含三個整數：n, m, a，整數間以空白字元分隔。其中 1 ≤  n, m, a ≤ 10^9。</p>
-</li>
-<li><p>Output (說明我們的程式應該輸出什麼)：</p>
-<p>Write the needed number of flagstones.</p>
-</li>
-<li><p>中文說明：</p>
-<p>請輸出需要的石磚數。</p>
-</li>
-<li><p>範例：</p>
-<p>Input:</p>
-<p>6 6 4</p>
-<p>Output:</p>
-<p>4</p>
-<p>註：</p>
-<p>第一個 6 表示 n，第二個 6 表示 m，4 表示 a。亦即，在 6 × 6 大小的地上，舖以 4 × 4 大小的石磚，最少需要 4 塊石磚才能將其舖滿。</p>
-</li>
-<li><p>題解：</p>
-<p>假設需要 p × q 塊石磚，其必需符合此條件：a × p ≥ m 且 a × q ≥ n。</p>
-<p>將我們的解法用程式寫出來，並上傳到 Codeforces 即完成此題練習。</p>
-</li>
-</ul>
-</li>
-</ol>
-</li>
-<li><p>上傳</p>
-<p> 在題目頁點選導覽列上的「SUBMIT」，確定 problem 是我們要解決的，選擇我們的程式的 language，接著貼上 source code 並按下「Submit」按鈕。</p>
-<p> 按下按鈕後，會跳到 Status 這一頁，若我們的答案成功在題目的要求下解決此問題，在「Verdict」這一欄會出現綠色的 「Accepted」。</p>
-<p> 如果我們在第 # 個測試中輸出的答案與測試器期望的答案不同，會出現「Wrong answer on test #」, 若是 source code 編譯錯誤，會出現「Compilation error」。若在第 # 次的測試中超過記憶體大小限制，會出現「Memory limit exceeded on test #」。若在第 # 次的測試中超過時限制，會出現「Time limit exceeded on test #」。此時我們可以按下左邊的流水號，以檢視出現錯誤的測項、錯誤訊息等。</p>
-</li>
-<li><p>參考其他人的答案</p>
-<p> 寫完一道題目後，最重要的是檢討自己的答案。檢討的方法有很多，其中之一是觀察別人的解法。由導覽列 → PROBLEMSET 中找出我們的題目，並按下右方解題人數，即可看到大家對此題所寫的解法。</p>
-<p> <a href="images/codeforces-solved.png"><img src="images/codeforces-solved.png" alt="solved"></a></p>
-<p> 在頁面最下方可以自訂排序規則，我們可以依照 Solution Size (source code 大小) 或 Execution Time (執行時間長短) 來排序，以方便我們找出想要參考的答案。右方可以選擇我們想要看到的語言。</p>
-<p> <a href="images/codeforces-solved-languages.png"><img src="images/codeforces-solved-languages.png" alt="languages"></a></p>
-<p> 讀者可參考此題的 <a href="http://codeforces.com/contest/1/submission/1647521">Python 版解法</a>、<a href="http://codeforces.com/contest/1/submission/2337277">Ruby 版解法</a>、<a href="http://codeforces.com/contest/1/submission/889578">PHP 版解法</a>、<a href="http://codeforces.com/contest/1/submission/1337822">C 版解法</a>、<a href="http://codeforces.com/contest/1/submission/759">C++ 版解法</a>、<a href="http://codeforces.com/contest/1/submission/2032793">C# 版解法</a>、<a href="http://codeforces.com/contest/1/submission/604386">Java 版解法</a>、<a href="http://codeforces.com/contest/1/submission/1903268">Scala 版解法</a>、<a href="http://codeforces.com/contest/1/submission/5482791">JavaScript 版解法</a>。</p>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://changyuheng.github.io/codeforces-quick-start/" data-id="m7by7cm2tb1b7jq0" class="article-share-link">Share</a>
-      
-        <a href="http://changyuheng.github.io/codeforces-quick-start/#disqus_thread" class="article-comment-link">Comments</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/algorithm/">algorithm</a></li></ul>
 
     </footer>
   </div>
@@ -445,6 +335,10 @@
       <ul>
         
           <li>
+            <a href="/python-learning-resources/">Python Learning Resources</a>
+          </li>
+        
+          <li>
             <a href="/自行組合安全、好記且每個網站相異的密碼/">自行組合安全、好記且每個網站相異的密碼</a>
           </li>
         
@@ -460,10 +354,6 @@
             <a href="/my-ubuntu-gnome-tweaks/">My Ubuntu GNOME Tweaks</a>
           </li>
         
-          <li>
-            <a href="/codeforces-problem-1b/">Codeforces Problem 1B</a>
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -473,7 +363,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/algorithm/">algorithm</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/misc/">misc</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/programming/">programming</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">11</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/programming/">Programming</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/algorithm/">algorithm</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/misc/">misc</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/programming/">programming</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">11</span></li></ul>
     </div>
   </div>
 

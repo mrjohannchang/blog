@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: programming | A Programmer’s Blog</title>
+  <title>Tag: Programming | A Programmer’s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description">
 <meta property="og:type" content="article">
@@ -25,17 +25,19 @@
   <link rel="stylesheet" href="/css/style.css" type="text/css">
 
   
+<!-- Google Analytics -->
 <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-44162683-1']);
-  _gaq.push(['_trackPageview']);
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+ga('create', 'UA-44162683-1', 'auto');
+ga('send', 'pageview');
+
 </script>
+<!-- End Google Analytics -->
+
 
 <!-- mathjax config similar to math.stackexchange -->
 
@@ -114,10 +116,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-understanding-python-decorators" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-python-learning-resources" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/understanding-python-decorators/" class="article-date">
-  <time datetime="2014-05-28T16:00:00.000Z" itemprop="datePublished">May 29 2014</time>
+    <a href="/python-learning-resources/" class="article-date">
+  <time datetime="2014-09-02T16:00:00.000Z" itemprop="datePublished">Sep 3 2014</time>
 </a>
     
   </div>
@@ -128,7 +130,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/understanding-python-decorators/">Understanding Python Decorators</a>
+      <a class="article-title" href="/python-learning-resources/">Python Learning Resources</a>
     </h1>
   
 
@@ -136,31 +138,28 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Decorator 是一個 Python 中較為進階的語法，因為較難理解故常被提出來討論。這邊提供一個簡潔的說明。</p>
-<p>假設有一名為 func 的 function 被名為 decor1 和 decor2 的二 decorator 修飾如下：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="decorator">@decor1</span></div><div class="line"><span class="decorator">@decor2</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">(*args, **kwargs)</span>:</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure>
-
-<p>則當我們如下呼叫 func() 時：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">func(*args, **kwargs)</div></pre></td></tr></table></figure>
-
-<p>可以將之理解為：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">decor1(decor2(func))(*args, **kwargs)</div></pre></td></tr></table></figure>
-
-<p>更詳細的說明可以參考：</p>
+        <p>同事在問 Python 該如何入門，順手將整理的資料與大眾分享。</p>
+<p>既然要學，就不要拖著歷史的包袱，所以建議直接學習 Python 3。</p>
+<p>對於有程式設計基礎的朋友，可由下列項目依序學習：</p>
 <ol>
-<li><a href="http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/">Understanding Python Decorators in 12 Easy Steps!</a></li>
-<li><a href="http://stackoverflow.com/a/739679">How can I make a chain of function decorators in Python?</a></li>
+<li>官網的 <a href="https://docs.python.org/3/tutorial/">tutorial</a>。</li>
+<li><a href="http://shop.oreilly.com/product/0636920027072.do">Python Cookbook: Recipes for Mastering Python 3</a></li>
+<li><a href="http://www.amazon.com/Python-Practice-Concurrency-Libraries-Developers/dp/0321905636">Python in Practice: Create Better Programs Using Concurrency, Libraries, and Patterns (Developer’s Library)</a></li>
+</ol>
+<p>Libraries：</p>
+<ol>
+<li><a href="https://github.com/vinta/awesome-python">https://github.com/vinta/awesome-python</a></li>
 </ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://changyuheng.github.io/understanding-python-decorators/" data-id="a8ygqmjoezz26ckg" class="article-share-link">Share</a>
+      <a data-url="http://changyuheng.github.io/python-learning-resources/" data-id="n2sfpwcviio1yxfh" class="article-share-link">Share</a>
       
-        <a href="http://changyuheng.github.io/understanding-python-decorators/#disqus_thread" class="article-comment-link">Comments</a>
+        <a href="http://changyuheng.github.io/python-learning-resources/#disqus_thread" class="article-comment-link">Comments</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/programming/">programming</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/programming/">Programming</a></li></ul>
 
     </footer>
   </div>
@@ -169,163 +168,6 @@
 
 
   
-    <article id="post-github-streak" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/github-streak/" class="article-date">
-  <time datetime="2014-04-04T10:02:00.000Z" itemprop="datePublished">Apr 4 2014</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/github-streak/">My Longest Streak on GitHub</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>這不是什麼值得驕傲的事，只是一時興致起來，洗了一下 GitHub 的 longest streak。</p>
-<p><img src="github-longest-streak.png" alt="GitHub Longest Streak"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://changyuheng.github.io/github-streak/" data-id="504o3qndbz7gcw6f" class="article-share-link">Share</a>
-      
-        <a href="http://changyuheng.github.io/github-streak/#disqus_thread" class="article-comment-link">Comments</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/programming/">programming</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-windows-photo-viewer-mouse-plug-in" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/windows-photo-viewer-mouse-plug-in/" class="article-date">
-  <time datetime="2009-09-22T16:00:00.000Z" itemprop="datePublished">Sep 23 2009</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/windows-photo-viewer-mouse-plug-in/">Windows Photo Viewer Mouse Plug-in</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>This simple tool gives Windows Photo Viewer the following features:</p>
-<ol>
-<li>Middle click to toggle window’s size between normal and maximum.</li>
-<li>Scroll up/down to show previous/next image.</li>
-<li>Ctrl + scroll up/down to zoom in/out.</li>
-<li>A to show actual size.</li>
-<li>F to show fit size.</li>
-<li>Ctrl + A to toggle deafult presenting style between actual size and fit size.</li>
-</ol>
-<p><strong><a href="https://raw.githubusercontent.com/changyuheng/windows-photo-viewer-mouse-plug-in/master/bin/windows-photo-viewer-mouse-plug-in.exe">Download</a></strong><br><strong><a href="https://github.com/changyuheng/windows-photo-viewer-mouse-plug-in">Source code</a></strong></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://changyuheng.github.io/windows-photo-viewer-mouse-plug-in/" data-id="qgyw86c2qt19r1p9" class="article-share-link">Share</a>
-      
-        <a href="http://changyuheng.github.io/windows-photo-viewer-mouse-plug-in/#disqus_thread" class="article-comment-link">Comments</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/programming/">programming</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/software/">software</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-autocheckin-for-garena" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/autocheckin-for-garena/" class="article-date">
-  <time datetime="2008-06-07T16:00:00.000Z" itemprop="datePublished">Jun 8 2008</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/autocheckin-for-garena/">AutoCheckIn for Garena</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="https://raw.githubusercontent.com/changyuheng/garena-autocheckin/master/screenshot.png" alt="screenshot"></p>
-<p>支援：Garena 3.x 中文版 &amp; 2010 (4.0.1.6127) English Version、中文版</p>
-<p>作業系統：Windows 2000 / XP / Vista / 7 32-bit &amp; 64-bit</p>
-<p><strong>特色</strong></p>
-<ol>
-<li>背景自動擠房</li>
-<li>開放原始碼</li>
-</ol>
-<p><strong>使用方法</strong></p>
-<ol>
-<li>執行 AutoCheckIn</li>
-<li>雙擊房間即可自動擠房</li>
-<li>開始擠房後，可以最小化 Garena。</li>
-<li>進入房間後，若 Garena 提示：「您仍在房間裡，要離開房間嗎？」，把它關掉就好了。</li>
-</ol>
-<p>成功加入房間後，程式會彈到最上層提示。</p>
-<p><strong>類似的軟體</strong></p>
-<ol>
-<li><a href="http://kloerhe.pixnet.net/blog/post/23885234-[-作品-]-garena-room-joiner-2-#-支援-xp---vista-#-05-19-">Garena Room Joiner 2</a></li>
-</ol>
-<p>[<strong><a href="https://raw.githubusercontent.com/changyuheng/garena-autocheckin/master/AutoCheckIn.exe">下載</a></strong>]<br>[<strong><a href="https://github.com/changyuheng/garena-autocheckin">原始碼</a></strong>]</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://changyuheng.github.io/autocheckin-for-garena/" data-id="tiktufztpg8b6gr3" class="article-share-link">Share</a>
-      
-        <a href="http://changyuheng.github.io/autocheckin-for-garena/#disqus_thread" class="article-comment-link">Comments</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/programming/">programming</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/software/">software</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-  
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/tags/programming/page/2/">2</a><a class="extend next" rel="next" href="/tags/programming/page/2/">Next &raquo;</a>
-    </nav>
   
 </section>
         
@@ -336,6 +178,10 @@
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/python-learning-resources/">Python Learning Resources</a>
+          </li>
         
           <li>
             <a href="/自行組合安全、好記且每個網站相異的密碼/">自行組合安全、好記且每個網站相異的密碼</a>
@@ -353,10 +199,6 @@
             <a href="/my-ubuntu-gnome-tweaks/">My Ubuntu GNOME Tweaks</a>
           </li>
         
-          <li>
-            <a href="/codeforces-problem-1b/">Codeforces Problem 1B</a>
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -366,7 +208,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/algorithm/">algorithm</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/misc/">misc</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/programming/">programming</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">11</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/programming/">Programming</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/algorithm/">algorithm</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/misc/">misc</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/programming/">programming</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">11</span></li></ul>
     </div>
   </div>
 
