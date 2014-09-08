@@ -10,8 +10,8 @@ tags:
 
 * [7z](#7z)
 * [ClipIt](#clipit)
+* [Fcitx](#fcitx)
 * [Gnome Gmail](#gnome-gmail)
-* [Hime](#hime)
 * [Java 8](#java8)
 * [ubuntu-restricted-extras](#ubuntu-restricted-extras)
 * [Vim](#vim)
@@ -44,17 +44,17 @@ sudo apt install p7zip-full
 sudo apt install clipit
 ```
 
+### <a name="fcitx"></a>Fcitx
+
+```sh
+sudo apt install fcitx
+```
+
 ### <a name="gnome-gmail"></a>Gnome Gmail
 
 讓預設郵件客戶端可被設定為 Gmail。
 ```sh
 sudo apt install gnome-gmail
-```
-
-### <a name="hime"></a>Hime
-
-```sh
-sudo apt install hime
 ```
 
 ### <a name="java8"></a>Java 8
@@ -95,10 +95,10 @@ sudo apt install ttf-wqy-*
 
 ### <a name="boshiamy"></a>嘸蝦米輸入法
 
-1. 安裝 [Hime](#hime)。
-2. 由[嘸蝦米官方網站](http://boshiamy.com/download.html) → 「嘸蝦米輸入法 for Unix-like」，下載 gcin 適用的表格檔。
-3. 解壓縮 `boshiamy-gcin.tar.gz`，將其中的 `boshiamy-t.gtab` 複製到 `/usr/lib/hime/table`。
-4. 開啟 `~/.config/hime/gtab.list`，將嘸蝦米那一行的 `noseeing.gtab` 取代成 `boshiamy-t.gtab`。
+```sh
+sudo apt install fcitx-table-boshiamy
+```
+需要 [Fcitx](#fcitx)。
 
 ### <a name="gmail-notifier"></a>Gmail Notifier
 
@@ -120,7 +120,7 @@ sudo apt install ttf-wqy-*
 
 ### <a name="im-config"></a>Input Method Configuration
 
-先安裝 [Hime](#hime)，接著由 `Activities` → `Input Method` 選擇 hime。
+先安裝 [Fcitx](#fcitx)，接著由 `Activities` → `Input Method` 選擇 fcitx。
 
 ### <a name="online-accounts"></a>Online Accounts
 
