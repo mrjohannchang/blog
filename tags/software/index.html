@@ -116,6 +116,68 @@ ga('send', 'pageview');
       <div class="outer">
         <section id="main">
   
+    <article id="post-installing-fcitx-and-boshiamy-on-ubuntu-gnome-1404" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/installing-fcitx-and-boshiamy-on-ubuntu-gnome-1404/" class="article-date">
+  <time datetime="2014-09-07T16:00:00.000Z" itemprop="datePublished">Sep 8 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/installing-fcitx-and-boshiamy-on-ubuntu-gnome-1404/">Installing Fcitx and Boshiamy on Ubuntu GNOME 14.04</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Fcitx 是一個自訂性很高的輸入法框架，安裝方式如下：</p>
+<ol>
+<li>Fcitx 框架</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt-get install fcitx</div></pre></td></tr></table></figure>
+
+<ol>
+<li>嘸蝦米輸入法表格</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt-get install fcitx-table-boshiamy</div></pre></td></tr></table></figure>
+
+<p>設定：</p>
+<ol>
+<li><p><code>Activities</code> → <code>Input Method</code> 選擇 fcitx。重新登入。</p>
+</li>
+<li><p><code>Activities</code> → <code>Fcitx Configuration</code> → <code>Input Method</code> → <code>Boshiamy</code> → 雙擊<br> <code>Other</code> → <code>Table</code> → <code>table/boshiamy.conf</code> → 設定<br> <code>Adjust Order</code>：<code>AdjustNo</code><br> <code>Auto Send Candidate Word</code>：取消<br> <code>Use Maching Key</code>：取消<br> <code>Choose</code>：0123456789<br> <code>Ignore Punctuation</code>：打勾</p>
+</li>
+</ol>
+<p>參考資料：</p>
+<ul>
+<li><a href="http://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=246870">Ubuntu與嘸蝦米: 在fcitx下，(boshiamy)嘸蝦米的使用最為順暢、穩定!（新酷音、m17n、倉頡、輕鬆法亦適用）</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://changyuheng.github.io/installing-fcitx-and-boshiamy-on-ubuntu-gnome-1404/" data-id="wgjd00svlk66c9gk" class="article-share-link">Share</a>
+      
+        <a href="http://changyuheng.github.io/installing-fcitx-and-boshiamy-on-ubuntu-gnome-1404/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/software/">software</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-my-ubuntu-gnome-tweaks" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/my-ubuntu-gnome-tweaks/" class="article-date">
@@ -143,8 +205,8 @@ ga('send', 'pageview');
 <ul>
 <li><a href="#7z">7z</a></li>
 <li><a href="#clipit">ClipIt</a></li>
+<li><a href="#fcitx">Fcitx</a></li>
 <li><a href="#gnome-gmail">Gnome Gmail</a></li>
-<li><a href="#hime">Hime</a></li>
 <li><a href="#java8">Java 8</a></li>
 <li><a href="#ubuntu-restricted-extras">ubuntu-restricted-extras</a></li>
 <li><a href="#vim">Vim</a></li>
@@ -171,12 +233,12 @@ ga('send', 'pageview');
 <p>剪貼簿管理程序，安裝的主要目的是要他同步剪貼簿的功能。因為 X11 的剪貼簿在「貼上」時，若來源程序已暫停或結束，會因無法讀取來源而無法貼上。可參考：<a href="http://www.jwz.org/doc/x-cut-and-paste.html">X Selections, Cut Buffers, and Kill Rings.</a></p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt install clipit</div></pre></td></tr></table></figure>
 
+<h3 id="Fcitx"><a name="fcitx"></a>Fcitx</h3>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt install fcitx</div></pre></td></tr></table></figure>
+
 <h3 id="Gnome_Gmail"><a name="gnome-gmail"></a>Gnome Gmail</h3>
 <p>讓預設郵件客戶端可被設定為 Gmail。</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt install gnome-gmail</div></pre></td></tr></table></figure>
-
-<h3 id="Hime"><a name="hime"></a>Hime</h3>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt install hime</div></pre></td></tr></table></figure>
 
 <h3 id="Java_8"><a name="java8"></a>Java 8</h3>
 <p><a href="http://www.webupd8.org/2012/09/install-oracle-java-8-in-ubuntu-via-ppa.html">Install Oracle Java 8 In Ubuntu Via PPA Repository</a></p>
@@ -199,11 +261,10 @@ ga('send', 'pageview');
 
 <h3 id="嘸蝦米輸入法"><a name="boshiamy"></a>嘸蝦米輸入法</h3>
 <ol>
-<li>安裝 <a href="#hime">Hime</a>。</li>
-<li>由<a href="http://boshiamy.com/download.html">嘸蝦米官方網站</a> → 「嘸蝦米輸入法 for Unix-like」，下載 gcin 適用的表格檔。</li>
-<li>解壓縮 <code>boshiamy-gcin.tar.gz</code>，將其中的 <code>boshiamy-t.gtab</code> 複製到 <code>/usr/lib/hime/table</code>。</li>
-<li>開啟 <code>~/.config/hime/gtab.list</code>，將嘸蝦米那一行的 <code>noseeing.gtab</code> 取代成 <code>boshiamy-t.gtab</code>。</li>
+<li>安裝 <a href="#fcitx">Fcitx</a>。<br>2.</li>
 </ol>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt install fcitx-table-boshiamy</div></pre></td></tr></table></figure>
+
 <h3 id="Gmail_Notifier"><a name="gmail-notifier"></a>Gmail Notifier</h3>
 <p>偵測到 Gmail 的新進信件時會由 Firefox 發出提醒。<br><a href="https://addons.mozilla.org/zh-tw/firefox/addon/gmail-notifier-restartless/?src=search">Gmail Notifier</a></p>
 <h3 id="GNotifier"><a name="gnotifier"></a>GNotifier</h3>
@@ -213,14 +274,14 @@ ga('send', 'pageview');
 <h3 id="Gnome_Tweak_Tool"><a name="gnome-tweak-tool"></a>Gnome Tweak Tool</h3>
 <p>依個人喜好調整預設設定。</p>
 <h3 id="Input_Method_Configuration"><a name="im-config"></a>Input Method Configuration</h3>
-<p>先安裝 <a href="#hime">Hime</a>，接著由 <code>Activities</code> → <code>Input Method</code> 選擇 hime。</p>
+<p>先安裝 <a href="#fcitx">Fcitx</a>，接著由 <code>Activities</code> → <code>Input Method</code> 選擇 fcitx。</p>
 <h3 id="Online_Accounts"><a name="online-accounts"></a>Online Accounts</h3>
 <p>由 <code>Activities</code> → <code>System Settings</code> → <code>Online Accounts</code> 登入 Google 帳戶，登入後可將右方不希望同步的功能關閉。若有開啟 Calendar 同步，可由螢幕最上方正中央的 Calendar 下拉選單中看到將近的活動，提醒時間到時也會由 Evolution 彈出視窗提醒。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://changyuheng.github.io/my-ubuntu-gnome-tweaks/" data-id="7msp2pl9y5k07ihl" class="article-share-link">Share</a>
+      <a data-url="http://changyuheng.github.io/my-ubuntu-gnome-tweaks/" data-id="ptve9vca8ftx2hg2" class="article-share-link">Share</a>
       
         <a href="http://changyuheng.github.io/my-ubuntu-gnome-tweaks/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -290,7 +351,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://changyuheng.github.io/gnome-36-yu-kde-410-yu-gong-zuo-chang-suo-shi-yong-nian-xin-de/" data-id="c6n0k46cd5undjdq" class="article-share-link">Share</a>
+      <a data-url="http://changyuheng.github.io/gnome-36-yu-kde-410-yu-gong-zuo-chang-suo-shi-yong-nian-xin-de/" data-id="60f4fclg106rcvcj" class="article-share-link">Share</a>
       
         <a href="http://changyuheng.github.io/gnome-36-yu-kde-410-yu-gong-zuo-chang-suo-shi-yong-nian-xin-de/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -336,73 +397,9 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://changyuheng.github.io/ubuntu-12-dot-04-an-zhuang-it-830up-jing-pian-du-qia-ji/" data-id="exb0mpwwcf2u2n4u" class="article-share-link">Share</a>
+      <a data-url="http://changyuheng.github.io/ubuntu-12-dot-04-an-zhuang-it-830up-jing-pian-du-qia-ji/" data-id="cyeylyh8ffubiphn" class="article-share-link">Share</a>
       
         <a href="http://changyuheng.github.io/ubuntu-12-dot-04-an-zhuang-it-830up-jing-pian-du-qia-ji/#disqus_thread" class="article-comment-link">Comments</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/software/">software</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-zai-ubuntu-12-dot-10-an-zhuang-fu-xia-mi-shu-ru-fa" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/zai-ubuntu-12-dot-10-an-zhuang-fu-xia-mi-shu-ru-fa/" class="article-date">
-  <time datetime="2012-06-05T16:00:00.000Z" itemprop="datePublished">Jun 6 2012</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/zai-ubuntu-12-dot-10-an-zhuang-fu-xia-mi-shu-ru-fa/">在 Ubuntu 12.10 的 gcin 輸入法平台安裝嘸蝦米輸入法</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="步驟_1：安裝_gcin_及_im-switch">步驟 1：安裝 gcin 及 im-switch</h2>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt-get install gcin im-switch</div></pre></td></tr></table></figure>
-
-<h2 id="步驟_2：指定預設輸入法平台為_gcin，完成後重新啟動電腦">步驟 2：指定預設輸入法平台為 gcin，完成後重新啟動電腦</h2>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">im-switch</div></pre></td></tr></table></figure>
-
-<h2 id="步驟_3：下載並解壓縮嘸蝦米官方提供的_gcin_用表格，接著開啟終端機並進入解壓縮目錄">步驟 3：下載並解壓縮嘸蝦米官方提供的 gcin 用表格，接著開啟終端機並進入解壓縮目錄</h2>
-<h2 id="步驟_4：將表格等檔案複製到系統中">步驟 4：將表格等檔案複製到系統中</h2>
-<h3 id="1-_前置作業">1. 前置作業</h3>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> updatedb</div></pre></td></tr></table></figure>
-
-<h3 id="2-_複製_*-gtab_到_gcin_表格目錄">2. 複製 *.gtab 到 gcin 表格目錄</h3>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> cp *.gtab $(locate gtab | grep gcin/table | <span class="keyword">while</span> <span class="built_in">read</span> line; <span class="keyword">do</span> dirname <span class="string">"<span class="variable">$line</span>"</span>; <span class="keyword">done</span> | sort -u)</div></pre></td></tr></table></figure>
-
-<h3 id="3-_複製_*-png_到_gcin_icon_目錄">3. 複製 *.png 到 gcin icon 目錄</h3>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> cp *.png $(locate pinyin.png | grep gcin | <span class="keyword">while</span> <span class="built_in">read</span> line; <span class="keyword">do</span> dirname <span class="string">"<span class="variable">$line</span>"</span>; <span class="keyword">done</span> | sort -u)</div></pre></td></tr></table></figure>
-
-<h2 id="步驟_5：編輯_gtab-list">步驟 5：編輯 gtab.list</h2>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">echo</span> <span class="string">"嘸蝦米(繁) 1 boshiamy-t.gtab boshiamy-t.png"</span> &gt;&gt; ~/.gcin/gtab.list</div></pre></td></tr></table></figure>
-
-<h2 id="步驟_6：重新啟動_gcin">步驟 6：重新啟動 gcin</h2>
-<h2 id="步驟_7：調整_gcin_設定">步驟 7：調整 gcin 設定</h2>
-<h3 id="1-_在【內定輸入法_&amp;_開啟/關閉】中調整嘸蝦米是否為預設輸入法、可否由_ctrl_+_shift_切換">1. 在【內定輸入法 &amp; 開啟/關閉】中調整嘸蝦米是否為預設輸入法、可否由 ctrl + shift 切換</h3>
-<h3 id="2-_在【倉頡/行列/嘸蝦米/大易設定】中將【預覽/預選_字】調整為【全部開啟】">2. 在【倉頡/行列/嘸蝦米/大易設定】中將【預覽/預選 字】調整為【全部開啟】</h3>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://changyuheng.github.io/zai-ubuntu-12-dot-10-an-zhuang-fu-xia-mi-shu-ru-fa/" data-id="nqripqucrnm7uura" class="article-share-link">Share</a>
-      
-        <a href="http://changyuheng.github.io/zai-ubuntu-12-dot-10-an-zhuang-fu-xia-mi-shu-ru-fa/#disqus_thread" class="article-comment-link">Comments</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/software/">software</a></li></ul>
@@ -430,6 +427,10 @@ ga('send', 'pageview');
       <ul>
         
           <li>
+            <a href="/installing-fcitx-and-boshiamy-on-ubuntu-gnome-1404/">Installing Fcitx and Boshiamy on Ubuntu GNOME 14.04</a>
+          </li>
+        
+          <li>
             <a href="/python-learning-resources/">Python Learning Resources</a>
           </li>
         
@@ -445,10 +446,6 @@ ga('send', 'pageview');
             <a href="/implementations-of-dfs-and-bfs-in-python/">Implementations of DFS and BFS in Python</a>
           </li>
         
-          <li>
-            <a href="/my-ubuntu-gnome-tweaks/">My Ubuntu GNOME Tweaks</a>
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -458,7 +455,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/programming/">Programming</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/algorithm/">algorithm</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/misc/">misc</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/programming/">programming</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">11</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/programming/">Programming</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/algorithm/">algorithm</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/misc/">misc</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/programming/">programming</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a><span class="tag-list-count">12</span></li></ul>
     </div>
   </div>
 

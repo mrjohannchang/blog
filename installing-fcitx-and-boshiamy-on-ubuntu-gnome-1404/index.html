@@ -3,32 +3,62 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Understanding Python Decorators | A Programmer’s Blog</title>
+  <title>Installing Fcitx and Boshiamy on Ubuntu GNOME 14.04 | A Programmer’s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Decorator 是一個 Python 中較為進階的語法，因為較難理解故常被提出來討論。這邊提供一個簡潔的說明。
-假設有一名為 func 的 function 被名為 decor1 和 decor2 的二 decorator 修飾如下：
-1234@decor1@decor2def func(*args, **kwargs):    pass
+  <meta name="description" content="Fcitx 是一個自訂性很高的輸入法框架，安裝方式如下：
 
-則當我們如下呼叫 func() 時：
-1func(*">
+Fcitx 框架
+
+1sudo apt-get install fcitx
+
+
+嘸蝦米輸入法表格
+
+1sudo apt-get install fcitx-table-boshiamy
+
+設定：
+
+Activities → Input Method 選擇 fcitx。重新登入。
+
+Activities → Fcitx Configurat">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Understanding Python Decorators">
-<meta property="og:url" content="http://changyuheng.github.io/understanding-python-decorators/">
+<meta property="og:title" content="Installing Fcitx and Boshiamy on Ubuntu GNOME 14.04">
+<meta property="og:url" content="http://changyuheng.github.io/installing-fcitx-and-boshiamy-on-ubuntu-gnome-1404/">
 <meta property="og:site_name" content="A Programmer’s Blog">
-<meta property="og:description" content="Decorator 是一個 Python 中較為進階的語法，因為較難理解故常被提出來討論。這邊提供一個簡潔的說明。
-假設有一名為 func 的 function 被名為 decor1 和 decor2 的二 decorator 修飾如下：
-1234@decor1@decor2def func(*args, **kwargs):    pass
+<meta property="og:description" content="Fcitx 是一個自訂性很高的輸入法框架，安裝方式如下：
 
-則當我們如下呼叫 func() 時：
-1func(*">
+Fcitx 框架
+
+1sudo apt-get install fcitx
+
+
+嘸蝦米輸入法表格
+
+1sudo apt-get install fcitx-table-boshiamy
+
+設定：
+
+Activities → Input Method 選擇 fcitx。重新登入。
+
+Activities → Fcitx Configurat">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Understanding Python Decorators">
-<meta name="twitter:description" content="Decorator 是一個 Python 中較為進階的語法，因為較難理解故常被提出來討論。這邊提供一個簡潔的說明。
-假設有一名為 func 的 function 被名為 decor1 和 decor2 的二 decorator 修飾如下：
-1234@decor1@decor2def func(*args, **kwargs):    pass
+<meta name="twitter:title" content="Installing Fcitx and Boshiamy on Ubuntu GNOME 14.04">
+<meta name="twitter:description" content="Fcitx 是一個自訂性很高的輸入法框架，安裝方式如下：
 
-則當我們如下呼叫 func() 時：
-1func(*">
+Fcitx 框架
+
+1sudo apt-get install fcitx
+
+
+嘸蝦米輸入法表格
+
+1sudo apt-get install fcitx-table-boshiamy
+
+設定：
+
+Activities → Input Method 選擇 fcitx。重新登入。
+
+Activities → Fcitx Configurat">
 
   
     <link rel="alternative" href="/atom.xml" title="A Programmer’s Blog" type="application/atom+xml">
@@ -129,10 +159,10 @@ ga('send', 'pageview');
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-understanding-python-decorators" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-installing-fcitx-and-boshiamy-on-ubuntu-gnome-1404" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/understanding-python-decorators/" class="article-date">
-  <time datetime="2014-05-28T16:00:00.000Z" itemprop="datePublished">May 29 2014</time>
+    <a href="/installing-fcitx-and-boshiamy-on-ubuntu-gnome-1404/" class="article-date">
+  <time datetime="2014-09-07T16:00:00.000Z" itemprop="datePublished">Sep 8 2014</time>
 </a>
     
   </div>
@@ -143,7 +173,7 @@ ga('send', 'pageview');
         
   
     <h1 class="article-title" itemprop="name">
-      Understanding Python Decorators
+      Installing Fcitx and Boshiamy on Ubuntu GNOME 14.04
     </h1>
   
 
@@ -151,31 +181,38 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Decorator 是一個 Python 中較為進階的語法，因為較難理解故常被提出來討論。這邊提供一個簡潔的說明。</p>
-<p>假設有一名為 func 的 function 被名為 decor1 和 decor2 的二 decorator 修飾如下：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="decorator">@decor1</span></div><div class="line"><span class="decorator">@decor2</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">(*args, **kwargs)</span>:</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure>
-
-<p>則當我們如下呼叫 func() 時：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">func(*args, **kwargs)</div></pre></td></tr></table></figure>
-
-<p>可以將之理解為：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">decor1(decor2(func))(*args, **kwargs)</div></pre></td></tr></table></figure>
-
-<p>更詳細的說明可以參考：</p>
+        <p>Fcitx 是一個自訂性很高的輸入法框架，安裝方式如下：</p>
 <ol>
-<li><a href="http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/">Understanding Python Decorators in 12 Easy Steps!</a></li>
-<li><a href="http://stackoverflow.com/a/739679">How can I make a chain of function decorators in Python?</a></li>
+<li>Fcitx 框架</li>
 </ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt-get install fcitx</div></pre></td></tr></table></figure>
+
+<ol>
+<li>嘸蝦米輸入法表格</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> apt-get install fcitx-table-boshiamy</div></pre></td></tr></table></figure>
+
+<p>設定：</p>
+<ol>
+<li><p><code>Activities</code> → <code>Input Method</code> 選擇 fcitx。重新登入。</p>
+</li>
+<li><p><code>Activities</code> → <code>Fcitx Configuration</code> → <code>Input Method</code> → <code>Boshiamy</code> → 雙擊<br> <code>Other</code> → <code>Table</code> → <code>table/boshiamy.conf</code> → 設定<br> <code>Adjust Order</code>：<code>AdjustNo</code><br> <code>Auto Send Candidate Word</code>：取消<br> <code>Use Maching Key</code>：取消<br> <code>Choose</code>：0123456789<br> <code>Ignore Punctuation</code>：打勾</p>
+</li>
+</ol>
+<p>參考資料：</p>
+<ul>
+<li><a href="http://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=246870">Ubuntu與嘸蝦米: 在fcitx下，(boshiamy)嘸蝦米的使用最為順暢、穩定!（新酷音、m17n、倉頡、輕鬆法亦適用）</a></li>
+</ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://changyuheng.github.io/understanding-python-decorators/" data-id="lxtkyunepb41nr4a" class="article-share-link">Share</a>
+      <a data-url="http://changyuheng.github.io/installing-fcitx-and-boshiamy-on-ubuntu-gnome-1404/" data-id="wgjd00svlk66c9gk" class="article-share-link">Share</a>
       
-        <a href="http://changyuheng.github.io/understanding-python-decorators/#disqus_thread" class="article-comment-link">Comments</a>
+        <a href="http://changyuheng.github.io/installing-fcitx-and-boshiamy-on-ubuntu-gnome-1404/#disqus_thread" class="article-comment-link">Comments</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/programming/">programming</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/software/">software</a></li></ul>
 
     </footer>
   </div>
@@ -183,19 +220,10 @@ ga('send', 'pageview');
     
 <nav id="article-nav">
   
-    <a href="/自行組合安全、好記且每個網站相異的密碼/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          自行組合安全、好記且每個網站相異的密碼
-        
-      </div>
-    </a>
   
-  
-    <a href="/implementations-of-dfs-and-bfs-in-python/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/python-learning-resources/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Implementations of DFS and BFS in Python</div>
+      <div class="article-nav-title">Python Learning Resources</div>
     </a>
   
 </nav>
@@ -289,7 +317,7 @@ ga('send', 'pageview');
 <script>
   var disqus_shortname = 'aprogrammersblog';
   
-  var disqus_url = 'http://changyuheng.github.io/understanding-python-decorators/';
+  var disqus_url = 'http://changyuheng.github.io/installing-fcitx-and-boshiamy-on-ubuntu-gnome-1404/';
   
   (function(){
     var dsq = document.createElement('script');
