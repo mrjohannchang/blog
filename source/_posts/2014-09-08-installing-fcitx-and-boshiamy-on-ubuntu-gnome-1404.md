@@ -19,7 +19,7 @@ Fcitx 是一個自訂性很高的輸入法框架，安裝方式如下：
 
 * `Activities` → `Input Method` 選擇 fcitx。重新登入。
 
-* `Activities` → `Fcitx Configuration` → `Input Method` → `Boshiamy` → 雙擊
+* `Activities` → `Fcitx Configuration` → `Input Method` → `Boshiamy` → 雙擊 (如果沒看到 Boshiamy 就自行新增這個表格)
     `Other` → `Table` → `table/boshiamy.conf` → 設定
     `Adjust Order`：`AdjustNo`
     `Auto Send Candidate Word`：取消
