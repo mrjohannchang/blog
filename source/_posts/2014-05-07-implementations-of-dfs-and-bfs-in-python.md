@@ -11,7 +11,9 @@ tags:
 **DFS**
 
     ```py
-    def dfs(graph, start, visited=set()):
+    def dfs(graph, start, visited=None):
+        if visited is None:
+            visited = set()
         if start in visited:
             return
         yield start
@@ -19,9 +21,9 @@ tags:
         for vertex in graph[start] - visited:
             yield from dfs(graph, vertex, visited=visited)
 
-    def dfs_paths(graph, start, goal, path=list()):
-        if not path:
-            path.append(start)
+    def dfs_paths(graph, start, goal, path=None):
+        if path is None:
+            path = [start]
         if start == goal:
             yield path
         for vertex in graph[start] - set(path):
@@ -41,7 +43,9 @@ tags:
 **BFS**
 
     ``` python
-    def bfs(graph, queue, visited=set()):
+    def bfs(graph, queue, visited=None):
+        if visited is None:
+            visited = set()
         if not queue:
             return
         start = queue.pop(0)
