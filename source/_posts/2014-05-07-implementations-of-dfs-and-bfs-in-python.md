@@ -21,6 +21,7 @@ tags:
         for vertex in graph[start] - visited:
             yield from dfs(graph, vertex, visited=visited)
 
+
     def dfs_paths(graph, start, goal, path=None):
         if path is None:
             path = [start]
@@ -29,12 +30,15 @@ tags:
         for vertex in graph[start] - set(path):
             yield from dfs_paths(graph, vertex, goal, path=path + [vertex])
 
-    graph = {'A': set(['B', 'C']),
-             'B': set(['A', 'D', 'E']),
-             'C': set(['A', 'F']),
-             'D': set(['B']),
-             'E': set(['B', 'F']),
-             'F': set(['C', 'E'])}
+
+    graph = {
+        'A': set(['B', 'C']),
+        'B': set(['A', 'D', 'E']),
+        'C': set(['A', 'F']),
+        'D': set(['B']),
+        'E': set(['B', 'F']),
+        'F': set(['C', 'E']),
+    }
 
     print(repr([vertex for vertex in dfs(graph, 'A')]))
     print(repr([path for path in dfs_paths(graph, 'A', 'F')]))
@@ -54,6 +58,7 @@ tags:
         queue += [vertex for vertex in graph[start] - set(queue) - visited]
         yield from bfs(graph, queue, visited=visited)
 
+
     def bfs_paths(graph, queue, goal):
         if not queue:
             return
@@ -63,12 +68,15 @@ tags:
         queue += [(vertex, path + [vertex]) for vertex in graph[start] - set(path)]
         yield from bfs_paths(graph, queue, goal)
 
-    graph = {'A': set(['B', 'C']),
-             'B': set(['A', 'D', 'E']),
-             'C': set(['A', 'F']),
-             'D': set(['B']),
-             'E': set(['B', 'F']),
-             'F': set(['C', 'E'])}
+
+    graph = {
+        'A': set(['B', 'C']),
+        'B': set(['A', 'D', 'E']),
+        'C': set(['A', 'F']),
+        'D': set(['B']),
+        'E': set(['B', 'F']),
+        'F': set(['C', 'E']),
+    }
 
     print(repr([vertex for vertex in bfs(graph, ['A'])]))
     print(repr([path for path in bfs_paths(graph, [('A', ['A'])], 'F')]))
