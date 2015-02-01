@@ -1,6 +1,6 @@
 title: Python Learning Resources
 date: 2014-09-03
-tags: Programming
+tags: programming
 ---
 
 同事在問 Python 該如何入門，順手將整理的資料與大眾分享。
