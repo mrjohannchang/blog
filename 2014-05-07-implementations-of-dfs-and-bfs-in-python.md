@@ -1,7 +1,8 @@
-Title: Implementations of DFS and BFS in Python
-Date: 2014-05-07
-Tags: Algorithm
-
+title: Implementations of DFS and BFS in Python
+date: 2014-05-07
+tags:
+- algorithm
+---
 
 [DFS](http://zh.wikipedia.org/zh-tw/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2) 和 [BFS](http://zh.wikipedia.org/zh-tw/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2) 在資料結構裡有教，是很基礎的演算法。
 
@@ -9,8 +10,10 @@ Tags: Algorithm
 
 **DFS**
 
-    :::python
-    def dfs(graph, start, visited=set()):
+    ```py
+    def dfs(graph, start, visited=None):
+        if visited is None:
+            visited = set()
         if start in visited:
             return
         yield start
@@ -18,28 +21,35 @@ Tags: Algorithm
         for vertex in graph[start] - visited:
             yield from dfs(graph, vertex, visited=visited)
 
-    def dfs_paths(graph, start, goal, path=list()):
-        if not path:
-            path.append(start)
+
+    def dfs_paths(graph, start, goal, path=None):
+        if path is None:
+            path = [start]
         if start == goal:
             yield path
         for vertex in graph[start] - set(path):
             yield from dfs_paths(graph, vertex, goal, path=path + [vertex])
 
-    graph = {'A': set(['B', 'C']),
-             'B': set(['A', 'D', 'E']),
-             'C': set(['A', 'F']),
-             'D': set(['B']),
-             'E': set(['B', 'F']),
-             'F': set(['C', 'E'])}
+
+    graph = {
+        'A': set(['B', 'C']),
+        'B': set(['A', 'D', 'E']),
+        'C': set(['A', 'F']),
+        'D': set(['B']),
+        'E': set(['B', 'F']),
+        'F': set(['C', 'E']),
+    }
 
     print(repr([vertex for vertex in dfs(graph, 'A')]))
     print(repr([path for path in dfs_paths(graph, 'A', 'F')]))
+    ```
 
 **BFS**
 
-    :::python
-    def bfs(graph, queue, visited=set()):
+    ``` python
+    def bfs(graph, queue, visited=None):
+        if visited is None:
+            visited = set()
         if not queue:
             return
         start = queue.pop(0)
@@ -47,6 +57,7 @@ Tags: Algorithm
         visited.add(start)
         queue += [vertex for vertex in graph[start] - set(queue) - visited]
         yield from bfs(graph, queue, visited=visited)
+
 
     def bfs_paths(graph, queue, goal):
         if not queue:
@@ -57,12 +68,16 @@ Tags: Algorithm
         queue += [(vertex, path + [vertex]) for vertex in graph[start] - set(path)]
         yield from bfs_paths(graph, queue, goal)
 
-    graph = {'A': set(['B', 'C']),
-             'B': set(['A', 'D', 'E']),
-             'C': set(['A', 'F']),
-             'D': set(['B']),
-             'E': set(['B', 'F']),
-             'F': set(['C', 'E'])}
+
+    graph = {
+        'A': set(['B', 'C']),
+        'B': set(['A', 'D', 'E']),
+        'C': set(['A', 'F']),
+        'D': set(['B']),
+        'E': set(['B', 'F']),
+        'F': set(['C', 'E']),
+    }
 
     print(repr([vertex for vertex in bfs(graph, ['A'])]))
     print(repr([path for path in bfs_paths(graph, [('A', ['A'])], 'F')]))
+    ```

@@ -1,7 +1,9 @@
-Title: AutoCheckIn for Garena
-Date: 2008-06-08
-Tags: Programming, Software
-
+title: AutoCheckIn for Garena
+date: 2008-06-08
+tags:
+- programming
+- software
+---
 
 ![screenshot](https://raw.githubusercontent.com/changyuheng/garena-autocheckin/master/screenshot.png)
 
