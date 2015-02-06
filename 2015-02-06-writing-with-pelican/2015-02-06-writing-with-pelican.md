@@ -6,7 +6,7 @@ tags: python, guide
 about_author: An Android app developer
 email: mr.changyuheng@gmail.com
 
-![](pop.jpg)
+![]({attach}pop.jpg)
 
 1. Create a repo on Github for placing your article later
 
