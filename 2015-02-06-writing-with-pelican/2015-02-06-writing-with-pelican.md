@@ -2,7 +2,7 @@ title: Writing with Pelican
 date: 2015-02-06 23:44
 authors: Chang Yu-heng
 summary: Quickstart of writing with Pelican
-tags: python, guide
+tags: blog
 about_author: An Android app developer
 email: mr.changyuheng@gmail.com
 

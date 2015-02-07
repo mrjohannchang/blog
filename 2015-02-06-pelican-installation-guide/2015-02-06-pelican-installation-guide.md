@@ -2,6 +2,7 @@ title: Pelican Installation Guide
 date: 2015-02-06 23:24
 authors: Chang Yu-heng
 summary: A step-by-step guide for installing Pelican static site generator
+tags: blog
 about_author: An Android app developer
 email: mr.changyuheng@gmail.com
 
