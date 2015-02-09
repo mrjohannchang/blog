@@ -1,5 +1,5 @@
-The license of the theme of this blog
-#####################################
+佈景主題的 license
+##################
 
 :date: 2015-02-08
 :tags: blog
