@@ -4,7 +4,7 @@
 :date: 2015-02-08
 :tags: blog
 :authors: Chang Yu-heng
-:summary: Just a murmur of the author
+:summary: 有關本部落格的一點隨筆
 :about_author: An Android app developer
 :email: mr.changyuheng@gmail.com
 
