@@ -50,7 +50,7 @@
       about_author: 簡短的作者介紹
       email: 作者的 email
 
-      文章內容參上！
+      這是文章內容！
 
 7. 寫完之後記得存檔，然後回到部落格根目錄生成 html
 
@@ -79,16 +79,10 @@
       git commit -am "Update {username}'s post"
       git push
 
-11. 發佈到 GitHub 上
-
-   .. code-block:: sh
-
-      make github
-
 更多說明：
 
 - `官方說明`_
-- changyuheng 文章的 `source code`_
+- 作者文章的 `source code`_
 
 .. _官方說明: http://docs.getpelican.com/en/3.5.0/content.html
 .. _source code: https://github.com/changyuheng/changyuheng.github.io/tree/mota
