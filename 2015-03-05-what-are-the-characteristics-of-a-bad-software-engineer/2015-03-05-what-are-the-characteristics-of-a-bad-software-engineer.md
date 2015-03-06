@@ -8,7 +8,7 @@ email: mr.changyuheng@gmail.com
 
 在 [Quora](http://www.quora.com/) 上看到一篇不錯的文章，原文為 [What are the characteristics of a bad software engineer?](http://www.quora.com/What-are-the-characteristics-of-a-bad-software-engineer/answer/Nachiket-Naik)。
 
-以下為筆者翻譯的版本，在原作的授權下，譯文採用[創用 CC 4.0 姓名標示](https://creativecommons.org/licenses/by/4.0/deed.zh_TW)授權，轉載請註名 Quora 原文出處及譯者姓名。
+以下為筆者翻譯的版本，在 Quora 的授權條款下，譯文採[創用 CC 4.0 姓名標示](https://creativecommons.org/licenses/by/4.0/deed.zh_TW)授權，轉載請註名原文出處及譯者姓名。原作保留收回授權的權利。
 
 以我個人的經驗，糟糕的程式設計師具有以下這些特質：
 
