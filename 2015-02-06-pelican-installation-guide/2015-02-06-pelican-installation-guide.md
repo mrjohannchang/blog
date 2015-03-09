@@ -1,9 +1,9 @@
 title: 本部落格開發、撰寫環境安裝說明
 date: 2015-02-06 23:24
-authors: Chang Yu-heng
+authors: 張昱珩
 summary: 手把手的安裝教學
 tags: blog
-about_author: An Android app developer
+about_author: 一位 Android app 開發人員
 email: mr.changyuheng@gmail.com
 
 ![]({attach}ayanami-rei.jpg)

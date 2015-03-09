@@ -1,9 +1,9 @@
 title: 糟糕的程式設計師有哪些招牌特質？
 date: 2015-03-05 20:00
-authors: Chang Yu-heng
+authors: 張昱珩
 summary: 翻譯文章
 tags: quora, translation
-about_author: An Android app developer
+about_author: 一位 Android app 開發人員
 email: mr.changyuheng@gmail.com
 
 在 [Quora](http://www.quora.com/) 上看到一篇不錯的文章，原文為 [What are the characteristics of a bad software engineer?](http://www.quora.com/What-are-the-characteristics-of-a-bad-software-engineer/answer/Nachiket-Naik)。

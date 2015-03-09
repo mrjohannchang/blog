@@ -3,9 +3,9 @@
 
 :date: 2015-02-08
 :tags: blog
-:authors: Chang Yu-heng
+:authors: 張昱珩
 :summary: 有關本部落格的一點隨筆
-:about_author: An Android app developer
+:about_author: 一位 Android app 開發人員
 :email: mr.changyuheng@gmail.com
 
 .. image:: {attach}asuka-langley-soryu.jpg
