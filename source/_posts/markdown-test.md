@@ -220,4 +220,7 @@ ABCDEFG<br />
 1234567<br />
 {% endraw %}
 
+![](超級賽亞羊.jpg)
+![](github-commit-amount-cheat.png)
+
 {% jsfiddle 69z2wepo %}
