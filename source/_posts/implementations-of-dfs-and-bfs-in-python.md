@@ -8,6 +8,8 @@ tags:
 
 在 [Edd Mann 的網誌](http://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/)上看到 Python 的實作，由其中學到 `yield from` 的用法。下面利用 `yield from` 的特性，將該網誌中提到的實作改寫成 generator 的型式。同步放在 Gist 上：[DFS](https://gist.github.com/changyuheng/08ffb779d83679393926)、[BFS](https://gist.github.com/changyuheng/97d320206af9a0018d7d)。
 
+<!-- more -->
+
 **DFS**
 
     ```py

@@ -6,6 +6,8 @@ tags:
 
 以 Ubuntu GNOME 14.04 LTS 英文語系為基礎。
 
+<!-- more -->
+
 ## 安裝軟體
 
 * [7z](#7z)

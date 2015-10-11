@@ -10,6 +10,7 @@ tags:
 支援：Warcraft III  
 作業系統：Windows 2000 / XP / Vista / 7 32-bit & 64-bit
 
+<!-- more -->
 
 **特色**
 

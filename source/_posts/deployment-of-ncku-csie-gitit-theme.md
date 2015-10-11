@@ -8,6 +8,8 @@ tags:
 
 不過 Gitit 預設的模版很沒有設計感，尤其是那個 logo 讓人看了很不舒服。所幸在 [Google Group](https://groups.google.com/forum/#!topic/gitit-discuss/g6rZWIOmiu8) 發現了一套由成大資工所製作的好看佈景。以下將介紹如何安裝這套佈景：
 
+<!-- more -->
+
 1. 下載佈景
 打包好的佈景可以在 [GitHub](https://github.com/CrBoy/csiewiki) 上找到
 

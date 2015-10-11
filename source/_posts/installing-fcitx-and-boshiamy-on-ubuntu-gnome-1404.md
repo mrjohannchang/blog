@@ -5,6 +5,8 @@ tags: software
 
 Fcitx 是一個自訂性很高的輸入法框架，安裝方式如下：
 
+<!-- more -->
+
 * Fcitx 框架
     ```bash
     sudo apt-get install fcitx

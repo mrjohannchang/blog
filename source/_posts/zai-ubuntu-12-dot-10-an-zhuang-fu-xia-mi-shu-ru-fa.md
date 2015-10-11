@@ -10,6 +10,8 @@ tags:
     sudo apt-get install gcin im-switch
     ```
 
+<!-- more -->
+
 ## 步驟 2：指定預設輸入法平台為 gcin，完成後重新啟動電腦
 
     ```sh

@@ -7,6 +7,7 @@ tags:
 
 ![screenshot](https://raw.githubusercontent.com/changyuheng/ptt-efficient-poster/master/screenshot.png)
 
+<!-- more -->
 
 在PTT上發表文章，會依文章長度得到相當的稿酬；而稿酬的單位就是所謂的 P 幣。然而，PTT 判斷一篇文章值多少 P 幣，不只看總字數，還會計算使用者輸入的次數。現在公認的稿酬計算公式是，每 2 秒輸入 2 個中文字獲得 1 元，某些特殊字元或重複字不列入計算。因此，使用新注音等一次輸入好幾個字的輸入法輸入文字，相較於其他逐字輸入的輸入法，PTT 偵測到的輸入次數會少很多，換句話說稿酬也少很多。
 

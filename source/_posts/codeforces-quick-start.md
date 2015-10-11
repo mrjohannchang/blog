@@ -6,7 +6,7 @@ tags: algorithm
 1. 什麼是 [Codeforces](http://codeforces.com/)？
 
     Codeforces 是一個知名的程式競賽 (programming contest) 網站。我們可以在此網站上討論程式設計，練習或比賽解題，也可以舉辦比賽。
-
+<!-- more -->
 2. 支援哪些語言？
 
     * C

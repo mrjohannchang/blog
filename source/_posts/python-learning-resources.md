@@ -9,6 +9,8 @@ tags: programming
 
 對於有程式設計基礎的朋友，可依下列項目順序學習：
 
+<!-- more -->
+
 1. 官網的 [tutorial](https://docs.python.org/3/tutorial/)。
 2. [Python Cookbook: Recipes for Mastering Python 3](http://shop.oreilly.com/product/0636920027072.do)
 3. [Python in Practice: Create Better Programs Using Concurrency, Libraries, and Patterns (Developer's Library)](http://www.amazon.com/Python-Practice-Concurrency-Libraries-Developers/dp/0321905636)

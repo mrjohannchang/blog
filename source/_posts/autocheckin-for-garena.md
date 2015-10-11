@@ -11,6 +11,8 @@ tags:
 
 作業系統：Windows 2000 / XP / Vista / 7 32-bit & 64-bit
 
+<!-- more -->
+
 **特色**
 
 1. 背景自動擠房

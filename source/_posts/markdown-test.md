@@ -223,4 +223,7 @@ ABCDEFG<br />
 ![](超級賽亞羊.jpg)
 ![](github-commit-amount-cheat.png)
 
+{% asset_img 超級賽亞羊.jpg [小六畫的] %}
+{% asset_img github-commit-amount-cheat.png %}
+
 {% jsfiddle 69z2wepo %}
