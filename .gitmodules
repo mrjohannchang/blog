@@ -1,4 +1,4 @@
 [submodule "themes/next"]
 	path = themes/next
-	url = https://github.com/iissnan/hexo-theme-next
+	url = git@github.com:changyuheng/hexo-theme-next.git
 	branch = master
