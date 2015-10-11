@@ -4,7 +4,7 @@ comments: false
 
 ![](avatar.png)
 
-這是我用來記錄事情的地方，內容主要是 sysadmin、devops、programming、algorithm。
+這是我用來作記錄的地方，內容主要是 sysadmin、devops、programming、algorithm。
 
 {% raw %}
 <center>
