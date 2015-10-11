@@ -78,4 +78,4 @@ disqus_shortname: aprogrammersblog
 feed:
   type: atom
   path: atom.xml
-  limit: false
+  limit: 10
