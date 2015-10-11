@@ -73,3 +73,9 @@ deploy:
 
 # Disqus
 disqus_shortname: aprogrammersblog
+
+# Feed
+feed:
+  type: atom
+  path: atom.xml
+  limit: false
