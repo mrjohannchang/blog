@@ -68,8 +68,8 @@ theme: next
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type: github
-  repo: git@github.com:changyuheng/changyuheng.github.io.git
+  type: git
+  repo: git@github.com:changyuheng/changyuheng.github.io.git,master
 
 # Disqus
 disqus_shortname: aprogrammersblog
