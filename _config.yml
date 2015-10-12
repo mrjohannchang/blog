@@ -79,3 +79,12 @@ feed:
   type: atom
   path: atom.xml
   limit: 10
+
+marked:
+  gfm: true
+  pedantic: true
+  sanitize: false
+  tables: true
+  breaks: true
+  smartLists: true
+  smartypants: true
