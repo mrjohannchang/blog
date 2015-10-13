@@ -10,7 +10,6 @@ before_install:
   - openssl aes-256-cbc -d -k $PW -in id_rsa.enc -out id_rsa
   - openssl aes-256-cbc -d -k $PW -in id_rsa.pub.enc -out id_rsa.pub
   - chmod 0600 id_rsa
-  - mkdir ~/.ssh
   - mv id_rsa ~/.ssh
   - mv id_rsa.pub ~/.ssh
 
