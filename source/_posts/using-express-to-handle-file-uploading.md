@@ -6,7 +6,7 @@ tags:
 
 [Express](https://github.com/strongloop/express) 本身不管上傳，要透過 [Multer](https://github.com/expressjs/multer) 來處理。
 
-Multer 手冊的有特別註明：
+Multer 手冊特別註明：
 
 > **NOTE**: Multer will not process any form which is not multipart (multipart/form-data).
 
