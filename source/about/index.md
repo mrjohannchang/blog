@@ -13,6 +13,8 @@ comments: false
 <a href="https://github.com/changyuheng"><img src="github_logo.svg" class="do-not-render" style="height: 48px; display: inline;"></a>
 &nbsp;&nbsp;
 <a href="https://tw.linkedin.com/in/changyuheng"><img src="linkedin_logo.svg" class="do-not-render" style="height: 48px; display: inline;"></a>
+&nbsp;&nbsp;
+<a href="https://medium.com/cowbear-coder"><img src="medium_logo.svg" class="do-not-render" style="height: 48px; display: inline;"></a>
 </center></p>
 <p><center>
 這是我用來作記錄的地方，內容主要是 sysadmin、devops、programming、algorithm。
