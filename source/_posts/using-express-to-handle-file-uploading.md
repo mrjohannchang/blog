@@ -2,16 +2,18 @@ title: Using Express to Handle File Uploading
 date: 2015-10-12 12:42:20
 tags:
 - programming
+coverImage: express.jpg
+coverMeta: out
 ---
 
 [Express](https://github.com/strongloop/express) 本身不管上傳，要透過 [Multer](https://github.com/expressjs/multer) 來處理。
 
 Multer 手冊特別註明：
-
+<!-- more -->
 > **NOTE**: Multer will not process any form which is not multipart (multipart/form-data).
 
 意思就是說 `Content-Type` 必須要是 `multipart/form-data`。
-<!-- more -->
+
 以 Python 的 [Requests](http://docs.python-requests.org/) 當 client 為例：
 ```py
 response = requests.post('http://httpbin.org/post', files={'example_file': ('example.zip', open('a_example.zip', 'rb'))})
