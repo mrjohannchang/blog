@@ -2,6 +2,7 @@ title: Understanding Python Decorators
 date: 2014-05-29
 tags:
 - programming
+coverImage: series-10-decorator.jpg
 ---
 
 Decorator 是一個 Python 中較為進階的語法，因為較難理解故常被提出來討論。這邊提供一個簡潔的說明。

@@ -3,16 +3,14 @@ date: 2015-03-05 20:00
 tags:
 - programming
 - translation
-
+coverImage: baby-writing-code.jpg
 ---
 
 在 [Quora](http://www.quora.com/) 上看到一篇不錯的文章，原文為 [What are the characteristics of a bad software engineer?](http://www.quora.com/What-are-the-characteristics-of-a-bad-software-engineer/answer/Nachiket-Naik)。
-
+<!-- more -->
 以下為筆者翻譯的版本，在 Quora 的授權條款下，譯文採[創用 CC 4.0 姓名標示](https://creativecommons.org/licenses/by/4.0/deed.zh_TW)授權，轉載請註名原文出處及譯者姓名。Quora 原作保留收回授權的權利。
 
 以我個人的經驗，糟糕的程式設計師具有以下這些特質：
-
-<!-- more -->
 
 1. Stack Overflow 機器人：這種人遇到問題時，會靈活地使用 Google 搜尋，並採用所找到的第一個結果（按：好的答案通常在 Stack Overflow 上）。
 

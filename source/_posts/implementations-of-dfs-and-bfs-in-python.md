@@ -2,13 +2,12 @@ title: Implementations of DFS and BFS in Python
 date: 2014-05-07
 tags:
 - algorithm
+coverImage: girl-thinking-math.jpg
 ---
 
 [DFS](http://zh.wikipedia.org/zh-tw/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2) 和 [BFS](http://zh.wikipedia.org/zh-tw/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2) 在資料結構裡有教，是很基礎的演算法。
-
-在 [Edd Mann 的網誌](http://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/)上看到 Python 的實作，由其中學到 `yield from` 的用法。下面利用 `yield from` 的特性，將該網誌中提到的實作改寫成 generator 的型式。同步放在 Gist 上：[DFS](https://gist.github.com/changyuheng/08ffb779d83679393926)、[BFS](https://gist.github.com/changyuheng/97d320206af9a0018d7d)。
-
 <!-- more -->
+在 [Edd Mann 的網誌](http://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/)上看到 Python 的實作，由其中學到 `yield from` 的用法。下面利用 `yield from` 的特性，將該網誌中提到的實作改寫成 generator 的型式。同步放在 Gist 上：[DFS](https://gist.github.com/changyuheng/08ffb779d83679393926)、[BFS](https://gist.github.com/changyuheng/97d320206af9a0018d7d)。
 
 **DFS**
 
