@@ -2,3 +2,7 @@
 	path = themes/next
 	url = git@github.com:changyuheng/hexo-theme-next.git
 	branch = master
+[submodule "themes/tranquilpeak"]
+	path = themes/tranquilpeak
+	url = git@github.com:changyuheng/tranquilpeak-hexo-theme.git
+	branch = master
