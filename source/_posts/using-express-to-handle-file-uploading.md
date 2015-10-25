@@ -2,7 +2,7 @@ title: Using Express to Handle File Uploading
 date: 2015-10-12 12:42:20
 tags:
 - programming
-coverImage: express.jpg
+coverImage: expressjs.jpg
 coverMeta: out
 ---
 
