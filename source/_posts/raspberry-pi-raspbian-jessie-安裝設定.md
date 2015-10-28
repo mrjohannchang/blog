@@ -50,7 +50,7 @@ https://www.raspberrypi.org/forums/viewtopic.php?f=27&t=9376
 
 ## 設定 DDNS (DNS provider -> (CNAME) -> twbbs.org -> (NS) -> FreeDNS
 
-以前可以透過在 `/etc/network/if-up.d` 放一個可執行檔來刷 DDNS 服務，但是現在 systemd 管理的 networking 似乎沒有辦法這麼做。
+以前可以透過在 `/etc/network/if-up.d` 放一個可執行檔來hook DDNS 服務，但是現在 systemd 管理的 networking 似乎沒有辦法這麼做。
 
 ```sh
 #!/bin/bash
@@ -59,13 +59,6 @@ set -e
 
 ip=$(ip -f inet addr show eth0 | grep -Po 'inet \K[\d.]+')
 ( sleep 10 ; curl "https://url-to-update-ip-address" )
-```
-
-重新載入 systemd 的 daemon 和重啟 networking service
-
-```sh
-sudo systemctl daemon-reload
-sudo systemctl restart networking
 ```
 
 ## 安裝 nvm、node
