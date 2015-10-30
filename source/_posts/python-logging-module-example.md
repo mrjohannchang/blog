@@ -10,34 +10,52 @@ Python 的 logging module 功能完整強大，但手冊裡卻沒有一個簡明
 記錄一下。
 <!-- more -->
 {% codeblock logging-example.py https://docs.python.org/2/library/logging.html logging %}
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import logging
 import logging.config
 
 logging.config.dictConfig({
     'version': 1,
     'formatters': {
-        'f': {
-            'format': '%(asctime)s %(name)-12s %(levelname)-8s %(message)s',
+        'default': {
+            'format': '[%(asctime)s|PID:%(process)d|TID:%(thread)d|%(filename)s:%(lineno)d|%(funcName)s|%(name)s|%(levelname)s] %(message)s',
         },
     },
     'handlers': {
-        'h': {
+        'console': {
             'class': 'logging.StreamHandler',
-            'formatter': 'f',
+            'formatter': 'default',
             'level': logging.DEBUG,
+        },
+        'http': {
+            'class': 'logging.handlers.HTTPHandler',
+            'formatter': 'default',
+            'level': logging.DEBUG,
+            'host': 'localhost:3000',
+            'url': '/log',
+        },
+        'rotatingfile': {
+            'class': 'logging.handlers.RotatingFileHandler',
+            'formatter': 'default',
+            'level': logging.DEBUG,
+            'filename': 'test.log',
+            'maxBytes': 512 * 1024 * 1024,
+            'backupCount': 1,
         },
     },
     'loggers': {
         '': {
-            'handlers': ['h'],
+            'handlers': ['console', 'http', 'rotatingfile'],
             'level': logging.DEBUG,
         },
     },
 })
 
-logging.info('logging')
+logging.info('test1')
 logger = logging.getLogger()
-logger.info('logger')
+logger.info('test')
 {% endcodeblock %}
 
 ## Ref
