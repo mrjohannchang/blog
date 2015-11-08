@@ -24,7 +24,7 @@ http://changyuheng.me/static/ptt-account-incident/0b.html
 
 http://changyuheng.me/static/ptt-account-incident/1.html
 
-我馬上去申訴，因為這實在太扯了；程式七年前就已經發佈了，後來只是舊文重發，告訴大家開源而已。但擔任的 AndroidDev 板主職務還是在我起床前就被轉移了。要不是我凌晨剛好看到判決文，立刻就去申訴，我猜板主職務就不只是被轉移而是直接被拔掉吧。PTT 官和官（帳號站長和小組長）之間的橫向溝通似乎蠻有效率的。
+我馬上去申訴，因為這實在太扯了；程式七年前就已經發佈了，後來只是舊文重發，告訴大家開源而已。但擔任的 AndroidDev 板主職務還是在我起床前就被轉移了。要不是我凌晨剛好看到判決文，立刻就去申訴，我猜板主職務就不只是被轉移而是直接被拔掉吧。PTT 官和官（帳號站長和小組長）之間的橫向溝通似乎蠻有效率的﹙我寄信問問題，要幾週才有回應，他們只要幾小時就能達成共識，而且還是在凌晨﹚。
 
 http://changyuheng.me/static/ptt-account-incident/2.html
 
