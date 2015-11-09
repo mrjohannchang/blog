@@ -1,4 +1,4 @@
-title: Cross Compiling Python 3.4.3 for MIPSel OpenWrt via uClibc with SSL and SQLite support
+title: Cross Compiling Python 2.7.10 and 3.4.3 for MIPSel OpenWrt via uClibc with SSL and SQLite support
 date: 2015-11-05 18:33:52
 tags:
 - devops
@@ -6,21 +6,24 @@ tags:
 coverImage: mediatek-pcb.jpg
 ---
 
-The notes that were written after succeeding to cross compile Python 3.4.3 for MIPSel OpenWrt via uClibc.
-
+The notes that were written after succeeding to cross compile Python 2.7.10 and 3.4.3 for MIPSel OpenWrt via uClibc.
 <!-- more -->
+I'm not gonna write a very detailed guide. I post my build script on the [GitHub](https://github.com/changyuheng/cpython-for-openwrt-mips/blob/3.4.3/build.sh), please leave a comment if you have any question.
 
-I'm not gonna write a very detailed guide. I post my build script on the [GitHub](https://github.com/changyuheng/cpython-for-openwrt-mips/blob/master/build.sh), please leave a comment if you have any question.
-
-## Build log
+## Build log (3.4.3)
 
 {% gist 2e5b13276035fc1aa79a build.log %}
 
-## Run test cases on the device
+## Run test cases on the device (3.4.3)
 
 {% codeblock lang:bash %}
 bin/python3 lib/python3.4/test/test___all__.py
 {% endcodeblock %}
+
+## Note
+
+* 2.7.10 is 100% passed
+* 3.4.3's xml.parsers.expat module will cause segmentation fault.
 
 ## Refs
 
