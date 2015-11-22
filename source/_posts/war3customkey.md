@@ -8,7 +8,7 @@ tags:
 ![screenshot](https://raw.githubusercontent.com/changyuheng/war3customkey/master/screenshot.png)
 
 支援：Warcraft III  
-作業系統：Windows 2000 / XP / Vista / 7 32-bit & 64-bit
+作業系統：Windows 2000 / XP / Vista / 7 / 8 / 10 32-bit & 64-bit
 
 <!-- more -->
 
@@ -22,7 +22,7 @@ tags:
 
 **使用方法**
 
-請見說明文件
+請**以系統管理員身分執行**本程式。詳細說明請見內附的說明文件`War3CustomkeyReadme.txt`。
 
 
 [**[下載](https://raw.githubusercontent.com/changyuheng/war3customkey/master/War3Customkey.exe)**]
