@@ -4,6 +4,8 @@ tags:
 - misc
 ---
 
+Markdown demo/test.
+
 <!-- more -->
 
 {% blockquote %}
