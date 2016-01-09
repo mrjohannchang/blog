@@ -3,7 +3,6 @@ date: 2016-01-04
 tags:
 - english
 coverImage: English.jpg
-autoThumbnailImage: false
 ---
 
 幫自己一個忙。
