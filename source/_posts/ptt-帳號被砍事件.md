@@ -55,3 +55,11 @@ http://changyuheng.me/static/ptt-account-incident/7.html
 寄信去問站長為什麼判決會有選擇性，但全無回音。
 
 這就是號稱自由開放的 PTT 的管理品質。
+
+由以下的討論串可以看出，力圖表明一切秉公處理的帳號站長，實際上不經意地流露出針對性的味道。
+
+http://changyuheng.me/static/ptt-account-incident/8.html
+
+http://changyuheng.me/static/ptt-account-incident/9.html
+
+http://changyuheng.me/static/ptt-account-incident/10.html
