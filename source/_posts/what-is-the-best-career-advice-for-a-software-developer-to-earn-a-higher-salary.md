@@ -7,7 +7,7 @@ coverImage: stack-of-books.jpg
 
 關於這個問題，在 Quora 數則[答案](https://www.quora.com/What-is-the-best-career-advice-for-a-software-developer-to-earn-a-higher-salary)中看到[一篇很棒的](https://www.quora.com/What-is-the-best-career-advice-for-a-software-developer-to-earn-a-higher-salary/answer/Abhishek-Choudhary-11)，和大家分享。
 
-特別選擇這篇答案來翻譯是有原因的。時下太多人愛抱怨了。我覺得本身能力已經培養到頂尖的人，才有資格向環境發牢騷。然而「遇到慣老闆」、「環境不好」等等負面的評價卻常從能力平凡的人的口中吐出。我的感覺是，對軟體工程師來說，目前環境還算是公平、友善的。就像讀書時成績好就有選擇學校的權利一樣，能力強也是可以挑工作的。而這篇文章正是以培養個人能力為出發點。
+特別選擇這篇答案來翻譯是有原因的。時下太多人愛抱怨了。我覺得本身能力已經培養到頂尖的人，充分瞭解自己的定位後，才有資格向環境發牢騷。常聽到一些人成天把「慣老闆」、「環境不好」等等負面的評價掛在嘴邊，然而他們卻沒有發現抱怨反而使得每況愈下。當然不是要大家一味忍氣吞聲、逆來順受，只是希望能在逆境中，仍保有積極向上的心態。尤其是目前的環境對軟體工程師來說還算是公平、友善的。就像讀書時成績好就有選擇學校的權利一樣，能力強也是有很多好機會可以爭取的。而這篇文章正是以培養個人能力為出發點。
 
 如果你覺得我會這麼樂觀是因為歷程順遂的話，可以看看我的[養成背景](https://www.ptt.cc/bbs/Soft_Job/M.1467420625.A.55D.html)。
 
@@ -21,7 +21,7 @@ coverImage: stack-of-books.jpg
 
 > 　2. Make a habit of solving atleast 3-4 code snippets/Week , check Leetcode/CareerCup
 
-　2. 養成每週練習三至四個[程式片段](https://www.wikiwand.com/zh-tw/%E7%89%87%E6%AE%B5)的習慣。請參考 [LeetCode](https://leetcode.com/) 和 [CareerCup](https://www.careercup.com/)。
+　2. 養成每週練習三、四個[程式片段](https://www.wikiwand.com/zh-tw/%E7%89%87%E6%AE%B5)的習慣。請參考 [LeetCode](https://leetcode.com/) 和 [CareerCup](https://www.careercup.com/)。
 
 > 　3. No point of being a master of single technology like Java or Python. Learn several technologies.
 
@@ -29,7 +29,7 @@ coverImage: stack-of-books.jpg
 
 > 　4. I was a java developer for 5 years and then I found functional languages like clojure/Python/Scala and believe me, its worth your time. It will broaden your skill-sets & thinking. And now you are already ahead in the race of Developers and Interviews.
 
-　4. 在我擁有五年 Java 開發經驗時，接觸到了像 Clojure、Python、Scala 這類的[函數程式語言](https://www.wikiwand.com/zh-tw/%E5%87%BD%E6%95%B8%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80)。相信我，這絕對值得你投資，因為它們不僅會讓你的工具箱更完備，同時也將開拓你的思考視野。能做到這裡，在與眾多開發者爭奪職缺的競賽中，你就已是處於領先的地位。
+　4. 在我擁有五年 Java 開發經驗時，接觸到了像 Clojure、Python、Scala 這類的[函數程式語言](https://www.wikiwand.com/zh-tw/%E5%87%BD%E6%95%B8%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80)。相信我，這絕對值得你投資，因為它們不僅能讓你的工具箱更完備，同時也將開拓你的思考視野。能做到這裡，在與眾多開發者爭奪職缺的競賽中，你就已是處於領先的地位。
 
 > 　5. Heard any new technology, like BigData or Machine Learning. Make sure to understand that and implement a POC. Don't just read, make sure, you are very much aware of fundamentals. Like you must know the architecture, go through the case studies and BUILD SOMETHING.
 
@@ -37,7 +37,7 @@ coverImage: stack-of-books.jpg
 
 > 　6. You gotta market yourself. If you are learning from open Source, its your responsibility, to give back something. Make your github account and contribute. This will make your profile very shiny.
 
-　6. 你要會行銷自己。如果你正從開源項目中學習知識，那就有責任做出回饋。可以申請一個 [GitHub](https://github.com/) 帳號並貢獻一些東西，這會讓個人檔案閃閃發亮。
+　6. 你要會行銷自己。如果你正從開源項目中學習知識，那就有責任做出回饋。可以申請一個 [GitHub](https://github.com/) 帳號並貢獻一些東西，這會讓個人檔案閃閃發亮，一舉二得。
 
 > 　7. Don't fall in love with any single technology. I saw Desktop based application lost its place and now Mobile is rocking, and I wont be amaze if Virtual Reality takes its place or something. So stop falling in love with any technology. Learn whatever is good in market. Yeah it will be huge but your habit will make you proficient to learn anything new and You will be truly a Quick learner.
 
