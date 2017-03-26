@@ -170,16 +170,6 @@ $$\frac{\partial u}{\partial t}
 \frac{\partial^2 u}{\partial y^2} +
 \frac{\partial^2 u}{\partial z^2}\right)$$
 
-This equation {% math %} \cos 2\theta = \cos^2 \theta - \sin^2 \theta =  2 \cos^2 \theta - 1 {% endmath %} is inline.
-
-{% math %}
-\begin{aligned}
-\dot{x} & = \sigma(y-x) \\
-\dot{y} & = \rho x - y - xz \\
-\dot{z} & = -\beta z + xy
-\end{aligned}
-{% endmath %}
-
 | Left-Aligned  | Center Aligned  | Right Aligned |
 | :------------ | :-------------: | ------------: |
 | col 3 is      | some wordy text |         $1600 |
