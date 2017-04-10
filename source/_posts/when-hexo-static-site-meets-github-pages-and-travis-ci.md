@@ -1,3 +1,4 @@
+---
 title: When Hexo Meets GitHub Pages and Travis CI plus Raspberry Pi
 date: 2015-10-18 22:06:24
 tags:

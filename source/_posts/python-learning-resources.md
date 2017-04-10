@@ -1,3 +1,4 @@
+---
 title: Python Learning Resources
 date: 2014-09-03
 tags: programming

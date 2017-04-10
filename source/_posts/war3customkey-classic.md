@@ -1,3 +1,4 @@
+---
 title: War3Customkey Classic
 date: 2006-11-24
 tags:

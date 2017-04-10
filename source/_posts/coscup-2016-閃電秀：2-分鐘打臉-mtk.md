@@ -1,3 +1,4 @@
+---
 title: COSCUP 2016 閃電秀：理性‧勿戰
 date: 2016-09-04
 tags: misc

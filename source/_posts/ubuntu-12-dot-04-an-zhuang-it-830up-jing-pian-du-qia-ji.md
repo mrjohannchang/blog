@@ -1,3 +1,4 @@
+---
 title: 在 Ubuntu 12.04 安裝 IT-830UP 晶片讀卡機與使用 WebATM
 date: 2013-01-29 01:33
 tags:

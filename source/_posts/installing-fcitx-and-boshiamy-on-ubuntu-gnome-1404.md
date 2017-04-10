@@ -1,3 +1,4 @@
+---
 title: Installing Fcitx and Boshiamy on Ubuntu GNOME 14.04
 date: 2014-09-08
 tags: software

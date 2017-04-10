@@ -1,3 +1,4 @@
+---
 title: Python logging module example
 date: 2015-10-26 18:09:59
 tags:

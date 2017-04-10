@@ -1,3 +1,4 @@
+---
 title: Codeforces Problem 1B
 date: 2014-04-11
 tags:
