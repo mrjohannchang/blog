@@ -6,3 +6,6 @@
 	path = themes/tranquilpeak
 	url = git@github.com:changyuheng/tranquilpeak-hexo-theme.git
 	branch = master
+[submodule "themes/indigo"]
+	path = themes/indigo
+	url = git@github.com:changyuheng/hexo-theme-indigo.git
