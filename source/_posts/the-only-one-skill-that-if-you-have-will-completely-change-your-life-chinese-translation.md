@@ -2,7 +2,6 @@ title: '唯一一種只要學會就能脫胎換骨的能力'
 date: 2015-10-25 13:05:02
 tags:
 - translation
-coverImage: swimming-man.jpg
 ---
 
 在 Medium 上看到一篇[好文](https://medium.com/keep-learning-keep-growing/the-only-one-skill-that-if-you-have-will-completely-change-your-life-ba9b40b8fdf5#.tjk2mly1w)，翻譯前半段。
@@ -15,7 +14,7 @@ coverImage: swimming-man.jpg
 
 捫心自問，沒有人希望自己不健康或有不良嗜好。但是看看周遭的人，他們每天都在摧殘自己。死亡或許不會突然降臨，但是常常出乎意料的快；想想看，糖尿病和癌症可比便利商店還要普及。收益是公司的首要課題，但健康不是，所以你是唯一有責任約束自己的人。
 
-![](eating-junk-food.jpg)
+![](the-only-one-skill-that-if-you-have-will-completely-change-your-life-chinese-translation/eating-junk-food.jpg)
 
 人們日復一日地把自己最珍貴的資源，時間，浪費掉。時光一去不復返。
 
@@ -29,7 +28,7 @@ coverImage: swimming-man.jpg
 
 你開啟一種積極正面的生活方式。不再是過去那種在二週後就會放棄新年健身計畫的你，除了每週上三次健身房外，還會每天散步幾哩路。
 
-![](lots-of-books.jpg)
+![](the-only-one-skill-that-if-you-have-will-completely-change-your-life-chinese-translation/lots-of-books.jpg)
 
 就這樣自我要求飲食和運動這二點一年，改變的將不只是你的身材，還會涵蓋整個生活。
 

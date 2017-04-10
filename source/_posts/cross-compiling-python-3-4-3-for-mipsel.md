@@ -3,7 +3,6 @@ date: 2015-11-05 18:33:52
 tags:
 - devops
 - programming
-coverImage: mediatek-pcb.jpg
 ---
 
 The notes that were written after succeeding to cross compile Python 2.7.10 and 3.4.3 for MIPSel OpenWrt via uClibc.
@@ -16,9 +15,9 @@ I'm not gonna write a very detailed guide. I post my build script on the [GitHub
 
 ## Run test cases on the device (3.4.3)
 
-{% codeblock lang:bash %}
+```sh
 bin/python3 lib/python3.4/test/test___all__.py
-{% endcodeblock %}
+```
 
 ## Note
 

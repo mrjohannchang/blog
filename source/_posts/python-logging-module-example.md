@@ -2,14 +2,13 @@ title: Python logging module example
 date: 2015-10-26 18:09:59
 tags:
 - programming
-coverImage: python-logging.png
 ---
 
 Python 的 logging module 功能完整強大，但手冊裡卻沒有一個簡明的 config 範例。
 
 記錄一下。
 <!-- more -->
-{% codeblock logging-example.py https://docs.python.org/2/library/logging.html logging %}
+```python
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
@@ -56,7 +55,7 @@ logging.config.dictConfig({
 logging.info('test1')
 logger = logging.getLogger()
 logger.info('test')
-{% endcodeblock %}
+```
 
 ## Ref
 

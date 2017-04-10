@@ -4,6 +4,6 @@ tags:
 - programming
 ---
 
-這不是什麼值得驕傲的事，只是一時興致起來，洗了一下 GitHub 的 longest streak。
+一時興致起來，實驗性地洗了一下 GitHub 的 longest streak。
 
-{% asset_img github-longest-streak.png [GitHub Longest Streak] %}
+![](github-streak/github-longest-streak.png)

@@ -1,4 +1,4 @@
 title: All tags
-type: "tags"
+layout: tags
 comments: false
 ---

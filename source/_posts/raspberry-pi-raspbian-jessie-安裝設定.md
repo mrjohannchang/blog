@@ -3,8 +3,6 @@ date: 2015-10-25 15:38:33
 tags:
 - devops
 - sysadmin
-coverImage: raspberry-pi-logo.png
-coverMeta: out
 ---
 
 Jessie 剛從 SysVinit 換成 systemd。因為不同的 init system 的設定方式不同，而 raspi-config 還沒有更新到支援 systemd，所以有些設定必須手動，不能透過 raspi-config。

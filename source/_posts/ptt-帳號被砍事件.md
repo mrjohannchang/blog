@@ -3,7 +3,6 @@ date: 2015-10-29 11:41:28
 tags:
 - misc
 - programming
-coverImage: ptt-portal.png
 ---
 
 事件起源於多年前我寫了一個[程式](http://changyuheng.me/2007/11/05/ptt-efficient-poster/)，用來讓 PTT 的發文者能得到與文章字數相符的稿酬。

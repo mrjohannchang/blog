@@ -212,8 +212,8 @@ ABCDEFG<br />
 1234567<br />
 {% endraw %}
 
-![](超級賽亞羊.jpg)
-![](github-commit-amount-cheat.png)
+![](markdown-test/超級賽亞羊.jpg)
+![](markdown-test/github-commit-amount-cheat.png)
 
 {% asset_img 超級賽亞羊.jpg [小六畫的] %}
 {% asset_img github-commit-amount-cheat.png %}

@@ -42,6 +42,7 @@ sudo apt install p7zip-full
 ### <a name="clipit"></a>ClipIt
 
 剪貼簿管理程序，安裝的主要目的是要他同步剪貼簿的功能。因為 X11 的剪貼簿在「貼上」時，若來源程序已暫停或結束，會因無法讀取來源而無法貼上。可參考：[X Selections, Cut Buffers, and Kill Rings.](http://www.jwz.org/doc/x-cut-and-paste.html)
+
 ```sh
 sudo apt install clipit
 ```
@@ -62,6 +63,7 @@ sudo apt install gnome-gmail
 ### <a name="java8"></a>Java 8
 
 [Install Oracle Java 8 In Ubuntu Via PPA Repository](http://www.webupd8.org/2012/09/install-oracle-java-8-in-ubuntu-via-ppa.html)
+
 ```sh
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt update
@@ -71,6 +73,7 @@ sudo apt install oracle-java8-installer
 ### <a name="ubuntu-restricted-extras"></a>ubuntu-restricted-extras
 
 RAR、Flash Player 等非開源的程式之集合。
+
 ```sh
 sudo apt install ubuntu-restricted-extras
 ```
@@ -78,6 +81,7 @@ sudo apt install ubuntu-restricted-extras
 ### <a name="vim"></a>Vim
 
 Vim with GNOME specific support.
+
 ```sh
 sudo apt install vim-gnome
 ```
@@ -91,6 +95,7 @@ sudo apt install vlc
 ### <a name="wen-quan-yi-fonts"></a>文泉驛中文字型
 
 開源的中文字型。
+
 ```sh
 sudo apt install ttf-wqy-*
 ```

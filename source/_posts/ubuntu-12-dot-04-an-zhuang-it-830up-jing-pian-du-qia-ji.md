@@ -10,9 +10,9 @@ tags:
 
 ## 步驟 1. 安裝所需套件
 
-    ```bash
-    sudo apt-get install pcscd pcsc-tools libccid
-    ```
+```bash
+sudo apt-get install pcscd pcsc-tools libccid
+```
 
 完成後可能需要自行重新啟動電腦才會生效。
 

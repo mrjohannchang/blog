@@ -2,14 +2,9 @@ title: 對程式設計師來說，提高薪水最好的建議是什麼？
 date: 2016-07-08
 tags:
 - translation
-coverImage: stack-of-books.jpg
 ---
 
 關於這個問題，在 Quora 數則[答案](https://www.quora.com/What-is-the-best-career-advice-for-a-software-developer-to-earn-a-higher-salary)中看到[一篇很棒的](https://www.quora.com/What-is-the-best-career-advice-for-a-software-developer-to-earn-a-higher-salary/answer/Abhishek-Choudhary-11)，和大家分享。
-
-特別選擇這篇答案來翻譯是有原因的。時下太多人愛抱怨了。我覺得本身能力已經培養到頂尖的人，充分瞭解自己的定位後，才有資格向環境發牢騷。常聽到一些人成天把「慣老闆」、「環境不好」等等負面的評價掛在嘴邊，然而他們卻沒有發現抱怨反而使得每況愈下。當然不是要大家一味忍氣吞聲、逆來順受，只是希望能在逆境中，仍保有積極向上的心態。尤其是目前的環境對軟體工程師來說還算是公平、友善的。就像讀書時成績好就有選擇學校的權利一樣，能力強也是有很多好機會可以爭取的。而這篇文章正是以培養個人能力為出發點。
-
-如果你覺得我會這麼樂觀是因為歷程順遂的話，可以看看我的[養成背景](https://www.ptt.cc/bbs/Soft_Job/M.1467420625.A.55D.html)。
 
 > What is the best career advice for a software developer to earn a higher salary?
 
