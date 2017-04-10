@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 珩
+title: 昱珩の櫥窗
 subtitle:
 description:
-author: 珩
+author: Henry Chang
 language: en
 timezone: UTC
 
@@ -14,7 +14,7 @@ timezone: UTC
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://changyuheng.me
 root: /
-permalink: :year/:title/
+permalink: :year/:title.html
 permalink_defaults:
 
 # Directory
@@ -52,8 +52,8 @@ tag_map:
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY-MM-DD
-time_format: HH:mm:ss
+date_format: "MMM Do, YYYY"
+time_format: "h:mm a"
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: tranquilpeak
+theme: indigo
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
@@ -75,10 +75,10 @@ deploy:
 disqus_shortname: aprogrammersblog
 
 # Feed
-feed:
-  type: atom
-  path: atom.xml
-  limit: 10
+feed: false
+  # type: atom
+  # path: atom.xml
+  # limit: 10
 
 marked:
   gfm: true
