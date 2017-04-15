@@ -43,4 +43,4 @@ z 在超強的 [fish](https://github.com/fish-shell/fish-shell) 下使用倒是�
 
 目前為止，有 z 有 fzf，材料都齊了，就是沒人把它們兜在一起。於是我犧牲了一點寶貴的週末把它們逗起來，示意圖就是本文開頭那張 gif。
 
-如果你覺得不錯，這個工具解決了你的問題，可以參考這個[安裝說明](https://github.com/changyuheng/fz/blob/master/README-zh.md)安裝，然後，在 [GitHub 專案頁面](https://github.com/changyuheng/fz)給個星吧！
+如果你覺得不錯，這個工具解決了你的問題，可以參考這個[安裝說明](https://github.com/changyuheng/fz/blob/master/README-zh.md)安裝。
