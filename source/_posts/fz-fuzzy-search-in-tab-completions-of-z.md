@@ -34,7 +34,7 @@ z 在超強的 [fish](https://github.com/fish-shell/fish-shell) 下使用倒是�
 
 還有 process substitution ㄌㄟ？
 
-所以大多數人還是繼續用 Bash 或 zsh。而且 zsh 有一個知名的髒 framework…… 咳，知名的 framework 叫 oh-my-zsh，把它裝下去之後就能讓你的 zsh 跟 fish 有 87% 像啊！
+所以大多數人還是繼續用 Bash 或 zsh。而且 zsh 有一個知名的 framework 叫 oh-my-zsh，把它裝下去之後就能讓你的 zsh 跟 fish 有 87% 那麼像啊！
 
 但是！就是這個但是讓我花了點時間！它的 tab completion 還是不能互動搜尋啊！
 我知道有人想說 [zaw](https://github.com/zsh-users/zaw) 對不對？
