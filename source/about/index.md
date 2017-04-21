@@ -23,3 +23,7 @@ comments: false
 <p><center>
 I'm a programmer who loves to build things.
 </center></p>
+
+<p><center>
+很幸運地身為廣論弟子。
+</center></p>
