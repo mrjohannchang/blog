@@ -12,7 +12,7 @@ timezone: UTC
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://changyuheng.me
+url: https://changyuheng.github.io
 root: /
 permalink: :year/:title.html
 permalink_defaults:
