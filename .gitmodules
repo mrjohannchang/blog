@@ -1,0 +1,12 @@
+[submodule "themes/next"]
+	path = themes/next
+	url = git@github.com:changyuheng/hexo-theme-next.git
+	branch = master
+[submodule "themes/tranquilpeak"]
+	path = themes/tranquilpeak
+	url = git@github.com:changyuheng/hexo-theme-tranquilpeak.git
+	branch = master
+[submodule "themes/indigo"]
+	path = themes/indigo
+	url = git@github.com:changyuheng/hexo-theme-indigo.git
+	branch = master
