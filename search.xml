@@ -621,10 +621,10 @@
 <li><p>進入 <a href="http://codeforces.com/">Codeforces</a> 首頁</p>
 </li>
 <li><p>點選右上角「Register」以進入註冊頁面</p>
-<p> <a href="codeforces-quick-start/codeforces-begin-to-register.png"><img src="codeforces-quick-start/codeforces-begin-to-register.png" alt="begin to register"></a></p>
+<p> <a href="codeforces-begin-to-register.png"><img src="codeforces-begin-to-register.png" alt="begin to register"></a></p>
 </li>
 <li><p>填寫註冊表單，完成後按下「Register (確定註冊)」</p>
-<p> <a href="codeforces-quick-start/codeforces-registration-form.png"><img src="codeforces-quick-start/codeforces-registration-form.png" alt="registration form"></a></p>
+<p> <a href="codeforces-registration-form.png"><img src="codeforces-registration-form.png" alt="registration form"></a></p>
 </li>
 </ol>
 <p> 經過以上步驟即可完成註冊。</p>
@@ -653,7 +653,7 @@
 <li><p>進入「<a href="http://codeforces.com/problemset/problem/1/A">Theater Square</a>」</p>
 </li>
 </ol>
-<p> <a href="codeforces-quick-start/codeforces-problemset.png"><img src="codeforces-quick-start/codeforces-problemset.png" alt="problemset"></a></p>
+<p> <a href="codeforces-problemset.png"><img src="codeforces-problemset.png" alt="problemset"></a></p>
 <pre><code> * 題目最上方的
 
  time limit per test: 2 seconds
@@ -725,9 +725,9 @@
 </li>
 <li><p>參考其他人的答案</p>
 <p> 寫完一道題目後，最重要的是檢討自己的答案。檢討的方法有很多，其中之一是觀察別人的解法。由導覽列 → PROBLEMSET 中找出我們的題目，並按下右方解題人數，即可看到大家對此題所寫的解法。</p>
-<p> <a href="codeforces-quick-start/codeforces-solved.png"><img src="codeforces-quick-start/codeforces-solved.png" alt="solved"></a></p>
+<p> <a href="codeforces-solved.png"><img src="codeforces-solved.png" alt="solved"></a></p>
 <p> 在頁面最下方可以自訂排序規則，我們可以依照 Solution Size (source code 大小) 或 Execution Time (執行時間長短) 來排序，以方便我們找出想要參考的答案。右方可以選擇我們想要看到的語言。</p>
-<p> <a href="codeforces-quick-start/codeforces-solved-languages.png"><img src="codeforces-quick-start/codeforces-solved-languages.png" alt="languages"></a></p>
+<p> <a href="codeforces-solved-languages.png"><img src="codeforces-solved-languages.png" alt="languages"></a></p>
 <p> 讀者可參考此題的 <a href="http://codeforces.com/contest/1/submission/1647521">Python 版解法</a>、<a href="http://codeforces.com/contest/1/submission/2337277">Ruby 版解法</a>、<a href="http://codeforces.com/contest/1/submission/889578">PHP 版解法</a>、<a href="http://codeforces.com/contest/1/submission/1337822">C 版解法</a>、<a href="http://codeforces.com/contest/1/submission/759">C++ 版解法</a>、<a href="http://codeforces.com/contest/1/submission/2032793">C# 版解法</a>、<a href="http://codeforces.com/contest/1/submission/604386">Java 版解法</a>、<a href="http://codeforces.com/contest/1/submission/1903268">Scala 版解法</a>、<a href="http://codeforces.com/contest/1/submission/5482791">JavaScript 版解法</a>。</p>
 </li>
 </ol>
