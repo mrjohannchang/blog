@@ -10,3 +10,9 @@ cd <this project>
 git submodule update --init --recursive
 npm install --save
 ```
+
+# Deployment
+
+```
+hexo generate -f && hexo deploy
+```
