@@ -1,0 +1,1255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>自行組合安全、好記且每個網站相異的密碼</title>
+    <url>/2014/%E8%87%AA%E8%A1%8C%E7%B5%84%E5%90%88%E5%AE%89%E5%85%A8%E3%80%81%E5%A5%BD%E8%A8%98%E4%B8%94%E6%AF%8F%E5%80%8B%E7%B6%B2%E7%AB%99%E7%9B%B8%E7%95%B0%E7%9A%84%E5%AF%86%E7%A2%BC/</url>
+    <content><![CDATA[<p>資訊應用和我們的結合愈來愈緊密，保護隱私和機敏資料的最後一道防線ーー密碼，顯得更為重要。</p>
+<span id="more"></span>
+<p>我們知道密碼不應過於簡單、容易猜測：不該用生日、電話、常見的單字、人名等等。安全的做法是用密碼產生器產生隨機不同大小寫的字母、數字、符號組合。此外，網站被駭客入侵時有所聞，為了避免因為一個網站的密碼外洩而影響到所有的密碼，應該讓每個網站採用不同的密碼。密碼產生器產生的密碼極其複雜，於是有人發明了密碼管理軟體，來幫忙記住各組密碼。但是一旦我們把所有的密碼都放進同一套軟體，不就又將雞蛋丟進同一個籃子裡了嗎？</p>
+<p>一個不同的密碼產生方法：token + pattern。</p>
+<p><strong>優點</strong></p>
+<ol>
+<li>不必將雞蛋放進同一個籠子</li>
+<li>容易記憶</li>
+<li>每一個網站都不同</li>
+<li>較生日、電話等容易猜測的密碼安全</li>
+<li>快速方便地輸入密碼，不須透過額外軟體</li>
+</ol>
+<p><strong>缺點</strong></p>
+<ol>
+<li>複雜度較密碼產生器產生的密碼低</li>
+<li>有被全盤破解的風險</li>
+</ol>
+<p>Token 是一串自訂的密碼，例如 TAIPEI 的變形 T@iP31。<br>Pattern 是一種能套用到不同網站的規則。例如取網站名稱的尾 2 字和頭 2 字：產生的密碼要給 Google 使用就是 lego；給 Yahoo 就是 ooya。</p>
+<p>如此一來在 Google 的密碼就會是 T@iP31lego，在 Yahoo 的密碼是 T@iP31ooya。只要記 token 和 pattern 的規則即可，非常容易記憶。Pattern 的制定可以更加複雜，像是加上「<a href="http://zh.wikipedia.org/zh-tw/%E5%87%B1%E6%92%92%E5%AF%86%E7%A2%BC">凱撒密碼</a>」來混淆。整體的組合也能再加以變化，像是改成 token 1 + pattern 1 + token 2 + pattern 2。</p>
+<p>相關文章</p>
+<ul>
+<li><a href="http://www.pcworld.com/article/252024/create_a_different_secure_easy_to_remember_password_for_every_site.html">Create a Different, Secure, Easy-to-Remember Password for Every Site</a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>misc</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在 Ubuntu 12.10 的 gcin 輸入法平台安裝嘸蝦米輸入法</title>
+    <url>/2012/zai-ubuntu-12-dot-10-an-zhuang-fu-xia-mi-shu-ru-fa/</url>
+    <content><![CDATA[<h2 id="步驟-1：安裝-gcin-及-im-switch"><a href="#步驟-1：安裝-gcin-及-im-switch" class="headerlink" title="步驟 1：安裝 gcin 及 im-switch"></a>步驟 1：安裝 gcin 及 im-switch</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install gcin im-switch</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<h2 id="步驟-2：指定預設輸入法平台為-gcin，完成後重新啟動電腦"><a href="#步驟-2：指定預設輸入法平台為-gcin，完成後重新啟動電腦" class="headerlink" title="步驟 2：指定預設輸入法平台為 gcin，完成後重新啟動電腦"></a>步驟 2：指定預設輸入法平台為 gcin，完成後重新啟動電腦</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">im-switch</span><br></pre></td></tr></table></figure>
+
+<h2 id="步驟-3：下載並解壓縮嘸蝦米官方提供的-gcin-用表格，接著開啟終端機並進入解壓縮目錄"><a href="#步驟-3：下載並解壓縮嘸蝦米官方提供的-gcin-用表格，接著開啟終端機並進入解壓縮目錄" class="headerlink" title="步驟 3：下載並解壓縮嘸蝦米官方提供的 gcin 用表格，接著開啟終端機並進入解壓縮目錄"></a>步驟 3：下載並解壓縮嘸蝦米官方提供的 gcin 用表格，接著開啟終端機並進入解壓縮目錄</h2><h2 id="步驟-4：將表格等檔案複製到系統中"><a href="#步驟-4：將表格等檔案複製到系統中" class="headerlink" title="步驟 4：將表格等檔案複製到系統中"></a>步驟 4：將表格等檔案複製到系統中</h2><h3 id="1-前置作業"><a href="#1-前置作業" class="headerlink" title="1. 前置作業"></a>1. 前置作業</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo updatedb</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-複製-gtab-到-gcin-表格目錄"><a href="#2-複製-gtab-到-gcin-表格目錄" class="headerlink" title="2. 複製 *.gtab 到 gcin 表格目錄"></a>2. 複製 *.gtab 到 gcin 表格目錄</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo cp *.gtab $(locate gtab | grep gcin/table | <span class="keyword">while</span> <span class="built_in">read</span> line; <span class="keyword">do</span> dirname <span class="string">&quot;<span class="variable">$line</span>&quot;</span>; <span class="keyword">done</span> | sort -u)</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-複製-png-到-gcin-icon-目錄"><a href="#3-複製-png-到-gcin-icon-目錄" class="headerlink" title="3. 複製 *.png 到 gcin icon 目錄"></a>3. 複製 *.png 到 gcin icon 目錄</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo cp *.png $(locate pinyin.png | grep gcin | <span class="keyword">while</span> <span class="built_in">read</span> line; <span class="keyword">do</span> dirname <span class="string">&quot;<span class="variable">$line</span>&quot;</span>; <span class="keyword">done</span> | sort -u)</span><br></pre></td></tr></table></figure>
+
+<h2 id="步驟-5：編輯-gtab-list"><a href="#步驟-5：編輯-gtab-list" class="headerlink" title="步驟 5：編輯 gtab.list"></a>步驟 5：編輯 gtab.list</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;嘸蝦米(繁) 1 boshiamy-t.gtab boshiamy-t.png&quot;</span> &gt;&gt; ~/.gcin/gtab.list</span><br></pre></td></tr></table></figure>
+
+<h2 id="步驟-6：重新啟動-gcin"><a href="#步驟-6：重新啟動-gcin" class="headerlink" title="步驟 6：重新啟動 gcin"></a>步驟 6：重新啟動 gcin</h2><h2 id="步驟-7：調整-gcin-設定"><a href="#步驟-7：調整-gcin-設定" class="headerlink" title="步驟 7：調整 gcin 設定"></a>步驟 7：調整 gcin 設定</h2><h3 id="1-在【內定輸入法-amp-開啟-關閉】中調整嘸蝦米是否為預設輸入法、可否由-ctrl-shift-切換"><a href="#1-在【內定輸入法-amp-開啟-關閉】中調整嘸蝦米是否為預設輸入法、可否由-ctrl-shift-切換" class="headerlink" title="1. 在【內定輸入法 &amp; 開啟/關閉】中調整嘸蝦米是否為預設輸入法、可否由 ctrl + shift 切換"></a>1. 在【內定輸入法 &amp; 開啟/關閉】中調整嘸蝦米是否為預設輸入法、可否由 ctrl + shift 切換</h3><h3 id="2-在【倉頡-行列-嘸蝦米-大易設定】中將【預覽-預選-字】調整為【全部開啟】"><a href="#2-在【倉頡-行列-嘸蝦米-大易設定】中將【預覽-預選-字】調整為【全部開啟】" class="headerlink" title="2. 在【倉頡/行列/嘸蝦米/大易設定】中將【預覽/預選 字】調整為【全部開啟】"></a>2. 在【倉頡/行列/嘸蝦米/大易設定】中將【預覽/預選 字】調整為【全部開啟】</h3>]]></content>
+      <tags>
+        <tag>software</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>命令列上快速定位檔案與目錄</title>
+    <url>/2017/%E5%91%BD%E4%BB%A4%E5%88%97%E4%B8%8A%E5%BF%AB%E9%80%9F%E5%AE%9A%E4%BD%8D%E6%AA%94%E6%A1%88%E8%88%87%E7%9B%AE%E9%8C%84/</url>
+    <content><![CDATA[<p>會盲打的人，在 shell 環境裡如果能找到方便的 tool 來幫助自己，操作速度甚至可以超過滑鼠 + GUI。</p>
+<p>舉二個例子：</p>
+<ol>
+<li><p>在 prompt 上列出前一指令的 return code 和 VCS 資訊。<br><img src="https://camo.githubusercontent.com/b5d7eb49a30bfe6bdb5706fa3c9be95fe8e5956e/687474703a2f2f67696679752e636f6d2f696d616765732f70396b6e65772e676966"></p>
+</li>
+<li><p>用 tig 來操作 git。</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/udCXubFr5Yo" frameborder="0" allowfullscreen></iframe></li>
+</ol>
+<p>在 shell 下，最常做的操作的就是找目錄、切目錄、找檔案、開檔案了。但是 <code>cd</code> 要到的目錄的路徑以及 <code>vim</code> 要開的檔案的位置在哪裡，一直都是個痛。就算記得，有時候路徑很深，光是打完就要老半天。</p>
+<p>以下介紹三個可以減輕日常路徑操作負擔的工具：</p>
+<h1 id="bd"><a href="#bd" class="headerlink" title="bd"></a>bd</h1><p><img src="https://raw.githubusercontent.com/Tarrasch/zsh-bd/master/animation.gif"></p>
+<p><a href="https://github.com/vigneshwaranr/bd">bd</a> 是轉目用來替代 <code>cd ..</code> 的工具。當所在的目錄很深，想要切回某一層 parent folder 時，以往總是要 <code>cd ../../..</code>，並自己算相對路徑的層數。有一些套件或是 alias 可以讓這個操作由 <code>cd ../..</code>減化成 <code>cd ...</code>，少打了 <code>./</code> 二個字，但是仍然要去算層數。</p>
+<p>bd 可以讓我們直接打要去的那一層的目錄名稱就切過去，懶得打的話也可以靠 tab 補完，非常實用。</p>
+<h1 id="fzf-auto-completion"><a href="#fzf-auto-completion" class="headerlink" title="fzf auto-completion"></a>fzf auto-completion</h1><p><a href="https://github.com/junegunn/fzf">fzf</a> 是一套很強大的 fuzzy search 引擎。它不只是引擎強，附加的補完也是殺手級的好用。一下子找不到好的 demo，只好請大家看看<a href="https://github.com/junegunn/fzf#fuzzy-completion-for-bash-and-zsh">官方手冊</a>意會。</p>
+<p>fzf 不只可以用在 <code>cd</code>，還可以用在 <code>vim</code>、<code>kill</code> 指令及 <code>Ctrl-R</code> 熱鍵等，是非常強大的工具。</p>
+<h1 id="fz"><a href="#fz" class="headerlink" title="fz"></a>fz</h1><p><img src="https://raw.githubusercontent.com/changyuheng/fz/master/fz-demo.gif"></p>
+<p><a href="https://github.com/changyuheng/fz">fz</a> 是 <a href="https://github.com/junegunn/fzf">fzf</a> 和 <a href="https://github.com/rupa/z">z</a> 二位大將合體下的產物。z 是一套支援只打部分目錄名稱就切到曾經去過的目錄的工具。</p>
+<p>相信 fz 的作者一定是位帥哥，居然能想到把 fzf 的 interactive fuzzy search 裝在 z 身上，打造出這把神兵利器。</p>
+<h1 id="enhancd"><a href="#enhancd" class="headerlink" title="enhancd"></a>enhancd</h1><p><img src="https://raw.githubusercontent.com/b4b4r07/screenshots/master/enhancd/demo.gif"></p>
+<p><a href="https://github.com/b4b4r07/enhancd">enhancd</a> 的設計理念也很棒，不過很可惜它目前沒有 tab completion。沒有 tab completion 就必須另外綁熱鍵，如此就破壞了使用習慣。</p>
+<h1 id="qfc"><a href="#qfc" class="headerlink" title="qfc"></a>qfc</h1><p><img src="https://cloud.githubusercontent.com/assets/2557967/8640880/582cb8fe-28ff-11e5-9753-41464dda938e.gif"></p>
+<p><a href="https://github.com/pindexis/qfc">qfc</a> 跟 enhancd 類似，不過它的 completion 不是綁 tab，比較可惜一點。</p>
+<h1 id="zsh-interactive-cd"><a href="#zsh-interactive-cd" class="headerlink" title="zsh-interactive-cd"></a>zsh-interactive-cd</h1><p><img src="https://raw.githubusercontent.com/changyuheng/zsh-interactive-cd/master/demo.gif"></p>
+<p>加碼一套工具。<a href="https://github.com/changyuheng/zsh-interactive-cd">zsh-interactive-cd</a> 將 <a href="https://fishshell.com/">fish</a> 的 cd 互動式補完帶入了 <a href="http://www.zsh.org/">zsh</a>。算是一套短小精悍卻又不可或缺的工具，可惜目前只支援 zsh，還沒有 Bash 的版本。不過作者很有可能是帥哥是無庸置疑的。</p>
+]]></content>
+      <tags>
+        <tag>programming</tag>
+        <tag>software</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PTT 帳號被砍事件</title>
+    <url>/2015/ptt-%E5%B8%B3%E8%99%9F%E8%A2%AB%E7%A0%8D%E4%BA%8B%E4%BB%B6/</url>
+    <content><![CDATA[<p>事件起源於多年前我寫了一個<a href="https://changyuheng.github.io/2007/11/05/ptt-efficient-poster/">程式</a>，用來讓 PTT 的發文者能得到與文章字數相符的稿酬。</p>
+<span id="more"></span>
+<p>突然有一天，有個人因為洗錢被檢舉了。</p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/0.html">https://changyuheng.github.io/static/ptt-account-incident/0.html</a></p>
+<p>想不到他自己心術不正，卻要牽拖工具。</p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/0a.html">https://changyuheng.github.io/static/ptt-account-incident/0a.html</a></p>
+<p>於是帳號站長就辦了他。</p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/0b.html">https://changyuheng.github.io/static/ptt-account-incident/0b.html</a></p>
+<p>帳號站長幾天後想想辦了違規的人還不夠爽快，在某個凌晨宣判要砍身為程式作者的我的帳號。</p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/1.html">https://changyuheng.github.io/static/ptt-account-incident/1.html</a></p>
+<p>我馬上去申訴，因為這實在太扯了；程式七年前就已經發佈了，後來只是舊文重發，告訴大家開源而已。但擔任的 AndroidDev 板主職務還是在我起床前就被轉移了。要不是我凌晨剛好看到判決文，立刻就去申訴，我猜板主職務就不只是被轉移而是直接被拔掉吧。PTT 官和官（帳號站長和小組長）之間的橫向溝通似乎蠻有效率的﹙我寄信問問題，要幾週才有回應，他們只要幾小時就能達成共識，而且還是在凌晨﹚。</p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/2.html">https://changyuheng.github.io/static/ptt-account-incident/2.html</a></p>
+<p>另一位帳號站長出來回應我的申訴，並且宣佈結案。明明還是有爭議，但是站方單方面的就結案了；我突然感覺到，他們把 PTT 的註冊規章用得很好：</p>
+<blockquote>
+<p>8、拒絕或終止您的使用(1)<br>您同意本站各級管理者基於其自行之考量，有權隨時終止本服務或其任何部分，<br>包含但不限於對您所為之刪除文章、鎖定文章、看板水桶或看板禁止發言、設定<br>劣文或退文、開處罰單、設定停權、設定變更文章數數值、設定變更 P 幣數值、<br>設定變更信箱容量數值、設定變更您於本站擔任之職務、退回註冊、砍除帳號等。<br>前述處分，並非無權或無故之處分，若您不願接受，請勿同意本條款。若本服務<br>被終止時，本站對您或任何第三人均不承擔責任。</p>
+</blockquote>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/3.html">https://changyuheng.github.io/static/ptt-account-incident/3.html</a></p>
+<p>明知已經結案，還是繼續申訴，站方果然信守承諾不回應。</p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/4.html">https://changyuheng.github.io/static/ptt-account-incident/4.html</a></p>
+<p>過了一陣子，具有同樣的功能的另一程式，因為相同理由被檢舉，但是站長不處置。</p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/5.html">https://changyuheng.github.io/static/ptt-account-incident/5.html</a></p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/6.html">https://changyuheng.github.io/static/ptt-account-incident/6.html</a></p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/7.html">https://changyuheng.github.io/static/ptt-account-incident/7.html</a></p>
+<p>寄信去問站長為什麼判決會有選擇性，但全無回音。</p>
+<p>這就是號稱自由開放的 PTT 的管理品質。</p>
+<p>由以下的討論串可以看出，力圖表明一切秉公處理的帳號站長，實際上不經意地流露出針對性的味道。</p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/8.html">https://changyuheng.github.io/static/ptt-account-incident/8.html</a></p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/9.html">https://changyuheng.github.io/static/ptt-account-incident/9.html</a></p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/10.html">https://changyuheng.github.io/static/ptt-account-incident/10.html</a></p>
+<p>新增申訴：</p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/11.html">https://changyuheng.github.io/static/ptt-account-incident/11.html</a></p>
+]]></content>
+      <tags>
+        <tag>programming</tag>
+        <tag>misc</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PTT Efficient Poster</title>
+    <url>/2007/ptt-efficient-poster/</url>
+    <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/ptt-efficient-poster/master/screenshot.png" alt="screenshot"></p>
+<span id="more"></span>
+
+<p>在 PTT 上發表文章，會依文章長度得到相當的稿酬；而稿酬的單位就是所謂的 P 幣。然而，PTT 判斷一篇文章值多少 P 幣，不只看總字數，還會計算使用者輸入的次數。現在公認的稿酬計算公式是，每 2 秒輸入 2 個中文字獲得 1 元，某些特殊字元或重複字不列入計算。因此，使用新注音等一次輸入好幾個字的輸入法輸入文字，相較於其他逐字輸入的輸入法，PTT 偵測到的輸入次數會少很多，換句話說稿酬也少很多。</p>
+<p>這套軟體可以幫您把一整篇文章，在背景逐字輸入到 PCMan 視窗中。在字與字之間，會自動加入經過計算的最佳延遲時間並取消重複字之間的延遲，讓您的文章能得到該文所能得到的最高稿酬。網路上有好幾種不同的軟體能自動輸入文章，但是這些軟體多半不能在「背景運行」，也不能支援控制碼或雙色字。</p>
+<p>※ 所謂的「背景運行」，係指 PCMan 視窗不必在最上層，軟體也能自動輸入文章；亦即貼文時，可以切換到其他視窗做別的事。</p>
+<p><strong>特色</strong></p>
+<ol>
+<li>支援 BBS 控制碼。</li>
+<li>支援雙色全形字（一字雙色）。</li>
+<li>支援 Big-5 擴充字集（支援 Unicode 補完計畫內的日文字）。</li>
+<li>支援背景運行。</li>
+<li>支援暫停。</li>
+</ol>
+<p><strong>使用方式</strong></p>
+<ol>
+<li>修改 PTT 設定（僅需要修改一次） <pre>
+ ‧ 修改 PTT 站台設定如下：
+ 　　(U)ser 【 個人設定區 】
+ 　　　(U)Customize 個人化設定
+ 　　　　i. DBCS 自動偵測雙位元字集(如全型中文)　　　　：是
+ 　　　　j. DBCS 忽略連線程式為雙位元字集送出的重複按鍵：是
+ 　　　　k. DBCS 禁止在雙位元中使用色碼(去除一字雙色)　：否
+ </pre></li>
+<li>複製欲張貼的文章到剪貼簿。（可在記事本中先排版好再複製，也可複製 PCMan 的 ANSI 編輯器中的彩色文字。）</li>
+<li>進入發文狀態。</li>
+<li><strong>以系統管理員身分執行</strong>本程式</li>
+<li>按下 <code>Shift - F9</code> 開始張貼。</li>
+</ol>
+<hr>
+<ul>
+<li>開始張貼後，可以切換到別的視窗做其他事，唯獨不可以在 PCMan 中另開新分頁。</li>
+<li>張貼完成後程式會自動彈出提示視窗。</li>
+<li>欲暫停張貼，請按 <code>Shift - F11</code>。在工作列圖示的選單中取消暫停即可繼續貼文。</li>
+<li>欲取消張貼，請按 <code>Shift - F12</code> 重新載入本程式，或關閉本程式</li>
+</ul>
+<p>[<strong><a href="https://github.com/changyuheng/ptt-efficient-poster/releases">下載</a></strong>]<br>[<strong><a href="https://github.com/changyuheng/ptt-efficient-poster">原始碼</a></strong>]</p>
+<p>作業系統：Windows 2000 / XP / Vista / 7 / 8 / 10 32-bit &amp; 64-bit<br>※ 只能在 PCMan 中使用</p>
+]]></content>
+      <tags>
+        <tag>programming</tag>
+        <tag>software</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>War3Customkey</title>
+    <url>/2005/war3customkey/</url>
+    <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/war3customkey/master/screenshot.png" alt="screenshot"></p>
+<p>支援：Warcraft III<br>作業系統：Windows 2000 / XP / Vista / 7 / 8 / 10 32-bit &amp; 64-bit</p>
+<span id="more"></span>
+
+<p><strong>特色</strong></p>
+<ol>
+<li>自定按鍵對應</li>
+<li>罐頭訊息</li>
+<li>巨集</li>
+<li>滑鼠連點</li>
+</ol>
+<p><strong>使用方法</strong></p>
+<p>請<strong>以系統管理員身分執行</strong>本程式。詳細說明請見內附的說明文件<code>War3CustomkeyReadme.txt</code>。</p>
+<p>[<strong><a href="https://raw.githubusercontent.com/changyuheng/war3customkey/master/War3Customkey.exe">下載</a></strong>]<br>[<strong><a href="https://github.com/changyuheng/war3customkey">原始碼</a></strong>]</p>
+]]></content>
+      <tags>
+        <tag>programming</tag>
+        <tag>software</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>糟糕的程式設計師有哪些招牌特質？</title>
+    <url>/2015/what-are-the-characteristics-of-a-bad-software-engineer/</url>
+    <content><![CDATA[<p>在 <a href="http://www.quora.com/">Quora</a> 上看到一篇不錯的文章，原文為 <a href="http://www.quora.com/What-are-the-characteristics-of-a-bad-software-engineer/answer/Nachiket-Naik">What are the characteristics of a bad software engineer?</a>。</p>
+<span id="more"></span>
+<p>以下為筆者翻譯的版本，在 Quora 的授權條款下，譯文採<a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW">創用 CC 4.0 姓名標示</a>授權，轉載請註名原文出處及譯者姓名。Quora 原作保留收回授權的權利。</p>
+<p>以我個人的經驗，糟糕的程式設計師具有以下這些特質：</p>
+<ol>
+<li><p>Stack Overflow 機器人：這種人遇到問題時，會靈活地使用 Google 搜尋，並採用所找到的第一個結果（按：好的答案通常在 Stack Overflow 上）。</p>
+<p> 問題不在於從 Stack Overflow 上抄答案回來用，因為 Stack Overflow 上面的資料確實比多數官方手冊來的豐富與完整。所以請不要誤會我的意思，上網找答案就算不是最棒的途徑也屬上上策。問題在於不加理解就機械化地採用網路上的答案，甚至也不管適不適用於自己的問題。許多人居然會覺得論壇上的說法比他們眼前的程式碼更可靠。</p>
+</li>
+<li><p>我不是測試人員：我不需要測試自己的程式碼，那是測試人員的工作。</p>
+<p> 我不認為這種態度在這個敏捷開發方法成熟的時代已經式微。還是有一些原因造成他們不願改變習慣去測試自己的程式碼。其中一部分來自於對設定測試環境沒有興趣，另一部分是對測試這門學問沒有通盤的認識。（還有一部分是開發人員社群對測試人員存有不便明說的輕蔑。）</p>
+</li>
+<li><p>討厭手冊：有些人好像認為手冊必須要押韻，而他們沒有那種文學素養，所以那自然不會是他們的工作。</p>
+<p> 一點淺見：這是活躍的程式計畫的頭號敵人。好的程式不是那種酷炫功能多如繁星的，而是那種具備一些多數人需要的好功能且程式碼持續被許多開發人員閱讀、修改和更新的。這類不喜歡技術交流和精確、詳盡的手冊的開發人員，是公司邁向成功的最大阻力。</p>
+</li>
+<li><p>程式碼很醜：我的程式碼可以跑，但是：</p>
+<ul>
+<li>我喜歡為變數取名叫 x、flag、str、arr 等等。</li>
+<li>我絕大多數的程式碼都集中在一個很長很長的函式裡。</li>
+<li>沒有縮排。</li>
+<li>沒有一致的風格和規則。</li>
+<li>到處都是全域變數。</li>
+</ul>
+<p> 這一項是最令我困擾的。也不是說程式寫得不好啦，這裡面還是有可能會有超猛的程式碼。但我打個比方，如果一串鑽石項鍊掛在像酷斯拉那麼大的超巨型噁心怪蟲的屍體上被埋葬於地底，就再也不會有人找到它了。就算被找到，也不會有人想要清理它甚或戴上它。</p>
+</li>
+<li><p>短線投機客：他會不斷地寫出程式給你，但是不會嘗試深入瞭解問題，對程式應用領域的背景知識也全無興趣。</p>
+<p> 給他一些工作，他就算加班也會使命必達地交給你一個會動的程式。但也僅止於此。有時候開發人員具備一些自私的心態，促使他不只關心截止日期，也想從處理的事物中學到東西是很重要的。</p>
+</li>
+<li><p>切割達人：</p>
+<p> 「那不是我做的。」</p>
+<p> 「這看起來真糟糕。」</p>
+<p> 「不是我的問題。」</p>
+<p> 「這不是我修改的程式碼造成的問題，而是用到我的程式碼的人沒寫對。」</p>
+<p> 「我超討厭這個（一天要講十遍）。」</p>
+<p> 「這我修不好，請去把寫這程式的人找來親自處理。」當初寫出錯誤的人已經離職了，不知道什麼時候會輪到你？</p>
+</li>
+<li><p>夜郎自大：「我的方法」或「這才是王道」是他們的座右銘。</p>
+<p> 但他說來說去都是在比較他的想法和你的想法，而不是這個案子的規格。不然就是拿你的解法和他的解法做比較，隨之而來的就是彼此間的爭論。有時候他們會一直不斷挑剔你的程式碼，因為就算你的程式碼會動、通過測試、看起來也很工整，仍舊令他們感到不舒服。這種人是開發效率的瓶頸，而且通常抗壓性很差。他們對團隊其實沒什麼幫助，雖然他們很可能是資深的開發人員。</p>
+</li>
+<li><p>固步自封：例如當 Java 的程式設計師聽到必須要用 Python 來寫一支程式，馬上就會石化給你看。</p>
+<p> 有些人對於學習新事物感到很痛苦，有些人則很怕寫東西進資料庫。他們會用盡一切方法來避免離開自己的舒適圈，此外有些迷信也使得他們不敢碰某些特定領域的東西。以我自己的經驗來說，這種現象在新手中是很常見沒錯，但一個好的開發人員即便在他們不熟悉的領域也樂於探索。</p>
+</li>
+<li><p>粗心：忘記備份、同一個案子的程式碼有很多版本分別放在不同的資料夾、在產品版本的程式中印出開發用的除錯訊息等等。</p>
+<p> 這是另一個常見的新手現象，在他的經驗值提高後就會有所改善。</p>
+</li>
+<li><p>懶惰的假高手：他們對能夠透過一些特殊的技巧讓程式運作感到自豪，會用一些神奇的方法來解決看起來很複雜的問題。</p>
+<p>不過根據我的經驗，這些招式十有八九都只是化妝術。那些怪招都嘛很爛，因為不知道什麼時候會爆炸，而且之後在修複、重構上花的時間會比現在一次做好還要多。</p>
+</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>programming</tag>
+        <tag>translation</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>War3Customkey Classic</title>
+    <url>/2006/war3customkey-classic/</url>
+    <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/war3customkey-classic/master/screenshot.png" alt="screenshot"></p>
+<p>支援：Warcraft III<br>作業系統：Windows 2000 / XP / Vista / 7 32-bit &amp; 64-bit</p>
+<span id="more"></span>
+
+<p>[<strong><a href="https://raw.githubusercontent.com/changyuheng/war3customkey-classic/master/War3Customkey.exe">下載</a></strong>]<br>[<strong><a href="https://github.com/changyuheng/war3customkey-classic">原始碼</a></strong>]</p>
+]]></content>
+      <tags>
+        <tag>programming</tag>
+        <tag>software</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>When Hexo Meets GitHub Pages and Travis CI plus Raspberry Pi</title>
+    <url>/2015/when-hexo-static-site-meets-github-pages-and-travis-ci/</url>
+    <content><![CDATA[<p>JS 很有吸引力、Hexo 是台灣人寫的、速度比 Octopress 快、default 支援 GitHub Flavored Markdown，所以選 Hexo。</p>
+<span id="more"></span>
+<p>Hexo 是一個 static site generator，static site 是指 website 由 static web page 所組成。獲取 static web page 的 client 端得到的 web page，和儲存於 server 端的 web page 一模一樣。與 dynamic website 的 server 端即時產生 web page 傳送給 client 端不同，static site 的 server 端不需要具備即時生成不同 web page 的能力。</p>
+<p>Travis-CI 提供了 hook GitHub repository event 的功能。開啟 hook 後，便會依照 repository 裡 .travis.yml 內的設定來執行。</p>
+<p>GitHub repository 特定的 branch 會被 GitHub 當作 static web site 的內容來 render，render 的引擎是 Jekyll，因此可以放純 HTML 檔案也可以放 Jekyll 會 parse 的檔案。</p>
+<p>本來 Hexo 的運作流程是，在 local 用 markup 撰寫文章，完成後執行 Hexo 的命令來 parse 並 render 原始檔案，生成由 HTML 構成的 static web site，再將生成出來的內容 push 到 GitHub repository 的特定 branch。</p>
+<p>但是依賴 local Hexo 指令有個缺點：在沒有裝 Hexo 環境的裝置就沒辦法更新 web site 了。Hexo 環境雖然也不是很難安裝，但是要裝東西就是麻煩，尤其是突然有點靈感想要用手機或平板來寫點東西時特別困擾。</p>
+<p>所以我們應該妥善運用網路上佛心來著的服務，像是 Travis CI。我們可以把透過 Hexo 產生 HTML 並 push 到 GitHub 這個流程，丟到 Travis CI 上，讓它來代理。Hook Travis CI 很簡單，其他地方也有專門針對 Hexo 的教學了。這篇文章的重點是在於，介紹一個 tricky 的方法來 push。</p>
+<p>GitHub 支援 token 認證，token 就像是另一把隨時可以被回收鑰匙，透過 token 就可以有 write repository 的權限。可是很可惜的，目前 GitHub 沒有提供為個別的 repository 產生 token 的服務，每一個 token 都能 write GitHub 帳號下的所有 repository。這實在有點恐怖。還好 GitHub 支援每一個 repository 單獨設定 SSH public key 認證。所以重點來了，我們該怎麼讓 Travis CI 擁有 SSH key pair 呢？總不能大剌剌的把 key pair 放在 repository 裡吧？免費的 repository 都是公開的，這樣做也太搞笑了。另一種方法是，先把 SSH key 加密再放上 Travis CI，把密碼寫在 Travis CI 的環境變數裡，讓 Travis CI runtime 再把 key 解出來。目前網路上只看到這二種做法。</p>
+<p>不過上面這二種方法都有用到 Travis CI 的環境變數，我實在很納悶，何不直接把 SSH key pair 當成變數就好了？也許是因為 public key 的內容含有空白和換行及其他特殊字元，這些字元在 runtime 直接 assign 給 shell 的 variable 會發生與期待不符的結果吧。這邊要說的 tricky 方法就是，把那二把 key 先用 Base64 encode，這樣就可以正確 assign 給 shell 的 variable，runtime 再把 variable decode 回 key file。這樣這個流程就能順利走完了！</p>
+<p>以後我們就可以直接在 GitHub 網頁上編輯 Markdown 檔案，讓 GitHub 網頁來幫我們 push、Travis CI 幫我們 render 和 push。也可以搭配其他線上的所見即所得編輯器，有些編輯器還可以連結 GitHub 帳號。總之這樣以後就可以只管專心寫文章，不必做 routine 的事。</p>
+<p>接著，因為剛好有閒置的樹莓派，我索性把 static site 放在樹莓派上。所以上面這個自動化流程還必須涵蓋到更新樹莓派上面的內容。剛好 GitHub 有提供 webhook 服務，當 repository 更新時，GitHub webhook 會發 http request 出來。GitHub 上有網友寫好現成的 webhook handler，抓下來設定一下，放在樹莓派上面跑，這樣就可以透過 GitHub 的 request 來 trigger 自動更新 website 了。</p>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ol>
+<li><a href="https://help.github.com/articles/using-jekyll-with-pages/">Using Jekyll with Pages</a></li>
+<li><a href="http://zespia.tw/blog/2012/10/11/hexo-debut/">Hexo 颯爽登場！</a></li>
+<li><a href="https://github.com/nlf/node-github-hook">node-github-hook</a></li>
+<li><a href="https://github.com/rvagg/github-webhook-handler">github-webhook-handler</a></li>
+<li><a href="http://zespia.tw/blog/2015/01/21/continuous-deployment-to-github-with-travis/">用 Travis CI 自動部署網站到 GitHub</a></li>
+<li><a href="https://github.com/changyuheng/changyuheng.github.io/blob/hexo3/.travis.yml">我的 .travis.yml</a></li>
+<li><a href="https://www.staticgen.com/">Top Open-Source Static Site Generators</a></li>
+<li><a href="https://travis-ci.org/">Travis CI</a></li>
+<li><a href="https://developer.github.com/webhooks/">GitHub Webhooks</a></li>
+<li><a href="https://www.wikiwand.com/zh-tw/%E6%A0%91%E8%8E%93%E6%B4%BE">樹莓派</a></li>
+<li><a href="http://www.wikiwand.com/zh-tw/%E5%85%AC%E5%BC%80%E5%AF%86%E9%92%A5%E5%8A%A0%E5%AF%86">公開金鑰加密</a></li>
+<li><a href="http://docs.travis-ci.com/user/encryption-keys/">Encryption keys</a></li>
+</ol>
+]]></content>
+      <tags>
+        <tag>programming</tag>
+        <tag>software</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>對程式設計師來說，提高薪水最好的建議是什麼？</title>
+    <url>/2016/what-is-the-best-career-advice-for-a-software-developer-to-earn-a-higher-salary/</url>
+    <content><![CDATA[<p>關於這個問題，在 Quora 數則<a href="https://www.quora.com/What-is-the-best-career-advice-for-a-software-developer-to-earn-a-higher-salary">答案</a>中看到<a href="https://www.quora.com/What-is-the-best-career-advice-for-a-software-developer-to-earn-a-higher-salary/answer/Abhishek-Choudhary-11">一篇很棒的</a>，和大家分享。</p>
+<blockquote>
+<p>What is the best career advice for a software developer to earn a higher salary?</p>
+</blockquote>
+<span id="more"></span>
+
+<blockquote>
+<p>　1. Make Computer Science fundamentals very strong , mainly DataStructure &amp; Algorithm.</p>
+</blockquote>
+<p>　1. 擁有非常穩健的<a href="https://www.wikiwand.com/zh-hant/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6">電腦科學</a>知識基礎，尤其是<a href="https://www.wikiwand.com/zh-hant/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84">資料結構</a>和<a href="https://www.wikiwand.com/zh-hant/%E7%AE%97%E6%B3%95">演算法</a>。</p>
+<blockquote>
+<p>　2. Make a habit of solving atleast 3-4 code snippets/Week , check Leetcode/CareerCup</p>
+</blockquote>
+<p>　2. 養成每週練習三、四個<a href="https://www.wikiwand.com/zh-tw/%E7%89%87%E6%AE%B5">程式片段</a>的習慣。請參考 <a href="https://leetcode.com/">LeetCode</a> 和 <a href="https://www.careercup.com/">CareerCup</a>。</p>
+<blockquote>
+<p>　3. No point of being a master of single technology like Java or Python. Learn several technologies.</p>
+</blockquote>
+<p>　3. 執意侷限自己專精單一項目例如 Java 或 Python 的意義不大。請擴充你的工具箱。</p>
+<blockquote>
+<p>　4. I was a java developer for 5 years and then I found functional languages like clojure/Python/Scala and believe me, its worth your time. It will broaden your skill-sets &amp; thinking. And now you are already ahead in the race of Developers and Interviews.</p>
+</blockquote>
+<p>　4. 在我擁有五年 Java 開發經驗時，接觸到了像 Clojure、Python、Scala 這類的<a href="https://www.wikiwand.com/zh-tw/%E5%87%BD%E6%95%B8%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80">函數程式語言</a>。相信我，這絕對值得你投資，因為它們不僅能讓你的工具箱更完備，同時也將開拓你的思考視野。能做到這裡，在與眾多開發者爭奪職缺的競賽中，你就已是處於領先的地位。</p>
+<blockquote>
+<p>　5. Heard any new technology, like BigData or Machine Learning. Make sure to understand that and implement a POC. Don’t just read, make sure, you are very much aware of fundamentals. Like you must know the architecture, go through the case studies and BUILD SOMETHING.</p>
+</blockquote>
+<p>　5. 持續吸收新知，例如<a href="https://www.wikiwand.com/zh-hant/%E5%A4%A7%E6%95%B8%E6%93%9A">大數據</a>和<a href="https://www.wikiwand.com/zh-hant/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0">機器學習</a>。與此同時，不要只是閱讀，請確定你真的瞭解基礎觀念並試著做出<a href="https://www.wikiwand.com/zh-tw/%E6%A6%82%E5%BF%B5%E9%AA%8C%E8%AF%81">概念驗證</a>。就像我們當初學<a href="https://www.wikiwand.com/zh-tw/%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84">軟體架構</a>的時候一樣，腳踏實地、循序漸近，並<strong>動手練習</strong>。</p>
+<blockquote>
+<p>　6. You gotta market yourself. If you are learning from open Source, its your responsibility, to give back something. Make your github account and contribute. This will make your profile very shiny.</p>
+</blockquote>
+<p>　6. 你要會行銷自己。如果你正從開源項目中學習知識，那就有責任做出回饋。可以申請一個 <a href="https://github.com/">GitHub</a> 帳號並貢獻一些東西，這會讓個人檔案閃閃發亮，一舉二得。</p>
+<blockquote>
+<p>　7. Don’t fall in love with any single technology. I saw Desktop based application lost its place and now Mobile is rocking, and I wont be amaze if Virtual Reality takes its place or something. So stop falling in love with any technology. Learn whatever is good in market. Yeah it will be huge but your habit will make you proficient to learn anything new and You will be truly a Quick learner.</p>
+</blockquote>
+<p>　7. 不要因為熱愛就侷限自己在單一領域。我看到了桌面應用程式的衰落和<a href="https://www.wikiwand.com/zh-tw/%E6%B5%81%E5%8B%95%E6%87%89%E7%94%A8%E7%A8%8B%E5%BC%8F">行動應用程式</a>的崛起，然而對於<a href="https://www.wikiwand.com/zh-tw/%E8%99%9A%E6%8B%9F%E7%8E%B0%E5%AE%9E">虛擬實境</a>將取而代之也不感意外。當然這讓需要學習的知識量變得很大，不過養成習慣即可讓你熟練於學習，也會因此使你對新知的反應更加敏銳。</p>
+<blockquote>
+<p>　8. Attend Hackathons and Technical Meetup. Even you don’t know anything, doesn’t matter. You must build contacts. the more people you know, the probability to end up with better jobs will be more higher.</p>
+</blockquote>
+<p>　8. 參加一些<a href="https://www.wikiwand.com/zh/%E9%BB%91%E5%AE%A2%E6%9D%BE">黑客松</a>和技術聚會，就算你什麼都不會也沒關係。因為你需要拓展人際關係，人脈愈廣，找到好工作的機率愈高。</p>
+<blockquote>
+<p>　9. If you don’t like your job or Manager don’t react, keep smiling and keep working and look for new job. Never destroy your relationship with people.</p>
+</blockquote>
+<p>　9. 不喜歡你的工作或是主管也不要做激烈的抗爭。繼續保持微笑、把事情做好，並騎驢找馬就好了。記住，永遠不要與人結怨。</p>
+<blockquote>
+<p>　10. Read .. Read … Read … CODE IT</p>
+</blockquote>
+<p>　10. <strong>大量地</strong>閱讀，並且<strong>動手練習</strong>。</p>
+]]></content>
+      <tags>
+        <tag>translation</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows Photo Viewer Mouse Plug-in</title>
+    <url>/2009/windows-photo-viewer-mouse-plug-in/</url>
+    <content><![CDATA[<p>This simple tool gives Windows Photo Viewer the following features:</p>
+<ol>
+<li>Middle click to toggle window’s size between normal and maximum.</li>
+<li>Scroll up/down to show previous/next image.</li>
+<li>Ctrl + scroll up/down to zoom in/out.</li>
+<li>A to show actual size.</li>
+<li>F to show fit size.</li>
+<li>Ctrl + A to toggle deafult presenting style between actual size and fit size.</li>
+</ol>
+<span id="more"></span>
+
+<p><strong><a href="https://raw.githubusercontent.com/changyuheng/windows-photo-viewer-mouse-plug-in/master/bin/windows-photo-viewer-mouse-plug-in.exe">Download</a></strong><br><strong><a href="https://github.com/changyuheng/windows-photo-viewer-mouse-plug-in">Source code</a></strong></p>
+]]></content>
+      <tags>
+        <tag>programming</tag>
+        <tag>software</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Syncing Samba Accounts with Unix Login Accounts</title>
+    <url>/2011/syncing-samba-accounts-with-unix-login-accounts/</url>
+    <content><![CDATA[<p>libpam-smbpass</p>
+]]></content>
+      <tags>
+        <tag>software</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Raspberry Pi Raspbian Jessie 安裝設定</title>
+    <url>/2015/raspberry-pi-raspbian-jessie-%E5%AE%89%E8%A3%9D%E8%A8%AD%E5%AE%9A/</url>
+    <content><![CDATA[<p>Jessie 剛從 SysVinit 換成 systemd。因為不同的 init system 的設定方式不同，而 raspi-config 還沒有更新到支援 systemd，所以有些設定必須手動，不能透過 raspi-config。</p>
+<span id="more"></span>
+<!-- toc -->
+<h2 id="先嘗試從-raspi-config-expand-filesystem，以及其他設定，無效或沒有-UI-能操作的再嘗試下面的方法。"><a href="#先嘗試從-raspi-config-expand-filesystem，以及其他設定，無效或沒有-UI-能操作的再嘗試下面的方法。" class="headerlink" title="先嘗試從 raspi-config expand filesystem，以及其他設定，無效或沒有 UI 能操作的再嘗試下面的方法。"></a>先嘗試從 raspi-config expand filesystem，以及其他設定，無效或沒有 UI 能操作的再嘗試下面的方法。</h2><h2 id="關閉開機自動啟動的-GUI-desktop"><a href="#關閉開機自動啟動的-GUI-desktop" class="headerlink" title="關閉開機自動啟動的 GUI (desktop)"></a>關閉開機自動啟動的 GUI (desktop)</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo systemctl set-default multi-user.target</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://www.raspberrypi.org/forums/viewtopic.php?f=66&amp;t=92727">https://www.raspberrypi.org/forums/viewtopic.php?f=66&amp;t=92727</a></p>
+<h2 id="鍵盤-layout-由-enGB-改為-enUS"><a href="#鍵盤-layout-由-enGB-改為-enUS" class="headerlink" title="鍵盤 layout 由 enGB 改為 enUS"></a>鍵盤 layout 由 enGB 改為 enUS</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo dpkg-reconfigure keyboard-configuration</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://www.raspberrypi.org/forums/viewtopic.php?f=28&amp;t=80127">https://www.raspberrypi.org/forums/viewtopic.php?f=28&amp;t=80127</a></p>
+<h2 id="Apt-source-改為使用國網中心提供的-mirror"><a href="#Apt-source-改為使用國網中心提供的-mirror" class="headerlink" title="Apt source 改為使用國網中心提供的 mirror"></a>Apt source 改為使用國網中心提供的 mirror</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">(ftp|http)://free.nchc.org.tw/raspbian/raspbian</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://www.raspbian.org/RaspbianMirrors">https://www.raspbian.org/RaspbianMirrors</a></p>
+<h2 id="預設編輯器改為-Vim"><a href="#預設編輯器改為-Vim" class="headerlink" title="預設編輯器改為 Vim"></a>預設編輯器改為 Vim</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo update-alternatives –config editor</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://www.raspberrypi.org/forums/viewtopic.php?f=27&amp;t=9376">https://www.raspberrypi.org/forums/viewtopic.php?f=27&amp;t=9376</a></p>
+<h2 id="加入-SSH-authorized-key、關閉-pi-user-的-password"><a href="#加入-SSH-authorized-key、關閉-pi-user-的-password" class="headerlink" title="加入 SSH authorized key、關閉 pi user 的 password"></a>加入 SSH authorized key、關閉 pi user 的 password</h2><h2 id="設定-PPPoE"><a href="#設定-PPPoE" class="headerlink" title="設定 PPPoE"></a>設定 PPPoE</h2><h2 id="設定-DDNS-DNS-provider-gt-CNAME-gt-twbbs-org-gt-NS-gt-FreeDNS"><a href="#設定-DDNS-DNS-provider-gt-CNAME-gt-twbbs-org-gt-NS-gt-FreeDNS" class="headerlink" title="設定 DDNS (DNS provider -&gt; (CNAME) -&gt; twbbs.org -&gt; (NS) -&gt; FreeDNS"></a>設定 DDNS (DNS provider -&gt; (CNAME) -&gt; twbbs.org -&gt; (NS) -&gt; FreeDNS</h2><p>以前可以透過在 <code>/etc/network/if-up.d</code> 放一個可執行檔來hook DDNS 服務，但是現在 systemd 管理的 networking 似乎沒有辦法這麼做。</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> -e</span><br><span class="line"></span><br><span class="line">ip=$(ip -f inet addr show eth0 | grep -Po <span class="string">&#x27;inet \K[\d.]+&#x27;</span>)</span><br><span class="line">( sleep 10 ; curl <span class="string">&quot;https://url-to-update-ip-address&quot;</span> )</span><br></pre></td></tr></table></figure>
+
+<h2 id="安裝-nvm、node"><a href="#安裝-nvm、node" class="headerlink" title="安裝 nvm、node"></a>安裝 nvm、node</h2><h2 id="用-github-webhook-handler-寫一個-handler-來更新-blog。將-handler-加到-systemd-service。"><a href="#用-github-webhook-handler-寫一個-handler-來更新-blog。將-handler-加到-systemd-service。" class="headerlink" title="用 github-webhook-handler 寫一個 handler 來更新 blog。將 handler 加到 systemd service。"></a>用 github-webhook-handler 寫一個 handler 來更新 blog。將 handler 加到 systemd service。</h2><p><a href="https://github.com/rvagg/github-webhook-handler">https://github.com/rvagg/github-webhook-handler</a></p>
+]]></content>
+      <tags>
+        <tag>devops</tag>
+        <tag>sysadmin</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>唯一一種只要學會就能脫胎換骨的能力</title>
+    <url>/2015/the-only-one-skill-that-if-you-have-will-completely-change-your-life-chinese-translation/</url>
+    <content><![CDATA[<p>在 Medium 上看到一篇<a href="https://medium.com/keep-learning-keep-growing/the-only-one-skill-that-if-you-have-will-completely-change-your-life-ba9b40b8fdf5#.tjk2mly1w">好文</a>，翻譯前半段。</p>
+<span id="more"></span>
+<p>我們都在找尋成功的要素，期待某個神秘的關鍵能改變既有的一切。</p>
+<p>標準答案並不存在，因為只要學會一種就能脫胎換骨的能力有很多。</p>
+<p>但我相信有一種能力在現在這個時代特別重要，同時也是大多數人所缺乏的：自制力。</p>
+<p>捫心自問，沒有人希望自己不健康或有不良嗜好。但是看看周遭的人，他們每天都在摧殘自己。死亡或許不會突然降臨，但是常常出乎意料的快；想想看，糖尿病和癌症可比便利商店還要普及。收益是公司的首要課題，但健康不是，所以你是唯一有責任約束自己的人。</p>
+<p><img src="the-only-one-skill-that-if-you-have-will-completely-change-your-life-chinese-translation/eating-junk-food.jpg"></p>
+<p>人們日復一日地把自己最珍貴的資源，時間，浪費掉。時光一去不復返。</p>
+<p>這就是因為缺乏自制力，所以慾望──現代社會的經濟正是以慾望為基礎──變得比理智強大。於是乎人們不再表現得有條不紊，反而變得恣意妄為。</p>
+<p>我的意思不是說嚴以律己到極致是件好事，那想必不是。過分的自我要求給自己帶來的傷害，也許和死亡相差無幾。</p>
+<p>想像一種生活：你學會了怎麼自律，所以環境加諸的障礙變得無關緊要，你只管朝著目標前進。</p>
+<p>你不再吃垃圾，取而代之的是各種健康的食物；為了獎勵自己，你讓自己想吃什麼就吃什麼。這對你的健康將有極為驚人的助益。你就不用去嘗試什麼減肥餐了。只要你適量地吃真正的食物，而不是那些長得像食物的食品，想變胖也難。</p>
+<p>你開啟一種積極正面的生活方式。不再是過去那種在二週後就會放棄新年健身計畫的你，除了每週上三次健身房外，還會每天散步幾哩路。</p>
+<p><img src="the-only-one-skill-that-if-you-have-will-completely-change-your-life-chinese-translation/lots-of-books.jpg"></p>
+<p>就這樣自我要求飲食和運動這二點一年，改變的將不只是你的身材，還會涵蓋整個生活。</p>
+<p>現在讓我們更進一步。我們正被各種視聽娛樂轟炸：電視、遊戲（現在可以隨時隨地打電動，謝謝智慧型手機）、網路等等。如果沒有自制力，這些事物將帶來非常不良的影響，而且你也知道，大多數人並不具備這難能可貴的能力。所以與其打 game、當電視兒童或是失心瘋般的掛網 （ 這些事有一個共通點，就是浪費你的時間），你應該閱讀。</p>
+<p>每天撥二小時用來閱讀，聽起來好像很多，但可以想想你本來花多少時間在剛剛提到的三種時間殺手上。書是智慧結晶。我們都從經驗中學習，但是一生中能夠體驗的事有限。透過書本，可以觀摩前人的生活經驗，並應用在自己的人生旅程中。高度成功的人士都不會反對書本的力量。而且他們之中的多數，會鼓勵你像吃垃圾食物和甜點那般地消化書本的內容。</p>
+<p>又過了一年，你已經持續每天閱讀二小時十二個月。我不會試圖去估量你看了多少書，但有一件事可以確定，這已經高於大多數人一生的閱讀量。很多人一生讀不到你半年的份量。</p>
+<p>但是光讀不練並不能完全改變生活。你必須身體力行。任何一個你在生活中遇到的問題都能在好書上找到處置方式。而其中大多數，甚至有好幾打書提供了應對之道。所以你開始學以致用，因為透過自制，你不再是那種愛拖延的人而是個行動派。可以想見因此跨越了多少障礙。</p>
+]]></content>
+      <tags>
+        <tag>translation</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Understanding Python Decorators</title>
+    <url>/2014/understanding-python-decorators/</url>
+    <content><![CDATA[<p>Decorator 是一個 Python 中較為進階的語法，因為較難理解故常被提出來討論。這邊提供一個簡潔的說明。</p>
+<span id="more"></span>
+
+<p>假設有一名為 func 的 function 被名為 decor1 和 decor2 的二 decorator 修飾如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">@decor1</span></span><br><span class="line"><span class="meta">@decor2</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">func</span>(<span class="params">*args, **kwargs</span>):</span></span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
+
+<p>則當我們如下呼叫 func() 時：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">func(*args, **kwargs)</span><br></pre></td></tr></table></figure>
+
+<p>可以將之理解為：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">decor1(decor2(func))(*args, **kwargs)</span><br></pre></td></tr></table></figure>
+
+<p>更詳細的說明可以參考：</p>
+<ol>
+<li><a href="http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/">Understanding Python Decorators in 12 Easy Steps!</a></li>
+<li><a href="http://stackoverflow.com/a/739679">How can I make a chain of function decorators in Python?</a></li>
+</ol>
+]]></content>
+      <tags>
+        <tag>programming</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在 Ubuntu 12.04 安裝 IT-830UP 晶片讀卡機與使用 WebATM</title>
+    <url>/2013/ubuntu-12-dot-04-an-zhuang-it-830up-jing-pian-du-qia-ji/</url>
+    <content><![CDATA[<p><img src="http://www.ittec.com.tw/images/IT-830UP%28DM%29.jpg" alt="IT-830UP"></p>
+<span id="more"></span>
+
+<h2 id="步驟-1-安裝所需套件"><a href="#步驟-1-安裝所需套件" class="headerlink" title="步驟 1. 安裝所需套件"></a>步驟 1. 安裝所需套件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install pcscd pcsc-tools libccid</span><br></pre></td></tr></table></figure>
+
+<p>完成後可能需要自行重新啟動電腦才會生效。</p>
+<h2 id="步驟-2-依照-WebATM-提供的方法安裝所需程式，如：玉山銀行"><a href="#步驟-2-依照-WebATM-提供的方法安裝所需程式，如：玉山銀行" class="headerlink" title="步驟 2. 依照 WebATM 提供的方法安裝所需程式，如：玉山銀行"></a>步驟 2. 依照 WebATM 提供的方法安裝所需程式，如：<a href="http://netbank.esunbank.com.tw/webatm/Q&A_016.htm#01">玉山銀行</a></h2>]]></content>
+      <tags>
+        <tag>software</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Using Express to Handle File Uploading</title>
+    <url>/2015/using-express-to-handle-file-uploading/</url>
+    <content><![CDATA[<p><a href="https://github.com/strongloop/express">Express</a> 本身不管上傳，要透過 <a href="https://github.com/expressjs/multer">Multer</a> 來處理。</p>
+<p>Multer 手冊特別註明：</p>
+<span id="more"></span>
+<blockquote>
+<p><strong>NOTE</strong>: Multer will not process any form which is not multipart (multipart/form-data).</p>
+</blockquote>
+<p>意思就是說 <code>Content-Type</code> 必須要是 <code>multipart/form-data</code>。</p>
+<p>以 Python 的 <a href="http://docs.python-requests.org/">Requests</a> 當 client 為例：</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">response = requests.post(<span class="string">&#x27;http://httpbin.org/post&#x27;</span>, files=&#123;<span class="string">&#x27;example_file&#x27;</span>: (<span class="string">&#x27;example.zip&#x27;</span>, <span class="built_in">open</span>(<span class="string">&#x27;a_example.zip&#x27;</span>, <span class="string">&#x27;rb&#x27;</span>))&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>Request 這樣用 <code>Content-Type</code> 預設就是 <code>multipart/form-data</code><br><a href="http://httpbin.org/post">http://httpbin.org/post</a> 是測試的好幫手，可以</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">pprint.pprint(response.json()[<span class="string">&#x27;headers&#x27;</span>])</span><br></pre></td></tr></table></figure>
+
+<p>把 server 收到的 header dump 出來。<br><a href="http://stackoverflow.com/questions/12385179/how-to-send-a-multipart-form-data-with-requests-in-python">http://stackoverflow.com/questions/12385179/how-to-send-a-multipart-form-data-with-requests-in-python</a></p>
+<p>其中 example_file 對應 Multer 的：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">upload.single(<span class="string">&#x27;example_file&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>如果沒有對起來，會出現對 trace 沒有幫助的 error：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Error: Unexpected field</span><br><span class="line">    at makeError (/home/changyuheng/production/ultima-cloud-server/node_modules/multer/lib/make-error.js:12:13)</span><br><span class="line">    at wrappedFileFilter (/home/changyuheng/production/ultima-cloud-server/node_modules/multer/index.js:39:19)</span><br><span class="line">    at Busboy.&lt;anonymous&gt; (/home/changyuheng/production/ultima-cloud-server/node_modules/multer/lib/make-middleware.js:112:7)</span><br><span class="line">    at emitMany (events.js:108:13)</span><br><span class="line">    at Busboy.emit (events.js:182:7)</span><br><span class="line">    at Busboy.emit (/home/changyuheng/production/ultima-cloud-server/node_modules/multer/node_modules/busboy/lib/main.js:31:35)</span><br><span class="line">    at PartStream.&lt;anonymous&gt; (/home/changyuheng/production/ultima-cloud-server/node_modules/multer/node_modules/busboy/lib/types/multipart.js:209:13)</span><br><span class="line">    at emitOne (events.js:77:13)</span><br><span class="line">    at PartStream.emit (events.js:169:7)</span><br><span class="line">    at HeaderParser.&lt;anonymous&gt; (/home/changyuheng/production/ultima-cloud-server/node_modules/multer/node_modules/busboy/node_modules/dicer/lib/Dicer.js:51:16)</span><br><span class="line">    at emitOne (events.js:77:13)</span><br><span class="line">    at HeaderParser.emit (events.js:169:7)</span><br><span class="line">    at HeaderParser._finish (/home/changyuheng/production/ultima-cloud-server/node_modules/multer/node_modules/busboy/node_modules/dicer/lib/HeaderParser.js:70:8)</span><br><span class="line">    at SBMH.&lt;anonymous&gt; (/home/changyuheng/production/ultima-cloud-server/node_modules/multer/node_modules/busboy/node_modules/dicer/lib/HeaderParser.js:42:12)</span><br><span class="line">    at emitMany (events.js:108:13)</span><br><span class="line">    at SBMH.emit (events.js:182:7)</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>programming</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python logging module example</title>
+    <url>/2015/python-logging-module-example/</url>
+    <content><![CDATA[<p>Python 的 logging module 功能完整強大，但手冊裡卻沒有一個簡明的 config 範例。</p>
+<p>記錄一下。</p>
+<span id="more"></span>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python3</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> logging</span><br><span class="line"><span class="keyword">import</span> logging.config</span><br><span class="line"></span><br><span class="line">logging.config.dictConfig(&#123;</span><br><span class="line">    <span class="string">&#x27;version&#x27;</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="string">&#x27;formatters&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;default&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;format&#x27;</span>: <span class="string">&#x27;[%(asctime)s|PID:%(process)d|TID:%(thread)d|%(filename)s:%(lineno)d|%(funcName)s|%(name)s|%(levelname)s] %(message)s&#x27;</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">&#x27;handlers&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;console&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;logging.StreamHandler&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;formatter&#x27;</span>: <span class="string">&#x27;default&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&#x27;http&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;logging.handlers.HTTPHandler&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;formatter&#x27;</span>: <span class="string">&#x27;default&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">            <span class="string">&#x27;host&#x27;</span>: <span class="string">&#x27;localhost:3000&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;url&#x27;</span>: <span class="string">&#x27;/log&#x27;</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&#x27;rotatingfile&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;logging.handlers.RotatingFileHandler&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;formatter&#x27;</span>: <span class="string">&#x27;default&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">            <span class="string">&#x27;filename&#x27;</span>: <span class="string">&#x27;test.log&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;maxBytes&#x27;</span>: <span class="number">512</span> * <span class="number">1024</span> * <span class="number">1024</span>,</span><br><span class="line">            <span class="string">&#x27;backupCount&#x27;</span>: <span class="number">1</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">&#x27;loggers&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;handlers&#x27;</span>: [<span class="string">&#x27;console&#x27;</span>, <span class="string">&#x27;http&#x27;</span>, <span class="string">&#x27;rotatingfile&#x27;</span>],</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">logging.info(<span class="string">&#x27;test1&#x27;</span>)</span><br><span class="line">logger = logging.getLogger()</span><br><span class="line">logger.info(<span class="string">&#x27;test&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h2><ol>
+<li><a href="http://docs.python-guide.org/en/latest/writing/logging/">The Hitchhiker’s Guide to Python</a></li>
+<li><a href="https://docs.python.org/2/library/logging.html">The Python Standard Library</a></li>
+</ol>
+]]></content>
+      <tags>
+        <tag>programming</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python Learning Resources</title>
+    <url>/2014/python-learning-resources/</url>
+    <content><![CDATA[<p>同事在問 Python 該如何入門，順手將整理的資料與大眾分享。</p>
+<p>既然要學，就不要拖著歷史的包袱，所以建議直接學習 Python 3。</p>
+<p>對於有程式設計基礎的朋友，可依下列項目順序學習：</p>
+<span id="more"></span>
+
+<ol>
+<li>官網的 <a href="https://docs.python.org/3/tutorial/">tutorial</a>。</li>
+<li><a href="http://shop.oreilly.com/product/0636920027072.do">Python Cookbook: Recipes for Mastering Python 3</a></li>
+<li><a href="http://www.amazon.com/Python-Practice-Concurrency-Libraries-Developers/dp/0321905636">Python in Practice: Create Better Programs Using Concurrency, Libraries, and Patterns (Developer’s Library)</a></li>
+</ol>
+<p>Libraries：</p>
+<ol>
+<li><a href="https://github.com/vinta/awesome-python">https://github.com/vinta/awesome-python</a></li>
+</ol>
+]]></content>
+      <tags>
+        <tag>programming</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AutoCheckIn for Garena</title>
+    <url>/2008/autocheckin-for-garena/</url>
+    <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/garena-autocheckin/master/screenshot.png" alt="screenshot"></p>
+<p>支援：Garena 3.x 中文版 &amp; 2010 (4.0.1.6127) English Version、中文版</p>
+<p>作業系統：Windows 2000 / XP / Vista / 7 32-bit &amp; 64-bit</p>
+<span id="more"></span>
+
+<p><strong>特色</strong></p>
+<ol>
+<li>背景自動擠房</li>
+<li>開放原始碼</li>
+</ol>
+<p><strong>使用方法</strong></p>
+<ol>
+<li>執行 AutoCheckIn</li>
+<li>雙擊房間即可自動擠房</li>
+<li>開始擠房後，可以最小化 Garena。</li>
+<li>進入房間後，若 Garena 提示：「您仍在房間裡，要離開房間嗎？」，把它關掉就好了。</li>
+</ol>
+<p>成功加入房間後，程式會彈到最上層提示。</p>
+<p><strong>類似的軟體</strong></p>
+<ol>
+<li><a href="http://kloerhe.pixnet.net/blog/post/23885234-[-%E4%BD%9C%E5%93%81-]-garena-room-joiner-2-#-%E6%94%AF%E6%8F%B4-xp---vista-#-05-19-">Garena Room Joiner 2</a></li>
+</ol>
+<p>[<strong><a href="https://raw.githubusercontent.com/changyuheng/garena-autocheckin/master/AutoCheckIn.exe">下載</a></strong>]<br>[<strong><a href="https://github.com/changyuheng/garena-autocheckin">原始碼</a></strong>]</p>
+]]></content>
+      <tags>
+        <tag>programming</tag>
+        <tag>software</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Codeforces Problem 1B</title>
+    <url>/2014/codeforces-problem-1b/</url>
+    <content><![CDATA[<p><a href="http://codeforces.com/problemset/problem/1/B">Codeforces Problem 1B</a></p>
+<p>這題考的是經典的試算表 (spreadsheet) 座標轉換。這個問題的重點在對數字進位的處理。訣竅在於把 one-based column 當成 zero-based 來處理。</p>
+<p><a href="http://codeforces.com/contest/1/submission/6457739">我的 Python 解法</a></p>
+]]></content>
+      <tags>
+        <tag>algorithm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Codeforces 快速入門 (簡介、介紹、教學)</title>
+    <url>/2010/codeforces-quick-start/</url>
+    <content><![CDATA[<ol>
+<li><p>什麼是 <a href="http://codeforces.com/">Codeforces</a>？</p>
+<p> Codeforces 是一個知名的程式競賽 (programming contest) 網站。我們可以在此網站上討論程式設計，練習或比賽解題，也可以舉辦比賽。</p>
+<span id="more"></span></li>
+<li><p>支援哪些語言？</p>
+<ul>
+<li>C</li>
+<li>C++</li>
+<li>C#</li>
+<li>D</li>
+<li>Delphi</li>
+<li>Free Pascal</li>
+<li>Haskell</li>
+<li>Java</li>
+<li>JavaScript</li>
+<li>OCaml</li>
+<li>PHP</li>
+<li>Python</li>
+<li>Ruby</li>
+<li>Scala</li>
+</ul>
+</li>
+<li><p>怎麼開始？</p>
+<ol>
+<li><p>註冊</p>
+<ol>
+<li><p>進入 <a href="http://codeforces.com/">Codeforces</a> 首頁</p>
+</li>
+<li><p>點選右上角「Register」以進入註冊頁面</p>
+<p> <a href="codeforces-quick-start/codeforces-begin-to-register.png"><img src="codeforces-quick-start/codeforces-begin-to-register.png" alt="begin to register"></a></p>
+</li>
+<li><p>填寫註冊表單，完成後按下「Register (確定註冊)」</p>
+<p> <a href="codeforces-quick-start/codeforces-registration-form.png"><img src="codeforces-quick-start/codeforces-registration-form.png" alt="registration form"></a></p>
+</li>
+</ol>
+<p> 經過以上步驟即可完成註冊。</p>
+<p> 以下為選擇性設定：</p>
+<ol>
+<li><p>登入</p>
+</li>
+<li><p>點選右上角自己的帳號，進入個人資料頁面</p>
+</li>
+<li><p>點選導覽列上的「SETTINGS」</p>
+</li>
+<li><p>在「GENERAL」這一頁，可以上傳個人頭像、重新設定密碼、電子信箱等</p>
+</li>
+<li><p>在「SOCIAL」這一頁，可以輸入真名及國家和城市。(有輸入國家和城市才能和自己國家的國民一起排名)</p>
+</li>
+</ol>
+</li>
+<li><p>進行一次練習</p>
+<ol>
+<li><p>解題</p>
+<ol>
+<li><p>點選導覽列上的 <a href="http://codeforces.com/problemset">PROBLEMSET</a> 進入考古題庫</p>
+</li>
+<li><p>點選最右邊的欄位標題「<a href="http://codeforces.com/problemset?order=BY_SOLVED_DESC">Solved</a>」</p>
+</li>
+<li><p>進入「<a href="http://codeforces.com/problemset/problem/1/A">Theater Square</a>」</p>
+</li>
+</ol>
+<p> <a href="codeforces-quick-start/codeforces-problemset.png"><img src="codeforces-quick-start/codeforces-problemset.png" alt="problemset"></a></p>
+<pre><code> * 題目最上方的
+
+ time limit per test: 2 seconds
+ memory limit per test: 64 megabytes
+ input: standard input
+ output: standard output
+
+ * 分別表示
+
+ 時間限制：2 秒
+ 使用記憶體大小限制：64 MB
+ 輸入方式：標準輸入
+ 輸出方式：標準輸出
+
+ * 接著是題目：
+
+ Theatre Square in the capital city of Berland has a rectangular shape with the size n × m meters. On the occasion of the city&#39;s anniversary, a decision was taken to pave the Square with square granite flagstones. Each flagstone is of the size a × a.
+
+ What is the least number of flagstones needed to pave the Square? It&#39;s allowed to cover the surface larger than the Theatre Square, but the Square has to be covered.
+ It&#39;s not allowed to break the flagstones. The sides of flagstones should be parallel to the sides of the Square.
+
+ * 中文大意：
+
+ 有一塊&amp;nbsp;n × m (長 n，寬 m) 平方公尺矩形的地需要舖滿石磚，每塊石磚大小為正方形&amp;nbsp;a × a。在不切割石磚、不重疊石的前題下，必需舖滿此地。石磚可以超出需要被舖的地，但石磚的邊必需與此地的邊平行。
+
+ 請問最少需要多少石磚才能完成？
+
+ * Input (說明測試程式會餵給我們的程式的資料)：
+
+ The input contains three positive integer numbers in the first line: n,  m and a (1 ≤  n, m, a ≤ 10^9).
+
+ * 中文說明：
+
+ 輸入共一行，此行中包含三個整數：n, m, a，整數間以空白字元分隔。其中 1 ≤  n, m, a ≤ 10^9。
+
+ * Output (說明我們的程式應該輸出什麼)：
+
+ Write the needed number of flagstones.
+
+ * 中文說明：
+
+ 請輸出需要的石磚數。
+
+ * 範例：
+
+ Input:
+
+ 6 6 4
+
+ Output:
+
+ 4
+
+ 註：
+
+ 第一個 6 表示 n，第二個 6 表示 m，4 表示 a。亦即，在 6 × 6 大小的地上，舖以 4 × 4 大小的石磚，最少需要 4 塊石磚才能將其舖滿。
+
+ * 題解：
+
+ 假設需要 p × q 塊石磚，其必需符合此條件：a × p ≥ m 且 a × q ≥ n。
+
+ 將我們的解法用程式寫出來，並上傳到 Codeforces 即完成此題練習。
+</code></pre>
+</li>
+<li><p>上傳</p>
+<p> 在題目頁點選導覽列上的「SUBMIT」，確定 problem 是我們要解決的，選擇我們的程式的 language，接著貼上 source code 並按下「Submit」按鈕。</p>
+<p> 按下按鈕後，會跳到 Status 這一頁，若我們的答案成功在題目的要求下解決此問題，在「Verdict」這一欄會出現綠色的 「Accepted」。</p>
+<p> 如果我們在第 # 個測試中輸出的答案與測試器期望的答案不同，會出現「Wrong answer on test #」, 若是 source code 編譯錯誤，會出現「Compilation error」。若在第 # 次的測試中超過記憶體大小限制，會出現「Memory limit exceeded on test #」。若在第 # 次的測試中超過時限制，會出現「Time limit exceeded on test #」。此時我們可以按下左邊的流水號，以檢視出現錯誤的測項、錯誤訊息等。</p>
+</li>
+<li><p>參考其他人的答案</p>
+<p> 寫完一道題目後，最重要的是檢討自己的答案。檢討的方法有很多，其中之一是觀察別人的解法。由導覽列 → PROBLEMSET 中找出我們的題目，並按下右方解題人數，即可看到大家對此題所寫的解法。</p>
+<p> <a href="codeforces-quick-start/codeforces-solved.png"><img src="codeforces-quick-start/codeforces-solved.png" alt="solved"></a></p>
+<p> 在頁面最下方可以自訂排序規則，我們可以依照 Solution Size (source code 大小) 或 Execution Time (執行時間長短) 來排序，以方便我們找出想要參考的答案。右方可以選擇我們想要看到的語言。</p>
+<p> <a href="codeforces-quick-start/codeforces-solved-languages.png"><img src="codeforces-quick-start/codeforces-solved-languages.png" alt="languages"></a></p>
+<p> 讀者可參考此題的 <a href="http://codeforces.com/contest/1/submission/1647521">Python 版解法</a>、<a href="http://codeforces.com/contest/1/submission/2337277">Ruby 版解法</a>、<a href="http://codeforces.com/contest/1/submission/889578">PHP 版解法</a>、<a href="http://codeforces.com/contest/1/submission/1337822">C 版解法</a>、<a href="http://codeforces.com/contest/1/submission/759">C++ 版解法</a>、<a href="http://codeforces.com/contest/1/submission/2032793">C# 版解法</a>、<a href="http://codeforces.com/contest/1/submission/604386">Java 版解法</a>、<a href="http://codeforces.com/contest/1/submission/1903268">Scala 版解法</a>、<a href="http://codeforces.com/contest/1/submission/5482791">JavaScript 版解法</a>。</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>algorithm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>COSCUP 2016 閃電秀：理性‧勿戰</title>
+    <url>/2016/coscup-2016-%E9%96%83%E9%9B%BB%E7%A7%80%EF%BC%9A2-%E5%88%86%E9%90%98%E6%89%93%E8%87%89-mtk/</url>
+    <content><![CDATA[<p>把之前寫的這篇<a href="https://medium.com/rosonix/%E8%AE%93-linkit-smart-7688-%E7%9A%84-wi-fi-ap-%E8%88%87-station-%E5%90%8C%E6%99%82%E9%81%8B%E4%BD%9C-dc9e043142b7">文章</a>拿去 COSCUP 2016 報閃電秀，讓大家開心一下。Project repository 在<a href="https://github.com/changyuheng/linkit-smart-7688-wifi-multi-role">這裡</a>。</p>
+<p>這是錄影：</p>
+<span id="more"></span>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hf-rAFErNvI?ecver=1" frameborder="0" allowfullscreen></iframe>
+
+<p>逐字稿：</p>
+<p>WEBVTT</p>
+<p>NOTE Paragraph</p>
+<p>00:00:01.380 –&gt; 00:00:05.300<br>我都很好心，我等大家畫面出來我才說開始好不好</p>
+<p>00:00:09.270 –&gt; 00:00:12.530<br>大家好，本來的題目是「2 分鐘打臉 MTK」</p>
+<p>00:00:12.530 –&gt; 00:00:15.274<br>但是後來想想，因為我們公司是用 MTK 的 solution</p>
+<p>00:00:15.274 –&gt; 00:00:17.564<br>所以要是到時候 MTK 不 support 我們就不太好了</p>
+<p>00:00:17.564 –&gt; 00:00:20.034<br>所以把題目改成理性．勿戰</p>
+<p>00:00:20.994 –&gt; 00:00:23.967<br>我現在同時為一家台灣公司還有一家美國公司工作</p>
+<p>00:00:23.967 –&gt; 00:00:26.647<br>我叫做小亨利，同事都叫我 Henry Jr.</p>
+<p>00:00:26.647 –&gt; 00:00:29.899<br>我是軟體工程師，現在住在 LA</p>
+<p>00:00:30.279 –&gt; 00:00:31.279<br>那進入正題</p>
+<p>00:00:31.279 –&gt; 00:00:33.549<br>MTK 出了一款開發板，應該大家都聽過</p>
+<p>00:00:33.549 –&gt; 00:00:35.189<br>它叫做 7688</p>
+<p>00:00:35.249 –&gt; 00:00:37.559<br>它跑 Linux，內建 Wi-Fi，然後又便宜</p>
+<p>00:00:37.559 –&gt; 00:00:39.599<br>可以說是 IoT 玩家的首選</p>
+<p>00:00:39.599 –&gt; 00:00:42.919<br>它的 Wi-Fi 模式支援二種，分別是 station 跟 AP</p>
+<p>00:00:42.919 –&gt; 00:00:47.879<br>所謂 station 就是可以讓自己為成 Wi-Fi 的客戶端<br>去連另外一台 Wi-Fi 的 AP</p>
+<p>00:00:47.879 –&gt; 00:00:51.619<br>那所謂的 AP 就是讓自己成為基地台<br>讓別人可以連過來</p>
+<p>00:00:51.619 –&gt; 00:00:53.569<br>最大的分別是在於說</p>
+<p>00:00:53.569 –&gt; 00:00:58.779<br>成為客戶端的時候，你連到 Wi-Fi AP<br>可以再走網路線，就可以連到 ISP</p>
+<p>00:00:58.779 –&gt; 00:01:00.569<br>所以，就會有網路</p>
+<p>00:01:00.569 –&gt; 00:01:05.909<br>那另外一個部分呢，就是你自己成為基地台<br>但是因為 7688 沒有其他的方式再對外（連線）</p>
+<p>00:01:05.909 –&gt; 00:01:07.979<br>所以就沒有網路</p>
+<p>00:01:08.979 –&gt; 00:01:13.289<br>呃…好，那大家就會想說<br>那我可不可以二種模式同時開啟呢？</p>
+<p>00:01:13.289 –&gt; 00:01:14.799<br>好，那同時啟動呢</p>
+<p>00:01:14.799 –&gt; 00:01:18.519<br>呃，我們就可以譬如說連到別的 Wi-Fi AP 之後</p>
+<p>00:01:18.519 –&gt; 00:01:21.099<br>我們就可以再連到 ISP，所以就有網路</p>
+<p>00:01:21.099 –&gt; 00:01:23.099<br>然後再讓自己成為基地台</p>
+<p>00:01:23.099 –&gt; 00:01:24.589<br>那別人就可以再連過來</p>
+<p>00:01:24.589 –&gt; 00:01:28.969<br>如果說好我是開發者，用筆電<br>那我就可以再連到 7688 去做開發</p>
+<p>00:01:28.969 –&gt; 00:01:31.729<br>同時也可以讓其他的 Wi-Fi 裝置連過來</p>
+<p>00:01:31.729 –&gt; 00:01:36.413<br>各種 IoT 的玩具，像譬如說 sensor<br>溫度的 sensor、各種 sensor 這樣</p>
+<p>00:01:36.643 –&gt; 00:01:38.163<br>所以簡直太棒了</p>
+<p>00:01:38.163 –&gt; 00:01:40.283<br>不過它可以同時打開嗎？</p>
+<p>00:01:40.336 –&gt; 00:01:41.606<br>官方的說法是不行</p>
+<p>00:01:41.606 –&gt; 00:01:46.466<br>你要再買一支 USB 的 Wi-Fi dongle<br>但是…呃…然後才能擁有二種 Wi-Fi（模式）</p>
+<p>00:01:46.466 –&gt; 00:01:48.786<br>那這是廢話嘛！<br>你就多了一個裝置當然可以</p>
+<p>00:01:48.786 –&gt; 00:01:50.627<br>所以這是真的嗎？</p>
+<p>00:01:51.137 –&gt; 00:01:53.497<br>好險 7688 是一個 open source project</p>
+<p>00:01:53.497 –&gt; 00:01:57.627<br>那所以就 trace 之後發現<br>chip 本來就有支援，OS 有支援、driver 有支援</p>
+<p>00:01:57.627 –&gt; 00:02:00.437<br>只有 launch script 不支援</p>
+<p>00:02:01.684 –&gt; 00:02:03.076<br>好，於是，嗯…</p>
+<p>00:02:03.076 –&gt; 00:02:06.286<br>就用了「洪荒之力」打了 patch</p>
+<p>00:02:06.286 –&gt; 00:02:07.686<br>加了 2 行</p>
+<p>00:02:07.686 –&gt; 00:02:17.226<br>（群眾歡呼）</p>
+<p>00:02:17.716 –&gt; 00:02:19.686<br>呃…不用 2 分鐘，只要 2 行</p>
+<p>00:02:19.686 –&gt; 00:02:22.067<br>同時啟動二種 Wi-Fi 模式就完成了</p>
+<p>00:02:22.067 –&gt; 00:02:23.237<br>謝謝大家！</p>
+]]></content>
+      <tags>
+        <tag>misc</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Cross Compiling Python 2.7.10 and 3.4.3 for MIPSel OpenWrt via uClibc with SSL and SQLite support</title>
+    <url>/2015/cross-compiling-python-3-4-3-for-mipsel/</url>
+    <content><![CDATA[<p>The notes that were written after succeeding to cross compile Python 2.7.10 and 3.4.3 for MIPSel OpenWrt via uClibc.</p>
+<span id="more"></span>
+<p>I’m not gonna write a very detailed guide. I post my build script on the <a href="https://github.com/changyuheng/cpython-for-openwrt-mips/blob/3.4.3/build.sh">GitHub</a>, please leave a comment if you have any question.</p>
+<h2 id="Build-log-3-4-3"><a href="#Build-log-3-4-3" class="headerlink" title="Build log (3.4.3)"></a>Build log (3.4.3)</h2><script src="//gist.github.com/2e5b13276035fc1aa79a.js?file=build.log"></script>
+
+<h2 id="Run-test-cases-on-the-device-3-4-3"><a href="#Run-test-cases-on-the-device-3-4-3" class="headerlink" title="Run test cases on the device (3.4.3)"></a>Run test cases on the device (3.4.3)</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">bin/python3 lib/python3.4/<span class="built_in">test</span>/test___all__.py</span><br></pre></td></tr></table></figure>
+
+<h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><ul>
+<li>2.7.10 is 100% passed</li>
+<li>3.4.3’s xml.parsers.expat module will cause segmentation fault.</li>
+</ul>
+<h2 id="Refs"><a href="#Refs" class="headerlink" title="Refs"></a>Refs</h2><ol>
+<li><a href="http://randomsplat.com/id5-cross-compiling-python-for-embedded-linux.html">Cross Compiling Python for Embedded Linux</a></li>
+</ol>
+<h2 id="Thanks-to"><a href="#Thanks-to" class="headerlink" title="Thanks to"></a>Thanks to</h2><p><a href="https://tw.linkedin.com/pub/cheng-wig/90/1a1/896">Cheng Wig</a>, he showed me the positive attitude at work.</p>
+]]></content>
+      <tags>
+        <tag>programming</tag>
+        <tag>devops</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Deployment of NCKU CSIE Gitit Theme</title>
+    <url>/2010/deployment-of-ncku-csie-gitit-theme/</url>
+    <content><![CDATA[<p><a href="http://gitit.net/">Gitit</a> 是一套以 Git 作為 base 的 wiki 系統。這套 wiki 的優點可以在<a href="http://walkingice.blogspot.tw/2011/11/gitit-git-based-wiki.html">只放拖鞋的鞋櫃</a>看到。在網路上的高手 <a href="http://macropodus.github.io/gitit_mix_vimwiki.html">Macropodus</a> 研究出如何和 Vimwiki 結合後，又更強化了他的優勢。</p>
+<p>不過 Gitit 預設的模版很沒有設計感，尤其是那個 logo 讓人看了很不舒服。所幸在 <a href="https://groups.google.com/forum/#!topic/gitit-discuss/g6rZWIOmiu8">Google Group</a> 發現了一套由成大資工所製作的好看佈景。以下將介紹如何安裝這套佈景：</p>
+<span id="more"></span>
+
+<ol>
+<li><p>下載佈景<br>打包好的佈景可以在 <a href="https://github.com/CrBoy/csiewiki">GitHub</a> 上找到</p>
+</li>
+<li><p>安裝佈景<br>將包裏解開後，取代 Gitit 原來的 static 和 templates 資料夾</p>
+</li>
+</ol>
+<p>到此為止都和這套佈景的官方安裝教學一樣。如果是採用發行版如 Ubuntu 所提供的 Gitit package，則已經完成。若是用 cabal 安裝, 則必須再安裝相依的套件，以 Ubuntu 為例：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt-get install libghc-filestore-data libc6 libffi6 libgmp10 libpcre3 zlib1g libjs-jquery libjs-jquery-ui</span><br></pre></td></tr></table></figure>
+
+<p>完成的樣子可以參考<a href="http://wiki.csie.ncku.edu.tw/">成大資工 Wiki</a>。</p>
+]]></content>
+      <tags>
+        <tag>software</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>My Longest Streak on GitHub</title>
+    <url>/2014/github-streak/</url>
+    <content><![CDATA[<p>一時興致起來，實驗性地洗了一下 GitHub 的 longest streak。</p>
+<p><img src="github-streak/github-longest-streak.png"></p>
+]]></content>
+      <tags>
+        <tag>programming</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>fz - 模糊搜尋互動式 cd 自動補完套件</title>
+    <url>/2017/fz-fuzzy-search-in-tab-completions-of-z/</url>
+    <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/fz/master/fz-demo.gif"></p>
+<span id="more"></span>
+
+<p>在開始介紹之前，推薦大家先看看下面這篇文章：</p>
+<p><a href="http://www.cnblogs.com/bamanzi/p/cli-narrowing-tools.html">命令行上的narrowing（随着输入逐步减少备选项）工具</a></p>
+<p>不知道大家會不會常常在 cd 路徑的時候，只大概記得在哪裡或是記得在哪裡但是目錄很深懶得打完全部的路徑。</p>
+<p>這個時候 <a href="%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%8A%E7%9A%84narrowing%EF%BC%88%E9%9A%8F%E7%9D%80%E8%BE%93%E5%85%A5%E9%80%90%E6%AD%A5%E5%87%8F%E5%B0%91%E5%A4%87%E9%80%89%E9%A1%B9%EF%BC%89%E5%B7%A5%E5%85%B7">fzf</a> 就很好用：</p>
+<p>只要執行 <code>cd **&lt;TAB&gt;</code> 即可叫出互動式模糊搜尋介面，找到目標之後按二次 <code>&lt;ENTER&gt;</code> 就可以進入該目錄。</p>
+<p>但是它有一個缺點，就是雖然它有快取也已經很快，而且還讓你用 <a href="https://github.com/ggreer/the_silver_searcher">ag</a>  或 <a href="https://github.com/monochromegane/the_platinum_searcher">pt</a> 把 <code>find</code> 換掉來讓它依 CPU thread 數平行遍歷目錄變得更快；當搜尋的範圍中有 AOSP (Android 的 source code) 這種大咖時，還是慢；就算不慢，資訊量也太大了。</p>
+<p>於是乎，有人就想，如果能替曾經去過的目錄們建 MRU 表，以後切目錄時，如果確定有去過，從這張表搜尋就好，就會很快資訊量也不會太大。</p>
+<p>這個功能有好幾個人做，目前最有名的是 <a href="https://github.com/rupa/z">z</a>。</p>
+<p>但是 z 雖然也有支援 tab completion，可是它只支援 substring filter，而且不是互動的。</p>
+<p>z 在超強的 <a href="https://github.com/fish-shell/fish-shell">fish</a> 下使用倒是還好，因為 fish 的選單有互動搜尋介面，不過這是當然的，因為它就是主打這個功能才會叫 friendly interactive shell 啊！</p>
+<p>可是 fish 沒事幹嘛改 syntax 呢……</p>
+<p>還有 process substitution ㄌㄟ？</p>
+<p>所以大多數人還是繼續用 Bash 或 zsh。而且 zsh 有一個知名的 framework 叫 oh-my-zsh，把它裝下去之後就能讓你的 zsh 跟 fish 有 87% 那麼像啊！</p>
+<p>但是！就是這個但是讓我花了點時間！它的 tab completion 還是不能互動搜尋啊！<br>我知道有人想說 <a href="https://github.com/zsh-users/zaw">zaw</a> 對不對？</p>
+<p>可是 zaw 的選單不是 <strong>TAB</strong> completion 啊！</p>
+<p>目前為止，有 z 有 fzf，材料都齊了，就是沒人把它們兜在一起。於是我犧牲了一點寶貴的週末把它們逗起來，示意圖就是本文開頭那張 gif。</p>
+<p>如果你覺得不錯，這個工具解決了你的問題，可以參考這個<a href="https://github.com/changyuheng/fz/blob/master/README-zh.md">安裝說明</a>安裝。</p>
+]]></content>
+      <tags>
+        <tag>programming</tag>
+        <tag>software</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Markdown Test</title>
+    <url>/2009/markdown-test/</url>
+    <content><![CDATA[<p>Markdown demo/test.</p>
+<span id="more"></span>
+
+<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.</p>
+</blockquote>
+
+<blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p>
+<footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote>
+
+<blockquote><p>NEW: DevDocs now comes with syntax highlighting. <a href="http://devdocs.io/">http://devdocs.io</a></p>
+<footer><strong>@DevDocs</strong><cite><a href="https://twitter.com/devdocs/status/356095192085962752">twitter.com/devdocs/status/356095192085962752</a></cite></footer></blockquote>
+
+<blockquote><p>Every interaction is both precious and an opportunity to delight.</p>
+<footer><strong>Seth Godin</strong><cite><a href="http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html">Welcome to Island Marketing</a></cite></footer></blockquote>
+
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">reverse_char_array</span><span class="params">(<span class="keyword">char</span> * first, <span class="keyword">char</span> * last)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">while</span> (first != last &amp;&amp; first != --last) &#123;</span><br><span class="line">        *first ^= *last;</span><br><span class="line">        *last ^= *first;</span><br><span class="line">        *first++ ^= *last;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">reverse_string</span><span class="params">(<span class="keyword">char</span> * sentence)</span> </span>&#123;</span><br><span class="line">    reverse_char_array(sentence, &amp;sentence[<span class="built_in">strlen</span>(sentence)]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">reverse_word</span><span class="params">(<span class="keyword">char</span> * sentence)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">char</span> * end_s = &amp;sentence[<span class="built_in">strlen</span>(sentence)], * end_w;</span><br><span class="line">    <span class="keyword">while</span> (end_w != end_s) &#123;</span><br><span class="line">        <span class="keyword">if</span> (!(end_w = <span class="built_in">strchr</span>(sentence, <span class="string">&#x27; &#x27;</span>))) end_w = end_s;</span><br><span class="line">        reverse_char_array(sentence, end_w);</span><br><span class="line">        sentence = end_w + <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> ** argv)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">char</span> sentence[] = <span class="string">&quot;how are you&quot;</span>;</span><br><span class="line">    reverse_string(sentence);</span><br><span class="line">    reverse_word(sentence);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%s\n&quot;</span>, sentence);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="keyword">import</span> Queue</span><br><span class="line"><span class="keyword">import</span> argparse</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"><span class="keyword">import</span> subprocess</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">import</span> threading</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Tester</span>(<span class="params">threading.Thread</span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self, testee, answer_queue, counter_queue</span>):</span></span><br><span class="line">        threading.Thread.__init__(self)</span><br><span class="line">        self.testee = testee</span><br><span class="line">        self.answer_queue = answer_queue</span><br><span class="line">        self.counter_queue = counter_queue</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">run</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">            ans = self.answer_queue.get()</span><br><span class="line">            counter = <span class="number">1</span></span><br><span class="line">            p = subprocess.Popen(self.testee,</span><br><span class="line">                    stdin=subprocess.PIPE, stdout=subprocess.PIPE)</span><br><span class="line">            <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">                guess = p.stdout.readline().strip()</span><br><span class="line">                bulls = <span class="built_in">sum</span>(<span class="number">1</span> <span class="keyword">for</span> i, j <span class="keyword">in</span> <span class="built_in">zip</span>(ans, guess) <span class="keyword">if</span> i == j)</span><br><span class="line">                cows = <span class="built_in">sum</span>(<span class="number">1</span> <span class="keyword">for</span> i, j <span class="keyword">in</span> <span class="built_in">zip</span>(ans, guess)<span class="keyword">if</span> i != j <span class="keyword">and</span> j <span class="keyword">in</span> ans)</span><br><span class="line">                score = <span class="built_in">str</span>(bulls) + <span class="string">&#x27;a&#x27;</span> + <span class="built_in">str</span>(cows) + <span class="string">&#x27;b&#x27;</span> + <span class="string">&#x27;\n&#x27;</span></span><br><span class="line">                p.stdin.write(score)</span><br><span class="line">                <span class="keyword">if</span> bulls == <span class="number">4</span>:</span><br><span class="line">                    self.answer_queue.task_done()</span><br><span class="line">                    self.counter_queue.put(counter)</span><br><span class="line">                    counter = <span class="number">1</span></span><br><span class="line">                    <span class="keyword">break</span></span><br><span class="line">                counter += <span class="number">1</span></span><br><span class="line">            <span class="keyword">if</span> self.answer_queue.empty():</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_args</span>():</span></span><br><span class="line">    args_parser = argparse.ArgumentParser(</span><br><span class="line">            formatter_class=argparse.RawDescriptionHelpFormatter,</span><br><span class="line">            description=<span class="string">&#x27;Profile a bulls-and-cows guesser.&#x27;</span>,</span><br><span class="line">            epilog=<span class="string">&#x27;EXAMPLE:\n&#x27;</span> \</span><br><span class="line">                    <span class="string">&quot;  &#123;&#125; -j 8 &#x27;./bulls-and-cows-guesser.py&#x27;&quot;</span>.<span class="built_in">format</span>(os.path.basename(__file__))</span><br><span class="line">                    )</span><br><span class="line">    args_parser.add_argument(<span class="string">&#x27;testee&#x27;</span> , metavar=<span class="string">&#x27;TESTEE&#x27;</span>,</span><br><span class="line">            <span class="built_in">help</span>=<span class="string">&#x27;the guesser you want to evaluate&#x27;</span>)</span><br><span class="line">    args_parser.add_argument(<span class="string">&#x27;-j&#x27;</span>, <span class="string">&#x27;--jobs&#x27;</span>, metavar=<span class="string">&#x27;N&#x27;</span>, <span class="built_in">type</span>=<span class="built_in">int</span>, default=<span class="number">1</span>,</span><br><span class="line">            <span class="built_in">help</span>=<span class="string">&#x27;allow N jobs at once&#x27;</span>)</span><br><span class="line">    args_parser.add_argument(<span class="string">&#x27;--no-shuffle&#x27;</span>, action=<span class="string">&#x27;store_true&#x27;</span>,</span><br><span class="line">            <span class="built_in">help</span>=<span class="string">&#x27;do not shuffle the test casees&#x27;</span>)</span><br><span class="line">    <span class="keyword">return</span> args_parser.parse_args()</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_all_answers</span>(<span class="params">shuffle</span>):</span></span><br><span class="line">    answer_candidates = [<span class="built_in">str</span>(i) + <span class="built_in">str</span>(j) + <span class="built_in">str</span>(k) + <span class="built_in">str</span>(l) \</span><br><span class="line">                <span class="keyword">for</span> i <span class="keyword">in</span> xrange(<span class="number">0</span>, <span class="number">10</span>) <span class="keyword">for</span> j <span class="keyword">in</span> xrange(<span class="number">0</span>, <span class="number">10</span>) \</span><br><span class="line">                <span class="keyword">for</span> k <span class="keyword">in</span> xrange(<span class="number">0</span>, <span class="number">10</span>) <span class="keyword">for</span> l <span class="keyword">in</span> xrange(<span class="number">0</span>, <span class="number">10</span>) \</span><br><span class="line">                <span class="keyword">if</span> <span class="built_in">len</span>(<span class="built_in">set</span>(<span class="built_in">str</span>(i) + <span class="built_in">str</span>(j) + <span class="built_in">str</span>(k) + <span class="built_in">str</span>(l))) == <span class="number">4</span>]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> shuffle:</span><br><span class="line">        random.shuffle(answer_candidates)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> answer_candidates</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span>():</span></span><br><span class="line">    args = get_args()</span><br><span class="line">    answer_candidates = get_all_answers(<span class="keyword">not</span> args.no_shuffle)</span><br><span class="line"></span><br><span class="line">    answer_queue = Queue.Queue()</span><br><span class="line">    counter_queue = Queue.Queue()</span><br><span class="line">    <span class="keyword">for</span> ans <span class="keyword">in</span> answer_candidates:</span><br><span class="line">        answer_queue.put(ans)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> xrange(args.jobs):</span><br><span class="line">        t = Tester(args.testee, answer_queue, counter_queue)</span><br><span class="line">        t.daemon = <span class="literal">True</span></span><br><span class="line">        t.start()</span><br><span class="line"></span><br><span class="line">    answer_queue.join()</span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        <span class="keyword">if</span> counter_queue.qsize() == <span class="built_in">len</span>(answer_candidates):</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line">    counter = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> xrange(<span class="built_in">len</span>(answer_candidates)):</span><br><span class="line">        counter.append(counter_queue.get())</span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span> <span class="string">&#x27;avg: &#x27;</span>, <span class="built_in">float</span>(<span class="built_in">sum</span>(counter)) / <span class="built_in">len</span>(counter)</span><br><span class="line">    d = &#123;&#125;</span><br><span class="line">    <span class="keyword">for</span> v <span class="keyword">in</span> counter:</span><br><span class="line">        <span class="keyword">if</span> v <span class="keyword">not</span> <span class="keyword">in</span> d:</span><br><span class="line">            d[v] = <span class="number">1</span></span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">        d[v] += <span class="number">1</span></span><br><span class="line">    <span class="built_in">print</span> <span class="built_in">str</span>(d)[<span class="number">1</span>:<span class="built_in">len</span>(<span class="built_in">str</span>(d))-<span class="number">1</span>]</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    main()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><figcaption><span>.compact</span><a href="http://underscorejs.org/#compact">Underscore.js</a></figcaption><table><tr><td class="code"><pre><span class="line">.compact([0, 1, false, 2, ‘’, 3]);</span><br><span class="line">=&gt; [1, 2, 3]</span><br></pre></td></tr></table></figure>
+
+<script src="//gist.github.com/9265765.js"></script>
+
+<p>$a = b + c$<br>$A = B + C$</p>
+<p>$$\frac{\partial u}{\partial t}<br>= h^2 \left( \frac{\partial^2 u}{\partial x^2} +<br>\frac{\partial^2 u}{\partial y^2} +<br>\frac{\partial^2 u}{\partial z^2}\right)$$</p>
+<table>
+<thead>
+<tr>
+<th align="left">Left-Aligned</th>
+<th align="center">Center Aligned</th>
+<th align="right">Right Aligned</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">col 3 is</td>
+<td align="center">some wordy text</td>
+<td align="right">$1600</td>
+</tr>
+<tr>
+<td align="left">col 2 is</td>
+<td align="center">centered</td>
+<td align="right">$12</td>
+</tr>
+<tr>
+<td align="left">zebra stripes</td>
+<td align="center">are neat</td>
+<td align="right">$1</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="left">Left-Aligned</th>
+<th align="left">Center Aligned</th>
+<th align="left">Right Aligned</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">col 3 is</td>
+<td align="left">some wordy text</td>
+<td align="left">$1600</td>
+</tr>
+<tr>
+<td align="left">col 2 is</td>
+<td align="left">centered</td>
+<td align="left">$12</td>
+</tr>
+<tr>
+<td align="left">zebra stripes</td>
+<td align="left">are neat</td>
+<td align="left">$1</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="center">Left-Aligned</th>
+<th align="center">Center Aligned</th>
+<th align="center">Right Aligned</th>
+<th align="center">Left-Aligned</th>
+<th align="center">Center Aligned</th>
+<th align="center">Right Aligned</th>
+<th align="center">Left-Aligned</th>
+<th align="center">Center Aligned</th>
+<th align="center">Right Aligned</th>
+<th align="center">Left-Aligned</th>
+<th align="center">Center Aligned</th>
+<th align="center">Right Aligned</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">col 3 is</td>
+<td align="center">some wordy text</td>
+<td align="center">$1600</td>
+<td align="center">col 3 is</td>
+<td align="center">some wordy text</td>
+<td align="center">$1600</td>
+<td align="center">col 3 is</td>
+<td align="center">some wordy text</td>
+<td align="center">$1600</td>
+<td align="center">col 3 is</td>
+<td align="center">some wordy text</td>
+<td align="center">$1600</td>
+</tr>
+<tr>
+<td align="center">col 2 is</td>
+<td align="center">centered</td>
+<td align="center">$12</td>
+<td align="center">col 2 is</td>
+<td align="center">centered</td>
+<td align="center">$12</td>
+<td align="center">col 2 is</td>
+<td align="center">centered</td>
+<td align="center">$12</td>
+<td align="center">col 2 is</td>
+<td align="center">centered</td>
+<td align="center">$12</td>
+</tr>
+<tr>
+<td align="center">zebra stripes</td>
+<td align="center">are neat</td>
+<td align="center">$1</td>
+<td align="center">zebra stripes</td>
+<td align="center">are neat</td>
+<td align="center">$1</td>
+<td align="center">zebra stripes</td>
+<td align="center">are neat</td>
+<td align="center">$1</td>
+<td align="center">zebra stripes</td>
+<td align="center">are neat</td>
+<td align="center">$1</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="right">Left-Aligned</th>
+<th align="right">Center Aligned</th>
+<th align="right">Right Aligned</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">col 3 is</td>
+<td align="right">some wordy text</td>
+<td align="right">$1600</td>
+</tr>
+<tr>
+<td align="right">col 2 is</td>
+<td align="right">centered</td>
+<td align="right">$12</td>
+</tr>
+<tr>
+<td align="right">zebra stripes</td>
+<td align="right">are neat</td>
+<td align="right">$1</td>
+</tr>
+</tbody></table>
+<p>perform_complicated_task<br>do_this_and_do_that_and_another_thing</p>
+<p><a href="http://example.com/">http://example.com</a></p>
+<p><del>deleted.</del></p>
+
+content<br />
+1. a<br />
+1. b<br />
+    1. A<br />
+    1. B<br />
+    * C<br />
+ABCDEFG<br />
+1234567<br />
+
+
+<p><img src="markdown-test/%E8%B6%85%E7%B4%9A%E8%B3%BD%E4%BA%9E%E7%BE%8A.jpg"><br><img src="markdown-test/github-commit-amount-cheat.png"></p>
+<img src="/2009/markdown-test/%E8%B6%85%E7%B4%9A%E8%B3%BD%E4%BA%9E%E7%BE%8A.jpg" class="" title="[小六畫的]">
+<img src="/2009/markdown-test/github-commit-amount-cheat.png" class="">
+
+<iframe scrolling="no" width="100%" height="300" src="https://jsfiddle.net/69z2wepo/embedded/js,resources,html,css,result/light" frameborder="0" loading="lazy" allowfullscreen></iframe>
+]]></content>
+      <tags>
+        <tag>misc</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Installing Fcitx and Boshiamy on Ubuntu GNOME 14.04</title>
+    <url>/2014/installing-fcitx-and-boshiamy-on-ubuntu-gnome-1404/</url>
+    <content><![CDATA[<p>Fcitx 是一個自訂性很高的輸入法框架，安裝方式如下：</p>
+<span id="more"></span>
+
+<ul>
+<li><p>Fcitx 框架</p>
+  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install fcitx</span><br></pre></td></tr></table></figure></li>
+<li><p>嘸蝦米輸入法表格</p>
+  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install fcitx-table-boshiamy</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>設定：</p>
+<ul>
+<li><p><code>Activities</code> → <code>Input Method</code> 選擇 fcitx。重新登入。</p>
+</li>
+<li><p><code>Activities</code> → <code>Fcitx Configuration</code> → <code>Input Method</code> → <code>Boshiamy</code> → 雙擊 (如果沒看到 Boshiamy 就自行新增這個表格)<br>  <code>Other</code> → <code>Table</code> → <code>table/boshiamy.conf</code> → 設定<br>  <code>Adjust Order</code>：<code>AdjustNo</code><br>  <code>Auto Send Candidate Word</code>：取消<br>  <code>Use Maching Key</code>：取消<br>  <code>Choose</code>：0123456789<br>  <code>Ignore Punctuation</code>：打勾</p>
+</li>
+</ul>
+<p>參考資料：</p>
+<ul>
+<li><a href="http://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=246870">Ubuntu與嘸蝦米: 在fcitx下，(boshiamy)嘸蝦米的使用最為順暢、穩定!（新酷音、m17n、倉頡、輕鬆法亦適用）</a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>software</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Gnome 3.6 與 KDE 4.10 於工作場所使用一年心得</title>
+    <url>/2013/gnome-36-yu-kde-410-yu-gong-zuo-chang-suo-shi-yong-nian-xin-de/</url>
+    <content><![CDATA[<p>在工作上使用 <a href="http://www.kde.org/">KDE</a> 一年有餘，從 4.8 用到 4.10。最近同時也在使用 <a href="http://www.gnome.org/">Gnome</a> 3.6，網路上的比較文章不少，再增加一篇，希望我能提供較新版本的使用經驗與不同的看法。</p>
+<span id="more"></span>
+
+<p>KDE 和 Gnome 的地位是一樣的，他們同樣是<a href="http://zh.wikipedia.org/zh-tw/%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83">桌面環境</a>。桌面環境簡言之即是一般使用者面對電腦的軟體介面，他包含了圖形、操作方法（如視窗的概念）、硬體管理、提供應用程式表現的方式……等，族繁不及備載。</p>
+<p>KDE 與 Gnome 所使用的圖形引擎的不同，是一個很重要的差別。但若著重於桌面環境對工作效率的影響，這就不見得是一件重要的事。</p>
+<p>概括來說，KDE 和 Gnome 都提供了漂亮且成熟的界面，兩者都能提供一般操作之所需。</p>
+<p>以下逐項比較我所重視的部分：</p>
+<ol>
+<li><p>穩定度：<br>KDE 4.8 到 4.10 之間，穩定性都非常棒，似乎沒有 UI crash 的印象。Gnome 3.6 的穩定性比起稍早之前的版本，已經好很多，但偶爾還是會發生一些怪異的情況，例如視窗鍵按了沒反應。過去一年的經驗中，KDE 的穩定度幾乎是 Windows 7 等級的，而 Gnome 則還有待加強。</p>
+</li>
+<li><p>功能豐富度：<br>Gnome 和 KDE 都提供了許多功能，不過 KDE 所提供的功能、自定性更加多元和完整，也優化了更多細節。</p>
+</li>
+<li><p>美觀：<br>同樣注重外觀設計，我比較喜歡 Gnome 的 UI，不過 KDE 的特效比較多。</p>
+</li>
+<li><p>效能：<br>沒有仔細比較過，至少編譯 AOSP 程式碼的瓶頸不在桌面環境。不過在做視窗拖曳時，KDE 的視窗跟隨游標明顯比 Gnome 來得緊。</p>
+</li>
+<li><p>資源：<br>網路上 Gnome 或 GTK 的使用教學或問答比較多。但以 GUI 程式開發來說 Qt 比較被推薦。</p>
+</li>
+<li><p>與應用軟體的整合度：<br>都很優異，不過單以 file manager 來說，KDE 的 Dolphin 做得比 Gnome 的 Nautilus 更多。<br>題外話，個人覺得 Okular 比 Document Viewer 好，因為他支援畫記與註解，適合用來讀電子書；不過 Document Viewer 的搜尋速度快很多。Konsole 獨有的 copy on select 我也很喜歡。</p>
+</li>
+<li><p>檔案總管：<br>承上，Dolphin 比 Nautilus 來得強大許多，尤其是整合 terminal 的功能，絕對稱得上是 killer feature。</p>
+</li>
+<li><p>輸入法：<br>我使用 Gcin 或 Hime 框架搭配嘸蝦米都沒遇到問題。</p>
+</li>
+</ol>
+<p>目前的情形下我推薦初次使用 Linux 的朋友 KDE，因為他功能較多，穩定性也較高，不太需要再自行安裝其他工具來補強，或是拿出終端機敲打命令。</p>
+<p>而對於成熟的 Linux 使用者，在軟體的穩定性都達到堪用的情形下，我認為選擇的重點該放在「設計哲學」。活躍的開發團隊要提供更穩定的環境是遲早的事，Gnome 或 KDE 所欠缺的功能也大都有第三方的程式可以完成。透過什麼引擎來呈現，對於沒有特殊信仰的非開發者來說，根本沒有差別。但設計哲學直接影響到使用習慣以及工作效率和可能的發展方向。譬如說輕量化的桌面環境首推 LXDE，而 Gnome 和 KDE 同樣強調使用經驗、美觀和完整度，同質性非常高，對於操作方式的設計哲學即是最重要的差異。放下微小 bug 所帶來的不悅，以及引擎、授權等所產生的先入為主，直接體驗使用經驗，才能公平地選擇。</p>
+<p>我比較喜歡 Gnome 3，因為操作比較簡單。而且我很享受按下 Gnome 3 提供的各類大顆按鈕的明確反差的感覺。</p>
+<p>相關資料：</p>
+<ul>
+<li><a href="http://www.datamation.com/open-source/gnome-or-kde-the-old-question-is-new-today-1.html">GNOME or KDE? The Old Question Is New Today</a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>software</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Implementations of DFS and BFS in Python</title>
+    <url>/2014/implementations-of-dfs-and-bfs-in-python/</url>
+    <content><![CDATA[<p><a href="http://zh.wikipedia.org/zh-tw/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">DFS</a> 和 <a href="http://zh.wikipedia.org/zh-tw/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">BFS</a> 在資料結構裡有教，是很基礎的演算法。</p>
+<span id="more"></span>
+<p>在 <a href="http://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/">Edd Mann 的網誌</a>上看到 Python 的實作，由其中學到 <code>yield from</code> 的用法。下面利用 <code>yield from</code> 的特性，將該網誌中提到的實作改寫成 generator 的型式。同步放在 Gist 上：<a href="https://gist.github.com/changyuheng/08ffb779d83679393926">DFS</a>、<a href="https://gist.github.com/changyuheng/97d320206af9a0018d7d">BFS</a>。</p>
+<p><strong>DFS</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">dfs</span>(<span class="params">graph, start, visited=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> visited <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        visited = <span class="built_in">set</span>()</span><br><span class="line">    <span class="keyword">if</span> start <span class="keyword">in</span> visited:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    <span class="keyword">yield</span> start</span><br><span class="line">    visited.add(start)</span><br><span class="line">    <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - visited:</span><br><span class="line">        <span class="keyword">yield</span> <span class="keyword">from</span> dfs(graph, vertex, visited=visited)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">dfs_paths</span>(<span class="params">graph, start, goal, path=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> path <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        path = [start]</span><br><span class="line">    <span class="keyword">if</span> start == goal:</span><br><span class="line">        <span class="keyword">yield</span> path</span><br><span class="line">    <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(path):</span><br><span class="line">        <span class="keyword">yield</span> <span class="keyword">from</span> dfs_paths(graph, vertex, goal, path=path + [vertex])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">graph = &#123;</span><br><span class="line">    <span class="string">&#x27;A&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;B&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;D&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;C&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;D&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;E&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;F&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;C&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> dfs(graph, <span class="string">&#x27;A&#x27;</span>)]))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([path <span class="keyword">for</span> path <span class="keyword">in</span> dfs_paths(graph, <span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>)]))</span><br></pre></td></tr></table></figure>
+
+<p><strong>BFS</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bfs</span>(<span class="params">graph, queue, visited=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> visited <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        visited = <span class="built_in">set</span>()</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> queue:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    start = queue.pop(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">yield</span> start</span><br><span class="line">    visited.add(start)</span><br><span class="line">    queue += [vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(queue) - visited]</span><br><span class="line">    <span class="keyword">yield</span> <span class="keyword">from</span> bfs(graph, queue, visited=visited)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bfs_paths</span>(<span class="params">graph, queue, goal</span>):</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> queue:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    (start, path) = queue.pop(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">if</span> start == goal:</span><br><span class="line">        <span class="keyword">yield</span> path</span><br><span class="line">    queue += [(vertex, path + [vertex]) <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(path)]</span><br><span class="line">    <span class="keyword">yield</span> <span class="keyword">from</span> bfs_paths(graph, queue, goal)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">graph = &#123;</span><br><span class="line">    <span class="string">&#x27;A&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;B&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;D&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;C&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;D&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;E&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;F&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;C&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> bfs(graph, [<span class="string">&#x27;A&#x27;</span>])]))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([path <span class="keyword">for</span> path <span class="keyword">in</span> bfs_paths(graph, [(<span class="string">&#x27;A&#x27;</span>, [<span class="string">&#x27;A&#x27;</span>])], <span class="string">&#x27;F&#x27;</span>)]))</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>algorithm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>My Ubuntu GNOME Tweaks</title>
+    <url>/2014/my-ubuntu-gnome-tweaks/</url>
+    <content><![CDATA[<p>以 Ubuntu GNOME 14.04 LTS 英文語系為基礎。</p>
+<span id="more"></span>
+
+<h2 id="安裝軟體"><a href="#安裝軟體" class="headerlink" title="安裝軟體"></a>安裝軟體</h2><ul>
+<li><a href="#7z">7z</a></li>
+<li><a href="#clipit">ClipIt</a></li>
+<li><a href="#fcitx">Fcitx</a></li>
+<li><a href="#gnome-gmail">Gnome Gmail</a></li>
+<li><a href="#java8">Java 8</a></li>
+<li><a href="#ubuntu-restricted-extras">ubuntu-restricted-extras</a></li>
+<li><a href="#vim">Vim</a></li>
+<li><a href="#vlc">VLC</a></li>
+<li><a href="#wen-quan-yi-fonts">文泉驛中文字型</a></li>
+<li><a href="#boshiamy">嘸蝦米輸入法</a></li>
+</ul>
+<h2 id="Firefox-附加元件"><a href="#Firefox-附加元件" class="headerlink" title="Firefox 附加元件"></a>Firefox 附加元件</h2><ul>
+<li><a href="#gmail-notifier">Gmail Notifier</a></li>
+<li><a href="#gnotifier">GNotifier</a></li>
+</ul>
+<h2 id="設定"><a href="#設定" class="headerlink" title="設定"></a>設定</h2><ul>
+<li><a href="#apt">APT</a></li>
+<li><a href="#gnome-tweak-tool">Gnome Tweak Tool</a></li>
+<li><a href="#im-config">Input Method Configuration</a></li>
+<li><a href="#online-accounts">Online Accounts</a></li>
+</ul>
+<h3 id="7z"><a href="#7z" class="headerlink" title="7z"></a><a name="7z"></a>7z</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install p7zip-full</span><br></pre></td></tr></table></figure>
+
+<h3 id="ClipIt"><a href="#ClipIt" class="headerlink" title="ClipIt"></a><a name="clipit"></a>ClipIt</h3><p>剪貼簿管理程序，安裝的主要目的是要他同步剪貼簿的功能。因為 X11 的剪貼簿在「貼上」時，若來源程序已暫停或結束，會因無法讀取來源而無法貼上。可參考：<a href="http://www.jwz.org/doc/x-cut-and-paste.html">X Selections, Cut Buffers, and Kill Rings.</a></p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install clipit</span><br></pre></td></tr></table></figure>
+
+<h3 id="Fcitx"><a href="#Fcitx" class="headerlink" title="Fcitx"></a><a name="fcitx"></a>Fcitx</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install fcitx</span><br></pre></td></tr></table></figure>
+
+<h3 id="Gnome-Gmail"><a href="#Gnome-Gmail" class="headerlink" title="Gnome Gmail"></a><a name="gnome-gmail"></a>Gnome Gmail</h3><p>讓預設郵件客戶端可被設定為 Gmail。</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install gnome-gmail</span><br></pre></td></tr></table></figure>
+
+<h3 id="Java-8"><a href="#Java-8" class="headerlink" title="Java 8"></a><a name="java8"></a>Java 8</h3><p><a href="http://www.webupd8.org/2012/09/install-oracle-java-8-in-ubuntu-via-ppa.html">Install Oracle Java 8 In Ubuntu Via PPA Repository</a></p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo add-apt-repository ppa:webupd8team/java</span><br><span class="line">sudo apt update</span><br><span class="line">sudo apt install oracle-java8-installer</span><br></pre></td></tr></table></figure>
+
+<h3 id="ubuntu-restricted-extras"><a href="#ubuntu-restricted-extras" class="headerlink" title="ubuntu-restricted-extras"></a><a name="ubuntu-restricted-extras"></a>ubuntu-restricted-extras</h3><p>RAR、Flash Player 等非開源的程式之集合。</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install ubuntu-restricted-extras</span><br></pre></td></tr></table></figure>
+
+<h3 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a><a name="vim"></a>Vim</h3><p>Vim with GNOME specific support.</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install vim-gnome</span><br></pre></td></tr></table></figure>
+
+<h3 id="VLC"><a href="#VLC" class="headerlink" title="VLC"></a><a name="vlc"></a>VLC</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install vlc</span><br></pre></td></tr></table></figure>
+
+<h3 id="文泉驛中文字型"><a href="#文泉驛中文字型" class="headerlink" title="文泉驛中文字型"></a><a name="wen-quan-yi-fonts"></a>文泉驛中文字型</h3><p>開源的中文字型。</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install ttf-wqy-*</span><br></pre></td></tr></table></figure>
+
+<h3 id="嘸蝦米輸入法"><a href="#嘸蝦米輸入法" class="headerlink" title="嘸蝦米輸入法"></a><a name="boshiamy"></a>嘸蝦米輸入法</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install fcitx-table-boshiamy</span><br></pre></td></tr></table></figure>
+<p>需要 <a href="#fcitx">Fcitx</a>。</p>
+<h3 id="Gmail-Notifier"><a href="#Gmail-Notifier" class="headerlink" title="Gmail Notifier"></a><a name="gmail-notifier"></a>Gmail Notifier</h3><p>偵測到 Gmail 的新進信件時會由 Firefox 發出提醒。<br><a href="https://addons.mozilla.org/zh-tw/firefox/addon/gmail-notifier-restartless/?src=search">Gmail Notifier</a></p>
+<h3 id="GNotifier"><a href="#GNotifier" class="headerlink" title="GNotifier"></a><a name="gnotifier"></a>GNotifier</h3><p>讓 Firefox 使用 GNOME、KDE、Xfce 或 OS X 桌面環境的提醒 (notification) 介面。<br><a href="https://addons.mozilla.org/zh-tw/firefox/addon/gnotifier/">GNotifier</a></p>
+<h3 id="APT"><a href="#APT" class="headerlink" title="APT"></a><a name="apt"></a>APT</h3><p>以國網中心的 APT 伺服器取代台灣大學的：將 <code>/etc/apt/sources.list</code> 內的 <code>tw.archive.ubuntu.com</code> 取代為 <code>free.nchc.org.tw</code>。</p>
+<h3 id="Gnome-Tweak-Tool"><a href="#Gnome-Tweak-Tool" class="headerlink" title="Gnome Tweak Tool"></a><a name="gnome-tweak-tool"></a>Gnome Tweak Tool</h3><p>依個人喜好調整預設設定。</p>
+<h3 id="Input-Method-Configuration"><a href="#Input-Method-Configuration" class="headerlink" title="Input Method Configuration"></a><a name="im-config"></a>Input Method Configuration</h3><p>先安裝 <a href="#fcitx">Fcitx</a>，接著由 <code>Activities</code> → <code>Input Method</code> 選擇 fcitx。</p>
+<h3 id="Online-Accounts"><a href="#Online-Accounts" class="headerlink" title="Online Accounts"></a><a name="online-accounts"></a>Online Accounts</h3><p>由 <code>Activities</code> → <code>System Settings</code> → <code>Online Accounts</code> 登入 Google 帳戶，登入後可將右方不希望同步的功能關閉。若有開啟 Calendar 同步，可由螢幕最上方正中央的 Calendar 下拉選單中看到將近的活動，提醒時間到時也會由 Evolution 彈出視窗提醒。</p>
+]]></content>
+      <tags>
+        <tag>software</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Port LEDE 17.01 to LinkIt Smart 7688</title>
+    <url>/2017/port-lede-17-01-to-linkit-smart-7688/</url>
+    <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/greetings.png"><br>心血來潮幫忙把 LinkIt Smart 7688 的作業系統從 <a href="https://forum.openwrt.org/viewtopic.php?pid=315110">OpenWrt Chaos Calmer 15.05.1</a> 升級到 <a href="https://lede-project.org/releases/17.01/">LEDE 17.01</a>。</p>
+<h1 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h1><p>最重要的改變當然就是各個套件的版本變新了。像是：</p>
+<ol>
+<li>Linux kernel 從 3.18 升級成 4.4.x。</li>
+<li>Node 從 0.12.x 升級成 4.4.x。</li>
+<li>支援 Python 3.6（預編的 image 裡沒有放，要自己重新編譯或是透過 opkg 安裝）。</li>
+</ol>
+<p>此外，這個版本才是真正的完全開源。本來 MediaTek 在 OpenWrt 上放的 Wi-Fi driver 是 closed source，如果 kernel 升級造成 driver 版本對不上，就只能祈禱 MediaTek 會釋出配合的新版 driver。不過從官方的 <a href="https://github.com/MediaTek-Labs/linkit-smart-7688-feed/issues/37">issue list</a> 看來，目前 MediaTek 沒有再繼續維護這個 driver。</p>
+<p>好在 OpenWrt 有開發一套完全開源的 Wi-Fi driver <a href="https://github.com/openwrt/mt76">mt76</a> 給 MT7688 系列 chip 使用，所以這個 LEDE port 版本就採用這個 driver 了。</p>
+<p><img src="https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/wi-fi.png"></p>
+<h1 id="Tweak"><a href="#Tweak" class="headerlink" title="Tweak"></a>Tweak</h1><p>這個版本是我只稍微花一點時間做的玩票性質的東西，所以可能會有一些小問題。這些小問題就交給讀者再繼續努力了。</p>
+<p>以下列出我已經測試的部分：</p>
+<ol>
+<li>Serial console</li>
+<li>Wi-Fi Access Point mode</li>
+<li>從 MediaTek 的網頁上設定 password。</li>
+<li>SSH login</li>
+<li>Python 2.7</li>
+<li>Node 4.4.5</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/website.png"></p>
+<h1 id="Repository"><a href="#Repository" class="headerlink" title="Repository"></a>Repository</h1><p>Repository 連結在此：<a href="https://github.com/changyuheng/linkit-smart-7688-feed">https://github.com/changyuheng/linkit-smart-7688-feed</a></p>
+<p>照著 README 即可進行編譯。</p>
+<p>也可以從這邊下載預編的 image：<a href="https://github.com/changyuheng/linkit-smart-7688-feed/releases/download/v0.1/lede-ramips-mt7688-LinkIt7688-squashfs-sysupgrade.bin">https://github.com/changyuheng/linkit-smart-7688-feed/releases/download/v0.1/lede-ramips-mt7688-LinkIt7688-squashfs-sysupgrade.bin</a></p>
+]]></content>
+      <tags>
+        <tag>programming</tag>
+      </tags>
+  </entry>
+</search>
