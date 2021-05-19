@@ -1,6 +1,6 @@
 ---
 title: About
-layout: post
+type: 'about'
 comments: false
 ---
 
