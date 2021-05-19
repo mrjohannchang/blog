@@ -30,7 +30,7 @@ tags:
 
 1. Serial console
 2. Wi-Fi Access Point mode
-3. 從 MediaTek 的網頁上設定 password。
+3. 從 MediaTek 的網頁上設定 password。
 4. SSH login
 5. Python 2.7
 6. Node 4.4.5
