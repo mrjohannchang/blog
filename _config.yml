@@ -38,7 +38,7 @@ titlecase: false # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
-  exclude: ''
+  exclude:
 filename_case: 1
 render_drafts: false
 post_asset_folder: true
@@ -55,7 +55,7 @@ prismjs:
   enable: false
   preprocess: true
   line_number: true
-  tab_replace: ''
+  tab_replace:
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
