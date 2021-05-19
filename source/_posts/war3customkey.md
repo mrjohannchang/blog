@@ -1,9 +1,8 @@
 ---
 title: War3Customkey
 date: 2005-02-19
-tags:
-- programming
-- software
+categories:
+- Software
 ---
 
 ![screenshot](https://raw.githubusercontent.com/changyuheng/war3customkey/master/screenshot.png)

@@ -1,7 +1,8 @@
 ---
 title: Installing Fcitx and Boshiamy on Ubuntu GNOME 14.04
 date: 2014-09-08
-tags: software
+categories:
+- Setup
 ---
 
 Fcitx 是一個自訂性很高的輸入法框架，安裝方式如下：

@@ -1,8 +1,8 @@
 ---
 title: Using Express to Handle File Uploading
 date: 2015-10-12 12:42:20
-tags:
-- programming
+categories:
+- Python
 ---
 
 [Express](https://github.com/strongloop/express) 本身不管上傳，要透過 [Multer](https://github.com/expressjs/multer) 來處理。

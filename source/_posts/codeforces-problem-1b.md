@@ -1,8 +1,8 @@
 ---
 title: Codeforces Problem 1B
 date: 2014-04-11
-tags:
-- algorithm
+categories:
+- Algorithm
 ---
 
 [Codeforces Problem 1B](http://codeforces.com/problemset/problem/1/B)

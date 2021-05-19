@@ -1,9 +1,8 @@
 ---
 title: When Hexo Meets GitHub Pages and Travis CI plus Raspberry Pi
 date: 2015-10-18 22:06:24
-tags:
-- software
-- programming
+categories:
+- Setup
 ---
 
 JS 很有吸引力、Hexo 是台灣人寫的、速度比 Octopress 快、default 支援 GitHub Flavored Markdown，所以選 Hexo。

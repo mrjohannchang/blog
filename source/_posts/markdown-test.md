@@ -1,8 +1,8 @@
 ---
 title: Markdown Test
 date: 2009-04-20
-tags:
-- misc
+categories:
+- Random
 ---
 
 Markdown demo/test.

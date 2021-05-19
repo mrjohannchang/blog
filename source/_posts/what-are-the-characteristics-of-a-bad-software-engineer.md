@@ -1,9 +1,8 @@
 ---
 title: 糟糕的程式設計師有哪些招牌特質？
 date: 2015-03-05 20:00
-tags:
-- programming
-- translation
+categories:
+- Translation
 ---
 
 在 [Quora](http://www.quora.com/) 上看到一篇不錯的文章，原文為 [What are the characteristics of a bad software engineer?](http://www.quora.com/What-are-the-characteristics-of-a-bad-software-engineer/answer/Nachiket-Naik)。

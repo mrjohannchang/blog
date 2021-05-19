@@ -1,9 +1,8 @@
 ---
 title: fz - 模糊搜尋互動式 cd 自動補完套件
 date: 2017-04-12 11:10:53
-tags:
-- programming
-- software
+categories:
+- Software
 ---
 
 ![](https://raw.githubusercontent.com/changyuheng/fz/master/fz-demo.gif)

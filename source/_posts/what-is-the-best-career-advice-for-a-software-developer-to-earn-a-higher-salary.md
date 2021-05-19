@@ -1,8 +1,8 @@
 ---
 title: 對程式設計師來說，提高薪水最好的建議是什麼？
 date: 2016-07-08
-tags:
-- translation
+categories:
+- Translation
 ---
 
 關於這個問題，在 Quora 數則[答案](https://www.quora.com/What-is-the-best-career-advice-for-a-software-developer-to-earn-a-higher-salary)中看到[一篇很棒的](https://www.quora.com/What-is-the-best-career-advice-for-a-software-developer-to-earn-a-higher-salary/answer/Abhishek-Choudhary-11)，和大家分享。

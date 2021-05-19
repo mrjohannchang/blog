@@ -1,9 +1,8 @@
 ---
 title: Windows Photo Viewer Mouse Plug-in
 date: 2009-09-23
-tags:
-- programming
-- software
+categories:
+- Software
 ---
 
 This simple tool gives Windows Photo Viewer the following features:

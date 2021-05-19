@@ -1,8 +1,8 @@
 ---
 title: My Ubuntu GNOME Tweaks
 date: 2014-04-23
-tags:
-- software
+categories:
+- Setup
 ---
 
 以 Ubuntu GNOME 14.04 LTS 英文語系為基礎。

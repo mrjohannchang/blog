@@ -1,8 +1,8 @@
 ---
 title: Implementations of DFS and BFS in Python
 date: 2014-05-07
-tags:
-- algorithm
+categories:
+- Algorithm
 ---
 
 [DFS](http://zh.wikipedia.org/zh-tw/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2) 和 [BFS](http://zh.wikipedia.org/zh-tw/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2) 在資料結構裡有教，是很基礎的演算法。

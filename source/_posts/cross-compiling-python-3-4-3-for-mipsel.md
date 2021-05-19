@@ -1,9 +1,8 @@
 ---
 title: Cross Compiling Python 2.7.10 and 3.4.3 for MIPSel OpenWrt via uClibc with SSL and SQLite support
 date: 2015-11-05 18:33:52
-tags:
-- devops
-- programming
+categories:
+- Porting
 ---
 
 The notes that were written after succeeding to cross compile Python 2.7.10 and 3.4.3 for MIPSel OpenWrt via uClibc.

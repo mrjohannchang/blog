@@ -1,8 +1,8 @@
 ---
 title: Port LEDE 17.01 to LinkIt Smart 7688
 date: 2017-04-24
-tags:
-- programming
+categories:
+- Porting
 ---
 
 ![](https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/greetings.png)

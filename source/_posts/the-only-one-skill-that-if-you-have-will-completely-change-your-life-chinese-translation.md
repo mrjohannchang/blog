@@ -1,8 +1,8 @@
 ---
 title: '唯一一種只要學會就能脫胎換骨的能力'
 date: 2015-10-25 13:05:02
-tags:
-- translation
+categories:
+- Translation
 ---
 
 在 Medium 上看到一篇[好文](https://medium.com/keep-learning-keep-growing/the-only-one-skill-that-if-you-have-will-completely-change-your-life-ba9b40b8fdf5#.tjk2mly1w)，翻譯前半段。
