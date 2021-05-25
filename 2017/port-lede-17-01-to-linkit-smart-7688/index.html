@@ -20,18 +20,18 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;changyuheng.github.io&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Gemini&quot;,&quot;version&quot;:&quot;8.4.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:false,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;Searching...&quot;,&quot;empty&quot;:&quot;We didn&#39;t find any results for the search: ${query}&quot;,&quot;hits_time&quot;:&quot;${hits} results found in ${time} ms&quot;,&quot;hits&quot;:&quot;${hits} results found&quot;},&quot;path&quot;:&quot;&#x2F;search.xml&quot;,&quot;localsearch&quot;:{&quot;enable&quot;:true,&quot;trigger&quot;:&quot;auto&quot;,&quot;top_n_per_article&quot;:-1,&quot;unescape&quot;:false,&quot;preload&quot;:false}}</script>
-<meta name="description" content="心血來潮幫忙把 LinkIt Smart 7688 的作業系統從 OpenWrt Chaos Calmer 15.05.1 升級到 LEDE 17.01。 Changelog最重要的改變當然就是各個套件的版本變新了。像是：  Linux kernel 從 3.18 升級成 4.4.x。 Node 從 0.12.x 升級成 4.4.x。 支援 Python 3.6（預編的 image 裡沒有放，要自">
+<meta name="description" content="心血來潮幫忙把 LinkIt Smart 7688 的作業系統從 OpenWrt Chaos Calmer 15.05.1 升級到 LEDE 17.01。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Port LEDE 17.01 to LinkIt Smart 7688">
 <meta property="og:url" content="https://changyuheng.github.io/2017/port-lede-17-01-to-linkit-smart-7688/index.html">
 <meta property="og:site_name" content="@changyuheng’s Technical Blog">
-<meta property="og:description" content="心血來潮幫忙把 LinkIt Smart 7688 的作業系統從 OpenWrt Chaos Calmer 15.05.1 升級到 LEDE 17.01。 Changelog最重要的改變當然就是各個套件的版本變新了。像是：  Linux kernel 從 3.18 升級成 4.4.x。 Node 從 0.12.x 升級成 4.4.x。 支援 Python 3.6（預編的 image 裡沒有放，要自">
+<meta property="og:description" content="心血來潮幫忙把 LinkIt Smart 7688 的作業系統從 OpenWrt Chaos Calmer 15.05.1 升級到 LEDE 17.01。">
 <meta property="og:locale">
 <meta property="og:image" content="https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/greetings.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/wi-fi.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/website.png">
 <meta property="article:published_time" content="2017-04-23T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-05-19T12:47:34.798Z">
+<meta property="article:modified_time" content="2021-05-25T14:16:00.167Z">
 <meta property="article:author" content="Henry Chang">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/greetings.png">
@@ -244,7 +244,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: May 19th, 2021 8:47 pm" itemprop="dateModified" datetime="2021-05-19T20:47:34+08:00">May 19th, 2021</time>
+        <time title="Modified: May 25th, 2021 10:16 pm" itemprop="dateModified" datetime="2021-05-25T22:16:00+08:00">May 25th, 2021</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -266,7 +266,10 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p><img src="https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/greetings.png"><br>心血來潮幫忙把 LinkIt Smart 7688 的作業系統從 <a target="_blank" rel="noopener" href="https://forum.openwrt.org/viewtopic.php?pid=315110">OpenWrt Chaos Calmer 15.05.1</a> 升級到 <a target="_blank" rel="noopener" href="https://lede-project.org/releases/17.01/">LEDE 17.01</a>。</p>
+        <p>心血來潮幫忙把 LinkIt Smart 7688 的作業系統從 <a target="_blank" rel="noopener" href="https://forum.openwrt.org/viewtopic.php?pid=315110">OpenWrt Chaos Calmer 15.05.1</a> 升級到 <a target="_blank" rel="noopener" href="https://lede-project.org/releases/17.01/">LEDE 17.01</a>。</p>
+<span id="more"></span>
+
+<p><img src="https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/greetings.png"></p>
 <h1 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h1><p>最重要的改變當然就是各個套件的版本變新了。像是：</p>
 <ol>
 <li>Linux kernel 從 3.18 升級成 4.4.x。</li>

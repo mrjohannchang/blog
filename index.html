@@ -234,7 +234,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: May 19th, 2021 8:47 pm" itemprop="dateModified" datetime="2021-05-19T20:47:34+08:00">May 19th, 2021</time>
+        <time title="Modified: May 25th, 2021 10:16 pm" itemprop="dateModified" datetime="2021-05-25T22:16:00+08:00">May 25th, 2021</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -256,31 +256,15 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p><img src="https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/greetings.png"><br>心血來潮幫忙把 LinkIt Smart 7688 的作業系統從 <a target="_blank" rel="noopener" href="https://forum.openwrt.org/viewtopic.php?pid=315110">OpenWrt Chaos Calmer 15.05.1</a> 升級到 <a target="_blank" rel="noopener" href="https://lede-project.org/releases/17.01/">LEDE 17.01</a>。</p>
-<h1 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h1><p>最重要的改變當然就是各個套件的版本變新了。像是：</p>
-<ol>
-<li>Linux kernel 從 3.18 升級成 4.4.x。</li>
-<li>Node 從 0.12.x 升級成 4.4.x。</li>
-<li>支援 Python 3.6（預編的 image 裡沒有放，要自己重新編譯或是透過 opkg 安裝）。</li>
-</ol>
-<p>此外，這個版本才是真正的完全開源。本來 MediaTek 在 OpenWrt 上放的 Wi-Fi driver 是 closed source，如果 kernel 升級造成 driver 版本對不上，就只能祈禱 MediaTek 會釋出配合的新版 driver。不過從官方的 <a target="_blank" rel="noopener" href="https://github.com/MediaTek-Labs/linkit-smart-7688-feed/issues/37">issue list</a> 看來，目前 MediaTek 沒有再繼續維護這個 driver。</p>
-<p>好在 OpenWrt 有開發一套完全開源的 Wi-Fi driver <a target="_blank" rel="noopener" href="https://github.com/openwrt/mt76">mt76</a> 給 MT7688 系列 chip 使用，所以這個 LEDE port 版本就採用這個 driver 了。</p>
-<p><img src="https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/wi-fi.png"></p>
-<h1 id="Tweak"><a href="#Tweak" class="headerlink" title="Tweak"></a>Tweak</h1><p>這個版本是我只稍微花一點時間做的玩票性質的東西，所以可能會有一些小問題。這些小問題就交給讀者再繼續努力了。</p>
-<p>以下列出我已經測試的部分：</p>
-<ol>
-<li>Serial console</li>
-<li>Wi-Fi Access Point mode</li>
-<li>從 MediaTek 的網頁上設定 password。</li>
-<li>SSH login</li>
-<li>Python 2.7</li>
-<li>Node 4.4.5</li>
-</ol>
-<p><img src="https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/website.png"></p>
-<h1 id="Repository"><a href="#Repository" class="headerlink" title="Repository"></a>Repository</h1><p>Repository 連結在此：<a target="_blank" rel="noopener" href="https://github.com/changyuheng/linkit-smart-7688-feed">https://github.com/changyuheng/linkit-smart-7688-feed</a></p>
-<p>照著 README 即可進行編譯。</p>
-<p>也可以從這邊下載預編的 image：<a target="_blank" rel="noopener" href="https://github.com/changyuheng/linkit-smart-7688-feed/releases/download/v0.1/lede-ramips-mt7688-LinkIt7688-squashfs-sysupgrade.bin">https://github.com/changyuheng/linkit-smart-7688-feed/releases/download/v0.1/lede-ramips-mt7688-LinkIt7688-squashfs-sysupgrade.bin</a></p>
-
+          <p>心血來潮幫忙把 LinkIt Smart 7688 的作業系統從 <a target="_blank" rel="noopener" href="https://forum.openwrt.org/viewtopic.php?pid=315110">OpenWrt Chaos Calmer 15.05.1</a> 升級到 <a target="_blank" rel="noopener" href="https://lede-project.org/releases/17.01/">LEDE 17.01</a>。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2017/port-lede-17-01-to-linkit-smart-7688/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -337,7 +321,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: May 19th, 2021 8:26 pm" itemprop="dateModified" datetime="2021-05-19T20:26:33+08:00">May 19th, 2021</time>
+        <time title="Modified: May 25th, 2021 10:15 pm" itemprop="dateModified" datetime="2021-05-25T22:15:22+08:00">May 25th, 2021</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -362,28 +346,16 @@
           <p>會盲打的人，在 shell 環境裡如果能找到方便的 tool 來幫助自己，操作速度甚至可以超過滑鼠 + GUI。</p>
 <p>舉二個例子：</p>
 <ol>
-<li><p>在 prompt 上列出前一指令的 return code 和 VCS 資訊。<br><img src="https://camo.githubusercontent.com/b5d7eb49a30bfe6bdb5706fa3c9be95fe8e5956e/687474703a2f2f67696679752e636f6d2f696d616765732f70396b6e65772e676966"></p>
-</li>
-<li><p>用 tig 來操作 git。</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/udCXubFr5Yo" frameborder="0" allowfullscreen></iframe></li>
+<li>在 prompt 上列出前一指令的 return code 和 VCS 資訊。<br><img src="powerlevel9k-return-code-demo.png"></li>
 </ol>
-<p>在 shell 下，最常做的操作的就是找目錄、切目錄、找檔案、開檔案了。但是 <code>cd</code> 要到的目錄的路徑以及 <code>vim</code> 要開的檔案的位置在哪裡，一直都是個痛。就算記得，有時候路徑很深，光是打完就要老半天。</p>
-<p>以下介紹三個可以減輕日常路徑操作負擔的工具：</p>
-<h1 id="bd"><a href="#bd" class="headerlink" title="bd"></a>bd</h1><p><img src="https://raw.githubusercontent.com/Tarrasch/zsh-bd/master/animation.gif"></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/vigneshwaranr/bd">bd</a> 是轉目用來替代 <code>cd ..</code> 的工具。當所在的目錄很深，想要切回某一層 parent folder 時，以往總是要 <code>cd ../../..</code>，並自己算相對路徑的層數。有一些套件或是 alias 可以讓這個操作由 <code>cd ../..</code>減化成 <code>cd ...</code>，少打了 <code>./</code> 二個字，但是仍然要去算層數。</p>
-<p>bd 可以讓我們直接打要去的那一層的目錄名稱就切過去，懶得打的話也可以靠 tab 補完，非常實用。</p>
-<h1 id="fzf-auto-completion"><a href="#fzf-auto-completion" class="headerlink" title="fzf auto-completion"></a>fzf auto-completion</h1><p><a target="_blank" rel="noopener" href="https://github.com/junegunn/fzf">fzf</a> 是一套很強大的 fuzzy search 引擎。它不只是引擎強，附加的補完也是殺手級的好用。一下子找不到好的 demo，只好請大家看看<a target="_blank" rel="noopener" href="https://github.com/junegunn/fzf#fuzzy-completion-for-bash-and-zsh">官方手冊</a>意會。</p>
-<p>fzf 不只可以用在 <code>cd</code>，還可以用在 <code>vim</code>、<code>kill</code> 指令及 <code>Ctrl-R</code> 熱鍵等，是非常強大的工具。</p>
-<h1 id="fz"><a href="#fz" class="headerlink" title="fz"></a>fz</h1><p><img src="https://raw.githubusercontent.com/changyuheng/fz/master/fz-demo.gif"></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/changyuheng/fz">fz</a> 是 <a target="_blank" rel="noopener" href="https://github.com/junegunn/fzf">fzf</a> 和 <a target="_blank" rel="noopener" href="https://github.com/rupa/z">z</a> 二位大將合體下的產物。z 是一套支援只打部分目錄名稱就切到曾經去過的目錄的工具。</p>
-<p>相信 fz 的作者一定是位帥哥，居然能想到把 fzf 的 interactive fuzzy search 裝在 z 身上，打造出這把神兵利器。</p>
-<h1 id="enhancd"><a href="#enhancd" class="headerlink" title="enhancd"></a>enhancd</h1><p><img src="https://raw.githubusercontent.com/b4b4r07/screenshots/master/enhancd/demo.gif"></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/b4b4r07/enhancd">enhancd</a> 的設計理念也很棒，不過很可惜它目前沒有 tab completion。沒有 tab completion 就必須另外綁熱鍵，如此就破壞了使用習慣。</p>
-<h1 id="qfc"><a href="#qfc" class="headerlink" title="qfc"></a>qfc</h1><p><img src="https://cloud.githubusercontent.com/assets/2557967/8640880/582cb8fe-28ff-11e5-9753-41464dda938e.gif"></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/pindexis/qfc">qfc</a> 跟 enhancd 類似，不過它的 completion 不是綁 tab，比較可惜一點。</p>
-<h1 id="zsh-interactive-cd"><a href="#zsh-interactive-cd" class="headerlink" title="zsh-interactive-cd"></a>zsh-interactive-cd</h1><p><img src="https://raw.githubusercontent.com/changyuheng/zsh-interactive-cd/master/demo.gif"></p>
-<p>加碼一套工具。<a target="_blank" rel="noopener" href="https://github.com/changyuheng/zsh-interactive-cd">zsh-interactive-cd</a> 將 <a target="_blank" rel="noopener" href="https://fishshell.com/">fish</a> 的 cd 互動式補完帶入了 <a target="_blank" rel="noopener" href="http://www.zsh.org/">zsh</a>。算是一套短小精悍卻又不可或缺的工具，可惜目前只支援 zsh，還沒有 Bash 的版本。不過作者很有可能是帥哥是無庸置疑的。</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2017/%E5%91%BD%E4%BB%A4%E5%88%97%E4%B8%8A%E5%BF%AB%E9%80%9F%E5%AE%9A%E4%BD%8D%E6%AA%94%E6%A1%88%E8%88%87%E7%9B%AE%E9%8C%84/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 

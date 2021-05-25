@@ -59,10 +59,12 @@
     <content><![CDATA[<p>會盲打的人，在 shell 環境裡如果能找到方便的 tool 來幫助自己，操作速度甚至可以超過滑鼠 + GUI。</p>
 <p>舉二個例子：</p>
 <ol>
-<li><p>在 prompt 上列出前一指令的 return code 和 VCS 資訊。<br><img src="https://camo.githubusercontent.com/b5d7eb49a30bfe6bdb5706fa3c9be95fe8e5956e/687474703a2f2f67696679752e636f6d2f696d616765732f70396b6e65772e676966"></p>
-</li>
-<li><p>用 tig 來操作 git。</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/udCXubFr5Yo" frameborder="0" allowfullscreen></iframe></li>
+<li>在 prompt 上列出前一指令的 return code 和 VCS 資訊。<br><img src="powerlevel9k-return-code-demo.png"></li>
+</ol>
+<span id="more"></span>
+
+<ol start="2">
+<li>用 tig 來操作 git。<iframe width="560" height="315" src="https://www.youtube.com/embed/udCXubFr5Yo" frameborder="0" allowfullscreen></iframe></li>
 </ol>
 <p>在 shell 下，最常做的操作的就是找目錄、切目錄、找檔案、開檔案了。但是 <code>cd</code> 要到的目錄的路徑以及 <code>vim</code> 要開的檔案的位置在哪裡，一直都是個痛。就算記得，有時候路徑很深，光是打完就要老半天。</p>
 <p>以下介紹三個可以減輕日常路徑操作負擔的工具：</p>
@@ -1211,7 +1213,10 @@ ABCDEFG<br />
   <entry>
     <title>Port LEDE 17.01 to LinkIt Smart 7688</title>
     <url>/2017/port-lede-17-01-to-linkit-smart-7688/</url>
-    <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/greetings.png"><br>心血來潮幫忙把 LinkIt Smart 7688 的作業系統從 <a href="https://forum.openwrt.org/viewtopic.php?pid=315110">OpenWrt Chaos Calmer 15.05.1</a> 升級到 <a href="https://lede-project.org/releases/17.01/">LEDE 17.01</a>。</p>
+    <content><![CDATA[<p>心血來潮幫忙把 LinkIt Smart 7688 的作業系統從 <a href="https://forum.openwrt.org/viewtopic.php?pid=315110">OpenWrt Chaos Calmer 15.05.1</a> 升級到 <a href="https://lede-project.org/releases/17.01/">LEDE 17.01</a>。</p>
+<span id="more"></span>
+
+<p><img src="https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/greetings.png"></p>
 <h1 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h1><p>最重要的改變當然就是各個套件的版本變新了。像是：</p>
 <ol>
 <li>Linux kernel 從 3.18 升級成 4.4.x。</li>

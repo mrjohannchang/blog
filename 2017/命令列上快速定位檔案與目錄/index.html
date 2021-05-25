@@ -20,24 +20,24 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;changyuheng.github.io&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Gemini&quot;,&quot;version&quot;:&quot;8.4.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:false,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;Searching...&quot;,&quot;empty&quot;:&quot;We didn&#39;t find any results for the search: ${query}&quot;,&quot;hits_time&quot;:&quot;${hits} results found in ${time} ms&quot;,&quot;hits&quot;:&quot;${hits} results found&quot;},&quot;path&quot;:&quot;&#x2F;search.xml&quot;,&quot;localsearch&quot;:{&quot;enable&quot;:true,&quot;trigger&quot;:&quot;auto&quot;,&quot;top_n_per_article&quot;:-1,&quot;unescape&quot;:false,&quot;preload&quot;:false}}</script>
-<meta name="description" content="會盲打的人，在 shell 環境裡如果能找到方便的 tool 來幫助自己，操作速度甚至可以超過滑鼠 + GUI。 舉二個例子：  在 prompt 上列出前一指令的 return code 和 VCS 資訊。  用 tig 來操作 git。   在 shell 下，最常做的操作的就是找目錄、切目錄、找檔案、開檔案了。但是 cd 要到的目錄的路徑以及 vim 要開的檔案的位置在哪裡，一直都是個痛。就">
+<meta name="description" content="會盲打的人，在 shell 環境裡如果能找到方便的 tool 來幫助自己，操作速度甚至可以超過滑鼠 + GUI。 舉二個例子：  在 prompt 上列出前一指令的 return code 和 VCS 資訊。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="命令列上快速定位檔案與目錄">
 <meta property="og:url" content="https://changyuheng.github.io/2017/%E5%91%BD%E4%BB%A4%E5%88%97%E4%B8%8A%E5%BF%AB%E9%80%9F%E5%AE%9A%E4%BD%8D%E6%AA%94%E6%A1%88%E8%88%87%E7%9B%AE%E9%8C%84/index.html">
 <meta property="og:site_name" content="@changyuheng’s Technical Blog">
-<meta property="og:description" content="會盲打的人，在 shell 環境裡如果能找到方便的 tool 來幫助自己，操作速度甚至可以超過滑鼠 + GUI。 舉二個例子：  在 prompt 上列出前一指令的 return code 和 VCS 資訊。  用 tig 來操作 git。   在 shell 下，最常做的操作的就是找目錄、切目錄、找檔案、開檔案了。但是 cd 要到的目錄的路徑以及 vim 要開的檔案的位置在哪裡，一直都是個痛。就">
+<meta property="og:description" content="會盲打的人，在 shell 環境裡如果能找到方便的 tool 來幫助自己，操作速度甚至可以超過滑鼠 + GUI。 舉二個例子：  在 prompt 上列出前一指令的 return code 和 VCS 資訊。">
 <meta property="og:locale">
-<meta property="og:image" content="https://camo.githubusercontent.com/b5d7eb49a30bfe6bdb5706fa3c9be95fe8e5956e/687474703a2f2f67696679752e636f6d2f696d616765732f70396b6e65772e676966">
+<meta property="og:image" content="https://changyuheng.github.io/2017/%E5%91%BD%E4%BB%A4%E5%88%97%E4%B8%8A%E5%BF%AB%E9%80%9F%E5%AE%9A%E4%BD%8D%E6%AA%94%E6%A1%88%E8%88%87%E7%9B%AE%E9%8C%84/powerlevel9k-return-code-demo.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/Tarrasch/zsh-bd/master/animation.gif">
 <meta property="og:image" content="https://raw.githubusercontent.com/changyuheng/fz/master/fz-demo.gif">
 <meta property="og:image" content="https://raw.githubusercontent.com/b4b4r07/screenshots/master/enhancd/demo.gif">
 <meta property="og:image" content="https://cloud.githubusercontent.com/assets/2557967/8640880/582cb8fe-28ff-11e5-9753-41464dda938e.gif">
 <meta property="og:image" content="https://raw.githubusercontent.com/changyuheng/zsh-interactive-cd/master/demo.gif">
 <meta property="article:published_time" content="2017-04-16T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-05-19T12:26:33.617Z">
+<meta property="article:modified_time" content="2021-05-25T14:15:22.454Z">
 <meta property="article:author" content="Henry Chang">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://camo.githubusercontent.com/b5d7eb49a30bfe6bdb5706fa3c9be95fe8e5956e/687474703a2f2f67696679752e636f6d2f696d616765732f70396b6e65772e676966">
+<meta name="twitter:image" content="https://changyuheng.github.io/2017/%E5%91%BD%E4%BB%A4%E5%88%97%E4%B8%8A%E5%BF%AB%E9%80%9F%E5%AE%9A%E4%BD%8D%E6%AA%94%E6%A1%88%E8%88%87%E7%9B%AE%E9%8C%84/powerlevel9k-return-code-demo.png">
 
 
 <link rel="canonical" href="https://changyuheng.github.io/2017/%E5%91%BD%E4%BB%A4%E5%88%97%E4%B8%8A%E5%BF%AB%E9%80%9F%E5%AE%9A%E4%BD%8D%E6%AA%94%E6%A1%88%E8%88%87%E7%9B%AE%E9%8C%84/">
@@ -247,7 +247,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: May 19th, 2021 8:26 pm" itemprop="dateModified" datetime="2021-05-19T20:26:33+08:00">May 19th, 2021</time>
+        <time title="Modified: May 25th, 2021 10:15 pm" itemprop="dateModified" datetime="2021-05-25T22:15:22+08:00">May 25th, 2021</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -272,10 +272,12 @@
         <p>會盲打的人，在 shell 環境裡如果能找到方便的 tool 來幫助自己，操作速度甚至可以超過滑鼠 + GUI。</p>
 <p>舉二個例子：</p>
 <ol>
-<li><p>在 prompt 上列出前一指令的 return code 和 VCS 資訊。<br><img src="https://camo.githubusercontent.com/b5d7eb49a30bfe6bdb5706fa3c9be95fe8e5956e/687474703a2f2f67696679752e636f6d2f696d616765732f70396b6e65772e676966"></p>
-</li>
-<li><p>用 tig 來操作 git。</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/udCXubFr5Yo" frameborder="0" allowfullscreen></iframe></li>
+<li>在 prompt 上列出前一指令的 return code 和 VCS 資訊。<br><img src="powerlevel9k-return-code-demo.png"></li>
+</ol>
+<span id="more"></span>
+
+<ol start="2">
+<li>用 tig 來操作 git。<iframe width="560" height="315" src="https://www.youtube.com/embed/udCXubFr5Yo" frameborder="0" allowfullscreen></iframe></li>
 </ol>
 <p>在 shell 下，最常做的操作的就是找目錄、切目錄、找檔案、開檔案了。但是 <code>cd</code> 要到的目錄的路徑以及 <code>vim</code> 要開的檔案的位置在哪裡，一直都是個痛。就算記得，有時候路徑很深，光是打完就要老半天。</p>
 <p>以下介紹三個可以減輕日常路徑操作負擔的工具：</p>
