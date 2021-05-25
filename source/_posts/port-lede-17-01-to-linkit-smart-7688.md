@@ -5,8 +5,10 @@ categories:
 - Porting
 ---
 
-![](https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/greetings.png)
 心血來潮幫忙把 LinkIt Smart 7688 的作業系統從 [OpenWrt Chaos Calmer 15.05.1](https://forum.openwrt.org/viewtopic.php?pid=315110) 升級到 [LEDE 17.01](https://lede-project.org/releases/17.01/)。
+<!-- more -->
+
+![](https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/greetings.png)
 
 # Changelog
 
