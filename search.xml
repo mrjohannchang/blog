@@ -61,7 +61,7 @@
 <ol>
 <li><p>在 prompt 上列出前一指令的 return code 和 VCS 資訊。</p>
 <span id="more"></span>
-<p><img src="powerlevel9k-return-code-demo.png"></p>
+<p><img src="powerlevel9k-demo.png"></p>
 </li>
 <li><p>用 tig 來操作 git。</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/udCXubFr5Yo" frameborder="0" allowfullscreen></iframe></li>
