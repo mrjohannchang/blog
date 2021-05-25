@@ -59,12 +59,12 @@
     <content><![CDATA[<p>會盲打的人，在 shell 環境裡如果能找到方便的 tool 來幫助自己，操作速度甚至可以超過滑鼠 + GUI。</p>
 <p>舉二個例子：</p>
 <ol>
-<li>在 prompt 上列出前一指令的 return code 和 VCS 資訊。<br><img src="powerlevel9k-return-code-demo.png"></li>
-</ol>
+<li><p>在 prompt 上列出前一指令的 return code 和 VCS 資訊。</p>
 <span id="more"></span>
-
-<ol start="2">
-<li>用 tig 來操作 git。<iframe width="560" height="315" src="https://www.youtube.com/embed/udCXubFr5Yo" frameborder="0" allowfullscreen></iframe></li>
+<p><img src="powerlevel9k-return-code-demo.png"></p>
+</li>
+<li><p>用 tig 來操作 git。</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/udCXubFr5Yo" frameborder="0" allowfullscreen></iframe></li>
 </ol>
 <p>在 shell 下，最常做的操作的就是找目錄、切目錄、找檔案、開檔案了。但是 <code>cd</code> 要到的目錄的路徑以及 <code>vim</code> 要開的檔案的位置在哪裡，一直都是個痛。就算記得，有時候路徑很深，光是打完就要老半天。</p>
 <p>以下介紹三個可以減輕日常路徑操作負擔的工具：</p>
@@ -129,7 +129,7 @@
   <entry>
     <title>PTT Efficient Poster</title>
     <url>/2007/ptt-efficient-poster/</url>
-    <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/ptt-efficient-poster/master/screenshot.png" alt="screenshot"></p>
+    <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/ptt-efficient-poster/master/demo.gif" alt="screenshot"></p>
 <span id="more"></span>
 
 <p>在 PTT 上發表文章，會依文章長度得到相當的稿酬；而稿酬的單位就是所謂的 P 幣。然而，PTT 判斷一篇文章值多少 P 幣，不只看總字數，還會計算使用者輸入的次數。現在公認的稿酬計算公式是，每 2 秒輸入 2 個中文字獲得 1 元，某些特殊字元或重複字不列入計算。因此，使用新注音等一次輸入好幾個字的輸入法輸入文字，相較於其他逐字輸入的輸入法，PTT 偵測到的輸入次數會少很多，換句話說稿酬也少很多。</p>
