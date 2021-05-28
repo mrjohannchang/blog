@@ -814,7 +814,7 @@
 <h2 id="Thanks-to"><a href="#Thanks-to" class="headerlink" title="Thanks to"></a>Thanks to</h2><p><a href="https://tw.linkedin.com/pub/cheng-wig/90/1a1/896">Cheng Wig</a>, he showed me the positive attitude at work.</p>
 ]]></content>
       <categories>
-        <category>Porting</category>
+        <category>Embedded</category>
       </categories>
   </entry>
   <entry>
@@ -1242,7 +1242,7 @@ ABCDEFG<br />
 <p>也可以從這邊下載預編的 image：<a href="https://github.com/changyuheng/linkit-smart-7688-feed/releases/download/v0.1/lede-ramips-mt7688-LinkIt7688-squashfs-sysupgrade.bin">https://github.com/changyuheng/linkit-smart-7688-feed/releases/download/v0.1/lede-ramips-mt7688-LinkIt7688-squashfs-sysupgrade.bin</a></p>
 ]]></content>
       <categories>
-        <category>Porting</category>
+        <category>Embedded</category>
       </categories>
   </entry>
 </search>
