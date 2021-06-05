@@ -1251,6 +1251,7 @@ ABCDEFG<br />
     <content><![CDATA[<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>需求：程式編譯，主要編譯 Yocto（低配版 Build Code Server）<br>預算：4.5 萬</p>
 <h1 id="零件挑選"><a href="#零件挑選" class="headerlink" title="零件挑選"></a>零件挑選</h1><h2 id="中央處理器（CPU）"><a href="#中央處理器（CPU）" class="headerlink" title="中央處理器（CPU）"></a>中央處理器（CPU）</h2><p>挑選 CPU 有幾個重點，依優先順序分別為：售價（預算）、效能、功耗（耗電量、廢熱量）、C/P 值。</p>
 <p>OpenBenchmarking 上搜集了各型號 CPU 的 <a href="https://openbenchmarking.org/test/pts/build-linux-kernel">Linux Kernel 編譯時間</a>，可用以評估各型 CPU 多核心編譯的效能：</p>
+<span id="more"></span>
 <p><img src="Timed-Linux-Kernel-Compilation.png" alt="Timed-Linux-Kernel-Compilation.png"></p>
 <p>伺服器版的 CPU 太貴，直接跳過。<a href="https://www.amd.com/en/products/cpu/amd-ryzen-9-5950x">AMD Ryzen™ 9 5950X</a>、<a href="https://www.amd.com/en/products/cpu/amd-ryzen-9-3950x">AMD Ryzen™ 9 3950X</a> 及 <a href="https://ark.intel.com/content/www/us/en/ark/products/198017/intel-core-i9-10980xe-extreme-edition-processor-24-75m-cache-3-00-ghz.html">Intel® Core™ i9-10980XE</a> 這三顆 CPU 是目前家用主機的頂規。</p>
 <p>Intel 這顆效能表現與 AMD 這二顆相伯仲，但功耗高很多，所以先剔除。再來因為 5950X 和 3950X 這二顆都缺貨，也只能放棄。繼續往下的選擇中，<a href="https://www.amd.com/en/products/cpu/amd-ryzen-9-5900x">AMD Ryzen™ 9 5900X</a> 效能相差不大，有貨，且 C/P 值比 5950X、3950X 都高很多，因此沒有什麼懸念，就選它了。</p>

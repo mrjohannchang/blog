@@ -20,12 +20,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;changyuheng.github.io&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Gemini&quot;,&quot;version&quot;:&quot;8.4.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:false,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;Searching...&quot;,&quot;empty&quot;:&quot;We didn&#39;t find any results for the search: ${query}&quot;,&quot;hits_time&quot;:&quot;${hits} results found in ${time} ms&quot;,&quot;hits&quot;:&quot;${hits} results found&quot;},&quot;path&quot;:&quot;&#x2F;search.xml&quot;,&quot;localsearch&quot;:{&quot;enable&quot;:true,&quot;trigger&quot;:&quot;auto&quot;,&quot;top_n_per_article&quot;:-1,&quot;unescape&quot;:false,&quot;preload&quot;:false}}</script>
-<meta name="description" content="背景需求：程式編譯，主要編譯 Yocto（低配版 Build Code Server）預算：4.5 萬 零件挑選中央處理器（CPU）挑選 CPU 有幾個重點，依優先順序分別為：售價（預算）、效能、功耗（耗電量、廢熱量）、C&#x2F;P 值。 OpenBenchmarking 上搜集了各型號 CPU 的 Linux Kernel 編譯時間，可用以評估各型 CPU 多核心編譯的效能：  伺服器版的 CPU 太">
+<meta name="description" content="背景需求：程式編譯，主要編譯 Yocto（低配版 Build Code Server）預算：4.5 萬 零件挑選中央處理器（CPU）挑選 CPU 有幾個重點，依優先順序分別為：售價（預算）、效能、功耗（耗電量、廢熱量）、C&#x2F;P 值。 OpenBenchmarking 上搜集了各型號 CPU 的 Linux Kernel 編譯時間，可用以評估各型 CPU 多核心編譯的效能：">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Yocto 編譯主機零組件挑選">
 <meta property="og:url" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8/index.html">
 <meta property="og:site_name" content="@changyuheng’s Technical Blog">
-<meta property="og:description" content="背景需求：程式編譯，主要編譯 Yocto（低配版 Build Code Server）預算：4.5 萬 零件挑選中央處理器（CPU）挑選 CPU 有幾個重點，依優先順序分別為：售價（預算）、效能、功耗（耗電量、廢熱量）、C&#x2F;P 值。 OpenBenchmarking 上搜集了各型號 CPU 的 Linux Kernel 編譯時間，可用以評估各型 CPU 多核心編譯的效能：  伺服器版的 CPU 太">
+<meta property="og:description" content="背景需求：程式編譯，主要編譯 Yocto（低配版 Build Code Server）預算：4.5 萬 零件挑選中央處理器（CPU）挑選 CPU 有幾個重點，依優先順序分別為：售價（預算）、效能、功耗（耗電量、廢熱量）、C&#x2F;P 值。 OpenBenchmarking 上搜集了各型號 CPU 的 Linux Kernel 編譯時間，可用以評估各型 CPU 多核心編譯的效能：">
 <meta property="og:locale">
 <meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8/Timed-Linux-Kernel-Compilation.png">
 <meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8/AM4-Chipset-Spec.png">
@@ -35,7 +35,7 @@
 <meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8/Display-Card-Wind-Direction.png">
 <meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8/H210+D15S.webp">
 <meta property="article:published_time" content="2021-06-05T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-06-05T20:44:31.516Z">
+<meta property="article:modified_time" content="2021-06-05T20:45:40.170Z">
 <meta property="article:author" content="Henry Chang">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8/Timed-Linux-Kernel-Compilation.png">
@@ -242,7 +242,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: Jun 6th, 2021 12:00 am / Modified: 4:44 am" itemprop="dateCreated datePublished" datetime="2021-06-06T00:00:00+08:00">Jun 6th, 2021</time>
+      <time title="Created: Jun 6th, 2021 12:00 am / Modified: 4:45 am" itemprop="dateCreated datePublished" datetime="2021-06-06T00:00:00+08:00">Jun 6th, 2021</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -267,6 +267,7 @@
         <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>需求：程式編譯，主要編譯 Yocto（低配版 Build Code Server）<br>預算：4.5 萬</p>
 <h1 id="零件挑選"><a href="#零件挑選" class="headerlink" title="零件挑選"></a>零件挑選</h1><h2 id="中央處理器（CPU）"><a href="#中央處理器（CPU）" class="headerlink" title="中央處理器（CPU）"></a>中央處理器（CPU）</h2><p>挑選 CPU 有幾個重點，依優先順序分別為：售價（預算）、效能、功耗（耗電量、廢熱量）、C/P 值。</p>
 <p>OpenBenchmarking 上搜集了各型號 CPU 的 <a target="_blank" rel="noopener" href="https://openbenchmarking.org/test/pts/build-linux-kernel">Linux Kernel 編譯時間</a>，可用以評估各型 CPU 多核心編譯的效能：</p>
+<span id="more"></span>
 <p><img src="Timed-Linux-Kernel-Compilation.png" alt="Timed-Linux-Kernel-Compilation.png"></p>
 <p>伺服器版的 CPU 太貴，直接跳過。<a target="_blank" rel="noopener" href="https://www.amd.com/en/products/cpu/amd-ryzen-9-5950x">AMD Ryzen™ 9 5950X</a>、<a target="_blank" rel="noopener" href="https://www.amd.com/en/products/cpu/amd-ryzen-9-3950x">AMD Ryzen™ 9 3950X</a> 及 <a target="_blank" rel="noopener" href="https://ark.intel.com/content/www/us/en/ark/products/198017/intel-core-i9-10980xe-extreme-edition-processor-24-75m-cache-3-00-ghz.html">Intel® Core™ i9-10980XE</a> 這三顆 CPU 是目前家用主機的頂規。</p>
 <p>Intel 這顆效能表現與 AMD 這二顆相伯仲，但功耗高很多，所以先剔除。再來因為 5950X 和 3950X 這二顆都缺貨，也只能放棄。繼續往下的選擇中，<a target="_blank" rel="noopener" href="https://www.amd.com/en/products/cpu/amd-ryzen-9-5900x">AMD Ryzen™ 9 5900X</a> 效能相差不大，有貨，且 C/P 值比 5950X、3950X 都高很多，因此沒有什麼懸念，就選它了。</p>
