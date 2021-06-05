@@ -22,7 +22,7 @@ OpenBenchmarking 上搜集了各型號 CPU 的 [Linux Kernel 編譯時間](https
 
 伺服器版的 CPU 太貴，直接跳過。[AMD Ryzen™ 9 5950X](https://www.amd.com/en/products/cpu/amd-ryzen-9-5950x)、[AMD Ryzen™ 9 3950X](https://www.amd.com/en/products/cpu/amd-ryzen-9-3950x) 及 [Intel® Core™ i9-10980XE](https://ark.intel.com/content/www/us/en/ark/products/198017/intel-core-i9-10980xe-extreme-edition-processor-24-75m-cache-3-00-ghz.html) 這三顆 CPU 是目前家用主機的頂規。
 
-Intel 這顆效能表現與 AMD 這二顆相伯仲，但功耗高很多，差不多是風冷散熱的極限，所以先剔除。再來因為 5950X 和 3950X 這二顆都缺貨，也只能放棄。繼續往下的選擇中，[AMD Ryzen™ 9 5900X](https://www.amd.com/en/products/cpu/amd-ryzen-9-5900x) 效能相差不大，有貨，且 C/P 值比 5950X、3950X 都高很多，因此沒有什麼懸念，就選它了。
+Intel 這顆效能表現與 AMD 這二顆相伯仲，但功耗高很多，所以先剔除。再來因為 5950X 和 3950X 這二顆都缺貨，也只能放棄。繼續往下的選擇中，[AMD Ryzen™ 9 5900X](https://www.amd.com/en/products/cpu/amd-ryzen-9-5900x) 效能相差不大，有貨，且 C/P 值比 5950X、3950X 都高很多，因此沒有什麼懸念，就選它了。
 
 ## 主機板
 
