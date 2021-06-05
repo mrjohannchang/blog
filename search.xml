@@ -1311,7 +1311,7 @@ ABCDEFG<br />
 </ol>
 <p>像這種小型的機殼，因為顯卡離機殼底部很近，因此要注意，若機殼下方會裝風扇，其風向應與顯卡風扇的風向一致。不是所有顯卡的風扇都是往晶片方向吹的，也有反著吹的。</p>
 <p><img src="Display-Card-Wind-Direction.png" alt="Display-Card-Wind-Direction.png"></p>
-<p>補充說明，我會避免將電源供應器定位為主要排風元件的機殼（如後上置型的）。因為電源供應器很怕熱，常期在較熱環境工作的電源供應器，除了壽命比較短之外，也很危險（可參見全漢<a href="https://www.fsp-group.com/tw/knowledge-prd-4.html">官網說明</a>）。</p>
+<p>補充說明，我會避免選擇將電源供應器定位為主要排風元件的機殼（如後上置型的）。因為電源供應器很怕熱，長期在較熱環境工作的電源供應器，除了壽命比較短之外，也很危險（可參見全漢<a href="https://www.fsp-group.com/tw/knowledge-prd-4.html">官網說明</a>）。</p>
 <h2 id="CPU-散熱器"><a href="#CPU-散熱器" class="headerlink" title="CPU 散熱器"></a>CPU 散熱器</h2><p>散熱器實在太多了，所以我直接在以安靜著稱的貓頭鷹裡挑。因為希望能與機殼設計的水平風流相配合，所以只看塔式散熱器。5900X 蠻熱的，所以需要散熱能力好一點的，同時我又不喜歡記憶體上方被風扇擋住，所以挑了 <a href="https://www.google.com/search?client=firefox-b-d&q=NH-D15s">Noctua NH-D15S</a>。</p>
 <h2 id="電源供應器"><a href="#電源供應器" class="headerlink" title="電源供應器"></a>電源供應器</h2><p>電源供應器是耗材，它的供應瓦數是會衰減的。預算許可的話，就把瓦數買到 CPU + 顯卡功耗的 2 倍，這樣電源供應器在其他零件壞掉前應該都會是好的。愛護地球，在能負擔的範圍內選轉換功率高一點的。</p>
 ]]></content>
