@@ -7,7 +7,7 @@ categories:
 
 # 背景
 
-需求：程式編譯，主要編譯 Yocto
+需求：程式編譯，主要編譯 Yocto（低配版 Build Code Server）
 預算：4.5 萬
 
 # 零件挑選
