@@ -26,7 +26,7 @@ Intel 這顆效能表現與 AMD 這二顆相伯仲，但功耗高很多，所以
 
 ## 主機板
 
-相容 AMD Ryzen™ 9 5900X AM4 規格且有現貨的晶片組有 B450、X470、[A520](https://www.amd.com/en/chipsets/a520)、[B550](https://www.amd.com/en/chipsets/b550) 和 [X570](https://www.amd.com/en/chipsets/x570)。符合目前需求的最便宜選擇是 B450，但可惜目前 Mini-ITX 的版本缺貨，只能往更高階看。因為想保留未來插高階顯示卡和 PCIe 4.0 SSD 的空間，所以從在 B550 和 X570 之間選了比較便宜的 B550。
+相容 AMD Ryzen™ 9 5900X AM4 規格且有現貨的晶片組有 B450、X470、[A520](https://www.amd.com/en/chipsets/a520)、[B550](https://www.amd.com/en/chipsets/b550) 和 [X570](https://www.amd.com/en/chipsets/x570)。符合目前需求的最便宜選擇是 B450，但可惜目前 Mini-ITX 的版本缺貨，只能往更高階看。因為想保留未來插高階顯示卡和 PCIe 4.0 SSD 的空間，所以從 B550 和 X570 之間選了比較便宜的 B550。
 
 ![AM4-Chipset-Spec.png](AM4-Chipset-Spec.png)
 
