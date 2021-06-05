@@ -17,7 +17,7 @@ categories:
 挑選 CPU 有幾個重點，依優先順序分別為：售價（預算）、效能、功耗（耗電量、廢熱量）、C/P 值。
 
 OpenBenchmarking 上搜集了各型號 CPU 的 [Linux Kernel 編譯時間](https://openbenchmarking.org/test/pts/build-linux-kernel)，可用以評估各型 CPU 多核心編譯的效能：
-
+<!-- more -->
 ![Timed-Linux-Kernel-Compilation.png](Timed-Linux-Kernel-Compilation.png)
 
 伺服器版的 CPU 太貴，直接跳過。[AMD Ryzen™ 9 5950X](https://www.amd.com/en/products/cpu/amd-ryzen-9-5950x)、[AMD Ryzen™ 9 3950X](https://www.amd.com/en/products/cpu/amd-ryzen-9-3950x) 及 [Intel® Core™ i9-10980XE](https://ark.intel.com/content/www/us/en/ark/products/198017/intel-core-i9-10980xe-extreme-edition-processor-24-75m-cache-3-00-ghz.html) 這三顆 CPU 是目前家用主機的頂規。
