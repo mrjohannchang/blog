@@ -1248,7 +1248,7 @@ ABCDEFG<br />
   <entry>
     <title>Yocto 編譯主機零組件挑選</title>
     <url>/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8/</url>
-    <content><![CDATA[<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>需求：程式編譯，主要編譯 Yocto<br>預算：4.5 萬</p>
+    <content><![CDATA[<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>需求：程式編譯，主要編譯 Yocto（低配版 Build Code Server）<br>預算：4.5 萬</p>
 <h1 id="零件挑選"><a href="#零件挑選" class="headerlink" title="零件挑選"></a>零件挑選</h1><h2 id="中央處理器（CPU）"><a href="#中央處理器（CPU）" class="headerlink" title="中央處理器（CPU）"></a>中央處理器（CPU）</h2><p>挑選 CPU 有幾個重點，依優先順序分別為：售價（預算）、效能、功耗（耗電量、廢熱量）、C/P 值。</p>
 <p>OpenBenchmarking 上搜集了各型號 CPU 的 <a href="https://openbenchmarking.org/test/pts/build-linux-kernel">Linux Kernel 編譯時間</a>，可用以評估各型 CPU 多核心編譯的效能：</p>
 <p><img src="Timed-Linux-Kernel-Compilation.png" alt="Timed-Linux-Kernel-Compilation.png"></p>
