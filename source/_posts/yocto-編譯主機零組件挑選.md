@@ -170,7 +170,7 @@ H210 和 PC-tu150 的內部配置很像，多了一些優點：
 
 ![Display-Card-Wind-Direction.png](Display-Card-Wind-Direction.png)
 
-補充說明，我會避免將電源供應器定位為主要排風元件的機殼（如後上置型的）。因為電源供應器很怕熱，常期在較熱環境工作的電源供應器，除了壽命比較短之外，也很危險（可參見全漢[官網說明](https://www.fsp-group.com/tw/knowledge-prd-4.html)）。
+補充說明，我會避免選擇將電源供應器定位為主要排風元件的機殼（如後上置型的）。因為電源供應器很怕熱，長期在較熱環境工作的電源供應器，除了壽命比較短之外，也很危險（可參見全漢[官網說明](https://www.fsp-group.com/tw/knowledge-prd-4.html)）。
 
 ## CPU 散熱器
 
