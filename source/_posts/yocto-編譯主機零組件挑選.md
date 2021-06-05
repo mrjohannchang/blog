@@ -34,7 +34,7 @@ Intel 這顆效能表現與 AMD 這二顆相伯仲，但功耗高很多，所以
 
 ## 記憶體
 
-依照經驗，一般軟體專案編譯所需的記憶體大小，約略是 CPU 執行緒數多少條，記憶體就要多少 GB。除此之外，我也先在舊的電腦上，參考這個[網頁](https://www.linuxatemyram.com/)，分別在掛上 Swap 和卸載 Swap 的情形下做實際編譯，並比較記憶體的使用狀況。
+依照經驗，編譯一般軟體專案所需的記憶體大小，約略是 CPU 執行緒數多少條，記憶體就要多少 GB。除此之外，我也先在舊的電腦上，參考這個[網頁](https://www.linuxatemyram.com/)，分別在掛上 Swap 和卸載 Swap 的情形下做實際編譯，並比較記憶體的使用狀況。
 
 測試機器：
 
@@ -82,7 +82,7 @@ Swap:       2097148           0     2097148
     ```
     
     進行編譯。
-    編譯後確認，編譯過程中最低可用記憶體剩餘量：
+    完成後確認，編譯過程中最低可用記憶體剩餘量：
     
     ```
     cat memory-usage-log-swapon.txt | grep Mem | awk '{print $7}' | sort -n | head -n 1
@@ -94,7 +94,7 @@ Swap:       2097148           0     2097148
     cat memory-usage-log-swapon.txt | grep Swap | awk '{print $3}' | sort -nr | head -n 1
     ```
     
-    最低可用記憶體剩餘量為 5.46 GB，最高 Swap 使用量為 321.75 MB。因此在 12 緒的 CPU 下做編譯，16 GB 的記憶體是足夠使用的。
+    最低可用記憶體剩餘量為 5.46 GB，最高 Swap 使用量為 321.75 MB。因此在 12 緒的 CPU 下編譯我的 Yocto 專案，搭配 16 GB 的記憶體是足夠的。
     
 2.  無掛載 Swap：
     卸 Swap：
@@ -116,23 +116,23 @@ Swap:       2097148           0     2097148
     ```
     
     進行編譯。
-    編譯後確認，編譯過程中最低可用記憶體剩餘量：
+    完成後確認，編譯過程中最低可用記憶體剩餘量：
     
     ```
     cat memory-usage-log-swapoff.txt | grep Mem | awk '{print $7}' | sort -n | head -n 1
     ```
     
-    最低可用記憶體剩餘量為 5.24 GB，與編譯中 1 條執行緒約需要使用 1 GB 的經驗相符。
+    最低可用記憶體剩餘量為 5.24 GB，與開頭的經驗，編譯中 1 條執行緒約需 1 GB 相符。
 
 AMD Ryzen™ 9 5900X AM4 是 12 核 24 緒，因此 32 GB 的記憶體應足夠使用。同樣大小的記憶體也有價差，時脈、CL 值、會不會發光、品牌等都有影響。我買了 DDR4-3600 CL18，其實應該選 DDR4-3200 CL16 的就好，因為二者效能差不多，但 DDR4-3600 CL18 的價格高了近 20%。這邊預算沒有控制好。
 
 ## 固態硬碟
 
-儲存空間大一點比較方便，目前能買到的最大大小為 2 TB，[WD_BLACK™ SN750](https://shop.westerndigital.com/products/internal-drives/wd-black-sn750-nvme-ssd#WDS250G3X0C) 太貴，就挑了使用國產控制器（群聯）一樣五年保的 [Pioneer APS-SE20Q](https://pioneer-iot.com/product/internal-ssd/internal-ssdaps-se20q/)。
+儲存空間大一點比較方便，目前有貨的最大大小為 2 TB，[WD_BLACK™ SN750](https://shop.westerndigital.com/products/internal-drives/wd-black-sn750-nvme-ssd#WDS250G3X0C) 太貴，就挑了使用國產控制器（群聯）一樣五年保的 [Pioneer APS-SE20Q](https://pioneer-iot.com/product/internal-ssd/internal-ssdaps-se20q/)。
 
 ## 顯示卡
 
-基本上除了安裝以外都不會接螢幕，因此低階的即可。但仍希望起碼能推動 4K 的螢幕，所以挑了 [GeForce GT 1030](https://www.nvidia.com/en-us/geforce/graphics-cards/gt-1030/specifications/)。
+基本上這臺電腦除了安裝 OS 以外都不會接螢幕，因此低階的即可。但仍希望起碼能推動 4K 的螢幕看影片，所以挑了 [GeForce GT 1030](https://www.nvidia.com/en-us/geforce/graphics-cards/gt-1030/specifications/)。
 
 ## 機殼
 
@@ -157,12 +157,14 @@ AMD Ryzen™ 9 5900X AM4 是 12 核 24 緒，因此 32 GB 的記憶體應足夠�
 
 ![Display-Card-Wind-Direction.png](Display-Card-Wind-Direction.png)
 
-補充說明，我會避免選擇將電源供應器定位為主要排風元件的機殼（如後上置型的）。因為電源供應器很怕熱，長期在較熱環境工作的電源供應器，除了壽命比較短之外，也很危險（可參見全漢[官網說明](https://www.fsp-group.com/tw/knowledge-prd-4.html)）。所以如果機殼內有獨立空間可放置電源供應器是最理想的，這樣電源供應器就不會與 CPU、顯示卡等高發熱元件混在同一空間內。
+補充說明，我會避免選擇將電源供應器定位為主要排風元件的機殼（如後上置型的）。因為電源供應器很怕熱，長期在較熱環境中工作的電源供應器，除了壽命比較短之外，也很危險（可參見全漢[官網說明](https://www.fsp-group.com/tw/knowledge-prd-4.html)）。機殼內有獨立空間可放置電源供應器是最理想的，這樣電源供應器就不會與 CPU、顯示卡等高發熱元件混在同一空間內。
 
 ## CPU 散熱器
 
-散熱器實在太多了，所以我直接在以安靜著稱的貓頭鷹裡挑。因為希望能與機殼設計的水平風流相配合，所以只看塔式散熱器。5900X 蠻熱的，所以需要散熱能力好一點的，同時我又不喜歡記憶體上方被風扇擋住，所以挑了 [Noctua NH-D15S](https://www.google.com/search?client=firefox-b-d&q=NH-D15s)。
+散熱器的選擇實在太多了，所以我直接在以安靜著稱的貓頭鷹裡挑。因為希望能與機殼設計的水平風流相配合，所以只看塔式散熱器。5900X 蠻熱的，需要散熱能力好一點的，同時我又不喜歡記憶體上方被風扇擋住，所以挑了 [Noctua NH-D15S](https://www.google.com/search?client=firefox-b-d&q=NH-D15s)。
+
+![H210+D15S.webp](H210+D15S.webp)
 
 ## 電源供應器
 
-電源供應器是耗材，它的供應瓦數是會衰減的。預算許可的話，就把瓦數買到 CPU + 顯卡功耗的 2 倍，這樣電源供應器在其他零件壞掉前應該都會是好的。愛護地球，在能負擔的範圍內選轉換功率高一點的。
+電源供應器是耗材，它的供應瓦數是會衰減的。預算許可的話，就把瓦數買到 CPU + 顯卡功耗的 2 倍，這樣電源供應器在其他零件壞掉前應該都會是好的。愛護地球，在能負擔的範圍內選轉換功率高一點的。如果機殼支援 ATX 規格的電源供應器，那在電源供應器的選擇會比較多，也會比較便宜。
