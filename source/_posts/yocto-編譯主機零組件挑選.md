@@ -161,7 +161,10 @@ AMD Ryzen™ 9 5900X AM4 是 12 核 24 緒，因此 32 GB 的記憶體應足夠�
 
 ## CPU 散熱器
 
-散熱器的選擇實在太多了，所以我直接在以安靜著稱的貓頭鷹裡挑。因為希望能與機殼設計的水平風流相配合，所以只看塔式散熱器。5900X 蠻熱的，需要散熱能力好一點的，同時我又不喜歡記憶體上方被風扇擋住，所以挑了 [Noctua NH-D15S](https://www.google.com/search?client=firefox-b-d&q=NH-D15s)。
+散熱器的選擇實在太多了，所以我直接在以安靜著稱的貓頭鷹裡挑。因為希望能與機殼設計的水平風流相配合，所以只看塔式散熱器。5900X 蠻熱的，需要散熱能力好一點的，同時我又不喜歡記憶體完全被散熱器遮住看不到，所以挑了 [Noctua NH-D15S](https://www.google.com/search?client=firefox-b-d&q=NH-D15s)。
+
+Mini-ITX 主板 + 記憶體 + NH-D15S 示意圖：
+![phanteks-evolv-itx-memory-nh-d15s.jpg](phanteks-evolv-itx-memory-nh-d15s.jpg)
 
 NZXT H210 + NH-D15S 示意圖：
 ![H210+D15S.webp](H210+D15S.webp)
