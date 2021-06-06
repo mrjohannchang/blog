@@ -1276,12 +1276,12 @@ ABCDEFG<br />
  開始搜集記憶體使用狀況： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">free -s 1 | tee memory-usage-log-swapon.txt</span><br></pre></td></tr></table></figure>
  進行編譯。<br> 完成後確認，編譯過程中最低可用記憶體剩餘量： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cat memory-usage-log-swapon.txt | grep Mem | awk &#x27;&#123;print $7&#125;&#x27; | sort -n | head -n 1</span><br></pre></td></tr></table></figure>
  及最高 Swap 使用量： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cat memory-usage-log-swapon.txt | grep Swap | awk &#x27;&#123;print $3&#125;&#x27; | sort -nr | head -n 1</span><br></pre></td></tr></table></figure>
- 最低可用記憶體剩餘量為 5.46 GB，最高 Swap 使用量為 321.75 MB。因此在 12 緒的 CPU 下編譯我的 Yocto 專案，搭配 16 GB 的記憶體是足夠的。</li>
+ 最低可用記憶體剩餘量為 5.46 GB，最高 Swap 使用量為 321.75 MB。因此在 12 緒的 CPU 下編譯我的 Yocto 專案，搭配 16 GB 的記憶體是足夠的。本次編譯耗時 1:06:13.27。</li>
 <li>無掛載 Swap：<br> 卸 Swap： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">swapoff -a</span><br></pre></td></tr></table></figure>
  清記憶體： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sync; echo 3 &gt; /proc/sys/vm/drop_caches</span><br></pre></td></tr></table></figure>
  開始搜集記憶體使用狀況： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">free -s 1 | tee memory-usage-log-swapoff.txt</span><br></pre></td></tr></table></figure>
  進行編譯。<br> 完成後確認，編譯過程中最低可用記憶體剩餘量： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cat memory-usage-log-swapoff.txt | grep Mem | awk &#x27;&#123;print $7&#125;&#x27; | sort -n | head -n 1</span><br></pre></td></tr></table></figure>
- 最低可用記憶體剩餘量為 5.24 GB，與開頭的經驗，編譯中 1 條執行緒約需 1 GB 相符。</li>
+ 最低可用記憶體剩餘量為 5.24 GB，與開頭的經驗，編譯中 1 條執行緒約需 1 GB 相符。本次編譯耗時 1:06:10.88。</li>
 </ol>
 <p>AMD Ryzen™ 9 5900X AM4 是 12 核 24 緒，因此 32 GB 的記憶體應足夠使用。同樣大小的記憶體也有價差，時脈、CL 值、會不會發光、品牌等都有影響。我買了 DDR4-3600 CL18，其實應該選 DDR4-3200 CL16 的就好，因為二者效能差不多，但 DDR4-3600 CL18 的價格高了近 20%。這邊預算沒有控制好。</p>
 <h2 id="固態硬碟"><a href="#固態硬碟" class="headerlink" title="固態硬碟"></a>固態硬碟</h2><p>儲存空間大一點比較方便，目前有貨的最大大小為 2 TB，<a href="https://shop.westerndigital.com/products/internal-drives/wd-black-sn750-nvme-ssd#WDS250G3X0C">WD_BLACK™ SN750</a> 太貴，就挑了使用國產控制器（群聯）一樣五年保的 <a href="https://pioneer-iot.com/product/internal-ssd/internal-ssdaps-se20q/">Pioneer APS-SE20Q</a>。</p>
