@@ -1233,7 +1233,7 @@ ABCDEFG<br />
 <h2 id="安裝-CPU"><a href="#安裝-CPU" class="headerlink" title="安裝 CPU"></a>安裝 CPU</h2><ol>
 <li>首先核對 CPU 安裝方向的標示<br> <img src="installing-cpu-1.jpeg" alt="installing-cpu-1.jpeg"></li>
 <li>拉起 CPU 固定桿並輕輕放下 CPU<br> <img src="installing-cpu-2.jpeg" alt="installing-cpu-2.jpeg"></li>
-<li>放下固定桿, 確定 CPU 有被夾緊<br> <img src="installing-cpu-3.jpeg" alt="installing-cpu-3.jpeg"></li>
+<li>放下固定桿，確定 CPU 有被夾緊<br> <img src="installing-cpu-3.jpeg" alt="installing-cpu-3.jpeg"></li>
 </ol>
 <h2 id="安裝-NVMe-SSD"><a href="#安裝-NVMe-SSD" class="headerlink" title="安裝 NVMe SSD"></a>安裝 NVMe SSD</h2><p>補拍 SSD 照片<br><img src="ssd.jpeg" alt="ssd.jpeg"></p>
 <p>B550 不是所有 NVMe 插槽都是 PCIe 4.0，所以要注意一下。不過因為買的是 PCIe 3.0 的 SSD，所以也沒差。</p>
