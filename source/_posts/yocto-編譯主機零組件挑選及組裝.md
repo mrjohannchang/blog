@@ -167,7 +167,7 @@ Mini-ITX 主板 + 記憶體 + NH-D15S 示意圖：
 ![phanteks-evolv-itx-memory-nh-d15s.jpg](phanteks-evolv-itx-memory-nh-d15s.jpg)
 
 NZXT H210 + NH-D15S 示意圖：
-![H210+D15S.webp](H210+D15S.webp)
+![H210+D15S.jpeg](H210+D15S.jpeg)
 
 ## 電源供應器
 
@@ -202,7 +202,7 @@ NZXT H210 + NH-D15S 示意圖：
     ![installing-cpu-1.jpeg](installing-cpu-1.jpeg)
 2. 拉起 CPU 固定桿並輕輕放下 CPU
     ![installing-cpu-2.jpeg](installing-cpu-2.jpeg)
-3. 放下固定桿, 確定 CPU 有被夾緊
+3. 放下固定桿，確定 CPU 有被夾緊
     ![installing-cpu-3.jpeg](installing-cpu-3.jpeg)
 
 ## 安裝 NVMe SSD
@@ -319,7 +319,7 @@ B550 不是所有 NVMe 插槽都是 PCIe 4.0，所以要注意一下。不過因
 
 環境溫度 28 °C、空調
 
-![temperature.png](temperature.png)
+![temperature.jpg](temperature.jpg)
 
 1. 後、上出風風扇都沒裝
     待機：約 33 °C
