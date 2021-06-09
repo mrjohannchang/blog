@@ -1281,7 +1281,7 @@ ABCDEFG<br />
 <li>接上 CPU 電源</li>
 <li>將主機板放至定位，以螺絲固定<br> <img src="installing-mainboard-3.jpeg" alt="installing-mainboard-3.jpeg"><br> 左上角的螺絲孔被 CPU 散熱鰭片擋住鎖不到，要能鎖到的話，就要先裝主機板再裝鰭片。但因為先鎖主板再裝鰭片會不能檢查散熱膏的量，加上這張主板背面有金屬框加固應該夠堅固，所以就不重做了。</li>
 <li>接上其他各種電源<br> <img src="installing-mainboard-4.jpeg" alt="installing-mainboard-4.jpeg"></li>
-<li>理線<br> <img src="installing-mainboard-5.jpeg" alt="installing-mainboard-5.jpeg"></li>
+<li>理線（不好意思沒有使用訂製線……）<br> <img src="installing-mainboard-5.jpeg" alt="installing-mainboard-5.jpeg"></li>
 </ol>
 <h2 id="安裝顯示卡"><a href="#安裝顯示卡" class="headerlink" title="安裝顯示卡"></a>安裝顯示卡</h2><p>低階顯卡不用額外接電源，直接插到對應的槽並鎖上機殼背板就好。</p>
 <p><img src="installing-video-card.jpeg" alt="installing-video-card.jpeg"></p>
