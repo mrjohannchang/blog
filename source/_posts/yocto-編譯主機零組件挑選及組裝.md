@@ -5,6 +5,8 @@ categories:
 - Hardware
 ---
 
+{% asset_img PC_Screws.jpg PC_Screws.jpg %}
+
 # 背景
 
 需求：程式編譯，主要編譯 Yocto（低配版 Build Code Server）
