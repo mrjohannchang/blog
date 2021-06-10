@@ -74,7 +74,7 @@ Swap:       2097148           0     2097148
     清記憶體：
     
     ```
-    sync; echo 3 > /proc/sys/vm/drop_caches
+    sync; echo 3 | sudo tee /proc/sys/vm/drop_caches
     ```
     
     開始搜集記憶體使用狀況：
@@ -87,13 +87,13 @@ Swap:       2097148           0     2097148
     完成後確認，編譯過程中最低可用記憶體剩餘量：
     
     ```
-    cat memory-usage-log-swapon.txt | grep Mem | awk '{print $7}' | sort -n | head -n 1
+    grep Mem  memory-usage-log-swapon.txt | awk '{print $7}' | sort -n | head -n 1
     ```
     
     及最高 Swap 使用量：
     
     ```
-    cat memory-usage-log-swapon.txt | grep Swap | awk '{print $3}' | sort -nr | head -n 1
+    grep Swap  memory-usage-log-swapon.txt | awk '{print $3}' | sort -nr | head -n 1
     ```
     
     最低可用記憶體剩餘量為 5.46 GB，最高 Swap 使用量為 321.75 MB。因此在 12 緒的 CPU 下編譯我的 Yocto 專案，搭配 16 GB 的記憶體是足夠的。本次編譯耗時 1:06:13.27。
@@ -108,7 +108,7 @@ Swap:       2097148           0     2097148
     清記憶體：
     
     ```
-    sync; echo 3 > /proc/sys/vm/drop_caches
+    sync; echo 3 | sudo tee /proc/sys/vm/drop_caches
     ```
     
     開始搜集記憶體使用狀況：
@@ -121,7 +121,7 @@ Swap:       2097148           0     2097148
     完成後確認，編譯過程中最低可用記憶體剩餘量：
     
     ```
-    cat memory-usage-log-swapoff.txt | grep Mem | awk '{print $7}' | sort -n | head -n 1
+    grep Mem memory-usage-log-swapoff.txt | awk '{print $7}' | sort -n | head -n 1
     ```
     
     最低可用記憶體剩餘量為 5.24 GB，與開頭的經驗，編譯中 1 條執行緒約需 1 GB 相符。本次編譯耗時 1:06:10.88。
