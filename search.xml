@@ -1241,6 +1241,8 @@ ABCDEFG<br />
 <p><img src="NF-A12x15-1.jpeg" alt="NF-A12x15-1.jpeg"></p>
 <p><img src="NF-A12x15-2.jpeg" alt="NF-A12x15-2.jpeg"></p>
 <p><img src="NF-A12x15-3.jpeg" alt="NF-A12x15-3.jpeg"></p>
+<p><strong>Update 2</strong></p>
+<p>實測後發現 NF-A12x15 對降低峰值溫度沒什麼效果，同時產生了低頻的共鳴噪音，所以後來又把它拆掉了。</p>
 <h2 id="安裝-CPU"><a href="#安裝-CPU" class="headerlink" title="安裝 CPU"></a>安裝 CPU</h2><ol>
 <li>首先核對 CPU 安裝方向的標示<br> <img src="installing-cpu-1.jpeg" alt="installing-cpu-1.jpeg"></li>
 <li>拉起 CPU 固定桿並輕輕放下 CPU<br> <img src="installing-cpu-2.jpeg" alt="installing-cpu-2.jpeg"></li>
