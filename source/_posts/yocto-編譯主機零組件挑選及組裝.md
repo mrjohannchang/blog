@@ -126,7 +126,7 @@ Swap:       2097148           0     2097148
     
     最低可用記憶體剩餘量為 5.24 GB，與開頭的經驗，編譯中 1 條執行緒約需 1 GB 相符。本次編譯耗時 1:06:10.88。
 
-AMD Ryzen™ 9 5900X AM4 是 12 核 24 緒，因此 32 GB 的記憶體應足夠使用。同樣大小的記憶體也有價差，時脈、CL 值、會不會發光、品牌等都有影響。我買了 DDR4-3600 CL18，其實應該選 DDR4-3200 CL16 的就好，因為二者效能差不多，但 DDR4-3600 CL18 的價格高了近 20%。這邊預算沒有控制好。
+AMD Ryzen™ 9 5900X AM4 是 12 核 24 緒，因此 32 GB 的記憶體應足夠使用。同樣大小的記憶體也有價差，時脈、CL 值、會不會發光、品牌等都有影響。這次買了 DDR4-3600 CL18，其實應該選 DDR4-3200 CL16 的就好，因為二者效能差不多，但 DDR4-3600 CL18 的價格高了近 20%。這邊預算沒有控制好。
 
 ## 固態硬碟（SSD）
 
@@ -197,7 +197,25 @@ NZXT H210 + NH-D15S 示意圖：
     ![installing-psu-to-case.jpeg](installing-psu-to-case.jpeg)
 2. 將 2 顆 14" 進風扇裝進機殼前方
     ![installing-14-fan-to-case.jpeg](installing-14-fan-to-case.jpeg)
-    
+
+**Update**
+
+之後為防落塵，上方出風口用黑色不織布封住：
+
+![install-cpu-heat-seak-13.jpeg](install-cpu-heat-seak-13.jpeg)
+
+![install-cpu-heat-seak-14.jpeg](install-cpu-heat-seak-14.jpeg)
+
+![install-cpu-heat-seak-15.jpeg](install-cpu-heat-seak-15.jpeg)
+
+另購了貓頭鷹 NF-A12x15 薄扇 1 個裝在機殼後方出風。
+
+![NF-A12x15-1.jpeg](NF-A12x15-1.jpeg)
+
+![NF-A12x15-2.jpeg](NF-A12x15-2.jpeg)
+
+![NF-A12x15-3.jpeg](NF-A12x15-3.jpeg)
+
 ## 安裝 CPU
 
 1. 首先核對 CPU 安裝方向的標示
@@ -215,27 +233,27 @@ NZXT H210 + NH-D15S 示意圖：
 B550 不是所有 NVMe 插槽都是 PCIe 4.0，所以要注意一下。不過因為買的是 PCIe 3.0 的 SSD，所以也沒差。
 
 1. 從腳位判斷安裝方向
-    ![installing-ssd-1.jpeg](installing-ssd-1.jpeg)
+    ![installing-ssd-1.jpeg](:/82611592ebff425db37a5a4f642b142d)
 2. 斜斜地插入 SSD
-    ![installing-ssd-2.jpeg](installing-ssd-2.jpeg)
+    ![installing-ssd-2.jpeg](:/48005a9687214249b6371f076bbfe144)
 3. 用六角套筒卸下主機板上的固定用螺母柱
-    ![installing-ssd-3.jpeg](installing-ssd-3.jpeg)
+    ![installing-ssd-3.jpeg](:/297d9c07cb5d4f75bbf3309d9d9dfb48)
 4. 將 SSD 壓平，並用螺母柱加以固定
-    ![installing-ssd-4.jpeg](installing-ssd-4.jpeg)
+    ![installing-ssd-4.jpeg](:/da330779f55d48458a7b82a2ebbf6469)
 5. 撕開 SSD 散熱片的背膠
-    ![installing-ssd-5.jpeg](installing-ssd-5.jpeg)
+    ![installing-ssd-5.jpeg](:/0f181797ad8c442ea29b4c66a02de709)
 6. 將 SSD 散熱片放至定位，並鎖上螺絲固定
-    ![installing-ssd-6.jpeg](installing-ssd-6.jpeg)
-    ![installing-ssd-7.jpeg](installing-ssd-7.jpeg)
+    ![installing-ssd-6.jpeg](:/ad09c6a60e9a4de79ff5ea8ed713cb84)
+    ![installing-ssd-7.jpeg](:/0d41da361cac4873a54ad4e7079a8a01)
 
 ## 安裝記憶體
 
 1. 扳開記憶體插槽二側的卡榫
-    ![installing-ram-1.jpeg](installing-ram-1.jpeg)
+    ![installing-ram-1.jpeg](:/e4cb85f8d22c458e81267b49133ae355)
 2. 確認記憶體插銷缺口位置
-    ![installing-ram-2.jpeg](installing-ram-2.jpeg)
+    ![installing-ram-2.jpeg](:/44806537454f473e93cb2b97cc316bce)
 3. 垂直壓下記憶體直到二側卡榫卡緊記憶體
-    ![installing-ram-3.jpeg](installing-ram-3.jpeg)
+    ![installing-ram-3.jpeg](:/d68eb45462db4455a0e3c40789c34003)
 
 ## 安裝 CPU 散熱器
 
@@ -268,18 +286,6 @@ B550 不是所有 NVMe 插槽都是 PCIe 4.0，所以要注意一下。不過因
 
 ![install-cpu-heat-sink-11.JPG](install-cpu-heat-sink-11.JPG)
 
-**Update**
-
-之後為防落塵，上方出風口用黑色不織布封住：
-
-![install-cpu-heat-seak-13.jpeg](install-cpu-heat-seak-13.jpeg)
-
-![install-cpu-heat-seak-14.jpeg](install-cpu-heat-seak-14.jpeg)
-
-![install-cpu-heat-seak-15.jpeg](install-cpu-heat-seak-15.jpeg)
-
-另購了貓頭鷹 NF-A12x15 薄扇 1 個裝在機殼後方出風。
-
 ## 安裝主機板
 
 準備放主機板進機殼時，才發現散熱鰭片會卡到這款機殼後面和上面的風扇，只好把它們拆掉。
@@ -294,14 +300,20 @@ B550 不是所有 NVMe 插槽都是 PCIe 4.0，所以要注意一下。不過因
     左上角的螺絲孔被 CPU 散熱鰭片擋住鎖不到，要能鎖到的話，就要先裝主機板再裝鰭片。但因為先鎖主板再裝鰭片會不能檢查散熱膏的量，加上這張主板背面有金屬框加固應該夠堅固，所以就不重做了。
 3. 接上其他各種電源
     ![installing-mainboard-4.jpeg](installing-mainboard-4.jpeg)
-4. 理線（不好意思沒有使用訂製線……）
-    ![installing-mainboard-5.jpeg](installing-mainboard-5.jpeg)
 
 ## 安裝顯示卡
 
 低階顯卡不用額外接電源，直接插到對應的槽並鎖上機殼背板就好。
 
 ![installing-video-card.jpeg](installing-video-card.jpeg)
+
+## 理線
+
+理線是一個耗時也不見得做得好的工作，建議動手前先參考別人的做法。對外觀講究的話，可以另外購買高顏值的訂製線。網路上搜尋「機殼型號」 + 「Cable Management」就可以看到很多範例。
+
+![Cable-Management-1.jpeg](Cable-Management-1.jpeg)
+
+![Cable-Management-2.jpeg](Cable-Management-2.jpeg)
 
 ## 完成
 
@@ -331,7 +343,10 @@ B550 不是所有 NVMe 插槽都是 PCIe 4.0，所以要注意一下。不過因
 2. 後出風風扇沒裝、上方出風口封起
     待機：約 33 °C
     峰值：80.7 °C
-    由此可以看到上方出風口對散熱的影響不大。
+    ![temperature-chart-2.png](temperature-chart-2.png)
 3. 後出風風扇 NF-A12x15 、上方出風口封起
-    待機：約  °C
-    峰值： °C
+    待機：約 33  °C
+    峰值：81.9 °C
+    ![temperature-chart-3.png](temperature-chart-3.png)
+
+由此可以看到，在這個環境溫度、機殼內配置下，上方出風口和後出風風扇對散熱的影響都不大。
