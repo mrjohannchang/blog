@@ -1198,7 +1198,7 @@ ABCDEFG<br />
  進行編譯。<br> 完成後確認，編譯過程中最低可用記憶體剩餘量： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">grep Mem memory-usage-log-swapoff.txt | awk &#x27;&#123;print $7&#125;&#x27; | sort -n | head -n 1</span><br></pre></td></tr></table></figure>
  最低可用記憶體剩餘量為 5.24 GB，與開頭的經驗，編譯中 1 條執行緒約需 1 GB 相符。本次編譯耗時 1:06:10.88。</li>
 </ol>
-<p>AMD Ryzen™ 9 5900X AM4 是 12 核 24 緒，因此 32 GB 的記憶體應足夠使用。同樣大小的記憶體也有價差，時脈、CL 值、會不會發光、品牌等都有影響。我買了 DDR4-3600 CL18，其實應該選 DDR4-3200 CL16 的就好，因為二者效能差不多，但 DDR4-3600 CL18 的價格高了近 20%。這邊預算沒有控制好。</p>
+<p>AMD Ryzen™ 9 5900X AM4 是 12 核 24 緒，因此 32 GB 的記憶體應足夠使用。同樣大小的記憶體也有價差，時脈、CL 值、會不會發光、品牌等都有影響。這次買了 DDR4-3600 CL18，其實應該選 DDR4-3200 CL16 的就好，因為二者效能差不多，但 DDR4-3600 CL18 的價格高了近 20%。這邊預算沒有控制好。</p>
 <h2 id="固態硬碟（SSD）"><a href="#固態硬碟（SSD）" class="headerlink" title="固態硬碟（SSD）"></a>固態硬碟（SSD）</h2><p>儲存空間大一點比較方便，目前有貨的最大大小為 2 TB，<a href="https://shop.westerndigital.com/products/internal-drives/wd-black-sn750-nvme-ssd#WDS250G3X0C">WD_BLACK™ SN750</a> 太貴，就挑了使用國產控制器（群聯）一樣五年保的 <a href="https://pioneer-iot.com/product/internal-ssd/internal-ssdaps-se20q/">Pioneer APS-SE20Q</a>。</p>
 <h2 id="顯示卡"><a href="#顯示卡" class="headerlink" title="顯示卡"></a>顯示卡</h2><p>基本上這臺電腦除了安裝 OS 以外都不會接螢幕，因此低階的即可。但仍希望起碼能推動 4K 的螢幕看影片，所以挑了 <a href="https://www.nvidia.com/en-us/geforce/graphics-cards/gt-1030/specifications/">GeForce GT 1030</a>。</p>
 <h2 id="機殼"><a href="#機殼" class="headerlink" title="機殼"></a>機殼</h2><p>目前使用的 <a href="https://www.silverstonetek.com/legacy.php?pid=345&area=tw&model=SG09&tno=">SilverStone SG09</a> 搭配貓頭鷹塔散，機殼尺寸和散熱效果都讓我很滿意。因為小機殼輕巧的特性，這次鎖定 Mini-ITX 的機殼。小機殼內部比較擁擠，裝高度發熱的元件要特別注意通風、散熱。參考了一些在 YouTube 上看到的機殼：</p>
@@ -1232,6 +1232,15 @@ ABCDEFG<br />
 <li>把電源供應器裝進機殼後下方<br> <img src="installing-psu-to-case.jpeg" alt="installing-psu-to-case.jpeg"></li>
 <li>將 2 顆 14” 進風扇裝進機殼前方<br> <img src="installing-14-fan-to-case.jpeg" alt="installing-14-fan-to-case.jpeg"></li>
 </ol>
+<p><strong>Update</strong></p>
+<p>之後為防落塵，上方出風口用黑色不織布封住：</p>
+<p><img src="install-cpu-heat-seak-13.jpeg" alt="install-cpu-heat-seak-13.jpeg"></p>
+<p><img src="install-cpu-heat-seak-14.jpeg" alt="install-cpu-heat-seak-14.jpeg"></p>
+<p><img src="install-cpu-heat-seak-15.jpeg" alt="install-cpu-heat-seak-15.jpeg"></p>
+<p>另購了貓頭鷹 NF-A12x15 薄扇 1 個裝在機殼後方出風。</p>
+<p><img src="NF-A12x15-1.jpeg" alt="NF-A12x15-1.jpeg"></p>
+<p><img src="NF-A12x15-2.jpeg" alt="NF-A12x15-2.jpeg"></p>
+<p><img src="NF-A12x15-3.jpeg" alt="NF-A12x15-3.jpeg"></p>
 <h2 id="安裝-CPU"><a href="#安裝-CPU" class="headerlink" title="安裝 CPU"></a>安裝 CPU</h2><ol>
 <li>首先核對 CPU 安裝方向的標示<br> <img src="installing-cpu-1.jpeg" alt="installing-cpu-1.jpeg"></li>
 <li>拉起 CPU 固定桿並輕輕放下 CPU<br> <img src="installing-cpu-2.jpeg" alt="installing-cpu-2.jpeg"></li>
@@ -1240,17 +1249,17 @@ ABCDEFG<br />
 <h2 id="安裝-NVMe-SSD"><a href="#安裝-NVMe-SSD" class="headerlink" title="安裝 NVMe SSD"></a>安裝 NVMe SSD</h2><p>補拍 SSD 照片<br><img src="ssd.jpeg" alt="ssd.jpeg"></p>
 <p>B550 不是所有 NVMe 插槽都是 PCIe 4.0，所以要注意一下。不過因為買的是 PCIe 3.0 的 SSD，所以也沒差。</p>
 <ol>
-<li>從腳位判斷安裝方向<br> <img src="installing-ssd-1.jpeg" alt="installing-ssd-1.jpeg"></li>
-<li>斜斜地插入 SSD<br> <img src="installing-ssd-2.jpeg" alt="installing-ssd-2.jpeg"></li>
-<li>用六角套筒卸下主機板上的固定用螺母柱<br> <img src="installing-ssd-3.jpeg" alt="installing-ssd-3.jpeg"></li>
-<li>將 SSD 壓平，並用螺母柱加以固定<br> <img src="installing-ssd-4.jpeg" alt="installing-ssd-4.jpeg"></li>
-<li>撕開 SSD 散熱片的背膠<br> <img src="installing-ssd-5.jpeg" alt="installing-ssd-5.jpeg"></li>
-<li>將 SSD 散熱片放至定位，並鎖上螺絲固定<br> <img src="installing-ssd-6.jpeg" alt="installing-ssd-6.jpeg"><br> <img src="installing-ssd-7.jpeg" alt="installing-ssd-7.jpeg"></li>
+<li>從腳位判斷安裝方向<br> <img src=":/82611592ebff425db37a5a4f642b142d" alt="installing-ssd-1.jpeg"></li>
+<li>斜斜地插入 SSD<br> <img src=":/48005a9687214249b6371f076bbfe144" alt="installing-ssd-2.jpeg"></li>
+<li>用六角套筒卸下主機板上的固定用螺母柱<br> <img src=":/297d9c07cb5d4f75bbf3309d9d9dfb48" alt="installing-ssd-3.jpeg"></li>
+<li>將 SSD 壓平，並用螺母柱加以固定<br> <img src=":/da330779f55d48458a7b82a2ebbf6469" alt="installing-ssd-4.jpeg"></li>
+<li>撕開 SSD 散熱片的背膠<br> <img src=":/0f181797ad8c442ea29b4c66a02de709" alt="installing-ssd-5.jpeg"></li>
+<li>將 SSD 散熱片放至定位，並鎖上螺絲固定<br> <img src=":/ad09c6a60e9a4de79ff5ea8ed713cb84" alt="installing-ssd-6.jpeg"><br> <img src=":/0d41da361cac4873a54ad4e7079a8a01" alt="installing-ssd-7.jpeg"></li>
 </ol>
 <h2 id="安裝記憶體"><a href="#安裝記憶體" class="headerlink" title="安裝記憶體"></a>安裝記憶體</h2><ol>
-<li>扳開記憶體插槽二側的卡榫<br> <img src="installing-ram-1.jpeg" alt="installing-ram-1.jpeg"></li>
-<li>確認記憶體插銷缺口位置<br> <img src="installing-ram-2.jpeg" alt="installing-ram-2.jpeg"></li>
-<li>垂直壓下記憶體直到二側卡榫卡緊記憶體<br> <img src="installing-ram-3.jpeg" alt="installing-ram-3.jpeg"></li>
+<li>扳開記憶體插槽二側的卡榫<br> <img src=":/e4cb85f8d22c458e81267b49133ae355" alt="installing-ram-1.jpeg"></li>
+<li>確認記憶體插銷缺口位置<br> <img src=":/44806537454f473e93cb2b97cc316bce" alt="installing-ram-2.jpeg"></li>
+<li>垂直壓下記憶體直到二側卡榫卡緊記憶體<br> <img src=":/d68eb45462db4455a0e3c40789c34003" alt="installing-ram-3.jpeg"></li>
 </ol>
 <h2 id="安裝-CPU-散熱器"><a href="#安裝-CPU-散熱器" class="headerlink" title="安裝 CPU 散熱器"></a>安裝 CPU 散熱器</h2><ol>
 <li>卸下原廠散熱器基座<br> <img src="install-cpu-heat-sink-1.jpeg" alt="install-cpu-heat-sink-1.jpeg"></li>
@@ -1268,12 +1277,6 @@ ABCDEFG<br />
 <p><img src="install-cpu-heat-sink-9.jpeg" alt="install-cpu-heat-sink-9.jpeg"></p>
 <p>散熱鰭片的長、寬沒有超出主機板：</p>
 <p><img src="install-cpu-heat-sink-11.JPG" alt="install-cpu-heat-sink-11.JPG"></p>
-<p><strong>Update</strong></p>
-<p>之後為防落塵，上方出風口用黑色不織布封住：</p>
-<p><img src="install-cpu-heat-seak-13.jpeg" alt="install-cpu-heat-seak-13.jpeg"></p>
-<p><img src="install-cpu-heat-seak-14.jpeg" alt="install-cpu-heat-seak-14.jpeg"></p>
-<p><img src="install-cpu-heat-seak-15.jpeg" alt="install-cpu-heat-seak-15.jpeg"></p>
-<p>另購了貓頭鷹 NF-A12x15 薄扇 1 個裝在機殼後方出風。</p>
 <h2 id="安裝主機板"><a href="#安裝主機板" class="headerlink" title="安裝主機板"></a>安裝主機板</h2><p>準備放主機板進機殼時，才發現散熱鰭片會卡到這款機殼後面和上面的風扇，只好把它們拆掉。</p>
 <p><img src="installing-mainboard-1.jpeg" alt="installing-mainboard-1.jpeg"></p>
 <p><img src="installing-mainboard-2.jpeg" alt="installing-mainboard-2.jpeg"></p>
@@ -1281,10 +1284,12 @@ ABCDEFG<br />
 <li>接上 CPU 電源</li>
 <li>將主機板放至定位，以螺絲固定<br> <img src="installing-mainboard-3.jpeg" alt="installing-mainboard-3.jpeg"><br> 左上角的螺絲孔被 CPU 散熱鰭片擋住鎖不到，要能鎖到的話，就要先裝主機板再裝鰭片。但因為先鎖主板再裝鰭片會不能檢查散熱膏的量，加上這張主板背面有金屬框加固應該夠堅固，所以就不重做了。</li>
 <li>接上其他各種電源<br> <img src="installing-mainboard-4.jpeg" alt="installing-mainboard-4.jpeg"></li>
-<li>理線（不好意思沒有使用訂製線……）<br> <img src="installing-mainboard-5.jpeg" alt="installing-mainboard-5.jpeg"></li>
 </ol>
 <h2 id="安裝顯示卡"><a href="#安裝顯示卡" class="headerlink" title="安裝顯示卡"></a>安裝顯示卡</h2><p>低階顯卡不用額外接電源，直接插到對應的槽並鎖上機殼背板就好。</p>
 <p><img src="installing-video-card.jpeg" alt="installing-video-card.jpeg"></p>
+<h2 id="理線"><a href="#理線" class="headerlink" title="理線"></a>理線</h2><p>理線是一個耗時也不見得做得好的工作，建議動手前先參考別人的做法。對外觀講究的話，可以另外購買高顏值的訂製線。網路上搜尋「機殼型號」 + 「Cable Management」就可以看到很多範例。</p>
+<p><img src="Cable-Management-1.jpeg" alt="Cable-Management-1.jpeg"></p>
+<p><img src="Cable-Management-2.jpeg" alt="Cable-Management-2.jpeg"></p>
 <h2 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h2><p>最後蓋上機殼側板，就完成啦！</p>
 <p><img src="finish.jpeg" alt="finish.jpeg"></p>
 <h1 id="驗收"><a href="#驗收" class="headerlink" title="驗收"></a>驗收</h1><h2 id="CPU-效能"><a href="#CPU-效能" class="headerlink" title="CPU 效能"></a>CPU 效能</h2><p>相同專案在新電腦的編譯時間約為 35 分鐘，在上面列的 i7-8700K 舊電腦約為 66 分鐘。CPU 執行緒數加倍，時間約減半，算是符合預期。</p>
@@ -1293,9 +1298,10 @@ ABCDEFG<br />
 <p><img src="temperature.jpg" alt="temperature.jpg"></p>
 <ol>
 <li>後、上出風風扇都沒裝<br> 待機：約 33 °C<br> 峰值：80.4 °C</li>
-<li>後出風風扇沒裝、上方出風口封起<br> 待機：約 33 °C<br> 峰值：80.7 °C<br> 由此可以看到上方出風口對散熱的影響不大。</li>
-<li>後出風風扇 NF-A12x15 、上方出風口封起<br> 待機：約  °C<br> 峰值： °C</li>
+<li>後出風風扇沒裝、上方出風口封起<br> 待機：約 33 °C<br> 峰值：80.7 °C<br> <img src="temperature-chart-2.png" alt="temperature-chart-2.png"></li>
+<li>後出風風扇 NF-A12x15 、上方出風口封起<br> 待機：約 33  °C<br> 峰值：81.9 °C<br> <img src="temperature-chart-3.png" alt="temperature-chart-3.png"></li>
 </ol>
+<p>由此可以看到，在這個環境溫度、機殼內配置下，上方出風口和後出風風扇對散熱的影響都不大。</p>
 ]]></content>
       <categories>
         <category>Hardware</category>
