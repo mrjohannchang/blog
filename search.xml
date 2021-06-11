@@ -1300,7 +1300,7 @@ ABCDEFG<br />
 <p><img src="temperature.jpg" alt="temperature.jpg"></p>
 <ol>
 <li>後、上出風風扇都沒裝<br> 待機：約 33 °C<br> 峰值：80.4 °C</li>
-<li>後出風風扇沒裝、上方出風口封起<br> 待機：約 33 °C<br> 峰值：80.7 °C<br> <img src="temperature-chart-2.png" alt="temperature-chart-2.png"></li>
+<li>後出風風扇沒裝、上方出風口封起<br> 待機：約 33 °C<br> 峰值：81.9 °C<br> <img src="temperature-chart-2.png" alt="temperature-chart-2.png"></li>
 <li>後出風風扇 NF-A12x15 、上方出風口封起<br> 待機：約 33 °C<br> 峰值：81.9 °C<br> <img src="temperature-chart-3.png" alt="temperature-chart-3.png"></li>
 </ol>
 <p>由此可以看到，在這個環境溫度、機殼內配置下，上方出風口和後出風風扇對散熱的影響都不大。</p>
