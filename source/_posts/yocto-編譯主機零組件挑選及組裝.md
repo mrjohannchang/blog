@@ -210,7 +210,7 @@ NZXT H210 + NH-D15S 示意圖：
 
 另購了貓頭鷹 NF-A12x15 薄扇 1 個裝在機殼後方出風。
 
-![NF-A12x15-1.jpeg](NF-A12x15-1.jpeg)
+![NF-A12x15-1.jpg](NF-A12x15-1.jpg)
 
 ![NF-A12x15-2.jpeg](NF-A12x15-2.jpeg)
 
