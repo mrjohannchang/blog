@@ -237,27 +237,27 @@ NZXT H210 + NH-D15S 示意圖：
 B550 不是所有 NVMe 插槽都是 PCIe 4.0，所以要注意一下。不過因為買的是 PCIe 3.0 的 SSD，所以也沒差。
 
 1. 從腳位判斷安裝方向
-    ![installing-ssd-1.jpeg](:/82611592ebff425db37a5a4f642b142d)
+    ![installing-ssd-1.jpeg](installing-ssd-1.jpeg)
 2. 斜斜地插入 SSD
-    ![installing-ssd-2.jpeg](:/48005a9687214249b6371f076bbfe144)
+    ![installing-ssd-2.jpeg](installing-ssd-2.jpeg)
 3. 用六角套筒卸下主機板上的固定用螺母柱
-    ![installing-ssd-3.jpeg](:/297d9c07cb5d4f75bbf3309d9d9dfb48)
+    ![installing-ssd-3.jpeg](installing-ssd-3.jpeg)
 4. 將 SSD 壓平，並用螺母柱加以固定
-    ![installing-ssd-4.jpeg](:/da330779f55d48458a7b82a2ebbf6469)
+    ![installing-ssd-4.jpeg](installing-ssd-4.jpeg)
 5. 撕開 SSD 散熱片的背膠
-    ![installing-ssd-5.jpeg](:/0f181797ad8c442ea29b4c66a02de709)
+    ![installing-ssd-5.jpeg](installing-ssd-5.jpeg)
 6. 將 SSD 散熱片放至定位，並鎖上螺絲固定
-    ![installing-ssd-6.jpeg](:/ad09c6a60e9a4de79ff5ea8ed713cb84)
-    ![installing-ssd-7.jpeg](:/0d41da361cac4873a54ad4e7079a8a01)
+    ![installing-ssd-6.jpeg](installing-ssd-6.jpeg)
+    ![installing-ssd-7.jpeg](installing-ssd-7.jpeg)
 
 ## 安裝記憶體
 
 1. 扳開記憶體插槽二側的卡榫
-    ![installing-ram-1.jpeg](:/e4cb85f8d22c458e81267b49133ae355)
+    ![installing-ram-1.jpeg](installing-ram-1.jpeg)
 2. 確認記憶體插銷缺口位置
-    ![installing-ram-2.jpeg](:/44806537454f473e93cb2b97cc316bce)
+    ![installing-ram-2.jpeg](installing-ram-2.jpeg)
 3. 垂直壓下記憶體直到二側卡榫卡緊記憶體
-    ![installing-ram-3.jpeg](:/d68eb45462db4455a0e3c40789c34003)
+    ![installing-ram-3.jpeg](installing-ram-3.jpeg)
 
 ## 安裝 CPU 散熱器
 
