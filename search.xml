@@ -1251,17 +1251,17 @@ ABCDEFG<br />
 <h2 id="安裝-NVMe-SSD"><a href="#安裝-NVMe-SSD" class="headerlink" title="安裝 NVMe SSD"></a>安裝 NVMe SSD</h2><p>補拍 SSD 照片<br><img src="ssd.jpeg" alt="ssd.jpeg"></p>
 <p>B550 不是所有 NVMe 插槽都是 PCIe 4.0，所以要注意一下。不過因為買的是 PCIe 3.0 的 SSD，所以也沒差。</p>
 <ol>
-<li>從腳位判斷安裝方向<br> <img src=":/82611592ebff425db37a5a4f642b142d" alt="installing-ssd-1.jpeg"></li>
-<li>斜斜地插入 SSD<br> <img src=":/48005a9687214249b6371f076bbfe144" alt="installing-ssd-2.jpeg"></li>
-<li>用六角套筒卸下主機板上的固定用螺母柱<br> <img src=":/297d9c07cb5d4f75bbf3309d9d9dfb48" alt="installing-ssd-3.jpeg"></li>
-<li>將 SSD 壓平，並用螺母柱加以固定<br> <img src=":/da330779f55d48458a7b82a2ebbf6469" alt="installing-ssd-4.jpeg"></li>
-<li>撕開 SSD 散熱片的背膠<br> <img src=":/0f181797ad8c442ea29b4c66a02de709" alt="installing-ssd-5.jpeg"></li>
-<li>將 SSD 散熱片放至定位，並鎖上螺絲固定<br> <img src=":/ad09c6a60e9a4de79ff5ea8ed713cb84" alt="installing-ssd-6.jpeg"><br> <img src=":/0d41da361cac4873a54ad4e7079a8a01" alt="installing-ssd-7.jpeg"></li>
+<li>從腳位判斷安裝方向<br> <img src="installing-ssd-1.jpeg" alt="installing-ssd-1.jpeg"></li>
+<li>斜斜地插入 SSD<br> <img src="installing-ssd-2.jpeg" alt="installing-ssd-2.jpeg"></li>
+<li>用六角套筒卸下主機板上的固定用螺母柱<br> <img src="installing-ssd-3.jpeg" alt="installing-ssd-3.jpeg"></li>
+<li>將 SSD 壓平，並用螺母柱加以固定<br> <img src="installing-ssd-4.jpeg" alt="installing-ssd-4.jpeg"></li>
+<li>撕開 SSD 散熱片的背膠<br> <img src="installing-ssd-5.jpeg" alt="installing-ssd-5.jpeg"></li>
+<li>將 SSD 散熱片放至定位，並鎖上螺絲固定<br> <img src="installing-ssd-6.jpeg" alt="installing-ssd-6.jpeg"><br> <img src="installing-ssd-7.jpeg" alt="installing-ssd-7.jpeg"></li>
 </ol>
 <h2 id="安裝記憶體"><a href="#安裝記憶體" class="headerlink" title="安裝記憶體"></a>安裝記憶體</h2><ol>
-<li>扳開記憶體插槽二側的卡榫<br> <img src=":/e4cb85f8d22c458e81267b49133ae355" alt="installing-ram-1.jpeg"></li>
-<li>確認記憶體插銷缺口位置<br> <img src=":/44806537454f473e93cb2b97cc316bce" alt="installing-ram-2.jpeg"></li>
-<li>垂直壓下記憶體直到二側卡榫卡緊記憶體<br> <img src=":/d68eb45462db4455a0e3c40789c34003" alt="installing-ram-3.jpeg"></li>
+<li>扳開記憶體插槽二側的卡榫<br> <img src="installing-ram-1.jpeg" alt="installing-ram-1.jpeg"></li>
+<li>確認記憶體插銷缺口位置<br> <img src="installing-ram-2.jpeg" alt="installing-ram-2.jpeg"></li>
+<li>垂直壓下記憶體直到二側卡榫卡緊記憶體<br> <img src="installing-ram-3.jpeg" alt="installing-ram-3.jpeg"></li>
 </ol>
 <h2 id="安裝-CPU-散熱器"><a href="#安裝-CPU-散熱器" class="headerlink" title="安裝 CPU 散熱器"></a>安裝 CPU 散熱器</h2><ol>
 <li>卸下原廠散熱器基座<br> <img src="install-cpu-heat-sink-1.jpeg" alt="install-cpu-heat-sink-1.jpeg"></li>
