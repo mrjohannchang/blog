@@ -34,6 +34,10 @@ Intel 這顆效能表現與 AMD 這二顆相伯仲，但功耗高很多，所以
 
 ![AM4-Chipset-Compatibility.png](AM4-Chipset-Compatibility.png)
 
+各家 B550 Mini-ITX 主機板評測：
+
+{% youtube b5xcVF04B_M %}
+
 ## 記憶體
 
 依照過去編譯 AOSP 的經驗，編譯所需的記憶體大小，約略是 CPU 執行緒數多少條，記憶體就要多少 GB。除此之外，我也先在舊的電腦上，參考這個[網頁](https://www.linuxatemyram.com/)，分別在掛上 Swap 和卸載 Swap 的情形下實際編譯 Yocto 專案，來比較記憶體的使用狀況。
@@ -128,6 +132,10 @@ Swap:       2097148           0     2097148
 
 AMD Ryzen™ 9 5900X AM4 是 12 核 24 緒，因此 32 GB 的記憶體應足夠使用。同樣大小的記憶體也有價差，時脈、CL 值、會不會發光、品牌等都有影響。這次買了 DDR4-3600 CL18，其實應該選 DDR4-3200 CL16 的就好，因為二者效能差不多，但 DDR4-3600 CL18 的價格高了近 20%。這邊預算沒有控制好。
 
+DDR4-3200 vs. DDR4-3600 評測：
+
+{% youtube HZwP4GNtaS0 %}
+
 ## 固態硬碟（SSD）
 
 儲存空間大一點比較方便，目前有貨的最大大小為 2 TB，[WD_BLACK™ SN750](https://shop.westerndigital.com/products/internal-drives/wd-black-sn750-nvme-ssd#WDS250G3X0C) 太貴，就挑了使用國產控制器（群聯）一樣五年保的 [Pioneer APS-SE20Q](https://pioneer-iot.com/product/internal-ssd/internal-ssdaps-se20q/)。
@@ -136,11 +144,19 @@ AMD Ryzen™ 9 5900X AM4 是 12 核 24 緒，因此 32 GB 的記憶體應足夠�
 
 基本上這臺電腦除了安裝 OS 以外都不會接螢幕，因此低階的即可。但仍希望起碼能推動 4K 的螢幕看影片，所以挑了 [GeForce GT 1030](https://www.nvidia.com/en-us/geforce/graphics-cards/gt-1030/specifications/)。
 
+沒買到 GDDR5 的版本有點可惜，沒差多少錢，但效能差很多：
+
+{% youtube 1CazEXejPCU %}
+
 ## 機殼
 
 目前使用的 [SilverStone SG09](https://www.silverstonetek.com/legacy.php?pid=345&area=tw&model=SG09&tno=) 搭配貓頭鷹塔散，機殼尺寸和散熱效果都讓我很滿意。因為小機殼輕巧的特性，這次鎖定 Mini-ITX 的機殼。小機殼內部比較擁擠，裝高度發熱的元件要特別注意通風、散熱。參考了一些在 YouTube 上看到的機殼：
 
 ![Cases.png](Cases.png)
+
+{% youtube N5O6WZKERZ8 %}
+
+{% youtube vo8T81nuLFM %}
 
 發現符合我期待的散熱方式及電源位置的只有 [NZXT H210](https://nzxt.com/product/h210)，所以就選了它。
 
@@ -331,7 +347,7 @@ B550 不是所有 NVMe 插槽都是 PCIe 4.0，所以要注意一下。不過因
 
 相同專案在新電腦的編譯時間約為 35 分鐘，在上面列的 i7-8700K 舊電腦約為 66 分鐘。CPU 執行緒數加倍，時間約減半，算是符合預期。
 
-CPU 頻率在編譯過程中，穩定維持在 4.3 GHz ~ 4.5 GHz 之間，與網路上的[評測](https://www.techpowerup.com/review/amd-ryzen-9-5900x/21.html)非常接近。
+CPU 頻率在編譯過程中，穩定維持在 4.3 GHz ~ 4.5 GHz 之間，與網路上的[評測](https://www.techpowerup.com/review/amd-ryzen-9-5900x/21.html)非常接近，沒有因為過熱而降頻。
 
 ![cpu-freq.png](cpu-freq.png)
 
