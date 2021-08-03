@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="tw">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"changyuheng.github.io","root":"/","images":"/images","scheme":"Gemini","version":"8.6.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<meta name="description" content="背景需求：程式編譯，主要編譯 Yocto（低配版 Build Code Server）預算：4.5 萬 零件挑選中央處理器（CPU）挑選 CPU 有幾個重點，依優先順序分別為：售價（預算）、效能、功耗（耗電量、廢熱量）、C&#x2F;P 值。 OpenBenchmarking 上搜集了各型號 CPU 的 Linux Kernel 編譯時間，可用以評估各型 CPU 多核心編譯的效能：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Yocto 編譯主機零組件挑選及組裝">
+<meta property="og:url" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D">
+<meta property="og:site_name" content="Henry&#39;s Technical Blog">
+<meta property="og:description" content="背景需求：程式編譯，主要編譯 Yocto（低配版 Build Code Server）預算：4.5 萬 零件挑選中央處理器（CPU）挑選 CPU 有幾個重點，依優先順序分別為：售價（預算）、效能、功耗（耗電量、廢熱量）、C&#x2F;P 值。 OpenBenchmarking 上搜集了各型號 CPU 的 Linux Kernel 編譯時間，可用以評估各型 CPU 多核心編譯的效能：">
+<meta property="og:locale">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/PC_Screws.jpg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/Timed-Linux-Kernel-Compilation.png">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/AM4-Chipset-Spec.png">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/AM4-Chipset-Compatibility.png">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/Cases.png">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/Airflow-in-Cases.png">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/Display-Card-Wind-Direction.png">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/phanteks-evolv-itx-memory-nh-d15s.jpg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/H210+D15S.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/PC_Screws.jpg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/all-components.jpg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/toolbox.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-psu-to-case.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-14-fan-to-case.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-seak-13.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-seak-14.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-seak-15.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/NF-A12x15-1.jpg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/NF-A12x15-2.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/NF-A12x15-3.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-cpu-1.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-cpu-2.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-cpu-3.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/ssd.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-ssd-1.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-ssd-2.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-ssd-3.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-ssd-4.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-ssd-5.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-ssd-6.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-ssd-7.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-ram-1.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-ram-2.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-ram-3.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-1.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-2.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-3.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-4.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-5.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/install-cpu-heat-sink-6.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-7.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-8.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-12.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-10.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-9.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-11.JPG">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-mainboard-1.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-mainboard-2.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-mainboard-3.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/installing-mainboard-4.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-video-card.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/Cable-Management-1.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/Cable-Management-2.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/finish.jpeg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/cpu-freq.png">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/temperature.jpg">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/temperature-chart-2.png">
+<meta property="og:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/temperature-chart-3.png">
+<meta property="article:published_time" content="2021-06-05T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-08-03T08:50:47.101Z">
+<meta property="article:author" content="Henry Chang">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/PC_Screws.jpg">
+
+
+<link rel="canonical" href="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"tw","comments":true,"permalink":"https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D","path":"2021/yocto-編譯主機零組件挑選及組裝.html","title":"Yocto 編譯主機零組件挑選及組裝"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Yocto 編譯主機零組件挑選及組裝 | Henry's Technical Blog</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-44162683-1"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-44162683-1","only_pageview":false}</script>
+  <script src="/js/third-party/analytics/google-analytics.js"></script>
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Henry's Technical Blog</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%83%8C%E6%99%AF"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%9B%B6%E4%BB%B6%E6%8C%91%E9%81%B8"><span class="nav-number">2.</span> <span class="nav-text">零件挑選</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%AD%E5%A4%AE%E8%99%95%E7%90%86%E5%99%A8%EF%BC%88CPU%EF%BC%89"><span class="nav-number">2.1.</span> <span class="nav-text">中央處理器（CPU）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BB%E6%A9%9F%E6%9D%BF"><span class="nav-number">2.2.</span> <span class="nav-text">主機板</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A8%98%E6%86%B6%E9%AB%94"><span class="nav-number">2.3.</span> <span class="nav-text">記憶體</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%BA%E6%85%8B%E7%A1%AC%E7%A2%9F%EF%BC%88SSD%EF%BC%89"><span class="nav-number">2.4.</span> <span class="nav-text">固態硬碟（SSD）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%AF%E7%A4%BA%E5%8D%A1"><span class="nav-number">2.5.</span> <span class="nav-text">顯示卡</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A9%9F%E6%AE%BC"><span class="nav-number">2.6.</span> <span class="nav-text">機殼</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CPU-%E6%95%A3%E7%86%B1%E5%99%A8"><span class="nav-number">2.7.</span> <span class="nav-text">CPU 散熱器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9B%BB%E6%BA%90%E4%BE%9B%E6%87%89%E5%99%A8"><span class="nav-number">2.8.</span> <span class="nav-text">電源供應器</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%B5%84%E8%A3%9D"><span class="nav-number">3.</span> <span class="nav-text">組裝</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%9D%E9%9B%BB%E6%BA%90%E4%BE%9B%E6%87%89%E5%99%A8%E5%8F%8A%E6%A9%9F%E6%AE%BC%E9%A2%A8%E6%89%87"><span class="nav-number">3.1.</span> <span class="nav-text">安裝電源供應器及機殼風扇</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%9D-CPU"><span class="nav-number">3.2.</span> <span class="nav-text">安裝 CPU</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%9D-NVMe-SSD"><span class="nav-number">3.3.</span> <span class="nav-text">安裝 NVMe SSD</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%9D%E8%A8%98%E6%86%B6%E9%AB%94"><span class="nav-number">3.4.</span> <span class="nav-text">安裝記憶體</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%9D-CPU-%E6%95%A3%E7%86%B1%E5%99%A8"><span class="nav-number">3.5.</span> <span class="nav-text">安裝 CPU 散熱器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%9D%E4%B8%BB%E6%A9%9F%E6%9D%BF"><span class="nav-number">3.6.</span> <span class="nav-text">安裝主機板</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%9D%E9%A1%AF%E7%A4%BA%E5%8D%A1"><span class="nav-number">3.7.</span> <span class="nav-text">安裝顯示卡</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%90%86%E7%B7%9A"><span class="nav-number">3.8.</span> <span class="nav-text">理線</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%8C%E6%88%90"><span class="nav-number">3.9.</span> <span class="nav-text">完成</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%A9%97%E6%94%B6"><span class="nav-number">4.</span> <span class="nav-text">驗收</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#CPU-%E6%95%88%E8%83%BD"><span class="nav-number">4.1.</span> <span class="nav-text">CPU 效能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A8%98%E6%86%B6%E9%AB%94%E7%94%A8%E9%87%8F"><span class="nav-number">4.2.</span> <span class="nav-text">記憶體用量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CPU-%E6%BA%AB%E5%BA%A6"><span class="nav-number">4.3.</span> <span class="nav-text">CPU 溫度</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-overview">
+            
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">35</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="tw">
+    <link itemprop="mainEntityOfPage" href="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Henry Chang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Henry's Technical Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Yocto 編譯主機零組件挑選及組裝
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: Jun 6th, 2021 12:00 am" itemprop="dateCreated datePublished" datetime="2021-06-06T00:00:00+08:00">Jun 6th, 2021</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: Aug 3rd, 2021 4:50 pm" itemprop="dateModified" datetime="2021-08-03T16:50:47+08:00">Aug 3rd, 2021</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/hardware/" itemprop="url" rel="index"><span itemprop="name">Hardware</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/yocto-編譯主機零組件挑選及組裝.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <img src="/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/PC_Screws.jpg" class="" title="PC_Screws.jpg">
+
+<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>需求：程式編譯，主要編譯 Yocto（低配版 Build Code Server）<br>預算：4.5 萬</p>
+<h1 id="零件挑選"><a href="#零件挑選" class="headerlink" title="零件挑選"></a>零件挑選</h1><h2 id="中央處理器（CPU）"><a href="#中央處理器（CPU）" class="headerlink" title="中央處理器（CPU）"></a>中央處理器（CPU）</h2><p>挑選 CPU 有幾個重點，依優先順序分別為：售價（預算）、效能、功耗（耗電量、廢熱量）、C/P 值。</p>
+<p>OpenBenchmarking 上搜集了各型號 CPU 的 <a target="_blank" rel="noopener" href="https://openbenchmarking.org/test/pts/build-linux-kernel">Linux Kernel 編譯時間</a>，可用以評估各型 CPU 多核心編譯的效能：</p>
+<span id="more"></span>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/Timed-Linux-Kernel-Compilation.png" alt="yocto-編譯主機零組件挑選及組裝/Timed-Linux-Kernel-Compilation.png"></p>
+<p>伺服器版的 CPU 太貴，直接跳過。<a target="_blank" rel="noopener" href="https://www.amd.com/en/products/cpu/amd-ryzen-9-5950x">AMD Ryzen™ 9 5950X</a>、<a target="_blank" rel="noopener" href="https://www.amd.com/en/products/cpu/amd-ryzen-9-3950x">AMD Ryzen™ 9 3950X</a> 及 <a target="_blank" rel="noopener" href="https://ark.intel.com/content/www/us/en/ark/products/198017/intel-core-i9-10980xe-extreme-edition-processor-24-75m-cache-3-00-ghz.html">Intel® Core™ i9-10980XE</a> 這三顆 CPU 是目前家用主機的頂規。</p>
+<p>Intel 這顆效能表現與 AMD 這二顆相伯仲，但功耗高很多，所以先剔除。再來因為 5950X 和 3950X 這二顆都缺貨，也只能放棄。繼續往下的選擇中，<a target="_blank" rel="noopener" href="https://www.amd.com/en/products/cpu/amd-ryzen-9-5900x">AMD Ryzen™ 9 5900X</a> 效能相差不大，有貨，且 C/P 值比 5950X、3950X 都高很多，因此沒有什麼懸念，就選它了。</p>
+<h2 id="主機板"><a href="#主機板" class="headerlink" title="主機板"></a>主機板</h2><p>相容 AMD Ryzen™ 9 5900X AM4 規格且有現貨的晶片組有 B450、X470、<a target="_blank" rel="noopener" href="https://www.amd.com/en/chipsets/a520">A520</a>、<a target="_blank" rel="noopener" href="https://www.amd.com/en/chipsets/b550">B550</a> 和 <a target="_blank" rel="noopener" href="https://www.amd.com/en/chipsets/x570">X570</a>。符合目前需求的最便宜選擇是 B450，但可惜目前 Mini-ITX 的版本缺貨，只能往更高階看。因為想保留未來插高階顯示卡和 PCIe 4.0 SSD 的空間，所以從 B550 和 X570 之間選了比較便宜的 B550。</p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/AM4-Chipset-Spec.png" alt="yocto-編譯主機零組件挑選及組裝/AM4-Chipset-Spec.png"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/AM4-Chipset-Compatibility.png" alt="yocto-編譯主機零組件挑選及組裝/AM4-Chipset-Compatibility.png"></p>
+<p>各家 B550 Mini-ITX 主機板評測：</p>
+<div class="video-container"><iframe src="https://www.youtube.com/embed/b5xcVF04B_M" frameborder="0" loading="lazy" allowfullscreen></iframe></div>
+
+<h2 id="記憶體"><a href="#記憶體" class="headerlink" title="記憶體"></a>記憶體</h2><p>依照過去編譯 AOSP 的經驗，編譯所需的記憶體大小，約略是 CPU 執行緒數多少條，記憶體就要多少 GB。除此之外，我也先在舊的電腦上，參考這個<a target="_blank" rel="noopener" href="https://www.linuxatemyram.com/">網頁</a>，分別在掛上 Swap 和卸載 Swap 的情形下實際編譯 Yocto 專案，來比較記憶體的使用狀況。</p>
+<p>測試機器：</p>
+<ul>
+<li>Intel® Core™ i7-8700K (6 核、12 緒)</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ lscpu</span><br><span class="line">Architecture:        x86_64</span><br><span class="line">CPU op-mode(s):      32-bit, 64-bit</span><br><span class="line">Byte Order:          Little Endian</span><br><span class="line">CPU(s):              12</span><br><span class="line">On-line CPU(s) list: 0-11</span><br><span class="line">Thread(s) per core:  2</span><br><span class="line">Core(s) per socket:  6</span><br><span class="line">Socket(s):           1</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>記憶體 16 GB</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ free</span><br><span class="line">              total        used        free      shared  buff/cache   available</span><br><span class="line">Mem:       16303912     1840356    13280940      873236     1182616    13286976</span><br><span class="line">Swap:       2097148           0     2097148</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>有掛載 Swap：<br> 掛 Swap： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">swapon -a</span><br></pre></td></tr></table></figure>
+ 清記憶體： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sync; echo 3 | sudo tee /proc/sys/vm/drop_caches</span><br></pre></td></tr></table></figure>
+ 開始搜集記憶體使用狀況： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">free -s 1 | tee memory-usage-log-swapon.txt</span><br></pre></td></tr></table></figure>
+ 進行編譯。<br> 完成後確認，編譯過程中最低可用記憶體剩餘量： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep Mem  memory-usage-log-swapon.txt | awk &#x27;&#123;print $7&#125;&#x27; | sort -n | head -n 1</span><br></pre></td></tr></table></figure>
+ 及最高 Swap 使用量： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep Swap  memory-usage-log-swapon.txt | awk &#x27;&#123;print $3&#125;&#x27; | sort -nr | head -n 1</span><br></pre></td></tr></table></figure>
+ 最低可用記憶體剩餘量為 5.46 GB，最高 Swap 使用量為 321.75 MB。因此在 12 緒的 CPU 下編譯我的 Yocto 專案，搭配 16 GB 的記憶體是足夠的。本次編譯耗時 1:06:13.27。</li>
+<li>無掛載 Swap：<br> 卸 Swap： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">swapoff -a</span><br></pre></td></tr></table></figure>
+ 清記憶體： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sync; echo 3 | sudo tee /proc/sys/vm/drop_caches</span><br></pre></td></tr></table></figure>
+ 開始搜集記憶體使用狀況： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">free -s 1 | tee memory-usage-log-swapoff.txt</span><br></pre></td></tr></table></figure>
+ 進行編譯。<br> 完成後確認，編譯過程中最低可用記憶體剩餘量： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep Mem memory-usage-log-swapoff.txt | awk &#x27;&#123;print $7&#125;&#x27; | sort -n | head -n 1</span><br></pre></td></tr></table></figure>
+ 最低可用記憶體剩餘量為 5.24 GB，與開頭的經驗，編譯中 1 條執行緒約需 1 GB 相符。本次編譯耗時 1:06:10.88。</li>
+</ol>
+<p>AMD Ryzen™ 9 5900X AM4 是 12 核 24 緒，因此 32 GB 的記憶體應足夠使用。同樣大小的記憶體也有價差，時脈、CL 值、會不會發光、品牌等都有影響。這次買了 DDR4-3600 CL18，其實應該選 DDR4-3200 CL16 的就好，因為二者效能差不多，但 DDR4-3600 CL18 的價格高了近 20%。這邊預算沒有控制好。</p>
+<p>DDR4-3200 vs. DDR4-3600 評測：</p>
+<div class="video-container"><iframe src="https://www.youtube.com/embed/HZwP4GNtaS0" frameborder="0" loading="lazy" allowfullscreen></iframe></div>
+
+<h2 id="固態硬碟（SSD）"><a href="#固態硬碟（SSD）" class="headerlink" title="固態硬碟（SSD）"></a>固態硬碟（SSD）</h2><p>儲存空間大一點比較方便，目前有貨的最大大小為 2 TB，<a target="_blank" rel="noopener" href="https://shop.westerndigital.com/products/internal-drives/wd-black-sn750-nvme-ssd#WDS250G3X0C">WD_BLACK™ SN750</a> 太貴，就挑了使用國產控制器（群聯）一樣五年保的 <a target="_blank" rel="noopener" href="https://pioneer-iot.com/product/internal-ssd/internal-ssdaps-se20q/">Pioneer APS-SE20Q</a>。</p>
+<h2 id="顯示卡"><a href="#顯示卡" class="headerlink" title="顯示卡"></a>顯示卡</h2><p>基本上這臺電腦除了安裝 OS 以外都不會接螢幕，因此低階的即可。但仍希望起碼能推動 4K 的螢幕看影片，所以挑了 <a target="_blank" rel="noopener" href="https://www.nvidia.com/en-us/geforce/graphics-cards/gt-1030/specifications/">GeForce GT 1030</a>。</p>
+<p>沒買到 GDDR5 的版本有點可惜，沒差多少錢，但效能差很多：</p>
+<div class="video-container"><iframe src="https://www.youtube.com/embed/1CazEXejPCU" frameborder="0" loading="lazy" allowfullscreen></iframe></div>
+
+<h2 id="機殼"><a href="#機殼" class="headerlink" title="機殼"></a>機殼</h2><p>目前使用的 <a target="_blank" rel="noopener" href="https://www.silverstonetek.com/legacy.php?pid=345&area=tw&model=SG09&tno=">SilverStone SG09</a> 搭配貓頭鷹塔散，機殼尺寸和散熱效果都讓我很滿意。因為小機殼輕巧的特性，這次鎖定 Mini-ITX 的機殼。小機殼內部比較擁擠，裝高度發熱的元件要特別注意通風、散熱。參考了一些在 YouTube 上看到的機殼：</p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/Cases.png" alt="yocto-編譯主機零組件挑選及組裝/Cases.png"></p>
+<div class="video-container"><iframe src="https://www.youtube.com/embed/N5O6WZKERZ8" frameborder="0" loading="lazy" allowfullscreen></iframe></div>
+
+<div class="video-container"><iframe src="https://www.youtube.com/embed/vo8T81nuLFM" frameborder="0" loading="lazy" allowfullscreen></iframe></div>
+
+<p>發現符合我期待的散熱方式及電源位置的只有 <a target="_blank" rel="noopener" href="https://nzxt.com/product/h210">NZXT H210</a>，所以就選了它。</p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/Airflow-in-Cases.png" alt="yocto-編譯主機零組件挑選及組裝/Airflow-in-Cases.png"></p>
+<p>挑選小型的機殼時，除了要注意 CPU 散熱器的高度外，還要看散熱器的體積對機殼內通風的影響。H210 的內部配置有一些亮點：</p>
+<ol>
+<li> 前進氣風扇的尺寸比後出風風扇的大，因此很容易可以達到機殼內正壓的配置。</li>
+<li> 風流設計看起來很合理，前方進風後方出風，中間會吹到 CPU、顯示卡和電源。</li>
+<li> 有附防塵濾網。</li>
+<li> 電源下置且有獨立空間。</li>
+<li> 可使用 ATX (PS/2) 標準的電源。</li>
+<li> 電源直接貼在背板，電源線可以直接接到電源上，不需要透過機殼自帶的電源延長線。</li>
+</ol>
+<p>像這種小型的機殼，因為顯卡離機殼底部很近，因此還要注意，若機殼下方會裝風扇，其風向應與顯卡風扇的風向一致。不是所有顯卡的風扇都是往晶片方向吹的，也有反著吹的：</p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/Display-Card-Wind-Direction.png" alt="yocto-編譯主機零組件挑選及組裝/Display-Card-Wind-Direction.png"></p>
+<p>補充說明，我會避免選擇將電源供應器定位為主要排風元件的機殼（如後上置型的）。因為電源供應器很怕熱，長期在較熱環境中工作的電源供應器，除了壽命比較短之外，也很危險（可參見全漢<a target="_blank" rel="noopener" href="https://www.fsp-group.com/tw/knowledge-prd-4.html">官網說明</a>）。機殼內有獨立空間可放置電源供應器是最理想的，這樣電源供應器就不會與 CPU、顯示卡等高發熱元件混在同一空間內；退而求其次，也要讓這三者有獨立的風道，這樣三者產生的熱才不會互相影響。</p>
+<h2 id="CPU-散熱器"><a href="#CPU-散熱器" class="headerlink" title="CPU 散熱器"></a>CPU 散熱器</h2><p>散熱器的選擇實在太多了，所以我直接在以安靜著稱的貓頭鷹裡挑。因為希望能與機殼設計的水平風流相配合，所以只看塔式散熱器。5900X 蠻熱的，需要散熱能力好一點的，同時我又不喜歡記憶體完全被散熱器遮住看不到，所以挑了 <a target="_blank" rel="noopener" href="https://www.google.com/search?client=firefox-b-d&q=NH-D15s">Noctua NH-D15S</a>。</p>
+<p>Mini-ITX 主板 + 記憶體 + NH-D15S 示意圖：<br><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/phanteks-evolv-itx-memory-nh-d15s.jpg" alt="yocto-編譯主機零組件挑選及組裝/phanteks-evolv-itx-memory-nh-d15s.jpg"></p>
+<p>NZXT H210 + NH-D15S 示意圖：<br><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/H210+D15S.jpeg" alt="yocto-編譯主機零組件挑選及組裝/H210+D15S.jpeg"></p>
+<h2 id="電源供應器"><a href="#電源供應器" class="headerlink" title="電源供應器"></a>電源供應器</h2><p>電源供應器是耗材，它的供應瓦數是會衰減的。預算許可的話，就把瓦數買到 CPU + 顯卡功耗的 2 倍，這樣電源供應器在其他零件壞掉前應該都會是好的。愛護地球，在能負擔的範圍內選轉換功率高一點的。如果機殼支援 ATX 規格的電源供應器，那在電源供應器的選擇會比較多，也會比較便宜。</p>
+<h1 id="組裝"><a href="#組裝" class="headerlink" title="組裝"></a>組裝</h1><p><em>開車就是要開手排才熱血，電腦就是要自己裝才有靈魂。</em></p>
+<p>開始前，先說明一個注意事項：除了一些非通用特殊螺絲之外，一部電腦主機裡的螺絲有 3 種不同的螺絲牙，這三種螺絲牙通常是，最粗的（kb5）鎖風扇，中等的（#6-32 UNC）鎖主機板、機殼、電源，最細的（M3）鎖硬碟。除此之外，也要注意螺絲頭，有些適合用平頭、有些適合用寬頭、有些適合用手擰的等等。詳請見維基百科 <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Computer_case_screws">Computer case screws</a>。</p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/PC_Screws.jpg" alt="yocto-編譯主機零組件挑選及組裝/PC_Screws.jpg"></p>
+<p>全零件合照（這邊缺了 SSD 和 後置薄扇）：</p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/all-components.jpg" alt="yocto-編譯主機零組件挑選及組裝/all-components.jpg"></p>
+<p>拿出工具盒，正式開始。</p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/toolbox.jpeg" alt="yocto-編譯主機零組件挑選及組裝/toolbox.jpeg"></p>
+<h2 id="安裝電源供應器及機殼風扇"><a href="#安裝電源供應器及機殼風扇" class="headerlink" title="安裝電源供應器及機殼風扇"></a>安裝電源供應器及機殼風扇</h2><ol>
+<li>把電源供應器裝進機殼後下方<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-psu-to-case.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-psu-to-case.jpeg"></li>
+<li>將 2 顆 14” 進風扇裝進機殼前方<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-14-fan-to-case.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-14-fan-to-case.jpeg"></li>
+</ol>
+<p><strong>Update</strong></p>
+<p>之後為防落塵，上方出風口用黑色不織布封住：</p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-seak-13.jpeg" alt="yocto-編譯主機零組件挑選及組裝/install-cpu-heat-seak-13.jpeg"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-seak-14.jpeg" alt="yocto-編譯主機零組件挑選及組裝/install-cpu-heat-seak-14.jpeg"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-seak-15.jpeg" alt="yocto-編譯主機零組件挑選及組裝/install-cpu-heat-seak-15.jpeg"></p>
+<p>另購了貓頭鷹 NF-A12x15 薄扇 1 個裝在機殼後方出風。</p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/NF-A12x15-1.jpg" alt="yocto-編譯主機零組件挑選及組裝/NF-A12x15-1.jpg"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/NF-A12x15-2.jpeg" alt="yocto-編譯主機零組件挑選及組裝/NF-A12x15-2.jpeg"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/NF-A12x15-3.jpeg" alt="yocto-編譯主機零組件挑選及組裝/NF-A12x15-3.jpeg"></p>
+<p><strong>Update 2</strong></p>
+<p>實測後發現 NF-A12x15 對降低峰值溫度沒什麼效果，同時產生了低頻的共鳴噪音，所以後來又把它拆掉了。</p>
+<h2 id="安裝-CPU"><a href="#安裝-CPU" class="headerlink" title="安裝 CPU"></a>安裝 CPU</h2><ol>
+<li>首先核對 CPU 安裝方向的標示<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-cpu-1.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-cpu-1.jpeg"></li>
+<li>拉起 CPU 固定桿並輕輕放下 CPU<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-cpu-2.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-cpu-2.jpeg"></li>
+<li>放下固定桿，確定 CPU 有被夾緊<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-cpu-3.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-cpu-3.jpeg"></li>
+</ol>
+<h2 id="安裝-NVMe-SSD"><a href="#安裝-NVMe-SSD" class="headerlink" title="安裝 NVMe SSD"></a>安裝 NVMe SSD</h2><p>補拍 SSD 照片<br><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/ssd.jpeg" alt="yocto-編譯主機零組件挑選及組裝/ssd.jpeg"></p>
+<p>B550 不是所有 NVMe 插槽都是 PCIe 4.0，所以要注意一下。不過因為買的是 PCIe 3.0 的 SSD，所以也沒差。</p>
+<ol>
+<li>從腳位判斷安裝方向<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-ssd-1.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-ssd-1.jpeg"></li>
+<li>斜斜地插入 SSD<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-ssd-2.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-ssd-2.jpeg"></li>
+<li>用六角套筒卸下主機板上的固定用螺母柱<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-ssd-3.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-ssd-3.jpeg"></li>
+<li>將 SSD 壓平，並用螺母柱加以固定<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-ssd-4.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-ssd-4.jpeg"></li>
+<li>撕開 SSD 散熱片的背膠<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-ssd-5.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-ssd-5.jpeg"></li>
+<li>將 SSD 散熱片放至定位，並鎖上螺絲固定<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-ssd-6.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-ssd-6.jpeg"><br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-ssd-7.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-ssd-7.jpeg"></li>
+</ol>
+<h2 id="安裝記憶體"><a href="#安裝記憶體" class="headerlink" title="安裝記憶體"></a>安裝記憶體</h2><ol>
+<li>扳開記憶體插槽二側的卡榫<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-ram-1.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-ram-1.jpeg"></li>
+<li>確認記憶體插銷缺口位置<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-ram-2.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-ram-2.jpeg"></li>
+<li>垂直壓下記憶體直到二側卡榫卡緊記憶體<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-ram-3.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-ram-3.jpeg"></li>
+</ol>
+<h2 id="安裝-CPU-散熱器"><a href="#安裝-CPU-散熱器" class="headerlink" title="安裝 CPU 散熱器"></a>安裝 CPU 散熱器</h2><ol>
+<li>卸下原廠散熱器基座<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-1.jpeg" alt="yocto-編譯主機零組件挑選及組裝/install-cpu-heat-sink-1.jpeg"></li>
+<li>留下散熱器加固背板<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-2.jpeg" alt="yocto-編譯主機零組件挑選及組裝/install-cpu-heat-sink-2.jpeg"><br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-3.jpeg" alt="yocto-編譯主機零組件挑選及組裝/install-cpu-heat-sink-3.jpeg"></li>
+<li>比對散熱器方向<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-4.jpeg" alt="yocto-編譯主機零組件挑選及組裝/install-cpu-heat-sink-4.jpeg"></li>
+<li>安裝散熱器基座</li>
+<li>點散熱膏。於 CPU 中心點上一球直徑約 0.5 cm 的量。<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-5.jpeg" alt="yocto-編譯主機零組件挑選及組裝/install-cpu-heat-sink-5.jpeg"></li>
+<li>鎖上散熱鰭片<br> <img src="install-cpu-heat-sink-6.jpeg" alt="yocto-編譯主機零組件挑選及組裝/install-cpu-heat-sink-6.jpeg"></li>
+<li>鎖緊散熱鰭片後，從與 CPU 的接縫處檢查散熱膏是否適量。應該要稍微有一點散熱膏被壓出來，但量不要多到會沾到主機板。<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-7.jpeg" alt="yocto-編譯主機零組件挑選及組裝/install-cpu-heat-sink-7.jpeg"></li>
+<li>調整散熱器風扇方向<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-8.jpeg" alt="yocto-編譯主機零組件挑選及組裝/install-cpu-heat-sink-8.jpeg"></li>
+<li>接上 CPU 散熱風扇電源<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-12.jpeg" alt="yocto-編譯主機零組件挑選及組裝/install-cpu-heat-sink-12.jpeg"></li>
+</ol>
+<p>完成。可以看到 NH-D15s 給記憶體相當大的空間：</p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-10.jpeg" alt="yocto-編譯主機零組件挑選及組裝/install-cpu-heat-sink-10.jpeg"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-9.jpeg" alt="yocto-編譯主機零組件挑選及組裝/install-cpu-heat-sink-9.jpeg"></p>
+<p>散熱鰭片的長、寬沒有超出主機板：</p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-11.JPG" alt="yocto-編譯主機零組件挑選及組裝/install-cpu-heat-sink-11.JPG"></p>
+<h2 id="安裝主機板"><a href="#安裝主機板" class="headerlink" title="安裝主機板"></a>安裝主機板</h2><p>準備放主機板進機殼時，才發現散熱鰭片會卡到這款機殼後面和上面的風扇，只好把它們拆掉。</p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-mainboard-1.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-mainboard-1.jpeg"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-mainboard-2.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-mainboard-2.jpeg"></p>
+<ol>
+<li>接上 CPU 電源</li>
+<li>將主機板放至定位，以螺絲固定<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-mainboard-3.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-mainboard-3.jpeg"><br> 左上角的螺絲孔被 CPU 散熱鰭片擋住鎖不到，要能鎖到的話，就要先裝主機板再裝鰭片。但因為先鎖主板再裝鰭片會不能檢查散熱膏的量，加上這張主板背面有金屬框加固應該夠堅固，所以就不重做了。</li>
+<li>接上其他各種電源<br> <img src="installing-mainboard-4.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-mainboard-4.jpeg"></li>
+</ol>
+<h2 id="安裝顯示卡"><a href="#安裝顯示卡" class="headerlink" title="安裝顯示卡"></a>安裝顯示卡</h2><p>低階顯卡不用額外接電源，直接插到對應的槽並鎖上機殼背板就好。</p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-video-card.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-video-card.jpeg"></p>
+<h2 id="理線"><a href="#理線" class="headerlink" title="理線"></a>理線</h2><p>理線是一個耗時也不見得做得好的工作，建議動手前先參考別人的做法。對外觀講究的話，可以另外購買高顏值的訂製線。網路上搜尋「機殼型號」 + 「Cable Management」就可以看到很多範例。</p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/Cable-Management-1.jpeg" alt="yocto-編譯主機零組件挑選及組裝/Cable-Management-1.jpeg"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/Cable-Management-2.jpeg" alt="yocto-編譯主機零組件挑選及組裝/Cable-Management-2.jpeg"></p>
+<h2 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h2><p>最後蓋上機殼側板，就完成啦！</p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/finish.jpeg" alt="yocto-編譯主機零組件挑選及組裝/finish.jpeg"></p>
+<h1 id="驗收"><a href="#驗收" class="headerlink" title="驗收"></a>驗收</h1><h2 id="CPU-效能"><a href="#CPU-效能" class="headerlink" title="CPU 效能"></a>CPU 效能</h2><p>相同專案在新電腦的編譯時間約為 35 分鐘，在上面列的 i7-8700K 舊電腦約為 66 分鐘。CPU 執行緒數加倍，時間約減半，算是符合預期。</p>
+<p>CPU 頻率在編譯過程中，穩定維持在 4.3 GHz ~ 4.5 GHz 之間，與網路上的<a target="_blank" rel="noopener" href="https://www.techpowerup.com/review/amd-ryzen-9-5900x/21.html">評測</a>非常接近，沒有因為過熱而降頻。</p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/cpu-freq.png" alt="yocto-編譯主機零組件挑選及組裝/cpu-freq.png"></p>
+<h2 id="記憶體用量"><a href="#記憶體用量" class="headerlink" title="記憶體用量"></a>記憶體用量</h2><p>編譯過程中，這臺 24 緒的電腦可用記憶體高達 20 GB 左右，也就是說編譯過程中，有用到的記憶體約 12 GB。但在舊電腦 12 緒的 CPU 上編譯也是只用了 12 GB 左右。這個結果說明了執行緒數目和記憶體用量成正比是錯誤的假設 😅</p>
+<h2 id="CPU-溫度"><a href="#CPU-溫度" class="headerlink" title="CPU 溫度"></a>CPU 溫度</h2><p>環境溫度 28 °C、空調</p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/temperature.jpg" alt="yocto-編譯主機零組件挑選及組裝/temperature.jpg"></p>
+<ol>
+<li>後、上出風風扇都沒裝<br> 待機：約 33 °C<br> 峰值：80.4 °C</li>
+<li>後出風風扇沒裝、上方出風口封起<br> 待機：約 33 °C<br> 峰值：81.9 °C<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/temperature-chart-2.png" alt="yocto-編譯主機零組件挑選及組裝/temperature-chart-2.png"></li>
+<li>後出風風扇 NF-A12x15 、上方出風口封起<br> 待機：約 33 °C<br> 峰值：81.9 °C<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/temperature-chart-3.png" alt="yocto-編譯主機零組件挑選及組裝/temperature-chart-3.png"></li>
+</ol>
+<p>由此可以看到，在這個環境溫度、機殼內配置下，上方出風口和後出風風扇對散熱的影響都不大。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>Henry Chang
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="https://changyuheng.github.io/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D" title="Yocto 編譯主機零組件挑選及組裝">https://changyuheng.github.io/2021/yocto-編譯主機零組件挑選及組裝</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8" rel="prev" title="自製臺灣新冠肺炎即時疫情資料圖報表">
+                  <i class="fa fa-chevron-left"></i> 自製臺灣新冠肺炎即時疫情資料圖報表
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Henry Chang</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  
+
+
+
+
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"aprogrammersblog","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script src="/js/third-party/comments/disqus.js"></script>
+
+</body>
+</html>

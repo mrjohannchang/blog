@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="tw">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"changyuheng.github.io","root":"/","images":"/images","scheme":"Gemini","version":"8.6.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<meta name="description" content="以 Ubuntu GNOME 14.04 LTS 英文語系為基礎。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="My Ubuntu GNOME Tweaks">
+<meta property="og:url" content="https://changyuheng.github.io/2014/my-ubuntu-gnome-tweaks">
+<meta property="og:site_name" content="Henry&#39;s Technical Blog">
+<meta property="og:description" content="以 Ubuntu GNOME 14.04 LTS 英文語系為基礎。">
+<meta property="og:locale">
+<meta property="article:published_time" content="2014-04-22T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-05-19T12:43:38.770Z">
+<meta property="article:author" content="Henry Chang">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://changyuheng.github.io/2014/my-ubuntu-gnome-tweaks.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"tw","comments":true,"permalink":"https://changyuheng.github.io/2014/my-ubuntu-gnome-tweaks","path":"2014/my-ubuntu-gnome-tweaks.html","title":"My Ubuntu GNOME Tweaks"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>My Ubuntu GNOME Tweaks | Henry's Technical Blog</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-44162683-1"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-44162683-1","only_pageview":false}</script>
+  <script src="/js/third-party/analytics/google-analytics.js"></script>
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Henry's Technical Blog</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%9D%E8%BB%9F%E9%AB%94"><span class="nav-number">1.</span> <span class="nav-text">安裝軟體</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Firefox-%E9%99%84%E5%8A%A0%E5%85%83%E4%BB%B6"><span class="nav-number">2.</span> <span class="nav-text">Firefox 附加元件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A8%AD%E5%AE%9A"><span class="nav-number">3.</span> <span class="nav-text">設定</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#7z"><span class="nav-number">3.1.</span> <span class="nav-text">7z</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ClipIt"><span class="nav-number">3.2.</span> <span class="nav-text">ClipIt</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Fcitx"><span class="nav-number">3.3.</span> <span class="nav-text">Fcitx</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Gnome-Gmail"><span class="nav-number">3.4.</span> <span class="nav-text">Gnome Gmail</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java-8"><span class="nav-number">3.5.</span> <span class="nav-text">Java 8</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ubuntu-restricted-extras"><span class="nav-number">3.6.</span> <span class="nav-text">ubuntu-restricted-extras</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Vim"><span class="nav-number">3.7.</span> <span class="nav-text">Vim</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#VLC"><span class="nav-number">3.8.</span> <span class="nav-text">VLC</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%87%E6%B3%89%E9%A9%9B%E4%B8%AD%E6%96%87%E5%AD%97%E5%9E%8B"><span class="nav-number">3.9.</span> <span class="nav-text">文泉驛中文字型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%98%B8%E8%9D%A6%E7%B1%B3%E8%BC%B8%E5%85%A5%E6%B3%95"><span class="nav-number">3.10.</span> <span class="nav-text">嘸蝦米輸入法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Gmail-Notifier"><span class="nav-number">3.11.</span> <span class="nav-text">Gmail Notifier</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GNotifier"><span class="nav-number">3.12.</span> <span class="nav-text">GNotifier</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#APT"><span class="nav-number">3.13.</span> <span class="nav-text">APT</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Gnome-Tweak-Tool"><span class="nav-number">3.14.</span> <span class="nav-text">Gnome Tweak Tool</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Input-Method-Configuration"><span class="nav-number">3.15.</span> <span class="nav-text">Input Method Configuration</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Online-Accounts"><span class="nav-number">3.16.</span> <span class="nav-text">Online Accounts</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-overview">
+            
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">35</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="tw">
+    <link itemprop="mainEntityOfPage" href="https://changyuheng.github.io/2014/my-ubuntu-gnome-tweaks">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Henry Chang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Henry's Technical Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          My Ubuntu GNOME Tweaks
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: Apr 23rd, 2014 12:00 am" itemprop="dateCreated datePublished" datetime="2014-04-23T00:00:00+08:00">Apr 23rd, 2014</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: May 19th, 2021 8:43 pm" itemprop="dateModified" datetime="2021-05-19T20:43:38+08:00">May 19th, 2021</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/setup/" itemprop="url" rel="index"><span itemprop="name">Setup</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2014/my-ubuntu-gnome-tweaks#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2014/my-ubuntu-gnome-tweaks.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>以 Ubuntu GNOME 14.04 LTS 英文語系為基礎。</p>
+<span id="more"></span>
+
+<h2 id="安裝軟體"><a href="#安裝軟體" class="headerlink" title="安裝軟體"></a>安裝軟體</h2><ul>
+<li><a href="#7z">7z</a></li>
+<li><a href="#clipit">ClipIt</a></li>
+<li><a href="#fcitx">Fcitx</a></li>
+<li><a href="#gnome-gmail">Gnome Gmail</a></li>
+<li><a href="#java8">Java 8</a></li>
+<li><a href="#ubuntu-restricted-extras">ubuntu-restricted-extras</a></li>
+<li><a href="#vim">Vim</a></li>
+<li><a href="#vlc">VLC</a></li>
+<li><a href="#wen-quan-yi-fonts">文泉驛中文字型</a></li>
+<li><a href="#boshiamy">嘸蝦米輸入法</a></li>
+</ul>
+<h2 id="Firefox-附加元件"><a href="#Firefox-附加元件" class="headerlink" title="Firefox 附加元件"></a>Firefox 附加元件</h2><ul>
+<li><a href="#gmail-notifier">Gmail Notifier</a></li>
+<li><a href="#gnotifier">GNotifier</a></li>
+</ul>
+<h2 id="設定"><a href="#設定" class="headerlink" title="設定"></a>設定</h2><ul>
+<li><a href="#apt">APT</a></li>
+<li><a href="#gnome-tweak-tool">Gnome Tweak Tool</a></li>
+<li><a href="#im-config">Input Method Configuration</a></li>
+<li><a href="#online-accounts">Online Accounts</a></li>
+</ul>
+<h3 id="7z"><a href="#7z" class="headerlink" title="7z"></a><a name="7z"></a>7z</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install p7zip-full</span><br></pre></td></tr></table></figure>
+
+<h3 id="ClipIt"><a href="#ClipIt" class="headerlink" title="ClipIt"></a><a name="clipit"></a>ClipIt</h3><p>剪貼簿管理程序，安裝的主要目的是要他同步剪貼簿的功能。因為 X11 的剪貼簿在「貼上」時，若來源程序已暫停或結束，會因無法讀取來源而無法貼上。可參考：<a target="_blank" rel="noopener" href="http://www.jwz.org/doc/x-cut-and-paste.html">X Selections, Cut Buffers, and Kill Rings.</a></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install clipit</span><br></pre></td></tr></table></figure>
+
+<h3 id="Fcitx"><a href="#Fcitx" class="headerlink" title="Fcitx"></a><a name="fcitx"></a>Fcitx</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install fcitx</span><br></pre></td></tr></table></figure>
+
+<h3 id="Gnome-Gmail"><a href="#Gnome-Gmail" class="headerlink" title="Gnome Gmail"></a><a name="gnome-gmail"></a>Gnome Gmail</h3><p>讓預設郵件客戶端可被設定為 Gmail。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install gnome-gmail</span><br></pre></td></tr></table></figure>
+
+<h3 id="Java-8"><a href="#Java-8" class="headerlink" title="Java 8"></a><a name="java8"></a>Java 8</h3><p><a target="_blank" rel="noopener" href="http://www.webupd8.org/2012/09/install-oracle-java-8-in-ubuntu-via-ppa.html">Install Oracle Java 8 In Ubuntu Via PPA Repository</a></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo add-apt-repository ppa:webupd8team/java</span><br><span class="line">sudo apt update</span><br><span class="line">sudo apt install oracle-java8-installer</span><br></pre></td></tr></table></figure>
+
+<h3 id="ubuntu-restricted-extras"><a href="#ubuntu-restricted-extras" class="headerlink" title="ubuntu-restricted-extras"></a><a name="ubuntu-restricted-extras"></a>ubuntu-restricted-extras</h3><p>RAR、Flash Player 等非開源的程式之集合。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install ubuntu-restricted-extras</span><br></pre></td></tr></table></figure>
+
+<h3 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a><a name="vim"></a>Vim</h3><p>Vim with GNOME specific support.</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install vim-gnome</span><br></pre></td></tr></table></figure>
+
+<h3 id="VLC"><a href="#VLC" class="headerlink" title="VLC"></a><a name="vlc"></a>VLC</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install vlc</span><br></pre></td></tr></table></figure>
+
+<h3 id="文泉驛中文字型"><a href="#文泉驛中文字型" class="headerlink" title="文泉驛中文字型"></a><a name="wen-quan-yi-fonts"></a>文泉驛中文字型</h3><p>開源的中文字型。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install ttf-wqy-*</span><br></pre></td></tr></table></figure>
+
+<h3 id="嘸蝦米輸入法"><a href="#嘸蝦米輸入法" class="headerlink" title="嘸蝦米輸入法"></a><a name="boshiamy"></a>嘸蝦米輸入法</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install fcitx-table-boshiamy</span><br></pre></td></tr></table></figure>
+<p>需要 <a href="#fcitx">Fcitx</a>。</p>
+<h3 id="Gmail-Notifier"><a href="#Gmail-Notifier" class="headerlink" title="Gmail Notifier"></a><a name="gmail-notifier"></a>Gmail Notifier</h3><p>偵測到 Gmail 的新進信件時會由 Firefox 發出提醒。<br><a target="_blank" rel="noopener" href="https://addons.mozilla.org/zh-tw/firefox/addon/gmail-notifier-restartless/?src=search">Gmail Notifier</a></p>
+<h3 id="GNotifier"><a href="#GNotifier" class="headerlink" title="GNotifier"></a><a name="gnotifier"></a>GNotifier</h3><p>讓 Firefox 使用 GNOME、KDE、Xfce 或 OS X 桌面環境的提醒 (notification) 介面。<br><a target="_blank" rel="noopener" href="https://addons.mozilla.org/zh-tw/firefox/addon/gnotifier/">GNotifier</a></p>
+<h3 id="APT"><a href="#APT" class="headerlink" title="APT"></a><a name="apt"></a>APT</h3><p>以國網中心的 APT 伺服器取代台灣大學的：將 <code>/etc/apt/sources.list</code> 內的 <code>tw.archive.ubuntu.com</code> 取代為 <code>free.nchc.org.tw</code>。</p>
+<h3 id="Gnome-Tweak-Tool"><a href="#Gnome-Tweak-Tool" class="headerlink" title="Gnome Tweak Tool"></a><a name="gnome-tweak-tool"></a>Gnome Tweak Tool</h3><p>依個人喜好調整預設設定。</p>
+<h3 id="Input-Method-Configuration"><a href="#Input-Method-Configuration" class="headerlink" title="Input Method Configuration"></a><a name="im-config"></a>Input Method Configuration</h3><p>先安裝 <a href="#fcitx">Fcitx</a>，接著由 <code>Activities</code> → <code>Input Method</code> 選擇 fcitx。</p>
+<h3 id="Online-Accounts"><a href="#Online-Accounts" class="headerlink" title="Online Accounts"></a><a name="online-accounts"></a>Online Accounts</h3><p>由 <code>Activities</code> → <code>System Settings</code> → <code>Online Accounts</code> 登入 Google 帳戶，登入後可將右方不希望同步的功能關閉。若有開啟 Calendar 同步，可由螢幕最上方正中央的 Calendar 下拉選單中看到將近的活動，提醒時間到時也會由 Evolution 彈出視窗提醒。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>Henry Chang
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="https://changyuheng.github.io/2014/my-ubuntu-gnome-tweaks" title="My Ubuntu GNOME Tweaks">https://changyuheng.github.io/2014/my-ubuntu-gnome-tweaks</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2014/codeforces-problem-1b" rel="prev" title="Codeforces Problem 1B">
+                  <i class="fa fa-chevron-left"></i> Codeforces Problem 1B
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2014/implementations-of-dfs-and-bfs-in-python" rel="next" title="Implementations of DFS and BFS in Python">
+                  Implementations of DFS and BFS in Python <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Henry Chang</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  
+
+
+
+
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"aprogrammersblog","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script src="/js/third-party/comments/disqus.js"></script>
+
+</body>
+</html>

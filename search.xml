@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Codeforces Problem 1B</title>
-    <url>/2014/codeforces-problem-1b/</url>
-    <content><![CDATA[<p><a href="http://codeforces.com/problemset/problem/1/B">Codeforces Problem 1B</a></p>
-<p>這題考的是經典的試算表 (spreadsheet) 座標轉換。這個問題的重點在對數字進位的處理。訣竅在於把 one-based column 當成 zero-based 來處理。</p>
-<p><a href="http://codeforces.com/contest/1/submission/6457739">我的 Python 解法</a></p>
-]]></content>
-      <categories>
-        <category>Algorithm</category>
-      </categories>
-  </entry>
-  <entry>
     <title>AutoCheckIn for Garena</title>
-    <url>/2008/autocheckin-for-garena/</url>
+    <url>/2008/autocheckin-for-garena.html</url>
     <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/garena-autocheckin/master/screenshot.png" alt="screenshot"></p>
 <p>支援：Garena 3.x 中文版 &amp; 2010 (4.0.1.6127) English Version、中文版</p>
 <p>作業系統：Windows 2000 / XP / Vista / 7 32-bit &amp; 64-bit</p>
@@ -43,8 +32,42 @@
       </categories>
   </entry>
   <entry>
+    <title>Codeforces Problem 1B</title>
+    <url>/2014/codeforces-problem-1b.html</url>
+    <content><![CDATA[<p><a href="http://codeforces.com/problemset/problem/1/B">Codeforces Problem 1B</a></p>
+<p>這題考的是經典的試算表 (spreadsheet) 座標轉換。這個問題的重點在對數字進位的處理。訣竅在於把 one-based column 當成 zero-based 來處理。</p>
+<p><a href="http://codeforces.com/contest/1/submission/6457739">我的 Python 解法</a></p>
+]]></content>
+      <categories>
+        <category>Algorithm</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Cross Compiling Python 2.7.10 and 3.4.3 for MIPSel OpenWrt via uClibc with SSL and SQLite support</title>
+    <url>/2015/cross-compiling-python-3-4-3-for-mipsel.html</url>
+    <content><![CDATA[<p>The notes that were written after succeeding to cross compile Python 2.7.10 and 3.4.3 for MIPSel OpenWrt via uClibc.</p>
+<span id="more"></span>
+<p>I’m not gonna write a very detailed guide. I post my build script on the <a href="https://github.com/changyuheng/cpython-for-openwrt-mips/blob/3.4.3/build.sh">GitHub</a>, please leave a comment if you have any question.</p>
+<h2 id="Build-log-3-4-3"><a href="#Build-log-3-4-3" class="headerlink" title="Build log (3.4.3)"></a>Build log (3.4.3)</h2><script src="//gist.github.com/2e5b13276035fc1aa79a.js?file=build.log"></script>
+
+<h2 id="Run-test-cases-on-the-device-3-4-3"><a href="#Run-test-cases-on-the-device-3-4-3" class="headerlink" title="Run test cases on the device (3.4.3)"></a>Run test cases on the device (3.4.3)</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">bin/python3 lib/python3.4/<span class="built_in">test</span>/test___all__.py</span><br></pre></td></tr></table></figure>
+
+<h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><ul>
+<li>2.7.10 is 100% passed</li>
+<li>3.4.3’s xml.parsers.expat module will cause segmentation fault.</li>
+</ul>
+<h2 id="Refs"><a href="#Refs" class="headerlink" title="Refs"></a>Refs</h2><ol>
+<li><a href="http://randomsplat.com/id5-cross-compiling-python-for-embedded-linux.html">Cross Compiling Python for Embedded Linux</a></li>
+</ol>
+<h2 id="Thanks-to"><a href="#Thanks-to" class="headerlink" title="Thanks to"></a>Thanks to</h2><p><a href="https://tw.linkedin.com/pub/cheng-wig/90/1a1/896">Cheng Wig</a>, he showed me the positive attitude at work.</p>
+]]></content>
+      <categories>
+        <category>Embedded</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Codeforces 快速入門 (簡介、介紹、教學)</title>
-    <url>/2010/codeforces-quick-start/</url>
+    <url>/2010/codeforces-quick-start.html</url>
     <content><![CDATA[<ol>
 <li><p>什麼是 <a href="http://codeforces.com/">Codeforces</a>？</p>
 <p> Codeforces 是一個知名的程式競賽 (programming contest) 網站。我們可以在此網站上討論程式設計，練習或比賽解題，也可以舉辦比賽。</p>
@@ -74,10 +97,10 @@
 <li><p>進入 <a href="http://codeforces.com/">Codeforces</a> 首頁</p>
 </li>
 <li><p>點選右上角「Register」以進入註冊頁面</p>
-<p> <a href="codeforces-begin-to-register.png"><img src="codeforces-begin-to-register.png" alt="begin to register"></a></p>
+<p> <a href="codeforces-quick-start/codeforces-begin-to-register.png"><img src="codeforces-quick-start/codeforces-begin-to-register.png" alt="begin to register"></a></p>
 </li>
 <li><p>填寫註冊表單，完成後按下「Register (確定註冊)」</p>
-<p> <a href="codeforces-registration-form.png"><img src="codeforces-registration-form.png" alt="registration form"></a></p>
+<p> <a href="codeforces-quick-start/codeforces-registration-form.png"><img src="codeforces-quick-start/codeforces-registration-form.png" alt="registration form"></a></p>
 </li>
 </ol>
 <p> 經過以上步驟即可完成註冊。</p>
@@ -106,7 +129,7 @@
 <li><p>進入「<a href="http://codeforces.com/problemset/problem/1/A">Theater Square</a>」</p>
 </li>
 </ol>
-<p> <a href="codeforces-problemset.png"><img src="codeforces-problemset.png" alt="problemset"></a></p>
+<p> <a href="codeforces-quick-start/codeforces-problemset.png"><img src="codeforces-quick-start/codeforces-problemset.png" alt="problemset"></a></p>
 <pre><code> * 題目最上方的
 
  time limit per test: 2 seconds
@@ -178,9 +201,9 @@
 </li>
 <li><p>參考其他人的答案</p>
 <p> 寫完一道題目後，最重要的是檢討自己的答案。檢討的方法有很多，其中之一是觀察別人的解法。由導覽列 → PROBLEMSET 中找出我們的題目，並按下右方解題人數，即可看到大家對此題所寫的解法。</p>
-<p> <a href="codeforces-solved.png"><img src="codeforces-solved.png" alt="solved"></a></p>
+<p> <a href="codeforces-quick-start/codeforces-solved.png"><img src="codeforces-quick-start/codeforces-solved.png" alt="solved"></a></p>
 <p> 在頁面最下方可以自訂排序規則，我們可以依照 Solution Size (source code 大小) 或 Execution Time (執行時間長短) 來排序，以方便我們找出想要參考的答案。右方可以選擇我們想要看到的語言。</p>
-<p> <a href="codeforces-solved-languages.png"><img src="codeforces-solved-languages.png" alt="languages"></a></p>
+<p> <a href="codeforces-quick-start/codeforces-solved-languages.png"><img src="codeforces-quick-start/codeforces-solved-languages.png" alt="languages"></a></p>
 <p> 讀者可參考此題的 <a href="http://codeforces.com/contest/1/submission/1647521">Python 版解法</a>、<a href="http://codeforces.com/contest/1/submission/2337277">Ruby 版解法</a>、<a href="http://codeforces.com/contest/1/submission/889578">PHP 版解法</a>、<a href="http://codeforces.com/contest/1/submission/1337822">C 版解法</a>、<a href="http://codeforces.com/contest/1/submission/759">C++ 版解法</a>、<a href="http://codeforces.com/contest/1/submission/2032793">C# 版解法</a>、<a href="http://codeforces.com/contest/1/submission/604386">Java 版解法</a>、<a href="http://codeforces.com/contest/1/submission/1903268">Scala 版解法</a>、<a href="http://codeforces.com/contest/1/submission/5482791">JavaScript 版解法</a>。</p>
 </li>
 </ol>
@@ -195,7 +218,7 @@
   </entry>
   <entry>
     <title>COSCUP 2016 閃電秀：理性‧勿戰</title>
-    <url>/2016/coscup-2016-%E9%96%83%E9%9B%BB%E7%A7%80%EF%BC%9A2-%E5%88%86%E9%90%98%E6%89%93%E8%87%89-mtk/</url>
+    <url>/2016/coscup-2016-%E9%96%83%E9%9B%BB%E7%A7%80%EF%BC%9A2-%E5%88%86%E9%90%98%E6%89%93%E8%87%89-mtk.html</url>
     <content><![CDATA[<p>把之前寫的這篇<a href="https://medium.com/rosonix/%E8%AE%93-linkit-smart-7688-%E7%9A%84-wi-fi-ap-%E8%88%87-station-%E5%90%8C%E6%99%82%E9%81%8B%E4%BD%9C-dc9e043142b7">文章</a>拿去 COSCUP 2016 報閃電秀，讓大家開心一下。Project repository 在<a href="https://github.com/changyuheng/linkit-smart-7688-wifi-multi-role">這裡</a>。</p>
 <p>這是錄影：</p>
 <span id="more"></span>
@@ -256,31 +279,8 @@
       </categories>
   </entry>
   <entry>
-    <title>Cross Compiling Python 2.7.10 and 3.4.3 for MIPSel OpenWrt via uClibc with SSL and SQLite support</title>
-    <url>/2015/cross-compiling-python-3-4-3-for-mipsel/</url>
-    <content><![CDATA[<p>The notes that were written after succeeding to cross compile Python 2.7.10 and 3.4.3 for MIPSel OpenWrt via uClibc.</p>
-<span id="more"></span>
-<p>I’m not gonna write a very detailed guide. I post my build script on the <a href="https://github.com/changyuheng/cpython-for-openwrt-mips/blob/3.4.3/build.sh">GitHub</a>, please leave a comment if you have any question.</p>
-<h2 id="Build-log-3-4-3"><a href="#Build-log-3-4-3" class="headerlink" title="Build log (3.4.3)"></a>Build log (3.4.3)</h2><script src="//gist.github.com/2e5b13276035fc1aa79a.js?file=build.log"></script>
-
-<h2 id="Run-test-cases-on-the-device-3-4-3"><a href="#Run-test-cases-on-the-device-3-4-3" class="headerlink" title="Run test cases on the device (3.4.3)"></a>Run test cases on the device (3.4.3)</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">bin/python3 lib/python3.4/<span class="built_in">test</span>/test___all__.py</span><br></pre></td></tr></table></figure>
-
-<h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><ul>
-<li>2.7.10 is 100% passed</li>
-<li>3.4.3’s xml.parsers.expat module will cause segmentation fault.</li>
-</ul>
-<h2 id="Refs"><a href="#Refs" class="headerlink" title="Refs"></a>Refs</h2><ol>
-<li><a href="http://randomsplat.com/id5-cross-compiling-python-for-embedded-linux.html">Cross Compiling Python for Embedded Linux</a></li>
-</ol>
-<h2 id="Thanks-to"><a href="#Thanks-to" class="headerlink" title="Thanks to"></a>Thanks to</h2><p><a href="https://tw.linkedin.com/pub/cheng-wig/90/1a1/896">Cheng Wig</a>, he showed me the positive attitude at work.</p>
-]]></content>
-      <categories>
-        <category>Embedded</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Deployment of NCKU CSIE Gitit Theme</title>
-    <url>/2010/deployment-of-ncku-csie-gitit-theme/</url>
+    <url>/2010/deployment-of-ncku-csie-gitit-theme.html</url>
     <content><![CDATA[<p><a href="http://gitit.net/">Gitit</a> 是一套以 Git 作為 base 的 wiki 系統。這套 wiki 的優點可以在<a href="http://walkingice.blogspot.tw/2011/11/gitit-git-based-wiki.html">只放拖鞋的鞋櫃</a>看到。在網路上的高手 <a href="http://macropodus.github.io/gitit_mix_vimwiki.html">Macropodus</a> 研究出如何和 Vimwiki 結合後，又更強化了他的優勢。</p>
 <p>不過 Gitit 預設的模版很沒有設計感，尤其是那個 logo 讓人看了很不舒服。所幸在 <a href="https://groups.google.com/forum/#!topic/gitit-discuss/g6rZWIOmiu8">Google Group</a> 發現了一套由成大資工所製作的好看佈景。以下將介紹如何安裝這套佈景：</p>
 <span id="more"></span>
@@ -302,7 +302,7 @@
   </entry>
   <entry>
     <title>fz - 模糊搜尋互動式 cd 自動補完套件</title>
-    <url>/2017/fz-fuzzy-search-in-tab-completions-of-z/</url>
+    <url>/2017/fz-fuzzy-search-in-tab-completions-of-z.html</url>
     <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/fz/master/fz-demo.gif"></p>
 <span id="more"></span>
 
@@ -330,9 +330,9 @@
   </entry>
   <entry>
     <title>My Longest Streak on GitHub</title>
-    <url>/2014/github-streak/</url>
+    <url>/2014/github-streak.html</url>
     <content><![CDATA[<p>一時興致起來，實驗性地洗了一下 GitHub 的 longest streak。</p>
-<p><img src="github-longest-streak.png"></p>
+<p><img src="github-streak/github-longest-streak.png"></p>
 ]]></content>
       <categories>
         <category>Random</category>
@@ -340,7 +340,7 @@
   </entry>
   <entry>
     <title>Gnome 3.6 與 KDE 4.10 於工作場所使用一年心得</title>
-    <url>/2013/gnome-36-yu-kde-410-yu-gong-zuo-chang-suo-shi-yong-nian-xin-de/</url>
+    <url>/2013/gnome-36-yu-kde-410-yu-gong-zuo-chang-suo-shi-yong-nian-xin-de.html</url>
     <content><![CDATA[<p>在工作上使用 <a href="http://www.kde.org/">KDE</a> 一年有餘，從 4.8 用到 4.10。最近同時也在使用 <a href="http://www.gnome.org/">Gnome</a> 3.6，網路上的比較文章不少，再增加一篇，希望我能提供較新版本的使用經驗與不同的看法。</p>
 <span id="more"></span>
 
@@ -379,8 +379,24 @@
       </categories>
   </entry>
   <entry>
+    <title>Implementations of DFS and BFS in Python</title>
+    <url>/2014/implementations-of-dfs-and-bfs-in-python.html</url>
+    <content><![CDATA[<p><a href="http://zh.wikipedia.org/zh-tw/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">DFS</a> 和 <a href="http://zh.wikipedia.org/zh-tw/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">BFS</a> 在資料結構裡有教，是很基礎的演算法。</p>
+<span id="more"></span>
+<p>在 <a href="http://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/">Edd Mann 的網誌</a>上看到 Python 的實作，由其中學到 <code>yield from</code> 的用法。下面利用 <code>yield from</code> 的特性，將該網誌中提到的實作改寫成 generator 的型式。同步放在 Gist 上：<a href="https://gist.github.com/changyuheng/08ffb779d83679393926">DFS</a>、<a href="https://gist.github.com/changyuheng/97d320206af9a0018d7d">BFS</a>。</p>
+<p><strong>DFS</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">dfs</span>(<span class="params">graph, start, visited=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> visited <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        visited = <span class="built_in">set</span>()</span><br><span class="line">    <span class="keyword">if</span> start <span class="keyword">in</span> visited:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    <span class="keyword">yield</span> start</span><br><span class="line">    visited.add(start)</span><br><span class="line">    <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - visited:</span><br><span class="line">        <span class="keyword">yield</span> <span class="keyword">from</span> dfs(graph, vertex, visited=visited)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">dfs_paths</span>(<span class="params">graph, start, goal, path=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> path <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        path = [start]</span><br><span class="line">    <span class="keyword">if</span> start == goal:</span><br><span class="line">        <span class="keyword">yield</span> path</span><br><span class="line">    <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(path):</span><br><span class="line">        <span class="keyword">yield</span> <span class="keyword">from</span> dfs_paths(graph, vertex, goal, path=path + [vertex])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">graph = &#123;</span><br><span class="line">    <span class="string">&#x27;A&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;B&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;D&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;C&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;D&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;E&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;F&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;C&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> dfs(graph, <span class="string">&#x27;A&#x27;</span>)]))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([path <span class="keyword">for</span> path <span class="keyword">in</span> dfs_paths(graph, <span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>)]))</span><br></pre></td></tr></table></figure>
+
+<p><strong>BFS</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bfs</span>(<span class="params">graph, queue, visited=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> visited <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        visited = <span class="built_in">set</span>()</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> queue:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    start = queue.pop(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">yield</span> start</span><br><span class="line">    visited.add(start)</span><br><span class="line">    queue += [vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(queue) - visited]</span><br><span class="line">    <span class="keyword">yield</span> <span class="keyword">from</span> bfs(graph, queue, visited=visited)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bfs_paths</span>(<span class="params">graph, queue, goal</span>):</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> queue:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    (start, path) = queue.pop(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">if</span> start == goal:</span><br><span class="line">        <span class="keyword">yield</span> path</span><br><span class="line">    queue += [(vertex, path + [vertex]) <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(path)]</span><br><span class="line">    <span class="keyword">yield</span> <span class="keyword">from</span> bfs_paths(graph, queue, goal)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">graph = &#123;</span><br><span class="line">    <span class="string">&#x27;A&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;B&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;D&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;C&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;D&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;E&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;F&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;C&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> bfs(graph, [<span class="string">&#x27;A&#x27;</span>])]))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([path <span class="keyword">for</span> path <span class="keyword">in</span> bfs_paths(graph, [(<span class="string">&#x27;A&#x27;</span>, [<span class="string">&#x27;A&#x27;</span>])], <span class="string">&#x27;F&#x27;</span>)]))</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Algorithm</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Installing Fcitx and Boshiamy on Ubuntu GNOME 14.04</title>
-    <url>/2014/installing-fcitx-and-boshiamy-on-ubuntu-gnome-1404/</url>
+    <url>/2014/installing-fcitx-and-boshiamy-on-ubuntu-gnome-1404.html</url>
     <content><![CDATA[<p>Fcitx 是一個自訂性很高的輸入法框架，安裝方式如下：</p>
 <span id="more"></span>
 
@@ -407,24 +423,8 @@
       </categories>
   </entry>
   <entry>
-    <title>Implementations of DFS and BFS in Python</title>
-    <url>/2014/implementations-of-dfs-and-bfs-in-python/</url>
-    <content><![CDATA[<p><a href="http://zh.wikipedia.org/zh-tw/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">DFS</a> 和 <a href="http://zh.wikipedia.org/zh-tw/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">BFS</a> 在資料結構裡有教，是很基礎的演算法。</p>
-<span id="more"></span>
-<p>在 <a href="http://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/">Edd Mann 的網誌</a>上看到 Python 的實作，由其中學到 <code>yield from</code> 的用法。下面利用 <code>yield from</code> 的特性，將該網誌中提到的實作改寫成 generator 的型式。同步放在 Gist 上：<a href="https://gist.github.com/changyuheng/08ffb779d83679393926">DFS</a>、<a href="https://gist.github.com/changyuheng/97d320206af9a0018d7d">BFS</a>。</p>
-<p><strong>DFS</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">dfs</span>(<span class="params">graph, start, visited=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> visited <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        visited = <span class="built_in">set</span>()</span><br><span class="line">    <span class="keyword">if</span> start <span class="keyword">in</span> visited:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    <span class="keyword">yield</span> start</span><br><span class="line">    visited.add(start)</span><br><span class="line">    <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - visited:</span><br><span class="line">        <span class="keyword">yield</span> <span class="keyword">from</span> dfs(graph, vertex, visited=visited)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">dfs_paths</span>(<span class="params">graph, start, goal, path=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> path <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        path = [start]</span><br><span class="line">    <span class="keyword">if</span> start == goal:</span><br><span class="line">        <span class="keyword">yield</span> path</span><br><span class="line">    <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(path):</span><br><span class="line">        <span class="keyword">yield</span> <span class="keyword">from</span> dfs_paths(graph, vertex, goal, path=path + [vertex])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">graph = &#123;</span><br><span class="line">    <span class="string">&#x27;A&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;B&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;D&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;C&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;D&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;E&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;F&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;C&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> dfs(graph, <span class="string">&#x27;A&#x27;</span>)]))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([path <span class="keyword">for</span> path <span class="keyword">in</span> dfs_paths(graph, <span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>)]))</span><br></pre></td></tr></table></figure>
-
-<p><strong>BFS</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bfs</span>(<span class="params">graph, queue, visited=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> visited <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        visited = <span class="built_in">set</span>()</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> queue:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    start = queue.pop(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">yield</span> start</span><br><span class="line">    visited.add(start)</span><br><span class="line">    queue += [vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(queue) - visited]</span><br><span class="line">    <span class="keyword">yield</span> <span class="keyword">from</span> bfs(graph, queue, visited=visited)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bfs_paths</span>(<span class="params">graph, queue, goal</span>):</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> queue:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    (start, path) = queue.pop(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">if</span> start == goal:</span><br><span class="line">        <span class="keyword">yield</span> path</span><br><span class="line">    queue += [(vertex, path + [vertex]) <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(path)]</span><br><span class="line">    <span class="keyword">yield</span> <span class="keyword">from</span> bfs_paths(graph, queue, goal)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">graph = &#123;</span><br><span class="line">    <span class="string">&#x27;A&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;B&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;D&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;C&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;D&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;E&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;F&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;C&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> bfs(graph, [<span class="string">&#x27;A&#x27;</span>])]))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([path <span class="keyword">for</span> path <span class="keyword">in</span> bfs_paths(graph, [(<span class="string">&#x27;A&#x27;</span>, [<span class="string">&#x27;A&#x27;</span>])], <span class="string">&#x27;F&#x27;</span>)]))</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Algorithm</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Markdown Test</title>
-    <url>/2009/markdown-test/</url>
+    <url>/2009/markdown-test.html</url>
     <content><![CDATA[<p>Markdown demo/test.</p>
 <span id="more"></span>
 
@@ -596,7 +596,7 @@ ABCDEFG<br />
 1234567<br />
 
 
-<p><img src="%E8%B6%85%E7%B4%9A%E8%B3%BD%E4%BA%9E%E7%BE%8A.jpg"><br><img src="github-commit-amount-cheat.png"></p>
+<p><img src="%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8/%E8%B6%85%E7%B4%9A%E8%B3%BD%E4%BA%9E%E7%BE%8A.jpg"><br><img src="%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8/github-commit-amount-cheat.png"></p>
 <img src="/2009/markdown-test/%E8%B6%85%E7%B4%9A%E8%B3%BD%E4%BA%9E%E7%BE%8A.jpg" class="" title="[小六畫的]">
 <img src="/2009/markdown-test/github-commit-amount-cheat.png" class="">
 
@@ -608,7 +608,7 @@ ABCDEFG<br />
   </entry>
   <entry>
     <title>My Ubuntu GNOME Tweaks</title>
-    <url>/2014/my-ubuntu-gnome-tweaks/</url>
+    <url>/2014/my-ubuntu-gnome-tweaks.html</url>
     <content><![CDATA[<p>以 Ubuntu GNOME 14.04 LTS 英文語系為基礎。</p>
 <span id="more"></span>
 
@@ -673,7 +673,7 @@ ABCDEFG<br />
   </entry>
   <entry>
     <title>Port LEDE 17.01 to LinkIt Smart 7688</title>
-    <url>/2017/port-lede-17-01-to-linkit-smart-7688/</url>
+    <url>/2017/port-lede-17-01-to-linkit-smart-7688.html</url>
     <content><![CDATA[<p>心血來潮幫忙把 LinkIt Smart 7688 的作業系統從 <a href="https://forum.openwrt.org/viewtopic.php?pid=315110">OpenWrt Chaos Calmer 15.05.1</a> 升級到 <a href="https://lede-project.org/releases/17.01/">LEDE 17.01</a>。</p>
 <span id="more"></span>
 
@@ -707,30 +707,8 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
-    <title>Python Learning Resources</title>
-    <url>/2014/python-learning-resources/</url>
-    <content><![CDATA[<p>同事在問 Python 該如何入門，順手將整理的資料與大眾分享。</p>
-<p>既然要學，就不要拖著歷史的包袱，所以建議直接學習 Python 3。</p>
-<p>對於有程式設計基礎的朋友，可依下列項目順序學習：</p>
-<span id="more"></span>
-
-<ol>
-<li>官網的 <a href="https://docs.python.org/3/tutorial/">tutorial</a>。</li>
-<li><a href="http://shop.oreilly.com/product/0636920027072.do">Python Cookbook: Recipes for Mastering Python 3</a></li>
-<li><a href="http://www.amazon.com/Python-Practice-Concurrency-Libraries-Developers/dp/0321905636">Python in Practice: Create Better Programs Using Concurrency, Libraries, and Patterns (Developer’s Library)</a></li>
-</ol>
-<p>Libraries：</p>
-<ol>
-<li><a href="https://github.com/vinta/awesome-python">https://github.com/vinta/awesome-python</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-  </entry>
-  <entry>
     <title>PTT Efficient Poster</title>
-    <url>/2007/ptt-efficient-poster/</url>
+    <url>/2007/ptt-efficient-poster.html</url>
     <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/ptt-efficient-poster/master/demo.gif" alt="screenshot"></p>
 <span id="more"></span>
 
@@ -776,7 +754,7 @@ ABCDEFG<br />
   </entry>
   <entry>
     <title>PTT 帳號被砍事件</title>
-    <url>/2015/ptt-%E5%B8%B3%E8%99%9F%E8%A2%AB%E7%A0%8D%E4%BA%8B%E4%BB%B6/</url>
+    <url>/2015/ptt-%E5%B8%B3%E8%99%9F%E8%A2%AB%E7%A0%8D%E4%BA%8B%E4%BB%B6.html</url>
     <content><![CDATA[<p>事件起源於多年前我寫了一個<a href="https://changyuheng.github.io/2007/11/05/ptt-efficient-poster/">程式</a>，用來讓 PTT 的發文者能得到與文章字數相符的稿酬。</p>
 <span id="more"></span>
 <p>突然有一天，有個人因為洗錢被檢舉了。</p>
@@ -814,8 +792,30 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
+    <title>Python Learning Resources</title>
+    <url>/2014/python-learning-resources.html</url>
+    <content><![CDATA[<p>同事在問 Python 該如何入門，順手將整理的資料與大眾分享。</p>
+<p>既然要學，就不要拖著歷史的包袱，所以建議直接學習 Python 3。</p>
+<p>對於有程式設計基礎的朋友，可依下列項目順序學習：</p>
+<span id="more"></span>
+
+<ol>
+<li>官網的 <a href="https://docs.python.org/3/tutorial/">tutorial</a>。</li>
+<li><a href="http://shop.oreilly.com/product/0636920027072.do">Python Cookbook: Recipes for Mastering Python 3</a></li>
+<li><a href="http://www.amazon.com/Python-Practice-Concurrency-Libraries-Developers/dp/0321905636">Python in Practice: Create Better Programs Using Concurrency, Libraries, and Patterns (Developer’s Library)</a></li>
+</ol>
+<p>Libraries：</p>
+<ol>
+<li><a href="https://github.com/vinta/awesome-python">https://github.com/vinta/awesome-python</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Python logging module example</title>
-    <url>/2015/python-logging-module-example/</url>
+    <url>/2015/python-logging-module-example.html</url>
     <content><![CDATA[<p>Python 的 logging module 功能完整強大，但手冊裡卻沒有一個簡明的 config 範例。</p>
 <p>記錄一下。</p>
 <span id="more"></span>
@@ -832,7 +832,7 @@ ABCDEFG<br />
   </entry>
   <entry>
     <title>Raspberry Pi Raspbian Jessie 安裝設定</title>
-    <url>/2015/raspberry-pi-raspbian-jessie-%E5%AE%89%E8%A3%9D%E8%A8%AD%E5%AE%9A/</url>
+    <url>/2015/raspberry-pi-raspbian-jessie-%E5%AE%89%E8%A3%9D%E8%A8%AD%E5%AE%9A.html</url>
     <content><![CDATA[<p>Jessie 剛從 SysVinit 換成 systemd。因為不同的 init system 的設定方式不同，而 raspi-config 還沒有更新到支援 systemd，所以有些設定必須手動，不能透過 raspi-config。</p>
 <span id="more"></span>
 <!-- toc -->
@@ -859,7 +859,7 @@ ABCDEFG<br />
   </entry>
   <entry>
     <title>Syncing Samba Accounts with Unix Login Accounts</title>
-    <url>/2011/syncing-samba-accounts-with-unix-login-accounts/</url>
+    <url>/2011/syncing-samba-accounts-with-unix-login-accounts.html</url>
     <content><![CDATA[<p>libpam-smbpass</p>
 ]]></content>
       <categories>
@@ -867,8 +867,35 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
+    <title>唯一一種只要學會就能脫胎換骨的能力</title>
+    <url>/2015/the-only-one-skill-that-if-you-have-will-completely-change-your-life-chinese-translation.html</url>
+    <content><![CDATA[<p>在 Medium 上看到一篇<a href="https://medium.com/keep-learning-keep-growing/the-only-one-skill-that-if-you-have-will-completely-change-your-life-ba9b40b8fdf5#.tjk2mly1w">好文</a>，翻譯前半段。</p>
+<span id="more"></span>
+<p>我們都在找尋成功的要素，期待某個神秘的關鍵能改變既有的一切。</p>
+<p>標準答案並不存在，因為只要學會一種就能脫胎換骨的能力有很多。</p>
+<p>但我相信有一種能力在現在這個時代特別重要，同時也是大多數人所缺乏的：自制力。</p>
+<p>捫心自問，沒有人希望自己不健康或有不良嗜好。但是看看周遭的人，他們每天都在摧殘自己。死亡或許不會突然降臨，但是常常出乎意料的快；想想看，糖尿病和癌症可比便利商店還要普及。收益是公司的首要課題，但健康不是，所以你是唯一有責任約束自己的人。</p>
+<p><img src="the-only-one-skill-that-if-you-have-will-completely-change-your-life-chinese-translation/eating-junk-food.jpg"></p>
+<p>人們日復一日地把自己最珍貴的資源，時間，浪費掉。時光一去不復返。</p>
+<p>這就是因為缺乏自制力，所以慾望──現代社會的經濟正是以慾望為基礎──變得比理智強大。於是乎人們不再表現得有條不紊，反而變得恣意妄為。</p>
+<p>我的意思不是說嚴以律己到極致是件好事，那想必不是。過分的自我要求給自己帶來的傷害，也許和死亡相差無幾。</p>
+<p>想像一種生活：你學會了怎麼自律，所以環境加諸的障礙變得無關緊要，你只管朝著目標前進。</p>
+<p>你不再吃垃圾，取而代之的是各種健康的食物；為了獎勵自己，你讓自己想吃什麼就吃什麼。這對你的健康將有極為驚人的助益。你就不用去嘗試什麼減肥餐了。只要你適量地吃真正的食物，而不是那些長得像食物的食品，想變胖也難。</p>
+<p>你開啟一種積極正面的生活方式。不再是過去那種在二週後就會放棄新年健身計畫的你，除了每週上三次健身房外，還會每天散步幾哩路。</p>
+<p><img src="the-only-one-skill-that-if-you-have-will-completely-change-your-life-chinese-translation/lots-of-books.jpg"></p>
+<p>就這樣自我要求飲食和運動這二點一年，改變的將不只是你的身材，還會涵蓋整個生活。</p>
+<p>現在讓我們更進一步。我們正被各種視聽娛樂轟炸：電視、遊戲（現在可以隨時隨地打電動，謝謝智慧型手機）、網路等等。如果沒有自制力，這些事物將帶來非常不良的影響，而且你也知道，大多數人並不具備這難能可貴的能力。所以與其打 game、當電視兒童或是失心瘋般的掛網 （ 這些事有一個共通點，就是浪費你的時間），你應該閱讀。</p>
+<p>每天撥二小時用來閱讀，聽起來好像很多，但可以想想你本來花多少時間在剛剛提到的三種時間殺手上。書是智慧結晶。我們都從經驗中學習，但是一生中能夠體驗的事有限。透過書本，可以觀摩前人的生活經驗，並應用在自己的人生旅程中。高度成功的人士都不會反對書本的力量。而且他們之中的多數，會鼓勵你像吃垃圾食物和甜點那般地消化書本的內容。</p>
+<p>又過了一年，你已經持續每天閱讀二小時十二個月。我不會試圖去估量你看了多少書，但有一件事可以確定，這已經高於大多數人一生的閱讀量。很多人一生讀不到你半年的份量。</p>
+<p>但是光讀不練並不能完全改變生活。你必須身體力行。任何一個你在生活中遇到的問題都能在好書上找到處置方式。而其中大多數，甚至有好幾打書提供了應對之道。所以你開始學以致用，因為透過自制，你不再是那種愛拖延的人而是個行動派。可以想見因此跨越了多少障礙。</p>
+]]></content>
+      <categories>
+        <category>Translation</category>
+      </categories>
+  </entry>
+  <entry>
     <title>在 Ubuntu 12.04 安裝 IT-830UP 晶片讀卡機與使用 WebATM</title>
-    <url>/2013/ubuntu-12-dot-04-an-zhuang-it-830up-jing-pian-du-qia-ji/</url>
+    <url>/2013/ubuntu-12-dot-04-an-zhuang-it-830up-jing-pian-du-qia-ji.html</url>
     <content><![CDATA[<p><img src="http://www.ittec.com.tw/images/IT-830UP%28DM%29.jpg" alt="IT-830UP"></p>
 <span id="more"></span>
 
@@ -882,7 +909,7 @@ ABCDEFG<br />
   </entry>
   <entry>
     <title>Understanding Python Decorators</title>
-    <url>/2014/understanding-python-decorators/</url>
+    <url>/2014/understanding-python-decorators.html</url>
     <content><![CDATA[<p>Decorator 是一個 Python 中較為進階的語法，因為較難理解故常被提出來討論。這邊提供一個簡潔的說明。</p>
 <span id="more"></span>
 
@@ -906,35 +933,8 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
-    <title>唯一一種只要學會就能脫胎換骨的能力</title>
-    <url>/2015/the-only-one-skill-that-if-you-have-will-completely-change-your-life-chinese-translation/</url>
-    <content><![CDATA[<p>在 Medium 上看到一篇<a href="https://medium.com/keep-learning-keep-growing/the-only-one-skill-that-if-you-have-will-completely-change-your-life-ba9b40b8fdf5#.tjk2mly1w">好文</a>，翻譯前半段。</p>
-<span id="more"></span>
-<p>我們都在找尋成功的要素，期待某個神秘的關鍵能改變既有的一切。</p>
-<p>標準答案並不存在，因為只要學會一種就能脫胎換骨的能力有很多。</p>
-<p>但我相信有一種能力在現在這個時代特別重要，同時也是大多數人所缺乏的：自制力。</p>
-<p>捫心自問，沒有人希望自己不健康或有不良嗜好。但是看看周遭的人，他們每天都在摧殘自己。死亡或許不會突然降臨，但是常常出乎意料的快；想想看，糖尿病和癌症可比便利商店還要普及。收益是公司的首要課題，但健康不是，所以你是唯一有責任約束自己的人。</p>
-<p><img src="eating-junk-food.jpg"></p>
-<p>人們日復一日地把自己最珍貴的資源，時間，浪費掉。時光一去不復返。</p>
-<p>這就是因為缺乏自制力，所以慾望──現代社會的經濟正是以慾望為基礎──變得比理智強大。於是乎人們不再表現得有條不紊，反而變得恣意妄為。</p>
-<p>我的意思不是說嚴以律己到極致是件好事，那想必不是。過分的自我要求給自己帶來的傷害，也許和死亡相差無幾。</p>
-<p>想像一種生活：你學會了怎麼自律，所以環境加諸的障礙變得無關緊要，你只管朝著目標前進。</p>
-<p>你不再吃垃圾，取而代之的是各種健康的食物；為了獎勵自己，你讓自己想吃什麼就吃什麼。這對你的健康將有極為驚人的助益。你就不用去嘗試什麼減肥餐了。只要你適量地吃真正的食物，而不是那些長得像食物的食品，想變胖也難。</p>
-<p>你開啟一種積極正面的生活方式。不再是過去那種在二週後就會放棄新年健身計畫的你，除了每週上三次健身房外，還會每天散步幾哩路。</p>
-<p><img src="lots-of-books.jpg"></p>
-<p>就這樣自我要求飲食和運動這二點一年，改變的將不只是你的身材，還會涵蓋整個生活。</p>
-<p>現在讓我們更進一步。我們正被各種視聽娛樂轟炸：電視、遊戲（現在可以隨時隨地打電動，謝謝智慧型手機）、網路等等。如果沒有自制力，這些事物將帶來非常不良的影響，而且你也知道，大多數人並不具備這難能可貴的能力。所以與其打 game、當電視兒童或是失心瘋般的掛網 （ 這些事有一個共通點，就是浪費你的時間），你應該閱讀。</p>
-<p>每天撥二小時用來閱讀，聽起來好像很多，但可以想想你本來花多少時間在剛剛提到的三種時間殺手上。書是智慧結晶。我們都從經驗中學習，但是一生中能夠體驗的事有限。透過書本，可以觀摩前人的生活經驗，並應用在自己的人生旅程中。高度成功的人士都不會反對書本的力量。而且他們之中的多數，會鼓勵你像吃垃圾食物和甜點那般地消化書本的內容。</p>
-<p>又過了一年，你已經持續每天閱讀二小時十二個月。我不會試圖去估量你看了多少書，但有一件事可以確定，這已經高於大多數人一生的閱讀量。很多人一生讀不到你半年的份量。</p>
-<p>但是光讀不練並不能完全改變生活。你必須身體力行。任何一個你在生活中遇到的問題都能在好書上找到處置方式。而其中大多數，甚至有好幾打書提供了應對之道。所以你開始學以致用，因為透過自制，你不再是那種愛拖延的人而是個行動派。可以想見因此跨越了多少障礙。</p>
-]]></content>
-      <categories>
-        <category>Translation</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Using Express to Handle File Uploading</title>
-    <url>/2015/using-express-to-handle-file-uploading/</url>
+    <url>/2015/using-express-to-handle-file-uploading.html</url>
     <content><![CDATA[<p><a href="https://github.com/strongloop/express">Express</a> 本身不管上傳，要透過 <a href="https://github.com/expressjs/multer">Multer</a> 來處理。</p>
 <p>Multer 手冊特別註明：</p>
 <span id="more"></span>
@@ -961,7 +961,7 @@ ABCDEFG<br />
   </entry>
   <entry>
     <title>War3Customkey Classic</title>
-    <url>/2006/war3customkey-classic/</url>
+    <url>/2006/war3customkey-classic.html</url>
     <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/war3customkey-classic/master/screenshot.png" alt="screenshot"></p>
 <p>支援：Warcraft III<br>作業系統：Windows 2000 / XP / Vista / 7 32-bit &amp; 64-bit</p>
 <span id="more"></span>
@@ -974,7 +974,7 @@ ABCDEFG<br />
   </entry>
   <entry>
     <title>War3Customkey</title>
-    <url>/2005/war3customkey/</url>
+    <url>/2005/war3customkey.html</url>
     <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/war3customkey/master/screenshot.png" alt="screenshot"></p>
 <p>支援：Warcraft III<br>作業系統：Windows 2000 / XP / Vista / 7 / 8 / 10 32-bit &amp; 64-bit</p>
 <span id="more"></span>
@@ -996,7 +996,7 @@ ABCDEFG<br />
   </entry>
   <entry>
     <title>糟糕的程式設計師有哪些招牌特質？</title>
-    <url>/2015/what-are-the-characteristics-of-a-bad-software-engineer/</url>
+    <url>/2015/what-are-the-characteristics-of-a-bad-software-engineer.html</url>
     <content><![CDATA[<p>在 <a href="http://www.quora.com/">Quora</a> 上看到一篇不錯的文章，原文為 <a href="http://www.quora.com/What-are-the-characteristics-of-a-bad-software-engineer/answer/Nachiket-Naik">What are the characteristics of a bad software engineer?</a>。</p>
 <span id="more"></span>
 <p>以下為筆者翻譯的版本，在 Quora 的授權條款下，譯文採<a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW">創用 CC 4.0 姓名標示</a>授權，轉載請註名原文出處及譯者姓名。Quora 原作保留收回授權的權利。</p>
@@ -1052,7 +1052,7 @@ ABCDEFG<br />
   </entry>
   <entry>
     <title>對程式設計師來說，提高薪水最好的建議是什麼？</title>
-    <url>/2016/what-is-the-best-career-advice-for-a-software-developer-to-earn-a-higher-salary/</url>
+    <url>/2016/what-is-the-best-career-advice-for-a-software-developer-to-earn-a-higher-salary.html</url>
     <content><![CDATA[<p>關於這個問題，在 Quora 數則<a href="https://www.quora.com/What-is-the-best-career-advice-for-a-software-developer-to-earn-a-higher-salary">答案</a>中看到<a href="https://www.quora.com/What-is-the-best-career-advice-for-a-software-developer-to-earn-a-higher-salary/answer/Abhishek-Choudhary-11">一篇很棒的</a>，和大家分享。</p>
 <blockquote>
 <p>What is the best career advice for a software developer to earn a higher salary?</p>
@@ -1106,7 +1106,7 @@ ABCDEFG<br />
   </entry>
   <entry>
     <title>When Hexo Meets GitHub Pages and Travis CI plus Raspberry Pi</title>
-    <url>/2015/when-hexo-static-site-meets-github-pages-and-travis-ci/</url>
+    <url>/2015/when-hexo-static-site-meets-github-pages-and-travis-ci.html</url>
     <content><![CDATA[<p>JS 很有吸引力、Hexo 是台灣人寫的、速度比 Octopress 快、default 支援 GitHub Flavored Markdown，所以選 Hexo。</p>
 <span id="more"></span>
 <p>Hexo 是一個 static site generator，static site 是指 website 由 static web page 所組成。獲取 static web page 的 client 端得到的 web page，和儲存於 server 端的 web page 一模一樣。與 dynamic website 的 server 端即時產生 web page 傳送給 client 端不同，static site 的 server 端不需要具備即時生成不同 web page 的能力。</p>
@@ -1140,7 +1140,7 @@ ABCDEFG<br />
   </entry>
   <entry>
     <title>Windows Photo Viewer Mouse Plug-in</title>
-    <url>/2009/windows-photo-viewer-mouse-plug-in/</url>
+    <url>/2009/windows-photo-viewer-mouse-plug-in.html</url>
     <content><![CDATA[<p>This simple tool gives Windows Photo Viewer the following features:</p>
 <ol>
 <li>Middle click to toggle window’s size between normal and maximum.</li>
@@ -1159,20 +1159,137 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
+    <title>在 Ubuntu 12.10 的 gcin 輸入法平台安裝嘸蝦米輸入法</title>
+    <url>/2012/zai-ubuntu-12-dot-10-an-zhuang-fu-xia-mi-shu-ru-fa.html</url>
+    <content><![CDATA[<h2 id="步驟-1：安裝-gcin-及-im-switch"><a href="#步驟-1：安裝-gcin-及-im-switch" class="headerlink" title="步驟 1：安裝 gcin 及 im-switch"></a>步驟 1：安裝 gcin 及 im-switch</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install gcin im-switch</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<h2 id="步驟-2：指定預設輸入法平台為-gcin，完成後重新啟動電腦"><a href="#步驟-2：指定預設輸入法平台為-gcin，完成後重新啟動電腦" class="headerlink" title="步驟 2：指定預設輸入法平台為 gcin，完成後重新啟動電腦"></a>步驟 2：指定預設輸入法平台為 gcin，完成後重新啟動電腦</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">im-switch</span><br></pre></td></tr></table></figure>
+
+<h2 id="步驟-3：下載並解壓縮嘸蝦米官方提供的-gcin-用表格，接著開啟終端機並進入解壓縮目錄"><a href="#步驟-3：下載並解壓縮嘸蝦米官方提供的-gcin-用表格，接著開啟終端機並進入解壓縮目錄" class="headerlink" title="步驟 3：下載並解壓縮嘸蝦米官方提供的 gcin 用表格，接著開啟終端機並進入解壓縮目錄"></a>步驟 3：下載並解壓縮嘸蝦米官方提供的 gcin 用表格，接著開啟終端機並進入解壓縮目錄</h2><h2 id="步驟-4：將表格等檔案複製到系統中"><a href="#步驟-4：將表格等檔案複製到系統中" class="headerlink" title="步驟 4：將表格等檔案複製到系統中"></a>步驟 4：將表格等檔案複製到系統中</h2><h3 id="1-前置作業"><a href="#1-前置作業" class="headerlink" title="1. 前置作業"></a>1. 前置作業</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo updatedb</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-複製-gtab-到-gcin-表格目錄"><a href="#2-複製-gtab-到-gcin-表格目錄" class="headerlink" title="2. 複製 *.gtab 到 gcin 表格目錄"></a>2. 複製 *.gtab 到 gcin 表格目錄</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo cp *.gtab $(locate gtab | grep gcin/table | <span class="keyword">while</span> <span class="built_in">read</span> line; <span class="keyword">do</span> dirname <span class="string">&quot;<span class="variable">$line</span>&quot;</span>; <span class="keyword">done</span> | sort -u)</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-複製-png-到-gcin-icon-目錄"><a href="#3-複製-png-到-gcin-icon-目錄" class="headerlink" title="3. 複製 *.png 到 gcin icon 目錄"></a>3. 複製 *.png 到 gcin icon 目錄</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo cp *.png $(locate pinyin.png | grep gcin | <span class="keyword">while</span> <span class="built_in">read</span> line; <span class="keyword">do</span> dirname <span class="string">&quot;<span class="variable">$line</span>&quot;</span>; <span class="keyword">done</span> | sort -u)</span><br></pre></td></tr></table></figure>
+
+<h2 id="步驟-5：編輯-gtab-list"><a href="#步驟-5：編輯-gtab-list" class="headerlink" title="步驟 5：編輯 gtab.list"></a>步驟 5：編輯 gtab.list</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;嘸蝦米(繁) 1 boshiamy-t.gtab boshiamy-t.png&quot;</span> &gt;&gt; ~/.gcin/gtab.list</span><br></pre></td></tr></table></figure>
+
+<h2 id="步驟-6：重新啟動-gcin"><a href="#步驟-6：重新啟動-gcin" class="headerlink" title="步驟 6：重新啟動 gcin"></a>步驟 6：重新啟動 gcin</h2><h2 id="步驟-7：調整-gcin-設定"><a href="#步驟-7：調整-gcin-設定" class="headerlink" title="步驟 7：調整 gcin 設定"></a>步驟 7：調整 gcin 設定</h2><h3 id="1-在【內定輸入法-amp-開啟-關閉】中調整嘸蝦米是否為預設輸入法、可否由-ctrl-shift-切換"><a href="#1-在【內定輸入法-amp-開啟-關閉】中調整嘸蝦米是否為預設輸入法、可否由-ctrl-shift-切換" class="headerlink" title="1. 在【內定輸入法 &amp; 開啟/關閉】中調整嘸蝦米是否為預設輸入法、可否由 ctrl + shift 切換"></a>1. 在【內定輸入法 &amp; 開啟/關閉】中調整嘸蝦米是否為預設輸入法、可否由 ctrl + shift 切換</h3><h3 id="2-在【倉頡-行列-嘸蝦米-大易設定】中將【預覽-預選-字】調整為【全部開啟】"><a href="#2-在【倉頡-行列-嘸蝦米-大易設定】中將【預覽-預選-字】調整為【全部開啟】" class="headerlink" title="2. 在【倉頡/行列/嘸蝦米/大易設定】中將【預覽/預選 字】調整為【全部開啟】"></a>2. 在【倉頡/行列/嘸蝦米/大易設定】中將【預覽/預選 字】調整為【全部開啟】</h3>]]></content>
+      <categories>
+        <category>Setup</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>命令列上快速定位檔案與目錄</title>
+    <url>/2017/%E5%91%BD%E4%BB%A4%E5%88%97%E4%B8%8A%E5%BF%AB%E9%80%9F%E5%AE%9A%E4%BD%8D%E6%AA%94%E6%A1%88%E8%88%87%E7%9B%AE%E9%8C%84.html</url>
+    <content><![CDATA[<p>會盲打的人，在 shell 環境裡如果能找到方便的 tool 來幫助自己，操作速度甚至可以超過滑鼠 + GUI。</p>
+<p>舉二個例子：</p>
+<ol>
+<li>在 prompt 上列出前一指令的 return code 和 VCS 資訊。 <img src="/2017/%E5%91%BD%E4%BB%A4%E5%88%97%E4%B8%8A%E5%BF%AB%E9%80%9F%E5%AE%9A%E4%BD%8D%E6%AA%94%E6%A1%88%E8%88%87%E7%9B%AE%E9%8C%84/powerlevel9k-demo.png" class="" title="powerlevel9k-demo.png"></li>
+<li>用 tig 來操作 git。 <div class="video-container"><iframe src="https://www.youtube.com/embed/udCXubFr5Yo" frameborder="0" loading="lazy" allowfullscreen></iframe></div></li>
+</ol>
+<span id="more"></span>
+
+<p>在 shell 下，最常做的操作的就是找目錄、切目錄、找檔案、開檔案了。但是 <code>cd</code> 要到的目錄的路徑以及 <code>vim</code> 要開的檔案的位置在哪裡，一直都是個痛。就算記得，有時候路徑很深，光是打完就要老半天。</p>
+<p>以下介紹三個可以減輕日常路徑操作負擔的工具：</p>
+<h1 id="bd"><a href="#bd" class="headerlink" title="bd"></a>bd</h1><p><img src="https://raw.githubusercontent.com/Tarrasch/zsh-bd/master/animation.gif"></p>
+<p><a href="https://github.com/vigneshwaranr/bd">bd</a> 是轉目用來替代 <code>cd ..</code> 的工具。當所在的目錄很深，想要切回某一層 parent folder 時，以往總是要 <code>cd ../../..</code>，並自己算相對路徑的層數。有一些套件或是 alias 可以讓這個操作由 <code>cd ../..</code>減化成 <code>cd ...</code>，少打了 <code>./</code> 二個字，但是仍然要去算層數。</p>
+<p>bd 可以讓我們直接打要去的那一層的目錄名稱就切過去，懶得打的話也可以靠 tab 補完，非常實用。</p>
+<h1 id="fzf-auto-completion"><a href="#fzf-auto-completion" class="headerlink" title="fzf auto-completion"></a>fzf auto-completion</h1><p><a href="https://github.com/junegunn/fzf">fzf</a> 是一套很強大的 fuzzy search 引擎。它不只是引擎強，附加的補完也是殺手級的好用。一下子找不到好的 demo，只好請大家看看<a href="https://github.com/junegunn/fzf#fuzzy-completion-for-bash-and-zsh">官方手冊</a>意會。</p>
+<p>fzf 不只可以用在 <code>cd</code>，還可以用在 <code>vim</code>、<code>kill</code> 指令及 <code>Ctrl-R</code> 熱鍵等，是非常強大的工具。</p>
+<h1 id="fz"><a href="#fz" class="headerlink" title="fz"></a>fz</h1><p><img src="https://raw.githubusercontent.com/changyuheng/fz/master/fz-demo.gif"></p>
+<p><a href="https://github.com/changyuheng/fz">fz</a> 是 <a href="https://github.com/junegunn/fzf">fzf</a> 和 <a href="https://github.com/rupa/z">z</a> 二位大將合體下的產物。z 是一套支援只打部分目錄名稱就切到曾經去過的目錄的工具。</p>
+<p>相信 fz 的作者一定是位帥哥，居然能想到把 fzf 的 interactive fuzzy search 裝在 z 身上，打造出這把神兵利器。</p>
+<h1 id="enhancd"><a href="#enhancd" class="headerlink" title="enhancd"></a>enhancd</h1><p><img src="https://raw.githubusercontent.com/b4b4r07/screenshots/master/enhancd/demo.gif"></p>
+<p><a href="https://github.com/b4b4r07/enhancd">enhancd</a> 的設計理念也很棒，不過很可惜它目前沒有 tab completion。沒有 tab completion 就必須另外綁熱鍵，如此就破壞了使用習慣。</p>
+<h1 id="qfc"><a href="#qfc" class="headerlink" title="qfc"></a>qfc</h1><p><img src="https://cloud.githubusercontent.com/assets/2557967/8640880/582cb8fe-28ff-11e5-9753-41464dda938e.gif"></p>
+<p><a href="https://github.com/pindexis/qfc">qfc</a> 跟 enhancd 類似，不過它的 completion 不是綁 tab，比較可惜一點。</p>
+<h1 id="zsh-interactive-cd"><a href="#zsh-interactive-cd" class="headerlink" title="zsh-interactive-cd"></a>zsh-interactive-cd</h1><p><img src="https://raw.githubusercontent.com/changyuheng/zsh-interactive-cd/master/demo.gif"></p>
+<p>加碼一套工具。<a href="https://github.com/changyuheng/zsh-interactive-cd">zsh-interactive-cd</a> 將 <a href="https://fishshell.com/">fish</a> 的 cd 互動式補完帶入了 <a href="http://www.zsh.org/">zsh</a>。算是一套短小精悍卻又不可或缺的工具，可惜目前只支援 zsh，還沒有 Bash 的版本。不過作者很有可能是帥哥是無庸置疑的。</p>
+]]></content>
+      <categories>
+        <category>Software</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>自行組合安全、好記且每個網站相異的密碼</title>
+    <url>/2014/%E8%87%AA%E8%A1%8C%E7%B5%84%E5%90%88%E5%AE%89%E5%85%A8%E3%80%81%E5%A5%BD%E8%A8%98%E4%B8%94%E6%AF%8F%E5%80%8B%E7%B6%B2%E7%AB%99%E7%9B%B8%E7%95%B0%E7%9A%84%E5%AF%86%E7%A2%BC.html</url>
+    <content><![CDATA[<p>資訊應用和我們的結合愈來愈緊密，保護隱私和機敏資料的最後一道防線ーー密碼，顯得更為重要。</p>
+<span id="more"></span>
+<p>我們知道密碼不應過於簡單、容易猜測：不該用生日、電話、常見的單字、人名等等。安全的做法是用密碼產生器產生隨機不同大小寫的字母、數字、符號組合。此外，網站被駭客入侵時有所聞，為了避免因為一個網站的密碼外洩而影響到所有的密碼，應該讓每個網站採用不同的密碼。密碼產生器產生的密碼極其複雜，於是有人發明了密碼管理軟體，來幫忙記住各組密碼。但是一旦我們把所有的密碼都放進同一套軟體，不就又將雞蛋丟進同一個籃子裡了嗎？</p>
+<p>一個不同的密碼產生方法：token + pattern。</p>
+<p><strong>優點</strong></p>
+<ol>
+<li>不必將雞蛋放進同一個籠子</li>
+<li>容易記憶</li>
+<li>每一個網站都不同</li>
+<li>較生日、電話等容易猜測的密碼安全</li>
+<li>快速方便地輸入密碼，不須透過額外軟體</li>
+</ol>
+<p><strong>缺點</strong></p>
+<ol>
+<li>複雜度較密碼產生器產生的密碼低</li>
+<li>有被全盤破解的風險</li>
+</ol>
+<p>Token 是一串自訂的密碼，例如 TAIPEI 的變形 T@iP31。<br>Pattern 是一種能套用到不同網站的規則。例如取網站名稱的尾 2 字和頭 2 字：產生的密碼要給 Google 使用就是 lego；給 Yahoo 就是 ooya。</p>
+<p>如此一來在 Google 的密碼就會是 T@iP31lego，在 Yahoo 的密碼是 T@iP31ooya。只要記 token 和 pattern 的規則即可，非常容易記憶。Pattern 的制定可以更加複雜，像是加上「<a href="http://zh.wikipedia.org/zh-tw/%E5%87%B1%E6%92%92%E5%AF%86%E7%A2%BC">凱撒密碼</a>」來混淆。整體的組合也能再加以變化，像是改成 token 1 + pattern 1 + token 2 + pattern 2。</p>
+<p>相關文章</p>
+<ul>
+<li><a href="http://www.pcworld.com/article/252024/create_a_different_secure_easy_to_remember_password_for_every_site.html">Create a Different, Secure, Easy-to-Remember Password for Every Site</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Idea</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>自製臺灣新冠肺炎即時疫情資料圖報表</title>
+    <url>/2021/%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8.html</url>
+    <content><![CDATA[<img src="/2021/%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8/%E6%AF%8F%E6%97%A5%E6%9C%AC%E5%9C%9F%E7%A2%BA%E8%A8%BA.png" class="" title="每日本土確診.png">
+
+<p>臺灣新冠肺炎疫情資料圖報表（自動更新）：<a href="https://docs.google.com/spreadsheets/u/1/d/1-a1njGi0h-j5sO80rhmgQZfpI8c2oA_sY5tuXGCNRjo/edit">https://docs.google.com/spreadsheets/u/1/d/1-a1njGi0h-j5sO80rhmgQZfpI8c2oA_sY5tuXGCNRjo/edit</a></p>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>五月中情爆發以後，每日各家媒體報導的資訊雖更新飛快，但又十分紛亂。每篇報導內的資料，格式與詳盡程度各有不一，讓人不好消化。因此便蒙生了自己製做圖表來呈現制式的資料，讓自己可以不需要再收看吵雜的新聞報導。</p>
+<h1 id="原始資料"><a href="#原始資料" class="headerlink" title="原始資料"></a>原始資料</h1><p>在行政院衛生福利部疾病管制署的資料開放平臺上，有公布新冠肺炎疫情的<a href="https://data.cdc.gov.tw/dataset/agsdctable-day-19cov">原始資料</a>。</p>
+<p>原始資料可直接匯入 Google 試算表，如下圖所示：</p>
+<span id="more"></span>
+<p><img src="%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8/%E5%8E%9F%E5%A7%8B%E8%B3%87%E6%96%99.png" alt="自製臺灣新冠肺炎疫情資料圖報表/原始資料.png"></p>
+<h1 id="製做圖表"><a href="#製做圖表" class="headerlink" title="製做圖表"></a>製做圖表</h1><p>原始資料的資訊量過於龐大，透過一些公式濃縮統整並以圖表呈現，可以讓資料更容易被閱讀。我將原始資料匯入<a href="https://docs.google.com/spreadsheets/d/1-a1njGi0h-j5sO80rhmgQZfpI8c2oA_sY5tuXGCNRjo/edit?usp=sharing">自製的試算表</a>後，另外又開了三張表單，分別在裡面呈現「每日新增本土確診數」、「縣市分布」及「年齡分布」。</p>
+<p><img src="%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8/%E6%AF%8F%E6%97%A5%E6%9C%AC%E5%9C%9F%E7%A2%BA%E8%A8%BA.png" alt="自製臺灣新冠肺炎疫情資料圖報表/每日本土確診.png"></p>
+<p><img src="%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8/%E7%B8%A3%E5%B8%82%E5%88%86%E5%B8%83.png" alt="自製臺灣新冠肺炎疫情資料圖報表/縣市分布.png"></p>
+<p><img src="%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8/%E5%B9%B4%E9%BD%A1%E5%88%86%E5%B8%83.png" alt="自製臺灣新冠肺炎疫情資料圖報表/年齡分布.png"></p>
+<p>至此，對於掌握疫情數據，已經不需要收看新聞了。不過因為原始資料每日都會更新，所以還需要想辦法自動定期將最新的資料匯入這份試算表，才能保持這份試算表內資訊的時效性。</p>
+<h1 id="自動更新原始資料"><a href="#自動更新原始資料" class="headerlink" title="自動更新原始資料"></a>自動更新原始資料</h1><p>Google 在 Apps Script 提供了定時執行自訂程式的服務。可以透過這個服務，自動定時執行匯入最新原始資料的工作。</p>
+<p>下面是用以更新試算表內原始資料的程式碼：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var spreadsheetSourceUrl = &quot;https://docs.google.com/spreadsheets/d/1-a1njGi0h-j5sO80rhmgQZfpI8c2oA_sY5tuXGCNRjo/edit&quot;;</span><br><span class="line">var csvDataSourceUrl = &quot;https://data.cdc.gov.tw/download?resourceid=3c1e263d-16ec-4d70-b56c-21c9e2171fc7&amp;dataurl=https://od.cdc.gov.tw/eic/Day_Confirmation_Age_County_Gender_19CoV.csv&quot;;</span><br><span class="line">var dataSheetName = &quot;原始資料&quot;;</span><br><span class="line"></span><br><span class="line">function getParsedContents(csvUrl) &#123;</span><br><span class="line">  return Utilities.parseCsv(UrlFetchApp.fetch(csvUrl));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function clearSheetContentsByUrl(spreadsheet, sheetName) &#123;</span><br><span class="line">  let sheet = spreadsheet.getSheetByName(sheetName);</span><br><span class="line">  sheet.clearContents();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function updateSheet(spreadsheet, sheetName, rangeDescription, contents) &#123;</span><br><span class="line">  let sheet = spreadsheet.getSheetByName(sheetName);</span><br><span class="line">  let range = sheet.getRange(rangeDescription);</span><br><span class="line">  range.setValues(contents);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function tweakFormat(spreadsheet, sheetName, contents) &#123;</span><br><span class="line">  let sheet = spreadsheet.getSheetByName(sheetName);</span><br><span class="line"></span><br><span class="line">  let range = sheet.getRange(`$&#123;String.fromCharCode(64+contents[0].length-1)&#125;2:$&#123;String.fromCharCode(64+contents[0].length-1)&#125;$&#123;contents.length&#125;`);</span><br><span class="line">  range.setNumberFormat(&quot;@&quot;);</span><br><span class="line"></span><br><span class="line">  range = sheet.getRange(&quot;B2:B&quot;);</span><br><span class="line">  range.setNumberFormat(&quot;yyyymmdd&quot;);</span><br><span class="line">  range.setNumberFormat(&quot;@&quot;);</span><br><span class="line">  range.setNumberFormat(&quot;########&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function main() &#123;</span><br><span class="line">  Logger.log(&quot;Getting source data&quot;);</span><br><span class="line">  let parsedContents = getParsedContents(csvDataSourceUrl);</span><br><span class="line">  Logger.log(parsedContents);</span><br><span class="line">  Logger.log(`Source data got, number of rows in the CSV: $&#123;parsedContents.length&#125;`);</span><br><span class="line"></span><br><span class="line">  if (parsedContents.length == 0) &#123;</span><br><span class="line">    Logger.log(&quot;ERROR: source is empty&quot;);</span><br><span class="line">    return;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  let spreadsheet = SpreadsheetApp.openByUrl(spreadsheetSourceUrl);</span><br><span class="line"></span><br><span class="line">  Logger.log(&quot;Clearing the existing contents from the sheet&quot;);</span><br><span class="line">  clearSheetContentsByUrl(spreadsheet, dataSheetName)</span><br><span class="line">  Logger.log(&quot;Content cleared from the sheet&quot;);</span><br><span class="line"></span><br><span class="line">  Logger.log(&quot;Updating the sheet&quot;);</span><br><span class="line">  updateSheet(</span><br><span class="line">    spreadsheet,</span><br><span class="line">    dataSheetName,</span><br><span class="line">    `A1:$&#123;String.fromCharCode(64+parsedContents[0].length)&#125;$&#123;parsedContents.length&#125;`,</span><br><span class="line">    parsedContents);</span><br><span class="line">  Logger.log(&quot;Sheet updated&quot;);</span><br><span class="line"></span><br><span class="line">  Logger.log(&quot;Post update tweak started&quot;);</span><br><span class="line">  tweakFormat(spreadsheet, dataSheetName, parsedContents)</span><br><span class="line">  Logger.log(&quot;Post update tweak completed&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在 Apps Script 中創建一個 Project，並將程式碼貼上：</p>
+<p><img src="%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8/Apps-Script-1.png" alt="自製臺灣新冠肺炎疫情資料圖報表/Apps-Script-1.png"></p>
+<p><img src="%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8/Apps-Script-2.png" alt="自製臺灣新冠肺炎疫情資料圖報表/Apps-Script-2.png"></p>
+<p>或直接<a href="https://script.google.com/d/1eYtrNIftW9kZPKrEWzA5Sx1ZqydGDz86kHDlnAWyMpKDgmwcyxsBh-f9/edit?usp=sharing">在此</a>取得。</p>
+<p>再到 Triggers 頁籤加入一個每小時的觸發工作：</p>
+<p><img src="%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8/Apps-Script-3.png" alt="自製臺灣新冠肺炎疫情資料圖報表/Apps-Script-3.png"></p>
+<p>如此一來，試算表內的原始資料就會一小時自動更新一次，以後都不用再手動更新資料了。</p>
+]]></content>
+      <categories>
+        <category>Programming</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Yocto 編譯主機零組件挑選及組裝</title>
-    <url>/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/</url>
+    <url>/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D.html</url>
     <content><![CDATA[<img src="/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/PC_Screws.jpg" class="" title="PC_Screws.jpg">
 
 <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>需求：程式編譯，主要編譯 Yocto（低配版 Build Code Server）<br>預算：4.5 萬</p>
 <h1 id="零件挑選"><a href="#零件挑選" class="headerlink" title="零件挑選"></a>零件挑選</h1><h2 id="中央處理器（CPU）"><a href="#中央處理器（CPU）" class="headerlink" title="中央處理器（CPU）"></a>中央處理器（CPU）</h2><p>挑選 CPU 有幾個重點，依優先順序分別為：售價（預算）、效能、功耗（耗電量、廢熱量）、C/P 值。</p>
 <p>OpenBenchmarking 上搜集了各型號 CPU 的 <a href="https://openbenchmarking.org/test/pts/build-linux-kernel">Linux Kernel 編譯時間</a>，可用以評估各型 CPU 多核心編譯的效能：</p>
 <span id="more"></span>
-<p><img src="Timed-Linux-Kernel-Compilation.png" alt="Timed-Linux-Kernel-Compilation.png"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/Timed-Linux-Kernel-Compilation.png" alt="yocto-編譯主機零組件挑選及組裝/Timed-Linux-Kernel-Compilation.png"></p>
 <p>伺服器版的 CPU 太貴，直接跳過。<a href="https://www.amd.com/en/products/cpu/amd-ryzen-9-5950x">AMD Ryzen™ 9 5950X</a>、<a href="https://www.amd.com/en/products/cpu/amd-ryzen-9-3950x">AMD Ryzen™ 9 3950X</a> 及 <a href="https://ark.intel.com/content/www/us/en/ark/products/198017/intel-core-i9-10980xe-extreme-edition-processor-24-75m-cache-3-00-ghz.html">Intel® Core™ i9-10980XE</a> 這三顆 CPU 是目前家用主機的頂規。</p>
 <p>Intel 這顆效能表現與 AMD 這二顆相伯仲，但功耗高很多，所以先剔除。再來因為 5950X 和 3950X 這二顆都缺貨，也只能放棄。繼續往下的選擇中，<a href="https://www.amd.com/en/products/cpu/amd-ryzen-9-5900x">AMD Ryzen™ 9 5900X</a> 效能相差不大，有貨，且 C/P 值比 5950X、3950X 都高很多，因此沒有什麼懸念，就選它了。</p>
 <h2 id="主機板"><a href="#主機板" class="headerlink" title="主機板"></a>主機板</h2><p>相容 AMD Ryzen™ 9 5900X AM4 規格且有現貨的晶片組有 B450、X470、<a href="https://www.amd.com/en/chipsets/a520">A520</a>、<a href="https://www.amd.com/en/chipsets/b550">B550</a> 和 <a href="https://www.amd.com/en/chipsets/x570">X570</a>。符合目前需求的最便宜選擇是 B450，但可惜目前 Mini-ITX 的版本缺貨，只能往更高階看。因為想保留未來插高階顯示卡和 PCIe 4.0 SSD 的空間，所以從 B550 和 X570 之間選了比較便宜的 B550。</p>
-<p><img src="AM4-Chipset-Spec.png" alt="AM4-Chipset-Spec.png"></p>
-<p><img src="AM4-Chipset-Compatibility.png" alt="AM4-Chipset-Compatibility.png"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/AM4-Chipset-Spec.png" alt="yocto-編譯主機零組件挑選及組裝/AM4-Chipset-Spec.png"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/AM4-Chipset-Compatibility.png" alt="yocto-編譯主機零組件挑選及組裝/AM4-Chipset-Compatibility.png"></p>
 <p>各家 B550 Mini-ITX 主機板評測：</p>
 <div class="video-container"><iframe src="https://www.youtube.com/embed/b5xcVF04B_M" frameborder="0" loading="lazy" allowfullscreen></iframe></div>
 
@@ -1211,13 +1328,13 @@ ABCDEFG<br />
 <div class="video-container"><iframe src="https://www.youtube.com/embed/1CazEXejPCU" frameborder="0" loading="lazy" allowfullscreen></iframe></div>
 
 <h2 id="機殼"><a href="#機殼" class="headerlink" title="機殼"></a>機殼</h2><p>目前使用的 <a href="https://www.silverstonetek.com/legacy.php?pid=345&area=tw&model=SG09&tno=">SilverStone SG09</a> 搭配貓頭鷹塔散，機殼尺寸和散熱效果都讓我很滿意。因為小機殼輕巧的特性，這次鎖定 Mini-ITX 的機殼。小機殼內部比較擁擠，裝高度發熱的元件要特別注意通風、散熱。參考了一些在 YouTube 上看到的機殼：</p>
-<p><img src="Cases.png" alt="Cases.png"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/Cases.png" alt="yocto-編譯主機零組件挑選及組裝/Cases.png"></p>
 <div class="video-container"><iframe src="https://www.youtube.com/embed/N5O6WZKERZ8" frameborder="0" loading="lazy" allowfullscreen></iframe></div>
 
 <div class="video-container"><iframe src="https://www.youtube.com/embed/vo8T81nuLFM" frameborder="0" loading="lazy" allowfullscreen></iframe></div>
 
 <p>發現符合我期待的散熱方式及電源位置的只有 <a href="https://nzxt.com/product/h210">NZXT H210</a>，所以就選了它。</p>
-<p><img src="Airflow-in-Cases.png" alt="Airflow-in-Cases.png"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/Airflow-in-Cases.png" alt="yocto-編譯主機零組件挑選及組裝/Airflow-in-Cases.png"></p>
 <p>挑選小型的機殼時，除了要注意 CPU 散熱器的高度外，還要看散熱器的體積對機殼內通風的影響。H210 的內部配置有一些亮點：</p>
 <ol>
 <li> 前進氣風扇的尺寸比後出風風扇的大，因此很容易可以達到機殼內正壓的配置。</li>
@@ -1228,219 +1345,100 @@ ABCDEFG<br />
 <li> 電源直接貼在背板，電源線可以直接接到電源上，不需要透過機殼自帶的電源延長線。</li>
 </ol>
 <p>像這種小型的機殼，因為顯卡離機殼底部很近，因此還要注意，若機殼下方會裝風扇，其風向應與顯卡風扇的風向一致。不是所有顯卡的風扇都是往晶片方向吹的，也有反著吹的：</p>
-<p><img src="Display-Card-Wind-Direction.png" alt="Display-Card-Wind-Direction.png"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/Display-Card-Wind-Direction.png" alt="yocto-編譯主機零組件挑選及組裝/Display-Card-Wind-Direction.png"></p>
 <p>補充說明，我會避免選擇將電源供應器定位為主要排風元件的機殼（如後上置型的）。因為電源供應器很怕熱，長期在較熱環境中工作的電源供應器，除了壽命比較短之外，也很危險（可參見全漢<a href="https://www.fsp-group.com/tw/knowledge-prd-4.html">官網說明</a>）。機殼內有獨立空間可放置電源供應器是最理想的，這樣電源供應器就不會與 CPU、顯示卡等高發熱元件混在同一空間內；退而求其次，也要讓這三者有獨立的風道，這樣三者產生的熱才不會互相影響。</p>
 <h2 id="CPU-散熱器"><a href="#CPU-散熱器" class="headerlink" title="CPU 散熱器"></a>CPU 散熱器</h2><p>散熱器的選擇實在太多了，所以我直接在以安靜著稱的貓頭鷹裡挑。因為希望能與機殼設計的水平風流相配合，所以只看塔式散熱器。5900X 蠻熱的，需要散熱能力好一點的，同時我又不喜歡記憶體完全被散熱器遮住看不到，所以挑了 <a href="https://www.google.com/search?client=firefox-b-d&q=NH-D15s">Noctua NH-D15S</a>。</p>
-<p>Mini-ITX 主板 + 記憶體 + NH-D15S 示意圖：<br><img src="phanteks-evolv-itx-memory-nh-d15s.jpg" alt="phanteks-evolv-itx-memory-nh-d15s.jpg"></p>
-<p>NZXT H210 + NH-D15S 示意圖：<br><img src="H210+D15S.jpeg" alt="H210+D15S.jpeg"></p>
+<p>Mini-ITX 主板 + 記憶體 + NH-D15S 示意圖：<br><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/phanteks-evolv-itx-memory-nh-d15s.jpg" alt="yocto-編譯主機零組件挑選及組裝/phanteks-evolv-itx-memory-nh-d15s.jpg"></p>
+<p>NZXT H210 + NH-D15S 示意圖：<br><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/H210+D15S.jpeg" alt="yocto-編譯主機零組件挑選及組裝/H210+D15S.jpeg"></p>
 <h2 id="電源供應器"><a href="#電源供應器" class="headerlink" title="電源供應器"></a>電源供應器</h2><p>電源供應器是耗材，它的供應瓦數是會衰減的。預算許可的話，就把瓦數買到 CPU + 顯卡功耗的 2 倍，這樣電源供應器在其他零件壞掉前應該都會是好的。愛護地球，在能負擔的範圍內選轉換功率高一點的。如果機殼支援 ATX 規格的電源供應器，那在電源供應器的選擇會比較多，也會比較便宜。</p>
 <h1 id="組裝"><a href="#組裝" class="headerlink" title="組裝"></a>組裝</h1><p><em>開車就是要開手排才熱血，電腦就是要自己裝才有靈魂。</em></p>
 <p>開始前，先說明一個注意事項：除了一些非通用特殊螺絲之外，一部電腦主機裡的螺絲有 3 種不同的螺絲牙，這三種螺絲牙通常是，最粗的（kb5）鎖風扇，中等的（#6-32 UNC）鎖主機板、機殼、電源，最細的（M3）鎖硬碟。除此之外，也要注意螺絲頭，有些適合用平頭、有些適合用寬頭、有些適合用手擰的等等。詳請見維基百科 <a href="https://en.wikipedia.org/wiki/Computer_case_screws">Computer case screws</a>。</p>
-<p><img src="PC_Screws.jpg" alt="PC_Screws.jpg"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/PC_Screws.jpg" alt="yocto-編譯主機零組件挑選及組裝/PC_Screws.jpg"></p>
 <p>全零件合照（這邊缺了 SSD 和 後置薄扇）：</p>
-<p><img src="all-components.jpg" alt="all-components.jpg"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/all-components.jpg" alt="yocto-編譯主機零組件挑選及組裝/all-components.jpg"></p>
 <p>拿出工具盒，正式開始。</p>
-<p><img src="toolbox.jpeg" alt="toolbox.jpeg"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/toolbox.jpeg" alt="yocto-編譯主機零組件挑選及組裝/toolbox.jpeg"></p>
 <h2 id="安裝電源供應器及機殼風扇"><a href="#安裝電源供應器及機殼風扇" class="headerlink" title="安裝電源供應器及機殼風扇"></a>安裝電源供應器及機殼風扇</h2><ol>
-<li>把電源供應器裝進機殼後下方<br> <img src="installing-psu-to-case.jpeg" alt="installing-psu-to-case.jpeg"></li>
-<li>將 2 顆 14” 進風扇裝進機殼前方<br> <img src="installing-14-fan-to-case.jpeg" alt="installing-14-fan-to-case.jpeg"></li>
+<li>把電源供應器裝進機殼後下方<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-psu-to-case.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-psu-to-case.jpeg"></li>
+<li>將 2 顆 14” 進風扇裝進機殼前方<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-14-fan-to-case.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-14-fan-to-case.jpeg"></li>
 </ol>
 <p><strong>Update</strong></p>
 <p>之後為防落塵，上方出風口用黑色不織布封住：</p>
-<p><img src="install-cpu-heat-seak-13.jpeg" alt="install-cpu-heat-seak-13.jpeg"></p>
-<p><img src="install-cpu-heat-seak-14.jpeg" alt="install-cpu-heat-seak-14.jpeg"></p>
-<p><img src="install-cpu-heat-seak-15.jpeg" alt="install-cpu-heat-seak-15.jpeg"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-seak-13.jpeg" alt="yocto-編譯主機零組件挑選及組裝/install-cpu-heat-seak-13.jpeg"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-seak-14.jpeg" alt="yocto-編譯主機零組件挑選及組裝/install-cpu-heat-seak-14.jpeg"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-seak-15.jpeg" alt="yocto-編譯主機零組件挑選及組裝/install-cpu-heat-seak-15.jpeg"></p>
 <p>另購了貓頭鷹 NF-A12x15 薄扇 1 個裝在機殼後方出風。</p>
-<p><img src="NF-A12x15-1.jpg" alt="NF-A12x15-1.jpg"></p>
-<p><img src="NF-A12x15-2.jpeg" alt="NF-A12x15-2.jpeg"></p>
-<p><img src="NF-A12x15-3.jpeg" alt="NF-A12x15-3.jpeg"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/NF-A12x15-1.jpg" alt="yocto-編譯主機零組件挑選及組裝/NF-A12x15-1.jpg"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/NF-A12x15-2.jpeg" alt="yocto-編譯主機零組件挑選及組裝/NF-A12x15-2.jpeg"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/NF-A12x15-3.jpeg" alt="yocto-編譯主機零組件挑選及組裝/NF-A12x15-3.jpeg"></p>
 <p><strong>Update 2</strong></p>
 <p>實測後發現 NF-A12x15 對降低峰值溫度沒什麼效果，同時產生了低頻的共鳴噪音，所以後來又把它拆掉了。</p>
 <h2 id="安裝-CPU"><a href="#安裝-CPU" class="headerlink" title="安裝 CPU"></a>安裝 CPU</h2><ol>
-<li>首先核對 CPU 安裝方向的標示<br> <img src="installing-cpu-1.jpeg" alt="installing-cpu-1.jpeg"></li>
-<li>拉起 CPU 固定桿並輕輕放下 CPU<br> <img src="installing-cpu-2.jpeg" alt="installing-cpu-2.jpeg"></li>
-<li>放下固定桿，確定 CPU 有被夾緊<br> <img src="installing-cpu-3.jpeg" alt="installing-cpu-3.jpeg"></li>
+<li>首先核對 CPU 安裝方向的標示<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-cpu-1.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-cpu-1.jpeg"></li>
+<li>拉起 CPU 固定桿並輕輕放下 CPU<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-cpu-2.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-cpu-2.jpeg"></li>
+<li>放下固定桿，確定 CPU 有被夾緊<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-cpu-3.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-cpu-3.jpeg"></li>
 </ol>
-<h2 id="安裝-NVMe-SSD"><a href="#安裝-NVMe-SSD" class="headerlink" title="安裝 NVMe SSD"></a>安裝 NVMe SSD</h2><p>補拍 SSD 照片<br><img src="ssd.jpeg" alt="ssd.jpeg"></p>
+<h2 id="安裝-NVMe-SSD"><a href="#安裝-NVMe-SSD" class="headerlink" title="安裝 NVMe SSD"></a>安裝 NVMe SSD</h2><p>補拍 SSD 照片<br><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/ssd.jpeg" alt="yocto-編譯主機零組件挑選及組裝/ssd.jpeg"></p>
 <p>B550 不是所有 NVMe 插槽都是 PCIe 4.0，所以要注意一下。不過因為買的是 PCIe 3.0 的 SSD，所以也沒差。</p>
 <ol>
-<li>從腳位判斷安裝方向<br> <img src="installing-ssd-1.jpeg" alt="installing-ssd-1.jpeg"></li>
-<li>斜斜地插入 SSD<br> <img src="installing-ssd-2.jpeg" alt="installing-ssd-2.jpeg"></li>
-<li>用六角套筒卸下主機板上的固定用螺母柱<br> <img src="installing-ssd-3.jpeg" alt="installing-ssd-3.jpeg"></li>
-<li>將 SSD 壓平，並用螺母柱加以固定<br> <img src="installing-ssd-4.jpeg" alt="installing-ssd-4.jpeg"></li>
-<li>撕開 SSD 散熱片的背膠<br> <img src="installing-ssd-5.jpeg" alt="installing-ssd-5.jpeg"></li>
-<li>將 SSD 散熱片放至定位，並鎖上螺絲固定<br> <img src="installing-ssd-6.jpeg" alt="installing-ssd-6.jpeg"><br> <img src="installing-ssd-7.jpeg" alt="installing-ssd-7.jpeg"></li>
+<li>從腳位判斷安裝方向<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-ssd-1.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-ssd-1.jpeg"></li>
+<li>斜斜地插入 SSD<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-ssd-2.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-ssd-2.jpeg"></li>
+<li>用六角套筒卸下主機板上的固定用螺母柱<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-ssd-3.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-ssd-3.jpeg"></li>
+<li>將 SSD 壓平，並用螺母柱加以固定<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-ssd-4.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-ssd-4.jpeg"></li>
+<li>撕開 SSD 散熱片的背膠<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-ssd-5.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-ssd-5.jpeg"></li>
+<li>將 SSD 散熱片放至定位，並鎖上螺絲固定<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-ssd-6.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-ssd-6.jpeg"><br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-ssd-7.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-ssd-7.jpeg"></li>
 </ol>
 <h2 id="安裝記憶體"><a href="#安裝記憶體" class="headerlink" title="安裝記憶體"></a>安裝記憶體</h2><ol>
-<li>扳開記憶體插槽二側的卡榫<br> <img src="installing-ram-1.jpeg" alt="installing-ram-1.jpeg"></li>
-<li>確認記憶體插銷缺口位置<br> <img src="installing-ram-2.jpeg" alt="installing-ram-2.jpeg"></li>
-<li>垂直壓下記憶體直到二側卡榫卡緊記憶體<br> <img src="installing-ram-3.jpeg" alt="installing-ram-3.jpeg"></li>
+<li>扳開記憶體插槽二側的卡榫<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-ram-1.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-ram-1.jpeg"></li>
+<li>確認記憶體插銷缺口位置<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-ram-2.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-ram-2.jpeg"></li>
+<li>垂直壓下記憶體直到二側卡榫卡緊記憶體<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-ram-3.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-ram-3.jpeg"></li>
 </ol>
 <h2 id="安裝-CPU-散熱器"><a href="#安裝-CPU-散熱器" class="headerlink" title="安裝 CPU 散熱器"></a>安裝 CPU 散熱器</h2><ol>
-<li>卸下原廠散熱器基座<br> <img src="install-cpu-heat-sink-1.jpeg" alt="install-cpu-heat-sink-1.jpeg"></li>
-<li>留下散熱器加固背板<br> <img src="install-cpu-heat-sink-2.jpeg" alt="install-cpu-heat-sink-2.jpeg"><br> <img src="install-cpu-heat-sink-3.jpeg" alt="install-cpu-heat-sink-3.jpeg"></li>
-<li>比對散熱器方向<br> <img src="install-cpu-heat-sink-4.jpeg" alt="install-cpu-heat-sink-4.jpeg"></li>
+<li>卸下原廠散熱器基座<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-1.jpeg" alt="yocto-編譯主機零組件挑選及組裝/install-cpu-heat-sink-1.jpeg"></li>
+<li>留下散熱器加固背板<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-2.jpeg" alt="yocto-編譯主機零組件挑選及組裝/install-cpu-heat-sink-2.jpeg"><br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-3.jpeg" alt="yocto-編譯主機零組件挑選及組裝/install-cpu-heat-sink-3.jpeg"></li>
+<li>比對散熱器方向<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-4.jpeg" alt="yocto-編譯主機零組件挑選及組裝/install-cpu-heat-sink-4.jpeg"></li>
 <li>安裝散熱器基座</li>
-<li>點散熱膏。於 CPU 中心點上一球直徑約 0.5 cm 的量。<br> <img src="install-cpu-heat-sink-5.jpeg" alt="install-cpu-heat-sink-5.jpeg"></li>
-<li>鎖上散熱鰭片<br> <img src="install-cpu-heat-sink-6.jpeg" alt="install-cpu-heat-sink-6.jpeg"></li>
-<li>鎖緊散熱鰭片後，從與 CPU 的接縫處檢查散熱膏是否適量。應該要稍微有一點散熱膏被壓出來，但量不要多到會沾到主機板。<br> <img src="install-cpu-heat-sink-7.jpeg" alt="install-cpu-heat-sink-7.jpeg"></li>
-<li>調整散熱器風扇方向<br> <img src="install-cpu-heat-sink-8.jpeg" alt="install-cpu-heat-sink-8.jpeg"></li>
-<li>接上 CPU 散熱風扇電源<br> <img src="install-cpu-heat-sink-12.jpeg" alt="install-cpu-heat-sink-12.jpeg"></li>
+<li>點散熱膏。於 CPU 中心點上一球直徑約 0.5 cm 的量。<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-5.jpeg" alt="yocto-編譯主機零組件挑選及組裝/install-cpu-heat-sink-5.jpeg"></li>
+<li>鎖上散熱鰭片<br> <img src="install-cpu-heat-sink-6.jpeg" alt="yocto-編譯主機零組件挑選及組裝/install-cpu-heat-sink-6.jpeg"></li>
+<li>鎖緊散熱鰭片後，從與 CPU 的接縫處檢查散熱膏是否適量。應該要稍微有一點散熱膏被壓出來，但量不要多到會沾到主機板。<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-7.jpeg" alt="yocto-編譯主機零組件挑選及組裝/install-cpu-heat-sink-7.jpeg"></li>
+<li>調整散熱器風扇方向<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-8.jpeg" alt="yocto-編譯主機零組件挑選及組裝/install-cpu-heat-sink-8.jpeg"></li>
+<li>接上 CPU 散熱風扇電源<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-12.jpeg" alt="yocto-編譯主機零組件挑選及組裝/install-cpu-heat-sink-12.jpeg"></li>
 </ol>
 <p>完成。可以看到 NH-D15s 給記憶體相當大的空間：</p>
-<p><img src="install-cpu-heat-sink-10.jpeg" alt="install-cpu-heat-sink-10.jpeg"></p>
-<p><img src="install-cpu-heat-sink-9.jpeg" alt="install-cpu-heat-sink-9.jpeg"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-10.jpeg" alt="yocto-編譯主機零組件挑選及組裝/install-cpu-heat-sink-10.jpeg"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-9.jpeg" alt="yocto-編譯主機零組件挑選及組裝/install-cpu-heat-sink-9.jpeg"></p>
 <p>散熱鰭片的長、寬沒有超出主機板：</p>
-<p><img src="install-cpu-heat-sink-11.JPG" alt="install-cpu-heat-sink-11.JPG"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/install-cpu-heat-sink-11.JPG" alt="yocto-編譯主機零組件挑選及組裝/install-cpu-heat-sink-11.JPG"></p>
 <h2 id="安裝主機板"><a href="#安裝主機板" class="headerlink" title="安裝主機板"></a>安裝主機板</h2><p>準備放主機板進機殼時，才發現散熱鰭片會卡到這款機殼後面和上面的風扇，只好把它們拆掉。</p>
-<p><img src="installing-mainboard-1.jpeg" alt="installing-mainboard-1.jpeg"></p>
-<p><img src="installing-mainboard-2.jpeg" alt="installing-mainboard-2.jpeg"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-mainboard-1.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-mainboard-1.jpeg"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-mainboard-2.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-mainboard-2.jpeg"></p>
 <ol>
 <li>接上 CPU 電源</li>
-<li>將主機板放至定位，以螺絲固定<br> <img src="installing-mainboard-3.jpeg" alt="installing-mainboard-3.jpeg"><br> 左上角的螺絲孔被 CPU 散熱鰭片擋住鎖不到，要能鎖到的話，就要先裝主機板再裝鰭片。但因為先鎖主板再裝鰭片會不能檢查散熱膏的量，加上這張主板背面有金屬框加固應該夠堅固，所以就不重做了。</li>
-<li>接上其他各種電源<br> <img src="installing-mainboard-4.jpeg" alt="installing-mainboard-4.jpeg"></li>
+<li>將主機板放至定位，以螺絲固定<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-mainboard-3.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-mainboard-3.jpeg"><br> 左上角的螺絲孔被 CPU 散熱鰭片擋住鎖不到，要能鎖到的話，就要先裝主機板再裝鰭片。但因為先鎖主板再裝鰭片會不能檢查散熱膏的量，加上這張主板背面有金屬框加固應該夠堅固，所以就不重做了。</li>
+<li>接上其他各種電源<br> <img src="installing-mainboard-4.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-mainboard-4.jpeg"></li>
 </ol>
 <h2 id="安裝顯示卡"><a href="#安裝顯示卡" class="headerlink" title="安裝顯示卡"></a>安裝顯示卡</h2><p>低階顯卡不用額外接電源，直接插到對應的槽並鎖上機殼背板就好。</p>
-<p><img src="installing-video-card.jpeg" alt="installing-video-card.jpeg"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/installing-video-card.jpeg" alt="yocto-編譯主機零組件挑選及組裝/installing-video-card.jpeg"></p>
 <h2 id="理線"><a href="#理線" class="headerlink" title="理線"></a>理線</h2><p>理線是一個耗時也不見得做得好的工作，建議動手前先參考別人的做法。對外觀講究的話，可以另外購買高顏值的訂製線。網路上搜尋「機殼型號」 + 「Cable Management」就可以看到很多範例。</p>
-<p><img src="Cable-Management-1.jpeg" alt="Cable-Management-1.jpeg"></p>
-<p><img src="Cable-Management-2.jpeg" alt="Cable-Management-2.jpeg"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/Cable-Management-1.jpeg" alt="yocto-編譯主機零組件挑選及組裝/Cable-Management-1.jpeg"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/Cable-Management-2.jpeg" alt="yocto-編譯主機零組件挑選及組裝/Cable-Management-2.jpeg"></p>
 <h2 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h2><p>最後蓋上機殼側板，就完成啦！</p>
-<p><img src="finish.jpeg" alt="finish.jpeg"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/finish.jpeg" alt="yocto-編譯主機零組件挑選及組裝/finish.jpeg"></p>
 <h1 id="驗收"><a href="#驗收" class="headerlink" title="驗收"></a>驗收</h1><h2 id="CPU-效能"><a href="#CPU-效能" class="headerlink" title="CPU 效能"></a>CPU 效能</h2><p>相同專案在新電腦的編譯時間約為 35 分鐘，在上面列的 i7-8700K 舊電腦約為 66 分鐘。CPU 執行緒數加倍，時間約減半，算是符合預期。</p>
 <p>CPU 頻率在編譯過程中，穩定維持在 4.3 GHz ~ 4.5 GHz 之間，與網路上的<a href="https://www.techpowerup.com/review/amd-ryzen-9-5900x/21.html">評測</a>非常接近，沒有因為過熱而降頻。</p>
-<p><img src="cpu-freq.png" alt="cpu-freq.png"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/cpu-freq.png" alt="yocto-編譯主機零組件挑選及組裝/cpu-freq.png"></p>
 <h2 id="記憶體用量"><a href="#記憶體用量" class="headerlink" title="記憶體用量"></a>記憶體用量</h2><p>編譯過程中，這臺 24 緒的電腦可用記憶體高達 20 GB 左右，也就是說編譯過程中，有用到的記憶體約 12 GB。但在舊電腦 12 緒的 CPU 上編譯也是只用了 12 GB 左右。這個結果說明了執行緒數目和記憶體用量成正比是錯誤的假設 😅</p>
 <h2 id="CPU-溫度"><a href="#CPU-溫度" class="headerlink" title="CPU 溫度"></a>CPU 溫度</h2><p>環境溫度 28 °C、空調</p>
-<p><img src="temperature.jpg" alt="temperature.jpg"></p>
+<p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/temperature.jpg" alt="yocto-編譯主機零組件挑選及組裝/temperature.jpg"></p>
 <ol>
 <li>後、上出風風扇都沒裝<br> 待機：約 33 °C<br> 峰值：80.4 °C</li>
-<li>後出風風扇沒裝、上方出風口封起<br> 待機：約 33 °C<br> 峰值：81.9 °C<br> <img src="temperature-chart-2.png" alt="temperature-chart-2.png"></li>
-<li>後出風風扇 NF-A12x15 、上方出風口封起<br> 待機：約 33 °C<br> 峰值：81.9 °C<br> <img src="temperature-chart-3.png" alt="temperature-chart-3.png"></li>
+<li>後出風風扇沒裝、上方出風口封起<br> 待機：約 33 °C<br> 峰值：81.9 °C<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/temperature-chart-2.png" alt="yocto-編譯主機零組件挑選及組裝/temperature-chart-2.png"></li>
+<li>後出風風扇 NF-A12x15 、上方出風口封起<br> 待機：約 33 °C<br> 峰值：81.9 °C<br> <img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/temperature-chart-3.png" alt="yocto-編譯主機零組件挑選及組裝/temperature-chart-3.png"></li>
 </ol>
 <p>由此可以看到，在這個環境溫度、機殼內配置下，上方出風口和後出風風扇對散熱的影響都不大。</p>
 ]]></content>
       <categories>
         <category>Hardware</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>在 Ubuntu 12.10 的 gcin 輸入法平台安裝嘸蝦米輸入法</title>
-    <url>/2012/zai-ubuntu-12-dot-10-an-zhuang-fu-xia-mi-shu-ru-fa/</url>
-    <content><![CDATA[<h2 id="步驟-1：安裝-gcin-及-im-switch"><a href="#步驟-1：安裝-gcin-及-im-switch" class="headerlink" title="步驟 1：安裝 gcin 及 im-switch"></a>步驟 1：安裝 gcin 及 im-switch</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install gcin im-switch</span><br></pre></td></tr></table></figure>
-
-<span id="more"></span>
-
-<h2 id="步驟-2：指定預設輸入法平台為-gcin，完成後重新啟動電腦"><a href="#步驟-2：指定預設輸入法平台為-gcin，完成後重新啟動電腦" class="headerlink" title="步驟 2：指定預設輸入法平台為 gcin，完成後重新啟動電腦"></a>步驟 2：指定預設輸入法平台為 gcin，完成後重新啟動電腦</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">im-switch</span><br></pre></td></tr></table></figure>
-
-<h2 id="步驟-3：下載並解壓縮嘸蝦米官方提供的-gcin-用表格，接著開啟終端機並進入解壓縮目錄"><a href="#步驟-3：下載並解壓縮嘸蝦米官方提供的-gcin-用表格，接著開啟終端機並進入解壓縮目錄" class="headerlink" title="步驟 3：下載並解壓縮嘸蝦米官方提供的 gcin 用表格，接著開啟終端機並進入解壓縮目錄"></a>步驟 3：下載並解壓縮嘸蝦米官方提供的 gcin 用表格，接著開啟終端機並進入解壓縮目錄</h2><h2 id="步驟-4：將表格等檔案複製到系統中"><a href="#步驟-4：將表格等檔案複製到系統中" class="headerlink" title="步驟 4：將表格等檔案複製到系統中"></a>步驟 4：將表格等檔案複製到系統中</h2><h3 id="1-前置作業"><a href="#1-前置作業" class="headerlink" title="1. 前置作業"></a>1. 前置作業</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo updatedb</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-複製-gtab-到-gcin-表格目錄"><a href="#2-複製-gtab-到-gcin-表格目錄" class="headerlink" title="2. 複製 *.gtab 到 gcin 表格目錄"></a>2. 複製 *.gtab 到 gcin 表格目錄</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo cp *.gtab $(locate gtab | grep gcin/table | <span class="keyword">while</span> <span class="built_in">read</span> line; <span class="keyword">do</span> dirname <span class="string">&quot;<span class="variable">$line</span>&quot;</span>; <span class="keyword">done</span> | sort -u)</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-複製-png-到-gcin-icon-目錄"><a href="#3-複製-png-到-gcin-icon-目錄" class="headerlink" title="3. 複製 *.png 到 gcin icon 目錄"></a>3. 複製 *.png 到 gcin icon 目錄</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo cp *.png $(locate pinyin.png | grep gcin | <span class="keyword">while</span> <span class="built_in">read</span> line; <span class="keyword">do</span> dirname <span class="string">&quot;<span class="variable">$line</span>&quot;</span>; <span class="keyword">done</span> | sort -u)</span><br></pre></td></tr></table></figure>
-
-<h2 id="步驟-5：編輯-gtab-list"><a href="#步驟-5：編輯-gtab-list" class="headerlink" title="步驟 5：編輯 gtab.list"></a>步驟 5：編輯 gtab.list</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;嘸蝦米(繁) 1 boshiamy-t.gtab boshiamy-t.png&quot;</span> &gt;&gt; ~/.gcin/gtab.list</span><br></pre></td></tr></table></figure>
-
-<h2 id="步驟-6：重新啟動-gcin"><a href="#步驟-6：重新啟動-gcin" class="headerlink" title="步驟 6：重新啟動 gcin"></a>步驟 6：重新啟動 gcin</h2><h2 id="步驟-7：調整-gcin-設定"><a href="#步驟-7：調整-gcin-設定" class="headerlink" title="步驟 7：調整 gcin 設定"></a>步驟 7：調整 gcin 設定</h2><h3 id="1-在【內定輸入法-amp-開啟-關閉】中調整嘸蝦米是否為預設輸入法、可否由-ctrl-shift-切換"><a href="#1-在【內定輸入法-amp-開啟-關閉】中調整嘸蝦米是否為預設輸入法、可否由-ctrl-shift-切換" class="headerlink" title="1. 在【內定輸入法 &amp; 開啟/關閉】中調整嘸蝦米是否為預設輸入法、可否由 ctrl + shift 切換"></a>1. 在【內定輸入法 &amp; 開啟/關閉】中調整嘸蝦米是否為預設輸入法、可否由 ctrl + shift 切換</h3><h3 id="2-在【倉頡-行列-嘸蝦米-大易設定】中將【預覽-預選-字】調整為【全部開啟】"><a href="#2-在【倉頡-行列-嘸蝦米-大易設定】中將【預覽-預選-字】調整為【全部開啟】" class="headerlink" title="2. 在【倉頡/行列/嘸蝦米/大易設定】中將【預覽/預選 字】調整為【全部開啟】"></a>2. 在【倉頡/行列/嘸蝦米/大易設定】中將【預覽/預選 字】調整為【全部開啟】</h3>]]></content>
-      <categories>
-        <category>Setup</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>命令列上快速定位檔案與目錄</title>
-    <url>/2017/%E5%91%BD%E4%BB%A4%E5%88%97%E4%B8%8A%E5%BF%AB%E9%80%9F%E5%AE%9A%E4%BD%8D%E6%AA%94%E6%A1%88%E8%88%87%E7%9B%AE%E9%8C%84/</url>
-    <content><![CDATA[<p>會盲打的人，在 shell 環境裡如果能找到方便的 tool 來幫助自己，操作速度甚至可以超過滑鼠 + GUI。</p>
-<p>舉二個例子：</p>
-<ol>
-<li><p>在 prompt 上列出前一指令的 return code 和 VCS 資訊。</p>
-<span id="more"></span>
-<p><img src="powerlevel9k-demo.png"></p>
-</li>
-<li><p>用 tig 來操作 git。</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/udCXubFr5Yo" frameborder="0" allowfullscreen></iframe></li>
-</ol>
-<p>在 shell 下，最常做的操作的就是找目錄、切目錄、找檔案、開檔案了。但是 <code>cd</code> 要到的目錄的路徑以及 <code>vim</code> 要開的檔案的位置在哪裡，一直都是個痛。就算記得，有時候路徑很深，光是打完就要老半天。</p>
-<p>以下介紹三個可以減輕日常路徑操作負擔的工具：</p>
-<h1 id="bd"><a href="#bd" class="headerlink" title="bd"></a>bd</h1><p><img src="https://raw.githubusercontent.com/Tarrasch/zsh-bd/master/animation.gif"></p>
-<p><a href="https://github.com/vigneshwaranr/bd">bd</a> 是轉目用來替代 <code>cd ..</code> 的工具。當所在的目錄很深，想要切回某一層 parent folder 時，以往總是要 <code>cd ../../..</code>，並自己算相對路徑的層數。有一些套件或是 alias 可以讓這個操作由 <code>cd ../..</code>減化成 <code>cd ...</code>，少打了 <code>./</code> 二個字，但是仍然要去算層數。</p>
-<p>bd 可以讓我們直接打要去的那一層的目錄名稱就切過去，懶得打的話也可以靠 tab 補完，非常實用。</p>
-<h1 id="fzf-auto-completion"><a href="#fzf-auto-completion" class="headerlink" title="fzf auto-completion"></a>fzf auto-completion</h1><p><a href="https://github.com/junegunn/fzf">fzf</a> 是一套很強大的 fuzzy search 引擎。它不只是引擎強，附加的補完也是殺手級的好用。一下子找不到好的 demo，只好請大家看看<a href="https://github.com/junegunn/fzf#fuzzy-completion-for-bash-and-zsh">官方手冊</a>意會。</p>
-<p>fzf 不只可以用在 <code>cd</code>，還可以用在 <code>vim</code>、<code>kill</code> 指令及 <code>Ctrl-R</code> 熱鍵等，是非常強大的工具。</p>
-<h1 id="fz"><a href="#fz" class="headerlink" title="fz"></a>fz</h1><p><img src="https://raw.githubusercontent.com/changyuheng/fz/master/fz-demo.gif"></p>
-<p><a href="https://github.com/changyuheng/fz">fz</a> 是 <a href="https://github.com/junegunn/fzf">fzf</a> 和 <a href="https://github.com/rupa/z">z</a> 二位大將合體下的產物。z 是一套支援只打部分目錄名稱就切到曾經去過的目錄的工具。</p>
-<p>相信 fz 的作者一定是位帥哥，居然能想到把 fzf 的 interactive fuzzy search 裝在 z 身上，打造出這把神兵利器。</p>
-<h1 id="enhancd"><a href="#enhancd" class="headerlink" title="enhancd"></a>enhancd</h1><p><img src="https://raw.githubusercontent.com/b4b4r07/screenshots/master/enhancd/demo.gif"></p>
-<p><a href="https://github.com/b4b4r07/enhancd">enhancd</a> 的設計理念也很棒，不過很可惜它目前沒有 tab completion。沒有 tab completion 就必須另外綁熱鍵，如此就破壞了使用習慣。</p>
-<h1 id="qfc"><a href="#qfc" class="headerlink" title="qfc"></a>qfc</h1><p><img src="https://cloud.githubusercontent.com/assets/2557967/8640880/582cb8fe-28ff-11e5-9753-41464dda938e.gif"></p>
-<p><a href="https://github.com/pindexis/qfc">qfc</a> 跟 enhancd 類似，不過它的 completion 不是綁 tab，比較可惜一點。</p>
-<h1 id="zsh-interactive-cd"><a href="#zsh-interactive-cd" class="headerlink" title="zsh-interactive-cd"></a>zsh-interactive-cd</h1><p><img src="https://raw.githubusercontent.com/changyuheng/zsh-interactive-cd/master/demo.gif"></p>
-<p>加碼一套工具。<a href="https://github.com/changyuheng/zsh-interactive-cd">zsh-interactive-cd</a> 將 <a href="https://fishshell.com/">fish</a> 的 cd 互動式補完帶入了 <a href="http://www.zsh.org/">zsh</a>。算是一套短小精悍卻又不可或缺的工具，可惜目前只支援 zsh，還沒有 Bash 的版本。不過作者很有可能是帥哥是無庸置疑的。</p>
-]]></content>
-      <categories>
-        <category>Software</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>自行組合安全、好記且每個網站相異的密碼</title>
-    <url>/2014/%E8%87%AA%E8%A1%8C%E7%B5%84%E5%90%88%E5%AE%89%E5%85%A8%E3%80%81%E5%A5%BD%E8%A8%98%E4%B8%94%E6%AF%8F%E5%80%8B%E7%B6%B2%E7%AB%99%E7%9B%B8%E7%95%B0%E7%9A%84%E5%AF%86%E7%A2%BC/</url>
-    <content><![CDATA[<p>資訊應用和我們的結合愈來愈緊密，保護隱私和機敏資料的最後一道防線ーー密碼，顯得更為重要。</p>
-<span id="more"></span>
-<p>我們知道密碼不應過於簡單、容易猜測：不該用生日、電話、常見的單字、人名等等。安全的做法是用密碼產生器產生隨機不同大小寫的字母、數字、符號組合。此外，網站被駭客入侵時有所聞，為了避免因為一個網站的密碼外洩而影響到所有的密碼，應該讓每個網站採用不同的密碼。密碼產生器產生的密碼極其複雜，於是有人發明了密碼管理軟體，來幫忙記住各組密碼。但是一旦我們把所有的密碼都放進同一套軟體，不就又將雞蛋丟進同一個籃子裡了嗎？</p>
-<p>一個不同的密碼產生方法：token + pattern。</p>
-<p><strong>優點</strong></p>
-<ol>
-<li>不必將雞蛋放進同一個籠子</li>
-<li>容易記憶</li>
-<li>每一個網站都不同</li>
-<li>較生日、電話等容易猜測的密碼安全</li>
-<li>快速方便地輸入密碼，不須透過額外軟體</li>
-</ol>
-<p><strong>缺點</strong></p>
-<ol>
-<li>複雜度較密碼產生器產生的密碼低</li>
-<li>有被全盤破解的風險</li>
-</ol>
-<p>Token 是一串自訂的密碼，例如 TAIPEI 的變形 T@iP31。<br>Pattern 是一種能套用到不同網站的規則。例如取網站名稱的尾 2 字和頭 2 字：產生的密碼要給 Google 使用就是 lego；給 Yahoo 就是 ooya。</p>
-<p>如此一來在 Google 的密碼就會是 T@iP31lego，在 Yahoo 的密碼是 T@iP31ooya。只要記 token 和 pattern 的規則即可，非常容易記憶。Pattern 的制定可以更加複雜，像是加上「<a href="http://zh.wikipedia.org/zh-tw/%E5%87%B1%E6%92%92%E5%AF%86%E7%A2%BC">凱撒密碼</a>」來混淆。整體的組合也能再加以變化，像是改成 token 1 + pattern 1 + token 2 + pattern 2。</p>
-<p>相關文章</p>
-<ul>
-<li><a href="http://www.pcworld.com/article/252024/create_a_different_secure_easy_to_remember_password_for_every_site.html">Create a Different, Secure, Easy-to-Remember Password for Every Site</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Idea</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>自製臺灣新冠肺炎即時疫情資料圖報表</title>
-    <url>/2021/%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8/</url>
-    <content><![CDATA[<img src="/2021/%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8/%E6%AF%8F%E6%97%A5%E6%9C%AC%E5%9C%9F%E7%A2%BA%E8%A8%BA.png" class="" title="每日本土確診.png">
-
-<p>臺灣新冠肺炎疫情資料圖報表（自動更新）：<a href="https://docs.google.com/spreadsheets/u/1/d/1-a1njGi0h-j5sO80rhmgQZfpI8c2oA_sY5tuXGCNRjo/edit">https://docs.google.com/spreadsheets/u/1/d/1-a1njGi0h-j5sO80rhmgQZfpI8c2oA_sY5tuXGCNRjo/edit</a></p>
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>五月中情爆發以後，每日各家媒體報導的資訊雖更新飛快，但又十分紛亂。每篇報導內的資料，格式與詳盡程度各有不一，讓人不好消化。因此便蒙生了自己製做圖表來呈現制式的資料，讓自己可以不需要再收看吵雜的新聞報導。</p>
-<h1 id="原始資料"><a href="#原始資料" class="headerlink" title="原始資料"></a>原始資料</h1><p>在行政院衛生福利部疾病管制署的資料開放平臺上，有公布新冠肺炎疫情的<a href="https://data.cdc.gov.tw/dataset/agsdctable-day-19cov">原始資料</a>。</p>
-<p>原始資料可直接匯入 Google 試算表，如下圖所示：</p>
-<span id="more"></span>
-<p><img src="%E5%8E%9F%E5%A7%8B%E8%B3%87%E6%96%99.png" alt="原始資料.png"></p>
-<h1 id="製做圖表"><a href="#製做圖表" class="headerlink" title="製做圖表"></a>製做圖表</h1><p>原始資料的資訊量過於龐大，透過一些公式濃縮統整並以圖表呈現，可以讓資料更容易被閱讀。我將原始資料匯入<a href="https://docs.google.com/spreadsheets/d/1-a1njGi0h-j5sO80rhmgQZfpI8c2oA_sY5tuXGCNRjo/edit?usp=sharing">自製的試算表</a>後，另外又開了三張表單，分別在裡面呈現「每日新增本土確診數」、「縣市分布」及「年齡分布」。</p>
-<p><img src="%E6%AF%8F%E6%97%A5%E6%9C%AC%E5%9C%9F%E7%A2%BA%E8%A8%BA.png" alt="每日本土確診.png"></p>
-<p><img src="%E7%B8%A3%E5%B8%82%E5%88%86%E5%B8%83.png" alt="縣市分布.png"></p>
-<p><img src="%E5%B9%B4%E9%BD%A1%E5%88%86%E5%B8%83.png" alt="年齡分布.png"></p>
-<p>至此，對於掌握疫情數據，已經不需要收看新聞了。不過因為原始資料每日都會更新，所以還需要想辦法自動定期將最新的資料匯入這份試算表，才能保持這份試算表內資訊的時效性。</p>
-<h1 id="自動更新原始資料"><a href="#自動更新原始資料" class="headerlink" title="自動更新原始資料"></a>自動更新原始資料</h1><p>Google 在 Apps Script 提供了定時執行自訂程式的服務。可以透過這個服務，自動定時執行匯入最新原始資料的工作。</p>
-<p>下面是用以更新試算表內原始資料的程式碼：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var spreadsheetSourceUrl = &quot;https://docs.google.com/spreadsheets/d/1-a1njGi0h-j5sO80rhmgQZfpI8c2oA_sY5tuXGCNRjo/edit&quot;;</span><br><span class="line">var csvDataSourceUrl = &quot;https://data.cdc.gov.tw/download?resourceid=3c1e263d-16ec-4d70-b56c-21c9e2171fc7&amp;dataurl=https://od.cdc.gov.tw/eic/Day_Confirmation_Age_County_Gender_19CoV.csv&quot;;</span><br><span class="line">var dataSheetName = &quot;原始資料&quot;;</span><br><span class="line"></span><br><span class="line">function getParsedContents(csvUrl) &#123;</span><br><span class="line">  return Utilities.parseCsv(UrlFetchApp.fetch(csvUrl));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function clearSheetContentsByUrl(spreadsheet, sheetName) &#123;</span><br><span class="line">  let sheet = spreadsheet.getSheetByName(sheetName);</span><br><span class="line">  sheet.clearContents();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function updateSheet(spreadsheet, sheetName, rangeDescription, contents) &#123;</span><br><span class="line">  let sheet = spreadsheet.getSheetByName(sheetName);</span><br><span class="line">  let range = sheet.getRange(rangeDescription);</span><br><span class="line">  range.setValues(contents);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function tweakFormat(spreadsheet, sheetName, contents) &#123;</span><br><span class="line">  let sheet = spreadsheet.getSheetByName(sheetName);</span><br><span class="line"></span><br><span class="line">  let range = sheet.getRange(`$&#123;String.fromCharCode(64+contents[0].length-1)&#125;2:$&#123;String.fromCharCode(64+contents[0].length-1)&#125;$&#123;contents.length&#125;`);</span><br><span class="line">  range.setNumberFormat(&quot;@&quot;);</span><br><span class="line"></span><br><span class="line">  range = sheet.getRange(&quot;B2:B&quot;);</span><br><span class="line">  range.setNumberFormat(&quot;yyyymmdd&quot;);</span><br><span class="line">  range.setNumberFormat(&quot;@&quot;);</span><br><span class="line">  range.setNumberFormat(&quot;########&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function main() &#123;</span><br><span class="line">  Logger.log(&quot;Getting source data&quot;);</span><br><span class="line">  let parsedContents = getParsedContents(csvDataSourceUrl);</span><br><span class="line">  Logger.log(parsedContents);</span><br><span class="line">  Logger.log(`Source data got, number of rows in the CSV: $&#123;parsedContents.length&#125;`);</span><br><span class="line"></span><br><span class="line">  if (parsedContents.length == 0) &#123;</span><br><span class="line">    Logger.log(&quot;ERROR: source is empty&quot;);</span><br><span class="line">    return;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  let spreadsheet = SpreadsheetApp.openByUrl(spreadsheetSourceUrl);</span><br><span class="line"></span><br><span class="line">  Logger.log(&quot;Clearing the existing contents from the sheet&quot;);</span><br><span class="line">  clearSheetContentsByUrl(spreadsheet, dataSheetName)</span><br><span class="line">  Logger.log(&quot;Content cleared from the sheet&quot;);</span><br><span class="line"></span><br><span class="line">  Logger.log(&quot;Updating the sheet&quot;);</span><br><span class="line">  updateSheet(</span><br><span class="line">    spreadsheet,</span><br><span class="line">    dataSheetName,</span><br><span class="line">    `A1:$&#123;String.fromCharCode(64+parsedContents[0].length)&#125;$&#123;parsedContents.length&#125;`,</span><br><span class="line">    parsedContents);</span><br><span class="line">  Logger.log(&quot;Sheet updated&quot;);</span><br><span class="line"></span><br><span class="line">  Logger.log(&quot;Post update tweak started&quot;);</span><br><span class="line">  tweakFormat(spreadsheet, dataSheetName, parsedContents)</span><br><span class="line">  Logger.log(&quot;Post update tweak completed&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>在 Apps Script 中創建一個 Project，並將程式碼貼上：</p>
-<p><img src="Apps-Script-1.png" alt="Apps-Script-1.png"></p>
-<p><img src="Apps-Script-2.png" alt="Apps-Script-2.png"></p>
-<p>或直接<a href="https://script.google.com/d/1eYtrNIftW9kZPKrEWzA5Sx1ZqydGDz86kHDlnAWyMpKDgmwcyxsBh-f9/edit?usp=sharing">在此</a>取得。</p>
-<p>再到 Triggers 頁籤加入一個每小時的觸發工作：</p>
-<p><img src="Apps-Script-3.png" alt="Apps-Script-3.png"></p>
-<p>如此一來，試算表內的原始資料就會一小時自動更新一次，以後都不用再手動更新資料了。</p>
-]]></content>
-      <categories>
-        <category>Programming</category>
       </categories>
   </entry>
 </search>
