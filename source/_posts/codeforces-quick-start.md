@@ -34,11 +34,11 @@ categories:
 
         2. 點選右上角「Register」以進入註冊頁面
 
-            [![begin to register](codeforces-begin-to-register.png)](codeforces-begin-to-register.png)
+            [![begin to register](codeforces-quick-start/codeforces-begin-to-register.png)](codeforces-quick-start/codeforces-begin-to-register.png)
 
         3. 填寫註冊表單，完成後按下「Register (確定註冊)」
 
-            [![registration form](codeforces-registration-form.png)](codeforces-registration-form.png)
+            [![registration form](codeforces-quick-start/codeforces-registration-form.png)](codeforces-quick-start/codeforces-registration-form.png)
 
         經過以上步驟即可完成註冊。
 
@@ -64,7 +64,7 @@ categories:
 
             3. 進入「[Theater Square](http://codeforces.com/problemset/problem/1/A)」
 
-            [![problemset](codeforces-problemset.png)](codeforces-problemset.png)
+            [![problemset](codeforces-quick-start/codeforces-problemset.png)](codeforces-quick-start/codeforces-problemset.png)
 
                 * 題目最上方的
 
@@ -141,10 +141,10 @@ categories:
 
             寫完一道題目後，最重要的是檢討自己的答案。檢討的方法有很多，其中之一是觀察別人的解法。由導覽列 → PROBLEMSET 中找出我們的題目，並按下右方解題人數，即可看到大家對此題所寫的解法。
 
-            [![solved](codeforces-solved.png)](codeforces-solved.png)
+            [![solved](codeforces-quick-start/codeforces-solved.png)](codeforces-quick-start/codeforces-solved.png)
 
             在頁面最下方可以自訂排序規則，我們可以依照 Solution Size (source code 大小) 或 Execution Time (執行時間長短) 來排序，以方便我們找出想要參考的答案。右方可以選擇我們想要看到的語言。
 
-            [![languages](codeforces-solved-languages.png)](codeforces-solved-languages.png)
+            [![languages](codeforces-quick-start/codeforces-solved-languages.png)](codeforces-quick-start/codeforces-solved-languages.png)
 
             讀者可參考此題的 [Python 版解法](http://codeforces.com/contest/1/submission/1647521)、[Ruby 版解法](http://codeforces.com/contest/1/submission/2337277)、[PHP 版解法](http://codeforces.com/contest/1/submission/889578)、[C 版解法](http://codeforces.com/contest/1/submission/1337822)、[C++ 版解法](http://codeforces.com/contest/1/submission/759)、[C# 版解法](http://codeforces.com/contest/1/submission/2032793)、[Java 版解法](http://codeforces.com/contest/1/submission/604386)、[Scala 版解法](http://codeforces.com/contest/1/submission/1903268)、[JavaScript 版解法](http://codeforces.com/contest/1/submission/5482791)。

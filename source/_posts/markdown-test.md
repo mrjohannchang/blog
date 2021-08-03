@@ -213,8 +213,8 @@ ABCDEFG<br />
 1234567<br />
 {% endraw %}
 
-![](超級賽亞羊.jpg)
-![](github-commit-amount-cheat.png)
+![](自製臺灣新冠肺炎疫情資料圖報表/超級賽亞羊.jpg)
+![](自製臺灣新冠肺炎疫情資料圖報表/github-commit-amount-cheat.png)
 
 {% asset_img 超級賽亞羊.jpg [小六畫的] %}
 {% asset_img github-commit-amount-cheat.png %}

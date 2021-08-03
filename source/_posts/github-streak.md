@@ -7,4 +7,4 @@ categories:
 
 一時興致起來，實驗性地洗了一下 GitHub 的 longest streak。
 
-![](github-longest-streak.png)
+![](github-streak/github-longest-streak.png)
