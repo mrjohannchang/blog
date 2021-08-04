@@ -256,6 +256,28 @@
       </categories>
   </entry>
   <entry>
+    <title>Deployment of NCKU CSIE Gitit Theme</title>
+    <url>/2010/deployment-of-ncku-csie-gitit-theme.html</url>
+    <content><![CDATA[<p><a href="http://gitit.net/">Gitit</a> 是一套以 Git 作為 base 的 wiki 系統。這套 wiki 的優點可以在<a href="http://walkingice.blogspot.tw/2011/11/gitit-git-based-wiki.html">只放拖鞋的鞋櫃</a>看到。在網路上的高手 <a href="http://macropodus.github.io/gitit_mix_vimwiki.html">Macropodus</a> 研究出如何和 Vimwiki 結合後，又更強化了他的優勢。</p>
+<p>不過 Gitit 預設的模版很沒有設計感，尤其是那個 logo 讓人看了很不舒服。所幸在 <a href="https://groups.google.com/forum/#!topic/gitit-discuss/g6rZWIOmiu8">Google Group</a> 發現了一套由成大資工所製作的好看佈景。以下將介紹如何安裝這套佈景：</p>
+<span id="more"></span>
+
+<ol>
+<li><p>下載佈景<br>打包好的佈景可以在 <a href="https://github.com/CrBoy/csiewiki">GitHub</a> 上找到</p>
+</li>
+<li><p>安裝佈景<br>將包裏解開後，取代 Gitit 原來的 static 和 templates 資料夾</p>
+</li>
+</ol>
+<p>到此為止都和這套佈景的官方安裝教學一樣。如果是採用發行版如 Ubuntu 所提供的 Gitit package，則已經完成。若是用 cabal 安裝, 則必須再安裝相依的套件，以 Ubuntu 為例：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt-get install libghc-filestore-data libc6 libffi6 libgmp10 libpcre3 zlib1g libjs-jquery libjs-jquery-ui</span><br></pre></td></tr></table></figure>
+
+<p>完成的樣子可以參考<a href="http://wiki.csie.ncku.edu.tw/">成大資工 Wiki</a>。</p>
+]]></content>
+      <categories>
+        <category>Setup</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Cross Compiling Python 2.7.10 and 3.4.3 for MIPSel OpenWrt via uClibc with SSL and SQLite support</title>
     <url>/2015/cross-compiling-python-3-4-3-for-mipsel.html</url>
     <content><![CDATA[<p>The notes that were written after succeeding to cross compile Python 2.7.10 and 3.4.3 for MIPSel OpenWrt via uClibc.</p>
@@ -276,28 +298,6 @@
 ]]></content>
       <categories>
         <category>Embedded</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Deployment of NCKU CSIE Gitit Theme</title>
-    <url>/2010/deployment-of-ncku-csie-gitit-theme.html</url>
-    <content><![CDATA[<p><a href="http://gitit.net/">Gitit</a> 是一套以 Git 作為 base 的 wiki 系統。這套 wiki 的優點可以在<a href="http://walkingice.blogspot.tw/2011/11/gitit-git-based-wiki.html">只放拖鞋的鞋櫃</a>看到。在網路上的高手 <a href="http://macropodus.github.io/gitit_mix_vimwiki.html">Macropodus</a> 研究出如何和 Vimwiki 結合後，又更強化了他的優勢。</p>
-<p>不過 Gitit 預設的模版很沒有設計感，尤其是那個 logo 讓人看了很不舒服。所幸在 <a href="https://groups.google.com/forum/#!topic/gitit-discuss/g6rZWIOmiu8">Google Group</a> 發現了一套由成大資工所製作的好看佈景。以下將介紹如何安裝這套佈景：</p>
-<span id="more"></span>
-
-<ol>
-<li><p>下載佈景<br>打包好的佈景可以在 <a href="https://github.com/CrBoy/csiewiki">GitHub</a> 上找到</p>
-</li>
-<li><p>安裝佈景<br>將包裏解開後，取代 Gitit 原來的 static 和 templates 資料夾</p>
-</li>
-</ol>
-<p>到此為止都和這套佈景的官方安裝教學一樣。如果是採用發行版如 Ubuntu 所提供的 Gitit package，則已經完成。若是用 cabal 安裝, 則必須再安裝相依的套件，以 Ubuntu 為例：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt-get install libghc-filestore-data libc6 libffi6 libgmp10 libpcre3 zlib1g libjs-jquery libjs-jquery-ui</span><br></pre></td></tr></table></figure>
-
-<p>完成的樣子可以參考<a href="http://wiki.csie.ncku.edu.tw/">成大資工 Wiki</a>。</p>
-]]></content>
-      <categories>
-        <category>Setup</category>
       </categories>
   </entry>
   <entry>
@@ -326,6 +326,16 @@
 ]]></content>
       <categories>
         <category>Software</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>My Longest Streak on GitHub</title>
+    <url>/2014/github-streak.html</url>
+    <content><![CDATA[<p>一時興致起來，實驗性地洗了一下 GitHub 的 longest streak。</p>
+<p><img src="github-streak/github-longest-streak.png"></p>
+]]></content>
+      <categories>
+        <category>Random</category>
       </categories>
   </entry>
   <entry>
@@ -369,16 +379,6 @@
       </categories>
   </entry>
   <entry>
-    <title>My Longest Streak on GitHub</title>
-    <url>/2014/github-streak.html</url>
-    <content><![CDATA[<p>一時興致起來，實驗性地洗了一下 GitHub 的 longest streak。</p>
-<p><img src="github-streak/github-longest-streak.png"></p>
-]]></content>
-      <categories>
-        <category>Random</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Implementations of DFS and BFS in Python</title>
     <url>/2014/implementations-of-dfs-and-bfs-in-python.html</url>
     <content><![CDATA[<p><a href="http://zh.wikipedia.org/zh-tw/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">DFS</a> 和 <a href="http://zh.wikipedia.org/zh-tw/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">BFS</a> 在資料結構裡有教，是很基礎的演算法。</p>
@@ -392,6 +392,34 @@
 ]]></content>
       <categories>
         <category>Algorithm</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Installing Fcitx and Boshiamy on Ubuntu GNOME 14.04</title>
+    <url>/2014/installing-fcitx-and-boshiamy-on-ubuntu-gnome-1404.html</url>
+    <content><![CDATA[<p>Fcitx 是一個自訂性很高的輸入法框架，安裝方式如下：</p>
+<span id="more"></span>
+
+<ul>
+<li><p>Fcitx 框架</p>
+  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install fcitx</span><br></pre></td></tr></table></figure></li>
+<li><p>嘸蝦米輸入法表格</p>
+  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install fcitx-table-boshiamy</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>設定：</p>
+<ul>
+<li><p><code>Activities</code> → <code>Input Method</code> 選擇 fcitx。重新登入。</p>
+</li>
+<li><p><code>Activities</code> → <code>Fcitx Configuration</code> → <code>Input Method</code> → <code>Boshiamy</code> → 雙擊 (如果沒看到 Boshiamy 就自行新增這個表格)<br>  <code>Other</code> → <code>Table</code> → <code>table/boshiamy.conf</code> → 設定<br>  <code>Adjust Order</code>：<code>AdjustNo</code><br>  <code>Auto Send Candidate Word</code>：取消<br>  <code>Use Maching Key</code>：取消<br>  <code>Choose</code>：0123456789<br>  <code>Ignore Punctuation</code>：打勾</p>
+</li>
+</ul>
+<p>參考資料：</p>
+<ul>
+<li><a href="http://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=246870">Ubuntu與嘸蝦米: 在fcitx下，(boshiamy)嘸蝦米的使用最為順暢、穩定!（新酷音、m17n、倉頡、輕鬆法亦適用）</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Setup</category>
       </categories>
   </entry>
   <entry>
@@ -579,34 +607,6 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
-    <title>Installing Fcitx and Boshiamy on Ubuntu GNOME 14.04</title>
-    <url>/2014/installing-fcitx-and-boshiamy-on-ubuntu-gnome-1404.html</url>
-    <content><![CDATA[<p>Fcitx 是一個自訂性很高的輸入法框架，安裝方式如下：</p>
-<span id="more"></span>
-
-<ul>
-<li><p>Fcitx 框架</p>
-  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install fcitx</span><br></pre></td></tr></table></figure></li>
-<li><p>嘸蝦米輸入法表格</p>
-  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install fcitx-table-boshiamy</span><br></pre></td></tr></table></figure></li>
-</ul>
-<p>設定：</p>
-<ul>
-<li><p><code>Activities</code> → <code>Input Method</code> 選擇 fcitx。重新登入。</p>
-</li>
-<li><p><code>Activities</code> → <code>Fcitx Configuration</code> → <code>Input Method</code> → <code>Boshiamy</code> → 雙擊 (如果沒看到 Boshiamy 就自行新增這個表格)<br>  <code>Other</code> → <code>Table</code> → <code>table/boshiamy.conf</code> → 設定<br>  <code>Adjust Order</code>：<code>AdjustNo</code><br>  <code>Auto Send Candidate Word</code>：取消<br>  <code>Use Maching Key</code>：取消<br>  <code>Choose</code>：0123456789<br>  <code>Ignore Punctuation</code>：打勾</p>
-</li>
-</ul>
-<p>參考資料：</p>
-<ul>
-<li><a href="http://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=246870">Ubuntu與嘸蝦米: 在fcitx下，(boshiamy)嘸蝦米的使用最為順暢、穩定!（新酷音、m17n、倉頡、輕鬆法亦適用）</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Setup</category>
-      </categories>
-  </entry>
-  <entry>
     <title>My Ubuntu GNOME Tweaks</title>
     <url>/2014/my-ubuntu-gnome-tweaks.html</url>
     <content><![CDATA[<p>以 Ubuntu GNOME 14.04 LTS 英文語系為基礎。</p>
@@ -707,45 +707,6 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
-    <title>PTT 帳號被砍事件</title>
-    <url>/2015/ptt-%E5%B8%B3%E8%99%9F%E8%A2%AB%E7%A0%8D%E4%BA%8B%E4%BB%B6.html</url>
-    <content><![CDATA[<p>事件起源於多年前我寫了一個<a href="https://changyuheng.github.io/2007/11/05/ptt-efficient-poster/">程式</a>，用來讓 PTT 的發文者能得到與文章字數相符的稿酬。</p>
-<span id="more"></span>
-<p>突然有一天，有個人因為洗錢被檢舉了。</p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/0.html">https://changyuheng.github.io/static/ptt-account-incident/0.html</a></p>
-<p>想不到他自己心術不正，卻要牽拖工具。</p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/0a.html">https://changyuheng.github.io/static/ptt-account-incident/0a.html</a></p>
-<p>於是帳號站長就辦了他。</p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/0b.html">https://changyuheng.github.io/static/ptt-account-incident/0b.html</a></p>
-<p>帳號站長幾天後想想辦了違規的人還不夠爽快，在某個凌晨宣判要砍身為程式作者的我的帳號。</p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/1.html">https://changyuheng.github.io/static/ptt-account-incident/1.html</a></p>
-<p>我馬上去申訴，因為這實在太扯了；程式七年前就已經發佈了，後來只是舊文重發，告訴大家開源而已。但擔任的 AndroidDev 板主職務還是在我起床前就被轉移了。要不是我凌晨剛好看到判決文，立刻就去申訴，我猜板主職務就不只是被轉移而是直接被拔掉吧。PTT 官和官（帳號站長和小組長）之間的橫向溝通似乎蠻有效率的﹙我寄信問問題，要幾週才有回應，他們只要幾小時就能達成共識，而且還是在凌晨﹚。</p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/2.html">https://changyuheng.github.io/static/ptt-account-incident/2.html</a></p>
-<p>另一位帳號站長出來回應我的申訴，並且宣佈結案。明明還是有爭議，但是站方單方面的就結案了；我突然感覺到，他們把 PTT 的註冊規章用得很好：</p>
-<blockquote>
-<p>8、拒絕或終止您的使用(1)<br>您同意本站各級管理者基於其自行之考量，有權隨時終止本服務或其任何部分，<br>包含但不限於對您所為之刪除文章、鎖定文章、看板水桶或看板禁止發言、設定<br>劣文或退文、開處罰單、設定停權、設定變更文章數數值、設定變更 P 幣數值、<br>設定變更信箱容量數值、設定變更您於本站擔任之職務、退回註冊、砍除帳號等。<br>前述處分，並非無權或無故之處分，若您不願接受，請勿同意本條款。若本服務<br>被終止時，本站對您或任何第三人均不承擔責任。</p>
-</blockquote>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/3.html">https://changyuheng.github.io/static/ptt-account-incident/3.html</a></p>
-<p>明知已經結案，還是繼續申訴，站方果然信守承諾不回應。</p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/4.html">https://changyuheng.github.io/static/ptt-account-incident/4.html</a></p>
-<p>過了一陣子，具有同樣的功能的另一程式，因為相同理由被檢舉，但是站長不處置。</p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/5.html">https://changyuheng.github.io/static/ptt-account-incident/5.html</a></p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/6.html">https://changyuheng.github.io/static/ptt-account-incident/6.html</a></p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/7.html">https://changyuheng.github.io/static/ptt-account-incident/7.html</a></p>
-<p>寄信去問站長為什麼判決會有選擇性，但全無回音。</p>
-<p>這就是號稱自由開放的 PTT 的管理品質。</p>
-<p>由以下的討論串可以看出，力圖表明一切秉公處理的帳號站長，實際上不經意地流露出針對性的味道。</p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/8.html">https://changyuheng.github.io/static/ptt-account-incident/8.html</a></p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/9.html">https://changyuheng.github.io/static/ptt-account-incident/9.html</a></p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/10.html">https://changyuheng.github.io/static/ptt-account-incident/10.html</a></p>
-<p>新增申訴：</p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/11.html">https://changyuheng.github.io/static/ptt-account-incident/11.html</a></p>
-]]></content>
-      <categories>
-        <category>Random</category>
-      </categories>
-  </entry>
-  <entry>
     <title>PTT Efficient Poster</title>
     <url>/2007/ptt-efficient-poster.html</url>
     <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/ptt-efficient-poster/master/demo.gif" alt="screenshot"></p>
@@ -792,23 +753,6 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
-    <title>Python logging module example</title>
-    <url>/2015/python-logging-module-example.html</url>
-    <content><![CDATA[<p>Python 的 logging module 功能完整強大，但手冊裡卻沒有一個簡明的 config 範例。</p>
-<p>記錄一下。</p>
-<span id="more"></span>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python3</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> logging</span><br><span class="line"><span class="keyword">import</span> logging.config</span><br><span class="line"></span><br><span class="line">logging.config.dictConfig(&#123;</span><br><span class="line">    <span class="string">&#x27;version&#x27;</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="string">&#x27;formatters&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;default&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;format&#x27;</span>: <span class="string">&#x27;[%(asctime)s|PID:%(process)d|TID:%(thread)d|%(filename)s:%(lineno)d|%(funcName)s|%(name)s|%(levelname)s] %(message)s&#x27;</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">&#x27;handlers&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;console&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;logging.StreamHandler&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;formatter&#x27;</span>: <span class="string">&#x27;default&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&#x27;http&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;logging.handlers.HTTPHandler&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;formatter&#x27;</span>: <span class="string">&#x27;default&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">            <span class="string">&#x27;host&#x27;</span>: <span class="string">&#x27;localhost:3000&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;url&#x27;</span>: <span class="string">&#x27;/log&#x27;</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&#x27;rotatingfile&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;logging.handlers.RotatingFileHandler&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;formatter&#x27;</span>: <span class="string">&#x27;default&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">            <span class="string">&#x27;filename&#x27;</span>: <span class="string">&#x27;test.log&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;maxBytes&#x27;</span>: <span class="number">512</span> * <span class="number">1024</span> * <span class="number">1024</span>,</span><br><span class="line">            <span class="string">&#x27;backupCount&#x27;</span>: <span class="number">1</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">&#x27;loggers&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;handlers&#x27;</span>: [<span class="string">&#x27;console&#x27;</span>, <span class="string">&#x27;http&#x27;</span>, <span class="string">&#x27;rotatingfile&#x27;</span>],</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">logging.info(<span class="string">&#x27;test1&#x27;</span>)</span><br><span class="line">logger = logging.getLogger()</span><br><span class="line">logger.info(<span class="string">&#x27;test&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<h2 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h2><ol>
-<li><a href="http://docs.python-guide.org/en/latest/writing/logging/">The Hitchhiker’s Guide to Python</a></li>
-<li><a href="https://docs.python.org/2/library/logging.html">The Python Standard Library</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Python Learning Resources</title>
     <url>/2014/python-learning-resources.html</url>
     <content><![CDATA[<p>同事在問 Python 該如何入門，順手將整理的資料與大眾分享。</p>
@@ -828,6 +772,62 @@ ABCDEFG<br />
 ]]></content>
       <categories>
         <category>Python</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Python logging module example</title>
+    <url>/2015/python-logging-module-example.html</url>
+    <content><![CDATA[<p>Python 的 logging module 功能完整強大，但手冊裡卻沒有一個簡明的 config 範例。</p>
+<p>記錄一下。</p>
+<span id="more"></span>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python3</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> logging</span><br><span class="line"><span class="keyword">import</span> logging.config</span><br><span class="line"></span><br><span class="line">logging.config.dictConfig(&#123;</span><br><span class="line">    <span class="string">&#x27;version&#x27;</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="string">&#x27;formatters&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;default&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;format&#x27;</span>: <span class="string">&#x27;[%(asctime)s|PID:%(process)d|TID:%(thread)d|%(filename)s:%(lineno)d|%(funcName)s|%(name)s|%(levelname)s] %(message)s&#x27;</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">&#x27;handlers&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;console&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;logging.StreamHandler&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;formatter&#x27;</span>: <span class="string">&#x27;default&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&#x27;http&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;logging.handlers.HTTPHandler&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;formatter&#x27;</span>: <span class="string">&#x27;default&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">            <span class="string">&#x27;host&#x27;</span>: <span class="string">&#x27;localhost:3000&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;url&#x27;</span>: <span class="string">&#x27;/log&#x27;</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&#x27;rotatingfile&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;logging.handlers.RotatingFileHandler&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;formatter&#x27;</span>: <span class="string">&#x27;default&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">            <span class="string">&#x27;filename&#x27;</span>: <span class="string">&#x27;test.log&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;maxBytes&#x27;</span>: <span class="number">512</span> * <span class="number">1024</span> * <span class="number">1024</span>,</span><br><span class="line">            <span class="string">&#x27;backupCount&#x27;</span>: <span class="number">1</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">&#x27;loggers&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;handlers&#x27;</span>: [<span class="string">&#x27;console&#x27;</span>, <span class="string">&#x27;http&#x27;</span>, <span class="string">&#x27;rotatingfile&#x27;</span>],</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">logging.info(<span class="string">&#x27;test1&#x27;</span>)</span><br><span class="line">logger = logging.getLogger()</span><br><span class="line">logger.info(<span class="string">&#x27;test&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h2><ol>
+<li><a href="http://docs.python-guide.org/en/latest/writing/logging/">The Hitchhiker’s Guide to Python</a></li>
+<li><a href="https://docs.python.org/2/library/logging.html">The Python Standard Library</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>PTT 帳號被砍事件</title>
+    <url>/2015/ptt-%E5%B8%B3%E8%99%9F%E8%A2%AB%E7%A0%8D%E4%BA%8B%E4%BB%B6.html</url>
+    <content><![CDATA[<p>事件起源於多年前我寫了一個<a href="https://changyuheng.github.io/2007/11/05/ptt-efficient-poster/">程式</a>，用來讓 PTT 的發文者能得到與文章字數相符的稿酬。</p>
+<span id="more"></span>
+<p>突然有一天，有個人因為洗錢被檢舉了。</p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/0.html">https://changyuheng.github.io/static/ptt-account-incident/0.html</a></p>
+<p>想不到他自己心術不正，卻要牽拖工具。</p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/0a.html">https://changyuheng.github.io/static/ptt-account-incident/0a.html</a></p>
+<p>於是帳號站長就辦了他。</p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/0b.html">https://changyuheng.github.io/static/ptt-account-incident/0b.html</a></p>
+<p>帳號站長幾天後想想辦了違規的人還不夠爽快，在某個凌晨宣判要砍身為程式作者的我的帳號。</p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/1.html">https://changyuheng.github.io/static/ptt-account-incident/1.html</a></p>
+<p>我馬上去申訴，因為這實在太扯了；程式七年前就已經發佈了，後來只是舊文重發，告訴大家開源而已。但擔任的 AndroidDev 板主職務還是在我起床前就被轉移了。要不是我凌晨剛好看到判決文，立刻就去申訴，我猜板主職務就不只是被轉移而是直接被拔掉吧。PTT 官和官（帳號站長和小組長）之間的橫向溝通似乎蠻有效率的﹙我寄信問問題，要幾週才有回應，他們只要幾小時就能達成共識，而且還是在凌晨﹚。</p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/2.html">https://changyuheng.github.io/static/ptt-account-incident/2.html</a></p>
+<p>另一位帳號站長出來回應我的申訴，並且宣佈結案。明明還是有爭議，但是站方單方面的就結案了；我突然感覺到，他們把 PTT 的註冊規章用得很好：</p>
+<blockquote>
+<p>8、拒絕或終止您的使用(1)<br>您同意本站各級管理者基於其自行之考量，有權隨時終止本服務或其任何部分，<br>包含但不限於對您所為之刪除文章、鎖定文章、看板水桶或看板禁止發言、設定<br>劣文或退文、開處罰單、設定停權、設定變更文章數數值、設定變更 P 幣數值、<br>設定變更信箱容量數值、設定變更您於本站擔任之職務、退回註冊、砍除帳號等。<br>前述處分，並非無權或無故之處分，若您不願接受，請勿同意本條款。若本服務<br>被終止時，本站對您或任何第三人均不承擔責任。</p>
+</blockquote>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/3.html">https://changyuheng.github.io/static/ptt-account-incident/3.html</a></p>
+<p>明知已經結案，還是繼續申訴，站方果然信守承諾不回應。</p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/4.html">https://changyuheng.github.io/static/ptt-account-incident/4.html</a></p>
+<p>過了一陣子，具有同樣的功能的另一程式，因為相同理由被檢舉，但是站長不處置。</p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/5.html">https://changyuheng.github.io/static/ptt-account-incident/5.html</a></p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/6.html">https://changyuheng.github.io/static/ptt-account-incident/6.html</a></p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/7.html">https://changyuheng.github.io/static/ptt-account-incident/7.html</a></p>
+<p>寄信去問站長為什麼判決會有選擇性，但全無回音。</p>
+<p>這就是號稱自由開放的 PTT 的管理品質。</p>
+<p>由以下的討論串可以看出，力圖表明一切秉公處理的帳號站長，實際上不經意地流露出針對性的味道。</p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/8.html">https://changyuheng.github.io/static/ptt-account-incident/8.html</a></p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/9.html">https://changyuheng.github.io/static/ptt-account-incident/9.html</a></p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/10.html">https://changyuheng.github.io/static/ptt-account-incident/10.html</a></p>
+<p>新增申訴：</p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/11.html">https://changyuheng.github.io/static/ptt-account-incident/11.html</a></p>
+]]></content>
+      <categories>
+        <category>Random</category>
       </categories>
   </entry>
   <entry>
@@ -894,20 +894,6 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
-    <title>在 Ubuntu 12.04 安裝 IT-830UP 晶片讀卡機與使用 WebATM</title>
-    <url>/2013/ubuntu-12-dot-04-an-zhuang-it-830up-jing-pian-du-qia-ji.html</url>
-    <content><![CDATA[<p><img src="http://www.ittec.com.tw/images/IT-830UP%28DM%29.jpg" alt="IT-830UP"></p>
-<span id="more"></span>
-
-<h2 id="步驟-1-安裝所需套件"><a href="#步驟-1-安裝所需套件" class="headerlink" title="步驟 1. 安裝所需套件"></a>步驟 1. 安裝所需套件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install pcscd pcsc-tools libccid</span><br></pre></td></tr></table></figure>
-
-<p>完成後可能需要自行重新啟動電腦才會生效。</p>
-<h2 id="步驟-2-依照-WebATM-提供的方法安裝所需程式，如：玉山銀行"><a href="#步驟-2-依照-WebATM-提供的方法安裝所需程式，如：玉山銀行" class="headerlink" title="步驟 2. 依照 WebATM 提供的方法安裝所需程式，如：玉山銀行"></a>步驟 2. 依照 WebATM 提供的方法安裝所需程式，如：<a href="http://netbank.esunbank.com.tw/webatm/Q&A_016.htm#01">玉山銀行</a></h2>]]></content>
-      <categories>
-        <category>Setup</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Understanding Python Decorators</title>
     <url>/2014/understanding-python-decorators.html</url>
     <content><![CDATA[<p>Decorator 是一個 Python 中較為進階的語法，因為較難理解故常被提出來討論。這邊提供一個簡潔的說明。</p>
@@ -930,6 +916,20 @@ ABCDEFG<br />
 ]]></content>
       <categories>
         <category>Python</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>在 Ubuntu 12.04 安裝 IT-830UP 晶片讀卡機與使用 WebATM</title>
+    <url>/2013/ubuntu-12-dot-04-an-zhuang-it-830up-jing-pian-du-qia-ji.html</url>
+    <content><![CDATA[<p><img src="http://www.ittec.com.tw/images/IT-830UP%28DM%29.jpg" alt="IT-830UP"></p>
+<span id="more"></span>
+
+<h2 id="步驟-1-安裝所需套件"><a href="#步驟-1-安裝所需套件" class="headerlink" title="步驟 1. 安裝所需套件"></a>步驟 1. 安裝所需套件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install pcscd pcsc-tools libccid</span><br></pre></td></tr></table></figure>
+
+<p>完成後可能需要自行重新啟動電腦才會生效。</p>
+<h2 id="步驟-2-依照-WebATM-提供的方法安裝所需程式，如：玉山銀行"><a href="#步驟-2-依照-WebATM-提供的方法安裝所需程式，如：玉山銀行" class="headerlink" title="步驟 2. 依照 WebATM 提供的方法安裝所需程式，如：玉山銀行"></a>步驟 2. 依照 WebATM 提供的方法安裝所需程式，如：<a href="http://netbank.esunbank.com.tw/webatm/Q&A_016.htm#01">玉山銀行</a></h2>]]></content>
+      <categories>
+        <category>Setup</category>
       </categories>
   </entry>
   <entry>
