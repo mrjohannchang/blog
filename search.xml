@@ -256,28 +256,6 @@
       </categories>
   </entry>
   <entry>
-    <title>Deployment of NCKU CSIE Gitit Theme</title>
-    <url>/2010/deployment-of-ncku-csie-gitit-theme.html</url>
-    <content><![CDATA[<p><a href="http://gitit.net/">Gitit</a> 是一套以 Git 作為 base 的 wiki 系統。這套 wiki 的優點可以在<a href="http://walkingice.blogspot.tw/2011/11/gitit-git-based-wiki.html">只放拖鞋的鞋櫃</a>看到。在網路上的高手 <a href="http://macropodus.github.io/gitit_mix_vimwiki.html">Macropodus</a> 研究出如何和 Vimwiki 結合後，又更強化了他的優勢。</p>
-<p>不過 Gitit 預設的模版很沒有設計感，尤其是那個 logo 讓人看了很不舒服。所幸在 <a href="https://groups.google.com/forum/#!topic/gitit-discuss/g6rZWIOmiu8">Google Group</a> 發現了一套由成大資工所製作的好看佈景。以下將介紹如何安裝這套佈景：</p>
-<span id="more"></span>
-
-<ol>
-<li><p>下載佈景<br>打包好的佈景可以在 <a href="https://github.com/CrBoy/csiewiki">GitHub</a> 上找到</p>
-</li>
-<li><p>安裝佈景<br>將包裏解開後，取代 Gitit 原來的 static 和 templates 資料夾</p>
-</li>
-</ol>
-<p>到此為止都和這套佈景的官方安裝教學一樣。如果是採用發行版如 Ubuntu 所提供的 Gitit package，則已經完成。若是用 cabal 安裝, 則必須再安裝相依的套件，以 Ubuntu 為例：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt-get install libghc-filestore-data libc6 libffi6 libgmp10 libpcre3 zlib1g libjs-jquery libjs-jquery-ui</span><br></pre></td></tr></table></figure>
-
-<p>完成的樣子可以參考<a href="http://wiki.csie.ncku.edu.tw/">成大資工 Wiki</a>。</p>
-]]></content>
-      <categories>
-        <category>Setup</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Cross Compiling Python 2.7.10 and 3.4.3 for MIPSel OpenWrt via uClibc with SSL and SQLite support</title>
     <url>/2015/cross-compiling-python-3-4-3-for-mipsel.html</url>
     <content><![CDATA[<p>The notes that were written after succeeding to cross compile Python 2.7.10 and 3.4.3 for MIPSel OpenWrt via uClibc.</p>
@@ -298,6 +276,28 @@
 ]]></content>
       <categories>
         <category>Embedded</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Deployment of NCKU CSIE Gitit Theme</title>
+    <url>/2010/deployment-of-ncku-csie-gitit-theme.html</url>
+    <content><![CDATA[<p><a href="http://gitit.net/">Gitit</a> 是一套以 Git 作為 base 的 wiki 系統。這套 wiki 的優點可以在<a href="http://walkingice.blogspot.tw/2011/11/gitit-git-based-wiki.html">只放拖鞋的鞋櫃</a>看到。在網路上的高手 <a href="http://macropodus.github.io/gitit_mix_vimwiki.html">Macropodus</a> 研究出如何和 Vimwiki 結合後，又更強化了他的優勢。</p>
+<p>不過 Gitit 預設的模版很沒有設計感，尤其是那個 logo 讓人看了很不舒服。所幸在 <a href="https://groups.google.com/forum/#!topic/gitit-discuss/g6rZWIOmiu8">Google Group</a> 發現了一套由成大資工所製作的好看佈景。以下將介紹如何安裝這套佈景：</p>
+<span id="more"></span>
+
+<ol>
+<li><p>下載佈景<br>打包好的佈景可以在 <a href="https://github.com/CrBoy/csiewiki">GitHub</a> 上找到</p>
+</li>
+<li><p>安裝佈景<br>將包裏解開後，取代 Gitit 原來的 static 和 templates 資料夾</p>
+</li>
+</ol>
+<p>到此為止都和這套佈景的官方安裝教學一樣。如果是採用發行版如 Ubuntu 所提供的 Gitit package，則已經完成。若是用 cabal 安裝, 則必須再安裝相依的套件，以 Ubuntu 為例：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt-get install libghc-filestore-data libc6 libffi6 libgmp10 libpcre3 zlib1g libjs-jquery libjs-jquery-ui</span><br></pre></td></tr></table></figure>
+
+<p>完成的樣子可以參考<a href="http://wiki.csie.ncku.edu.tw/">成大資工 Wiki</a>。</p>
+]]></content>
+      <categories>
+        <category>Setup</category>
       </categories>
   </entry>
   <entry>
@@ -326,16 +326,6 @@
 ]]></content>
       <categories>
         <category>Software</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>My Longest Streak on GitHub</title>
-    <url>/2014/github-streak.html</url>
-    <content><![CDATA[<p>一時興致起來，實驗性地洗了一下 GitHub 的 longest streak。</p>
-<p><img src="github-streak/github-longest-streak.png"></p>
-]]></content>
-      <categories>
-        <category>Random</category>
       </categories>
   </entry>
   <entry>
@@ -379,19 +369,13 @@
       </categories>
   </entry>
   <entry>
-    <title>Implementations of DFS and BFS in Python</title>
-    <url>/2014/implementations-of-dfs-and-bfs-in-python.html</url>
-    <content><![CDATA[<p><a href="http://zh.wikipedia.org/zh-tw/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">DFS</a> 和 <a href="http://zh.wikipedia.org/zh-tw/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">BFS</a> 在資料結構裡有教，是很基礎的演算法。</p>
-<span id="more"></span>
-<p>在 <a href="http://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/">Edd Mann 的網誌</a>上看到 Python 的實作，由其中學到 <code>yield from</code> 的用法。下面利用 <code>yield from</code> 的特性，將該網誌中提到的實作改寫成 generator 的型式。同步放在 Gist 上：<a href="https://gist.github.com/changyuheng/08ffb779d83679393926">DFS</a>、<a href="https://gist.github.com/changyuheng/97d320206af9a0018d7d">BFS</a>。</p>
-<p><strong>DFS</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">dfs</span>(<span class="params">graph, start, visited=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> visited <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        visited = <span class="built_in">set</span>()</span><br><span class="line">    <span class="keyword">if</span> start <span class="keyword">in</span> visited:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    <span class="keyword">yield</span> start</span><br><span class="line">    visited.add(start)</span><br><span class="line">    <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - visited:</span><br><span class="line">        <span class="keyword">yield</span> <span class="keyword">from</span> dfs(graph, vertex, visited=visited)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">dfs_paths</span>(<span class="params">graph, start, goal, path=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> path <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        path = [start]</span><br><span class="line">    <span class="keyword">if</span> start == goal:</span><br><span class="line">        <span class="keyword">yield</span> path</span><br><span class="line">    <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(path):</span><br><span class="line">        <span class="keyword">yield</span> <span class="keyword">from</span> dfs_paths(graph, vertex, goal, path=path + [vertex])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">graph = &#123;</span><br><span class="line">    <span class="string">&#x27;A&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;B&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;D&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;C&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;D&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;E&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;F&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;C&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> dfs(graph, <span class="string">&#x27;A&#x27;</span>)]))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([path <span class="keyword">for</span> path <span class="keyword">in</span> dfs_paths(graph, <span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>)]))</span><br></pre></td></tr></table></figure>
-
-<p><strong>BFS</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bfs</span>(<span class="params">graph, queue, visited=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> visited <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        visited = <span class="built_in">set</span>()</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> queue:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    start = queue.pop(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">yield</span> start</span><br><span class="line">    visited.add(start)</span><br><span class="line">    queue += [vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(queue) - visited]</span><br><span class="line">    <span class="keyword">yield</span> <span class="keyword">from</span> bfs(graph, queue, visited=visited)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bfs_paths</span>(<span class="params">graph, queue, goal</span>):</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> queue:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    (start, path) = queue.pop(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">if</span> start == goal:</span><br><span class="line">        <span class="keyword">yield</span> path</span><br><span class="line">    queue += [(vertex, path + [vertex]) <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(path)]</span><br><span class="line">    <span class="keyword">yield</span> <span class="keyword">from</span> bfs_paths(graph, queue, goal)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">graph = &#123;</span><br><span class="line">    <span class="string">&#x27;A&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;B&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;D&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;C&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;D&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;E&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;F&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;C&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> bfs(graph, [<span class="string">&#x27;A&#x27;</span>])]))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([path <span class="keyword">for</span> path <span class="keyword">in</span> bfs_paths(graph, [(<span class="string">&#x27;A&#x27;</span>, [<span class="string">&#x27;A&#x27;</span>])], <span class="string">&#x27;F&#x27;</span>)]))</span><br></pre></td></tr></table></figure>
+    <title>My Longest Streak on GitHub</title>
+    <url>/2014/github-streak.html</url>
+    <content><![CDATA[<p>一時興致起來，實驗性地洗了一下 GitHub 的 longest streak。</p>
+<p><img src="github-streak/github-longest-streak.png"></p>
 ]]></content>
       <categories>
-        <category>Algorithm</category>
+        <category>Random</category>
       </categories>
   </entry>
   <entry>
@@ -420,6 +404,22 @@
 ]]></content>
       <categories>
         <category>Setup</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Implementations of DFS and BFS in Python</title>
+    <url>/2014/implementations-of-dfs-and-bfs-in-python.html</url>
+    <content><![CDATA[<p><a href="http://zh.wikipedia.org/zh-tw/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">DFS</a> 和 <a href="http://zh.wikipedia.org/zh-tw/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">BFS</a> 在資料結構裡有教，是很基礎的演算法。</p>
+<span id="more"></span>
+<p>在 <a href="http://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/">Edd Mann 的網誌</a>上看到 Python 的實作，由其中學到 <code>yield from</code> 的用法。下面利用 <code>yield from</code> 的特性，將該網誌中提到的實作改寫成 generator 的型式。同步放在 Gist 上：<a href="https://gist.github.com/changyuheng/08ffb779d83679393926">DFS</a>、<a href="https://gist.github.com/changyuheng/97d320206af9a0018d7d">BFS</a>。</p>
+<p><strong>DFS</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">dfs</span>(<span class="params">graph, start, visited=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> visited <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        visited = <span class="built_in">set</span>()</span><br><span class="line">    <span class="keyword">if</span> start <span class="keyword">in</span> visited:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    <span class="keyword">yield</span> start</span><br><span class="line">    visited.add(start)</span><br><span class="line">    <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - visited:</span><br><span class="line">        <span class="keyword">yield</span> <span class="keyword">from</span> dfs(graph, vertex, visited=visited)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">dfs_paths</span>(<span class="params">graph, start, goal, path=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> path <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        path = [start]</span><br><span class="line">    <span class="keyword">if</span> start == goal:</span><br><span class="line">        <span class="keyword">yield</span> path</span><br><span class="line">    <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(path):</span><br><span class="line">        <span class="keyword">yield</span> <span class="keyword">from</span> dfs_paths(graph, vertex, goal, path=path + [vertex])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">graph = &#123;</span><br><span class="line">    <span class="string">&#x27;A&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;B&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;D&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;C&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;D&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;E&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;F&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;C&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> dfs(graph, <span class="string">&#x27;A&#x27;</span>)]))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([path <span class="keyword">for</span> path <span class="keyword">in</span> dfs_paths(graph, <span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>)]))</span><br></pre></td></tr></table></figure>
+
+<p><strong>BFS</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bfs</span>(<span class="params">graph, queue, visited=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> visited <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        visited = <span class="built_in">set</span>()</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> queue:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    start = queue.pop(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">yield</span> start</span><br><span class="line">    visited.add(start)</span><br><span class="line">    queue += [vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(queue) - visited]</span><br><span class="line">    <span class="keyword">yield</span> <span class="keyword">from</span> bfs(graph, queue, visited=visited)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bfs_paths</span>(<span class="params">graph, queue, goal</span>):</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> queue:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    (start, path) = queue.pop(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">if</span> start == goal:</span><br><span class="line">        <span class="keyword">yield</span> path</span><br><span class="line">    queue += [(vertex, path + [vertex]) <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(path)]</span><br><span class="line">    <span class="keyword">yield</span> <span class="keyword">from</span> bfs_paths(graph, queue, goal)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">graph = &#123;</span><br><span class="line">    <span class="string">&#x27;A&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;B&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;D&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;C&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;D&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;E&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;F&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;C&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> bfs(graph, [<span class="string">&#x27;A&#x27;</span>])]))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([path <span class="keyword">for</span> path <span class="keyword">in</span> bfs_paths(graph, [(<span class="string">&#x27;A&#x27;</span>, [<span class="string">&#x27;A&#x27;</span>])], <span class="string">&#x27;F&#x27;</span>)]))</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Algorithm</category>
       </categories>
   </entry>
   <entry>
@@ -753,45 +753,6 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
-    <title>Python Learning Resources</title>
-    <url>/2014/python-learning-resources.html</url>
-    <content><![CDATA[<p>同事在問 Python 該如何入門，順手將整理的資料與大眾分享。</p>
-<p>既然要學，就不要拖著歷史的包袱，所以建議直接學習 Python 3。</p>
-<p>對於有程式設計基礎的朋友，可依下列項目順序學習：</p>
-<span id="more"></span>
-
-<ol>
-<li>官網的 <a href="https://docs.python.org/3/tutorial/">tutorial</a>。</li>
-<li><a href="http://shop.oreilly.com/product/0636920027072.do">Python Cookbook: Recipes for Mastering Python 3</a></li>
-<li><a href="http://www.amazon.com/Python-Practice-Concurrency-Libraries-Developers/dp/0321905636">Python in Practice: Create Better Programs Using Concurrency, Libraries, and Patterns (Developer’s Library)</a></li>
-</ol>
-<p>Libraries：</p>
-<ol>
-<li><a href="https://github.com/vinta/awesome-python">https://github.com/vinta/awesome-python</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Python logging module example</title>
-    <url>/2015/python-logging-module-example.html</url>
-    <content><![CDATA[<p>Python 的 logging module 功能完整強大，但手冊裡卻沒有一個簡明的 config 範例。</p>
-<p>記錄一下。</p>
-<span id="more"></span>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python3</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> logging</span><br><span class="line"><span class="keyword">import</span> logging.config</span><br><span class="line"></span><br><span class="line">logging.config.dictConfig(&#123;</span><br><span class="line">    <span class="string">&#x27;version&#x27;</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="string">&#x27;formatters&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;default&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;format&#x27;</span>: <span class="string">&#x27;[%(asctime)s|PID:%(process)d|TID:%(thread)d|%(filename)s:%(lineno)d|%(funcName)s|%(name)s|%(levelname)s] %(message)s&#x27;</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">&#x27;handlers&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;console&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;logging.StreamHandler&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;formatter&#x27;</span>: <span class="string">&#x27;default&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&#x27;http&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;logging.handlers.HTTPHandler&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;formatter&#x27;</span>: <span class="string">&#x27;default&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">            <span class="string">&#x27;host&#x27;</span>: <span class="string">&#x27;localhost:3000&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;url&#x27;</span>: <span class="string">&#x27;/log&#x27;</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&#x27;rotatingfile&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;logging.handlers.RotatingFileHandler&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;formatter&#x27;</span>: <span class="string">&#x27;default&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">            <span class="string">&#x27;filename&#x27;</span>: <span class="string">&#x27;test.log&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;maxBytes&#x27;</span>: <span class="number">512</span> * <span class="number">1024</span> * <span class="number">1024</span>,</span><br><span class="line">            <span class="string">&#x27;backupCount&#x27;</span>: <span class="number">1</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">&#x27;loggers&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;handlers&#x27;</span>: [<span class="string">&#x27;console&#x27;</span>, <span class="string">&#x27;http&#x27;</span>, <span class="string">&#x27;rotatingfile&#x27;</span>],</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">logging.info(<span class="string">&#x27;test1&#x27;</span>)</span><br><span class="line">logger = logging.getLogger()</span><br><span class="line">logger.info(<span class="string">&#x27;test&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<h2 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h2><ol>
-<li><a href="http://docs.python-guide.org/en/latest/writing/logging/">The Hitchhiker’s Guide to Python</a></li>
-<li><a href="https://docs.python.org/2/library/logging.html">The Python Standard Library</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-  </entry>
-  <entry>
     <title>PTT 帳號被砍事件</title>
     <url>/2015/ptt-%E5%B8%B3%E8%99%9F%E8%A2%AB%E7%A0%8D%E4%BA%8B%E4%BB%B6.html</url>
     <content><![CDATA[<p>事件起源於多年前我寫了一個<a href="https://changyuheng.github.io/2007/11/05/ptt-efficient-poster/">程式</a>，用來讓 PTT 的發文者能得到與文章字數相符的稿酬。</p>
@@ -831,6 +792,45 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
+    <title>Python logging module example</title>
+    <url>/2015/python-logging-module-example.html</url>
+    <content><![CDATA[<p>Python 的 logging module 功能完整強大，但手冊裡卻沒有一個簡明的 config 範例。</p>
+<p>記錄一下。</p>
+<span id="more"></span>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python3</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> logging</span><br><span class="line"><span class="keyword">import</span> logging.config</span><br><span class="line"></span><br><span class="line">logging.config.dictConfig(&#123;</span><br><span class="line">    <span class="string">&#x27;version&#x27;</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="string">&#x27;formatters&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;default&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;format&#x27;</span>: <span class="string">&#x27;[%(asctime)s|PID:%(process)d|TID:%(thread)d|%(filename)s:%(lineno)d|%(funcName)s|%(name)s|%(levelname)s] %(message)s&#x27;</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">&#x27;handlers&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;console&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;logging.StreamHandler&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;formatter&#x27;</span>: <span class="string">&#x27;default&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&#x27;http&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;logging.handlers.HTTPHandler&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;formatter&#x27;</span>: <span class="string">&#x27;default&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">            <span class="string">&#x27;host&#x27;</span>: <span class="string">&#x27;localhost:3000&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;url&#x27;</span>: <span class="string">&#x27;/log&#x27;</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&#x27;rotatingfile&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;logging.handlers.RotatingFileHandler&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;formatter&#x27;</span>: <span class="string">&#x27;default&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">            <span class="string">&#x27;filename&#x27;</span>: <span class="string">&#x27;test.log&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;maxBytes&#x27;</span>: <span class="number">512</span> * <span class="number">1024</span> * <span class="number">1024</span>,</span><br><span class="line">            <span class="string">&#x27;backupCount&#x27;</span>: <span class="number">1</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">&#x27;loggers&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;handlers&#x27;</span>: [<span class="string">&#x27;console&#x27;</span>, <span class="string">&#x27;http&#x27;</span>, <span class="string">&#x27;rotatingfile&#x27;</span>],</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">logging.info(<span class="string">&#x27;test1&#x27;</span>)</span><br><span class="line">logger = logging.getLogger()</span><br><span class="line">logger.info(<span class="string">&#x27;test&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h2><ol>
+<li><a href="http://docs.python-guide.org/en/latest/writing/logging/">The Hitchhiker’s Guide to Python</a></li>
+<li><a href="https://docs.python.org/2/library/logging.html">The Python Standard Library</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Python Learning Resources</title>
+    <url>/2014/python-learning-resources.html</url>
+    <content><![CDATA[<p>同事在問 Python 該如何入門，順手將整理的資料與大眾分享。</p>
+<p>既然要學，就不要拖著歷史的包袱，所以建議直接學習 Python 3。</p>
+<p>對於有程式設計基礎的朋友，可依下列項目順序學習：</p>
+<span id="more"></span>
+
+<ol>
+<li>官網的 <a href="https://docs.python.org/3/tutorial/">tutorial</a>。</li>
+<li><a href="http://shop.oreilly.com/product/0636920027072.do">Python Cookbook: Recipes for Mastering Python 3</a></li>
+<li><a href="http://www.amazon.com/Python-Practice-Concurrency-Libraries-Developers/dp/0321905636">Python in Practice: Create Better Programs Using Concurrency, Libraries, and Patterns (Developer’s Library)</a></li>
+</ol>
+<p>Libraries：</p>
+<ol>
+<li><a href="https://github.com/vinta/awesome-python">https://github.com/vinta/awesome-python</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Raspberry Pi Raspbian Jessie 安裝設定</title>
     <url>/2015/raspberry-pi-raspbian-jessie-%E5%AE%89%E8%A3%9D%E8%A8%AD%E5%AE%9A.html</url>
     <content><![CDATA[<p>Jessie 剛從 SysVinit 換成 systemd。因為不同的 init system 的設定方式不同，而 raspi-config 還沒有更新到支援 systemd，所以有些設定必須手動，不能透過 raspi-config。</p>
@@ -867,6 +867,20 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
+    <title>在 Ubuntu 12.04 安裝 IT-830UP 晶片讀卡機與使用 WebATM</title>
+    <url>/2013/ubuntu-12-dot-04-an-zhuang-it-830up-jing-pian-du-qia-ji.html</url>
+    <content><![CDATA[<p><img src="http://www.ittec.com.tw/images/IT-830UP%28DM%29.jpg" alt="IT-830UP"></p>
+<span id="more"></span>
+
+<h2 id="步驟-1-安裝所需套件"><a href="#步驟-1-安裝所需套件" class="headerlink" title="步驟 1. 安裝所需套件"></a>步驟 1. 安裝所需套件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install pcscd pcsc-tools libccid</span><br></pre></td></tr></table></figure>
+
+<p>完成後可能需要自行重新啟動電腦才會生效。</p>
+<h2 id="步驟-2-依照-WebATM-提供的方法安裝所需程式，如：玉山銀行"><a href="#步驟-2-依照-WebATM-提供的方法安裝所需程式，如：玉山銀行" class="headerlink" title="步驟 2. 依照 WebATM 提供的方法安裝所需程式，如：玉山銀行"></a>步驟 2. 依照 WebATM 提供的方法安裝所需程式，如：<a href="http://netbank.esunbank.com.tw/webatm/Q&A_016.htm#01">玉山銀行</a></h2>]]></content>
+      <categories>
+        <category>Setup</category>
+      </categories>
+  </entry>
+  <entry>
     <title>唯一一種只要學會就能脫胎換骨的能力</title>
     <url>/2015/the-only-one-skill-that-if-you-have-will-completely-change-your-life-chinese-translation.html</url>
     <content><![CDATA[<p>在 Medium 上看到一篇<a href="https://medium.com/keep-learning-keep-growing/the-only-one-skill-that-if-you-have-will-completely-change-your-life-ba9b40b8fdf5#.tjk2mly1w">好文</a>，翻譯前半段。</p>
@@ -894,45 +908,6 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
-    <title>Understanding Python Decorators</title>
-    <url>/2014/understanding-python-decorators.html</url>
-    <content><![CDATA[<p>Decorator 是一個 Python 中較為進階的語法，因為較難理解故常被提出來討論。這邊提供一個簡潔的說明。</p>
-<span id="more"></span>
-
-<p>假設有一名為 func 的 function 被名為 decor1 和 decor2 的二 decorator 修飾如下：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">@decor1</span></span><br><span class="line"><span class="meta">@decor2</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">func</span>(<span class="params">*args, **kwargs</span>):</span></span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
-
-<p>則當我們如下呼叫 func() 時：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">func(*args, **kwargs)</span><br></pre></td></tr></table></figure>
-
-<p>可以將之理解為：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">decor1(decor2(func))(*args, **kwargs)</span><br></pre></td></tr></table></figure>
-
-<p>更詳細的說明可以參考：</p>
-<ol>
-<li><a href="http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/">Understanding Python Decorators in 12 Easy Steps!</a></li>
-<li><a href="http://stackoverflow.com/a/739679">How can I make a chain of function decorators in Python?</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>在 Ubuntu 12.04 安裝 IT-830UP 晶片讀卡機與使用 WebATM</title>
-    <url>/2013/ubuntu-12-dot-04-an-zhuang-it-830up-jing-pian-du-qia-ji.html</url>
-    <content><![CDATA[<p><img src="http://www.ittec.com.tw/images/IT-830UP%28DM%29.jpg" alt="IT-830UP"></p>
-<span id="more"></span>
-
-<h2 id="步驟-1-安裝所需套件"><a href="#步驟-1-安裝所需套件" class="headerlink" title="步驟 1. 安裝所需套件"></a>步驟 1. 安裝所需套件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install pcscd pcsc-tools libccid</span><br></pre></td></tr></table></figure>
-
-<p>完成後可能需要自行重新啟動電腦才會生效。</p>
-<h2 id="步驟-2-依照-WebATM-提供的方法安裝所需程式，如：玉山銀行"><a href="#步驟-2-依照-WebATM-提供的方法安裝所需程式，如：玉山銀行" class="headerlink" title="步驟 2. 依照 WebATM 提供的方法安裝所需程式，如：玉山銀行"></a>步驟 2. 依照 WebATM 提供的方法安裝所需程式，如：<a href="http://netbank.esunbank.com.tw/webatm/Q&A_016.htm#01">玉山銀行</a></h2>]]></content>
-      <categories>
-        <category>Setup</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Using Express to Handle File Uploading</title>
     <url>/2015/using-express-to-handle-file-uploading.html</url>
     <content><![CDATA[<p><a href="https://github.com/strongloop/express">Express</a> 本身不管上傳，要透過 <a href="https://github.com/expressjs/multer">Multer</a> 來處理。</p>
@@ -954,6 +929,31 @@ ABCDEFG<br />
 
 <p>如果沒有對起來，會出現對 trace 沒有幫助的 error：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Error: Unexpected field</span><br><span class="line">    at makeError (/home/changyuheng/production/ultima-cloud-server/node_modules/multer/lib/make-error.js:12:13)</span><br><span class="line">    at wrappedFileFilter (/home/changyuheng/production/ultima-cloud-server/node_modules/multer/index.js:39:19)</span><br><span class="line">    at Busboy.&lt;anonymous&gt; (/home/changyuheng/production/ultima-cloud-server/node_modules/multer/lib/make-middleware.js:112:7)</span><br><span class="line">    at emitMany (events.js:108:13)</span><br><span class="line">    at Busboy.emit (events.js:182:7)</span><br><span class="line">    at Busboy.emit (/home/changyuheng/production/ultima-cloud-server/node_modules/multer/node_modules/busboy/lib/main.js:31:35)</span><br><span class="line">    at PartStream.&lt;anonymous&gt; (/home/changyuheng/production/ultima-cloud-server/node_modules/multer/node_modules/busboy/lib/types/multipart.js:209:13)</span><br><span class="line">    at emitOne (events.js:77:13)</span><br><span class="line">    at PartStream.emit (events.js:169:7)</span><br><span class="line">    at HeaderParser.&lt;anonymous&gt; (/home/changyuheng/production/ultima-cloud-server/node_modules/multer/node_modules/busboy/node_modules/dicer/lib/Dicer.js:51:16)</span><br><span class="line">    at emitOne (events.js:77:13)</span><br><span class="line">    at HeaderParser.emit (events.js:169:7)</span><br><span class="line">    at HeaderParser._finish (/home/changyuheng/production/ultima-cloud-server/node_modules/multer/node_modules/busboy/node_modules/dicer/lib/HeaderParser.js:70:8)</span><br><span class="line">    at SBMH.&lt;anonymous&gt; (/home/changyuheng/production/ultima-cloud-server/node_modules/multer/node_modules/busboy/node_modules/dicer/lib/HeaderParser.js:42:12)</span><br><span class="line">    at emitMany (events.js:108:13)</span><br><span class="line">    at SBMH.emit (events.js:182:7)</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Understanding Python Decorators</title>
+    <url>/2014/understanding-python-decorators.html</url>
+    <content><![CDATA[<p>Decorator 是一個 Python 中較為進階的語法，因為較難理解故常被提出來討論。這邊提供一個簡潔的說明。</p>
+<span id="more"></span>
+
+<p>假設有一名為 func 的 function 被名為 decor1 和 decor2 的二 decorator 修飾如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">@decor1</span></span><br><span class="line"><span class="meta">@decor2</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">func</span>(<span class="params">*args, **kwargs</span>):</span></span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
+
+<p>則當我們如下呼叫 func() 時：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">func(*args, **kwargs)</span><br></pre></td></tr></table></figure>
+
+<p>可以將之理解為：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">decor1(decor2(func))(*args, **kwargs)</span><br></pre></td></tr></table></figure>
+
+<p>更詳細的說明可以參考：</p>
+<ol>
+<li><a href="http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/">Understanding Python Decorators in 12 Easy Steps!</a></li>
+<li><a href="http://stackoverflow.com/a/739679">How can I make a chain of function decorators in Python?</a></li>
+</ol>
 ]]></content>
       <categories>
         <category>Python</category>
