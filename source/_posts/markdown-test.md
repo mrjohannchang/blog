@@ -55,7 +55,7 @@ int main(int argc, char ** argv) {
 }
 {% endcodeblock %}
 
-``` py
+```py
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import Queue
@@ -153,7 +153,6 @@ def main():
 
 if __name__ == '__main__':
     main()
-
 ```
 
 {% codeblock .compact http://underscorejs.org/#compact Underscore.js %}
@@ -195,6 +194,23 @@ $$\frac{\partial u}{\partial t}
 | col 2 is      | centered        |           $12 |
 | zebra stripes | are neat        |            $1 |
 
+<table>
+<tr>
+<td>123</td>
+<td>456</td
+</tr>
+<tr>
+<td colspan="2">789</td>
+</tr>
+<tr>
+<td rowspan="2">abc</td>
+<td>def</td>
+</tr>
+<tr>
+<td>ghi</td>
+</tr>
+</table>
+
 perform_complicated_task
 do_this_and_do_that_and_another_thing
 
@@ -213,8 +229,8 @@ ABCDEFG<br />
 1234567<br />
 {% endraw %}
 
-![](自製臺灣新冠肺炎疫情資料圖報表/超級賽亞羊.jpg)
-![](自製臺灣新冠肺炎疫情資料圖報表/github-commit-amount-cheat.png)
+![](markdown-test/超級賽亞羊.jpg)
+![](markdown-test/github-commit-amount-cheat.png)
 
 {% asset_img 超級賽亞羊.jpg [小六畫的] %}
 {% asset_img github-commit-amount-cheat.png %}
