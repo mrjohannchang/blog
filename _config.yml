@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: "Henry's Technical Blog"
+title: "Henry Jr. 電腦部"
 subtitle:
 description:
 keywords:
@@ -13,7 +13,7 @@ timezone: Asia/Taipei
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://changyuheng.github.io
+url: https://com.jrhenry.one
 root: /
 permalink: :year/:title.html
 permalink_defaults:
