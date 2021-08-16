@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Codeforces Problem 1B</title>
+    <url>/2014/codeforces-problem-1b.html</url>
+    <content><![CDATA[<p><a href="http://codeforces.com/problemset/problem/1/B">Codeforces Problem 1B</a></p>
+<p>這題考的是經典的試算表 (spreadsheet) 座標轉換。這個問題的重點在對數字進位的處理。訣竅在於把 one-based column 當成 zero-based 來處理。</p>
+<p><a href="http://codeforces.com/contest/1/submission/6457739">我的 Python 解法</a></p>
+]]></content>
+      <categories>
+        <category>Algorithm</category>
+      </categories>
+  </entry>
+  <entry>
     <title>AutoCheckIn for Garena</title>
     <url>/2008/autocheckin-for-garena.html</url>
     <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/garena-autocheckin/master/screenshot.png" alt="screenshot"></p>
@@ -183,17 +194,6 @@
       </categories>
   </entry>
   <entry>
-    <title>Codeforces Problem 1B</title>
-    <url>/2014/codeforces-problem-1b.html</url>
-    <content><![CDATA[<p><a href="http://codeforces.com/problemset/problem/1/B">Codeforces Problem 1B</a></p>
-<p>這題考的是經典的試算表 (spreadsheet) 座標轉換。這個問題的重點在對數字進位的處理。訣竅在於把 one-based column 當成 zero-based 來處理。</p>
-<p><a href="http://codeforces.com/contest/1/submission/6457739">我的 Python 解法</a></p>
-]]></content>
-      <categories>
-        <category>Algorithm</category>
-      </categories>
-  </entry>
-  <entry>
     <title>COSCUP 2016 閃電秀：理性‧勿戰</title>
     <url>/2016/coscup-2016-%E9%96%83%E9%9B%BB%E7%A7%80%EF%BC%9A2-%E5%88%86%E9%90%98%E6%89%93%E8%87%89-mtk.html</url>
     <content><![CDATA[<p>把之前寫的這篇<a href="https://medium.com/rosonix/%E8%AE%93-linkit-smart-7688-%E7%9A%84-wi-fi-ap-%E8%88%87-station-%E5%90%8C%E6%99%82%E9%81%8B%E4%BD%9C-dc9e043142b7">文章</a>拿去 COSCUP 2016 報閃電秀，讓大家開心一下。Project repository 在<a href="https://github.com/changyuheng/linkit-smart-7688-wifi-multi-role">這裡</a>。</p>
@@ -279,28 +279,6 @@
       </categories>
   </entry>
   <entry>
-    <title>Deployment of NCKU CSIE Gitit Theme</title>
-    <url>/2010/deployment-of-ncku-csie-gitit-theme.html</url>
-    <content><![CDATA[<p><a href="http://gitit.net/">Gitit</a> 是一套以 Git 作為 base 的 wiki 系統。這套 wiki 的優點可以在<a href="http://walkingice.blogspot.tw/2011/11/gitit-git-based-wiki.html">只放拖鞋的鞋櫃</a>看到。在網路上的高手 <a href="http://macropodus.github.io/gitit_mix_vimwiki.html">Macropodus</a> 研究出如何和 Vimwiki 結合後，又更強化了他的優勢。</p>
-<p>不過 Gitit 預設的模版很沒有設計感，尤其是那個 logo 讓人看了很不舒服。所幸在 <a href="https://groups.google.com/forum/#!topic/gitit-discuss/g6rZWIOmiu8">Google Group</a> 發現了一套由成大資工所製作的好看佈景。以下將介紹如何安裝這套佈景：</p>
-<span id="more"></span>
-
-<ol>
-<li><p>下載佈景<br>打包好的佈景可以在 <a href="https://github.com/CrBoy/csiewiki">GitHub</a> 上找到</p>
-</li>
-<li><p>安裝佈景<br>將包裏解開後，取代 Gitit 原來的 static 和 templates 資料夾</p>
-</li>
-</ol>
-<p>到此為止都和這套佈景的官方安裝教學一樣。如果是採用發行版如 Ubuntu 所提供的 Gitit package，則已經完成。若是用 cabal 安裝, 則必須再安裝相依的套件，以 Ubuntu 為例：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt-get install libghc-filestore-data libc6 libffi6 libgmp10 libpcre3 zlib1g libjs-jquery libjs-jquery-ui</span><br></pre></td></tr></table></figure>
-
-<p>完成的樣子可以參考<a href="http://wiki.csie.ncku.edu.tw/">成大資工 Wiki</a>。</p>
-]]></content>
-      <categories>
-        <category>Setup</category>
-      </categories>
-  </entry>
-  <entry>
     <title>fz - 模糊搜尋互動式 cd 自動補完套件</title>
     <url>/2017/fz-fuzzy-search-in-tab-completions-of-z.html</url>
     <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/fz/master/fz-demo.gif"></p>
@@ -329,6 +307,28 @@
       </categories>
   </entry>
   <entry>
+    <title>Deployment of NCKU CSIE Gitit Theme</title>
+    <url>/2010/deployment-of-ncku-csie-gitit-theme.html</url>
+    <content><![CDATA[<p><a href="http://gitit.net/">Gitit</a> 是一套以 Git 作為 base 的 wiki 系統。這套 wiki 的優點可以在<a href="http://walkingice.blogspot.tw/2011/11/gitit-git-based-wiki.html">只放拖鞋的鞋櫃</a>看到。在網路上的高手 <a href="http://macropodus.github.io/gitit_mix_vimwiki.html">Macropodus</a> 研究出如何和 Vimwiki 結合後，又更強化了他的優勢。</p>
+<p>不過 Gitit 預設的模版很沒有設計感，尤其是那個 logo 讓人看了很不舒服。所幸在 <a href="https://groups.google.com/forum/#!topic/gitit-discuss/g6rZWIOmiu8">Google Group</a> 發現了一套由成大資工所製作的好看佈景。以下將介紹如何安裝這套佈景：</p>
+<span id="more"></span>
+
+<ol>
+<li><p>下載佈景<br>打包好的佈景可以在 <a href="https://github.com/CrBoy/csiewiki">GitHub</a> 上找到</p>
+</li>
+<li><p>安裝佈景<br>將包裏解開後，取代 Gitit 原來的 static 和 templates 資料夾</p>
+</li>
+</ol>
+<p>到此為止都和這套佈景的官方安裝教學一樣。如果是採用發行版如 Ubuntu 所提供的 Gitit package，則已經完成。若是用 cabal 安裝, 則必須再安裝相依的套件，以 Ubuntu 為例：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt-get install libghc-filestore-data libc6 libffi6 libgmp10 libpcre3 zlib1g libjs-jquery libjs-jquery-ui</span><br></pre></td></tr></table></figure>
+
+<p>完成的樣子可以參考<a href="http://wiki.csie.ncku.edu.tw/">成大資工 Wiki</a>。</p>
+]]></content>
+      <categories>
+        <category>Setup</category>
+      </categories>
+  </entry>
+  <entry>
     <title>My Longest Streak on GitHub</title>
     <url>/2014/github-streak.html</url>
     <content><![CDATA[<p>一時興致起來，實驗性地洗了一下 GitHub 的 longest streak。</p>
@@ -336,6 +336,22 @@
 ]]></content>
       <categories>
         <category>Random</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Implementations of DFS and BFS in Python</title>
+    <url>/2014/implementations-of-dfs-and-bfs-in-python.html</url>
+    <content><![CDATA[<p><a href="http://zh.wikipedia.org/zh-tw/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">DFS</a> 和 <a href="http://zh.wikipedia.org/zh-tw/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">BFS</a> 在資料結構裡有教，是很基礎的演算法。</p>
+<span id="more"></span>
+<p>在 <a href="http://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/">Edd Mann 的網誌</a>上看到 Python 的實作，由其中學到 <code>yield from</code> 的用法。下面利用 <code>yield from</code> 的特性，將該網誌中提到的實作改寫成 generator 的型式。同步放在 Gist 上：<a href="https://gist.github.com/changyuheng/08ffb779d83679393926">DFS</a>、<a href="https://gist.github.com/changyuheng/97d320206af9a0018d7d">BFS</a>。</p>
+<p><strong>DFS</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">dfs</span>(<span class="params">graph, start, visited=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> visited <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        visited = <span class="built_in">set</span>()</span><br><span class="line">    <span class="keyword">if</span> start <span class="keyword">in</span> visited:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    <span class="keyword">yield</span> start</span><br><span class="line">    visited.add(start)</span><br><span class="line">    <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - visited:</span><br><span class="line">        <span class="keyword">yield</span> <span class="keyword">from</span> dfs(graph, vertex, visited=visited)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">dfs_paths</span>(<span class="params">graph, start, goal, path=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> path <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        path = [start]</span><br><span class="line">    <span class="keyword">if</span> start == goal:</span><br><span class="line">        <span class="keyword">yield</span> path</span><br><span class="line">    <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(path):</span><br><span class="line">        <span class="keyword">yield</span> <span class="keyword">from</span> dfs_paths(graph, vertex, goal, path=path + [vertex])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">graph = &#123;</span><br><span class="line">    <span class="string">&#x27;A&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;B&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;D&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;C&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;D&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;E&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;F&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;C&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> dfs(graph, <span class="string">&#x27;A&#x27;</span>)]))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([path <span class="keyword">for</span> path <span class="keyword">in</span> dfs_paths(graph, <span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>)]))</span><br></pre></td></tr></table></figure>
+
+<p><strong>BFS</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bfs</span>(<span class="params">graph, queue, visited=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> visited <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        visited = <span class="built_in">set</span>()</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> queue:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    start = queue.pop(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">yield</span> start</span><br><span class="line">    visited.add(start)</span><br><span class="line">    queue += [vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(queue) - visited]</span><br><span class="line">    <span class="keyword">yield</span> <span class="keyword">from</span> bfs(graph, queue, visited=visited)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bfs_paths</span>(<span class="params">graph, queue, goal</span>):</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> queue:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    (start, path) = queue.pop(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">if</span> start == goal:</span><br><span class="line">        <span class="keyword">yield</span> path</span><br><span class="line">    queue += [(vertex, path + [vertex]) <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(path)]</span><br><span class="line">    <span class="keyword">yield</span> <span class="keyword">from</span> bfs_paths(graph, queue, goal)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">graph = &#123;</span><br><span class="line">    <span class="string">&#x27;A&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;B&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;D&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;C&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;D&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;E&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;F&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;C&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> bfs(graph, [<span class="string">&#x27;A&#x27;</span>])]))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([path <span class="keyword">for</span> path <span class="keyword">in</span> bfs_paths(graph, [(<span class="string">&#x27;A&#x27;</span>, [<span class="string">&#x27;A&#x27;</span>])], <span class="string">&#x27;F&#x27;</span>)]))</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Algorithm</category>
       </categories>
   </entry>
   <entry>
@@ -376,22 +392,6 @@
 ]]></content>
       <categories>
         <category>Setup</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Implementations of DFS and BFS in Python</title>
-    <url>/2014/implementations-of-dfs-and-bfs-in-python.html</url>
-    <content><![CDATA[<p><a href="http://zh.wikipedia.org/zh-tw/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">DFS</a> 和 <a href="http://zh.wikipedia.org/zh-tw/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">BFS</a> 在資料結構裡有教，是很基礎的演算法。</p>
-<span id="more"></span>
-<p>在 <a href="http://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/">Edd Mann 的網誌</a>上看到 Python 的實作，由其中學到 <code>yield from</code> 的用法。下面利用 <code>yield from</code> 的特性，將該網誌中提到的實作改寫成 generator 的型式。同步放在 Gist 上：<a href="https://gist.github.com/changyuheng/08ffb779d83679393926">DFS</a>、<a href="https://gist.github.com/changyuheng/97d320206af9a0018d7d">BFS</a>。</p>
-<p><strong>DFS</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">dfs</span>(<span class="params">graph, start, visited=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> visited <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        visited = <span class="built_in">set</span>()</span><br><span class="line">    <span class="keyword">if</span> start <span class="keyword">in</span> visited:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    <span class="keyword">yield</span> start</span><br><span class="line">    visited.add(start)</span><br><span class="line">    <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - visited:</span><br><span class="line">        <span class="keyword">yield</span> <span class="keyword">from</span> dfs(graph, vertex, visited=visited)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">dfs_paths</span>(<span class="params">graph, start, goal, path=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> path <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        path = [start]</span><br><span class="line">    <span class="keyword">if</span> start == goal:</span><br><span class="line">        <span class="keyword">yield</span> path</span><br><span class="line">    <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(path):</span><br><span class="line">        <span class="keyword">yield</span> <span class="keyword">from</span> dfs_paths(graph, vertex, goal, path=path + [vertex])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">graph = &#123;</span><br><span class="line">    <span class="string">&#x27;A&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;B&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;D&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;C&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;D&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;E&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;F&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;C&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> dfs(graph, <span class="string">&#x27;A&#x27;</span>)]))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([path <span class="keyword">for</span> path <span class="keyword">in</span> dfs_paths(graph, <span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>)]))</span><br></pre></td></tr></table></figure>
-
-<p><strong>BFS</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bfs</span>(<span class="params">graph, queue, visited=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> visited <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        visited = <span class="built_in">set</span>()</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> queue:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    start = queue.pop(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">yield</span> start</span><br><span class="line">    visited.add(start)</span><br><span class="line">    queue += [vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(queue) - visited]</span><br><span class="line">    <span class="keyword">yield</span> <span class="keyword">from</span> bfs(graph, queue, visited=visited)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bfs_paths</span>(<span class="params">graph, queue, goal</span>):</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> queue:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    (start, path) = queue.pop(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">if</span> start == goal:</span><br><span class="line">        <span class="keyword">yield</span> path</span><br><span class="line">    queue += [(vertex, path + [vertex]) <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(path)]</span><br><span class="line">    <span class="keyword">yield</span> <span class="keyword">from</span> bfs_paths(graph, queue, goal)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">graph = &#123;</span><br><span class="line">    <span class="string">&#x27;A&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;B&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;D&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;C&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;D&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;E&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;F&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;C&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> bfs(graph, [<span class="string">&#x27;A&#x27;</span>])]))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([path <span class="keyword">for</span> path <span class="keyword">in</span> bfs_paths(graph, [(<span class="string">&#x27;A&#x27;</span>, [<span class="string">&#x27;A&#x27;</span>])], <span class="string">&#x27;F&#x27;</span>)]))</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Algorithm</category>
       </categories>
   </entry>
   <entry>
@@ -624,6 +624,41 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
+    <title>Port LEDE 17.01 to LinkIt Smart 7688</title>
+    <url>/2017/port-lede-17-01-to-linkit-smart-7688.html</url>
+    <content><![CDATA[<p>心血來潮幫忙把 LinkIt Smart 7688 的作業系統從 <a href="https://forum.openwrt.org/viewtopic.php?pid=315110">OpenWrt Chaos Calmer 15.05.1</a> 升級到 <a href="https://lede-project.org/releases/17.01/">LEDE 17.01</a>。</p>
+<span id="more"></span>
+
+<p><img src="https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/greetings.png"></p>
+<h1 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h1><p>最重要的改變當然就是各個套件的版本變新了。像是：</p>
+<ol>
+<li>Linux kernel 從 3.18 升級成 4.4.x。</li>
+<li>Node 從 0.12.x 升級成 4.4.x。</li>
+<li>支援 Python 3.6（預編的 image 裡沒有放，要自己重新編譯或是透過 opkg 安裝）。</li>
+</ol>
+<p>此外，這個版本才是真正的完全開源。本來 MediaTek 在 OpenWrt 上放的 Wi-Fi driver 是 closed source，如果 kernel 升級造成 driver 版本對不上，就只能祈禱 MediaTek 會釋出配合的新版 driver。不過從官方的 <a href="https://github.com/MediaTek-Labs/linkit-smart-7688-feed/issues/37">issue list</a> 看來，目前 MediaTek 沒有再繼續維護這個 driver。</p>
+<p>好在 OpenWrt 有開發一套完全開源的 Wi-Fi driver <a href="https://github.com/openwrt/mt76">mt76</a> 給 MT7688 系列 chip 使用，所以這個 LEDE port 版本就採用這個 driver 了。</p>
+<p><img src="https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/wi-fi.png"></p>
+<h1 id="Tweak"><a href="#Tweak" class="headerlink" title="Tweak"></a>Tweak</h1><p>這個版本是我只稍微花一點時間做的玩票性質的東西，所以可能會有一些小問題。這些小問題就交給讀者再繼續努力了。</p>
+<p>以下列出我已經測試的部分：</p>
+<ol>
+<li>Serial console</li>
+<li>Wi-Fi Access Point mode</li>
+<li>從 MediaTek 的網頁上設定 password。</li>
+<li>SSH login</li>
+<li>Python 2.7</li>
+<li>Node 4.4.5</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/website.png"></p>
+<h1 id="Repository"><a href="#Repository" class="headerlink" title="Repository"></a>Repository</h1><p>Repository 連結在此：<a href="https://github.com/changyuheng/linkit-smart-7688-feed">https://github.com/changyuheng/linkit-smart-7688-feed</a></p>
+<p>照著 README 即可進行編譯。</p>
+<p>也可以從這邊下載預編的 image：<a href="https://github.com/changyuheng/linkit-smart-7688-feed/releases/download/v0.1/lede-ramips-mt7688-LinkIt7688-squashfs-sysupgrade.bin">https://github.com/changyuheng/linkit-smart-7688-feed/releases/download/v0.1/lede-ramips-mt7688-LinkIt7688-squashfs-sysupgrade.bin</a></p>
+]]></content>
+      <categories>
+        <category>Embedded</category>
+      </categories>
+  </entry>
+  <entry>
     <title>My Ubuntu GNOME Tweaks</title>
     <url>/2014/my-ubuntu-gnome-tweaks.html</url>
     <content><![CDATA[<p>以 Ubuntu GNOME 14.04 LTS 英文語系為基礎。</p>
@@ -689,41 +724,6 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
-    <title>Port LEDE 17.01 to LinkIt Smart 7688</title>
-    <url>/2017/port-lede-17-01-to-linkit-smart-7688.html</url>
-    <content><![CDATA[<p>心血來潮幫忙把 LinkIt Smart 7688 的作業系統從 <a href="https://forum.openwrt.org/viewtopic.php?pid=315110">OpenWrt Chaos Calmer 15.05.1</a> 升級到 <a href="https://lede-project.org/releases/17.01/">LEDE 17.01</a>。</p>
-<span id="more"></span>
-
-<p><img src="https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/greetings.png"></p>
-<h1 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h1><p>最重要的改變當然就是各個套件的版本變新了。像是：</p>
-<ol>
-<li>Linux kernel 從 3.18 升級成 4.4.x。</li>
-<li>Node 從 0.12.x 升級成 4.4.x。</li>
-<li>支援 Python 3.6（預編的 image 裡沒有放，要自己重新編譯或是透過 opkg 安裝）。</li>
-</ol>
-<p>此外，這個版本才是真正的完全開源。本來 MediaTek 在 OpenWrt 上放的 Wi-Fi driver 是 closed source，如果 kernel 升級造成 driver 版本對不上，就只能祈禱 MediaTek 會釋出配合的新版 driver。不過從官方的 <a href="https://github.com/MediaTek-Labs/linkit-smart-7688-feed/issues/37">issue list</a> 看來，目前 MediaTek 沒有再繼續維護這個 driver。</p>
-<p>好在 OpenWrt 有開發一套完全開源的 Wi-Fi driver <a href="https://github.com/openwrt/mt76">mt76</a> 給 MT7688 系列 chip 使用，所以這個 LEDE port 版本就採用這個 driver 了。</p>
-<p><img src="https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/wi-fi.png"></p>
-<h1 id="Tweak"><a href="#Tweak" class="headerlink" title="Tweak"></a>Tweak</h1><p>這個版本是我只稍微花一點時間做的玩票性質的東西，所以可能會有一些小問題。這些小問題就交給讀者再繼續努力了。</p>
-<p>以下列出我已經測試的部分：</p>
-<ol>
-<li>Serial console</li>
-<li>Wi-Fi Access Point mode</li>
-<li>從 MediaTek 的網頁上設定 password。</li>
-<li>SSH login</li>
-<li>Python 2.7</li>
-<li>Node 4.4.5</li>
-</ol>
-<p><img src="https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/website.png"></p>
-<h1 id="Repository"><a href="#Repository" class="headerlink" title="Repository"></a>Repository</h1><p>Repository 連結在此：<a href="https://github.com/changyuheng/linkit-smart-7688-feed">https://github.com/changyuheng/linkit-smart-7688-feed</a></p>
-<p>照著 README 即可進行編譯。</p>
-<p>也可以從這邊下載預編的 image：<a href="https://github.com/changyuheng/linkit-smart-7688-feed/releases/download/v0.1/lede-ramips-mt7688-LinkIt7688-squashfs-sysupgrade.bin">https://github.com/changyuheng/linkit-smart-7688-feed/releases/download/v0.1/lede-ramips-mt7688-LinkIt7688-squashfs-sysupgrade.bin</a></p>
-]]></content>
-      <categories>
-        <category>Embedded</category>
-      </categories>
-  </entry>
-  <entry>
     <title>PTT Efficient Poster</title>
     <url>/2007/ptt-efficient-poster.html</url>
     <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/ptt-efficient-poster/master/demo.gif" alt="screenshot"></p>
@@ -770,6 +770,28 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
+    <title>Python Learning Resources</title>
+    <url>/2014/python-learning-resources.html</url>
+    <content><![CDATA[<p>同事在問 Python 該如何入門，順手將整理的資料與大眾分享。</p>
+<p>既然要學，就不要拖著歷史的包袱，所以建議直接學習 Python 3。</p>
+<p>對於有程式設計基礎的朋友，可依下列項目順序學習：</p>
+<span id="more"></span>
+
+<ol>
+<li>官網的 <a href="https://docs.python.org/3/tutorial/">tutorial</a>。</li>
+<li><a href="http://shop.oreilly.com/product/0636920027072.do">Python Cookbook: Recipes for Mastering Python 3</a></li>
+<li><a href="http://www.amazon.com/Python-Practice-Concurrency-Libraries-Developers/dp/0321905636">Python in Practice: Create Better Programs Using Concurrency, Libraries, and Patterns (Developer’s Library)</a></li>
+</ol>
+<p>Libraries：</p>
+<ol>
+<li><a href="https://github.com/vinta/awesome-python">https://github.com/vinta/awesome-python</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+  </entry>
+  <entry>
     <title>PTT 帳號被砍事件</title>
     <url>/2015/ptt-%E5%B8%B3%E8%99%9F%E8%A2%AB%E7%A0%8D%E4%BA%8B%E4%BB%B6.html</url>
     <content><![CDATA[<p>事件起源於多年前我寫了一個<a href="https://changyuheng.github.io/2007/11/05/ptt-efficient-poster/">程式</a>，用來讓 PTT 的發文者能得到與文章字數相符的稿酬。</p>
@@ -809,28 +831,6 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
-    <title>Python Learning Resources</title>
-    <url>/2014/python-learning-resources.html</url>
-    <content><![CDATA[<p>同事在問 Python 該如何入門，順手將整理的資料與大眾分享。</p>
-<p>既然要學，就不要拖著歷史的包袱，所以建議直接學習 Python 3。</p>
-<p>對於有程式設計基礎的朋友，可依下列項目順序學習：</p>
-<span id="more"></span>
-
-<ol>
-<li>官網的 <a href="https://docs.python.org/3/tutorial/">tutorial</a>。</li>
-<li><a href="http://shop.oreilly.com/product/0636920027072.do">Python Cookbook: Recipes for Mastering Python 3</a></li>
-<li><a href="http://www.amazon.com/Python-Practice-Concurrency-Libraries-Developers/dp/0321905636">Python in Practice: Create Better Programs Using Concurrency, Libraries, and Patterns (Developer’s Library)</a></li>
-</ol>
-<p>Libraries：</p>
-<ol>
-<li><a href="https://github.com/vinta/awesome-python">https://github.com/vinta/awesome-python</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Python logging module example</title>
     <url>/2015/python-logging-module-example.html</url>
     <content><![CDATA[<p>Python 的 logging module 功能完整強大，但手冊裡卻沒有一個簡明的 config 範例。</p>
@@ -845,15 +845,6 @@ ABCDEFG<br />
 ]]></content>
       <categories>
         <category>Python</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Syncing Samba Accounts with Unix Login Accounts</title>
-    <url>/2011/syncing-samba-accounts-with-unix-login-accounts.html</url>
-    <content><![CDATA[<p>libpam-smbpass</p>
-]]></content>
-      <categories>
-        <category>Setup</category>
       </categories>
   </entry>
   <entry>
@@ -878,6 +869,15 @@ ABCDEFG<br />
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> -e</span><br><span class="line"></span><br><span class="line">ip=$(ip -f inet addr show eth0 | grep -Po <span class="string">&#x27;inet \K[\d.]+&#x27;</span>)</span><br><span class="line">( sleep 10 ; curl <span class="string">&quot;https://url-to-update-ip-address&quot;</span> )</span><br></pre></td></tr></table></figure>
 
 <h2 id="安裝-nvm、node"><a href="#安裝-nvm、node" class="headerlink" title="安裝 nvm、node"></a>安裝 nvm、node</h2><h2 id="用-github-webhook-handler-寫一個-handler-來更新-blog。將-handler-加到-systemd-service。"><a href="#用-github-webhook-handler-寫一個-handler-來更新-blog。將-handler-加到-systemd-service。" class="headerlink" title="用 github-webhook-handler 寫一個 handler 來更新 blog。將 handler 加到 systemd service。"></a>用 github-webhook-handler 寫一個 handler 來更新 blog。將 handler 加到 systemd service。</h2><p><a href="https://github.com/rvagg/github-webhook-handler">https://github.com/rvagg/github-webhook-handler</a></p>
+]]></content>
+      <categories>
+        <category>Setup</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Syncing Samba Accounts with Unix Login Accounts</title>
+    <url>/2011/syncing-samba-accounts-with-unix-login-accounts.html</url>
+    <content><![CDATA[<p>libpam-smbpass</p>
 ]]></content>
       <categories>
         <category>Setup</category>
@@ -1068,40 +1068,6 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
-    <title>When Hexo Meets GitHub Pages and Travis CI plus Raspberry Pi</title>
-    <url>/2015/when-hexo-static-site-meets-github-pages-and-travis-ci.html</url>
-    <content><![CDATA[<p>JS 很有吸引力、Hexo 是台灣人寫的、速度比 Octopress 快、default 支援 GitHub Flavored Markdown，所以選 Hexo。</p>
-<span id="more"></span>
-<p>Hexo 是一個 static site generator，static site 是指 website 由 static web page 所組成。獲取 static web page 的 client 端得到的 web page，和儲存於 server 端的 web page 一模一樣。與 dynamic website 的 server 端即時產生 web page 傳送給 client 端不同，static site 的 server 端不需要具備即時生成不同 web page 的能力。</p>
-<p>Travis-CI 提供了 hook GitHub repository event 的功能。開啟 hook 後，便會依照 repository 裡 .travis.yml 內的設定來執行。</p>
-<p>GitHub repository 特定的 branch 會被 GitHub 當作 static web site 的內容來 render，render 的引擎是 Jekyll，因此可以放純 HTML 檔案也可以放 Jekyll 會 parse 的檔案。</p>
-<p>本來 Hexo 的運作流程是，在 local 用 markup 撰寫文章，完成後執行 Hexo 的命令來 parse 並 render 原始檔案，生成由 HTML 構成的 static web site，再將生成出來的內容 push 到 GitHub repository 的特定 branch。</p>
-<p>但是依賴 local Hexo 指令有個缺點：在沒有裝 Hexo 環境的裝置就沒辦法更新 web site 了。Hexo 環境雖然也不是很難安裝，但是要裝東西就是麻煩，尤其是突然有點靈感想要用手機或平板來寫點東西時特別困擾。</p>
-<p>所以我們應該妥善運用網路上佛心來著的服務，像是 Travis CI。我們可以把透過 Hexo 產生 HTML 並 push 到 GitHub 這個流程，丟到 Travis CI 上，讓它來代理。Hook Travis CI 很簡單，其他地方也有專門針對 Hexo 的教學了。這篇文章的重點是在於，介紹一個 tricky 的方法來 push。</p>
-<p>GitHub 支援 token 認證，token 就像是另一把隨時可以被回收鑰匙，透過 token 就可以有 write repository 的權限。可是很可惜的，目前 GitHub 沒有提供為個別的 repository 產生 token 的服務，每一個 token 都能 write GitHub 帳號下的所有 repository。這實在有點恐怖。還好 GitHub 支援每一個 repository 單獨設定 SSH public key 認證。所以重點來了，我們該怎麼讓 Travis CI 擁有 SSH key pair 呢？總不能大剌剌的把 key pair 放在 repository 裡吧？免費的 repository 都是公開的，這樣做也太搞笑了。另一種方法是，先把 SSH key 加密再放上 Travis CI，把密碼寫在 Travis CI 的環境變數裡，讓 Travis CI runtime 再把 key 解出來。目前網路上只看到這二種做法。</p>
-<p>不過上面這二種方法都有用到 Travis CI 的環境變數，我實在很納悶，何不直接把 SSH key pair 當成變數就好了？也許是因為 public key 的內容含有空白和換行及其他特殊字元，這些字元在 runtime 直接 assign 給 shell 的 variable 會發生與期待不符的結果吧。這邊要說的 tricky 方法就是，把那二把 key 先用 Base64 encode，這樣就可以正確 assign 給 shell 的 variable，runtime 再把 variable decode 回 key file。這樣這個流程就能順利走完了！</p>
-<p>以後我們就可以直接在 GitHub 網頁上編輯 Markdown 檔案，讓 GitHub 網頁來幫我們 push、Travis CI 幫我們 render 和 push。也可以搭配其他線上的所見即所得編輯器，有些編輯器還可以連結 GitHub 帳號。總之這樣以後就可以只管專心寫文章，不必做 routine 的事。</p>
-<p>接著，因為剛好有閒置的樹莓派，我索性把 static site 放在樹莓派上。所以上面這個自動化流程還必須涵蓋到更新樹莓派上面的內容。剛好 GitHub 有提供 webhook 服務，當 repository 更新時，GitHub webhook 會發 http request 出來。GitHub 上有網友寫好現成的 webhook handler，抓下來設定一下，放在樹莓派上面跑，這樣就可以透過 GitHub 的 request 來 trigger 自動更新 website 了。</p>
-<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ol>
-<li><a href="https://help.github.com/articles/using-jekyll-with-pages/">Using Jekyll with Pages</a></li>
-<li><a href="http://zespia.tw/blog/2012/10/11/hexo-debut/">Hexo 颯爽登場！</a></li>
-<li><a href="https://github.com/nlf/node-github-hook">node-github-hook</a></li>
-<li><a href="https://github.com/rvagg/github-webhook-handler">github-webhook-handler</a></li>
-<li><a href="http://zespia.tw/blog/2015/01/21/continuous-deployment-to-github-with-travis/">用 Travis CI 自動部署網站到 GitHub</a></li>
-<li><a href="https://github.com/changyuheng/changyuheng.github.io/blob/hexo3/.travis.yml">我的 .travis.yml</a></li>
-<li><a href="https://www.staticgen.com/">Top Open-Source Static Site Generators</a></li>
-<li><a href="https://travis-ci.org/">Travis CI</a></li>
-<li><a href="https://developer.github.com/webhooks/">GitHub Webhooks</a></li>
-<li><a href="https://www.wikiwand.com/zh-tw/%E6%A0%91%E8%8E%93%E6%B4%BE">樹莓派</a></li>
-<li><a href="http://www.wikiwand.com/zh-tw/%E5%85%AC%E5%BC%80%E5%AF%86%E9%92%A5%E5%8A%A0%E5%AF%86">公開金鑰加密</a></li>
-<li><a href="http://docs.travis-ci.com/user/encryption-keys/">Encryption keys</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Setup</category>
-      </categories>
-  </entry>
-  <entry>
     <title>對程式設計師來說，提高薪水最好的建議是什麼？</title>
     <url>/2016/what-is-the-best-career-advice-for-a-software-developer-to-earn-a-higher-salary.html</url>
     <content><![CDATA[<p>關於這個問題，在 Quora 數則<a href="https://www.quora.com/What-is-the-best-career-advice-for-a-software-developer-to-earn-a-higher-salary">答案</a>中看到<a href="https://www.quora.com/What-is-the-best-career-advice-for-a-software-developer-to-earn-a-higher-salary/answer/Abhishek-Choudhary-11">一篇很棒的</a>，和大家分享。</p>
@@ -1153,6 +1119,40 @@ ABCDEFG<br />
 ]]></content>
       <categories>
         <category>Translation</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>When Hexo Meets GitHub Pages and Travis CI plus Raspberry Pi</title>
+    <url>/2015/when-hexo-static-site-meets-github-pages-and-travis-ci.html</url>
+    <content><![CDATA[<p>JS 很有吸引力、Hexo 是台灣人寫的、速度比 Octopress 快、default 支援 GitHub Flavored Markdown，所以選 Hexo。</p>
+<span id="more"></span>
+<p>Hexo 是一個 static site generator，static site 是指 website 由 static web page 所組成。獲取 static web page 的 client 端得到的 web page，和儲存於 server 端的 web page 一模一樣。與 dynamic website 的 server 端即時產生 web page 傳送給 client 端不同，static site 的 server 端不需要具備即時生成不同 web page 的能力。</p>
+<p>Travis-CI 提供了 hook GitHub repository event 的功能。開啟 hook 後，便會依照 repository 裡 .travis.yml 內的設定來執行。</p>
+<p>GitHub repository 特定的 branch 會被 GitHub 當作 static web site 的內容來 render，render 的引擎是 Jekyll，因此可以放純 HTML 檔案也可以放 Jekyll 會 parse 的檔案。</p>
+<p>本來 Hexo 的運作流程是，在 local 用 markup 撰寫文章，完成後執行 Hexo 的命令來 parse 並 render 原始檔案，生成由 HTML 構成的 static web site，再將生成出來的內容 push 到 GitHub repository 的特定 branch。</p>
+<p>但是依賴 local Hexo 指令有個缺點：在沒有裝 Hexo 環境的裝置就沒辦法更新 web site 了。Hexo 環境雖然也不是很難安裝，但是要裝東西就是麻煩，尤其是突然有點靈感想要用手機或平板來寫點東西時特別困擾。</p>
+<p>所以我們應該妥善運用網路上佛心來著的服務，像是 Travis CI。我們可以把透過 Hexo 產生 HTML 並 push 到 GitHub 這個流程，丟到 Travis CI 上，讓它來代理。Hook Travis CI 很簡單，其他地方也有專門針對 Hexo 的教學了。這篇文章的重點是在於，介紹一個 tricky 的方法來 push。</p>
+<p>GitHub 支援 token 認證，token 就像是另一把隨時可以被回收鑰匙，透過 token 就可以有 write repository 的權限。可是很可惜的，目前 GitHub 沒有提供為個別的 repository 產生 token 的服務，每一個 token 都能 write GitHub 帳號下的所有 repository。這實在有點恐怖。還好 GitHub 支援每一個 repository 單獨設定 SSH public key 認證。所以重點來了，我們該怎麼讓 Travis CI 擁有 SSH key pair 呢？總不能大剌剌的把 key pair 放在 repository 裡吧？免費的 repository 都是公開的，這樣做也太搞笑了。另一種方法是，先把 SSH key 加密再放上 Travis CI，把密碼寫在 Travis CI 的環境變數裡，讓 Travis CI runtime 再把 key 解出來。目前網路上只看到這二種做法。</p>
+<p>不過上面這二種方法都有用到 Travis CI 的環境變數，我實在很納悶，何不直接把 SSH key pair 當成變數就好了？也許是因為 public key 的內容含有空白和換行及其他特殊字元，這些字元在 runtime 直接 assign 給 shell 的 variable 會發生與期待不符的結果吧。這邊要說的 tricky 方法就是，把那二把 key 先用 Base64 encode，這樣就可以正確 assign 給 shell 的 variable，runtime 再把 variable decode 回 key file。這樣這個流程就能順利走完了！</p>
+<p>以後我們就可以直接在 GitHub 網頁上編輯 Markdown 檔案，讓 GitHub 網頁來幫我們 push、Travis CI 幫我們 render 和 push。也可以搭配其他線上的所見即所得編輯器，有些編輯器還可以連結 GitHub 帳號。總之這樣以後就可以只管專心寫文章，不必做 routine 的事。</p>
+<p>接著，因為剛好有閒置的樹莓派，我索性把 static site 放在樹莓派上。所以上面這個自動化流程還必須涵蓋到更新樹莓派上面的內容。剛好 GitHub 有提供 webhook 服務，當 repository 更新時，GitHub webhook 會發 http request 出來。GitHub 上有網友寫好現成的 webhook handler，抓下來設定一下，放在樹莓派上面跑，這樣就可以透過 GitHub 的 request 來 trigger 自動更新 website 了。</p>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ol>
+<li><a href="https://help.github.com/articles/using-jekyll-with-pages/">Using Jekyll with Pages</a></li>
+<li><a href="http://zespia.tw/blog/2012/10/11/hexo-debut/">Hexo 颯爽登場！</a></li>
+<li><a href="https://github.com/nlf/node-github-hook">node-github-hook</a></li>
+<li><a href="https://github.com/rvagg/github-webhook-handler">github-webhook-handler</a></li>
+<li><a href="http://zespia.tw/blog/2015/01/21/continuous-deployment-to-github-with-travis/">用 Travis CI 自動部署網站到 GitHub</a></li>
+<li><a href="https://github.com/changyuheng/changyuheng.github.io/blob/hexo3/.travis.yml">我的 .travis.yml</a></li>
+<li><a href="https://www.staticgen.com/">Top Open-Source Static Site Generators</a></li>
+<li><a href="https://travis-ci.org/">Travis CI</a></li>
+<li><a href="https://developer.github.com/webhooks/">GitHub Webhooks</a></li>
+<li><a href="https://www.wikiwand.com/zh-tw/%E6%A0%91%E8%8E%93%E6%B4%BE">樹莓派</a></li>
+<li><a href="http://www.wikiwand.com/zh-tw/%E5%85%AC%E5%BC%80%E5%AF%86%E9%92%A5%E5%8A%A0%E5%AF%86">公開金鑰加密</a></li>
+<li><a href="http://docs.travis-ci.com/user/encryption-keys/">Encryption keys</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Setup</category>
       </categories>
   </entry>
   <entry>
