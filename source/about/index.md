@@ -21,5 +21,5 @@ comments: false
 </center></p>
 
 <p><center>
-I'm a programmer.
+我是一名程式設計師
 </center></p>
