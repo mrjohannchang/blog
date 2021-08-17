@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-tw">
+<html lang="zh-TW">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"com.jrhenry.one","root":"/","images":"/images","scheme":"Gemini","version":"8.6.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"com.jrhenry.one","root":"/","images":"/images","scheme":"Gemini","version":"8.6.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 <meta name="description" content="臺灣新冠肺炎疫情資料圖報表（自動更新）：https:&#x2F;&#x2F;docs.google.com&#x2F;spreadsheets&#x2F;u&#x2F;1&#x2F;d&#x2F;1-a1njGi0h-j5sO80rhmgQZfpI8c2oA_sY5tuXGCNRjo&#x2F;edit 前言五月中情爆發以後，每日各家媒體報導的資訊雖更新飛快，但又十分紛亂。每篇報導內的資料，格式與詳盡程度各有不一，讓人不好消化。因此便蒙生了自己製做圖表來呈現制式的資料，讓">
 <meta property="og:type" content="article">
 <meta property="og:title" content="自製臺灣新冠肺炎即時疫情資料圖報表">
@@ -36,7 +36,7 @@
 <meta property="og:image" content="https://com.jrhenry.one/2021/%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8/Apps-Script-2.png">
 <meta property="og:image" content="https://com.jrhenry.one/2021/%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8/Apps-Script-3.png">
 <meta property="article:published_time" content="2021-05-26T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-08-17T01:54:39.205Z">
+<meta property="article:modified_time" content="2021-08-17T01:58:29.832Z">
 <meta property="article:author" content="Henry Chang">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://com.jrhenry.one/2021/%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8/%E6%AF%8F%E6%97%A5%E6%9C%AC%E5%9C%9F%E7%A2%BA%E8%A8%BA.png">
@@ -46,7 +46,7 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-tw","comments":true,"permalink":"https://com.jrhenry.one/2021/%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8","path":"2021/自製臺灣新冠肺炎疫情資料圖報表.html","title":"自製臺灣新冠肺炎即時疫情資料圖報表"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://com.jrhenry.one/2021/%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8","path":"2021/自製臺灣新冠肺炎疫情資料圖報表.html","title":"自製臺灣新冠肺炎即時疫情資料圖報表"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>自製臺灣新冠肺炎即時疫情資料圖報表 | Henry Jr. 電腦部</title>
@@ -70,7 +70,7 @@
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    <div class="toggle" aria-label="切換導航欄" role="button">
         <span class="toggle-line"></span>
         <span class="toggle-line"></span>
         <span class="toggle-line"></span>
@@ -97,12 +97,12 @@
 
 <nav class="site-nav">
   <ul class="main-menu menu">
-        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
-        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
-        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li>
-        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>關於</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔</a></li>
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
         </a>
       </li>
   </ul>
@@ -117,7 +117,7 @@
   </span>
   <div class="search-input-container">
     <input autocomplete="off" autocapitalize="off" maxlength="80"
-           placeholder="Searching..." spellcheck="false"
+           placeholder="搜尋..." spellcheck="false"
            type="search" class="search-input">
   </div>
   <span class="popup-btn-close" role="button">
@@ -147,10 +147,10 @@
     <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
-          Table of Contents
+          文章目錄
         </li>
         <li class="sidebar-nav-overview">
-          Overview
+          本站概要
         </li>
       </ul>
 
@@ -169,13 +169,13 @@
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
           <span class="site-state-item-count">35</span>
-          <span class="site-state-item-name">posts</span>
+          <span class="site-state-item-name">文章</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
         <span class="site-state-item-count">10</span>
-        <span class="site-state-item-name">categories</span></a>
+        <span class="site-state-item-name">分類</span></a>
       </div>
   </nav>
 </div>
@@ -193,7 +193,7 @@
     </header>
 
     
-  <div class="back-to-top" role="button" aria-label="Back to top">
+  <div class="back-to-top" role="button" aria-label="回到頂端">
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
@@ -214,7 +214,7 @@
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-tw">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="https://com.jrhenry.one/2021/%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -237,22 +237,22 @@
       <span class="post-meta-item-icon">
         <i class="far fa-calendar"></i>
       </span>
-      <span class="post-meta-item-text">Posted on</span>
+      <span class="post-meta-item-text">發表於</span>
 
-      <time title="Created: 5月 27日, 2021 12:00 凌晨" itemprop="dateCreated datePublished" datetime="2021-05-27T00:00:00+08:00">5月 27日, 2021</time>
+      <time title="創建時間：5月 27日, 2021 12:00 凌晨" itemprop="dateCreated datePublished" datetime="2021-05-27T00:00:00+08:00">5月 27日, 2021</time>
     </span>
       <span class="post-meta-item">
         <span class="post-meta-item-icon">
           <i class="far fa-calendar-check"></i>
         </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 8月 17日, 2021 9:54 上午" itemprop="dateModified" datetime="2021-08-17T09:54:39+08:00">8月 17日, 2021</time>
+        <span class="post-meta-item-text">更新於</span>
+        <time title="修改時間：8月 17日, 2021 9:58 上午" itemprop="dateModified" datetime="2021-08-17T09:58:29+08:00">8月 17日, 2021</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
       </span>
-      <span class="post-meta-item-text">In</span>
+      <span class="post-meta-item-text">分類於</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
           <a href="/categories/programming/" itemprop="url" rel="index"><span itemprop="name">Programming</span></a>
         </span>
@@ -265,7 +265,7 @@
       <span class="post-meta-item-icon">
         <i class="far fa-comment"></i>
       </span>
-      <span class="post-meta-item-text">Disqus: </span>
+      <span class="post-meta-item-text">Disqus：</span>
     
     <a title="disqus" href="/2021/%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8#disqus_thread" itemprop="discussionUrl">
       <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/自製臺灣新冠肺炎疫情資料圖報表.html" itemprop="commentCount"></span>
@@ -319,14 +319,14 @@
 <div class="post-copyright">
 <ul>
   <li class="post-copyright-author">
-      <strong>Post author:  </strong>Henry Chang
+      <strong>作者： </strong>Henry Chang
   </li>
   <li class="post-copyright-link">
-      <strong>Post link: </strong>
+      <strong>文章連結：</strong>
       <a href="https://com.jrhenry.one/2021/%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8" title="自製臺灣新冠肺炎即時疫情資料圖報表">https://com.jrhenry.one/2021/自製臺灣新冠肺炎疫情資料圖報表</a>
   </li>
   <li class="post-copyright-license">
-    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY</a> unless stating additionally.
+    <strong>版權聲明： </strong>本網誌所有文章除特別聲明外，均採用 <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY</a> 許可協議。轉載請註明出處！
   </li>
 </ul>
 </div>
@@ -375,7 +375,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">Henry Chang</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 強力驅動
   </div>
 
     </div>
