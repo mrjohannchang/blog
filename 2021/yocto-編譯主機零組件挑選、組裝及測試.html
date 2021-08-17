@@ -20,14 +20,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"com.jrhenry.one","root":"/","images":"/images","scheme":"Gemini","version":"8.6.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
-<meta name="description" content="背景需求：程式編譯，主要編譯 Yocto（低配版 Build Code Server）預算：4.5 萬 零件挑選中央處理器（CPU）挑選 CPU 有幾個重點，依優先順序分別為：售價（預算）、效能、功耗（耗電量、廢熱量）、C&#x2F;P 值。 OpenBenchmarking 上搜集了各型號 CPU 的 Linux Kernel 編譯時間，可用以評估各型 CPU 多核心編譯的效能：">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Yocto 編譯主機零組件挑選及組裝">
-<meta property="og:url" content="https://com.jrhenry.one/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D">
+<meta property="og:title" content="Yocto 編譯主機零組件挑選、組裝及測試">
+<meta property="og:url" content="https://com.jrhenry.one/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E3%80%81%E7%B5%84%E8%A3%9D%E5%8F%8A%E6%B8%AC%E8%A9%A6">
 <meta property="og:site_name" content="Henry Jr. 電腦部">
-<meta property="og:description" content="背景需求：程式編譯，主要編譯 Yocto（低配版 Build Code Server）預算：4.5 萬 零件挑選中央處理器（CPU）挑選 CPU 有幾個重點，依優先順序分別為：售價（預算）、效能、功耗（耗電量、廢熱量）、C&#x2F;P 值。 OpenBenchmarking 上搜集了各型號 CPU 的 Linux Kernel 編譯時間，可用以評估各型 CPU 多核心編譯的效能：">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="https://com.jrhenry.one/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/PC_Screws.jpg">
+<meta property="og:image" content="https://com.jrhenry.one/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E3%80%81%E7%B5%84%E8%A3%9D%E5%8F%8A%E6%B8%AC%E8%A9%A6/PC_Screws.jpg">
 <meta property="og:image" content="https://com.jrhenry.one/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/Timed-Linux-Kernel-Compilation.png">
 <meta property="og:image" content="https://com.jrhenry.one/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/AM4-Chipset-Spec.png">
 <meta property="og:image" content="https://com.jrhenry.one/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/AM4-Chipset-Compatibility.png">
@@ -86,20 +84,20 @@
 <meta property="og:image" content="https://com.jrhenry.one/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/temperature-chart-2.png">
 <meta property="og:image" content="https://com.jrhenry.one/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/temperature-chart-3.png">
 <meta property="article:published_time" content="2021-06-05T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-08-17T02:00:28.416Z">
+<meta property="article:modified_time" content="2021-08-17T04:11:40.733Z">
 <meta property="article:author" content="Henry Chang">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://com.jrhenry.one/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/PC_Screws.jpg">
+<meta name="twitter:image" content="https://com.jrhenry.one/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E3%80%81%E7%B5%84%E8%A3%9D%E5%8F%8A%E6%B8%AC%E8%A9%A6/PC_Screws.jpg">
 
 
-<link rel="canonical" href="https://com.jrhenry.one/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D.html">
+<link rel="canonical" href="https://com.jrhenry.one/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E3%80%81%E7%B5%84%E8%A3%9D%E5%8F%8A%E6%B8%AC%E8%A9%A6.html">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://com.jrhenry.one/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D","path":"2021/yocto-編譯主機零組件挑選及組裝.html","title":"Yocto 編譯主機零組件挑選及組裝"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://com.jrhenry.one/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E3%80%81%E7%B5%84%E8%A3%9D%E5%8F%8A%E6%B8%AC%E8%A9%A6","path":"2021/yocto-編譯主機零組件挑選、組裝及測試.html","title":"Yocto 編譯主機零組件挑選、組裝及測試"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Yocto 編譯主機零組件挑選及組裝 | Henry Jr. 電腦部</title>
+<title>Yocto 編譯主機零組件挑選、組裝及測試 | Henry Jr. 電腦部</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-44162683-1"></script>
   <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-44162683-1","only_pageview":false}</script>
@@ -265,7 +263,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://com.jrhenry.one/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D">
+    <link itemprop="mainEntityOfPage" href="https://com.jrhenry.one/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E3%80%81%E7%B5%84%E8%A3%9D%E5%8F%8A%E6%B8%AC%E8%A9%A6">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -278,7 +276,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Yocto 編譯主機零組件挑選及組裝
+          Yocto 編譯主機零組件挑選、組裝及測試
         </h1>
 
         <div class="post-meta-container">
@@ -296,7 +294,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新於</span>
-        <time title="修改時間：8月 17日, 2021 10:00 上午" itemprop="dateModified" datetime="2021-08-17T10:00:28+08:00">8月 17日, 2021</time>
+        <time title="修改時間：8月 17日, 2021 12:11 中午" itemprop="dateModified" datetime="2021-08-17T12:11:40+08:00">8月 17日, 2021</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -317,8 +315,8 @@
       </span>
       <span class="post-meta-item-text">Disqus：</span>
     
-    <a title="disqus" href="/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/yocto-編譯主機零組件挑選及組裝.html" itemprop="commentCount"></span>
+    <a title="disqus" href="/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E3%80%81%E7%B5%84%E8%A3%9D%E5%8F%8A%E6%B8%AC%E8%A9%A6#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/yocto-編譯主機零組件挑選、組裝及測試.html" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -332,12 +330,13 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <img src="/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/PC_Screws.jpg" class="" title="PC_Screws.jpg">
+        <img src="/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E3%80%81%E7%B5%84%E8%A3%9D%E5%8F%8A%E6%B8%AC%E8%A9%A6/PC_Screws.jpg" class="" title="PC_Screws.jpg">
 
-<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>需求：程式編譯，主要編譯 Yocto（低配版 Build Code Server）<br>預算：4.5 萬</p>
+<span id="more"></span>
+
+<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>需求：程式編譯，主要編譯 Yocto（低配版 Build Code Server）<br>預算：4 萬 5000 元</p>
 <h1 id="零件挑選"><a href="#零件挑選" class="headerlink" title="零件挑選"></a>零件挑選</h1><h2 id="中央處理器（CPU）"><a href="#中央處理器（CPU）" class="headerlink" title="中央處理器（CPU）"></a>中央處理器（CPU）</h2><p>挑選 CPU 有幾個重點，依優先順序分別為：售價（預算）、效能、功耗（耗電量、廢熱量）、C/P 值。</p>
 <p>OpenBenchmarking 上搜集了各型號 CPU 的 <a target="_blank" rel="noopener" href="https://openbenchmarking.org/test/pts/build-linux-kernel">Linux Kernel 編譯時間</a>，可用以評估各型 CPU 多核心編譯的效能：</p>
-<span id="more"></span>
 <p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/Timed-Linux-Kernel-Compilation.png" alt="yocto-編譯主機零組件挑選及組裝/Timed-Linux-Kernel-Compilation.png"></p>
 <p>伺服器版的 CPU 太貴，直接跳過。<a target="_blank" rel="noopener" href="https://www.amd.com/en/products/cpu/amd-ryzen-9-5950x">AMD Ryzen™ 9 5950X</a>、<a target="_blank" rel="noopener" href="https://www.amd.com/en/products/cpu/amd-ryzen-9-3950x">AMD Ryzen™ 9 3950X</a> 及 <a target="_blank" rel="noopener" href="https://ark.intel.com/content/www/us/en/ark/products/198017/intel-core-i9-10980xe-extreme-edition-processor-24-75m-cache-3-00-ghz.html">Intel® Core™ i9-10980XE</a> 這三顆 CPU 是目前家用主機的頂規。</p>
 <p>Intel 這顆效能表現與 AMD 這二顆相伯仲，但功耗高很多，所以先剔除。再來因為 5950X 和 3950X 這二顆都缺貨，也只能放棄。繼續往下的選擇中，<a target="_blank" rel="noopener" href="https://www.amd.com/en/products/cpu/amd-ryzen-9-5900x">AMD Ryzen™ 9 5900X</a> 效能相差不大，有貨，且 C/P 值比 5950X、3950X 都高很多，因此沒有什麼懸念，就選它了。</p>
@@ -360,17 +359,37 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ free</span><br><span class="line">              total        used        free      shared  buff/cache   available</span><br><span class="line">Mem:       16303912     1840356    13280940      873236     1182616    13286976</span><br><span class="line">Swap:       2097148           0     2097148</span><br></pre></td></tr></table></figure>
 
 <ol>
-<li>有掛載 Swap：<br> 掛 Swap： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">swapon -a</span><br></pre></td></tr></table></figure>
- 清記憶體： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sync; echo 3 | sudo tee /proc/sys/vm/drop_caches</span><br></pre></td></tr></table></figure>
- 開始搜集記憶體使用狀況： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">free -s 1 | tee memory-usage-log-swapon.txt</span><br></pre></td></tr></table></figure>
- 進行編譯。<br> 完成後確認，編譯過程中最低可用記憶體剩餘量： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep Mem  memory-usage-log-swapon.txt | awk &#x27;&#123;print $7&#125;&#x27; | sort -n | head -n 1</span><br></pre></td></tr></table></figure>
- 及最高 Swap 使用量： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep Swap  memory-usage-log-swapon.txt | awk &#x27;&#123;print $3&#125;&#x27; | sort -nr | head -n 1</span><br></pre></td></tr></table></figure>
- 最低可用記憶體剩餘量為 5.46 GB，最高 Swap 使用量為 321.75 MB。因此在 12 緒的 CPU 下編譯我的 Yocto 專案，搭配 16 GB 的記憶體是足夠的。本次編譯耗時 1:06:13.27。</li>
-<li>無掛載 Swap：<br> 卸 Swap： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">swapoff -a</span><br></pre></td></tr></table></figure>
- 清記憶體： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sync; echo 3 | sudo tee /proc/sys/vm/drop_caches</span><br></pre></td></tr></table></figure>
- 開始搜集記憶體使用狀況： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">free -s 1 | tee memory-usage-log-swapoff.txt</span><br></pre></td></tr></table></figure>
- 進行編譯。<br> 完成後確認，編譯過程中最低可用記憶體剩餘量： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep Mem memory-usage-log-swapoff.txt | awk &#x27;&#123;print $7&#125;&#x27; | sort -n | head -n 1</span><br></pre></td></tr></table></figure>
- 最低可用記憶體剩餘量為 5.24 GB，與開頭的經驗，編譯中 1 條執行緒約需 1 GB 相符。本次編譯耗時 1:06:10.88。</li>
+<li><p>有掛載 Swap：<br>掛 Swap：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">swapon -a</span><br></pre></td></tr></table></figure>
+
+<p>清記憶體：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sync; echo 3 | sudo tee /proc/sys/vm/drop_caches</span><br></pre></td></tr></table></figure>
+
+<p>開始搜集記憶體使用狀況：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">free -s 1 | tee memory-usage-log-swapon.txt</span><br></pre></td></tr></table></figure>
+
+<p>進行編譯。<br>完成後確認，編譯過程中最低可用記憶體剩餘量：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep Mem  memory-usage-log-swapon.txt | awk &#x27;&#123;print $7&#125;&#x27; | sort -n | head -n 1</span><br></pre></td></tr></table></figure>
+
+<p>及最高 Swap 使用量：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep Swap  memory-usage-log-swapon.txt | awk &#x27;&#123;print $3&#125;&#x27; | sort -nr | head -n 1</span><br></pre></td></tr></table></figure>
+
+<p>最低可用記憶體剩餘量為 5.46 GB，最高 Swap 使用量為 321.75 MB。因此在 12 緒的 CPU 下編譯我的 Yocto 專案，搭配 16 GB 的記憶體是足夠的。本次編譯耗時 1:06:13.27。</p>
+</li>
+<li><p>無掛載 Swap：<br>卸 Swap：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">swapoff -a</span><br></pre></td></tr></table></figure>
+
+<p>清記憶體：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sync; echo 3 | sudo tee /proc/sys/vm/drop_caches</span><br></pre></td></tr></table></figure>
+
+<p>開始搜集記憶體使用狀況：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">free -s 1 | tee memory-usage-log-swapoff.txt</span><br></pre></td></tr></table></figure>
+
+<p>進行編譯。<br>完成後確認，編譯過程中最低可用記憶體剩餘量：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep Mem memory-usage-log-swapoff.txt | awk &#x27;&#123;print $7&#125;&#x27; | sort -n | head -n 1</span><br></pre></td></tr></table></figure>
+
+<p>最低可用記憶體剩餘量為 5.24 GB，與開頭的經驗，編譯中 1 條執行緒約需 1 GB 相符。本次編譯耗時 1:06:10.88。</p>
+</li>
 </ol>
 <p>AMD Ryzen™ 9 5900X AM4 是 12 核 24 緒，因此 32 GB 的記憶體應足夠使用。同樣大小的記憶體也有價差，時脈、CL 值、會不會發光、品牌等都有影響。這次買了 DDR4-3600 CL18，其實應該選 DDR4-3200 CL16 的就好，因為二者效能差不多，但 DDR4-3600 CL18 的價格高了近 20%。這邊預算沒有控制好。</p>
 <p>DDR4-3200 vs. DDR4-3600 評測：</p>
@@ -391,12 +410,12 @@
 <p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/Airflow-in-Cases.png" alt="yocto-編譯主機零組件挑選及組裝/Airflow-in-Cases.png"></p>
 <p>挑選小型的機殼時，除了要注意 CPU 散熱器的高度外，還要看散熱器的體積對機殼內通風的影響。H210 的內部配置有一些亮點：</p>
 <ol>
-<li> 前進氣風扇的尺寸比後出風風扇的大，因此很容易可以達到機殼內正壓的配置。</li>
-<li> 風流設計看起來很合理，前方進風後方出風，中間會吹到 CPU、顯示卡和電源。</li>
-<li> 有附防塵濾網。</li>
-<li> 電源下置且有獨立空間。</li>
-<li> 可使用 ATX (PS/2) 標準的電源。</li>
-<li> 電源直接貼在背板，電源線可以直接接到電源上，不需要透過機殼自帶的電源延長線。</li>
+<li>前進氣風扇的尺寸比後出風風扇的大，因此很容易可以達到機殼內正壓的配置。</li>
+<li>風流設計看起來很合理，前方進風後方出風，中間會吹到 CPU、顯示卡和電源。</li>
+<li>有附防塵濾網。</li>
+<li>電源下置且有獨立空間。</li>
+<li>可使用 ATX (PS/2) 標準的電源。</li>
+<li>電源直接貼在背板，電源線可以直接接到電源上，不需要透過機殼自帶的電源延長線。</li>
 </ol>
 <p>像這種小型的機殼，因為顯卡離機殼底部很近，因此還要注意，若機殼下方會裝風扇，其風向應與顯卡風扇的風向一致。不是所有顯卡的風扇都是往晶片方向吹的，也有反著吹的：</p>
 <p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/Display-Card-Wind-Direction.png" alt="yocto-編譯主機零組件挑選及組裝/Display-Card-Wind-Direction.png"></p>
@@ -507,7 +526,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>文章連結：</strong>
-      <a href="https://com.jrhenry.one/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D" title="Yocto 編譯主機零組件挑選及組裝">https://com.jrhenry.one/2021/yocto-編譯主機零組件挑選及組裝</a>
+      <a href="https://com.jrhenry.one/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E3%80%81%E7%B5%84%E8%A3%9D%E5%8F%8A%E6%B8%AC%E8%A9%A6" title="Yocto 編譯主機零組件挑選、組裝及測試">https://com.jrhenry.one/2021/yocto-編譯主機零組件挑選、組裝及測試</a>
   </li>
   <li class="post-copyright-license">
     <strong>版權聲明： </strong>本網誌所有文章除特別聲明外，均採用 <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY</a> 許可協議。轉載請註明出處！

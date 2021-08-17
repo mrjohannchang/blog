@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Codeforces Problem 1B</title>
+    <url>/2014/codeforces-problem-1b.html</url>
+    <content><![CDATA[<p><a href="http://codeforces.com/problemset/problem/1/B">Codeforces Problem 1B</a></p>
+<p>這題考的是經典的試算表 (spreadsheet) 座標轉換。這個問題的重點在對數字進位的處理。訣竅在於把 one-based column 當成 zero-based 來處理。</p>
+<p><a href="http://codeforces.com/contest/1/submission/6457739">我的 Python 解法</a></p>
+]]></content>
+      <categories>
+        <category>Algorithm</category>
+      </categories>
+  </entry>
+  <entry>
     <title>AutoCheckIn for Garena</title>
     <url>/2008/autocheckin-for-garena.html</url>
     <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/garena-autocheckin/master/screenshot.png" alt="screenshot"></p>
@@ -29,17 +40,6 @@
 ]]></content>
       <categories>
         <category>Software</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Codeforces Problem 1B</title>
-    <url>/2014/codeforces-problem-1b.html</url>
-    <content><![CDATA[<p><a href="http://codeforces.com/problemset/problem/1/B">Codeforces Problem 1B</a></p>
-<p>這題考的是經典的試算表 (spreadsheet) 座標轉換。這個問題的重點在對數字進位的處理。訣竅在於把 one-based column 當成 zero-based 來處理。</p>
-<p><a href="http://codeforces.com/contest/1/submission/6457739">我的 Python 解法</a></p>
-]]></content>
-      <categories>
-        <category>Algorithm</category>
       </categories>
   </entry>
   <entry>
@@ -194,51 +194,6 @@
       </categories>
   </entry>
   <entry>
-    <title>Cross Compiling Python 2.7.10 and 3.4.3 for MIPSel OpenWrt via uClibc with SSL and SQLite support</title>
-    <url>/2015/cross-compiling-python-3-4-3-for-mipsel.html</url>
-    <content><![CDATA[<p>The notes that were written after succeeding to cross compile Python 2.7.10 and 3.4.3 for MIPSel OpenWrt via uClibc.</p>
-<span id="more"></span>
-<p>I’m not gonna write a very detailed guide. I post my build script on the <a href="https://github.com/changyuheng/cpython-for-openwrt-mips/blob/3.4.3/build.sh">GitHub</a>, please leave a comment if you have any question.</p>
-<h2 id="Build-log-3-4-3"><a href="#Build-log-3-4-3" class="headerlink" title="Build log (3.4.3)"></a>Build log (3.4.3)</h2><script src="//gist.github.com/2e5b13276035fc1aa79a.js?file=build.log"></script>
-
-<h2 id="Run-test-cases-on-the-device-3-4-3"><a href="#Run-test-cases-on-the-device-3-4-3" class="headerlink" title="Run test cases on the device (3.4.3)"></a>Run test cases on the device (3.4.3)</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">bin/python3 lib/python3.4/<span class="built_in">test</span>/test___all__.py</span><br></pre></td></tr></table></figure>
-
-<h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><ul>
-<li>2.7.10 is 100% passed</li>
-<li>3.4.3’s xml.parsers.expat module will cause segmentation fault.</li>
-</ul>
-<h2 id="Refs"><a href="#Refs" class="headerlink" title="Refs"></a>Refs</h2><ol>
-<li><a href="http://randomsplat.com/id5-cross-compiling-python-for-embedded-linux.html">Cross Compiling Python for Embedded Linux</a></li>
-</ol>
-<h2 id="Thanks-to"><a href="#Thanks-to" class="headerlink" title="Thanks to"></a>Thanks to</h2><p><a href="https://tw.linkedin.com/pub/cheng-wig/90/1a1/896">Cheng Wig</a>, he showed me the positive attitude at work.</p>
-]]></content>
-      <categories>
-        <category>Embedded</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Deployment of NCKU CSIE Gitit Theme</title>
-    <url>/2010/deployment-of-ncku-csie-gitit-theme.html</url>
-    <content><![CDATA[<p><a href="http://gitit.net/">Gitit</a> 是一套以 Git 作為 base 的 wiki 系統。這套 wiki 的優點可以在<a href="http://walkingice.blogspot.tw/2011/11/gitit-git-based-wiki.html">只放拖鞋的鞋櫃</a>看到。在網路上的高手 <a href="http://macropodus.github.io/gitit_mix_vimwiki.html">Macropodus</a> 研究出如何和 Vimwiki 結合後，又更強化了他的優勢。</p>
-<p>不過 Gitit 預設的模版很沒有設計感，尤其是那個 logo 讓人看了很不舒服。所幸在 <a href="https://groups.google.com/forum/#!topic/gitit-discuss/g6rZWIOmiu8">Google Group</a> 發現了一套由成大資工所製作的好看佈景。以下將介紹如何安裝這套佈景：</p>
-<span id="more"></span>
-
-<ol>
-<li><p>下載佈景<br>打包好的佈景可以在 <a href="https://github.com/CrBoy/csiewiki">GitHub</a> 上找到</p>
-</li>
-<li><p>安裝佈景<br>將包裏解開後，取代 Gitit 原來的 static 和 templates 資料夾</p>
-</li>
-</ol>
-<p>到此為止都和這套佈景的官方安裝教學一樣。如果是採用發行版如 Ubuntu 所提供的 Gitit package，則已經完成。若是用 cabal 安裝, 則必須再安裝相依的套件，以 Ubuntu 為例：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt-get install libghc-filestore-data libc6 libffi6 libgmp10 libpcre3 zlib1g libjs-jquery libjs-jquery-ui</span><br></pre></td></tr></table></figure>
-
-<p>完成的樣子可以參考<a href="http://wiki.csie.ncku.edu.tw/">成大資工 Wiki</a>。</p>
-]]></content>
-      <categories>
-        <category>Setup</category>
-      </categories>
-  </entry>
-  <entry>
     <title>COSCUP 2016 閃電秀：理性‧勿戰</title>
     <url>/2016/coscup-2016-%E9%96%83%E9%9B%BB%E7%A7%80%EF%BC%9A2-%E5%88%86%E9%90%98%E6%89%93%E8%87%89-mtk.html</url>
     <content><![CDATA[<p>把之前寫的這篇<a href="https://medium.com/rosonix/%E8%AE%93-linkit-smart-7688-%E7%9A%84-wi-fi-ap-%E8%88%87-station-%E5%90%8C%E6%99%82%E9%81%8B%E4%BD%9C-dc9e043142b7">文章</a>拿去 COSCUP 2016 報閃電秀，讓大家開心一下。Project repository 在<a href="https://github.com/changyuheng/linkit-smart-7688-wifi-multi-role">這裡</a>。</p>
@@ -301,6 +256,51 @@
       </categories>
   </entry>
   <entry>
+    <title>Deployment of NCKU CSIE Gitit Theme</title>
+    <url>/2010/deployment-of-ncku-csie-gitit-theme.html</url>
+    <content><![CDATA[<p><a href="http://gitit.net/">Gitit</a> 是一套以 Git 作為 base 的 wiki 系統。這套 wiki 的優點可以在<a href="http://walkingice.blogspot.tw/2011/11/gitit-git-based-wiki.html">只放拖鞋的鞋櫃</a>看到。在網路上的高手 <a href="http://macropodus.github.io/gitit_mix_vimwiki.html">Macropodus</a> 研究出如何和 Vimwiki 結合後，又更強化了他的優勢。</p>
+<p>不過 Gitit 預設的模版很沒有設計感，尤其是那個 logo 讓人看了很不舒服。所幸在 <a href="https://groups.google.com/forum/#!topic/gitit-discuss/g6rZWIOmiu8">Google Group</a> 發現了一套由成大資工所製作的好看佈景。以下將介紹如何安裝這套佈景：</p>
+<span id="more"></span>
+
+<ol>
+<li><p>下載佈景<br>打包好的佈景可以在 <a href="https://github.com/CrBoy/csiewiki">GitHub</a> 上找到</p>
+</li>
+<li><p>安裝佈景<br>將包裏解開後，取代 Gitit 原來的 static 和 templates 資料夾</p>
+</li>
+</ol>
+<p>到此為止都和這套佈景的官方安裝教學一樣。如果是採用發行版如 Ubuntu 所提供的 Gitit package，則已經完成。若是用 cabal 安裝, 則必須再安裝相依的套件，以 Ubuntu 為例：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt-get install libghc-filestore-data libc6 libffi6 libgmp10 libpcre3 zlib1g libjs-jquery libjs-jquery-ui</span><br></pre></td></tr></table></figure>
+
+<p>完成的樣子可以參考<a href="http://wiki.csie.ncku.edu.tw/">成大資工 Wiki</a>。</p>
+]]></content>
+      <categories>
+        <category>Setup</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Cross Compiling Python 2.7.10 and 3.4.3 for MIPSel OpenWrt via uClibc with SSL and SQLite support</title>
+    <url>/2015/cross-compiling-python-3-4-3-for-mipsel.html</url>
+    <content><![CDATA[<p>The notes that were written after succeeding to cross compile Python 2.7.10 and 3.4.3 for MIPSel OpenWrt via uClibc.</p>
+<span id="more"></span>
+<p>I’m not gonna write a very detailed guide. I post my build script on the <a href="https://github.com/changyuheng/cpython-for-openwrt-mips/blob/3.4.3/build.sh">GitHub</a>, please leave a comment if you have any question.</p>
+<h2 id="Build-log-3-4-3"><a href="#Build-log-3-4-3" class="headerlink" title="Build log (3.4.3)"></a>Build log (3.4.3)</h2><script src="//gist.github.com/2e5b13276035fc1aa79a.js?file=build.log"></script>
+
+<h2 id="Run-test-cases-on-the-device-3-4-3"><a href="#Run-test-cases-on-the-device-3-4-3" class="headerlink" title="Run test cases on the device (3.4.3)"></a>Run test cases on the device (3.4.3)</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">bin/python3 lib/python3.4/<span class="built_in">test</span>/test___all__.py</span><br></pre></td></tr></table></figure>
+
+<h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><ul>
+<li>2.7.10 is 100% passed</li>
+<li>3.4.3’s xml.parsers.expat module will cause segmentation fault.</li>
+</ul>
+<h2 id="Refs"><a href="#Refs" class="headerlink" title="Refs"></a>Refs</h2><ol>
+<li><a href="http://randomsplat.com/id5-cross-compiling-python-for-embedded-linux.html">Cross Compiling Python for Embedded Linux</a></li>
+</ol>
+<h2 id="Thanks-to"><a href="#Thanks-to" class="headerlink" title="Thanks to"></a>Thanks to</h2><p><a href="https://tw.linkedin.com/pub/cheng-wig/90/1a1/896">Cheng Wig</a>, he showed me the positive attitude at work.</p>
+]]></content>
+      <categories>
+        <category>Embedded</category>
+      </categories>
+  </entry>
+  <entry>
     <title>fz - 模糊搜尋互動式 cd 自動補完套件</title>
     <url>/2017/fz-fuzzy-search-in-tab-completions-of-z.html</url>
     <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/fz/master/fz-demo.gif"></p>
@@ -336,22 +336,6 @@
 ]]></content>
       <categories>
         <category>Random</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Implementations of DFS and BFS in Python</title>
-    <url>/2014/implementations-of-dfs-and-bfs-in-python.html</url>
-    <content><![CDATA[<p><a href="http://zh.wikipedia.org/zh-tw/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">DFS</a> 和 <a href="http://zh.wikipedia.org/zh-tw/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">BFS</a> 在資料結構裡有教，是很基礎的演算法。</p>
-<span id="more"></span>
-<p>在 <a href="http://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/">Edd Mann 的網誌</a>上看到 Python 的實作，由其中學到 <code>yield from</code> 的用法。下面利用 <code>yield from</code> 的特性，將該網誌中提到的實作改寫成 generator 的型式。同步放在 Gist 上：<a href="https://gist.github.com/changyuheng/08ffb779d83679393926">DFS</a>、<a href="https://gist.github.com/changyuheng/97d320206af9a0018d7d">BFS</a>。</p>
-<p><strong>DFS</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">dfs</span>(<span class="params">graph, start, visited=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> visited <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        visited = <span class="built_in">set</span>()</span><br><span class="line">    <span class="keyword">if</span> start <span class="keyword">in</span> visited:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    <span class="keyword">yield</span> start</span><br><span class="line">    visited.add(start)</span><br><span class="line">    <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - visited:</span><br><span class="line">        <span class="keyword">yield</span> <span class="keyword">from</span> dfs(graph, vertex, visited=visited)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">dfs_paths</span>(<span class="params">graph, start, goal, path=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> path <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        path = [start]</span><br><span class="line">    <span class="keyword">if</span> start == goal:</span><br><span class="line">        <span class="keyword">yield</span> path</span><br><span class="line">    <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(path):</span><br><span class="line">        <span class="keyword">yield</span> <span class="keyword">from</span> dfs_paths(graph, vertex, goal, path=path + [vertex])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">graph = &#123;</span><br><span class="line">    <span class="string">&#x27;A&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;B&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;D&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;C&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;D&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;E&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;F&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;C&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> dfs(graph, <span class="string">&#x27;A&#x27;</span>)]))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([path <span class="keyword">for</span> path <span class="keyword">in</span> dfs_paths(graph, <span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>)]))</span><br></pre></td></tr></table></figure>
-
-<p><strong>BFS</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bfs</span>(<span class="params">graph, queue, visited=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> visited <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        visited = <span class="built_in">set</span>()</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> queue:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    start = queue.pop(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">yield</span> start</span><br><span class="line">    visited.add(start)</span><br><span class="line">    queue += [vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(queue) - visited]</span><br><span class="line">    <span class="keyword">yield</span> <span class="keyword">from</span> bfs(graph, queue, visited=visited)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bfs_paths</span>(<span class="params">graph, queue, goal</span>):</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> queue:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    (start, path) = queue.pop(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">if</span> start == goal:</span><br><span class="line">        <span class="keyword">yield</span> path</span><br><span class="line">    queue += [(vertex, path + [vertex]) <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(path)]</span><br><span class="line">    <span class="keyword">yield</span> <span class="keyword">from</span> bfs_paths(graph, queue, goal)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">graph = &#123;</span><br><span class="line">    <span class="string">&#x27;A&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;B&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;D&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;C&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;D&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;E&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;F&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;C&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> bfs(graph, [<span class="string">&#x27;A&#x27;</span>])]))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([path <span class="keyword">for</span> path <span class="keyword">in</span> bfs_paths(graph, [(<span class="string">&#x27;A&#x27;</span>, [<span class="string">&#x27;A&#x27;</span>])], <span class="string">&#x27;F&#x27;</span>)]))</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Algorithm</category>
       </categories>
   </entry>
   <entry>
@@ -392,6 +376,22 @@
 ]]></content>
       <categories>
         <category>Setup</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Implementations of DFS and BFS in Python</title>
+    <url>/2014/implementations-of-dfs-and-bfs-in-python.html</url>
+    <content><![CDATA[<p><a href="http://zh.wikipedia.org/zh-tw/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">DFS</a> 和 <a href="http://zh.wikipedia.org/zh-tw/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">BFS</a> 在資料結構裡有教，是很基礎的演算法。</p>
+<span id="more"></span>
+<p>在 <a href="http://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/">Edd Mann 的網誌</a>上看到 Python 的實作，由其中學到 <code>yield from</code> 的用法。下面利用 <code>yield from</code> 的特性，將該網誌中提到的實作改寫成 generator 的型式。同步放在 Gist 上：<a href="https://gist.github.com/changyuheng/08ffb779d83679393926">DFS</a>、<a href="https://gist.github.com/changyuheng/97d320206af9a0018d7d">BFS</a>。</p>
+<p><strong>DFS</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">dfs</span>(<span class="params">graph, start, visited=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> visited <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        visited = <span class="built_in">set</span>()</span><br><span class="line">    <span class="keyword">if</span> start <span class="keyword">in</span> visited:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    <span class="keyword">yield</span> start</span><br><span class="line">    visited.add(start)</span><br><span class="line">    <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - visited:</span><br><span class="line">        <span class="keyword">yield</span> <span class="keyword">from</span> dfs(graph, vertex, visited=visited)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">dfs_paths</span>(<span class="params">graph, start, goal, path=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> path <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        path = [start]</span><br><span class="line">    <span class="keyword">if</span> start == goal:</span><br><span class="line">        <span class="keyword">yield</span> path</span><br><span class="line">    <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(path):</span><br><span class="line">        <span class="keyword">yield</span> <span class="keyword">from</span> dfs_paths(graph, vertex, goal, path=path + [vertex])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">graph = &#123;</span><br><span class="line">    <span class="string">&#x27;A&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;B&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;D&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;C&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;D&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;E&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;F&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;C&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> dfs(graph, <span class="string">&#x27;A&#x27;</span>)]))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([path <span class="keyword">for</span> path <span class="keyword">in</span> dfs_paths(graph, <span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>)]))</span><br></pre></td></tr></table></figure>
+
+<p><strong>BFS</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bfs</span>(<span class="params">graph, queue, visited=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> visited <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        visited = <span class="built_in">set</span>()</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> queue:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    start = queue.pop(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">yield</span> start</span><br><span class="line">    visited.add(start)</span><br><span class="line">    queue += [vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(queue) - visited]</span><br><span class="line">    <span class="keyword">yield</span> <span class="keyword">from</span> bfs(graph, queue, visited=visited)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bfs_paths</span>(<span class="params">graph, queue, goal</span>):</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> queue:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    (start, path) = queue.pop(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">if</span> start == goal:</span><br><span class="line">        <span class="keyword">yield</span> path</span><br><span class="line">    queue += [(vertex, path + [vertex]) <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(path)]</span><br><span class="line">    <span class="keyword">yield</span> <span class="keyword">from</span> bfs_paths(graph, queue, goal)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">graph = &#123;</span><br><span class="line">    <span class="string">&#x27;A&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;B&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;D&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;C&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;D&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;E&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;F&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;C&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> bfs(graph, [<span class="string">&#x27;A&#x27;</span>])]))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([path <span class="keyword">for</span> path <span class="keyword">in</span> bfs_paths(graph, [(<span class="string">&#x27;A&#x27;</span>, [<span class="string">&#x27;A&#x27;</span>])], <span class="string">&#x27;F&#x27;</span>)]))</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Algorithm</category>
       </categories>
   </entry>
   <entry>
@@ -689,6 +689,67 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
+    <title>Python Learning Resources</title>
+    <url>/2014/python-learning-resources.html</url>
+    <content><![CDATA[<p>同事在問 Python 該如何入門，順手將整理的資料與大眾分享。</p>
+<p>既然要學，就不要拖著歷史的包袱，所以建議直接學習 Python 3。</p>
+<p>對於有程式設計基礎的朋友，可依下列項目順序學習：</p>
+<span id="more"></span>
+
+<ol>
+<li>官網的 <a href="https://docs.python.org/3/tutorial/">tutorial</a>。</li>
+<li><a href="http://shop.oreilly.com/product/0636920027072.do">Python Cookbook: Recipes for Mastering Python 3</a></li>
+<li><a href="http://www.amazon.com/Python-Practice-Concurrency-Libraries-Developers/dp/0321905636">Python in Practice: Create Better Programs Using Concurrency, Libraries, and Patterns (Developer’s Library)</a></li>
+</ol>
+<p>Libraries：</p>
+<ol>
+<li><a href="https://github.com/vinta/awesome-python">https://github.com/vinta/awesome-python</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>PTT 帳號被砍事件</title>
+    <url>/2015/ptt-%E5%B8%B3%E8%99%9F%E8%A2%AB%E7%A0%8D%E4%BA%8B%E4%BB%B6.html</url>
+    <content><![CDATA[<p>事件起源於多年前我寫了一個<a href="https://changyuheng.github.io/2007/11/05/ptt-efficient-poster/">程式</a>，用來讓 PTT 的發文者能得到與文章字數相符的稿酬。</p>
+<span id="more"></span>
+<p>突然有一天，有個人因為洗錢被檢舉了。</p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/0.html">https://changyuheng.github.io/static/ptt-account-incident/0.html</a></p>
+<p>想不到他自己心術不正，卻要牽拖工具。</p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/0a.html">https://changyuheng.github.io/static/ptt-account-incident/0a.html</a></p>
+<p>於是帳號站長就辦了他。</p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/0b.html">https://changyuheng.github.io/static/ptt-account-incident/0b.html</a></p>
+<p>帳號站長幾天後想想辦了違規的人還不夠爽快，在某個凌晨宣判要砍身為程式作者的我的帳號。</p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/1.html">https://changyuheng.github.io/static/ptt-account-incident/1.html</a></p>
+<p>我馬上去申訴，因為這實在太扯了；程式七年前就已經發佈了，後來只是舊文重發，告訴大家開源而已。但擔任的 AndroidDev 板主職務還是在我起床前就被轉移了。要不是我凌晨剛好看到判決文，立刻就去申訴，我猜板主職務就不只是被轉移而是直接被拔掉吧。PTT 官和官（帳號站長和小組長）之間的橫向溝通似乎蠻有效率的﹙我寄信問問題，要幾週才有回應，他們只要幾小時就能達成共識，而且還是在凌晨﹚。</p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/2.html">https://changyuheng.github.io/static/ptt-account-incident/2.html</a></p>
+<p>另一位帳號站長出來回應我的申訴，並且宣佈結案。明明還是有爭議，但是站方單方面的就結案了；我突然感覺到，他們把 PTT 的註冊規章用得很好：</p>
+<blockquote>
+<p>8、拒絕或終止您的使用(1)<br>您同意本站各級管理者基於其自行之考量，有權隨時終止本服務或其任何部分，<br>包含但不限於對您所為之刪除文章、鎖定文章、看板水桶或看板禁止發言、設定<br>劣文或退文、開處罰單、設定停權、設定變更文章數數值、設定變更 P 幣數值、<br>設定變更信箱容量數值、設定變更您於本站擔任之職務、退回註冊、砍除帳號等。<br>前述處分，並非無權或無故之處分，若您不願接受，請勿同意本條款。若本服務<br>被終止時，本站對您或任何第三人均不承擔責任。</p>
+</blockquote>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/3.html">https://changyuheng.github.io/static/ptt-account-incident/3.html</a></p>
+<p>明知已經結案，還是繼續申訴，站方果然信守承諾不回應。</p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/4.html">https://changyuheng.github.io/static/ptt-account-incident/4.html</a></p>
+<p>過了一陣子，具有同樣的功能的另一程式，因為相同理由被檢舉，但是站長不處置。</p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/5.html">https://changyuheng.github.io/static/ptt-account-incident/5.html</a></p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/6.html">https://changyuheng.github.io/static/ptt-account-incident/6.html</a></p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/7.html">https://changyuheng.github.io/static/ptt-account-incident/7.html</a></p>
+<p>寄信去問站長為什麼判決會有選擇性，但全無回音。</p>
+<p>這就是號稱自由開放的 PTT 的管理品質。</p>
+<p>由以下的討論串可以看出，力圖表明一切秉公處理的帳號站長，實際上不經意地流露出針對性的味道。</p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/8.html">https://changyuheng.github.io/static/ptt-account-incident/8.html</a></p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/9.html">https://changyuheng.github.io/static/ptt-account-incident/9.html</a></p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/10.html">https://changyuheng.github.io/static/ptt-account-incident/10.html</a></p>
+<p>新增申訴：</p>
+<p><a href="https://changyuheng.github.io/static/ptt-account-incident/11.html">https://changyuheng.github.io/static/ptt-account-incident/11.html</a></p>
+]]></content>
+      <categories>
+        <category>Random</category>
+      </categories>
+  </entry>
+  <entry>
     <title>PTT Efficient Poster</title>
     <url>/2007/ptt-efficient-poster.html</url>
     <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/ptt-efficient-poster/master/demo.gif" alt="screenshot"></p>
@@ -770,21 +831,16 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
-    <title>Python Learning Resources</title>
-    <url>/2014/python-learning-resources.html</url>
-    <content><![CDATA[<p>同事在問 Python 該如何入門，順手將整理的資料與大眾分享。</p>
-<p>既然要學，就不要拖著歷史的包袱，所以建議直接學習 Python 3。</p>
-<p>對於有程式設計基礎的朋友，可依下列項目順序學習：</p>
+    <title>Python logging module example</title>
+    <url>/2015/python-logging-module-example.html</url>
+    <content><![CDATA[<p>Python 的 logging module 功能完整強大，但手冊裡卻沒有一個簡明的 config 範例。</p>
+<p>記錄一下。</p>
 <span id="more"></span>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python3</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> logging</span><br><span class="line"><span class="keyword">import</span> logging.config</span><br><span class="line"></span><br><span class="line">logging.config.dictConfig(&#123;</span><br><span class="line">    <span class="string">&#x27;version&#x27;</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="string">&#x27;formatters&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;default&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;format&#x27;</span>: <span class="string">&#x27;[%(asctime)s|PID:%(process)d|TID:%(thread)d|%(filename)s:%(lineno)d|%(funcName)s|%(name)s|%(levelname)s] %(message)s&#x27;</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">&#x27;handlers&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;console&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;logging.StreamHandler&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;formatter&#x27;</span>: <span class="string">&#x27;default&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&#x27;http&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;logging.handlers.HTTPHandler&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;formatter&#x27;</span>: <span class="string">&#x27;default&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">            <span class="string">&#x27;host&#x27;</span>: <span class="string">&#x27;localhost:3000&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;url&#x27;</span>: <span class="string">&#x27;/log&#x27;</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&#x27;rotatingfile&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;logging.handlers.RotatingFileHandler&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;formatter&#x27;</span>: <span class="string">&#x27;default&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">            <span class="string">&#x27;filename&#x27;</span>: <span class="string">&#x27;test.log&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;maxBytes&#x27;</span>: <span class="number">512</span> * <span class="number">1024</span> * <span class="number">1024</span>,</span><br><span class="line">            <span class="string">&#x27;backupCount&#x27;</span>: <span class="number">1</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">&#x27;loggers&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;handlers&#x27;</span>: [<span class="string">&#x27;console&#x27;</span>, <span class="string">&#x27;http&#x27;</span>, <span class="string">&#x27;rotatingfile&#x27;</span>],</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">logging.info(<span class="string">&#x27;test1&#x27;</span>)</span><br><span class="line">logger = logging.getLogger()</span><br><span class="line">logger.info(<span class="string">&#x27;test&#x27;</span>)</span><br></pre></td></tr></table></figure>
 
-<ol>
-<li>官網的 <a href="https://docs.python.org/3/tutorial/">tutorial</a>。</li>
-<li><a href="http://shop.oreilly.com/product/0636920027072.do">Python Cookbook: Recipes for Mastering Python 3</a></li>
-<li><a href="http://www.amazon.com/Python-Practice-Concurrency-Libraries-Developers/dp/0321905636">Python in Practice: Create Better Programs Using Concurrency, Libraries, and Patterns (Developer’s Library)</a></li>
-</ol>
-<p>Libraries：</p>
-<ol>
-<li><a href="https://github.com/vinta/awesome-python">https://github.com/vinta/awesome-python</a></li>
+<h2 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h2><ol>
+<li><a href="http://docs.python-guide.org/en/latest/writing/logging/">The Hitchhiker’s Guide to Python</a></li>
+<li><a href="https://docs.python.org/2/library/logging.html">The Python Standard Library</a></li>
 </ol>
 ]]></content>
       <categories>
@@ -819,105 +875,10 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
-    <title>Python logging module example</title>
-    <url>/2015/python-logging-module-example.html</url>
-    <content><![CDATA[<p>Python 的 logging module 功能完整強大，但手冊裡卻沒有一個簡明的 config 範例。</p>
-<p>記錄一下。</p>
-<span id="more"></span>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python3</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> logging</span><br><span class="line"><span class="keyword">import</span> logging.config</span><br><span class="line"></span><br><span class="line">logging.config.dictConfig(&#123;</span><br><span class="line">    <span class="string">&#x27;version&#x27;</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="string">&#x27;formatters&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;default&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;format&#x27;</span>: <span class="string">&#x27;[%(asctime)s|PID:%(process)d|TID:%(thread)d|%(filename)s:%(lineno)d|%(funcName)s|%(name)s|%(levelname)s] %(message)s&#x27;</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">&#x27;handlers&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;console&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;logging.StreamHandler&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;formatter&#x27;</span>: <span class="string">&#x27;default&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&#x27;http&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;logging.handlers.HTTPHandler&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;formatter&#x27;</span>: <span class="string">&#x27;default&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">            <span class="string">&#x27;host&#x27;</span>: <span class="string">&#x27;localhost:3000&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;url&#x27;</span>: <span class="string">&#x27;/log&#x27;</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&#x27;rotatingfile&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;logging.handlers.RotatingFileHandler&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;formatter&#x27;</span>: <span class="string">&#x27;default&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">            <span class="string">&#x27;filename&#x27;</span>: <span class="string">&#x27;test.log&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;maxBytes&#x27;</span>: <span class="number">512</span> * <span class="number">1024</span> * <span class="number">1024</span>,</span><br><span class="line">            <span class="string">&#x27;backupCount&#x27;</span>: <span class="number">1</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">&#x27;loggers&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;handlers&#x27;</span>: [<span class="string">&#x27;console&#x27;</span>, <span class="string">&#x27;http&#x27;</span>, <span class="string">&#x27;rotatingfile&#x27;</span>],</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">logging.info(<span class="string">&#x27;test1&#x27;</span>)</span><br><span class="line">logger = logging.getLogger()</span><br><span class="line">logger.info(<span class="string">&#x27;test&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<h2 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h2><ol>
-<li><a href="http://docs.python-guide.org/en/latest/writing/logging/">The Hitchhiker’s Guide to Python</a></li>
-<li><a href="https://docs.python.org/2/library/logging.html">The Python Standard Library</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>PTT 帳號被砍事件</title>
-    <url>/2015/ptt-%E5%B8%B3%E8%99%9F%E8%A2%AB%E7%A0%8D%E4%BA%8B%E4%BB%B6.html</url>
-    <content><![CDATA[<p>事件起源於多年前我寫了一個<a href="https://changyuheng.github.io/2007/11/05/ptt-efficient-poster/">程式</a>，用來讓 PTT 的發文者能得到與文章字數相符的稿酬。</p>
-<span id="more"></span>
-<p>突然有一天，有個人因為洗錢被檢舉了。</p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/0.html">https://changyuheng.github.io/static/ptt-account-incident/0.html</a></p>
-<p>想不到他自己心術不正，卻要牽拖工具。</p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/0a.html">https://changyuheng.github.io/static/ptt-account-incident/0a.html</a></p>
-<p>於是帳號站長就辦了他。</p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/0b.html">https://changyuheng.github.io/static/ptt-account-incident/0b.html</a></p>
-<p>帳號站長幾天後想想辦了違規的人還不夠爽快，在某個凌晨宣判要砍身為程式作者的我的帳號。</p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/1.html">https://changyuheng.github.io/static/ptt-account-incident/1.html</a></p>
-<p>我馬上去申訴，因為這實在太扯了；程式七年前就已經發佈了，後來只是舊文重發，告訴大家開源而已。但擔任的 AndroidDev 板主職務還是在我起床前就被轉移了。要不是我凌晨剛好看到判決文，立刻就去申訴，我猜板主職務就不只是被轉移而是直接被拔掉吧。PTT 官和官（帳號站長和小組長）之間的橫向溝通似乎蠻有效率的﹙我寄信問問題，要幾週才有回應，他們只要幾小時就能達成共識，而且還是在凌晨﹚。</p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/2.html">https://changyuheng.github.io/static/ptt-account-incident/2.html</a></p>
-<p>另一位帳號站長出來回應我的申訴，並且宣佈結案。明明還是有爭議，但是站方單方面的就結案了；我突然感覺到，他們把 PTT 的註冊規章用得很好：</p>
-<blockquote>
-<p>8、拒絕或終止您的使用(1)<br>您同意本站各級管理者基於其自行之考量，有權隨時終止本服務或其任何部分，<br>包含但不限於對您所為之刪除文章、鎖定文章、看板水桶或看板禁止發言、設定<br>劣文或退文、開處罰單、設定停權、設定變更文章數數值、設定變更 P 幣數值、<br>設定變更信箱容量數值、設定變更您於本站擔任之職務、退回註冊、砍除帳號等。<br>前述處分，並非無權或無故之處分，若您不願接受，請勿同意本條款。若本服務<br>被終止時，本站對您或任何第三人均不承擔責任。</p>
-</blockquote>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/3.html">https://changyuheng.github.io/static/ptt-account-incident/3.html</a></p>
-<p>明知已經結案，還是繼續申訴，站方果然信守承諾不回應。</p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/4.html">https://changyuheng.github.io/static/ptt-account-incident/4.html</a></p>
-<p>過了一陣子，具有同樣的功能的另一程式，因為相同理由被檢舉，但是站長不處置。</p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/5.html">https://changyuheng.github.io/static/ptt-account-incident/5.html</a></p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/6.html">https://changyuheng.github.io/static/ptt-account-incident/6.html</a></p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/7.html">https://changyuheng.github.io/static/ptt-account-incident/7.html</a></p>
-<p>寄信去問站長為什麼判決會有選擇性，但全無回音。</p>
-<p>這就是號稱自由開放的 PTT 的管理品質。</p>
-<p>由以下的討論串可以看出，力圖表明一切秉公處理的帳號站長，實際上不經意地流露出針對性的味道。</p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/8.html">https://changyuheng.github.io/static/ptt-account-incident/8.html</a></p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/9.html">https://changyuheng.github.io/static/ptt-account-incident/9.html</a></p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/10.html">https://changyuheng.github.io/static/ptt-account-incident/10.html</a></p>
-<p>新增申訴：</p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/11.html">https://changyuheng.github.io/static/ptt-account-incident/11.html</a></p>
-]]></content>
-      <categories>
-        <category>Random</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Syncing Samba Accounts with Unix Login Accounts</title>
     <url>/2011/syncing-samba-accounts-with-unix-login-accounts.html</url>
     <content><![CDATA[<p>libpam-smbpass</p>
 ]]></content>
-      <categories>
-        <category>Setup</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Understanding Python Decorators</title>
-    <url>/2014/understanding-python-decorators.html</url>
-    <content><![CDATA[<p>Decorator 是一個 Python 中較為進階的語法，因為較難理解故常被提出來討論。這邊提供一個簡潔的說明。</p>
-<span id="more"></span>
-
-<p>假設有一名為 func 的 function 被名為 decor1 和 decor2 的二 decorator 修飾如下：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">@decor1</span></span><br><span class="line"><span class="meta">@decor2</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">func</span>(<span class="params">*args, **kwargs</span>):</span></span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
-
-<p>則當我們如下呼叫 func() 時：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">func(*args, **kwargs)</span><br></pre></td></tr></table></figure>
-
-<p>可以將之理解為：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">decor1(decor2(func))(*args, **kwargs)</span><br></pre></td></tr></table></figure>
-
-<p>更詳細的說明可以參考：</p>
-<ol>
-<li><a href="http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/">Understanding Python Decorators in 12 Easy Steps!</a></li>
-<li><a href="http://stackoverflow.com/a/739679">How can I make a chain of function decorators in Python?</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>在 Ubuntu 12.04 安裝 IT-830UP 晶片讀卡機與使用 WebATM</title>
-    <url>/2013/ubuntu-12-dot-04-an-zhuang-it-830up-jing-pian-du-qia-ji.html</url>
-    <content><![CDATA[<p><img src="http://www.ittec.com.tw/images/IT-830UP%28DM%29.jpg" alt="IT-830UP"></p>
-<span id="more"></span>
-
-<h2 id="步驟-1-安裝所需套件"><a href="#步驟-1-安裝所需套件" class="headerlink" title="步驟 1. 安裝所需套件"></a>步驟 1. 安裝所需套件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install pcscd pcsc-tools libccid</span><br></pre></td></tr></table></figure>
-
-<p>完成後可能需要自行重新啟動電腦才會生效。</p>
-<h2 id="步驟-2-依照-WebATM-提供的方法安裝所需程式，如：玉山銀行"><a href="#步驟-2-依照-WebATM-提供的方法安裝所需程式，如：玉山銀行" class="headerlink" title="步驟 2. 依照 WebATM 提供的方法安裝所需程式，如：玉山銀行"></a>步驟 2. 依照 WebATM 提供的方法安裝所需程式，如：<a href="http://netbank.esunbank.com.tw/webatm/Q&A_016.htm#01">玉山銀行</a></h2>]]></content>
       <categories>
         <category>Setup</category>
       </categories>
@@ -947,6 +908,45 @@ ABCDEFG<br />
 ]]></content>
       <categories>
         <category>Translation</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>在 Ubuntu 12.04 安裝 IT-830UP 晶片讀卡機與使用 WebATM</title>
+    <url>/2013/ubuntu-12-dot-04-an-zhuang-it-830up-jing-pian-du-qia-ji.html</url>
+    <content><![CDATA[<p><img src="http://www.ittec.com.tw/images/IT-830UP%28DM%29.jpg" alt="IT-830UP"></p>
+<span id="more"></span>
+
+<h2 id="步驟-1-安裝所需套件"><a href="#步驟-1-安裝所需套件" class="headerlink" title="步驟 1. 安裝所需套件"></a>步驟 1. 安裝所需套件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install pcscd pcsc-tools libccid</span><br></pre></td></tr></table></figure>
+
+<p>完成後可能需要自行重新啟動電腦才會生效。</p>
+<h2 id="步驟-2-依照-WebATM-提供的方法安裝所需程式，如：玉山銀行"><a href="#步驟-2-依照-WebATM-提供的方法安裝所需程式，如：玉山銀行" class="headerlink" title="步驟 2. 依照 WebATM 提供的方法安裝所需程式，如：玉山銀行"></a>步驟 2. 依照 WebATM 提供的方法安裝所需程式，如：<a href="http://netbank.esunbank.com.tw/webatm/Q&A_016.htm#01">玉山銀行</a></h2>]]></content>
+      <categories>
+        <category>Setup</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Understanding Python Decorators</title>
+    <url>/2014/understanding-python-decorators.html</url>
+    <content><![CDATA[<p>Decorator 是一個 Python 中較為進階的語法，因為較難理解故常被提出來討論。這邊提供一個簡潔的說明。</p>
+<span id="more"></span>
+
+<p>假設有一名為 func 的 function 被名為 decor1 和 decor2 的二 decorator 修飾如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">@decor1</span></span><br><span class="line"><span class="meta">@decor2</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">func</span>(<span class="params">*args, **kwargs</span>):</span></span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
+
+<p>則當我們如下呼叫 func() 時：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">func(*args, **kwargs)</span><br></pre></td></tr></table></figure>
+
+<p>可以將之理解為：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">decor1(decor2(func))(*args, **kwargs)</span><br></pre></td></tr></table></figure>
+
+<p>更詳細的說明可以參考：</p>
+<ol>
+<li><a href="http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/">Understanding Python Decorators in 12 Easy Steps!</a></li>
+<li><a href="http://stackoverflow.com/a/739679">How can I make a chain of function decorators in Python?</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Python</category>
       </categories>
   </entry>
   <entry>
@@ -1122,26 +1122,6 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
-    <title>Windows Photo Viewer Mouse Plug-in</title>
-    <url>/2009/windows-photo-viewer-mouse-plug-in.html</url>
-    <content><![CDATA[<p>This simple tool gives Windows Photo Viewer the following features:</p>
-<ol>
-<li>Middle click to toggle window’s size between normal and maximum.</li>
-<li>Scroll up/down to show previous/next image.</li>
-<li>Ctrl + scroll up/down to zoom in/out.</li>
-<li>A to show actual size.</li>
-<li>F to show fit size.</li>
-<li>Ctrl + A to toggle deafult presenting style between actual size and fit size.</li>
-</ol>
-<span id="more"></span>
-
-<p><strong><a href="https://raw.githubusercontent.com/changyuheng/windows-photo-viewer-mouse-plug-in/master/bin/windows-photo-viewer-mouse-plug-in.exe">Download</a></strong><br><strong><a href="https://github.com/changyuheng/windows-photo-viewer-mouse-plug-in">Source code</a></strong></p>
-]]></content>
-      <categories>
-        <category>Software</category>
-      </categories>
-  </entry>
-  <entry>
     <title>When Hexo Meets GitHub Pages and Travis CI plus Raspberry Pi</title>
     <url>/2015/when-hexo-static-site-meets-github-pages-and-travis-ci.html</url>
     <content><![CDATA[<p>JS 很有吸引力、Hexo 是台灣人寫的、速度比 Octopress 快、default 支援 GitHub Flavored Markdown，所以選 Hexo。</p>
@@ -1173,6 +1153,26 @@ ABCDEFG<br />
 ]]></content>
       <categories>
         <category>Setup</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Windows Photo Viewer Mouse Plug-in</title>
+    <url>/2009/windows-photo-viewer-mouse-plug-in.html</url>
+    <content><![CDATA[<p>This simple tool gives Windows Photo Viewer the following features:</p>
+<ol>
+<li>Middle click to toggle window’s size between normal and maximum.</li>
+<li>Scroll up/down to show previous/next image.</li>
+<li>Ctrl + scroll up/down to zoom in/out.</li>
+<li>A to show actual size.</li>
+<li>F to show fit size.</li>
+<li>Ctrl + A to toggle deafult presenting style between actual size and fit size.</li>
+</ol>
+<span id="more"></span>
+
+<p><strong><a href="https://raw.githubusercontent.com/changyuheng/windows-photo-viewer-mouse-plug-in/master/bin/windows-photo-viewer-mouse-plug-in.exe">Download</a></strong><br><strong><a href="https://github.com/changyuheng/windows-photo-viewer-mouse-plug-in">Source code</a></strong></p>
+]]></content>
+      <categories>
+        <category>Software</category>
       </categories>
   </entry>
   <entry>
@@ -1265,11 +1265,12 @@ ABCDEFG<br />
     <url>/2021/%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8.html</url>
     <content><![CDATA[<img src="/2021/%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8/%E6%AF%8F%E6%97%A5%E6%9C%AC%E5%9C%9F%E7%A2%BA%E8%A8%BA.png" class="" title="每日本土確診.png">
 
+<span id="more"></span>
+
 <p>臺灣新冠肺炎疫情資料圖報表（自動更新）：<a href="https://docs.google.com/spreadsheets/u/1/d/1-a1njGi0h-j5sO80rhmgQZfpI8c2oA_sY5tuXGCNRjo/edit">https://docs.google.com/spreadsheets/u/1/d/1-a1njGi0h-j5sO80rhmgQZfpI8c2oA_sY5tuXGCNRjo/edit</a></p>
 <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>五月中情爆發以後，每日各家媒體報導的資訊雖更新飛快，但又十分紛亂。每篇報導內的資料，格式與詳盡程度各有不一，讓人不好消化。因此便蒙生了自己製做圖表來呈現制式的資料，讓自己可以不需要再收看吵雜的新聞報導。</p>
 <h1 id="原始資料"><a href="#原始資料" class="headerlink" title="原始資料"></a>原始資料</h1><p>在行政院衛生福利部疾病管制署的資料開放平臺上，有公布新冠肺炎疫情的<a href="https://data.cdc.gov.tw/dataset/agsdctable-day-19cov">原始資料</a>。</p>
 <p>原始資料可直接匯入 Google 試算表，如下圖所示：</p>
-<span id="more"></span>
 <p><img src="%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8/%E5%8E%9F%E5%A7%8B%E8%B3%87%E6%96%99.png" alt="自製臺灣新冠肺炎疫情資料圖報表/原始資料.png"></p>
 <h1 id="製做圖表"><a href="#製做圖表" class="headerlink" title="製做圖表"></a>製做圖表</h1><p>原始資料的資訊量過於龐大，透過一些公式濃縮統整並以圖表呈現，可以讓資料更容易被閱讀。我將原始資料匯入<a href="https://docs.google.com/spreadsheets/d/1-a1njGi0h-j5sO80rhmgQZfpI8c2oA_sY5tuXGCNRjo/edit?usp=sharing">自製的試算表</a>後，另外又開了三張表單，分別在裡面呈現「每日新增本土確診數」、「縣市分布」及「年齡分布」。</p>
 <p><img src="%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8/%E6%AF%8F%E6%97%A5%E6%9C%AC%E5%9C%9F%E7%A2%BA%E8%A8%BA.png" alt="自製臺灣新冠肺炎疫情資料圖報表/每日本土確診.png"></p>
@@ -1293,14 +1294,15 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
-    <title>Yocto 編譯主機零組件挑選及組裝</title>
-    <url>/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D.html</url>
-    <content><![CDATA[<img src="/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/PC_Screws.jpg" class="" title="PC_Screws.jpg">
+    <title>Yocto 編譯主機零組件挑選、組裝及測試</title>
+    <url>/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E3%80%81%E7%B5%84%E8%A3%9D%E5%8F%8A%E6%B8%AC%E8%A9%A6.html</url>
+    <content><![CDATA[<img src="/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E3%80%81%E7%B5%84%E8%A3%9D%E5%8F%8A%E6%B8%AC%E8%A9%A6/PC_Screws.jpg" class="" title="PC_Screws.jpg">
 
-<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>需求：程式編譯，主要編譯 Yocto（低配版 Build Code Server）<br>預算：4.5 萬</p>
+<span id="more"></span>
+
+<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>需求：程式編譯，主要編譯 Yocto（低配版 Build Code Server）<br>預算：4 萬 5000 元</p>
 <h1 id="零件挑選"><a href="#零件挑選" class="headerlink" title="零件挑選"></a>零件挑選</h1><h2 id="中央處理器（CPU）"><a href="#中央處理器（CPU）" class="headerlink" title="中央處理器（CPU）"></a>中央處理器（CPU）</h2><p>挑選 CPU 有幾個重點，依優先順序分別為：售價（預算）、效能、功耗（耗電量、廢熱量）、C/P 值。</p>
 <p>OpenBenchmarking 上搜集了各型號 CPU 的 <a href="https://openbenchmarking.org/test/pts/build-linux-kernel">Linux Kernel 編譯時間</a>，可用以評估各型 CPU 多核心編譯的效能：</p>
-<span id="more"></span>
 <p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/Timed-Linux-Kernel-Compilation.png" alt="yocto-編譯主機零組件挑選及組裝/Timed-Linux-Kernel-Compilation.png"></p>
 <p>伺服器版的 CPU 太貴，直接跳過。<a href="https://www.amd.com/en/products/cpu/amd-ryzen-9-5950x">AMD Ryzen™ 9 5950X</a>、<a href="https://www.amd.com/en/products/cpu/amd-ryzen-9-3950x">AMD Ryzen™ 9 3950X</a> 及 <a href="https://ark.intel.com/content/www/us/en/ark/products/198017/intel-core-i9-10980xe-extreme-edition-processor-24-75m-cache-3-00-ghz.html">Intel® Core™ i9-10980XE</a> 這三顆 CPU 是目前家用主機的頂規。</p>
 <p>Intel 這顆效能表現與 AMD 這二顆相伯仲，但功耗高很多，所以先剔除。再來因為 5950X 和 3950X 這二顆都缺貨，也只能放棄。繼續往下的選擇中，<a href="https://www.amd.com/en/products/cpu/amd-ryzen-9-5900x">AMD Ryzen™ 9 5900X</a> 效能相差不大，有貨，且 C/P 值比 5950X、3950X 都高很多，因此沒有什麼懸念，就選它了。</p>
@@ -1323,17 +1325,37 @@ ABCDEFG<br />
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ free</span><br><span class="line">              total        used        free      shared  buff/cache   available</span><br><span class="line">Mem:       16303912     1840356    13280940      873236     1182616    13286976</span><br><span class="line">Swap:       2097148           0     2097148</span><br></pre></td></tr></table></figure>
 
 <ol>
-<li>有掛載 Swap：<br> 掛 Swap： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">swapon -a</span><br></pre></td></tr></table></figure>
- 清記憶體： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sync; echo 3 | sudo tee /proc/sys/vm/drop_caches</span><br></pre></td></tr></table></figure>
- 開始搜集記憶體使用狀況： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">free -s 1 | tee memory-usage-log-swapon.txt</span><br></pre></td></tr></table></figure>
- 進行編譯。<br> 完成後確認，編譯過程中最低可用記憶體剩餘量： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">grep Mem  memory-usage-log-swapon.txt | awk &#x27;&#123;print $7&#125;&#x27; | sort -n | head -n 1</span><br></pre></td></tr></table></figure>
- 及最高 Swap 使用量： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">grep Swap  memory-usage-log-swapon.txt | awk &#x27;&#123;print $3&#125;&#x27; | sort -nr | head -n 1</span><br></pre></td></tr></table></figure>
- 最低可用記憶體剩餘量為 5.46 GB，最高 Swap 使用量為 321.75 MB。因此在 12 緒的 CPU 下編譯我的 Yocto 專案，搭配 16 GB 的記憶體是足夠的。本次編譯耗時 1:06:13.27。</li>
-<li>無掛載 Swap：<br> 卸 Swap： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">swapoff -a</span><br></pre></td></tr></table></figure>
- 清記憶體： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sync; echo 3 | sudo tee /proc/sys/vm/drop_caches</span><br></pre></td></tr></table></figure>
- 開始搜集記憶體使用狀況： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">free -s 1 | tee memory-usage-log-swapoff.txt</span><br></pre></td></tr></table></figure>
- 進行編譯。<br> 完成後確認，編譯過程中最低可用記憶體剩餘量： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">grep Mem memory-usage-log-swapoff.txt | awk &#x27;&#123;print $7&#125;&#x27; | sort -n | head -n 1</span><br></pre></td></tr></table></figure>
- 最低可用記憶體剩餘量為 5.24 GB，與開頭的經驗，編譯中 1 條執行緒約需 1 GB 相符。本次編譯耗時 1:06:10.88。</li>
+<li><p>有掛載 Swap：<br>掛 Swap：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">swapon -a</span><br></pre></td></tr></table></figure>
+
+<p>清記憶體：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sync; echo 3 | sudo tee /proc/sys/vm/drop_caches</span><br></pre></td></tr></table></figure>
+
+<p>開始搜集記憶體使用狀況：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">free -s 1 | tee memory-usage-log-swapon.txt</span><br></pre></td></tr></table></figure>
+
+<p>進行編譯。<br>完成後確認，編譯過程中最低可用記憶體剩餘量：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">grep Mem  memory-usage-log-swapon.txt | awk &#x27;&#123;print $7&#125;&#x27; | sort -n | head -n 1</span><br></pre></td></tr></table></figure>
+
+<p>及最高 Swap 使用量：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">grep Swap  memory-usage-log-swapon.txt | awk &#x27;&#123;print $3&#125;&#x27; | sort -nr | head -n 1</span><br></pre></td></tr></table></figure>
+
+<p>最低可用記憶體剩餘量為 5.46 GB，最高 Swap 使用量為 321.75 MB。因此在 12 緒的 CPU 下編譯我的 Yocto 專案，搭配 16 GB 的記憶體是足夠的。本次編譯耗時 1:06:13.27。</p>
+</li>
+<li><p>無掛載 Swap：<br>卸 Swap：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">swapoff -a</span><br></pre></td></tr></table></figure>
+
+<p>清記憶體：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sync; echo 3 | sudo tee /proc/sys/vm/drop_caches</span><br></pre></td></tr></table></figure>
+
+<p>開始搜集記憶體使用狀況：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">free -s 1 | tee memory-usage-log-swapoff.txt</span><br></pre></td></tr></table></figure>
+
+<p>進行編譯。<br>完成後確認，編譯過程中最低可用記憶體剩餘量：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">grep Mem memory-usage-log-swapoff.txt | awk &#x27;&#123;print $7&#125;&#x27; | sort -n | head -n 1</span><br></pre></td></tr></table></figure>
+
+<p>最低可用記憶體剩餘量為 5.24 GB，與開頭的經驗，編譯中 1 條執行緒約需 1 GB 相符。本次編譯耗時 1:06:10.88。</p>
+</li>
 </ol>
 <p>AMD Ryzen™ 9 5900X AM4 是 12 核 24 緒，因此 32 GB 的記憶體應足夠使用。同樣大小的記憶體也有價差，時脈、CL 值、會不會發光、品牌等都有影響。這次買了 DDR4-3600 CL18，其實應該選 DDR4-3200 CL16 的就好，因為二者效能差不多，但 DDR4-3600 CL18 的價格高了近 20%。這邊預算沒有控制好。</p>
 <p>DDR4-3200 vs. DDR4-3600 評測：</p>
@@ -1354,12 +1376,12 @@ ABCDEFG<br />
 <p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/Airflow-in-Cases.png" alt="yocto-編譯主機零組件挑選及組裝/Airflow-in-Cases.png"></p>
 <p>挑選小型的機殼時，除了要注意 CPU 散熱器的高度外，還要看散熱器的體積對機殼內通風的影響。H210 的內部配置有一些亮點：</p>
 <ol>
-<li> 前進氣風扇的尺寸比後出風風扇的大，因此很容易可以達到機殼內正壓的配置。</li>
-<li> 風流設計看起來很合理，前方進風後方出風，中間會吹到 CPU、顯示卡和電源。</li>
-<li> 有附防塵濾網。</li>
-<li> 電源下置且有獨立空間。</li>
-<li> 可使用 ATX (PS/2) 標準的電源。</li>
-<li> 電源直接貼在背板，電源線可以直接接到電源上，不需要透過機殼自帶的電源延長線。</li>
+<li>前進氣風扇的尺寸比後出風風扇的大，因此很容易可以達到機殼內正壓的配置。</li>
+<li>風流設計看起來很合理，前方進風後方出風，中間會吹到 CPU、顯示卡和電源。</li>
+<li>有附防塵濾網。</li>
+<li>電源下置且有獨立空間。</li>
+<li>可使用 ATX (PS/2) 標準的電源。</li>
+<li>電源直接貼在背板，電源線可以直接接到電源上，不需要透過機殼自帶的電源延長線。</li>
 </ol>
 <p>像這種小型的機殼，因為顯卡離機殼底部很近，因此還要注意，若機殼下方會裝風扇，其風向應與顯卡風扇的風向一致。不是所有顯卡的風扇都是往晶片方向吹的，也有反著吹的：</p>
 <p><img src="yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/Display-Card-Wind-Direction.png" alt="yocto-編譯主機零組件挑選及組裝/Display-Card-Wind-Direction.png"></p>

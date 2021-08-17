@@ -200,7 +200,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://com.jrhenry.one/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D">
+    <link itemprop="mainEntityOfPage" href="https://com.jrhenry.one/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E3%80%81%E7%B5%84%E8%A3%9D%E5%8F%8A%E6%B8%AC%E8%A9%A6">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -213,7 +213,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D" class="post-title-link" itemprop="url">Yocto 編譯主機零組件挑選及組裝</a>
+          <a href="/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E3%80%81%E7%B5%84%E8%A3%9D%E5%8F%8A%E6%B8%AC%E8%A9%A6" class="post-title-link" itemprop="url">Yocto 編譯主機零組件挑選、組裝及測試</a>
         </h2>
 
         <div class="post-meta-container">
@@ -231,7 +231,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新於</span>
-        <time title="修改時間：8月 17日, 2021 10:00 上午" itemprop="dateModified" datetime="2021-08-17T10:00:28+08:00">8月 17日, 2021</time>
+        <time title="修改時間：8月 17日, 2021 12:11 中午" itemprop="dateModified" datetime="2021-08-17T12:11:40+08:00">8月 17日, 2021</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -252,8 +252,8 @@
       </span>
       <span class="post-meta-item-text">Disqus：</span>
     
-    <a title="disqus" href="/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/yocto-編譯主機零組件挑選及組裝.html" itemprop="commentCount"></span>
+    <a title="disqus" href="/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E3%80%81%E7%B5%84%E8%A3%9D%E5%8F%8A%E6%B8%AC%E8%A9%A6#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/yocto-編譯主機零組件挑選、組裝及測試.html" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -267,14 +267,10 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <img src="/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D/PC_Screws.jpg" class="" title="PC_Screws.jpg">
-
-<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>需求：程式編譯，主要編譯 Yocto（低配版 Build Code Server）<br>預算：4.5 萬</p>
-<h1 id="零件挑選"><a href="#零件挑選" class="headerlink" title="零件挑選"></a>零件挑選</h1><h2 id="中央處理器（CPU）"><a href="#中央處理器（CPU）" class="headerlink" title="中央處理器（CPU）"></a>中央處理器（CPU）</h2><p>挑選 CPU 有幾個重點，依優先順序分別為：售價（預算）、效能、功耗（耗電量、廢熱量）、C/P 值。</p>
-<p>OpenBenchmarking 上搜集了各型號 CPU 的 <a target="_blank" rel="noopener" href="https://openbenchmarking.org/test/pts/build-linux-kernel">Linux Kernel 編譯時間</a>，可用以評估各型 CPU 多核心編譯的效能：</p>
+          <img src="/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E3%80%81%E7%B5%84%E8%A3%9D%E5%8F%8A%E6%B8%AC%E8%A9%A6/PC_Screws.jpg" class="" title="PC_Screws.jpg">
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D#more" rel="contents">
+              <a class="btn" href="/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E3%80%81%E7%B5%84%E8%A3%9D%E5%8F%8A%E6%B8%AC%E8%A9%A6#more" rel="contents">
                 閱讀全文 &raquo;
               </a>
             </div>
@@ -336,7 +332,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新於</span>
-        <time title="修改時間：8月 17日, 2021 10:00 上午" itemprop="dateModified" datetime="2021-08-17T10:00:29+08:00">8月 17日, 2021</time>
+        <time title="修改時間：8月 17日, 2021 11:58 中午" itemprop="dateModified" datetime="2021-08-17T11:58:01+08:00">8月 17日, 2021</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -373,11 +369,6 @@
     
     <div class="post-body" itemprop="articleBody">
           <img src="/2021/%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8/%E6%AF%8F%E6%97%A5%E6%9C%AC%E5%9C%9F%E7%A2%BA%E8%A8%BA.png" class="" title="每日本土確診.png">
-
-<p>臺灣新冠肺炎疫情資料圖報表（自動更新）：<a target="_blank" rel="noopener" href="https://docs.google.com/spreadsheets/u/1/d/1-a1njGi0h-j5sO80rhmgQZfpI8c2oA_sY5tuXGCNRjo/edit">https://docs.google.com/spreadsheets/u/1/d/1-a1njGi0h-j5sO80rhmgQZfpI8c2oA_sY5tuXGCNRjo/edit</a></p>
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>五月中情爆發以後，每日各家媒體報導的資訊雖更新飛快，但又十分紛亂。每篇報導內的資料，格式與詳盡程度各有不一，讓人不好消化。因此便蒙生了自己製做圖表來呈現制式的資料，讓自己可以不需要再收看吵雜的新聞報導。</p>
-<h1 id="原始資料"><a href="#原始資料" class="headerlink" title="原始資料"></a>原始資料</h1><p>在行政院衛生福利部疾病管制署的資料開放平臺上，有公布新冠肺炎疫情的<a target="_blank" rel="noopener" href="https://data.cdc.gov.tw/dataset/agsdctable-day-19cov">原始資料</a>。</p>
-<p>原始資料可直接匯入 Google 試算表，如下圖所示：</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2021/%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8#more" rel="contents">

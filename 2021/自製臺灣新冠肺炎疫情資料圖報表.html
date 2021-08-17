@@ -20,12 +20,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"com.jrhenry.one","root":"/","images":"/images","scheme":"Gemini","version":"8.6.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
-<meta name="description" content="臺灣新冠肺炎疫情資料圖報表（自動更新）：https:&#x2F;&#x2F;docs.google.com&#x2F;spreadsheets&#x2F;u&#x2F;1&#x2F;d&#x2F;1-a1njGi0h-j5sO80rhmgQZfpI8c2oA_sY5tuXGCNRjo&#x2F;edit 前言五月中情爆發以後，每日各家媒體報導的資訊雖更新飛快，但又十分紛亂。每篇報導內的資料，格式與詳盡程度各有不一，讓人不好消化。因此便蒙生了自己製做圖表來呈現制式的資料，讓">
 <meta property="og:type" content="article">
 <meta property="og:title" content="自製臺灣新冠肺炎即時疫情資料圖報表">
 <meta property="og:url" content="https://com.jrhenry.one/2021/%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8">
 <meta property="og:site_name" content="Henry Jr. 電腦部">
-<meta property="og:description" content="臺灣新冠肺炎疫情資料圖報表（自動更新）：https:&#x2F;&#x2F;docs.google.com&#x2F;spreadsheets&#x2F;u&#x2F;1&#x2F;d&#x2F;1-a1njGi0h-j5sO80rhmgQZfpI8c2oA_sY5tuXGCNRjo&#x2F;edit 前言五月中情爆發以後，每日各家媒體報導的資訊雖更新飛快，但又十分紛亂。每篇報導內的資料，格式與詳盡程度各有不一，讓人不好消化。因此便蒙生了自己製做圖表來呈現制式的資料，讓">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://com.jrhenry.one/2021/%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8/%E6%AF%8F%E6%97%A5%E6%9C%AC%E5%9C%9F%E7%A2%BA%E8%A8%BA.png">
 <meta property="og:image" content="https://com.jrhenry.one/2021/%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8/%E5%8E%9F%E5%A7%8B%E8%B3%87%E6%96%99.png">
@@ -36,7 +34,7 @@
 <meta property="og:image" content="https://com.jrhenry.one/2021/%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8/Apps-Script-2.png">
 <meta property="og:image" content="https://com.jrhenry.one/2021/%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8/Apps-Script-3.png">
 <meta property="article:published_time" content="2021-05-26T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-08-17T02:00:29.049Z">
+<meta property="article:modified_time" content="2021-08-17T03:58:01.426Z">
 <meta property="article:author" content="Henry Chang">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://com.jrhenry.one/2021/%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8/%E6%AF%8F%E6%97%A5%E6%9C%AC%E5%9C%9F%E7%A2%BA%E8%A8%BA.png">
@@ -246,7 +244,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新於</span>
-        <time title="修改時間：8月 17日, 2021 10:00 上午" itemprop="dateModified" datetime="2021-08-17T10:00:29+08:00">8月 17日, 2021</time>
+        <time title="修改時間：8月 17日, 2021 11:58 中午" itemprop="dateModified" datetime="2021-08-17T11:58:01+08:00">8月 17日, 2021</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -284,11 +282,12 @@
     <div class="post-body" itemprop="articleBody">
         <img src="/2021/%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8/%E6%AF%8F%E6%97%A5%E6%9C%AC%E5%9C%9F%E7%A2%BA%E8%A8%BA.png" class="" title="每日本土確診.png">
 
+<span id="more"></span>
+
 <p>臺灣新冠肺炎疫情資料圖報表（自動更新）：<a target="_blank" rel="noopener" href="https://docs.google.com/spreadsheets/u/1/d/1-a1njGi0h-j5sO80rhmgQZfpI8c2oA_sY5tuXGCNRjo/edit">https://docs.google.com/spreadsheets/u/1/d/1-a1njGi0h-j5sO80rhmgQZfpI8c2oA_sY5tuXGCNRjo/edit</a></p>
 <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>五月中情爆發以後，每日各家媒體報導的資訊雖更新飛快，但又十分紛亂。每篇報導內的資料，格式與詳盡程度各有不一，讓人不好消化。因此便蒙生了自己製做圖表來呈現制式的資料，讓自己可以不需要再收看吵雜的新聞報導。</p>
 <h1 id="原始資料"><a href="#原始資料" class="headerlink" title="原始資料"></a>原始資料</h1><p>在行政院衛生福利部疾病管制署的資料開放平臺上，有公布新冠肺炎疫情的<a target="_blank" rel="noopener" href="https://data.cdc.gov.tw/dataset/agsdctable-day-19cov">原始資料</a>。</p>
 <p>原始資料可直接匯入 Google 試算表，如下圖所示：</p>
-<span id="more"></span>
 <p><img src="%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8/%E5%8E%9F%E5%A7%8B%E8%B3%87%E6%96%99.png" alt="自製臺灣新冠肺炎疫情資料圖報表/原始資料.png"></p>
 <h1 id="製做圖表"><a href="#製做圖表" class="headerlink" title="製做圖表"></a>製做圖表</h1><p>原始資料的資訊量過於龐大，透過一些公式濃縮統整並以圖表呈現，可以讓資料更容易被閱讀。我將原始資料匯入<a target="_blank" rel="noopener" href="https://docs.google.com/spreadsheets/d/1-a1njGi0h-j5sO80rhmgQZfpI8c2oA_sY5tuXGCNRjo/edit?usp=sharing">自製的試算表</a>後，另外又開了三張表單，分別在裡面呈現「每日新增本土確診數」、「縣市分布」及「年齡分布」。</p>
 <p><img src="%E8%87%AA%E8%A3%BD%E8%87%BA%E7%81%A3%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E8%B3%87%E6%96%99%E5%9C%96%E5%A0%B1%E8%A1%A8/%E6%AF%8F%E6%97%A5%E6%9C%AC%E5%9C%9F%E7%A2%BA%E8%A8%BA.png" alt="自製臺灣新冠肺炎疫情資料圖報表/每日本土確診.png"></p>
@@ -341,8 +340,8 @@
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E5%8F%8A%E7%B5%84%E8%A3%9D" rel="next" title="Yocto 編譯主機零組件挑選及組裝">
-                  Yocto 編譯主機零組件挑選及組裝 <i class="fa fa-chevron-right"></i>
+                <a href="/2021/yocto-%E7%B7%A8%E8%AD%AF%E4%B8%BB%E6%A9%9F%E9%9B%B6%E7%B5%84%E4%BB%B6%E6%8C%91%E9%81%B8%E3%80%81%E7%B5%84%E8%A3%9D%E5%8F%8A%E6%B8%AC%E8%A9%A6" rel="next" title="Yocto 編譯主機零組件挑選、組裝及測試">
+                  Yocto 編譯主機零組件挑選、組裝及測試 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
