@@ -2,12 +2,15 @@
 title: Raspberry Pi Raspbian Jessie 安裝設定
 date: 2015-10-25 15:38:33
 categories:
-- Setup
+- 設定
 ---
 
 Jessie 剛從 SysVinit 換成 systemd。因為不同的 init system 的設定方式不同，而 raspi-config 還沒有更新到支援 systemd，所以有些設定必須手動，不能透過 raspi-config。
+
 <!-- more -->
+
 <!-- toc -->
+
 ## 先嘗試從 raspi-config expand filesystem，以及其他設定，無效或沒有 UI 能操作的再嘗試下面的方法。
 
 ## 關閉開機自動啟動的 GUI (desktop)

@@ -2,16 +2,16 @@
 title: AutoCheckIn for Garena
 date: 2008-06-08
 categories:
-- Software
+- 軟體
 ---
 
 ![screenshot](https://raw.githubusercontent.com/changyuheng/garena-autocheckin/master/screenshot.png)
 
+<!-- more -->
+
 支援：Garena 3.x 中文版 & 2010 (4.0.1.6127) English Version、中文版
 
 作業系統：Windows 2000 / XP / Vista / 7 32-bit & 64-bit
-
-<!-- more -->
 
 **特色**
 
@@ -26,7 +26,6 @@ categories:
 4. 進入房間後，若 Garena 提示：「您仍在房間裡，要離開房間嗎？」，把它關掉就好了。
 
 成功加入房間後，程式會彈到最上層提示。
-
 
 **類似的軟體**
 

@@ -2,7 +2,7 @@
 title: Gnome 3.6 與 KDE 4.10 於工作場所使用一年心得
 date: 2013-09-18
 categories:
-- Setup
+- 設定
 ---
 
 在工作上使用 [KDE](http://www.kde.org/) 一年有餘，從 4.8 用到 4.10。最近同時也在使用 [Gnome](http://www.gnome.org/) 3.6，網路上的比較文章不少，再增加一篇，希望我能提供較新版本的使用經驗與不同的看法。
@@ -18,29 +18,29 @@ KDE 與 Gnome 所使用的圖形引擎的不同，是一個很重要的差別。
 以下逐項比較我所重視的部分：
 
 1. 穩定度：
-KDE 4.8 到 4.10 之間，穩定性都非常棒，似乎沒有 UI crash 的印象。Gnome 3.6 的穩定性比起稍早之前的版本，已經好很多，但偶爾還是會發生一些怪異的情況，例如視窗鍵按了沒反應。過去一年的經驗中，KDE 的穩定度幾乎是 Windows 7 等級的，而 Gnome 則還有待加強。
+   KDE 4.8 到 4.10 之間，穩定性都非常棒，似乎沒有 UI crash 的印象。Gnome 3.6 的穩定性比起稍早之前的版本，已經好很多，但偶爾還是會發生一些怪異的情況，例如視窗鍵按了沒反應。過去一年的經驗中，KDE 的穩定度幾乎是 Windows 7 等級的，而 Gnome 則還有待加強。
 
 2. 功能豐富度：
-Gnome 和 KDE 都提供了許多功能，不過 KDE 所提供的功能、自定性更加多元和完整，也優化了更多細節。
+   Gnome 和 KDE 都提供了許多功能，不過 KDE 所提供的功能、自定性更加多元和完整，也優化了更多細節。
 
 3. 美觀：
-同樣注重外觀設計，我比較喜歡 Gnome 的 UI，不過 KDE 的特效比較多。
+   同樣注重外觀設計，我比較喜歡 Gnome 的 UI，不過 KDE 的特效比較多。
 
 4. 效能：
-沒有仔細比較過，至少編譯 AOSP 程式碼的瓶頸不在桌面環境。不過在做視窗拖曳時，KDE 的視窗跟隨游標明顯比 Gnome 來得緊。
+   沒有仔細比較過，至少編譯 AOSP 程式碼的瓶頸不在桌面環境。不過在做視窗拖曳時，KDE 的視窗跟隨游標明顯比 Gnome 來得緊。
 
 5. 資源：
-網路上 Gnome 或 GTK 的使用教學或問答比較多。但以 GUI 程式開發來說 Qt 比較被推薦。
+   網路上 Gnome 或 GTK 的使用教學或問答比較多。但以 GUI 程式開發來說 Qt 比較被推薦。
 
 6. 與應用軟體的整合度：
-都很優異，不過單以 file manager 來說，KDE 的 Dolphin 做得比 Gnome 的 Nautilus 更多。
-題外話，個人覺得 Okular 比 Document Viewer 好，因為他支援畫記與註解，適合用來讀電子書；不過 Document Viewer 的搜尋速度快很多。Konsole 獨有的 copy on select 我也很喜歡。
+   都很優異，不過單以 file manager 來說，KDE 的 Dolphin 做得比 Gnome 的 Nautilus 更多。
+   題外話，個人覺得 Okular 比 Document Viewer 好，因為他支援畫記與註解，適合用來讀電子書；不過 Document Viewer 的搜尋速度快很多。Konsole 獨有的 copy on select 我也很喜歡。
 
 7. 檔案總管：
-承上，Dolphin 比 Nautilus 來得強大許多，尤其是整合 terminal 的功能，絕對稱得上是 killer feature。
+   承上，Dolphin 比 Nautilus 來得強大許多，尤其是整合 terminal 的功能，絕對稱得上是 killer feature。
 
 8. 輸入法：
-我使用 Gcin 或 Hime 框架搭配嘸蝦米都沒遇到問題。
+   我使用 Gcin 或 Hime 框架搭配嘸蝦米都沒遇到問題。
 
 目前的情形下我推薦初次使用 Linux 的朋友 KDE，因為他功能較多，穩定性也較高，不太需要再自行安裝其他工具來補強，或是拿出終端機敲打命令。
 

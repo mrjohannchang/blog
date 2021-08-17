@@ -2,13 +2,15 @@
 title: COSCUP 2016 閃電秀：理性‧勿戰
 date: 2016-09-04
 categories:
-- Setup
+- 設定
 ---
 
 把之前寫的這篇[文章](https://medium.com/rosonix/讓-linkit-smart-7688-的-wi-fi-ap-與-station-同時運作-dc9e043142b7)拿去 COSCUP 2016 報閃電秀，讓大家開心一下。Project repository 在[這裡](https://github.com/changyuheng/linkit-smart-7688-wifi-multi-role)。
 
 這是錄影：
+
 <!-- more -->
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hf-rAFErNvI?ecver=1" frameborder="0" allowfullscreen></iframe>
 
 逐字稿：

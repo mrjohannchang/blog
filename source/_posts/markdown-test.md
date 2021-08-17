@@ -2,7 +2,7 @@
 title: Markdown Test
 date: 2009-04-20
 categories:
-- Random
+- 測試
 ---
 
 Markdown demo/test.

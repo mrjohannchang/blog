@@ -8,7 +8,9 @@ categories:
 Python 的 logging module 功能完整強大，但手冊裡卻沒有一個簡明的 config 範例。
 
 記錄一下。
+
 <!-- more -->
+
 ```python
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-

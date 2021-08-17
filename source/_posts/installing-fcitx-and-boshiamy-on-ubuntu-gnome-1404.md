@@ -2,7 +2,7 @@
 title: Installing Fcitx and Boshiamy on Ubuntu GNOME 14.04
 date: 2014-09-08
 categories:
-- Setup
+- 設定
 ---
 
 Fcitx 是一個自訂性很高的輸入法框架，安裝方式如下：
@@ -10,14 +10,16 @@ Fcitx 是一個自訂性很高的輸入法框架，安裝方式如下：
 <!-- more -->
 
 * Fcitx 框架
-    ```bash
-    sudo apt-get install fcitx
-    ```
+  
+  ```bash
+  sudo apt-get install fcitx
+  ```
 
 * 嘸蝦米輸入法表格
-    ```bash
-    sudo apt-get install fcitx-table-boshiamy
-    ```
+  
+  ```bash
+  sudo apt-get install fcitx-table-boshiamy
+  ```
 
 設定：
 

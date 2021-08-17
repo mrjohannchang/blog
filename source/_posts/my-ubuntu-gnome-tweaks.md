@@ -2,7 +2,7 @@
 title: My Ubuntu GNOME Tweaks
 date: 2014-04-23
 categories:
-- Setup
+- 設定
 ---
 
 以 Ubuntu GNOME 14.04 LTS 英文語系為基礎。
@@ -57,6 +57,7 @@ sudo apt install fcitx
 ### <a name="gnome-gmail"></a>Gnome Gmail
 
 讓預設郵件客戶端可被設定為 Gmail。
+
 ```sh
 sudo apt install gnome-gmail
 ```
@@ -106,6 +107,7 @@ sudo apt install ttf-wqy-*
 ```sh
 sudo apt install fcitx-table-boshiamy
 ```
+
 需要 [Fcitx](#fcitx)。
 
 ### <a name="gmail-notifier"></a>Gmail Notifier

@@ -2,11 +2,13 @@
 title: '唯一一種只要學會就能脫胎換骨的能力'
 date: 2015-10-25 13:05:02
 categories:
-- Translation
+- 翻譯
 ---
 
 在 Medium 上看到一篇[好文](https://medium.com/keep-learning-keep-growing/the-only-one-skill-that-if-you-have-will-completely-change-your-life-ba9b40b8fdf5#.tjk2mly1w)，翻譯前半段。
+
 <!-- more -->
+
 我們都在找尋成功的要素，期待某個神秘的關鍵能改變既有的一切。
 
 標準答案並不存在，因為只要學會一種就能脫胎換骨的能力有很多。

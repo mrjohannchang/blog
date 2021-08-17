@@ -2,7 +2,7 @@
 title: My Longest Streak on GitHub
 date: 2014-04-04 18:02
 categories:
-- Random
+- 雜
 ---
 
 一時興致起來，實驗性地洗了一下 GitHub 的 longest streak。

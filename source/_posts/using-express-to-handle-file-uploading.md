@@ -8,7 +8,9 @@ categories:
 [Express](https://github.com/strongloop/express) 本身不管上傳，要透過 [Multer](https://github.com/expressjs/multer) 來處理。
 
 Multer 手冊特別註明：
+
 <!-- more -->
+
 > **NOTE**: Multer will not process any form which is not multipart (multipart/form-data).
 
 意思就是說 `Content-Type` 必須要是 `multipart/form-data`。

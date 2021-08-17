@@ -2,7 +2,7 @@
 title: Windows Photo Viewer Mouse Plug-in
 date: 2009-09-23
 categories:
-- Software
+- 軟體
 ---
 
 This simple tool gives Windows Photo Viewer the following features:

@@ -2,11 +2,13 @@
 title: When Hexo Meets GitHub Pages and Travis CI plus Raspberry Pi
 date: 2015-10-18 22:06:24
 categories:
-- Setup
+- 設定
 ---
 
 JS 很有吸引力、Hexo 是台灣人寫的、速度比 Octopress 快、default 支援 GitHub Flavored Markdown，所以選 Hexo。
+
 <!-- more -->
+
 Hexo 是一個 static site generator，static site 是指 website 由 static web page 所組成。獲取 static web page 的 client 端得到的 web page，和儲存於 server 端的 web page 一模一樣。與 dynamic website 的 server 端即時產生 web page 傳送給 client 端不同，static site 的 server 端不需要具備即時生成不同 web page 的能力。
 
 Travis-CI 提供了 hook GitHub repository event 的功能。開啟 hook 後，便會依照 repository 裡 .travis.yml 內的設定來執行。
