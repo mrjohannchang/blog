@@ -256,6 +256,28 @@
       </categories>
   </entry>
   <entry>
+    <title>Deployment of NCKU CSIE Gitit Theme</title>
+    <url>/2010/deployment-of-ncku-csie-gitit-theme.html</url>
+    <content><![CDATA[<p><a href="http://gitit.net/">Gitit</a> 是一套以 Git 作為 base 的 wiki 系統。這套 wiki 的優點可以在<a href="http://walkingice.blogspot.tw/2011/11/gitit-git-based-wiki.html">只放拖鞋的鞋櫃</a>看到。在網路上的高手 <a href="http://macropodus.github.io/gitit_mix_vimwiki.html">Macropodus</a> 研究出如何和 Vimwiki 結合後，又更強化了他的優勢。</p>
+<p>不過 Gitit 預設的模版很沒有設計感，尤其是那個 logo 讓人看了很不舒服。所幸在 <a href="https://groups.google.com/forum/#!topic/gitit-discuss/g6rZWIOmiu8">Google Group</a> 發現了一套由成大資工所製作的好看佈景。以下將介紹如何安裝這套佈景：</p>
+<span id="more"></span>
+
+<ol>
+<li><p>下載佈景<br>打包好的佈景可以在 <a href="https://github.com/CrBoy/csiewiki">GitHub</a> 上找到</p>
+</li>
+<li><p>安裝佈景<br>將包裏解開後，取代 Gitit 原來的 static 和 templates 資料夾</p>
+</li>
+</ol>
+<p>到此為止都和這套佈景的官方安裝教學一樣。如果是採用發行版如 Ubuntu 所提供的 Gitit package，則已經完成。若是用 cabal 安裝, 則必須再安裝相依的套件，以 Ubuntu 為例：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt-get install libghc-filestore-data libc6 libffi6 libgmp10 libpcre3 zlib1g libjs-jquery libjs-jquery-ui</span><br></pre></td></tr></table></figure>
+
+<p>完成的樣子可以參考<a href="http://wiki.csie.ncku.edu.tw/">成大資工 Wiki</a>。</p>
+]]></content>
+      <categories>
+        <category>Setup</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Cross Compiling Python 2.7.10 and 3.4.3 for MIPSel OpenWrt via uClibc with SSL and SQLite support</title>
     <url>/2015/cross-compiling-python-3-4-3-for-mipsel.html</url>
     <content><![CDATA[<p>The notes that were written after succeeding to cross compile Python 2.7.10 and 3.4.3 for MIPSel OpenWrt via uClibc.</p>
@@ -276,28 +298,6 @@
 ]]></content>
       <categories>
         <category>Embedded</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Deployment of NCKU CSIE Gitit Theme</title>
-    <url>/2010/deployment-of-ncku-csie-gitit-theme.html</url>
-    <content><![CDATA[<p><a href="http://gitit.net/">Gitit</a> 是一套以 Git 作為 base 的 wiki 系統。這套 wiki 的優點可以在<a href="http://walkingice.blogspot.tw/2011/11/gitit-git-based-wiki.html">只放拖鞋的鞋櫃</a>看到。在網路上的高手 <a href="http://macropodus.github.io/gitit_mix_vimwiki.html">Macropodus</a> 研究出如何和 Vimwiki 結合後，又更強化了他的優勢。</p>
-<p>不過 Gitit 預設的模版很沒有設計感，尤其是那個 logo 讓人看了很不舒服。所幸在 <a href="https://groups.google.com/forum/#!topic/gitit-discuss/g6rZWIOmiu8">Google Group</a> 發現了一套由成大資工所製作的好看佈景。以下將介紹如何安裝這套佈景：</p>
-<span id="more"></span>
-
-<ol>
-<li><p>下載佈景<br>打包好的佈景可以在 <a href="https://github.com/CrBoy/csiewiki">GitHub</a> 上找到</p>
-</li>
-<li><p>安裝佈景<br>將包裏解開後，取代 Gitit 原來的 static 和 templates 資料夾</p>
-</li>
-</ol>
-<p>到此為止都和這套佈景的官方安裝教學一樣。如果是採用發行版如 Ubuntu 所提供的 Gitit package，則已經完成。若是用 cabal 安裝, 則必須再安裝相依的套件，以 Ubuntu 為例：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt-get install libghc-filestore-data libc6 libffi6 libgmp10 libpcre3 zlib1g libjs-jquery libjs-jquery-ui</span><br></pre></td></tr></table></figure>
-
-<p>完成的樣子可以參考<a href="http://wiki.csie.ncku.edu.tw/">成大資工 Wiki</a>。</p>
-]]></content>
-      <categories>
-        <category>Setup</category>
       </categories>
   </entry>
   <entry>
@@ -339,6 +339,22 @@
       </categories>
   </entry>
   <entry>
+    <title>Implementations of DFS and BFS in Python</title>
+    <url>/2014/implementations-of-dfs-and-bfs-in-python.html</url>
+    <content><![CDATA[<p><a href="http://zh.wikipedia.org/zh-tw/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">DFS</a> 和 <a href="http://zh.wikipedia.org/zh-tw/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">BFS</a> 在資料結構裡有教，是很基礎的演算法。</p>
+<span id="more"></span>
+<p>在 <a href="http://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/">Edd Mann 的網誌</a>上看到 Python 的實作，由其中學到 <code>yield from</code> 的用法。下面利用 <code>yield from</code> 的特性，將該網誌中提到的實作改寫成 generator 的型式。同步放在 Gist 上：<a href="https://gist.github.com/changyuheng/08ffb779d83679393926">DFS</a>、<a href="https://gist.github.com/changyuheng/97d320206af9a0018d7d">BFS</a>。</p>
+<p><strong>DFS</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">dfs</span>(<span class="params">graph, start, visited=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> visited <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        visited = <span class="built_in">set</span>()</span><br><span class="line">    <span class="keyword">if</span> start <span class="keyword">in</span> visited:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    <span class="keyword">yield</span> start</span><br><span class="line">    visited.add(start)</span><br><span class="line">    <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - visited:</span><br><span class="line">        <span class="keyword">yield</span> <span class="keyword">from</span> dfs(graph, vertex, visited=visited)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">dfs_paths</span>(<span class="params">graph, start, goal, path=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> path <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        path = [start]</span><br><span class="line">    <span class="keyword">if</span> start == goal:</span><br><span class="line">        <span class="keyword">yield</span> path</span><br><span class="line">    <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(path):</span><br><span class="line">        <span class="keyword">yield</span> <span class="keyword">from</span> dfs_paths(graph, vertex, goal, path=path + [vertex])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">graph = &#123;</span><br><span class="line">    <span class="string">&#x27;A&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;B&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;D&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;C&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;D&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;E&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;F&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;C&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> dfs(graph, <span class="string">&#x27;A&#x27;</span>)]))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([path <span class="keyword">for</span> path <span class="keyword">in</span> dfs_paths(graph, <span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>)]))</span><br></pre></td></tr></table></figure>
+
+<p><strong>BFS</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bfs</span>(<span class="params">graph, queue, visited=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> visited <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        visited = <span class="built_in">set</span>()</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> queue:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    start = queue.pop(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">yield</span> start</span><br><span class="line">    visited.add(start)</span><br><span class="line">    queue += [vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(queue) - visited]</span><br><span class="line">    <span class="keyword">yield</span> <span class="keyword">from</span> bfs(graph, queue, visited=visited)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bfs_paths</span>(<span class="params">graph, queue, goal</span>):</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> queue:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    (start, path) = queue.pop(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">if</span> start == goal:</span><br><span class="line">        <span class="keyword">yield</span> path</span><br><span class="line">    queue += [(vertex, path + [vertex]) <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(path)]</span><br><span class="line">    <span class="keyword">yield</span> <span class="keyword">from</span> bfs_paths(graph, queue, goal)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">graph = &#123;</span><br><span class="line">    <span class="string">&#x27;A&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;B&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;D&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;C&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;D&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;E&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;F&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;C&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> bfs(graph, [<span class="string">&#x27;A&#x27;</span>])]))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([path <span class="keyword">for</span> path <span class="keyword">in</span> bfs_paths(graph, [(<span class="string">&#x27;A&#x27;</span>, [<span class="string">&#x27;A&#x27;</span>])], <span class="string">&#x27;F&#x27;</span>)]))</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Algorithm</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Gnome 3.6 與 KDE 4.10 於工作場所使用一年心得</title>
     <url>/2013/gnome-36-yu-kde-410-yu-gong-zuo-chang-suo-shi-yong-nian-xin-de.html</url>
     <content><![CDATA[<p>在工作上使用 <a href="http://www.kde.org/">KDE</a> 一年有餘，從 4.8 用到 4.10。最近同時也在使用 <a href="http://www.gnome.org/">Gnome</a> 3.6，網路上的比較文章不少，再增加一篇，希望我能提供較新版本的使用經驗與不同的看法。</p>
@@ -373,6 +389,71 @@
 <ul>
 <li><a href="http://www.datamation.com/open-source/gnome-or-kde-the-old-question-is-new-today-1.html">GNOME or KDE? The Old Question Is New Today</a></li>
 </ul>
+]]></content>
+      <categories>
+        <category>Setup</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>My Ubuntu GNOME Tweaks</title>
+    <url>/2014/my-ubuntu-gnome-tweaks.html</url>
+    <content><![CDATA[<p>以 Ubuntu GNOME 14.04 LTS 英文語系為基礎。</p>
+<span id="more"></span>
+
+<h2 id="安裝軟體"><a href="#安裝軟體" class="headerlink" title="安裝軟體"></a>安裝軟體</h2><ul>
+<li><a href="#7z">7z</a></li>
+<li><a href="#clipit">ClipIt</a></li>
+<li><a href="#fcitx">Fcitx</a></li>
+<li><a href="#gnome-gmail">Gnome Gmail</a></li>
+<li><a href="#java8">Java 8</a></li>
+<li><a href="#ubuntu-restricted-extras">ubuntu-restricted-extras</a></li>
+<li><a href="#vim">Vim</a></li>
+<li><a href="#vlc">VLC</a></li>
+<li><a href="#wen-quan-yi-fonts">文泉驛中文字型</a></li>
+<li><a href="#boshiamy">嘸蝦米輸入法</a></li>
+</ul>
+<h2 id="Firefox-附加元件"><a href="#Firefox-附加元件" class="headerlink" title="Firefox 附加元件"></a>Firefox 附加元件</h2><ul>
+<li><a href="#gmail-notifier">Gmail Notifier</a></li>
+<li><a href="#gnotifier">GNotifier</a></li>
+</ul>
+<h2 id="設定"><a href="#設定" class="headerlink" title="設定"></a>設定</h2><ul>
+<li><a href="#apt">APT</a></li>
+<li><a href="#gnome-tweak-tool">Gnome Tweak Tool</a></li>
+<li><a href="#im-config">Input Method Configuration</a></li>
+<li><a href="#online-accounts">Online Accounts</a></li>
+</ul>
+<h3 id="7z"><a href="#7z" class="headerlink" title="7z"></a><a name="7z"></a>7z</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install p7zip-full</span><br></pre></td></tr></table></figure>
+
+<h3 id="ClipIt"><a href="#ClipIt" class="headerlink" title="ClipIt"></a><a name="clipit"></a>ClipIt</h3><p>剪貼簿管理程序，安裝的主要目的是要他同步剪貼簿的功能。因為 X11 的剪貼簿在「貼上」時，若來源程序已暫停或結束，會因無法讀取來源而無法貼上。可參考：<a href="http://www.jwz.org/doc/x-cut-and-paste.html">X Selections, Cut Buffers, and Kill Rings.</a></p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install clipit</span><br></pre></td></tr></table></figure>
+
+<h3 id="Fcitx"><a href="#Fcitx" class="headerlink" title="Fcitx"></a><a name="fcitx"></a>Fcitx</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install fcitx</span><br></pre></td></tr></table></figure>
+
+<h3 id="Gnome-Gmail"><a href="#Gnome-Gmail" class="headerlink" title="Gnome Gmail"></a><a name="gnome-gmail"></a>Gnome Gmail</h3><p>讓預設郵件客戶端可被設定為 Gmail。</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install gnome-gmail</span><br></pre></td></tr></table></figure>
+
+<h3 id="Java-8"><a href="#Java-8" class="headerlink" title="Java 8"></a><a name="java8"></a>Java 8</h3><p><a href="http://www.webupd8.org/2012/09/install-oracle-java-8-in-ubuntu-via-ppa.html">Install Oracle Java 8 In Ubuntu Via PPA Repository</a></p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo add-apt-repository ppa:webupd8team/java</span><br><span class="line">sudo apt update</span><br><span class="line">sudo apt install oracle-java8-installer</span><br></pre></td></tr></table></figure>
+
+<h3 id="ubuntu-restricted-extras"><a href="#ubuntu-restricted-extras" class="headerlink" title="ubuntu-restricted-extras"></a><a name="ubuntu-restricted-extras"></a>ubuntu-restricted-extras</h3><p>RAR、Flash Player 等非開源的程式之集合。</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install ubuntu-restricted-extras</span><br></pre></td></tr></table></figure>
+
+<h3 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a><a name="vim"></a>Vim</h3><p>Vim with GNOME specific support.</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install vim-gnome</span><br></pre></td></tr></table></figure>
+
+<h3 id="VLC"><a href="#VLC" class="headerlink" title="VLC"></a><a name="vlc"></a>VLC</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install vlc</span><br></pre></td></tr></table></figure>
+
+<h3 id="文泉驛中文字型"><a href="#文泉驛中文字型" class="headerlink" title="文泉驛中文字型"></a><a name="wen-quan-yi-fonts"></a>文泉驛中文字型</h3><p>開源的中文字型。</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install ttf-wqy-*</span><br></pre></td></tr></table></figure>
+
+<h3 id="嘸蝦米輸入法"><a href="#嘸蝦米輸入法" class="headerlink" title="嘸蝦米輸入法"></a><a name="boshiamy"></a>嘸蝦米輸入法</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install fcitx-table-boshiamy</span><br></pre></td></tr></table></figure>
+<p>需要 <a href="#fcitx">Fcitx</a>。</p>
+<h3 id="Gmail-Notifier"><a href="#Gmail-Notifier" class="headerlink" title="Gmail Notifier"></a><a name="gmail-notifier"></a>Gmail Notifier</h3><p>偵測到 Gmail 的新進信件時會由 Firefox 發出提醒。<br><a href="https://addons.mozilla.org/zh-tw/firefox/addon/gmail-notifier-restartless/?src=search">Gmail Notifier</a></p>
+<h3 id="GNotifier"><a href="#GNotifier" class="headerlink" title="GNotifier"></a><a name="gnotifier"></a>GNotifier</h3><p>讓 Firefox 使用 GNOME、KDE、Xfce 或 OS X 桌面環境的提醒 (notification) 介面。<br><a href="https://addons.mozilla.org/zh-tw/firefox/addon/gnotifier/">GNotifier</a></p>
+<h3 id="APT"><a href="#APT" class="headerlink" title="APT"></a><a name="apt"></a>APT</h3><p>以國網中心的 APT 伺服器取代台灣大學的：將 <code>/etc/apt/sources.list</code> 內的 <code>tw.archive.ubuntu.com</code> 取代為 <code>free.nchc.org.tw</code>。</p>
+<h3 id="Gnome-Tweak-Tool"><a href="#Gnome-Tweak-Tool" class="headerlink" title="Gnome Tweak Tool"></a><a name="gnome-tweak-tool"></a>Gnome Tweak Tool</h3><p>依個人喜好調整預設設定。</p>
+<h3 id="Input-Method-Configuration"><a href="#Input-Method-Configuration" class="headerlink" title="Input Method Configuration"></a><a name="im-config"></a>Input Method Configuration</h3><p>先安裝 <a href="#fcitx">Fcitx</a>，接著由 <code>Activities</code> → <code>Input Method</code> 選擇 fcitx。</p>
+<h3 id="Online-Accounts"><a href="#Online-Accounts" class="headerlink" title="Online Accounts"></a><a name="online-accounts"></a>Online Accounts</h3><p>由 <code>Activities</code> → <code>System Settings</code> → <code>Online Accounts</code> 登入 Google 帳戶，登入後可將右方不希望同步的功能關閉。若有開啟 Calendar 同步，可由螢幕最上方正中央的 Calendar 下拉選單中看到將近的活動，提醒時間到時也會由 Evolution 彈出視窗提醒。</p>
 ]]></content>
       <categories>
         <category>Setup</category>
@@ -608,87 +689,6 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
-    <title>My Ubuntu GNOME Tweaks</title>
-    <url>/2014/my-ubuntu-gnome-tweaks.html</url>
-    <content><![CDATA[<p>以 Ubuntu GNOME 14.04 LTS 英文語系為基礎。</p>
-<span id="more"></span>
-
-<h2 id="安裝軟體"><a href="#安裝軟體" class="headerlink" title="安裝軟體"></a>安裝軟體</h2><ul>
-<li><a href="#7z">7z</a></li>
-<li><a href="#clipit">ClipIt</a></li>
-<li><a href="#fcitx">Fcitx</a></li>
-<li><a href="#gnome-gmail">Gnome Gmail</a></li>
-<li><a href="#java8">Java 8</a></li>
-<li><a href="#ubuntu-restricted-extras">ubuntu-restricted-extras</a></li>
-<li><a href="#vim">Vim</a></li>
-<li><a href="#vlc">VLC</a></li>
-<li><a href="#wen-quan-yi-fonts">文泉驛中文字型</a></li>
-<li><a href="#boshiamy">嘸蝦米輸入法</a></li>
-</ul>
-<h2 id="Firefox-附加元件"><a href="#Firefox-附加元件" class="headerlink" title="Firefox 附加元件"></a>Firefox 附加元件</h2><ul>
-<li><a href="#gmail-notifier">Gmail Notifier</a></li>
-<li><a href="#gnotifier">GNotifier</a></li>
-</ul>
-<h2 id="設定"><a href="#設定" class="headerlink" title="設定"></a>設定</h2><ul>
-<li><a href="#apt">APT</a></li>
-<li><a href="#gnome-tweak-tool">Gnome Tweak Tool</a></li>
-<li><a href="#im-config">Input Method Configuration</a></li>
-<li><a href="#online-accounts">Online Accounts</a></li>
-</ul>
-<h3 id="7z"><a href="#7z" class="headerlink" title="7z"></a><a name="7z"></a>7z</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install p7zip-full</span><br></pre></td></tr></table></figure>
-
-<h3 id="ClipIt"><a href="#ClipIt" class="headerlink" title="ClipIt"></a><a name="clipit"></a>ClipIt</h3><p>剪貼簿管理程序，安裝的主要目的是要他同步剪貼簿的功能。因為 X11 的剪貼簿在「貼上」時，若來源程序已暫停或結束，會因無法讀取來源而無法貼上。可參考：<a href="http://www.jwz.org/doc/x-cut-and-paste.html">X Selections, Cut Buffers, and Kill Rings.</a></p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install clipit</span><br></pre></td></tr></table></figure>
-
-<h3 id="Fcitx"><a href="#Fcitx" class="headerlink" title="Fcitx"></a><a name="fcitx"></a>Fcitx</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install fcitx</span><br></pre></td></tr></table></figure>
-
-<h3 id="Gnome-Gmail"><a href="#Gnome-Gmail" class="headerlink" title="Gnome Gmail"></a><a name="gnome-gmail"></a>Gnome Gmail</h3><p>讓預設郵件客戶端可被設定為 Gmail。</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install gnome-gmail</span><br></pre></td></tr></table></figure>
-
-<h3 id="Java-8"><a href="#Java-8" class="headerlink" title="Java 8"></a><a name="java8"></a>Java 8</h3><p><a href="http://www.webupd8.org/2012/09/install-oracle-java-8-in-ubuntu-via-ppa.html">Install Oracle Java 8 In Ubuntu Via PPA Repository</a></p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo add-apt-repository ppa:webupd8team/java</span><br><span class="line">sudo apt update</span><br><span class="line">sudo apt install oracle-java8-installer</span><br></pre></td></tr></table></figure>
-
-<h3 id="ubuntu-restricted-extras"><a href="#ubuntu-restricted-extras" class="headerlink" title="ubuntu-restricted-extras"></a><a name="ubuntu-restricted-extras"></a>ubuntu-restricted-extras</h3><p>RAR、Flash Player 等非開源的程式之集合。</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install ubuntu-restricted-extras</span><br></pre></td></tr></table></figure>
-
-<h3 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a><a name="vim"></a>Vim</h3><p>Vim with GNOME specific support.</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install vim-gnome</span><br></pre></td></tr></table></figure>
-
-<h3 id="VLC"><a href="#VLC" class="headerlink" title="VLC"></a><a name="vlc"></a>VLC</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install vlc</span><br></pre></td></tr></table></figure>
-
-<h3 id="文泉驛中文字型"><a href="#文泉驛中文字型" class="headerlink" title="文泉驛中文字型"></a><a name="wen-quan-yi-fonts"></a>文泉驛中文字型</h3><p>開源的中文字型。</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install ttf-wqy-*</span><br></pre></td></tr></table></figure>
-
-<h3 id="嘸蝦米輸入法"><a href="#嘸蝦米輸入法" class="headerlink" title="嘸蝦米輸入法"></a><a name="boshiamy"></a>嘸蝦米輸入法</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install fcitx-table-boshiamy</span><br></pre></td></tr></table></figure>
-<p>需要 <a href="#fcitx">Fcitx</a>。</p>
-<h3 id="Gmail-Notifier"><a href="#Gmail-Notifier" class="headerlink" title="Gmail Notifier"></a><a name="gmail-notifier"></a>Gmail Notifier</h3><p>偵測到 Gmail 的新進信件時會由 Firefox 發出提醒。<br><a href="https://addons.mozilla.org/zh-tw/firefox/addon/gmail-notifier-restartless/?src=search">Gmail Notifier</a></p>
-<h3 id="GNotifier"><a href="#GNotifier" class="headerlink" title="GNotifier"></a><a name="gnotifier"></a>GNotifier</h3><p>讓 Firefox 使用 GNOME、KDE、Xfce 或 OS X 桌面環境的提醒 (notification) 介面。<br><a href="https://addons.mozilla.org/zh-tw/firefox/addon/gnotifier/">GNotifier</a></p>
-<h3 id="APT"><a href="#APT" class="headerlink" title="APT"></a><a name="apt"></a>APT</h3><p>以國網中心的 APT 伺服器取代台灣大學的：將 <code>/etc/apt/sources.list</code> 內的 <code>tw.archive.ubuntu.com</code> 取代為 <code>free.nchc.org.tw</code>。</p>
-<h3 id="Gnome-Tweak-Tool"><a href="#Gnome-Tweak-Tool" class="headerlink" title="Gnome Tweak Tool"></a><a name="gnome-tweak-tool"></a>Gnome Tweak Tool</h3><p>依個人喜好調整預設設定。</p>
-<h3 id="Input-Method-Configuration"><a href="#Input-Method-Configuration" class="headerlink" title="Input Method Configuration"></a><a name="im-config"></a>Input Method Configuration</h3><p>先安裝 <a href="#fcitx">Fcitx</a>，接著由 <code>Activities</code> → <code>Input Method</code> 選擇 fcitx。</p>
-<h3 id="Online-Accounts"><a href="#Online-Accounts" class="headerlink" title="Online Accounts"></a><a name="online-accounts"></a>Online Accounts</h3><p>由 <code>Activities</code> → <code>System Settings</code> → <code>Online Accounts</code> 登入 Google 帳戶，登入後可將右方不希望同步的功能關閉。若有開啟 Calendar 同步，可由螢幕最上方正中央的 Calendar 下拉選單中看到將近的活動，提醒時間到時也會由 Evolution 彈出視窗提醒。</p>
-]]></content>
-      <categories>
-        <category>Setup</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Implementations of DFS and BFS in Python</title>
-    <url>/2014/implementations-of-dfs-and-bfs-in-python.html</url>
-    <content><![CDATA[<p><a href="http://zh.wikipedia.org/zh-tw/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">DFS</a> 和 <a href="http://zh.wikipedia.org/zh-tw/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">BFS</a> 在資料結構裡有教，是很基礎的演算法。</p>
-<span id="more"></span>
-<p>在 <a href="http://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/">Edd Mann 的網誌</a>上看到 Python 的實作，由其中學到 <code>yield from</code> 的用法。下面利用 <code>yield from</code> 的特性，將該網誌中提到的實作改寫成 generator 的型式。同步放在 Gist 上：<a href="https://gist.github.com/changyuheng/08ffb779d83679393926">DFS</a>、<a href="https://gist.github.com/changyuheng/97d320206af9a0018d7d">BFS</a>。</p>
-<p><strong>DFS</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">dfs</span>(<span class="params">graph, start, visited=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> visited <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        visited = <span class="built_in">set</span>()</span><br><span class="line">    <span class="keyword">if</span> start <span class="keyword">in</span> visited:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    <span class="keyword">yield</span> start</span><br><span class="line">    visited.add(start)</span><br><span class="line">    <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - visited:</span><br><span class="line">        <span class="keyword">yield</span> <span class="keyword">from</span> dfs(graph, vertex, visited=visited)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">dfs_paths</span>(<span class="params">graph, start, goal, path=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> path <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        path = [start]</span><br><span class="line">    <span class="keyword">if</span> start == goal:</span><br><span class="line">        <span class="keyword">yield</span> path</span><br><span class="line">    <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(path):</span><br><span class="line">        <span class="keyword">yield</span> <span class="keyword">from</span> dfs_paths(graph, vertex, goal, path=path + [vertex])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">graph = &#123;</span><br><span class="line">    <span class="string">&#x27;A&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;B&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;D&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;C&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;D&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;E&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;F&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;C&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> dfs(graph, <span class="string">&#x27;A&#x27;</span>)]))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([path <span class="keyword">for</span> path <span class="keyword">in</span> dfs_paths(graph, <span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>)]))</span><br></pre></td></tr></table></figure>
-
-<p><strong>BFS</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bfs</span>(<span class="params">graph, queue, visited=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> visited <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        visited = <span class="built_in">set</span>()</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> queue:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    start = queue.pop(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">yield</span> start</span><br><span class="line">    visited.add(start)</span><br><span class="line">    queue += [vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(queue) - visited]</span><br><span class="line">    <span class="keyword">yield</span> <span class="keyword">from</span> bfs(graph, queue, visited=visited)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bfs_paths</span>(<span class="params">graph, queue, goal</span>):</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> queue:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    (start, path) = queue.pop(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">if</span> start == goal:</span><br><span class="line">        <span class="keyword">yield</span> path</span><br><span class="line">    queue += [(vertex, path + [vertex]) <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(path)]</span><br><span class="line">    <span class="keyword">yield</span> <span class="keyword">from</span> bfs_paths(graph, queue, goal)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">graph = &#123;</span><br><span class="line">    <span class="string">&#x27;A&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;B&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;D&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;C&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;D&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;E&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;F&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;C&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> bfs(graph, [<span class="string">&#x27;A&#x27;</span>])]))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([path <span class="keyword">for</span> path <span class="keyword">in</span> bfs_paths(graph, [(<span class="string">&#x27;A&#x27;</span>, [<span class="string">&#x27;A&#x27;</span>])], <span class="string">&#x27;F&#x27;</span>)]))</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Algorithm</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Port LEDE 17.01 to LinkIt Smart 7688</title>
     <url>/2017/port-lede-17-01-to-linkit-smart-7688.html</url>
     <content><![CDATA[<p>心血來潮幫忙把 LinkIt Smart 7688 的作業系統從 <a href="https://forum.openwrt.org/viewtopic.php?pid=315110">OpenWrt Chaos Calmer 15.05.1</a> 升級到 <a href="https://lede-project.org/releases/17.01/">LEDE 17.01</a>。</p>
@@ -770,6 +770,28 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
+    <title>Python Learning Resources</title>
+    <url>/2014/python-learning-resources.html</url>
+    <content><![CDATA[<p>同事在問 Python 該如何入門，順手將整理的資料與大眾分享。</p>
+<p>既然要學，就不要拖著歷史的包袱，所以建議直接學習 Python 3。</p>
+<p>對於有程式設計基礎的朋友，可依下列項目順序學習：</p>
+<span id="more"></span>
+
+<ol>
+<li>官網的 <a href="https://docs.python.org/3/tutorial/">tutorial</a>。</li>
+<li><a href="http://shop.oreilly.com/product/0636920027072.do">Python Cookbook: Recipes for Mastering Python 3</a></li>
+<li><a href="http://www.amazon.com/Python-Practice-Concurrency-Libraries-Developers/dp/0321905636">Python in Practice: Create Better Programs Using Concurrency, Libraries, and Patterns (Developer’s Library)</a></li>
+</ol>
+<p>Libraries：</p>
+<ol>
+<li><a href="https://github.com/vinta/awesome-python">https://github.com/vinta/awesome-python</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+  </entry>
+  <entry>
     <title>PTT 帳號被砍事件</title>
     <url>/2015/ptt-%E5%B8%B3%E8%99%9F%E8%A2%AB%E7%A0%8D%E4%BA%8B%E4%BB%B6.html</url>
     <content><![CDATA[<p>事件起源於多年前我寫了一個<a href="https://changyuheng.github.io/2007/11/05/ptt-efficient-poster/">程式</a>，用來讓 PTT 的發文者能得到與文章字數相符的稿酬。</p>
@@ -806,28 +828,6 @@ ABCDEFG<br />
 ]]></content>
       <categories>
         <category>Random</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Python Learning Resources</title>
-    <url>/2014/python-learning-resources.html</url>
-    <content><![CDATA[<p>同事在問 Python 該如何入門，順手將整理的資料與大眾分享。</p>
-<p>既然要學，就不要拖著歷史的包袱，所以建議直接學習 Python 3。</p>
-<p>對於有程式設計基礎的朋友，可依下列項目順序學習：</p>
-<span id="more"></span>
-
-<ol>
-<li>官網的 <a href="https://docs.python.org/3/tutorial/">tutorial</a>。</li>
-<li><a href="http://shop.oreilly.com/product/0636920027072.do">Python Cookbook: Recipes for Mastering Python 3</a></li>
-<li><a href="http://www.amazon.com/Python-Practice-Concurrency-Libraries-Developers/dp/0321905636">Python in Practice: Create Better Programs Using Concurrency, Libraries, and Patterns (Developer’s Library)</a></li>
-</ol>
-<p>Libraries：</p>
-<ol>
-<li><a href="https://github.com/vinta/awesome-python">https://github.com/vinta/awesome-python</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Python</category>
       </categories>
   </entry>
   <entry>
@@ -977,6 +977,19 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
+    <title>War3Customkey Classic</title>
+    <url>/2006/war3customkey-classic.html</url>
+    <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/war3customkey-classic/master/screenshot.png" alt="screenshot"></p>
+<p>支援：Warcraft III<br>作業系統：Windows 2000 / XP / Vista / 7 32-bit &amp; 64-bit</p>
+<span id="more"></span>
+
+<p>[<strong><a href="https://raw.githubusercontent.com/changyuheng/war3customkey-classic/master/War3Customkey.exe">下載</a></strong>]<br>[<strong><a href="https://github.com/changyuheng/war3customkey-classic">原始碼</a></strong>]</p>
+]]></content>
+      <categories>
+        <category>Software</category>
+      </categories>
+  </entry>
+  <entry>
     <title>War3Customkey</title>
     <url>/2005/war3customkey.html</url>
     <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/war3customkey/master/screenshot.png" alt="screenshot"></p>
@@ -993,19 +1006,6 @@ ABCDEFG<br />
 <p><strong>使用方法</strong></p>
 <p>請<strong>以系統管理員身分執行</strong>本程式。詳細說明請見內附的說明文件<code>War3CustomkeyReadme.txt</code>。</p>
 <p>[<strong><a href="https://raw.githubusercontent.com/changyuheng/war3customkey/master/War3Customkey.exe">下載</a></strong>]<br>[<strong><a href="https://github.com/changyuheng/war3customkey">原始碼</a></strong>]</p>
-]]></content>
-      <categories>
-        <category>Software</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>War3Customkey Classic</title>
-    <url>/2006/war3customkey-classic.html</url>
-    <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/war3customkey-classic/master/screenshot.png" alt="screenshot"></p>
-<p>支援：Warcraft III<br>作業系統：Windows 2000 / XP / Vista / 7 32-bit &amp; 64-bit</p>
-<span id="more"></span>
-
-<p>[<strong><a href="https://raw.githubusercontent.com/changyuheng/war3customkey-classic/master/War3Customkey.exe">下載</a></strong>]<br>[<strong><a href="https://github.com/changyuheng/war3customkey-classic">原始碼</a></strong>]</p>
 ]]></content>
       <categories>
         <category>Software</category>
