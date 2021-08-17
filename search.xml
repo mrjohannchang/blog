@@ -1,24 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Codeforces Problem 1B</title>
-    <url>/2014/codeforces-problem-1b.html</url>
-    <content><![CDATA[<p><a href="http://codeforces.com/problemset/problem/1/B">Codeforces Problem 1B</a></p>
-<p>這題考的是經典的試算表 (spreadsheet) 座標轉換。這個問題的重點在對數字進位的處理。訣竅在於把 one-based column 當成 zero-based 來處理。</p>
-<p><a href="http://codeforces.com/contest/1/submission/6457739">我的 Python 解法</a></p>
-]]></content>
-      <categories>
-        <category>Algorithm</category>
-      </categories>
-  </entry>
-  <entry>
     <title>AutoCheckIn for Garena</title>
     <url>/2008/autocheckin-for-garena.html</url>
     <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/garena-autocheckin/master/screenshot.png" alt="screenshot"></p>
-<p>支援：Garena 3.x 中文版 &amp; 2010 (4.0.1.6127) English Version、中文版</p>
-<p>作業系統：Windows 2000 / XP / Vista / 7 32-bit &amp; 64-bit</p>
 <span id="more"></span>
 
+<p>支援：Garena 3.x 中文版 &amp; 2010 (4.0.1.6127) English Version、中文版</p>
+<p>作業系統：Windows 2000 / XP / Vista / 7 32-bit &amp; 64-bit</p>
 <p><strong>特色</strong></p>
 <ol>
 <li>背景自動擠房</li>
@@ -39,7 +28,18 @@
 <p>[<strong><a href="https://raw.githubusercontent.com/changyuheng/garena-autocheckin/master/AutoCheckIn.exe">下載</a></strong>]<br>[<strong><a href="https://github.com/changyuheng/garena-autocheckin">原始碼</a></strong>]</p>
 ]]></content>
       <categories>
-        <category>Software</category>
+        <category>軟體</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Codeforces Problem 1B</title>
+    <url>/2014/codeforces-problem-1b.html</url>
+    <content><![CDATA[<p><a href="http://codeforces.com/problemset/problem/1/B">Codeforces Problem 1B</a></p>
+<p>這題考的是經典的試算表 (spreadsheet) 座標轉換。這個問題的重點在對數字進位的處理。訣竅在於把 one-based column 當成 zero-based 來處理。</p>
+<p><a href="http://codeforces.com/contest/1/submission/6457739">我的 Python 解法</a></p>
+]]></content>
+      <categories>
+        <category>演算法</category>
       </categories>
   </entry>
   <entry>
@@ -190,7 +190,7 @@
 </ol>
 ]]></content>
       <categories>
-        <category>Algorithm</category>
+        <category>演算法</category>
       </categories>
   </entry>
   <entry>
@@ -252,29 +252,7 @@
 <p>00:02:22.067 –&gt; 00:02:23.237<br>謝謝大家！</p>
 ]]></content>
       <categories>
-        <category>Setup</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Deployment of NCKU CSIE Gitit Theme</title>
-    <url>/2010/deployment-of-ncku-csie-gitit-theme.html</url>
-    <content><![CDATA[<p><a href="http://gitit.net/">Gitit</a> 是一套以 Git 作為 base 的 wiki 系統。這套 wiki 的優點可以在<a href="http://walkingice.blogspot.tw/2011/11/gitit-git-based-wiki.html">只放拖鞋的鞋櫃</a>看到。在網路上的高手 <a href="http://macropodus.github.io/gitit_mix_vimwiki.html">Macropodus</a> 研究出如何和 Vimwiki 結合後，又更強化了他的優勢。</p>
-<p>不過 Gitit 預設的模版很沒有設計感，尤其是那個 logo 讓人看了很不舒服。所幸在 <a href="https://groups.google.com/forum/#!topic/gitit-discuss/g6rZWIOmiu8">Google Group</a> 發現了一套由成大資工所製作的好看佈景。以下將介紹如何安裝這套佈景：</p>
-<span id="more"></span>
-
-<ol>
-<li><p>下載佈景<br>打包好的佈景可以在 <a href="https://github.com/CrBoy/csiewiki">GitHub</a> 上找到</p>
-</li>
-<li><p>安裝佈景<br>將包裏解開後，取代 Gitit 原來的 static 和 templates 資料夾</p>
-</li>
-</ol>
-<p>到此為止都和這套佈景的官方安裝教學一樣。如果是採用發行版如 Ubuntu 所提供的 Gitit package，則已經完成。若是用 cabal 安裝, 則必須再安裝相依的套件，以 Ubuntu 為例：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt-get install libghc-filestore-data libc6 libffi6 libgmp10 libpcre3 zlib1g libjs-jquery libjs-jquery-ui</span><br></pre></td></tr></table></figure>
-
-<p>完成的樣子可以參考<a href="http://wiki.csie.ncku.edu.tw/">成大資工 Wiki</a>。</p>
-]]></content>
-      <categories>
-        <category>Setup</category>
+        <category>設定</category>
       </categories>
   </entry>
   <entry>
@@ -297,7 +275,29 @@
 <h2 id="Thanks-to"><a href="#Thanks-to" class="headerlink" title="Thanks to"></a>Thanks to</h2><p><a href="https://tw.linkedin.com/pub/cheng-wig/90/1a1/896">Cheng Wig</a>, he showed me the positive attitude at work.</p>
 ]]></content>
       <categories>
-        <category>Embedded</category>
+        <category>嵌入式</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Deployment of NCKU CSIE Gitit Theme</title>
+    <url>/2010/deployment-of-ncku-csie-gitit-theme.html</url>
+    <content><![CDATA[<p><a href="http://gitit.net/">Gitit</a> 是一套以 Git 作為 base 的 wiki 系統。這套 wiki 的優點可以在<a href="http://walkingice.blogspot.tw/2011/11/gitit-git-based-wiki.html">只放拖鞋的鞋櫃</a>看到。在網路上的高手 <a href="http://macropodus.github.io/gitit_mix_vimwiki.html">Macropodus</a> 研究出如何和 Vimwiki 結合後，又更強化了他的優勢。</p>
+<p>不過 Gitit 預設的模版很沒有設計感，尤其是那個 logo 讓人看了很不舒服。所幸在 <a href="https://groups.google.com/forum/#!topic/gitit-discuss/g6rZWIOmiu8">Google Group</a> 發現了一套由成大資工所製作的好看佈景。以下將介紹如何安裝這套佈景：</p>
+<span id="more"></span>
+
+<ol>
+<li><p>下載佈景<br>打包好的佈景可以在 <a href="https://github.com/CrBoy/csiewiki">GitHub</a> 上找到</p>
+</li>
+<li><p>安裝佈景<br>將包裏解開後，取代 Gitit 原來的 static 和 templates 資料夾</p>
+</li>
+</ol>
+<p>到此為止都和這套佈景的官方安裝教學一樣。如果是採用發行版如 Ubuntu 所提供的 Gitit package，則已經完成。若是用 cabal 安裝, 則必須再安裝相依的套件，以 Ubuntu 為例：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt-get install libghc-filestore-data libc6 libffi6 libgmp10 libpcre3 zlib1g libjs-jquery libjs-jquery-ui</span><br></pre></td></tr></table></figure>
+
+<p>完成的樣子可以參考<a href="http://wiki.csie.ncku.edu.tw/">成大資工 Wiki</a>。</p>
+]]></content>
+      <categories>
+        <category>設定</category>
       </categories>
   </entry>
   <entry>
@@ -325,7 +325,7 @@
 <p>如果你覺得不錯，這個工具解決了你的問題，可以參考這個<a href="https://github.com/changyuheng/fz/blob/master/README-zh.md">安裝說明</a>安裝。</p>
 ]]></content>
       <categories>
-        <category>Software</category>
+        <category>軟體</category>
       </categories>
   </entry>
   <entry>
@@ -335,7 +335,7 @@
 <p><img src="github-streak/github-longest-streak.png"></p>
 ]]></content>
       <categories>
-        <category>Random</category>
+        <category>雜</category>
       </categories>
   </entry>
   <entry>
@@ -375,7 +375,7 @@
 </ul>
 ]]></content>
       <categories>
-        <category>Setup</category>
+        <category>設定</category>
       </categories>
   </entry>
   <entry>
@@ -391,7 +391,7 @@
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bfs</span>(<span class="params">graph, queue, visited=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> visited <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        visited = <span class="built_in">set</span>()</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> queue:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    start = queue.pop(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">yield</span> start</span><br><span class="line">    visited.add(start)</span><br><span class="line">    queue += [vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(queue) - visited]</span><br><span class="line">    <span class="keyword">yield</span> <span class="keyword">from</span> bfs(graph, queue, visited=visited)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bfs_paths</span>(<span class="params">graph, queue, goal</span>):</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> queue:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    (start, path) = queue.pop(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">if</span> start == goal:</span><br><span class="line">        <span class="keyword">yield</span> path</span><br><span class="line">    queue += [(vertex, path + [vertex]) <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(path)]</span><br><span class="line">    <span class="keyword">yield</span> <span class="keyword">from</span> bfs_paths(graph, queue, goal)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">graph = &#123;</span><br><span class="line">    <span class="string">&#x27;A&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;B&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;D&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;C&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;D&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;E&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;F&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;C&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> bfs(graph, [<span class="string">&#x27;A&#x27;</span>])]))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([path <span class="keyword">for</span> path <span class="keyword">in</span> bfs_paths(graph, [(<span class="string">&#x27;A&#x27;</span>, [<span class="string">&#x27;A&#x27;</span>])], <span class="string">&#x27;F&#x27;</span>)]))</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>Algorithm</category>
+        <category>演算法</category>
       </categories>
   </entry>
   <entry>
@@ -419,7 +419,7 @@
 </ul>
 ]]></content>
       <categories>
-        <category>Setup</category>
+        <category>設定</category>
       </categories>
   </entry>
   <entry>
@@ -620,7 +620,7 @@ ABCDEFG<br />
 <iframe scrolling="no" width="100%" height="300" src="https://jsfiddle.net/69z2wepo/embedded/js,resources,html,css,result/light" frameborder="0" loading="lazy" allowfullscreen></iframe>
 ]]></content>
       <categories>
-        <category>Random</category>
+        <category>測試</category>
       </categories>
   </entry>
   <entry>
@@ -685,68 +685,42 @@ ABCDEFG<br />
 <h3 id="Online-Accounts"><a href="#Online-Accounts" class="headerlink" title="Online Accounts"></a><a name="online-accounts"></a>Online Accounts</h3><p>由 <code>Activities</code> → <code>System Settings</code> → <code>Online Accounts</code> 登入 Google 帳戶，登入後可將右方不希望同步的功能關閉。若有開啟 Calendar 同步，可由螢幕最上方正中央的 Calendar 下拉選單中看到將近的活動，提醒時間到時也會由 Evolution 彈出視窗提醒。</p>
 ]]></content>
       <categories>
-        <category>Setup</category>
+        <category>設定</category>
       </categories>
   </entry>
   <entry>
-    <title>Python Learning Resources</title>
-    <url>/2014/python-learning-resources.html</url>
-    <content><![CDATA[<p>同事在問 Python 該如何入門，順手將整理的資料與大眾分享。</p>
-<p>既然要學，就不要拖著歷史的包袱，所以建議直接學習 Python 3。</p>
-<p>對於有程式設計基礎的朋友，可依下列項目順序學習：</p>
+    <title>Port LEDE 17.01 to LinkIt Smart 7688</title>
+    <url>/2017/port-lede-17-01-to-linkit-smart-7688.html</url>
+    <content><![CDATA[<p>心血來潮幫忙把 LinkIt Smart 7688 的作業系統從 <a href="https://forum.openwrt.org/viewtopic.php?pid=315110">OpenWrt Chaos Calmer 15.05.1</a> 升級到 <a href="https://lede-project.org/releases/17.01/">LEDE 17.01</a>。</p>
 <span id="more"></span>
 
+<p><img src="https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/greetings.png"></p>
+<h1 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h1><p>最重要的改變當然就是各個套件的版本變新了。像是：</p>
 <ol>
-<li>官網的 <a href="https://docs.python.org/3/tutorial/">tutorial</a>。</li>
-<li><a href="http://shop.oreilly.com/product/0636920027072.do">Python Cookbook: Recipes for Mastering Python 3</a></li>
-<li><a href="http://www.amazon.com/Python-Practice-Concurrency-Libraries-Developers/dp/0321905636">Python in Practice: Create Better Programs Using Concurrency, Libraries, and Patterns (Developer’s Library)</a></li>
+<li>Linux kernel 從 3.18 升級成 4.4.x。</li>
+<li>Node 從 0.12.x 升級成 4.4.x。</li>
+<li>支援 Python 3.6（預編的 image 裡沒有放，要自己重新編譯或是透過 opkg 安裝）。</li>
 </ol>
-<p>Libraries：</p>
+<p>此外，這個版本才是真正的完全開源。本來 MediaTek 在 OpenWrt 上放的 Wi-Fi driver 是 closed source，如果 kernel 升級造成 driver 版本對不上，就只能祈禱 MediaTek 會釋出配合的新版 driver。不過從官方的 <a href="https://github.com/MediaTek-Labs/linkit-smart-7688-feed/issues/37">issue list</a> 看來，目前 MediaTek 沒有再繼續維護這個 driver。</p>
+<p>好在 OpenWrt 有開發一套完全開源的 Wi-Fi driver <a href="https://github.com/openwrt/mt76">mt76</a> 給 MT7688 系列 chip 使用，所以這個 LEDE port 版本就採用這個 driver 了。</p>
+<p><img src="https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/wi-fi.png"></p>
+<h1 id="Tweak"><a href="#Tweak" class="headerlink" title="Tweak"></a>Tweak</h1><p>這個版本是我只稍微花一點時間做的玩票性質的東西，所以可能會有一些小問題。這些小問題就交給讀者再繼續努力了。</p>
+<p>以下列出我已經測試的部分：</p>
 <ol>
-<li><a href="https://github.com/vinta/awesome-python">https://github.com/vinta/awesome-python</a></li>
+<li>Serial console</li>
+<li>Wi-Fi Access Point mode</li>
+<li>從 MediaTek 的網頁上設定 password。</li>
+<li>SSH login</li>
+<li>Python 2.7</li>
+<li>Node 4.4.5</li>
 </ol>
+<p><img src="https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/website.png"></p>
+<h1 id="Repository"><a href="#Repository" class="headerlink" title="Repository"></a>Repository</h1><p>Repository 連結在此：<a href="https://github.com/changyuheng/linkit-smart-7688-feed">https://github.com/changyuheng/linkit-smart-7688-feed</a></p>
+<p>照著 README 即可進行編譯。</p>
+<p>也可以從這邊下載預編的 image：<a href="https://github.com/changyuheng/linkit-smart-7688-feed/releases/download/v0.1/lede-ramips-mt7688-LinkIt7688-squashfs-sysupgrade.bin">https://github.com/changyuheng/linkit-smart-7688-feed/releases/download/v0.1/lede-ramips-mt7688-LinkIt7688-squashfs-sysupgrade.bin</a></p>
 ]]></content>
       <categories>
-        <category>Python</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>PTT 帳號被砍事件</title>
-    <url>/2015/ptt-%E5%B8%B3%E8%99%9F%E8%A2%AB%E7%A0%8D%E4%BA%8B%E4%BB%B6.html</url>
-    <content><![CDATA[<p>事件起源於多年前我寫了一個<a href="https://changyuheng.github.io/2007/11/05/ptt-efficient-poster/">程式</a>，用來讓 PTT 的發文者能得到與文章字數相符的稿酬。</p>
-<span id="more"></span>
-<p>突然有一天，有個人因為洗錢被檢舉了。</p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/0.html">https://changyuheng.github.io/static/ptt-account-incident/0.html</a></p>
-<p>想不到他自己心術不正，卻要牽拖工具。</p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/0a.html">https://changyuheng.github.io/static/ptt-account-incident/0a.html</a></p>
-<p>於是帳號站長就辦了他。</p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/0b.html">https://changyuheng.github.io/static/ptt-account-incident/0b.html</a></p>
-<p>帳號站長幾天後想想辦了違規的人還不夠爽快，在某個凌晨宣判要砍身為程式作者的我的帳號。</p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/1.html">https://changyuheng.github.io/static/ptt-account-incident/1.html</a></p>
-<p>我馬上去申訴，因為這實在太扯了；程式七年前就已經發佈了，後來只是舊文重發，告訴大家開源而已。但擔任的 AndroidDev 板主職務還是在我起床前就被轉移了。要不是我凌晨剛好看到判決文，立刻就去申訴，我猜板主職務就不只是被轉移而是直接被拔掉吧。PTT 官和官（帳號站長和小組長）之間的橫向溝通似乎蠻有效率的﹙我寄信問問題，要幾週才有回應，他們只要幾小時就能達成共識，而且還是在凌晨﹚。</p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/2.html">https://changyuheng.github.io/static/ptt-account-incident/2.html</a></p>
-<p>另一位帳號站長出來回應我的申訴，並且宣佈結案。明明還是有爭議，但是站方單方面的就結案了；我突然感覺到，他們把 PTT 的註冊規章用得很好：</p>
-<blockquote>
-<p>8、拒絕或終止您的使用(1)<br>您同意本站各級管理者基於其自行之考量，有權隨時終止本服務或其任何部分，<br>包含但不限於對您所為之刪除文章、鎖定文章、看板水桶或看板禁止發言、設定<br>劣文或退文、開處罰單、設定停權、設定變更文章數數值、設定變更 P 幣數值、<br>設定變更信箱容量數值、設定變更您於本站擔任之職務、退回註冊、砍除帳號等。<br>前述處分，並非無權或無故之處分，若您不願接受，請勿同意本條款。若本服務<br>被終止時，本站對您或任何第三人均不承擔責任。</p>
-</blockquote>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/3.html">https://changyuheng.github.io/static/ptt-account-incident/3.html</a></p>
-<p>明知已經結案，還是繼續申訴，站方果然信守承諾不回應。</p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/4.html">https://changyuheng.github.io/static/ptt-account-incident/4.html</a></p>
-<p>過了一陣子，具有同樣的功能的另一程式，因為相同理由被檢舉，但是站長不處置。</p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/5.html">https://changyuheng.github.io/static/ptt-account-incident/5.html</a></p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/6.html">https://changyuheng.github.io/static/ptt-account-incident/6.html</a></p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/7.html">https://changyuheng.github.io/static/ptt-account-incident/7.html</a></p>
-<p>寄信去問站長為什麼判決會有選擇性，但全無回音。</p>
-<p>這就是號稱自由開放的 PTT 的管理品質。</p>
-<p>由以下的討論串可以看出，力圖表明一切秉公處理的帳號站長，實際上不經意地流露出針對性的味道。</p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/8.html">https://changyuheng.github.io/static/ptt-account-incident/8.html</a></p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/9.html">https://changyuheng.github.io/static/ptt-account-incident/9.html</a></p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/10.html">https://changyuheng.github.io/static/ptt-account-incident/10.html</a></p>
-<p>新增申訴：</p>
-<p><a href="https://changyuheng.github.io/static/ptt-account-incident/11.html">https://changyuheng.github.io/static/ptt-account-incident/11.html</a></p>
-]]></content>
-      <categories>
-        <category>Random</category>
+        <category>嵌入式系統</category>
       </categories>
   </entry>
   <entry>
@@ -792,42 +766,85 @@ ABCDEFG<br />
 <p>作業系統：Windows 2000 / XP / Vista / 7 / 8 / 10 32-bit &amp; 64-bit<br>※ 只能在 PCMan 中使用</p>
 ]]></content>
       <categories>
-        <category>Software</category>
+        <category>程式</category>
       </categories>
   </entry>
   <entry>
-    <title>Port LEDE 17.01 to LinkIt Smart 7688</title>
-    <url>/2017/port-lede-17-01-to-linkit-smart-7688.html</url>
-    <content><![CDATA[<p>心血來潮幫忙把 LinkIt Smart 7688 的作業系統從 <a href="https://forum.openwrt.org/viewtopic.php?pid=315110">OpenWrt Chaos Calmer 15.05.1</a> 升級到 <a href="https://lede-project.org/releases/17.01/">LEDE 17.01</a>。</p>
+    <title>PTT 帳號被砍了……</title>
+    <url>/2015/ptt-%E5%B8%B3%E8%99%9F%E8%A2%AB%E7%A0%8D%E4%BA%8B%E4%BB%B6.html</url>
+    <content><![CDATA[<p>事件起源於多年前我寫了一個用來讓 PTT 的發文者能得到與文章字數相符稿酬的<a href="/2007/ptt-efficient-poster">程式</a>。</p>
+<p>程式發表多年後的某一天，有個人因為用我的程式洗錢被檢舉：</p>
+<iframe src="/static/ptt-account-incident/0.html" width="100%" height="600"></iframe>
+
 <span id="more"></span>
 
-<p><img src="https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/greetings.png"></p>
-<h1 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h1><p>最重要的改變當然就是各個套件的版本變新了。像是：</p>
-<ol>
-<li>Linux kernel 從 3.18 升級成 4.4.x。</li>
-<li>Node 從 0.12.x 升級成 4.4.x。</li>
-<li>支援 Python 3.6（預編的 image 裡沒有放，要自己重新編譯或是透過 opkg 安裝）。</li>
-</ol>
-<p>此外，這個版本才是真正的完全開源。本來 MediaTek 在 OpenWrt 上放的 Wi-Fi driver 是 closed source，如果 kernel 升級造成 driver 版本對不上，就只能祈禱 MediaTek 會釋出配合的新版 driver。不過從官方的 <a href="https://github.com/MediaTek-Labs/linkit-smart-7688-feed/issues/37">issue list</a> 看來，目前 MediaTek 沒有再繼續維護這個 driver。</p>
-<p>好在 OpenWrt 有開發一套完全開源的 Wi-Fi driver <a href="https://github.com/openwrt/mt76">mt76</a> 給 MT7688 系列 chip 使用，所以這個 LEDE port 版本就採用這個 driver 了。</p>
-<p><img src="https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/wi-fi.png"></p>
-<h1 id="Tweak"><a href="#Tweak" class="headerlink" title="Tweak"></a>Tweak</h1><p>這個版本是我只稍微花一點時間做的玩票性質的東西，所以可能會有一些小問題。這些小問題就交給讀者再繼續努力了。</p>
-<p>以下列出我已經測試的部分：</p>
-<ol>
-<li>Serial console</li>
-<li>Wi-Fi Access Point mode</li>
-<li>從 MediaTek 的網頁上設定 password。</li>
-<li>SSH login</li>
-<li>Python 2.7</li>
-<li>Node 4.4.5</li>
-</ol>
-<p><img src="https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/website.png"></p>
-<h1 id="Repository"><a href="#Repository" class="headerlink" title="Repository"></a>Repository</h1><p>Repository 連結在此：<a href="https://github.com/changyuheng/linkit-smart-7688-feed">https://github.com/changyuheng/linkit-smart-7688-feed</a></p>
-<p>照著 README 即可進行編譯。</p>
-<p>也可以從這邊下載預編的 image：<a href="https://github.com/changyuheng/linkit-smart-7688-feed/releases/download/v0.1/lede-ramips-mt7688-LinkIt7688-squashfs-sysupgrade.bin">https://github.com/changyuheng/linkit-smart-7688-feed/releases/download/v0.1/lede-ramips-mt7688-LinkIt7688-squashfs-sysupgrade.bin</a></p>
+<p>於是他就被帳號站長處罰了：</p>
+<iframe src="/static/ptt-account-incident/0b.html" width="100%" height="600"></iframe>
+
+<p>但想不到他自己心術不正，還要牽拖工具：</p>
+<iframe src="/static/ptt-account-incident/0a.html" width="100%" height="600"></iframe>
+
+<p>幾天後，帳號站長想想只辦了違規的人還不夠，便又追加宣判要砍身為程式作者的我的帳號作為連坐處罰：</p>
+<iframe src="/static/ptt-account-incident/1.html" width="100%" height="600"></iframe>
+
+<p>我間接收到處分通知後，覺得很不合理，於是就去申訴。<br>我覺得不合理的地方是，我的程式七年前就在 PTT 發布了，當時還被收錄到精華華永久保存，<br>七年後的現在，只是因為我決定公開程式原始碼，發了一篇文章告訴大家可以在哪裡下載原始檔，就說我散布不當程式，滿牽強的。</p>
+<p>PTT 做為一個 BBS Server，從來就沒有指定一個官方的 Client，也就是說，目前所有 Client 程式，像是 PCMan 或 JPTT，通通都是非官方認可的程式。<br>除了沒有官方 Client 程式存在之外，PTT 站方在此判決之前，也沒有說明過什麼樣的程式屬於違規程式。<br>而我程式的功能，只是會讓使用者所發表的文章，逐字延遲送往 PTT Server；換個角度來說，我的程式還能透過分散數據來達到降低 PTT Server 負載的效果。<br>這個延遲送出文章內容的功能，許多專門上 PTT 的手機 App 都有內建，我的功能跟他們一模一樣。<br>甚至因為我的程式是最早發佈的幾個之一，後來的這些手機 App，很可能還參考了我的做法來實做這項功能。<br>所以如果我的程式屬於「惡意程式」，那有一票 App，像 BePTT 和 PiTT 等也都不合規定。而且這些 App 的使用者，即便無意，但也通通屬於「洗錢」的使用者，按目前規定，通通應該被砍帳號。</p>
+<iframe src="/static/ptt-account-incident/2.html" width="100%" height="600"></iframe>
+
+<p>PTT 站方無視我的申訴在進行中，就先把我擔任的 AndroidDev 板主職務轉移到了我的另一個不常用帳號上……這對我造成很大的不便。</p>
+<p>不久後另一位帳號站長出來回應我的申訴，並直接宣佈結案。站長的回應並不完備，這件事情尚有諸多爭議，但站長還是單方面的結案了。站長的立場是，他們可以行使無敵條款：</p>
+<blockquote>
+<p>8、拒絕或終止您的使用(1)<br>您同意本站各級管理者基於其自行之考量，有權隨時終止本服務或其任何部分，<br>包含但不限於對您所為之刪除文章、鎖定文章、看板水桶或看板禁止發言、設定<br>劣文或退文、開處罰單、設定停權、設定變更文章數數值、設定變更 P 幣數值、<br>設定變更信箱容量數值、設定變更您於本站擔任之職務、退回註冊、砍除帳號等。<br>前述處分，並非無權或無故之處分，若您不願接受，請勿同意本條款。若本服務<br>被終止時，本站對您或任何第三人均不承擔責任。</p>
+</blockquote>
+<iframe src="/static/ptt-account-incident/3.html" width="100%" height="600"></iframe>
+
+<p>其實從站長的回應就可以看出，他根本就不懂軟體……</p>
+<p>雖然知道已經結案，我還是再次表達了這安排對我的不公，但站方果然信守承諾不再回應：</p>
+<iframe src="/static/ptt-account-incident/4.html" width="100%" height="600"></iframe>
+
+<p>過了一陣子，具有同樣的功能的另一程式，因為相同理由被其他人檢舉，但是帳號站長選擇雙標，不處置：</p>
+<iframe src="/static/ptt-account-incident/5.html" width="100%" height="600"></iframe>
+
+<iframe src="/static/ptt-account-incident/6.html" width="100%" height="600"></iframe>
+
+<iframe src="/static/ptt-account-incident/7.html" width="100%" height="600"></iframe>
+
+<p>我寄信問站長為什麼判決會有選擇性，但全無回音。</p>
+<p>這就是號稱自由開放的 PTT 的管理品質。</p>
+<p>由以下的討論串可以看出，宣稱一切秉公處理的帳號站長，其實滿偏頗的。</p>
+<iframe src="/static/ptt-account-incident/8.html" width="100%" height="600"></iframe>
+
+<iframe src="/static/ptt-account-incident/9.html" width="100%" height="600"></iframe>
+
+<iframe src="/static/ptt-account-incident/10.html" width="100%" height="600"></iframe>
+
+<p>追加新的申訴：</p>
+<iframe src="/static/ptt-account-incident/11.html" width="100%" height="600"></iframe>
 ]]></content>
       <categories>
-        <category>Embedded</category>
+        <category>抱怨</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Python Learning Resources</title>
+    <url>/2014/python-learning-resources.html</url>
+    <content><![CDATA[<p>同事在問 Python 該如何入門，順手將整理的資料與大眾分享。</p>
+<p>既然要學，就不要拖著歷史的包袱，所以建議直接學習 Python 3。</p>
+<p>對於有程式設計基礎的朋友，可依下列項目順序學習：</p>
+<span id="more"></span>
+
+<ol>
+<li>官網的 <a href="https://docs.python.org/3/tutorial/">tutorial</a>。</li>
+<li><a href="http://shop.oreilly.com/product/0636920027072.do">Python Cookbook: Recipes for Mastering Python 3</a></li>
+<li><a href="http://www.amazon.com/Python-Practice-Concurrency-Libraries-Developers/dp/0321905636">Python in Practice: Create Better Programs Using Concurrency, Libraries, and Patterns (Developer’s Library)</a></li>
+</ol>
+<p>Libraries：</p>
+<ol>
+<li><a href="https://github.com/vinta/awesome-python">https://github.com/vinta/awesome-python</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Python</category>
       </categories>
   </entry>
   <entry>
@@ -871,7 +888,7 @@ ABCDEFG<br />
 <h2 id="安裝-nvm、node"><a href="#安裝-nvm、node" class="headerlink" title="安裝 nvm、node"></a>安裝 nvm、node</h2><h2 id="用-github-webhook-handler-寫一個-handler-來更新-blog。將-handler-加到-systemd-service。"><a href="#用-github-webhook-handler-寫一個-handler-來更新-blog。將-handler-加到-systemd-service。" class="headerlink" title="用 github-webhook-handler 寫一個 handler 來更新 blog。將 handler 加到 systemd service。"></a>用 github-webhook-handler 寫一個 handler 來更新 blog。將 handler 加到 systemd service。</h2><p><a href="https://github.com/rvagg/github-webhook-handler">https://github.com/rvagg/github-webhook-handler</a></p>
 ]]></content>
       <categories>
-        <category>Setup</category>
+        <category>設定</category>
       </categories>
   </entry>
   <entry>
@@ -880,7 +897,7 @@ ABCDEFG<br />
     <content><![CDATA[<p>libpam-smbpass</p>
 ]]></content>
       <categories>
-        <category>Setup</category>
+        <category>設定</category>
       </categories>
   </entry>
   <entry>
@@ -907,7 +924,7 @@ ABCDEFG<br />
 <p>但是光讀不練並不能完全改變生活。你必須身體力行。任何一個你在生活中遇到的問題都能在好書上找到處置方式。而其中大多數，甚至有好幾打書提供了應對之道。所以你開始學以致用，因為透過自制，你不再是那種愛拖延的人而是個行動派。可以想見因此跨越了多少障礙。</p>
 ]]></content>
       <categories>
-        <category>Translation</category>
+        <category>翻譯</category>
       </categories>
   </entry>
   <entry>
@@ -921,7 +938,7 @@ ABCDEFG<br />
 <p>完成後可能需要自行重新啟動電腦才會生效。</p>
 <h2 id="步驟-2-依照-WebATM-提供的方法安裝所需程式，如：玉山銀行"><a href="#步驟-2-依照-WebATM-提供的方法安裝所需程式，如：玉山銀行" class="headerlink" title="步驟 2. 依照 WebATM 提供的方法安裝所需程式，如：玉山銀行"></a>步驟 2. 依照 WebATM 提供的方法安裝所需程式，如：<a href="http://netbank.esunbank.com.tw/webatm/Q&A_016.htm#01">玉山銀行</a></h2>]]></content>
       <categories>
-        <category>Setup</category>
+        <category>設定</category>
       </categories>
   </entry>
   <entry>
@@ -980,22 +997,22 @@ ABCDEFG<br />
     <title>War3Customkey Classic</title>
     <url>/2006/war3customkey-classic.html</url>
     <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/war3customkey-classic/master/screenshot.png" alt="screenshot"></p>
-<p>支援：Warcraft III<br>作業系統：Windows 2000 / XP / Vista / 7 32-bit &amp; 64-bit</p>
 <span id="more"></span>
 
+<p>支援：Warcraft III<br>作業系統：Windows 2000 / XP / Vista / 7 32-bit &amp; 64-bit</p>
 <p>[<strong><a href="https://raw.githubusercontent.com/changyuheng/war3customkey-classic/master/War3Customkey.exe">下載</a></strong>]<br>[<strong><a href="https://github.com/changyuheng/war3customkey-classic">原始碼</a></strong>]</p>
 ]]></content>
       <categories>
-        <category>Software</category>
+        <category>軟體</category>
       </categories>
   </entry>
   <entry>
     <title>War3Customkey</title>
     <url>/2005/war3customkey.html</url>
     <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/war3customkey/master/screenshot.png" alt="screenshot"></p>
-<p>支援：Warcraft III<br>作業系統：Windows 2000 / XP / Vista / 7 / 8 / 10 32-bit &amp; 64-bit</p>
 <span id="more"></span>
 
+<p>支援：Warcraft III<br>作業系統：Windows 2000 / XP / Vista / 7 / 8 / 10 32-bit &amp; 64-bit</p>
 <p><strong>特色</strong></p>
 <ol>
 <li>自定按鍵對應</li>
@@ -1008,7 +1025,7 @@ ABCDEFG<br />
 <p>[<strong><a href="https://raw.githubusercontent.com/changyuheng/war3customkey/master/War3Customkey.exe">下載</a></strong>]<br>[<strong><a href="https://github.com/changyuheng/war3customkey">原始碼</a></strong>]</p>
 ]]></content>
       <categories>
-        <category>Software</category>
+        <category>軟體</category>
       </categories>
   </entry>
   <entry>
@@ -1064,7 +1081,7 @@ ABCDEFG<br />
 </ol>
 ]]></content>
       <categories>
-        <category>Translation</category>
+        <category>翻譯</category>
       </categories>
   </entry>
   <entry>
@@ -1118,7 +1135,7 @@ ABCDEFG<br />
 <p>　10. <strong>大量地</strong>閱讀，並且<strong>動手練習</strong>。</p>
 ]]></content>
       <categories>
-        <category>Translation</category>
+        <category>翻譯</category>
       </categories>
   </entry>
   <entry>
@@ -1152,7 +1169,7 @@ ABCDEFG<br />
 </ol>
 ]]></content>
       <categories>
-        <category>Setup</category>
+        <category>設定</category>
       </categories>
   </entry>
   <entry>
@@ -1172,7 +1189,7 @@ ABCDEFG<br />
 <p><strong><a href="https://raw.githubusercontent.com/changyuheng/windows-photo-viewer-mouse-plug-in/master/bin/windows-photo-viewer-mouse-plug-in.exe">Download</a></strong><br><strong><a href="https://github.com/changyuheng/windows-photo-viewer-mouse-plug-in">Source code</a></strong></p>
 ]]></content>
       <categories>
-        <category>Software</category>
+        <category>軟體</category>
       </categories>
   </entry>
   <entry>
@@ -1194,7 +1211,7 @@ ABCDEFG<br />
 
 <h2 id="步驟-6：重新啟動-gcin"><a href="#步驟-6：重新啟動-gcin" class="headerlink" title="步驟 6：重新啟動 gcin"></a>步驟 6：重新啟動 gcin</h2><h2 id="步驟-7：調整-gcin-設定"><a href="#步驟-7：調整-gcin-設定" class="headerlink" title="步驟 7：調整 gcin 設定"></a>步驟 7：調整 gcin 設定</h2><h3 id="1-在【內定輸入法-amp-開啟-關閉】中調整嘸蝦米是否為預設輸入法、可否由-ctrl-shift-切換"><a href="#1-在【內定輸入法-amp-開啟-關閉】中調整嘸蝦米是否為預設輸入法、可否由-ctrl-shift-切換" class="headerlink" title="1. 在【內定輸入法 &amp; 開啟/關閉】中調整嘸蝦米是否為預設輸入法、可否由 ctrl + shift 切換"></a>1. 在【內定輸入法 &amp; 開啟/關閉】中調整嘸蝦米是否為預設輸入法、可否由 ctrl + shift 切換</h3><h3 id="2-在【倉頡-行列-嘸蝦米-大易設定】中將【預覽-預選-字】調整為【全部開啟】"><a href="#2-在【倉頡-行列-嘸蝦米-大易設定】中將【預覽-預選-字】調整為【全部開啟】" class="headerlink" title="2. 在【倉頡/行列/嘸蝦米/大易設定】中將【預覽/預選 字】調整為【全部開啟】"></a>2. 在【倉頡/行列/嘸蝦米/大易設定】中將【預覽/預選 字】調整為【全部開啟】</h3>]]></content>
       <categories>
-        <category>Setup</category>
+        <category>設定</category>
       </categories>
   </entry>
   <entry>
@@ -1203,11 +1220,10 @@ ABCDEFG<br />
     <content><![CDATA[<p>會盲打的人，在 shell 環境裡如果能找到方便的 tool 來幫助自己，操作速度甚至可以超過滑鼠 + GUI。</p>
 <p>舉二個例子：</p>
 <ol>
-<li>在 prompt 上列出前一指令的 return code 和 VCS 資訊。 <img src="/2017/%E5%91%BD%E4%BB%A4%E5%88%97%E4%B8%8A%E5%BF%AB%E9%80%9F%E5%AE%9A%E4%BD%8D%E6%AA%94%E6%A1%88%E8%88%87%E7%9B%AE%E9%8C%84/powerlevel9k-demo.png" class="" title="powerlevel9k-demo.png"></li>
+<li>在 prompt 上列出前一指令的 return code 和 VCS 資訊。 <img src="/2017/%E5%91%BD%E4%BB%A4%E5%88%97%E4%B8%8A%E5%BF%AB%E9%80%9F%E5%AE%9A%E4%BD%8D%E6%AA%94%E6%A1%88%E8%88%87%E7%9B%AE%E9%8C%84/powerlevel9k-demo.png" class="" title="powerlevel9k-demo.png">
+<span id="more"></span></li>
 <li>用 tig 來操作 git。 <div class="video-container"><iframe src="https://www.youtube.com/embed/udCXubFr5Yo" frameborder="0" loading="lazy" allowfullscreen></iframe></div></li>
 </ol>
-<span id="more"></span>
-
 <p>在 shell 下，最常做的操作的就是找目錄、切目錄、找檔案、開檔案了。但是 <code>cd</code> 要到的目錄的路徑以及 <code>vim</code> 要開的檔案的位置在哪裡，一直都是個痛。就算記得，有時候路徑很深，光是打完就要老半天。</p>
 <p>以下介紹三個可以減輕日常路徑操作負擔的工具：</p>
 <h1 id="bd"><a href="#bd" class="headerlink" title="bd"></a>bd</h1><p><img src="https://raw.githubusercontent.com/Tarrasch/zsh-bd/master/animation.gif"></p>
@@ -1226,7 +1242,7 @@ ABCDEFG<br />
 <p>加碼一套工具。<a href="https://github.com/changyuheng/zsh-interactive-cd">zsh-interactive-cd</a> 將 <a href="https://fishshell.com/">fish</a> 的 cd 互動式補完帶入了 <a href="http://www.zsh.org/">zsh</a>。算是一套短小精悍卻又不可或缺的工具，可惜目前只支援 zsh，還沒有 Bash 的版本。不過作者很有可能是帥哥是無庸置疑的。</p>
 ]]></content>
       <categories>
-        <category>Software</category>
+        <category>軟體</category>
       </categories>
   </entry>
   <entry>
@@ -1234,6 +1250,7 @@ ABCDEFG<br />
     <url>/2014/%E8%87%AA%E8%A1%8C%E7%B5%84%E5%90%88%E5%AE%89%E5%85%A8%E3%80%81%E5%A5%BD%E8%A8%98%E4%B8%94%E6%AF%8F%E5%80%8B%E7%B6%B2%E7%AB%99%E7%9B%B8%E7%95%B0%E7%9A%84%E5%AF%86%E7%A2%BC.html</url>
     <content><![CDATA[<p>資訊應用和我們的結合愈來愈緊密，保護隱私和機敏資料的最後一道防線ーー密碼，顯得更為重要。</p>
 <span id="more"></span>
+
 <p>我們知道密碼不應過於簡單、容易猜測：不該用生日、電話、常見的單字、人名等等。安全的做法是用密碼產生器產生隨機不同大小寫的字母、數字、符號組合。此外，網站被駭客入侵時有所聞，為了避免因為一個網站的密碼外洩而影響到所有的密碼，應該讓每個網站採用不同的密碼。密碼產生器產生的密碼極其複雜，於是有人發明了密碼管理軟體，來幫忙記住各組密碼。但是一旦我們把所有的密碼都放進同一套軟體，不就又將雞蛋丟進同一個籃子裡了嗎？</p>
 <p>一個不同的密碼產生方法：token + pattern。</p>
 <p><strong>優點</strong></p>
@@ -1257,7 +1274,7 @@ ABCDEFG<br />
 </ul>
 ]]></content>
       <categories>
-        <category>Idea</category>
+        <category>點子</category>
       </categories>
   </entry>
   <entry>
@@ -1290,7 +1307,7 @@ ABCDEFG<br />
 <p>如此一來，試算表內的原始資料就會一小時自動更新一次，以後都不用再手動更新資料了。</p>
 ]]></content>
       <categories>
-        <category>Programming</category>
+        <category>程式設計</category>
       </categories>
   </entry>
   <entry>
@@ -1477,7 +1494,7 @@ ABCDEFG<br />
 <p>由此可以看到，在這個環境溫度、機殼內配置下，上方出風口和後出風風扇對散熱的影響都不大。</p>
 ]]></content>
       <categories>
-        <category>Hardware</category>
+        <category>硬體</category>
       </categories>
   </entry>
 </search>
