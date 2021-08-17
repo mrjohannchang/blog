@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>AutoCheckIn for Garena</title>
+    <url>/2008/autocheckin-for-garena.html</url>
+    <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/garena-autocheckin/master/screenshot.png" alt="screenshot"></p>
+<p>支援：Garena 3.x 中文版 &amp; 2010 (4.0.1.6127) English Version、中文版</p>
+<p>作業系統：Windows 2000 / XP / Vista / 7 32-bit &amp; 64-bit</p>
+<span id="more"></span>
+
+<p><strong>特色</strong></p>
+<ol>
+<li>背景自動擠房</li>
+<li>開放原始碼</li>
+</ol>
+<p><strong>使用方法</strong></p>
+<ol>
+<li>執行 AutoCheckIn</li>
+<li>雙擊房間即可自動擠房</li>
+<li>開始擠房後，可以最小化 Garena。</li>
+<li>進入房間後，若 Garena 提示：「您仍在房間裡，要離開房間嗎？」，把它關掉就好了。</li>
+</ol>
+<p>成功加入房間後，程式會彈到最上層提示。</p>
+<p><strong>類似的軟體</strong></p>
+<ol>
+<li><a href="http://kloerhe.pixnet.net/blog/post/23885234-[-%E4%BD%9C%E5%93%81-]-garena-room-joiner-2-#-%E6%94%AF%E6%8F%B4-xp---vista-#-05-19-">Garena Room Joiner 2</a></li>
+</ol>
+<p>[<strong><a href="https://raw.githubusercontent.com/changyuheng/garena-autocheckin/master/AutoCheckIn.exe">下載</a></strong>]<br>[<strong><a href="https://github.com/changyuheng/garena-autocheckin">原始碼</a></strong>]</p>
+]]></content>
+      <categories>
+        <category>Software</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Codeforces Problem 1B</title>
     <url>/2014/codeforces-problem-1b.html</url>
     <content><![CDATA[<p><a href="http://codeforces.com/problemset/problem/1/B">Codeforces Problem 1B</a></p>
@@ -163,34 +194,48 @@
       </categories>
   </entry>
   <entry>
-    <title>AutoCheckIn for Garena</title>
-    <url>/2008/autocheckin-for-garena.html</url>
-    <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/garena-autocheckin/master/screenshot.png" alt="screenshot"></p>
-<p>支援：Garena 3.x 中文版 &amp; 2010 (4.0.1.6127) English Version、中文版</p>
-<p>作業系統：Windows 2000 / XP / Vista / 7 32-bit &amp; 64-bit</p>
+    <title>Cross Compiling Python 2.7.10 and 3.4.3 for MIPSel OpenWrt via uClibc with SSL and SQLite support</title>
+    <url>/2015/cross-compiling-python-3-4-3-for-mipsel.html</url>
+    <content><![CDATA[<p>The notes that were written after succeeding to cross compile Python 2.7.10 and 3.4.3 for MIPSel OpenWrt via uClibc.</p>
 <span id="more"></span>
+<p>I’m not gonna write a very detailed guide. I post my build script on the <a href="https://github.com/changyuheng/cpython-for-openwrt-mips/blob/3.4.3/build.sh">GitHub</a>, please leave a comment if you have any question.</p>
+<h2 id="Build-log-3-4-3"><a href="#Build-log-3-4-3" class="headerlink" title="Build log (3.4.3)"></a>Build log (3.4.3)</h2><script src="//gist.github.com/2e5b13276035fc1aa79a.js?file=build.log"></script>
 
-<p><strong>特色</strong></p>
-<ol>
-<li>背景自動擠房</li>
-<li>開放原始碼</li>
+<h2 id="Run-test-cases-on-the-device-3-4-3"><a href="#Run-test-cases-on-the-device-3-4-3" class="headerlink" title="Run test cases on the device (3.4.3)"></a>Run test cases on the device (3.4.3)</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">bin/python3 lib/python3.4/<span class="built_in">test</span>/test___all__.py</span><br></pre></td></tr></table></figure>
+
+<h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><ul>
+<li>2.7.10 is 100% passed</li>
+<li>3.4.3’s xml.parsers.expat module will cause segmentation fault.</li>
+</ul>
+<h2 id="Refs"><a href="#Refs" class="headerlink" title="Refs"></a>Refs</h2><ol>
+<li><a href="http://randomsplat.com/id5-cross-compiling-python-for-embedded-linux.html">Cross Compiling Python for Embedded Linux</a></li>
 </ol>
-<p><strong>使用方法</strong></p>
-<ol>
-<li>執行 AutoCheckIn</li>
-<li>雙擊房間即可自動擠房</li>
-<li>開始擠房後，可以最小化 Garena。</li>
-<li>進入房間後，若 Garena 提示：「您仍在房間裡，要離開房間嗎？」，把它關掉就好了。</li>
-</ol>
-<p>成功加入房間後，程式會彈到最上層提示。</p>
-<p><strong>類似的軟體</strong></p>
-<ol>
-<li><a href="http://kloerhe.pixnet.net/blog/post/23885234-[-%E4%BD%9C%E5%93%81-]-garena-room-joiner-2-#-%E6%94%AF%E6%8F%B4-xp---vista-#-05-19-">Garena Room Joiner 2</a></li>
-</ol>
-<p>[<strong><a href="https://raw.githubusercontent.com/changyuheng/garena-autocheckin/master/AutoCheckIn.exe">下載</a></strong>]<br>[<strong><a href="https://github.com/changyuheng/garena-autocheckin">原始碼</a></strong>]</p>
+<h2 id="Thanks-to"><a href="#Thanks-to" class="headerlink" title="Thanks to"></a>Thanks to</h2><p><a href="https://tw.linkedin.com/pub/cheng-wig/90/1a1/896">Cheng Wig</a>, he showed me the positive attitude at work.</p>
 ]]></content>
       <categories>
-        <category>Software</category>
+        <category>Embedded</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Deployment of NCKU CSIE Gitit Theme</title>
+    <url>/2010/deployment-of-ncku-csie-gitit-theme.html</url>
+    <content><![CDATA[<p><a href="http://gitit.net/">Gitit</a> 是一套以 Git 作為 base 的 wiki 系統。這套 wiki 的優點可以在<a href="http://walkingice.blogspot.tw/2011/11/gitit-git-based-wiki.html">只放拖鞋的鞋櫃</a>看到。在網路上的高手 <a href="http://macropodus.github.io/gitit_mix_vimwiki.html">Macropodus</a> 研究出如何和 Vimwiki 結合後，又更強化了他的優勢。</p>
+<p>不過 Gitit 預設的模版很沒有設計感，尤其是那個 logo 讓人看了很不舒服。所幸在 <a href="https://groups.google.com/forum/#!topic/gitit-discuss/g6rZWIOmiu8">Google Group</a> 發現了一套由成大資工所製作的好看佈景。以下將介紹如何安裝這套佈景：</p>
+<span id="more"></span>
+
+<ol>
+<li><p>下載佈景<br>打包好的佈景可以在 <a href="https://github.com/CrBoy/csiewiki">GitHub</a> 上找到</p>
+</li>
+<li><p>安裝佈景<br>將包裏解開後，取代 Gitit 原來的 static 和 templates 資料夾</p>
+</li>
+</ol>
+<p>到此為止都和這套佈景的官方安裝教學一樣。如果是採用發行版如 Ubuntu 所提供的 Gitit package，則已經完成。若是用 cabal 安裝, 則必須再安裝相依的套件，以 Ubuntu 為例：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt-get install libghc-filestore-data libc6 libffi6 libgmp10 libpcre3 zlib1g libjs-jquery libjs-jquery-ui</span><br></pre></td></tr></table></figure>
+
+<p>完成的樣子可以參考<a href="http://wiki.csie.ncku.edu.tw/">成大資工 Wiki</a>。</p>
+]]></content>
+      <categories>
+        <category>Setup</category>
       </categories>
   </entry>
   <entry>
@@ -256,61 +301,6 @@
       </categories>
   </entry>
   <entry>
-    <title>Cross Compiling Python 2.7.10 and 3.4.3 for MIPSel OpenWrt via uClibc with SSL and SQLite support</title>
-    <url>/2015/cross-compiling-python-3-4-3-for-mipsel.html</url>
-    <content><![CDATA[<p>The notes that were written after succeeding to cross compile Python 2.7.10 and 3.4.3 for MIPSel OpenWrt via uClibc.</p>
-<span id="more"></span>
-<p>I’m not gonna write a very detailed guide. I post my build script on the <a href="https://github.com/changyuheng/cpython-for-openwrt-mips/blob/3.4.3/build.sh">GitHub</a>, please leave a comment if you have any question.</p>
-<h2 id="Build-log-3-4-3"><a href="#Build-log-3-4-3" class="headerlink" title="Build log (3.4.3)"></a>Build log (3.4.3)</h2><script src="//gist.github.com/2e5b13276035fc1aa79a.js?file=build.log"></script>
-
-<h2 id="Run-test-cases-on-the-device-3-4-3"><a href="#Run-test-cases-on-the-device-3-4-3" class="headerlink" title="Run test cases on the device (3.4.3)"></a>Run test cases on the device (3.4.3)</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">bin/python3 lib/python3.4/<span class="built_in">test</span>/test___all__.py</span><br></pre></td></tr></table></figure>
-
-<h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><ul>
-<li>2.7.10 is 100% passed</li>
-<li>3.4.3’s xml.parsers.expat module will cause segmentation fault.</li>
-</ul>
-<h2 id="Refs"><a href="#Refs" class="headerlink" title="Refs"></a>Refs</h2><ol>
-<li><a href="http://randomsplat.com/id5-cross-compiling-python-for-embedded-linux.html">Cross Compiling Python for Embedded Linux</a></li>
-</ol>
-<h2 id="Thanks-to"><a href="#Thanks-to" class="headerlink" title="Thanks to"></a>Thanks to</h2><p><a href="https://tw.linkedin.com/pub/cheng-wig/90/1a1/896">Cheng Wig</a>, he showed me the positive attitude at work.</p>
-]]></content>
-      <categories>
-        <category>Embedded</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Deployment of NCKU CSIE Gitit Theme</title>
-    <url>/2010/deployment-of-ncku-csie-gitit-theme.html</url>
-    <content><![CDATA[<p><a href="http://gitit.net/">Gitit</a> 是一套以 Git 作為 base 的 wiki 系統。這套 wiki 的優點可以在<a href="http://walkingice.blogspot.tw/2011/11/gitit-git-based-wiki.html">只放拖鞋的鞋櫃</a>看到。在網路上的高手 <a href="http://macropodus.github.io/gitit_mix_vimwiki.html">Macropodus</a> 研究出如何和 Vimwiki 結合後，又更強化了他的優勢。</p>
-<p>不過 Gitit 預設的模版很沒有設計感，尤其是那個 logo 讓人看了很不舒服。所幸在 <a href="https://groups.google.com/forum/#!topic/gitit-discuss/g6rZWIOmiu8">Google Group</a> 發現了一套由成大資工所製作的好看佈景。以下將介紹如何安裝這套佈景：</p>
-<span id="more"></span>
-
-<ol>
-<li><p>下載佈景<br>打包好的佈景可以在 <a href="https://github.com/CrBoy/csiewiki">GitHub</a> 上找到</p>
-</li>
-<li><p>安裝佈景<br>將包裏解開後，取代 Gitit 原來的 static 和 templates 資料夾</p>
-</li>
-</ol>
-<p>到此為止都和這套佈景的官方安裝教學一樣。如果是採用發行版如 Ubuntu 所提供的 Gitit package，則已經完成。若是用 cabal 安裝, 則必須再安裝相依的套件，以 Ubuntu 為例：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt-get install libghc-filestore-data libc6 libffi6 libgmp10 libpcre3 zlib1g libjs-jquery libjs-jquery-ui</span><br></pre></td></tr></table></figure>
-
-<p>完成的樣子可以參考<a href="http://wiki.csie.ncku.edu.tw/">成大資工 Wiki</a>。</p>
-]]></content>
-      <categories>
-        <category>Setup</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>My Longest Streak on GitHub</title>
-    <url>/2014/github-streak.html</url>
-    <content><![CDATA[<p>一時興致起來，實驗性地洗了一下 GitHub 的 longest streak。</p>
-<p><img src="github-streak/github-longest-streak.png"></p>
-]]></content>
-      <categories>
-        <category>Random</category>
-      </categories>
-  </entry>
-  <entry>
     <title>fz - 模糊搜尋互動式 cd 自動補完套件</title>
     <url>/2017/fz-fuzzy-search-in-tab-completions-of-z.html</url>
     <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/fz/master/fz-demo.gif"></p>
@@ -336,6 +326,16 @@
 ]]></content>
       <categories>
         <category>Software</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>My Longest Streak on GitHub</title>
+    <url>/2014/github-streak.html</url>
+    <content><![CDATA[<p>一時興致起來，實驗性地洗了一下 GitHub 的 longest streak。</p>
+<p><img src="github-streak/github-longest-streak.png"></p>
+]]></content>
+      <categories>
+        <category>Random</category>
       </categories>
   </entry>
   <entry>
@@ -689,41 +689,6 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
-    <title>Port LEDE 17.01 to LinkIt Smart 7688</title>
-    <url>/2017/port-lede-17-01-to-linkit-smart-7688.html</url>
-    <content><![CDATA[<p>心血來潮幫忙把 LinkIt Smart 7688 的作業系統從 <a href="https://forum.openwrt.org/viewtopic.php?pid=315110">OpenWrt Chaos Calmer 15.05.1</a> 升級到 <a href="https://lede-project.org/releases/17.01/">LEDE 17.01</a>。</p>
-<span id="more"></span>
-
-<p><img src="https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/greetings.png"></p>
-<h1 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h1><p>最重要的改變當然就是各個套件的版本變新了。像是：</p>
-<ol>
-<li>Linux kernel 從 3.18 升級成 4.4.x。</li>
-<li>Node 從 0.12.x 升級成 4.4.x。</li>
-<li>支援 Python 3.6（預編的 image 裡沒有放，要自己重新編譯或是透過 opkg 安裝）。</li>
-</ol>
-<p>此外，這個版本才是真正的完全開源。本來 MediaTek 在 OpenWrt 上放的 Wi-Fi driver 是 closed source，如果 kernel 升級造成 driver 版本對不上，就只能祈禱 MediaTek 會釋出配合的新版 driver。不過從官方的 <a href="https://github.com/MediaTek-Labs/linkit-smart-7688-feed/issues/37">issue list</a> 看來，目前 MediaTek 沒有再繼續維護這個 driver。</p>
-<p>好在 OpenWrt 有開發一套完全開源的 Wi-Fi driver <a href="https://github.com/openwrt/mt76">mt76</a> 給 MT7688 系列 chip 使用，所以這個 LEDE port 版本就採用這個 driver 了。</p>
-<p><img src="https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/wi-fi.png"></p>
-<h1 id="Tweak"><a href="#Tweak" class="headerlink" title="Tweak"></a>Tweak</h1><p>這個版本是我只稍微花一點時間做的玩票性質的東西，所以可能會有一些小問題。這些小問題就交給讀者再繼續努力了。</p>
-<p>以下列出我已經測試的部分：</p>
-<ol>
-<li>Serial console</li>
-<li>Wi-Fi Access Point mode</li>
-<li>從 MediaTek 的網頁上設定 password。</li>
-<li>SSH login</li>
-<li>Python 2.7</li>
-<li>Node 4.4.5</li>
-</ol>
-<p><img src="https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/website.png"></p>
-<h1 id="Repository"><a href="#Repository" class="headerlink" title="Repository"></a>Repository</h1><p>Repository 連結在此：<a href="https://github.com/changyuheng/linkit-smart-7688-feed">https://github.com/changyuheng/linkit-smart-7688-feed</a></p>
-<p>照著 README 即可進行編譯。</p>
-<p>也可以從這邊下載預編的 image：<a href="https://github.com/changyuheng/linkit-smart-7688-feed/releases/download/v0.1/lede-ramips-mt7688-LinkIt7688-squashfs-sysupgrade.bin">https://github.com/changyuheng/linkit-smart-7688-feed/releases/download/v0.1/lede-ramips-mt7688-LinkIt7688-squashfs-sysupgrade.bin</a></p>
-]]></content>
-      <categories>
-        <category>Embedded</category>
-      </categories>
-  </entry>
-  <entry>
     <title>PTT Efficient Poster</title>
     <url>/2007/ptt-efficient-poster.html</url>
     <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/ptt-efficient-poster/master/demo.gif" alt="screenshot"></p>
@@ -770,6 +735,107 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
+    <title>Port LEDE 17.01 to LinkIt Smart 7688</title>
+    <url>/2017/port-lede-17-01-to-linkit-smart-7688.html</url>
+    <content><![CDATA[<p>心血來潮幫忙把 LinkIt Smart 7688 的作業系統從 <a href="https://forum.openwrt.org/viewtopic.php?pid=315110">OpenWrt Chaos Calmer 15.05.1</a> 升級到 <a href="https://lede-project.org/releases/17.01/">LEDE 17.01</a>。</p>
+<span id="more"></span>
+
+<p><img src="https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/greetings.png"></p>
+<h1 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h1><p>最重要的改變當然就是各個套件的版本變新了。像是：</p>
+<ol>
+<li>Linux kernel 從 3.18 升級成 4.4.x。</li>
+<li>Node 從 0.12.x 升級成 4.4.x。</li>
+<li>支援 Python 3.6（預編的 image 裡沒有放，要自己重新編譯或是透過 opkg 安裝）。</li>
+</ol>
+<p>此外，這個版本才是真正的完全開源。本來 MediaTek 在 OpenWrt 上放的 Wi-Fi driver 是 closed source，如果 kernel 升級造成 driver 版本對不上，就只能祈禱 MediaTek 會釋出配合的新版 driver。不過從官方的 <a href="https://github.com/MediaTek-Labs/linkit-smart-7688-feed/issues/37">issue list</a> 看來，目前 MediaTek 沒有再繼續維護這個 driver。</p>
+<p>好在 OpenWrt 有開發一套完全開源的 Wi-Fi driver <a href="https://github.com/openwrt/mt76">mt76</a> 給 MT7688 系列 chip 使用，所以這個 LEDE port 版本就採用這個 driver 了。</p>
+<p><img src="https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/wi-fi.png"></p>
+<h1 id="Tweak"><a href="#Tweak" class="headerlink" title="Tweak"></a>Tweak</h1><p>這個版本是我只稍微花一點時間做的玩票性質的東西，所以可能會有一些小問題。這些小問題就交給讀者再繼續努力了。</p>
+<p>以下列出我已經測試的部分：</p>
+<ol>
+<li>Serial console</li>
+<li>Wi-Fi Access Point mode</li>
+<li>從 MediaTek 的網頁上設定 password。</li>
+<li>SSH login</li>
+<li>Python 2.7</li>
+<li>Node 4.4.5</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/changyuheng/linkit-smart-7688-feed/master/.screenshots/website.png"></p>
+<h1 id="Repository"><a href="#Repository" class="headerlink" title="Repository"></a>Repository</h1><p>Repository 連結在此：<a href="https://github.com/changyuheng/linkit-smart-7688-feed">https://github.com/changyuheng/linkit-smart-7688-feed</a></p>
+<p>照著 README 即可進行編譯。</p>
+<p>也可以從這邊下載預編的 image：<a href="https://github.com/changyuheng/linkit-smart-7688-feed/releases/download/v0.1/lede-ramips-mt7688-LinkIt7688-squashfs-sysupgrade.bin">https://github.com/changyuheng/linkit-smart-7688-feed/releases/download/v0.1/lede-ramips-mt7688-LinkIt7688-squashfs-sysupgrade.bin</a></p>
+]]></content>
+      <categories>
+        <category>Embedded</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Python Learning Resources</title>
+    <url>/2014/python-learning-resources.html</url>
+    <content><![CDATA[<p>同事在問 Python 該如何入門，順手將整理的資料與大眾分享。</p>
+<p>既然要學，就不要拖著歷史的包袱，所以建議直接學習 Python 3。</p>
+<p>對於有程式設計基礎的朋友，可依下列項目順序學習：</p>
+<span id="more"></span>
+
+<ol>
+<li>官網的 <a href="https://docs.python.org/3/tutorial/">tutorial</a>。</li>
+<li><a href="http://shop.oreilly.com/product/0636920027072.do">Python Cookbook: Recipes for Mastering Python 3</a></li>
+<li><a href="http://www.amazon.com/Python-Practice-Concurrency-Libraries-Developers/dp/0321905636">Python in Practice: Create Better Programs Using Concurrency, Libraries, and Patterns (Developer’s Library)</a></li>
+</ol>
+<p>Libraries：</p>
+<ol>
+<li><a href="https://github.com/vinta/awesome-python">https://github.com/vinta/awesome-python</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Raspberry Pi Raspbian Jessie 安裝設定</title>
+    <url>/2015/raspberry-pi-raspbian-jessie-%E5%AE%89%E8%A3%9D%E8%A8%AD%E5%AE%9A.html</url>
+    <content><![CDATA[<p>Jessie 剛從 SysVinit 換成 systemd。因為不同的 init system 的設定方式不同，而 raspi-config 還沒有更新到支援 systemd，所以有些設定必須手動，不能透過 raspi-config。</p>
+<span id="more"></span>
+<!-- toc -->
+<h2 id="先嘗試從-raspi-config-expand-filesystem，以及其他設定，無效或沒有-UI-能操作的再嘗試下面的方法。"><a href="#先嘗試從-raspi-config-expand-filesystem，以及其他設定，無效或沒有-UI-能操作的再嘗試下面的方法。" class="headerlink" title="先嘗試從 raspi-config expand filesystem，以及其他設定，無效或沒有 UI 能操作的再嘗試下面的方法。"></a>先嘗試從 raspi-config expand filesystem，以及其他設定，無效或沒有 UI 能操作的再嘗試下面的方法。</h2><h2 id="關閉開機自動啟動的-GUI-desktop"><a href="#關閉開機自動啟動的-GUI-desktop" class="headerlink" title="關閉開機自動啟動的 GUI (desktop)"></a>關閉開機自動啟動的 GUI (desktop)</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo systemctl set-default multi-user.target</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://www.raspberrypi.org/forums/viewtopic.php?f=66&amp;t=92727">https://www.raspberrypi.org/forums/viewtopic.php?f=66&amp;t=92727</a></p>
+<h2 id="鍵盤-layout-由-enGB-改為-enUS"><a href="#鍵盤-layout-由-enGB-改為-enUS" class="headerlink" title="鍵盤 layout 由 enGB 改為 enUS"></a>鍵盤 layout 由 enGB 改為 enUS</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo dpkg-reconfigure keyboard-configuration</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://www.raspberrypi.org/forums/viewtopic.php?f=28&amp;t=80127">https://www.raspberrypi.org/forums/viewtopic.php?f=28&amp;t=80127</a></p>
+<h2 id="Apt-source-改為使用國網中心提供的-mirror"><a href="#Apt-source-改為使用國網中心提供的-mirror" class="headerlink" title="Apt source 改為使用國網中心提供的 mirror"></a>Apt source 改為使用國網中心提供的 mirror</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">(ftp|http)://free.nchc.org.tw/raspbian/raspbian</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://www.raspbian.org/RaspbianMirrors">https://www.raspbian.org/RaspbianMirrors</a></p>
+<h2 id="預設編輯器改為-Vim"><a href="#預設編輯器改為-Vim" class="headerlink" title="預設編輯器改為 Vim"></a>預設編輯器改為 Vim</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo update-alternatives –config editor</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://www.raspberrypi.org/forums/viewtopic.php?f=27&amp;t=9376">https://www.raspberrypi.org/forums/viewtopic.php?f=27&amp;t=9376</a></p>
+<h2 id="加入-SSH-authorized-key、關閉-pi-user-的-password"><a href="#加入-SSH-authorized-key、關閉-pi-user-的-password" class="headerlink" title="加入 SSH authorized key、關閉 pi user 的 password"></a>加入 SSH authorized key、關閉 pi user 的 password</h2><h2 id="設定-PPPoE"><a href="#設定-PPPoE" class="headerlink" title="設定 PPPoE"></a>設定 PPPoE</h2><h2 id="設定-DDNS-DNS-provider-gt-CNAME-gt-twbbs-org-gt-NS-gt-FreeDNS"><a href="#設定-DDNS-DNS-provider-gt-CNAME-gt-twbbs-org-gt-NS-gt-FreeDNS" class="headerlink" title="設定 DDNS (DNS provider -&gt; (CNAME) -&gt; twbbs.org -&gt; (NS) -&gt; FreeDNS"></a>設定 DDNS (DNS provider -&gt; (CNAME) -&gt; twbbs.org -&gt; (NS) -&gt; FreeDNS</h2><p>以前可以透過在 <code>/etc/network/if-up.d</code> 放一個可執行檔來hook DDNS 服務，但是現在 systemd 管理的 networking 似乎沒有辦法這麼做。</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> -e</span><br><span class="line"></span><br><span class="line">ip=$(ip -f inet addr show eth0 | grep -Po <span class="string">&#x27;inet \K[\d.]+&#x27;</span>)</span><br><span class="line">( sleep 10 ; curl <span class="string">&quot;https://url-to-update-ip-address&quot;</span> )</span><br></pre></td></tr></table></figure>
+
+<h2 id="安裝-nvm、node"><a href="#安裝-nvm、node" class="headerlink" title="安裝 nvm、node"></a>安裝 nvm、node</h2><h2 id="用-github-webhook-handler-寫一個-handler-來更新-blog。將-handler-加到-systemd-service。"><a href="#用-github-webhook-handler-寫一個-handler-來更新-blog。將-handler-加到-systemd-service。" class="headerlink" title="用 github-webhook-handler 寫一個 handler 來更新 blog。將 handler 加到 systemd service。"></a>用 github-webhook-handler 寫一個 handler 來更新 blog。將 handler 加到 systemd service。</h2><p><a href="https://github.com/rvagg/github-webhook-handler">https://github.com/rvagg/github-webhook-handler</a></p>
+]]></content>
+      <categories>
+        <category>Setup</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Python logging module example</title>
+    <url>/2015/python-logging-module-example.html</url>
+    <content><![CDATA[<p>Python 的 logging module 功能完整強大，但手冊裡卻沒有一個簡明的 config 範例。</p>
+<p>記錄一下。</p>
+<span id="more"></span>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python3</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> logging</span><br><span class="line"><span class="keyword">import</span> logging.config</span><br><span class="line"></span><br><span class="line">logging.config.dictConfig(&#123;</span><br><span class="line">    <span class="string">&#x27;version&#x27;</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="string">&#x27;formatters&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;default&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;format&#x27;</span>: <span class="string">&#x27;[%(asctime)s|PID:%(process)d|TID:%(thread)d|%(filename)s:%(lineno)d|%(funcName)s|%(name)s|%(levelname)s] %(message)s&#x27;</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">&#x27;handlers&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;console&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;logging.StreamHandler&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;formatter&#x27;</span>: <span class="string">&#x27;default&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&#x27;http&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;logging.handlers.HTTPHandler&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;formatter&#x27;</span>: <span class="string">&#x27;default&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">            <span class="string">&#x27;host&#x27;</span>: <span class="string">&#x27;localhost:3000&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;url&#x27;</span>: <span class="string">&#x27;/log&#x27;</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&#x27;rotatingfile&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;logging.handlers.RotatingFileHandler&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;formatter&#x27;</span>: <span class="string">&#x27;default&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">            <span class="string">&#x27;filename&#x27;</span>: <span class="string">&#x27;test.log&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;maxBytes&#x27;</span>: <span class="number">512</span> * <span class="number">1024</span> * <span class="number">1024</span>,</span><br><span class="line">            <span class="string">&#x27;backupCount&#x27;</span>: <span class="number">1</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">&#x27;loggers&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;handlers&#x27;</span>: [<span class="string">&#x27;console&#x27;</span>, <span class="string">&#x27;http&#x27;</span>, <span class="string">&#x27;rotatingfile&#x27;</span>],</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">logging.info(<span class="string">&#x27;test1&#x27;</span>)</span><br><span class="line">logger = logging.getLogger()</span><br><span class="line">logger.info(<span class="string">&#x27;test&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h2><ol>
+<li><a href="http://docs.python-guide.org/en/latest/writing/logging/">The Hitchhiker’s Guide to Python</a></li>
+<li><a href="https://docs.python.org/2/library/logging.html">The Python Standard Library</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+  </entry>
+  <entry>
     <title>PTT 帳號被砍事件</title>
     <url>/2015/ptt-%E5%B8%B3%E8%99%9F%E8%A2%AB%E7%A0%8D%E4%BA%8B%E4%BB%B6.html</url>
     <content><![CDATA[<p>事件起源於多年前我寫了一個<a href="https://changyuheng.github.io/2007/11/05/ptt-efficient-poster/">程式</a>，用來讓 PTT 的發文者能得到與文章字數相符的稿酬。</p>
@@ -809,76 +875,49 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
-    <title>Python Learning Resources</title>
-    <url>/2014/python-learning-resources.html</url>
-    <content><![CDATA[<p>同事在問 Python 該如何入門，順手將整理的資料與大眾分享。</p>
-<p>既然要學，就不要拖著歷史的包袱，所以建議直接學習 Python 3。</p>
-<p>對於有程式設計基礎的朋友，可依下列項目順序學習：</p>
-<span id="more"></span>
-
-<ol>
-<li>官網的 <a href="https://docs.python.org/3/tutorial/">tutorial</a>。</li>
-<li><a href="http://shop.oreilly.com/product/0636920027072.do">Python Cookbook: Recipes for Mastering Python 3</a></li>
-<li><a href="http://www.amazon.com/Python-Practice-Concurrency-Libraries-Developers/dp/0321905636">Python in Practice: Create Better Programs Using Concurrency, Libraries, and Patterns (Developer’s Library)</a></li>
-</ol>
-<p>Libraries：</p>
-<ol>
-<li><a href="https://github.com/vinta/awesome-python">https://github.com/vinta/awesome-python</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Python logging module example</title>
-    <url>/2015/python-logging-module-example.html</url>
-    <content><![CDATA[<p>Python 的 logging module 功能完整強大，但手冊裡卻沒有一個簡明的 config 範例。</p>
-<p>記錄一下。</p>
-<span id="more"></span>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python3</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> logging</span><br><span class="line"><span class="keyword">import</span> logging.config</span><br><span class="line"></span><br><span class="line">logging.config.dictConfig(&#123;</span><br><span class="line">    <span class="string">&#x27;version&#x27;</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="string">&#x27;formatters&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;default&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;format&#x27;</span>: <span class="string">&#x27;[%(asctime)s|PID:%(process)d|TID:%(thread)d|%(filename)s:%(lineno)d|%(funcName)s|%(name)s|%(levelname)s] %(message)s&#x27;</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">&#x27;handlers&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;console&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;logging.StreamHandler&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;formatter&#x27;</span>: <span class="string">&#x27;default&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&#x27;http&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;logging.handlers.HTTPHandler&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;formatter&#x27;</span>: <span class="string">&#x27;default&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">            <span class="string">&#x27;host&#x27;</span>: <span class="string">&#x27;localhost:3000&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;url&#x27;</span>: <span class="string">&#x27;/log&#x27;</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&#x27;rotatingfile&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;logging.handlers.RotatingFileHandler&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;formatter&#x27;</span>: <span class="string">&#x27;default&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">            <span class="string">&#x27;filename&#x27;</span>: <span class="string">&#x27;test.log&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;maxBytes&#x27;</span>: <span class="number">512</span> * <span class="number">1024</span> * <span class="number">1024</span>,</span><br><span class="line">            <span class="string">&#x27;backupCount&#x27;</span>: <span class="number">1</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">&#x27;loggers&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;handlers&#x27;</span>: [<span class="string">&#x27;console&#x27;</span>, <span class="string">&#x27;http&#x27;</span>, <span class="string">&#x27;rotatingfile&#x27;</span>],</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">logging.info(<span class="string">&#x27;test1&#x27;</span>)</span><br><span class="line">logger = logging.getLogger()</span><br><span class="line">logger.info(<span class="string">&#x27;test&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<h2 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h2><ol>
-<li><a href="http://docs.python-guide.org/en/latest/writing/logging/">The Hitchhiker’s Guide to Python</a></li>
-<li><a href="https://docs.python.org/2/library/logging.html">The Python Standard Library</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Raspberry Pi Raspbian Jessie 安裝設定</title>
-    <url>/2015/raspberry-pi-raspbian-jessie-%E5%AE%89%E8%A3%9D%E8%A8%AD%E5%AE%9A.html</url>
-    <content><![CDATA[<p>Jessie 剛從 SysVinit 換成 systemd。因為不同的 init system 的設定方式不同，而 raspi-config 還沒有更新到支援 systemd，所以有些設定必須手動，不能透過 raspi-config。</p>
-<span id="more"></span>
-<!-- toc -->
-<h2 id="先嘗試從-raspi-config-expand-filesystem，以及其他設定，無效或沒有-UI-能操作的再嘗試下面的方法。"><a href="#先嘗試從-raspi-config-expand-filesystem，以及其他設定，無效或沒有-UI-能操作的再嘗試下面的方法。" class="headerlink" title="先嘗試從 raspi-config expand filesystem，以及其他設定，無效或沒有 UI 能操作的再嘗試下面的方法。"></a>先嘗試從 raspi-config expand filesystem，以及其他設定，無效或沒有 UI 能操作的再嘗試下面的方法。</h2><h2 id="關閉開機自動啟動的-GUI-desktop"><a href="#關閉開機自動啟動的-GUI-desktop" class="headerlink" title="關閉開機自動啟動的 GUI (desktop)"></a>關閉開機自動啟動的 GUI (desktop)</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo systemctl set-default multi-user.target</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://www.raspberrypi.org/forums/viewtopic.php?f=66&amp;t=92727">https://www.raspberrypi.org/forums/viewtopic.php?f=66&amp;t=92727</a></p>
-<h2 id="鍵盤-layout-由-enGB-改為-enUS"><a href="#鍵盤-layout-由-enGB-改為-enUS" class="headerlink" title="鍵盤 layout 由 enGB 改為 enUS"></a>鍵盤 layout 由 enGB 改為 enUS</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo dpkg-reconfigure keyboard-configuration</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://www.raspberrypi.org/forums/viewtopic.php?f=28&amp;t=80127">https://www.raspberrypi.org/forums/viewtopic.php?f=28&amp;t=80127</a></p>
-<h2 id="Apt-source-改為使用國網中心提供的-mirror"><a href="#Apt-source-改為使用國網中心提供的-mirror" class="headerlink" title="Apt source 改為使用國網中心提供的 mirror"></a>Apt source 改為使用國網中心提供的 mirror</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">(ftp|http)://free.nchc.org.tw/raspbian/raspbian</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://www.raspbian.org/RaspbianMirrors">https://www.raspbian.org/RaspbianMirrors</a></p>
-<h2 id="預設編輯器改為-Vim"><a href="#預設編輯器改為-Vim" class="headerlink" title="預設編輯器改為 Vim"></a>預設編輯器改為 Vim</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo update-alternatives –config editor</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://www.raspberrypi.org/forums/viewtopic.php?f=27&amp;t=9376">https://www.raspberrypi.org/forums/viewtopic.php?f=27&amp;t=9376</a></p>
-<h2 id="加入-SSH-authorized-key、關閉-pi-user-的-password"><a href="#加入-SSH-authorized-key、關閉-pi-user-的-password" class="headerlink" title="加入 SSH authorized key、關閉 pi user 的 password"></a>加入 SSH authorized key、關閉 pi user 的 password</h2><h2 id="設定-PPPoE"><a href="#設定-PPPoE" class="headerlink" title="設定 PPPoE"></a>設定 PPPoE</h2><h2 id="設定-DDNS-DNS-provider-gt-CNAME-gt-twbbs-org-gt-NS-gt-FreeDNS"><a href="#設定-DDNS-DNS-provider-gt-CNAME-gt-twbbs-org-gt-NS-gt-FreeDNS" class="headerlink" title="設定 DDNS (DNS provider -&gt; (CNAME) -&gt; twbbs.org -&gt; (NS) -&gt; FreeDNS"></a>設定 DDNS (DNS provider -&gt; (CNAME) -&gt; twbbs.org -&gt; (NS) -&gt; FreeDNS</h2><p>以前可以透過在 <code>/etc/network/if-up.d</code> 放一個可執行檔來hook DDNS 服務，但是現在 systemd 管理的 networking 似乎沒有辦法這麼做。</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> -e</span><br><span class="line"></span><br><span class="line">ip=$(ip -f inet addr show eth0 | grep -Po <span class="string">&#x27;inet \K[\d.]+&#x27;</span>)</span><br><span class="line">( sleep 10 ; curl <span class="string">&quot;https://url-to-update-ip-address&quot;</span> )</span><br></pre></td></tr></table></figure>
-
-<h2 id="安裝-nvm、node"><a href="#安裝-nvm、node" class="headerlink" title="安裝 nvm、node"></a>安裝 nvm、node</h2><h2 id="用-github-webhook-handler-寫一個-handler-來更新-blog。將-handler-加到-systemd-service。"><a href="#用-github-webhook-handler-寫一個-handler-來更新-blog。將-handler-加到-systemd-service。" class="headerlink" title="用 github-webhook-handler 寫一個 handler 來更新 blog。將 handler 加到 systemd service。"></a>用 github-webhook-handler 寫一個 handler 來更新 blog。將 handler 加到 systemd service。</h2><p><a href="https://github.com/rvagg/github-webhook-handler">https://github.com/rvagg/github-webhook-handler</a></p>
+    <title>Syncing Samba Accounts with Unix Login Accounts</title>
+    <url>/2011/syncing-samba-accounts-with-unix-login-accounts.html</url>
+    <content><![CDATA[<p>libpam-smbpass</p>
 ]]></content>
       <categories>
         <category>Setup</category>
       </categories>
   </entry>
   <entry>
-    <title>Syncing Samba Accounts with Unix Login Accounts</title>
-    <url>/2011/syncing-samba-accounts-with-unix-login-accounts.html</url>
-    <content><![CDATA[<p>libpam-smbpass</p>
+    <title>Understanding Python Decorators</title>
+    <url>/2014/understanding-python-decorators.html</url>
+    <content><![CDATA[<p>Decorator 是一個 Python 中較為進階的語法，因為較難理解故常被提出來討論。這邊提供一個簡潔的說明。</p>
+<span id="more"></span>
+
+<p>假設有一名為 func 的 function 被名為 decor1 和 decor2 的二 decorator 修飾如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">@decor1</span></span><br><span class="line"><span class="meta">@decor2</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">func</span>(<span class="params">*args, **kwargs</span>):</span></span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
+
+<p>則當我們如下呼叫 func() 時：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">func(*args, **kwargs)</span><br></pre></td></tr></table></figure>
+
+<p>可以將之理解為：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">decor1(decor2(func))(*args, **kwargs)</span><br></pre></td></tr></table></figure>
+
+<p>更詳細的說明可以參考：</p>
+<ol>
+<li><a href="http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/">Understanding Python Decorators in 12 Easy Steps!</a></li>
+<li><a href="http://stackoverflow.com/a/739679">How can I make a chain of function decorators in Python?</a></li>
+</ol>
 ]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>在 Ubuntu 12.04 安裝 IT-830UP 晶片讀卡機與使用 WebATM</title>
+    <url>/2013/ubuntu-12-dot-04-an-zhuang-it-830up-jing-pian-du-qia-ji.html</url>
+    <content><![CDATA[<p><img src="http://www.ittec.com.tw/images/IT-830UP%28DM%29.jpg" alt="IT-830UP"></p>
+<span id="more"></span>
+
+<h2 id="步驟-1-安裝所需套件"><a href="#步驟-1-安裝所需套件" class="headerlink" title="步驟 1. 安裝所需套件"></a>步驟 1. 安裝所需套件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install pcscd pcsc-tools libccid</span><br></pre></td></tr></table></figure>
+
+<p>完成後可能需要自行重新啟動電腦才會生效。</p>
+<h2 id="步驟-2-依照-WebATM-提供的方法安裝所需程式，如：玉山銀行"><a href="#步驟-2-依照-WebATM-提供的方法安裝所需程式，如：玉山銀行" class="headerlink" title="步驟 2. 依照 WebATM 提供的方法安裝所需程式，如：玉山銀行"></a>步驟 2. 依照 WebATM 提供的方法安裝所需程式，如：<a href="http://netbank.esunbank.com.tw/webatm/Q&A_016.htm#01">玉山銀行</a></h2>]]></content>
       <categories>
         <category>Setup</category>
       </categories>
@@ -908,45 +947,6 @@ ABCDEFG<br />
 ]]></content>
       <categories>
         <category>Translation</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>在 Ubuntu 12.04 安裝 IT-830UP 晶片讀卡機與使用 WebATM</title>
-    <url>/2013/ubuntu-12-dot-04-an-zhuang-it-830up-jing-pian-du-qia-ji.html</url>
-    <content><![CDATA[<p><img src="http://www.ittec.com.tw/images/IT-830UP%28DM%29.jpg" alt="IT-830UP"></p>
-<span id="more"></span>
-
-<h2 id="步驟-1-安裝所需套件"><a href="#步驟-1-安裝所需套件" class="headerlink" title="步驟 1. 安裝所需套件"></a>步驟 1. 安裝所需套件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install pcscd pcsc-tools libccid</span><br></pre></td></tr></table></figure>
-
-<p>完成後可能需要自行重新啟動電腦才會生效。</p>
-<h2 id="步驟-2-依照-WebATM-提供的方法安裝所需程式，如：玉山銀行"><a href="#步驟-2-依照-WebATM-提供的方法安裝所需程式，如：玉山銀行" class="headerlink" title="步驟 2. 依照 WebATM 提供的方法安裝所需程式，如：玉山銀行"></a>步驟 2. 依照 WebATM 提供的方法安裝所需程式，如：<a href="http://netbank.esunbank.com.tw/webatm/Q&A_016.htm#01">玉山銀行</a></h2>]]></content>
-      <categories>
-        <category>Setup</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Understanding Python Decorators</title>
-    <url>/2014/understanding-python-decorators.html</url>
-    <content><![CDATA[<p>Decorator 是一個 Python 中較為進階的語法，因為較難理解故常被提出來討論。這邊提供一個簡潔的說明。</p>
-<span id="more"></span>
-
-<p>假設有一名為 func 的 function 被名為 decor1 和 decor2 的二 decorator 修飾如下：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">@decor1</span></span><br><span class="line"><span class="meta">@decor2</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">func</span>(<span class="params">*args, **kwargs</span>):</span></span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
-
-<p>則當我們如下呼叫 func() 時：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">func(*args, **kwargs)</span><br></pre></td></tr></table></figure>
-
-<p>可以將之理解為：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">decor1(decor2(func))(*args, **kwargs)</span><br></pre></td></tr></table></figure>
-
-<p>更詳細的說明可以參考：</p>
-<ol>
-<li><a href="http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/">Understanding Python Decorators in 12 Easy Steps!</a></li>
-<li><a href="http://stackoverflow.com/a/739679">How can I make a chain of function decorators in Python?</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Python</category>
       </categories>
   </entry>
   <entry>
@@ -1012,60 +1012,6 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
-    <title>對程式設計師來說，提高薪水最好的建議是什麼？</title>
-    <url>/2016/what-is-the-best-career-advice-for-a-software-developer-to-earn-a-higher-salary.html</url>
-    <content><![CDATA[<p>關於這個問題，在 Quora 數則<a href="https://www.quora.com/What-is-the-best-career-advice-for-a-software-developer-to-earn-a-higher-salary">答案</a>中看到<a href="https://www.quora.com/What-is-the-best-career-advice-for-a-software-developer-to-earn-a-higher-salary/answer/Abhishek-Choudhary-11">一篇很棒的</a>，和大家分享。</p>
-<blockquote>
-<p>What is the best career advice for a software developer to earn a higher salary?</p>
-</blockquote>
-<span id="more"></span>
-
-<blockquote>
-<p>　1. Make Computer Science fundamentals very strong , mainly DataStructure &amp; Algorithm.</p>
-</blockquote>
-<p>　1. 擁有非常穩健的<a href="https://www.wikiwand.com/zh-hant/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6">電腦科學</a>知識基礎，尤其是<a href="https://www.wikiwand.com/zh-hant/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84">資料結構</a>和<a href="https://www.wikiwand.com/zh-hant/%E7%AE%97%E6%B3%95">演算法</a>。</p>
-<blockquote>
-<p>　2. Make a habit of solving atleast 3-4 code snippets/Week , check Leetcode/CareerCup</p>
-</blockquote>
-<p>　2. 養成每週練習三、四個<a href="https://www.wikiwand.com/zh-tw/%E7%89%87%E6%AE%B5">程式片段</a>的習慣。請參考 <a href="https://leetcode.com/">LeetCode</a> 和 <a href="https://www.careercup.com/">CareerCup</a>。</p>
-<blockquote>
-<p>　3. No point of being a master of single technology like Java or Python. Learn several technologies.</p>
-</blockquote>
-<p>　3. 執意侷限自己專精單一項目例如 Java 或 Python 的意義不大。請擴充你的工具箱。</p>
-<blockquote>
-<p>　4. I was a java developer for 5 years and then I found functional languages like clojure/Python/Scala and believe me, its worth your time. It will broaden your skill-sets &amp; thinking. And now you are already ahead in the race of Developers and Interviews.</p>
-</blockquote>
-<p>　4. 在我擁有五年 Java 開發經驗時，接觸到了像 Clojure、Python、Scala 這類的<a href="https://www.wikiwand.com/zh-tw/%E5%87%BD%E6%95%B8%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80">函數程式語言</a>。相信我，這絕對值得你投資，因為它們不僅能讓你的工具箱更完備，同時也將開拓你的思考視野。能做到這裡，在與眾多開發者爭奪職缺的競賽中，你就已是處於領先的地位。</p>
-<blockquote>
-<p>　5. Heard any new technology, like BigData or Machine Learning. Make sure to understand that and implement a POC. Don’t just read, make sure, you are very much aware of fundamentals. Like you must know the architecture, go through the case studies and BUILD SOMETHING.</p>
-</blockquote>
-<p>　5. 持續吸收新知，例如<a href="https://www.wikiwand.com/zh-hant/%E5%A4%A7%E6%95%B8%E6%93%9A">大數據</a>和<a href="https://www.wikiwand.com/zh-hant/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0">機器學習</a>。與此同時，不要只是閱讀，請確定你真的瞭解基礎觀念並試著做出<a href="https://www.wikiwand.com/zh-tw/%E6%A6%82%E5%BF%B5%E9%AA%8C%E8%AF%81">概念驗證</a>。就像我們當初學<a href="https://www.wikiwand.com/zh-tw/%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84">軟體架構</a>的時候一樣，腳踏實地、循序漸近，並<strong>動手練習</strong>。</p>
-<blockquote>
-<p>　6. You gotta market yourself. If you are learning from open Source, its your responsibility, to give back something. Make your github account and contribute. This will make your profile very shiny.</p>
-</blockquote>
-<p>　6. 你要會行銷自己。如果你正從開源項目中學習知識，那就有責任做出回饋。可以申請一個 <a href="https://github.com/">GitHub</a> 帳號並貢獻一些東西，這會讓個人檔案閃閃發亮，一舉二得。</p>
-<blockquote>
-<p>　7. Don’t fall in love with any single technology. I saw Desktop based application lost its place and now Mobile is rocking, and I wont be amaze if Virtual Reality takes its place or something. So stop falling in love with any technology. Learn whatever is good in market. Yeah it will be huge but your habit will make you proficient to learn anything new and You will be truly a Quick learner.</p>
-</blockquote>
-<p>　7. 不要因為熱愛就侷限自己在單一領域。我看到了桌面應用程式的衰落和<a href="https://www.wikiwand.com/zh-tw/%E6%B5%81%E5%8B%95%E6%87%89%E7%94%A8%E7%A8%8B%E5%BC%8F">行動應用程式</a>的崛起，然而對於<a href="https://www.wikiwand.com/zh-tw/%E8%99%9A%E6%8B%9F%E7%8E%B0%E5%AE%9E">虛擬實境</a>將取而代之也不感意外。當然這讓需要學習的知識量變得很大，不過養成習慣即可讓你熟練於學習，也會因此使你對新知的反應更加敏銳。</p>
-<blockquote>
-<p>　8. Attend Hackathons and Technical Meetup. Even you don’t know anything, doesn’t matter. You must build contacts. the more people you know, the probability to end up with better jobs will be more higher.</p>
-</blockquote>
-<p>　8. 參加一些<a href="https://www.wikiwand.com/zh/%E9%BB%91%E5%AE%A2%E6%9D%BE">黑客松</a>和技術聚會，就算你什麼都不會也沒關係。因為你需要拓展人際關係，人脈愈廣，找到好工作的機率愈高。</p>
-<blockquote>
-<p>　9. If you don’t like your job or Manager don’t react, keep smiling and keep working and look for new job. Never destroy your relationship with people.</p>
-</blockquote>
-<p>　9. 不喜歡你的工作或是主管也不要做激烈的抗爭。繼續保持微笑、把事情做好，並騎驢找馬就好了。記住，永遠不要與人結怨。</p>
-<blockquote>
-<p>　10. Read .. Read … Read … CODE IT</p>
-</blockquote>
-<p>　10. <strong>大量地</strong>閱讀，並且<strong>動手練習</strong>。</p>
-]]></content>
-      <categories>
-        <category>Translation</category>
-      </categories>
-  </entry>
-  <entry>
     <title>糟糕的程式設計師有哪些招牌特質？</title>
     <url>/2015/what-are-the-characteristics-of-a-bad-software-engineer.html</url>
     <content><![CDATA[<p>在 <a href="http://www.quora.com/">Quora</a> 上看到一篇不錯的文章，原文為 <a href="http://www.quora.com/What-are-the-characteristics-of-a-bad-software-engineer/answer/Nachiket-Naik">What are the characteristics of a bad software engineer?</a>。</p>
@@ -1122,6 +1068,80 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
+    <title>對程式設計師來說，提高薪水最好的建議是什麼？</title>
+    <url>/2016/what-is-the-best-career-advice-for-a-software-developer-to-earn-a-higher-salary.html</url>
+    <content><![CDATA[<p>關於這個問題，在 Quora 數則<a href="https://www.quora.com/What-is-the-best-career-advice-for-a-software-developer-to-earn-a-higher-salary">答案</a>中看到<a href="https://www.quora.com/What-is-the-best-career-advice-for-a-software-developer-to-earn-a-higher-salary/answer/Abhishek-Choudhary-11">一篇很棒的</a>，和大家分享。</p>
+<blockquote>
+<p>What is the best career advice for a software developer to earn a higher salary?</p>
+</blockquote>
+<span id="more"></span>
+
+<blockquote>
+<p>　1. Make Computer Science fundamentals very strong , mainly DataStructure &amp; Algorithm.</p>
+</blockquote>
+<p>　1. 擁有非常穩健的<a href="https://www.wikiwand.com/zh-hant/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6">電腦科學</a>知識基礎，尤其是<a href="https://www.wikiwand.com/zh-hant/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84">資料結構</a>和<a href="https://www.wikiwand.com/zh-hant/%E7%AE%97%E6%B3%95">演算法</a>。</p>
+<blockquote>
+<p>　2. Make a habit of solving atleast 3-4 code snippets/Week , check Leetcode/CareerCup</p>
+</blockquote>
+<p>　2. 養成每週練習三、四個<a href="https://www.wikiwand.com/zh-tw/%E7%89%87%E6%AE%B5">程式片段</a>的習慣。請參考 <a href="https://leetcode.com/">LeetCode</a> 和 <a href="https://www.careercup.com/">CareerCup</a>。</p>
+<blockquote>
+<p>　3. No point of being a master of single technology like Java or Python. Learn several technologies.</p>
+</blockquote>
+<p>　3. 執意侷限自己專精單一項目例如 Java 或 Python 的意義不大。請擴充你的工具箱。</p>
+<blockquote>
+<p>　4. I was a java developer for 5 years and then I found functional languages like clojure/Python/Scala and believe me, its worth your time. It will broaden your skill-sets &amp; thinking. And now you are already ahead in the race of Developers and Interviews.</p>
+</blockquote>
+<p>　4. 在我擁有五年 Java 開發經驗時，接觸到了像 Clojure、Python、Scala 這類的<a href="https://www.wikiwand.com/zh-tw/%E5%87%BD%E6%95%B8%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80">函數程式語言</a>。相信我，這絕對值得你投資，因為它們不僅能讓你的工具箱更完備，同時也將開拓你的思考視野。能做到這裡，在與眾多開發者爭奪職缺的競賽中，你就已是處於領先的地位。</p>
+<blockquote>
+<p>　5. Heard any new technology, like BigData or Machine Learning. Make sure to understand that and implement a POC. Don’t just read, make sure, you are very much aware of fundamentals. Like you must know the architecture, go through the case studies and BUILD SOMETHING.</p>
+</blockquote>
+<p>　5. 持續吸收新知，例如<a href="https://www.wikiwand.com/zh-hant/%E5%A4%A7%E6%95%B8%E6%93%9A">大數據</a>和<a href="https://www.wikiwand.com/zh-hant/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0">機器學習</a>。與此同時，不要只是閱讀，請確定你真的瞭解基礎觀念並試著做出<a href="https://www.wikiwand.com/zh-tw/%E6%A6%82%E5%BF%B5%E9%AA%8C%E8%AF%81">概念驗證</a>。就像我們當初學<a href="https://www.wikiwand.com/zh-tw/%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84">軟體架構</a>的時候一樣，腳踏實地、循序漸近，並<strong>動手練習</strong>。</p>
+<blockquote>
+<p>　6. You gotta market yourself. If you are learning from open Source, its your responsibility, to give back something. Make your github account and contribute. This will make your profile very shiny.</p>
+</blockquote>
+<p>　6. 你要會行銷自己。如果你正從開源項目中學習知識，那就有責任做出回饋。可以申請一個 <a href="https://github.com/">GitHub</a> 帳號並貢獻一些東西，這會讓個人檔案閃閃發亮，一舉二得。</p>
+<blockquote>
+<p>　7. Don’t fall in love with any single technology. I saw Desktop based application lost its place and now Mobile is rocking, and I wont be amaze if Virtual Reality takes its place or something. So stop falling in love with any technology. Learn whatever is good in market. Yeah it will be huge but your habit will make you proficient to learn anything new and You will be truly a Quick learner.</p>
+</blockquote>
+<p>　7. 不要因為熱愛就侷限自己在單一領域。我看到了桌面應用程式的衰落和<a href="https://www.wikiwand.com/zh-tw/%E6%B5%81%E5%8B%95%E6%87%89%E7%94%A8%E7%A8%8B%E5%BC%8F">行動應用程式</a>的崛起，然而對於<a href="https://www.wikiwand.com/zh-tw/%E8%99%9A%E6%8B%9F%E7%8E%B0%E5%AE%9E">虛擬實境</a>將取而代之也不感意外。當然這讓需要學習的知識量變得很大，不過養成習慣即可讓你熟練於學習，也會因此使你對新知的反應更加敏銳。</p>
+<blockquote>
+<p>　8. Attend Hackathons and Technical Meetup. Even you don’t know anything, doesn’t matter. You must build contacts. the more people you know, the probability to end up with better jobs will be more higher.</p>
+</blockquote>
+<p>　8. 參加一些<a href="https://www.wikiwand.com/zh/%E9%BB%91%E5%AE%A2%E6%9D%BE">黑客松</a>和技術聚會，就算你什麼都不會也沒關係。因為你需要拓展人際關係，人脈愈廣，找到好工作的機率愈高。</p>
+<blockquote>
+<p>　9. If you don’t like your job or Manager don’t react, keep smiling and keep working and look for new job. Never destroy your relationship with people.</p>
+</blockquote>
+<p>　9. 不喜歡你的工作或是主管也不要做激烈的抗爭。繼續保持微笑、把事情做好，並騎驢找馬就好了。記住，永遠不要與人結怨。</p>
+<blockquote>
+<p>　10. Read .. Read … Read … CODE IT</p>
+</blockquote>
+<p>　10. <strong>大量地</strong>閱讀，並且<strong>動手練習</strong>。</p>
+]]></content>
+      <categories>
+        <category>Translation</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Windows Photo Viewer Mouse Plug-in</title>
+    <url>/2009/windows-photo-viewer-mouse-plug-in.html</url>
+    <content><![CDATA[<p>This simple tool gives Windows Photo Viewer the following features:</p>
+<ol>
+<li>Middle click to toggle window’s size between normal and maximum.</li>
+<li>Scroll up/down to show previous/next image.</li>
+<li>Ctrl + scroll up/down to zoom in/out.</li>
+<li>A to show actual size.</li>
+<li>F to show fit size.</li>
+<li>Ctrl + A to toggle deafult presenting style between actual size and fit size.</li>
+</ol>
+<span id="more"></span>
+
+<p><strong><a href="https://raw.githubusercontent.com/changyuheng/windows-photo-viewer-mouse-plug-in/master/bin/windows-photo-viewer-mouse-plug-in.exe">Download</a></strong><br><strong><a href="https://github.com/changyuheng/windows-photo-viewer-mouse-plug-in">Source code</a></strong></p>
+]]></content>
+      <categories>
+        <category>Software</category>
+      </categories>
+  </entry>
+  <entry>
     <title>When Hexo Meets GitHub Pages and Travis CI plus Raspberry Pi</title>
     <url>/2015/when-hexo-static-site-meets-github-pages-and-travis-ci.html</url>
     <content><![CDATA[<p>JS 很有吸引力、Hexo 是台灣人寫的、速度比 Octopress 快、default 支援 GitHub Flavored Markdown，所以選 Hexo。</p>
@@ -1153,26 +1173,6 @@ ABCDEFG<br />
 ]]></content>
       <categories>
         <category>Setup</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Windows Photo Viewer Mouse Plug-in</title>
-    <url>/2009/windows-photo-viewer-mouse-plug-in.html</url>
-    <content><![CDATA[<p>This simple tool gives Windows Photo Viewer the following features:</p>
-<ol>
-<li>Middle click to toggle window’s size between normal and maximum.</li>
-<li>Scroll up/down to show previous/next image.</li>
-<li>Ctrl + scroll up/down to zoom in/out.</li>
-<li>A to show actual size.</li>
-<li>F to show fit size.</li>
-<li>Ctrl + A to toggle deafult presenting style between actual size and fit size.</li>
-</ol>
-<span id="more"></span>
-
-<p><strong><a href="https://raw.githubusercontent.com/changyuheng/windows-photo-viewer-mouse-plug-in/master/bin/windows-photo-viewer-mouse-plug-in.exe">Download</a></strong><br><strong><a href="https://github.com/changyuheng/windows-photo-viewer-mouse-plug-in">Source code</a></strong></p>
-]]></content>
-      <categories>
-        <category>Software</category>
       </categories>
   </entry>
   <entry>
