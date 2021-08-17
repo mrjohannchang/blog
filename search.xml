@@ -256,6 +256,29 @@
       </categories>
   </entry>
   <entry>
+    <title>Cross Compiling Python 2.7.10 and 3.4.3 for MIPSel OpenWrt via uClibc with SSL and SQLite support</title>
+    <url>/2015/cross-compiling-python-3-4-3-for-mipsel.html</url>
+    <content><![CDATA[<p>The notes that were written after succeeding to cross compile Python 2.7.10 and 3.4.3 for MIPSel OpenWrt via uClibc.</p>
+<span id="more"></span>
+<p>I’m not gonna write a very detailed guide. I post my build script on the <a href="https://github.com/changyuheng/cpython-for-openwrt-mips/blob/3.4.3/build.sh">GitHub</a>, please leave a comment if you have any question.</p>
+<h2 id="Build-log-3-4-3"><a href="#Build-log-3-4-3" class="headerlink" title="Build log (3.4.3)"></a>Build log (3.4.3)</h2><script src="//gist.github.com/2e5b13276035fc1aa79a.js?file=build.log"></script>
+
+<h2 id="Run-test-cases-on-the-device-3-4-3"><a href="#Run-test-cases-on-the-device-3-4-3" class="headerlink" title="Run test cases on the device (3.4.3)"></a>Run test cases on the device (3.4.3)</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">bin/python3 lib/python3.4/<span class="built_in">test</span>/test___all__.py</span><br></pre></td></tr></table></figure>
+
+<h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><ul>
+<li>2.7.10 is 100% passed</li>
+<li>3.4.3’s xml.parsers.expat module will cause segmentation fault.</li>
+</ul>
+<h2 id="Refs"><a href="#Refs" class="headerlink" title="Refs"></a>Refs</h2><ol>
+<li><a href="http://randomsplat.com/id5-cross-compiling-python-for-embedded-linux.html">Cross Compiling Python for Embedded Linux</a></li>
+</ol>
+<h2 id="Thanks-to"><a href="#Thanks-to" class="headerlink" title="Thanks to"></a>Thanks to</h2><p><a href="https://tw.linkedin.com/pub/cheng-wig/90/1a1/896">Cheng Wig</a>, he showed me the positive attitude at work.</p>
+]]></content>
+      <categories>
+        <category>Embedded</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Deployment of NCKU CSIE Gitit Theme</title>
     <url>/2010/deployment-of-ncku-csie-gitit-theme.html</url>
     <content><![CDATA[<p><a href="http://gitit.net/">Gitit</a> 是一套以 Git 作為 base 的 wiki 系統。這套 wiki 的優點可以在<a href="http://walkingice.blogspot.tw/2011/11/gitit-git-based-wiki.html">只放拖鞋的鞋櫃</a>看到。在網路上的高手 <a href="http://macropodus.github.io/gitit_mix_vimwiki.html">Macropodus</a> 研究出如何和 Vimwiki 結合後，又更強化了他的優勢。</p>
@@ -303,29 +326,6 @@
 ]]></content>
       <categories>
         <category>Software</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Cross Compiling Python 2.7.10 and 3.4.3 for MIPSel OpenWrt via uClibc with SSL and SQLite support</title>
-    <url>/2015/cross-compiling-python-3-4-3-for-mipsel.html</url>
-    <content><![CDATA[<p>The notes that were written after succeeding to cross compile Python 2.7.10 and 3.4.3 for MIPSel OpenWrt via uClibc.</p>
-<span id="more"></span>
-<p>I’m not gonna write a very detailed guide. I post my build script on the <a href="https://github.com/changyuheng/cpython-for-openwrt-mips/blob/3.4.3/build.sh">GitHub</a>, please leave a comment if you have any question.</p>
-<h2 id="Build-log-3-4-3"><a href="#Build-log-3-4-3" class="headerlink" title="Build log (3.4.3)"></a>Build log (3.4.3)</h2><script src="//gist.github.com/2e5b13276035fc1aa79a.js?file=build.log"></script>
-
-<h2 id="Run-test-cases-on-the-device-3-4-3"><a href="#Run-test-cases-on-the-device-3-4-3" class="headerlink" title="Run test cases on the device (3.4.3)"></a>Run test cases on the device (3.4.3)</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">bin/python3 lib/python3.4/<span class="built_in">test</span>/test___all__.py</span><br></pre></td></tr></table></figure>
-
-<h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><ul>
-<li>2.7.10 is 100% passed</li>
-<li>3.4.3’s xml.parsers.expat module will cause segmentation fault.</li>
-</ul>
-<h2 id="Refs"><a href="#Refs" class="headerlink" title="Refs"></a>Refs</h2><ol>
-<li><a href="http://randomsplat.com/id5-cross-compiling-python-for-embedded-linux.html">Cross Compiling Python for Embedded Linux</a></li>
-</ol>
-<h2 id="Thanks-to"><a href="#Thanks-to" class="headerlink" title="Thanks to"></a>Thanks to</h2><p><a href="https://tw.linkedin.com/pub/cheng-wig/90/1a1/896">Cheng Wig</a>, he showed me the positive attitude at work.</p>
-]]></content>
-      <categories>
-        <category>Embedded</category>
       </categories>
   </entry>
   <entry>
@@ -392,6 +392,99 @@
 ]]></content>
       <categories>
         <category>Algorithm</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Installing Fcitx and Boshiamy on Ubuntu GNOME 14.04</title>
+    <url>/2014/installing-fcitx-and-boshiamy-on-ubuntu-gnome-1404.html</url>
+    <content><![CDATA[<p>Fcitx 是一個自訂性很高的輸入法框架，安裝方式如下：</p>
+<span id="more"></span>
+
+<ul>
+<li><p>Fcitx 框架</p>
+  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install fcitx</span><br></pre></td></tr></table></figure></li>
+<li><p>嘸蝦米輸入法表格</p>
+  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install fcitx-table-boshiamy</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>設定：</p>
+<ul>
+<li><p><code>Activities</code> → <code>Input Method</code> 選擇 fcitx。重新登入。</p>
+</li>
+<li><p><code>Activities</code> → <code>Fcitx Configuration</code> → <code>Input Method</code> → <code>Boshiamy</code> → 雙擊 (如果沒看到 Boshiamy 就自行新增這個表格)<br>  <code>Other</code> → <code>Table</code> → <code>table/boshiamy.conf</code> → 設定<br>  <code>Adjust Order</code>：<code>AdjustNo</code><br>  <code>Auto Send Candidate Word</code>：取消<br>  <code>Use Maching Key</code>：取消<br>  <code>Choose</code>：0123456789<br>  <code>Ignore Punctuation</code>：打勾</p>
+</li>
+</ul>
+<p>參考資料：</p>
+<ul>
+<li><a href="http://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=246870">Ubuntu與嘸蝦米: 在fcitx下，(boshiamy)嘸蝦米的使用最為順暢、穩定!（新酷音、m17n、倉頡、輕鬆法亦適用）</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Setup</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>My Ubuntu GNOME Tweaks</title>
+    <url>/2014/my-ubuntu-gnome-tweaks.html</url>
+    <content><![CDATA[<p>以 Ubuntu GNOME 14.04 LTS 英文語系為基礎。</p>
+<span id="more"></span>
+
+<h2 id="安裝軟體"><a href="#安裝軟體" class="headerlink" title="安裝軟體"></a>安裝軟體</h2><ul>
+<li><a href="#7z">7z</a></li>
+<li><a href="#clipit">ClipIt</a></li>
+<li><a href="#fcitx">Fcitx</a></li>
+<li><a href="#gnome-gmail">Gnome Gmail</a></li>
+<li><a href="#java8">Java 8</a></li>
+<li><a href="#ubuntu-restricted-extras">ubuntu-restricted-extras</a></li>
+<li><a href="#vim">Vim</a></li>
+<li><a href="#vlc">VLC</a></li>
+<li><a href="#wen-quan-yi-fonts">文泉驛中文字型</a></li>
+<li><a href="#boshiamy">嘸蝦米輸入法</a></li>
+</ul>
+<h2 id="Firefox-附加元件"><a href="#Firefox-附加元件" class="headerlink" title="Firefox 附加元件"></a>Firefox 附加元件</h2><ul>
+<li><a href="#gmail-notifier">Gmail Notifier</a></li>
+<li><a href="#gnotifier">GNotifier</a></li>
+</ul>
+<h2 id="設定"><a href="#設定" class="headerlink" title="設定"></a>設定</h2><ul>
+<li><a href="#apt">APT</a></li>
+<li><a href="#gnome-tweak-tool">Gnome Tweak Tool</a></li>
+<li><a href="#im-config">Input Method Configuration</a></li>
+<li><a href="#online-accounts">Online Accounts</a></li>
+</ul>
+<h3 id="7z"><a href="#7z" class="headerlink" title="7z"></a><a name="7z"></a>7z</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install p7zip-full</span><br></pre></td></tr></table></figure>
+
+<h3 id="ClipIt"><a href="#ClipIt" class="headerlink" title="ClipIt"></a><a name="clipit"></a>ClipIt</h3><p>剪貼簿管理程序，安裝的主要目的是要他同步剪貼簿的功能。因為 X11 的剪貼簿在「貼上」時，若來源程序已暫停或結束，會因無法讀取來源而無法貼上。可參考：<a href="http://www.jwz.org/doc/x-cut-and-paste.html">X Selections, Cut Buffers, and Kill Rings.</a></p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install clipit</span><br></pre></td></tr></table></figure>
+
+<h3 id="Fcitx"><a href="#Fcitx" class="headerlink" title="Fcitx"></a><a name="fcitx"></a>Fcitx</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install fcitx</span><br></pre></td></tr></table></figure>
+
+<h3 id="Gnome-Gmail"><a href="#Gnome-Gmail" class="headerlink" title="Gnome Gmail"></a><a name="gnome-gmail"></a>Gnome Gmail</h3><p>讓預設郵件客戶端可被設定為 Gmail。</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install gnome-gmail</span><br></pre></td></tr></table></figure>
+
+<h3 id="Java-8"><a href="#Java-8" class="headerlink" title="Java 8"></a><a name="java8"></a>Java 8</h3><p><a href="http://www.webupd8.org/2012/09/install-oracle-java-8-in-ubuntu-via-ppa.html">Install Oracle Java 8 In Ubuntu Via PPA Repository</a></p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo add-apt-repository ppa:webupd8team/java</span><br><span class="line">sudo apt update</span><br><span class="line">sudo apt install oracle-java8-installer</span><br></pre></td></tr></table></figure>
+
+<h3 id="ubuntu-restricted-extras"><a href="#ubuntu-restricted-extras" class="headerlink" title="ubuntu-restricted-extras"></a><a name="ubuntu-restricted-extras"></a>ubuntu-restricted-extras</h3><p>RAR、Flash Player 等非開源的程式之集合。</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install ubuntu-restricted-extras</span><br></pre></td></tr></table></figure>
+
+<h3 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a><a name="vim"></a>Vim</h3><p>Vim with GNOME specific support.</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install vim-gnome</span><br></pre></td></tr></table></figure>
+
+<h3 id="VLC"><a href="#VLC" class="headerlink" title="VLC"></a><a name="vlc"></a>VLC</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install vlc</span><br></pre></td></tr></table></figure>
+
+<h3 id="文泉驛中文字型"><a href="#文泉驛中文字型" class="headerlink" title="文泉驛中文字型"></a><a name="wen-quan-yi-fonts"></a>文泉驛中文字型</h3><p>開源的中文字型。</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install ttf-wqy-*</span><br></pre></td></tr></table></figure>
+
+<h3 id="嘸蝦米輸入法"><a href="#嘸蝦米輸入法" class="headerlink" title="嘸蝦米輸入法"></a><a name="boshiamy"></a>嘸蝦米輸入法</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install fcitx-table-boshiamy</span><br></pre></td></tr></table></figure>
+<p>需要 <a href="#fcitx">Fcitx</a>。</p>
+<h3 id="Gmail-Notifier"><a href="#Gmail-Notifier" class="headerlink" title="Gmail Notifier"></a><a name="gmail-notifier"></a>Gmail Notifier</h3><p>偵測到 Gmail 的新進信件時會由 Firefox 發出提醒。<br><a href="https://addons.mozilla.org/zh-tw/firefox/addon/gmail-notifier-restartless/?src=search">Gmail Notifier</a></p>
+<h3 id="GNotifier"><a href="#GNotifier" class="headerlink" title="GNotifier"></a><a name="gnotifier"></a>GNotifier</h3><p>讓 Firefox 使用 GNOME、KDE、Xfce 或 OS X 桌面環境的提醒 (notification) 介面。<br><a href="https://addons.mozilla.org/zh-tw/firefox/addon/gnotifier/">GNotifier</a></p>
+<h3 id="APT"><a href="#APT" class="headerlink" title="APT"></a><a name="apt"></a>APT</h3><p>以國網中心的 APT 伺服器取代台灣大學的：將 <code>/etc/apt/sources.list</code> 內的 <code>tw.archive.ubuntu.com</code> 取代為 <code>free.nchc.org.tw</code>。</p>
+<h3 id="Gnome-Tweak-Tool"><a href="#Gnome-Tweak-Tool" class="headerlink" title="Gnome Tweak Tool"></a><a name="gnome-tweak-tool"></a>Gnome Tweak Tool</h3><p>依個人喜好調整預設設定。</p>
+<h3 id="Input-Method-Configuration"><a href="#Input-Method-Configuration" class="headerlink" title="Input Method Configuration"></a><a name="im-config"></a>Input Method Configuration</h3><p>先安裝 <a href="#fcitx">Fcitx</a>，接著由 <code>Activities</code> → <code>Input Method</code> 選擇 fcitx。</p>
+<h3 id="Online-Accounts"><a href="#Online-Accounts" class="headerlink" title="Online Accounts"></a><a name="online-accounts"></a>Online Accounts</h3><p>由 <code>Activities</code> → <code>System Settings</code> → <code>Online Accounts</code> 登入 Google 帳戶，登入後可將右方不希望同步的功能關閉。若有開啟 Calendar 同步，可由螢幕最上方正中央的 Calendar 下拉選單中看到將近的活動，提醒時間到時也會由 Evolution 彈出視窗提醒。</p>
+]]></content>
+      <categories>
+        <category>Setup</category>
       </categories>
   </entry>
   <entry>
@@ -596,99 +689,6 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
-    <title>Installing Fcitx and Boshiamy on Ubuntu GNOME 14.04</title>
-    <url>/2014/installing-fcitx-and-boshiamy-on-ubuntu-gnome-1404.html</url>
-    <content><![CDATA[<p>Fcitx 是一個自訂性很高的輸入法框架，安裝方式如下：</p>
-<span id="more"></span>
-
-<ul>
-<li><p>Fcitx 框架</p>
-  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install fcitx</span><br></pre></td></tr></table></figure></li>
-<li><p>嘸蝦米輸入法表格</p>
-  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install fcitx-table-boshiamy</span><br></pre></td></tr></table></figure></li>
-</ul>
-<p>設定：</p>
-<ul>
-<li><p><code>Activities</code> → <code>Input Method</code> 選擇 fcitx。重新登入。</p>
-</li>
-<li><p><code>Activities</code> → <code>Fcitx Configuration</code> → <code>Input Method</code> → <code>Boshiamy</code> → 雙擊 (如果沒看到 Boshiamy 就自行新增這個表格)<br>  <code>Other</code> → <code>Table</code> → <code>table/boshiamy.conf</code> → 設定<br>  <code>Adjust Order</code>：<code>AdjustNo</code><br>  <code>Auto Send Candidate Word</code>：取消<br>  <code>Use Maching Key</code>：取消<br>  <code>Choose</code>：0123456789<br>  <code>Ignore Punctuation</code>：打勾</p>
-</li>
-</ul>
-<p>參考資料：</p>
-<ul>
-<li><a href="http://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=246870">Ubuntu與嘸蝦米: 在fcitx下，(boshiamy)嘸蝦米的使用最為順暢、穩定!（新酷音、m17n、倉頡、輕鬆法亦適用）</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Setup</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>My Ubuntu GNOME Tweaks</title>
-    <url>/2014/my-ubuntu-gnome-tweaks.html</url>
-    <content><![CDATA[<p>以 Ubuntu GNOME 14.04 LTS 英文語系為基礎。</p>
-<span id="more"></span>
-
-<h2 id="安裝軟體"><a href="#安裝軟體" class="headerlink" title="安裝軟體"></a>安裝軟體</h2><ul>
-<li><a href="#7z">7z</a></li>
-<li><a href="#clipit">ClipIt</a></li>
-<li><a href="#fcitx">Fcitx</a></li>
-<li><a href="#gnome-gmail">Gnome Gmail</a></li>
-<li><a href="#java8">Java 8</a></li>
-<li><a href="#ubuntu-restricted-extras">ubuntu-restricted-extras</a></li>
-<li><a href="#vim">Vim</a></li>
-<li><a href="#vlc">VLC</a></li>
-<li><a href="#wen-quan-yi-fonts">文泉驛中文字型</a></li>
-<li><a href="#boshiamy">嘸蝦米輸入法</a></li>
-</ul>
-<h2 id="Firefox-附加元件"><a href="#Firefox-附加元件" class="headerlink" title="Firefox 附加元件"></a>Firefox 附加元件</h2><ul>
-<li><a href="#gmail-notifier">Gmail Notifier</a></li>
-<li><a href="#gnotifier">GNotifier</a></li>
-</ul>
-<h2 id="設定"><a href="#設定" class="headerlink" title="設定"></a>設定</h2><ul>
-<li><a href="#apt">APT</a></li>
-<li><a href="#gnome-tweak-tool">Gnome Tweak Tool</a></li>
-<li><a href="#im-config">Input Method Configuration</a></li>
-<li><a href="#online-accounts">Online Accounts</a></li>
-</ul>
-<h3 id="7z"><a href="#7z" class="headerlink" title="7z"></a><a name="7z"></a>7z</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install p7zip-full</span><br></pre></td></tr></table></figure>
-
-<h3 id="ClipIt"><a href="#ClipIt" class="headerlink" title="ClipIt"></a><a name="clipit"></a>ClipIt</h3><p>剪貼簿管理程序，安裝的主要目的是要他同步剪貼簿的功能。因為 X11 的剪貼簿在「貼上」時，若來源程序已暫停或結束，會因無法讀取來源而無法貼上。可參考：<a href="http://www.jwz.org/doc/x-cut-and-paste.html">X Selections, Cut Buffers, and Kill Rings.</a></p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install clipit</span><br></pre></td></tr></table></figure>
-
-<h3 id="Fcitx"><a href="#Fcitx" class="headerlink" title="Fcitx"></a><a name="fcitx"></a>Fcitx</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install fcitx</span><br></pre></td></tr></table></figure>
-
-<h3 id="Gnome-Gmail"><a href="#Gnome-Gmail" class="headerlink" title="Gnome Gmail"></a><a name="gnome-gmail"></a>Gnome Gmail</h3><p>讓預設郵件客戶端可被設定為 Gmail。</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install gnome-gmail</span><br></pre></td></tr></table></figure>
-
-<h3 id="Java-8"><a href="#Java-8" class="headerlink" title="Java 8"></a><a name="java8"></a>Java 8</h3><p><a href="http://www.webupd8.org/2012/09/install-oracle-java-8-in-ubuntu-via-ppa.html">Install Oracle Java 8 In Ubuntu Via PPA Repository</a></p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo add-apt-repository ppa:webupd8team/java</span><br><span class="line">sudo apt update</span><br><span class="line">sudo apt install oracle-java8-installer</span><br></pre></td></tr></table></figure>
-
-<h3 id="ubuntu-restricted-extras"><a href="#ubuntu-restricted-extras" class="headerlink" title="ubuntu-restricted-extras"></a><a name="ubuntu-restricted-extras"></a>ubuntu-restricted-extras</h3><p>RAR、Flash Player 等非開源的程式之集合。</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install ubuntu-restricted-extras</span><br></pre></td></tr></table></figure>
-
-<h3 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a><a name="vim"></a>Vim</h3><p>Vim with GNOME specific support.</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install vim-gnome</span><br></pre></td></tr></table></figure>
-
-<h3 id="VLC"><a href="#VLC" class="headerlink" title="VLC"></a><a name="vlc"></a>VLC</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install vlc</span><br></pre></td></tr></table></figure>
-
-<h3 id="文泉驛中文字型"><a href="#文泉驛中文字型" class="headerlink" title="文泉驛中文字型"></a><a name="wen-quan-yi-fonts"></a>文泉驛中文字型</h3><p>開源的中文字型。</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install ttf-wqy-*</span><br></pre></td></tr></table></figure>
-
-<h3 id="嘸蝦米輸入法"><a href="#嘸蝦米輸入法" class="headerlink" title="嘸蝦米輸入法"></a><a name="boshiamy"></a>嘸蝦米輸入法</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install fcitx-table-boshiamy</span><br></pre></td></tr></table></figure>
-<p>需要 <a href="#fcitx">Fcitx</a>。</p>
-<h3 id="Gmail-Notifier"><a href="#Gmail-Notifier" class="headerlink" title="Gmail Notifier"></a><a name="gmail-notifier"></a>Gmail Notifier</h3><p>偵測到 Gmail 的新進信件時會由 Firefox 發出提醒。<br><a href="https://addons.mozilla.org/zh-tw/firefox/addon/gmail-notifier-restartless/?src=search">Gmail Notifier</a></p>
-<h3 id="GNotifier"><a href="#GNotifier" class="headerlink" title="GNotifier"></a><a name="gnotifier"></a>GNotifier</h3><p>讓 Firefox 使用 GNOME、KDE、Xfce 或 OS X 桌面環境的提醒 (notification) 介面。<br><a href="https://addons.mozilla.org/zh-tw/firefox/addon/gnotifier/">GNotifier</a></p>
-<h3 id="APT"><a href="#APT" class="headerlink" title="APT"></a><a name="apt"></a>APT</h3><p>以國網中心的 APT 伺服器取代台灣大學的：將 <code>/etc/apt/sources.list</code> 內的 <code>tw.archive.ubuntu.com</code> 取代為 <code>free.nchc.org.tw</code>。</p>
-<h3 id="Gnome-Tweak-Tool"><a href="#Gnome-Tweak-Tool" class="headerlink" title="Gnome Tweak Tool"></a><a name="gnome-tweak-tool"></a>Gnome Tweak Tool</h3><p>依個人喜好調整預設設定。</p>
-<h3 id="Input-Method-Configuration"><a href="#Input-Method-Configuration" class="headerlink" title="Input Method Configuration"></a><a name="im-config"></a>Input Method Configuration</h3><p>先安裝 <a href="#fcitx">Fcitx</a>，接著由 <code>Activities</code> → <code>Input Method</code> 選擇 fcitx。</p>
-<h3 id="Online-Accounts"><a href="#Online-Accounts" class="headerlink" title="Online Accounts"></a><a name="online-accounts"></a>Online Accounts</h3><p>由 <code>Activities</code> → <code>System Settings</code> → <code>Online Accounts</code> 登入 Google 帳戶，登入後可將右方不希望同步的功能關閉。若有開啟 Calendar 同步，可由螢幕最上方正中央的 Calendar 下拉選單中看到將近的活動，提醒時間到時也會由 Evolution 彈出視窗提醒。</p>
-]]></content>
-      <categories>
-        <category>Setup</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Port LEDE 17.01 to LinkIt Smart 7688</title>
     <url>/2017/port-lede-17-01-to-linkit-smart-7688.html</url>
     <content><![CDATA[<p>心血來潮幫忙把 LinkIt Smart 7688 的作業系統從 <a href="https://forum.openwrt.org/viewtopic.php?pid=315110">OpenWrt Chaos Calmer 15.05.1</a> 升級到 <a href="https://lede-project.org/releases/17.01/">LEDE 17.01</a>。</p>
@@ -721,6 +721,52 @@ ABCDEFG<br />
 ]]></content>
       <categories>
         <category>Embedded</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>PTT Efficient Poster</title>
+    <url>/2007/ptt-efficient-poster.html</url>
+    <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/ptt-efficient-poster/master/demo.gif" alt="screenshot"></p>
+<span id="more"></span>
+
+<p>在 PTT 上發表文章，會依文章長度得到相當的稿酬；而稿酬的單位就是所謂的 P 幣。然而，PTT 判斷一篇文章值多少 P 幣，不只看總字數，還會計算使用者輸入的次數。現在公認的稿酬計算公式是，每 2 秒輸入 2 個中文字獲得 1 元，某些特殊字元或重複字不列入計算。因此，使用新注音等一次輸入好幾個字的輸入法輸入文字，相較於其他逐字輸入的輸入法，PTT 偵測到的輸入次數會少很多，換句話說稿酬也少很多。</p>
+<p>這套軟體可以幫您把一整篇文章，在背景逐字輸入到 PCMan 視窗中。在字與字之間，會自動加入經過計算的最佳延遲時間並取消重複字之間的延遲，讓您的文章能得到該文所能得到的最高稿酬。網路上有好幾種不同的軟體能自動輸入文章，但是這些軟體多半不能在「背景運行」，也不能支援控制碼或雙色字。</p>
+<p>※ 所謂的「背景運行」，係指 PCMan 視窗不必在最上層，軟體也能自動輸入文章；亦即貼文時，可以切換到其他視窗做別的事。</p>
+<p><strong>特色</strong></p>
+<ol>
+<li>支援 BBS 控制碼。</li>
+<li>支援雙色全形字（一字雙色）。</li>
+<li>支援 Big-5 擴充字集（支援 Unicode 補完計畫內的日文字）。</li>
+<li>支援背景運行。</li>
+<li>支援暫停。</li>
+</ol>
+<p><strong>使用方式</strong></p>
+<ol>
+<li>修改 PTT 設定（僅需要修改一次） <pre>
+ ‧ 修改 PTT 站台設定如下：
+ 　　(U)ser 【 個人設定區 】
+ 　　　(U)Customize 個人化設定
+ 　　　　i. DBCS 自動偵測雙位元字集(如全型中文)　　　　：是
+ 　　　　j. DBCS 忽略連線程式為雙位元字集送出的重複按鍵：是
+ 　　　　k. DBCS 禁止在雙位元中使用色碼(去除一字雙色)　：否
+ </pre></li>
+<li>複製欲張貼的文章到剪貼簿。（可在記事本中先排版好再複製，也可複製 PCMan 的 ANSI 編輯器中的彩色文字。）</li>
+<li>進入發文狀態。</li>
+<li><strong>以系統管理員身分執行</strong>本程式</li>
+<li>按下 <code>Shift - F9</code> 開始張貼。</li>
+</ol>
+<hr>
+<ul>
+<li>開始張貼後，可以切換到別的視窗做其他事，唯獨不可以在 PCMan 中另開新分頁。</li>
+<li>張貼完成後程式會自動彈出提示視窗。</li>
+<li>欲暫停張貼，請按 <code>Shift - F11</code>。在工作列圖示的選單中取消暫停即可繼續貼文。</li>
+<li>欲取消張貼，請按 <code>Shift - F12</code> 重新載入本程式，或關閉本程式</li>
+</ul>
+<p>[<strong><a href="https://github.com/changyuheng/ptt-efficient-poster/releases">下載</a></strong>]<br>[<strong><a href="https://github.com/changyuheng/ptt-efficient-poster">原始碼</a></strong>]</p>
+<p>作業系統：Windows 2000 / XP / Vista / 7 / 8 / 10 32-bit &amp; 64-bit<br>※ 只能在 PCMan 中使用</p>
+]]></content>
+      <categories>
+        <category>Software</category>
       </categories>
   </entry>
   <entry>
@@ -782,52 +828,6 @@ ABCDEFG<br />
 ]]></content>
       <categories>
         <category>Python</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>PTT Efficient Poster</title>
-    <url>/2007/ptt-efficient-poster.html</url>
-    <content><![CDATA[<p><img src="https://raw.githubusercontent.com/changyuheng/ptt-efficient-poster/master/demo.gif" alt="screenshot"></p>
-<span id="more"></span>
-
-<p>在 PTT 上發表文章，會依文章長度得到相當的稿酬；而稿酬的單位就是所謂的 P 幣。然而，PTT 判斷一篇文章值多少 P 幣，不只看總字數，還會計算使用者輸入的次數。現在公認的稿酬計算公式是，每 2 秒輸入 2 個中文字獲得 1 元，某些特殊字元或重複字不列入計算。因此，使用新注音等一次輸入好幾個字的輸入法輸入文字，相較於其他逐字輸入的輸入法，PTT 偵測到的輸入次數會少很多，換句話說稿酬也少很多。</p>
-<p>這套軟體可以幫您把一整篇文章，在背景逐字輸入到 PCMan 視窗中。在字與字之間，會自動加入經過計算的最佳延遲時間並取消重複字之間的延遲，讓您的文章能得到該文所能得到的最高稿酬。網路上有好幾種不同的軟體能自動輸入文章，但是這些軟體多半不能在「背景運行」，也不能支援控制碼或雙色字。</p>
-<p>※ 所謂的「背景運行」，係指 PCMan 視窗不必在最上層，軟體也能自動輸入文章；亦即貼文時，可以切換到其他視窗做別的事。</p>
-<p><strong>特色</strong></p>
-<ol>
-<li>支援 BBS 控制碼。</li>
-<li>支援雙色全形字（一字雙色）。</li>
-<li>支援 Big-5 擴充字集（支援 Unicode 補完計畫內的日文字）。</li>
-<li>支援背景運行。</li>
-<li>支援暫停。</li>
-</ol>
-<p><strong>使用方式</strong></p>
-<ol>
-<li>修改 PTT 設定（僅需要修改一次） <pre>
- ‧ 修改 PTT 站台設定如下：
- 　　(U)ser 【 個人設定區 】
- 　　　(U)Customize 個人化設定
- 　　　　i. DBCS 自動偵測雙位元字集(如全型中文)　　　　：是
- 　　　　j. DBCS 忽略連線程式為雙位元字集送出的重複按鍵：是
- 　　　　k. DBCS 禁止在雙位元中使用色碼(去除一字雙色)　：否
- </pre></li>
-<li>複製欲張貼的文章到剪貼簿。（可在記事本中先排版好再複製，也可複製 PCMan 的 ANSI 編輯器中的彩色文字。）</li>
-<li>進入發文狀態。</li>
-<li><strong>以系統管理員身分執行</strong>本程式</li>
-<li>按下 <code>Shift - F9</code> 開始張貼。</li>
-</ol>
-<hr>
-<ul>
-<li>開始張貼後，可以切換到別的視窗做其他事，唯獨不可以在 PCMan 中另開新分頁。</li>
-<li>張貼完成後程式會自動彈出提示視窗。</li>
-<li>欲暫停張貼，請按 <code>Shift - F11</code>。在工作列圖示的選單中取消暫停即可繼續貼文。</li>
-<li>欲取消張貼，請按 <code>Shift - F12</code> 重新載入本程式，或關閉本程式</li>
-</ul>
-<p>[<strong><a href="https://github.com/changyuheng/ptt-efficient-poster/releases">下載</a></strong>]<br>[<strong><a href="https://github.com/changyuheng/ptt-efficient-poster">原始碼</a></strong>]</p>
-<p>作業系統：Windows 2000 / XP / Vista / 7 / 8 / 10 32-bit &amp; 64-bit<br>※ 只能在 PCMan 中使用</p>
-]]></content>
-      <categories>
-        <category>Software</category>
       </categories>
   </entry>
   <entry>
@@ -1012,6 +1012,60 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
+    <title>對程式設計師來說，提高薪水最好的建議是什麼？</title>
+    <url>/2016/what-is-the-best-career-advice-for-a-software-developer-to-earn-a-higher-salary.html</url>
+    <content><![CDATA[<p>關於這個問題，在 Quora 數則<a href="https://www.quora.com/What-is-the-best-career-advice-for-a-software-developer-to-earn-a-higher-salary">答案</a>中看到<a href="https://www.quora.com/What-is-the-best-career-advice-for-a-software-developer-to-earn-a-higher-salary/answer/Abhishek-Choudhary-11">一篇很棒的</a>，和大家分享。</p>
+<blockquote>
+<p>What is the best career advice for a software developer to earn a higher salary?</p>
+</blockquote>
+<span id="more"></span>
+
+<blockquote>
+<p>　1. Make Computer Science fundamentals very strong , mainly DataStructure &amp; Algorithm.</p>
+</blockquote>
+<p>　1. 擁有非常穩健的<a href="https://www.wikiwand.com/zh-hant/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6">電腦科學</a>知識基礎，尤其是<a href="https://www.wikiwand.com/zh-hant/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84">資料結構</a>和<a href="https://www.wikiwand.com/zh-hant/%E7%AE%97%E6%B3%95">演算法</a>。</p>
+<blockquote>
+<p>　2. Make a habit of solving atleast 3-4 code snippets/Week , check Leetcode/CareerCup</p>
+</blockquote>
+<p>　2. 養成每週練習三、四個<a href="https://www.wikiwand.com/zh-tw/%E7%89%87%E6%AE%B5">程式片段</a>的習慣。請參考 <a href="https://leetcode.com/">LeetCode</a> 和 <a href="https://www.careercup.com/">CareerCup</a>。</p>
+<blockquote>
+<p>　3. No point of being a master of single technology like Java or Python. Learn several technologies.</p>
+</blockquote>
+<p>　3. 執意侷限自己專精單一項目例如 Java 或 Python 的意義不大。請擴充你的工具箱。</p>
+<blockquote>
+<p>　4. I was a java developer for 5 years and then I found functional languages like clojure/Python/Scala and believe me, its worth your time. It will broaden your skill-sets &amp; thinking. And now you are already ahead in the race of Developers and Interviews.</p>
+</blockquote>
+<p>　4. 在我擁有五年 Java 開發經驗時，接觸到了像 Clojure、Python、Scala 這類的<a href="https://www.wikiwand.com/zh-tw/%E5%87%BD%E6%95%B8%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80">函數程式語言</a>。相信我，這絕對值得你投資，因為它們不僅能讓你的工具箱更完備，同時也將開拓你的思考視野。能做到這裡，在與眾多開發者爭奪職缺的競賽中，你就已是處於領先的地位。</p>
+<blockquote>
+<p>　5. Heard any new technology, like BigData or Machine Learning. Make sure to understand that and implement a POC. Don’t just read, make sure, you are very much aware of fundamentals. Like you must know the architecture, go through the case studies and BUILD SOMETHING.</p>
+</blockquote>
+<p>　5. 持續吸收新知，例如<a href="https://www.wikiwand.com/zh-hant/%E5%A4%A7%E6%95%B8%E6%93%9A">大數據</a>和<a href="https://www.wikiwand.com/zh-hant/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0">機器學習</a>。與此同時，不要只是閱讀，請確定你真的瞭解基礎觀念並試著做出<a href="https://www.wikiwand.com/zh-tw/%E6%A6%82%E5%BF%B5%E9%AA%8C%E8%AF%81">概念驗證</a>。就像我們當初學<a href="https://www.wikiwand.com/zh-tw/%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84">軟體架構</a>的時候一樣，腳踏實地、循序漸近，並<strong>動手練習</strong>。</p>
+<blockquote>
+<p>　6. You gotta market yourself. If you are learning from open Source, its your responsibility, to give back something. Make your github account and contribute. This will make your profile very shiny.</p>
+</blockquote>
+<p>　6. 你要會行銷自己。如果你正從開源項目中學習知識，那就有責任做出回饋。可以申請一個 <a href="https://github.com/">GitHub</a> 帳號並貢獻一些東西，這會讓個人檔案閃閃發亮，一舉二得。</p>
+<blockquote>
+<p>　7. Don’t fall in love with any single technology. I saw Desktop based application lost its place and now Mobile is rocking, and I wont be amaze if Virtual Reality takes its place or something. So stop falling in love with any technology. Learn whatever is good in market. Yeah it will be huge but your habit will make you proficient to learn anything new and You will be truly a Quick learner.</p>
+</blockquote>
+<p>　7. 不要因為熱愛就侷限自己在單一領域。我看到了桌面應用程式的衰落和<a href="https://www.wikiwand.com/zh-tw/%E6%B5%81%E5%8B%95%E6%87%89%E7%94%A8%E7%A8%8B%E5%BC%8F">行動應用程式</a>的崛起，然而對於<a href="https://www.wikiwand.com/zh-tw/%E8%99%9A%E6%8B%9F%E7%8E%B0%E5%AE%9E">虛擬實境</a>將取而代之也不感意外。當然這讓需要學習的知識量變得很大，不過養成習慣即可讓你熟練於學習，也會因此使你對新知的反應更加敏銳。</p>
+<blockquote>
+<p>　8. Attend Hackathons and Technical Meetup. Even you don’t know anything, doesn’t matter. You must build contacts. the more people you know, the probability to end up with better jobs will be more higher.</p>
+</blockquote>
+<p>　8. 參加一些<a href="https://www.wikiwand.com/zh/%E9%BB%91%E5%AE%A2%E6%9D%BE">黑客松</a>和技術聚會，就算你什麼都不會也沒關係。因為你需要拓展人際關係，人脈愈廣，找到好工作的機率愈高。</p>
+<blockquote>
+<p>　9. If you don’t like your job or Manager don’t react, keep smiling and keep working and look for new job. Never destroy your relationship with people.</p>
+</blockquote>
+<p>　9. 不喜歡你的工作或是主管也不要做激烈的抗爭。繼續保持微笑、把事情做好，並騎驢找馬就好了。記住，永遠不要與人結怨。</p>
+<blockquote>
+<p>　10. Read .. Read … Read … CODE IT</p>
+</blockquote>
+<p>　10. <strong>大量地</strong>閱讀，並且<strong>動手練習</strong>。</p>
+]]></content>
+      <categories>
+        <category>Translation</category>
+      </categories>
+  </entry>
+  <entry>
     <title>糟糕的程式設計師有哪些招牌特質？</title>
     <url>/2015/what-are-the-characteristics-of-a-bad-software-engineer.html</url>
     <content><![CDATA[<p>在 <a href="http://www.quora.com/">Quora</a> 上看到一篇不錯的文章，原文為 <a href="http://www.quora.com/What-are-the-characteristics-of-a-bad-software-engineer/answer/Nachiket-Naik">What are the characteristics of a bad software engineer?</a>。</p>
@@ -1068,6 +1122,26 @@ ABCDEFG<br />
       </categories>
   </entry>
   <entry>
+    <title>Windows Photo Viewer Mouse Plug-in</title>
+    <url>/2009/windows-photo-viewer-mouse-plug-in.html</url>
+    <content><![CDATA[<p>This simple tool gives Windows Photo Viewer the following features:</p>
+<ol>
+<li>Middle click to toggle window’s size between normal and maximum.</li>
+<li>Scroll up/down to show previous/next image.</li>
+<li>Ctrl + scroll up/down to zoom in/out.</li>
+<li>A to show actual size.</li>
+<li>F to show fit size.</li>
+<li>Ctrl + A to toggle deafult presenting style between actual size and fit size.</li>
+</ol>
+<span id="more"></span>
+
+<p><strong><a href="https://raw.githubusercontent.com/changyuheng/windows-photo-viewer-mouse-plug-in/master/bin/windows-photo-viewer-mouse-plug-in.exe">Download</a></strong><br><strong><a href="https://github.com/changyuheng/windows-photo-viewer-mouse-plug-in">Source code</a></strong></p>
+]]></content>
+      <categories>
+        <category>Software</category>
+      </categories>
+  </entry>
+  <entry>
     <title>When Hexo Meets GitHub Pages and Travis CI plus Raspberry Pi</title>
     <url>/2015/when-hexo-static-site-meets-github-pages-and-travis-ci.html</url>
     <content><![CDATA[<p>JS 很有吸引力、Hexo 是台灣人寫的、速度比 Octopress 快、default 支援 GitHub Flavored Markdown，所以選 Hexo。</p>
@@ -1099,80 +1173,6 @@ ABCDEFG<br />
 ]]></content>
       <categories>
         <category>Setup</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>對程式設計師來說，提高薪水最好的建議是什麼？</title>
-    <url>/2016/what-is-the-best-career-advice-for-a-software-developer-to-earn-a-higher-salary.html</url>
-    <content><![CDATA[<p>關於這個問題，在 Quora 數則<a href="https://www.quora.com/What-is-the-best-career-advice-for-a-software-developer-to-earn-a-higher-salary">答案</a>中看到<a href="https://www.quora.com/What-is-the-best-career-advice-for-a-software-developer-to-earn-a-higher-salary/answer/Abhishek-Choudhary-11">一篇很棒的</a>，和大家分享。</p>
-<blockquote>
-<p>What is the best career advice for a software developer to earn a higher salary?</p>
-</blockquote>
-<span id="more"></span>
-
-<blockquote>
-<p>　1. Make Computer Science fundamentals very strong , mainly DataStructure &amp; Algorithm.</p>
-</blockquote>
-<p>　1. 擁有非常穩健的<a href="https://www.wikiwand.com/zh-hant/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6">電腦科學</a>知識基礎，尤其是<a href="https://www.wikiwand.com/zh-hant/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84">資料結構</a>和<a href="https://www.wikiwand.com/zh-hant/%E7%AE%97%E6%B3%95">演算法</a>。</p>
-<blockquote>
-<p>　2. Make a habit of solving atleast 3-4 code snippets/Week , check Leetcode/CareerCup</p>
-</blockquote>
-<p>　2. 養成每週練習三、四個<a href="https://www.wikiwand.com/zh-tw/%E7%89%87%E6%AE%B5">程式片段</a>的習慣。請參考 <a href="https://leetcode.com/">LeetCode</a> 和 <a href="https://www.careercup.com/">CareerCup</a>。</p>
-<blockquote>
-<p>　3. No point of being a master of single technology like Java or Python. Learn several technologies.</p>
-</blockquote>
-<p>　3. 執意侷限自己專精單一項目例如 Java 或 Python 的意義不大。請擴充你的工具箱。</p>
-<blockquote>
-<p>　4. I was a java developer for 5 years and then I found functional languages like clojure/Python/Scala and believe me, its worth your time. It will broaden your skill-sets &amp; thinking. And now you are already ahead in the race of Developers and Interviews.</p>
-</blockquote>
-<p>　4. 在我擁有五年 Java 開發經驗時，接觸到了像 Clojure、Python、Scala 這類的<a href="https://www.wikiwand.com/zh-tw/%E5%87%BD%E6%95%B8%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80">函數程式語言</a>。相信我，這絕對值得你投資，因為它們不僅能讓你的工具箱更完備，同時也將開拓你的思考視野。能做到這裡，在與眾多開發者爭奪職缺的競賽中，你就已是處於領先的地位。</p>
-<blockquote>
-<p>　5. Heard any new technology, like BigData or Machine Learning. Make sure to understand that and implement a POC. Don’t just read, make sure, you are very much aware of fundamentals. Like you must know the architecture, go through the case studies and BUILD SOMETHING.</p>
-</blockquote>
-<p>　5. 持續吸收新知，例如<a href="https://www.wikiwand.com/zh-hant/%E5%A4%A7%E6%95%B8%E6%93%9A">大數據</a>和<a href="https://www.wikiwand.com/zh-hant/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0">機器學習</a>。與此同時，不要只是閱讀，請確定你真的瞭解基礎觀念並試著做出<a href="https://www.wikiwand.com/zh-tw/%E6%A6%82%E5%BF%B5%E9%AA%8C%E8%AF%81">概念驗證</a>。就像我們當初學<a href="https://www.wikiwand.com/zh-tw/%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84">軟體架構</a>的時候一樣，腳踏實地、循序漸近，並<strong>動手練習</strong>。</p>
-<blockquote>
-<p>　6. You gotta market yourself. If you are learning from open Source, its your responsibility, to give back something. Make your github account and contribute. This will make your profile very shiny.</p>
-</blockquote>
-<p>　6. 你要會行銷自己。如果你正從開源項目中學習知識，那就有責任做出回饋。可以申請一個 <a href="https://github.com/">GitHub</a> 帳號並貢獻一些東西，這會讓個人檔案閃閃發亮，一舉二得。</p>
-<blockquote>
-<p>　7. Don’t fall in love with any single technology. I saw Desktop based application lost its place and now Mobile is rocking, and I wont be amaze if Virtual Reality takes its place or something. So stop falling in love with any technology. Learn whatever is good in market. Yeah it will be huge but your habit will make you proficient to learn anything new and You will be truly a Quick learner.</p>
-</blockquote>
-<p>　7. 不要因為熱愛就侷限自己在單一領域。我看到了桌面應用程式的衰落和<a href="https://www.wikiwand.com/zh-tw/%E6%B5%81%E5%8B%95%E6%87%89%E7%94%A8%E7%A8%8B%E5%BC%8F">行動應用程式</a>的崛起，然而對於<a href="https://www.wikiwand.com/zh-tw/%E8%99%9A%E6%8B%9F%E7%8E%B0%E5%AE%9E">虛擬實境</a>將取而代之也不感意外。當然這讓需要學習的知識量變得很大，不過養成習慣即可讓你熟練於學習，也會因此使你對新知的反應更加敏銳。</p>
-<blockquote>
-<p>　8. Attend Hackathons and Technical Meetup. Even you don’t know anything, doesn’t matter. You must build contacts. the more people you know, the probability to end up with better jobs will be more higher.</p>
-</blockquote>
-<p>　8. 參加一些<a href="https://www.wikiwand.com/zh/%E9%BB%91%E5%AE%A2%E6%9D%BE">黑客松</a>和技術聚會，就算你什麼都不會也沒關係。因為你需要拓展人際關係，人脈愈廣，找到好工作的機率愈高。</p>
-<blockquote>
-<p>　9. If you don’t like your job or Manager don’t react, keep smiling and keep working and look for new job. Never destroy your relationship with people.</p>
-</blockquote>
-<p>　9. 不喜歡你的工作或是主管也不要做激烈的抗爭。繼續保持微笑、把事情做好，並騎驢找馬就好了。記住，永遠不要與人結怨。</p>
-<blockquote>
-<p>　10. Read .. Read … Read … CODE IT</p>
-</blockquote>
-<p>　10. <strong>大量地</strong>閱讀，並且<strong>動手練習</strong>。</p>
-]]></content>
-      <categories>
-        <category>Translation</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Windows Photo Viewer Mouse Plug-in</title>
-    <url>/2009/windows-photo-viewer-mouse-plug-in.html</url>
-    <content><![CDATA[<p>This simple tool gives Windows Photo Viewer the following features:</p>
-<ol>
-<li>Middle click to toggle window’s size between normal and maximum.</li>
-<li>Scroll up/down to show previous/next image.</li>
-<li>Ctrl + scroll up/down to zoom in/out.</li>
-<li>A to show actual size.</li>
-<li>F to show fit size.</li>
-<li>Ctrl + A to toggle deafult presenting style between actual size and fit size.</li>
-</ol>
-<span id="more"></span>
-
-<p><strong><a href="https://raw.githubusercontent.com/changyuheng/windows-photo-viewer-mouse-plug-in/master/bin/windows-photo-viewer-mouse-plug-in.exe">Download</a></strong><br><strong><a href="https://github.com/changyuheng/windows-photo-viewer-mouse-plug-in">Source code</a></strong></p>
-]]></content>
-      <categories>
-        <category>Software</category>
       </categories>
   </entry>
   <entry>
