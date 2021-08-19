@@ -33,7 +33,7 @@
 <meta property="og:image" content="https://com.jrhenry.one/codeforces-quick-start/codeforces-solved.png">
 <meta property="og:image" content="https://com.jrhenry.one/codeforces-quick-start/codeforces-solved-languages.png">
 <meta property="article:published_time" content="2010-04-19T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-08-17T05:53:48.007Z">
+<meta property="article:modified_time" content="2021-08-17T07:23:46.388Z">
 <meta property="article:author" content="Henry Chang">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://com.jrhenry.one/codeforces-quick-start/codeforces-begin-to-register.png">
@@ -242,7 +242,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新於</span>
-        <time title="修改時間：8月 17日, 2021 1:53 下午" itemprop="dateModified" datetime="2021-08-17T13:53:48+08:00">8月 17日, 2021</time>
+        <time title="修改時間：8月 17日, 2021 3:23 下午" itemprop="dateModified" datetime="2021-08-17T15:23:46+08:00">8月 17日, 2021</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -311,11 +311,9 @@
 </li>
 <li><p>填寫註冊表單，完成後按下「Register (確定註冊)」</p>
 <p> <a href="codeforces-quick-start/codeforces-registration-form.png"><img src="codeforces-quick-start/codeforces-registration-form.png" alt="registration form"></a></p>
+<p>經過以上步驟即可完成註冊。</p>
+<p>以下為選擇性設定：</p>
 </li>
-</ol>
-<p> 經過以上步驟即可完成註冊。</p>
-<p> 以下為選擇性設定：</p>
-<ol>
 <li><p>登入</p>
 </li>
 <li><p>點選右上角自己的帳號，進入個人資料頁面</p>
@@ -337,72 +335,49 @@
 <li><p>點選最右邊的欄位標題「<a target="_blank" rel="noopener" href="http://codeforces.com/problemset?order=BY_SOLVED_DESC">Solved</a>」</p>
 </li>
 <li><p>進入「<a target="_blank" rel="noopener" href="http://codeforces.com/problemset/problem/1/A">Theater Square</a>」</p>
+<p><a href="codeforces-quick-start/codeforces-problemset.png"><img src="codeforces-quick-start/codeforces-problemset.png" alt="problemset"></a></p>
+<ul>
+<li><p>題目最上方的</p>
+<p>time limit per test: 2 seconds<br>memory limit per test: 64 megabytes<br>input: standard input<br>output: standard output</p>
+</li>
+<li><p>分別表示</p>
+<p>時間限制：2 秒<br>使用記憶體大小限制：64 MB<br>輸入方式：標準輸入<br>輸出方式：標準輸出</p>
+</li>
+<li><p>接著是題目：</p>
+<p>Theatre Square in the capital city of Berland has a rectangular shape with the size n × m meters. On the occasion of the city’s anniversary, a decision was taken to pave the Square with square granite flagstones. Each flagstone is of the size a × a.</p>
+<p>What is the least number of flagstones needed to pave the Square? It’s allowed to cover the surface larger than the Theatre Square, but the Square has to be covered.<br>It’s not allowed to break the flagstones. The sides of flagstones should be parallel to the sides of the Square.</p>
+</li>
+<li><p>中文大意：</p>
+<p>有一塊&nbsp;n × m (長 n，寬 m) 平方公尺矩形的地需要舖滿石磚，每塊石磚大小為正方形&nbsp;a × a。在不切割石磚、不重疊石的前題下，必需舖滿此地。石磚可以超出需要被舖的地，但石磚的邊必需與此地的邊平行。</p>
+<p>請問最少需要多少石磚才能完成？</p>
+</li>
+<li><p>Input (說明測試程式會餵給我們的程式的資料)：</p>
+<p>The input contains three positive integer numbers in the first line: n,  m and a (1 ≤  n, m, a ≤ 10^9).</p>
+</li>
+<li><p>中文說明：</p>
+<p>輸入共一行，此行中包含三個整數：n, m, a，整數間以空白字元分隔。其中 1 ≤  n, m, a ≤ 10^9。</p>
+</li>
+<li><p>Output (說明我們的程式應該輸出什麼)：</p>
+<p>Write the needed number of flagstones.</p>
+</li>
+<li><p>中文說明：</p>
+<p>請輸出需要的石磚數。</p>
+</li>
+<li><p>範例：</p>
+<p>Input:</p>
+<p>6 6 4</p>
+<p>Output:</p>
+<p>4</p>
+<p>註：</p>
+<p>第一個 6 表示 n，第二個 6 表示 m，4 表示 a。亦即，在 6 × 6 大小的地上，舖以 4 × 4 大小的石磚，最少需要 4 塊石磚才能將其舖滿。</p>
+</li>
+<li><p>題解：</p>
+<p>假設需要 p × q 塊石磚，其必需符合此條件：a × p ≥ m 且 a × q ≥ n。</p>
+<p>將我們的解法用程式寫出來，並上傳到 Codeforces 即完成此題練習。</p>
+</li>
+</ul>
 </li>
 </ol>
-<p> <a href="codeforces-quick-start/codeforces-problemset.png"><img src="codeforces-quick-start/codeforces-problemset.png" alt="problemset"></a></p>
-<pre><code> * 題目最上方的
-
- time limit per test: 2 seconds
- memory limit per test: 64 megabytes
- input: standard input
- output: standard output
-
- * 分別表示
-
- 時間限制：2 秒
- 使用記憶體大小限制：64 MB
- 輸入方式：標準輸入
- 輸出方式：標準輸出
-
- * 接著是題目：
-
- Theatre Square in the capital city of Berland has a rectangular shape with the size n × m meters. On the occasion of the city&#39;s anniversary, a decision was taken to pave the Square with square granite flagstones. Each flagstone is of the size a × a.
-
- What is the least number of flagstones needed to pave the Square? It&#39;s allowed to cover the surface larger than the Theatre Square, but the Square has to be covered.
- It&#39;s not allowed to break the flagstones. The sides of flagstones should be parallel to the sides of the Square.
-
- * 中文大意：
-
- 有一塊&amp;nbsp;n × m (長 n，寬 m) 平方公尺矩形的地需要舖滿石磚，每塊石磚大小為正方形&amp;nbsp;a × a。在不切割石磚、不重疊石的前題下，必需舖滿此地。石磚可以超出需要被舖的地，但石磚的邊必需與此地的邊平行。
-
- 請問最少需要多少石磚才能完成？
-
- * Input (說明測試程式會餵給我們的程式的資料)：
-
- The input contains three positive integer numbers in the first line: n,  m and a (1 ≤  n, m, a ≤ 10^9).
-
- * 中文說明：
-
- 輸入共一行，此行中包含三個整數：n, m, a，整數間以空白字元分隔。其中 1 ≤  n, m, a ≤ 10^9。
-
- * Output (說明我們的程式應該輸出什麼)：
-
- Write the needed number of flagstones.
-
- * 中文說明：
-
- 請輸出需要的石磚數。
-
- * 範例：
-
- Input:
-
- 6 6 4
-
- Output:
-
- 4
-
- 註：
-
- 第一個 6 表示 n，第二個 6 表示 m，4 表示 a。亦即，在 6 × 6 大小的地上，舖以 4 × 4 大小的石磚，最少需要 4 塊石磚才能將其舖滿。
-
- * 題解：
-
- 假設需要 p × q 塊石磚，其必需符合此條件：a × p ≥ m 且 a × q ≥ n。
-
- 將我們的解法用程式寫出來，並上傳到 Codeforces 即完成此題練習。
-</code></pre>
 </li>
 <li><p>上傳</p>
 <p> 在題目頁點選導覽列上的「SUBMIT」，確定 problem 是我們要解決的，選擇我們的程式的 language，接著貼上 source code 並按下「Submit」按鈕。</p>

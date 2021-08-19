@@ -78,11 +78,9 @@
 </li>
 <li><p>填寫註冊表單，完成後按下「Register (確定註冊)」</p>
 <p> <a href="codeforces-quick-start/codeforces-registration-form.png"><img src="codeforces-quick-start/codeforces-registration-form.png" alt="registration form"></a></p>
+<p>經過以上步驟即可完成註冊。</p>
+<p>以下為選擇性設定：</p>
 </li>
-</ol>
-<p> 經過以上步驟即可完成註冊。</p>
-<p> 以下為選擇性設定：</p>
-<ol>
 <li><p>登入</p>
 </li>
 <li><p>點選右上角自己的帳號，進入個人資料頁面</p>
@@ -104,72 +102,49 @@
 <li><p>點選最右邊的欄位標題「<a href="http://codeforces.com/problemset?order=BY_SOLVED_DESC">Solved</a>」</p>
 </li>
 <li><p>進入「<a href="http://codeforces.com/problemset/problem/1/A">Theater Square</a>」</p>
+<p><a href="codeforces-quick-start/codeforces-problemset.png"><img src="codeforces-quick-start/codeforces-problemset.png" alt="problemset"></a></p>
+<ul>
+<li><p>題目最上方的</p>
+<p>time limit per test: 2 seconds<br>memory limit per test: 64 megabytes<br>input: standard input<br>output: standard output</p>
+</li>
+<li><p>分別表示</p>
+<p>時間限制：2 秒<br>使用記憶體大小限制：64 MB<br>輸入方式：標準輸入<br>輸出方式：標準輸出</p>
+</li>
+<li><p>接著是題目：</p>
+<p>Theatre Square in the capital city of Berland has a rectangular shape with the size n × m meters. On the occasion of the city’s anniversary, a decision was taken to pave the Square with square granite flagstones. Each flagstone is of the size a × a.</p>
+<p>What is the least number of flagstones needed to pave the Square? It’s allowed to cover the surface larger than the Theatre Square, but the Square has to be covered.<br>It’s not allowed to break the flagstones. The sides of flagstones should be parallel to the sides of the Square.</p>
+</li>
+<li><p>中文大意：</p>
+<p>有一塊&nbsp;n × m (長 n，寬 m) 平方公尺矩形的地需要舖滿石磚，每塊石磚大小為正方形&nbsp;a × a。在不切割石磚、不重疊石的前題下，必需舖滿此地。石磚可以超出需要被舖的地，但石磚的邊必需與此地的邊平行。</p>
+<p>請問最少需要多少石磚才能完成？</p>
+</li>
+<li><p>Input (說明測試程式會餵給我們的程式的資料)：</p>
+<p>The input contains three positive integer numbers in the first line: n,  m and a (1 ≤  n, m, a ≤ 10^9).</p>
+</li>
+<li><p>中文說明：</p>
+<p>輸入共一行，此行中包含三個整數：n, m, a，整數間以空白字元分隔。其中 1 ≤  n, m, a ≤ 10^9。</p>
+</li>
+<li><p>Output (說明我們的程式應該輸出什麼)：</p>
+<p>Write the needed number of flagstones.</p>
+</li>
+<li><p>中文說明：</p>
+<p>請輸出需要的石磚數。</p>
+</li>
+<li><p>範例：</p>
+<p>Input:</p>
+<p>6 6 4</p>
+<p>Output:</p>
+<p>4</p>
+<p>註：</p>
+<p>第一個 6 表示 n，第二個 6 表示 m，4 表示 a。亦即，在 6 × 6 大小的地上，舖以 4 × 4 大小的石磚，最少需要 4 塊石磚才能將其舖滿。</p>
+</li>
+<li><p>題解：</p>
+<p>假設需要 p × q 塊石磚，其必需符合此條件：a × p ≥ m 且 a × q ≥ n。</p>
+<p>將我們的解法用程式寫出來，並上傳到 Codeforces 即完成此題練習。</p>
+</li>
+</ul>
 </li>
 </ol>
-<p> <a href="codeforces-quick-start/codeforces-problemset.png"><img src="codeforces-quick-start/codeforces-problemset.png" alt="problemset"></a></p>
-<pre><code> * 題目最上方的
-
- time limit per test: 2 seconds
- memory limit per test: 64 megabytes
- input: standard input
- output: standard output
-
- * 分別表示
-
- 時間限制：2 秒
- 使用記憶體大小限制：64 MB
- 輸入方式：標準輸入
- 輸出方式：標準輸出
-
- * 接著是題目：
-
- Theatre Square in the capital city of Berland has a rectangular shape with the size n × m meters. On the occasion of the city&#39;s anniversary, a decision was taken to pave the Square with square granite flagstones. Each flagstone is of the size a × a.
-
- What is the least number of flagstones needed to pave the Square? It&#39;s allowed to cover the surface larger than the Theatre Square, but the Square has to be covered.
- It&#39;s not allowed to break the flagstones. The sides of flagstones should be parallel to the sides of the Square.
-
- * 中文大意：
-
- 有一塊&amp;nbsp;n × m (長 n，寬 m) 平方公尺矩形的地需要舖滿石磚，每塊石磚大小為正方形&amp;nbsp;a × a。在不切割石磚、不重疊石的前題下，必需舖滿此地。石磚可以超出需要被舖的地，但石磚的邊必需與此地的邊平行。
-
- 請問最少需要多少石磚才能完成？
-
- * Input (說明測試程式會餵給我們的程式的資料)：
-
- The input contains three positive integer numbers in the first line: n,  m and a (1 ≤  n, m, a ≤ 10^9).
-
- * 中文說明：
-
- 輸入共一行，此行中包含三個整數：n, m, a，整數間以空白字元分隔。其中 1 ≤  n, m, a ≤ 10^9。
-
- * Output (說明我們的程式應該輸出什麼)：
-
- Write the needed number of flagstones.
-
- * 中文說明：
-
- 請輸出需要的石磚數。
-
- * 範例：
-
- Input:
-
- 6 6 4
-
- Output:
-
- 4
-
- 註：
-
- 第一個 6 表示 n，第二個 6 表示 m，4 表示 a。亦即，在 6 × 6 大小的地上，舖以 4 × 4 大小的石磚，最少需要 4 塊石磚才能將其舖滿。
-
- * 題解：
-
- 假設需要 p × q 塊石磚，其必需符合此條件：a × p ≥ m 且 a × q ≥ n。
-
- 將我們的解法用程式寫出來，並上傳到 Codeforces 即完成此題練習。
-</code></pre>
 </li>
 <li><p>上傳</p>
 <p> 在題目頁點選導覽列上的「SUBMIT」，確定 problem 是我們要解決的，選擇我們的程式的 language，接著貼上 source code 並按下「Submit」按鈕。</p>
@@ -199,6 +174,7 @@
     <content><![CDATA[<p>把之前寫的這篇<a href="https://medium.com/rosonix/%E8%AE%93-linkit-smart-7688-%E7%9A%84-wi-fi-ap-%E8%88%87-station-%E5%90%8C%E6%99%82%E9%81%8B%E4%BD%9C-dc9e043142b7">文章</a>拿去 COSCUP 2016 報閃電秀，讓大家開心一下。Project repository 在<a href="https://github.com/changyuheng/linkit-smart-7688-wifi-multi-role">這裡</a>。</p>
 <p>這是錄影：</p>
 <span id="more"></span>
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hf-rAFErNvI?ecver=1" frameborder="0" allowfullscreen></iframe>
 
 <p>逐字稿：</p>
@@ -260,6 +236,7 @@
     <url>//cross-compiling-python-3-4-3-for-mipsel.html</url>
     <content><![CDATA[<p>The notes that were written after succeeding to cross compile Python 2.7.10 and 3.4.3 for MIPSel OpenWrt via uClibc.</p>
 <span id="more"></span>
+
 <p>I’m not gonna write a very detailed guide. I post my build script on the <a href="https://github.com/changyuheng/cpython-for-openwrt-mips/blob/3.4.3/build.sh">GitHub</a>, please leave a comment if you have any question.</p>
 <h2 id="Build-log-3-4-3"><a href="#Build-log-3-4-3" class="headerlink" title="Build log (3.4.3)"></a>Build log (3.4.3)</h2><script src="//gist.github.com/2e5b13276035fc1aa79a.js?file=build.log"></script>
 
@@ -383,6 +360,7 @@
     <url>//implementations-of-dfs-and-bfs-in-python.html</url>
     <content><![CDATA[<p><a href="http://zh.wikipedia.org/zh-tw/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">DFS</a> 和 <a href="http://zh.wikipedia.org/zh-tw/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">BFS</a> 在資料結構裡有教，是很基礎的演算法。</p>
 <span id="more"></span>
+
 <p>在 <a href="http://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/">Edd Mann 的網誌</a>上看到 Python 的實作，由其中學到 <code>yield from</code> 的用法。下面利用 <code>yield from</code> 的特性，將該網誌中提到的實作改寫成 generator 的型式。同步放在 Gist 上：<a href="https://gist.github.com/changyuheng/08ffb779d83679393926">DFS</a>、<a href="https://gist.github.com/changyuheng/97d320206af9a0018d7d">BFS</a>。</p>
 <p><strong>DFS</strong></p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">dfs</span>(<span class="params">graph, start, visited=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> visited <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        visited = <span class="built_in">set</span>()</span><br><span class="line">    <span class="keyword">if</span> start <span class="keyword">in</span> visited:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    <span class="keyword">yield</span> start</span><br><span class="line">    visited.add(start)</span><br><span class="line">    <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - visited:</span><br><span class="line">        <span class="keyword">yield</span> <span class="keyword">from</span> dfs(graph, vertex, visited=visited)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">dfs_paths</span>(<span class="params">graph, start, goal, path=<span class="literal">None</span></span>):</span></span><br><span class="line">    <span class="keyword">if</span> path <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        path = [start]</span><br><span class="line">    <span class="keyword">if</span> start == goal:</span><br><span class="line">        <span class="keyword">yield</span> path</span><br><span class="line">    <span class="keyword">for</span> vertex <span class="keyword">in</span> graph[start] - <span class="built_in">set</span>(path):</span><br><span class="line">        <span class="keyword">yield</span> <span class="keyword">from</span> dfs_paths(graph, vertex, goal, path=path + [vertex])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">graph = &#123;</span><br><span class="line">    <span class="string">&#x27;A&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;B&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;D&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;C&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;D&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;E&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;F&#x27;</span>]),</span><br><span class="line">    <span class="string">&#x27;F&#x27;</span>: <span class="built_in">set</span>([<span class="string">&#x27;C&#x27;</span>, <span class="string">&#x27;E&#x27;</span>]),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([vertex <span class="keyword">for</span> vertex <span class="keyword">in</span> dfs(graph, <span class="string">&#x27;A&#x27;</span>)]))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">repr</span>([path <span class="keyword">for</span> path <span class="keyword">in</span> dfs_paths(graph, <span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;F&#x27;</span>)]))</span><br></pre></td></tr></table></figure>
@@ -402,9 +380,9 @@
 
 <ul>
 <li><p>Fcitx 框架</p>
-  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install fcitx</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install fcitx</span><br></pre></td></tr></table></figure></li>
 <li><p>嘸蝦米輸入法表格</p>
-  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install fcitx-table-boshiamy</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install fcitx-table-boshiamy</span><br></pre></td></tr></table></figure></li>
 </ul>
 <p>設定：</p>
 <ul>
@@ -711,6 +689,7 @@ ABCDEFG<br />
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install ttf-wqy-*</span><br></pre></td></tr></table></figure>
 
 <h3 id="嘸蝦米輸入法"><a href="#嘸蝦米輸入法" class="headerlink" title="嘸蝦米輸入法"></a><a name="boshiamy"></a>嘸蝦米輸入法</h3><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt install fcitx-table-boshiamy</span><br></pre></td></tr></table></figure>
+
 <p>需要 <a href="#fcitx">Fcitx</a>。</p>
 <h3 id="Gmail-Notifier"><a href="#Gmail-Notifier" class="headerlink" title="Gmail Notifier"></a><a name="gmail-notifier"></a>Gmail Notifier</h3><p>偵測到 Gmail 的新進信件時會由 Firefox 發出提醒。<br><a href="https://addons.mozilla.org/zh-tw/firefox/addon/gmail-notifier-restartless/?src=search">Gmail Notifier</a></p>
 <h3 id="GNotifier"><a href="#GNotifier" class="headerlink" title="GNotifier"></a><a name="gnotifier"></a>GNotifier</h3><p>讓 Firefox 使用 GNOME、KDE、Xfce 或 OS X 桌面環境的提醒 (notification) 介面。<br><a href="https://addons.mozilla.org/zh-tw/firefox/addon/gnotifier/">GNotifier</a></p>
@@ -742,7 +721,8 @@ ABCDEFG<br />
 </ol>
 <p><strong>使用方式</strong></p>
 <ol>
-<li>修改 PTT 設定（僅需要修改一次） <pre>
+<li><p>修改 PTT 設定（僅需要修改一次）</p>
+<pre>
  ‧ 修改 PTT 站台設定如下：
  　　(U)ser 【 個人設定區 】
  　　　(U)Customize 個人化設定
@@ -750,10 +730,14 @@ ABCDEFG<br />
  　　　　j. DBCS 忽略連線程式為雙位元字集送出的重複按鍵：是
  　　　　k. DBCS 禁止在雙位元中使用色碼(去除一字雙色)　：否
  </pre></li>
-<li>複製欲張貼的文章到剪貼簿。（可在記事本中先排版好再複製，也可複製 PCMan 的 ANSI 編輯器中的彩色文字。）</li>
-<li>進入發文狀態。</li>
-<li><strong>以系統管理員身分執行</strong>本程式</li>
-<li>按下 <code>Shift - F9</code> 開始張貼。</li>
+<li><p>複製欲張貼的文章到剪貼簿。（可在記事本中先排版好再複製，也可複製 PCMan 的 ANSI 編輯器中的彩色文字。）</p>
+</li>
+<li><p>進入發文狀態。</p>
+</li>
+<li><p><strong>以系統管理員身分執行</strong>本程式</p>
+</li>
+<li><p>按下 <code>Shift - F9</code> 開始張貼。</p>
+</li>
 </ol>
 <hr>
 <ul>
@@ -784,11 +768,12 @@ ABCDEFG<br />
 <p>但想不到他自己心術不正，還要牽拖工具：</p>
 <iframe src="/static/ptt-account-incident/0a.html" width="100%" height="600"></iframe>
 
-<p>幾天後，帳號站長想想只辦了違規的人還不夠，便又追加宣判要砍身為程式作者的我的帳號作為連坐處罰：</p>
+<p>一個多月後，帳號站長好像想想只辦了違規的人還不夠，便又追加宣判要砍身為程式作者的我的帳號作為連坐處罰：</p>
 <iframe src="/static/ptt-account-incident/1.html" width="100%" height="600"></iframe>
 
-<p>我間接收到處分通知後，覺得很不合理，於是就去申訴。<br>我覺得不合理的地方是，我的程式七年前就在 PTT 發布了，當時還被收錄到精華華永久保存，<br>七年後的現在，只是因為我決定公開程式原始碼，發了一篇文章告訴大家可以在哪裡下載原始檔，就說我散布不當程式，滿牽強的。</p>
-<p>PTT 做為一個 BBS Server，從來就沒有指定一個官方的 Client，也就是說，目前所有 Client 程式，像是 PCMan 或 JPTT，通通都是非官方認可的程式。<br>除了沒有官方 Client 程式存在之外，PTT 站方在此判決之前，也沒有說明過什麼樣的程式屬於違規程式。<br>而我程式的功能，只是會讓使用者所發表的文章，逐字延遲送往 PTT Server；換個角度來說，我的程式還能透過分散數據來達到降低 PTT Server 負載的效果。<br>這個延遲送出文章內容的功能，許多專門上 PTT 的手機 App 都有內建，我的功能跟他們一模一樣。<br>甚至因為我的程式是最早發佈的幾個之一，後來的這些手機 App，很可能還參考了我的做法來實做這項功能。<br>所以如果我的程式屬於「惡意程式」，那有一票 App，像 BePTT 和 PiTT 等也都不合規定。而且這些 App 的使用者，即便無意，但也通通屬於「洗錢」的使用者，按目前規定，通通應該被砍帳號。</p>
+<p>我間接收到處分通知後，覺得很不合理，於是就去申訴。<br>我覺得不合理的地方是，我的程式七年前就在 PTT 發布了，當時還被收錄到精華華永久保存，時至今日<a href="https://www.ptt.cc/man/EZsoft/D840/D74A/D59D/M.1267828645.A.62D.html">該文</a>都還在 EZSoft 的精華區。<br>七年後的現在，只是因為我決定公開程式原始碼，發了一篇文章告訴大家可以在哪裡下載原始檔，就說我散布不當程式，真的很奇怪。</p>
+<p>我對我程式的看法是：</p>
+<p>PTT 做為一個 BBS Server，從來就沒有指定一個官方的 Client，也就是說，目前所有 Client 程式，像是 PCMan 或 JPTT，通通都是非官方認可的程式。<br>除了沒有官方 Client 程式存在之外，PTT 站方在此判決之前，也沒有說明過什麼樣的程式屬於違規程式。<br>而我程式的功能，只是會讓使用者所發表的文章，逐字延遲送往 PTT Server；換個角度來說，我的程式還能透過分散數據來達到降低 PTT Server 負載的效果。<br>這個延遲送出文章內容的功能，許多專門上 PTT 的手機 App 都有內建，我的功能跟他們一模一樣。<br>甚至因為我的程式是最早發佈的幾個之一，後來的這些手機 App，很可能還參考了我的做法來實做這項功能。<br>所以如果我的程式屬於「惡意程式」，那有一票 App，像 BePTT 和 PiTT 等也都不合規定。而且使用這些 App 發表文章的人，即便無意，也通通屬於「洗錢」的違規者，按目前規定，通通應該被砍帳號。</p>
 <iframe src="/static/ptt-account-incident/2.html" width="100%" height="600"></iframe>
 
 <p>PTT 站方無視我的申訴在進行中，就先把我擔任的 AndroidDev 板主職務轉移到了我的另一個不常用帳號上……這對我造成很大的不便。</p>
@@ -798,7 +783,7 @@ ABCDEFG<br />
 </blockquote>
 <iframe src="/static/ptt-account-incident/3.html" width="100%" height="600"></iframe>
 
-<p>其實從站長的回應就可以看出，他根本就不懂軟體……</p>
+<p>其實從這位帳號站長的回應就可以看出，他根本就無法完整回應我的申訴，只能開大絕「不爽不要用」……</p>
 <p>雖然知道已經結案，我還是再次表達了這安排對我的不公，但站方果然信守承諾不再回應：</p>
 <iframe src="/static/ptt-account-incident/4.html" width="100%" height="600"></iframe>
 
@@ -853,6 +838,7 @@ ABCDEFG<br />
     <content><![CDATA[<p>Python 的 logging module 功能完整強大，但手冊裡卻沒有一個簡明的 config 範例。</p>
 <p>記錄一下。</p>
 <span id="more"></span>
+
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python3</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> logging</span><br><span class="line"><span class="keyword">import</span> logging.config</span><br><span class="line"></span><br><span class="line">logging.config.dictConfig(&#123;</span><br><span class="line">    <span class="string">&#x27;version&#x27;</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="string">&#x27;formatters&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;default&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;format&#x27;</span>: <span class="string">&#x27;[%(asctime)s|PID:%(process)d|TID:%(thread)d|%(filename)s:%(lineno)d|%(funcName)s|%(name)s|%(levelname)s] %(message)s&#x27;</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">&#x27;handlers&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;console&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;logging.StreamHandler&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;formatter&#x27;</span>: <span class="string">&#x27;default&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&#x27;http&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;logging.handlers.HTTPHandler&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;formatter&#x27;</span>: <span class="string">&#x27;default&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">            <span class="string">&#x27;host&#x27;</span>: <span class="string">&#x27;localhost:3000&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;url&#x27;</span>: <span class="string">&#x27;/log&#x27;</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&#x27;rotatingfile&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;class&#x27;</span>: <span class="string">&#x27;logging.handlers.RotatingFileHandler&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;formatter&#x27;</span>: <span class="string">&#x27;default&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">            <span class="string">&#x27;filename&#x27;</span>: <span class="string">&#x27;test.log&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;maxBytes&#x27;</span>: <span class="number">512</span> * <span class="number">1024</span> * <span class="number">1024</span>,</span><br><span class="line">            <span class="string">&#x27;backupCount&#x27;</span>: <span class="number">1</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">&#x27;loggers&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;&#x27;</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;handlers&#x27;</span>: [<span class="string">&#x27;console&#x27;</span>, <span class="string">&#x27;http&#x27;</span>, <span class="string">&#x27;rotatingfile&#x27;</span>],</span><br><span class="line">            <span class="string">&#x27;level&#x27;</span>: logging.DEBUG,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">logging.info(<span class="string">&#x27;test1&#x27;</span>)</span><br><span class="line">logger = logging.getLogger()</span><br><span class="line">logger.info(<span class="string">&#x27;test&#x27;</span>)</span><br></pre></td></tr></table></figure>
 
 <h2 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h2><ol>
@@ -869,7 +855,9 @@ ABCDEFG<br />
     <url>//raspberry-pi-raspbian-jessie-%E5%AE%89%E8%A3%9D%E8%A8%AD%E5%AE%9A.html</url>
     <content><![CDATA[<p>Jessie 剛從 SysVinit 換成 systemd。因為不同的 init system 的設定方式不同，而 raspi-config 還沒有更新到支援 systemd，所以有些設定必須手動，不能透過 raspi-config。</p>
 <span id="more"></span>
+
 <!-- toc -->
+
 <h2 id="先嘗試從-raspi-config-expand-filesystem，以及其他設定，無效或沒有-UI-能操作的再嘗試下面的方法。"><a href="#先嘗試從-raspi-config-expand-filesystem，以及其他設定，無效或沒有-UI-能操作的再嘗試下面的方法。" class="headerlink" title="先嘗試從 raspi-config expand filesystem，以及其他設定，無效或沒有 UI 能操作的再嘗試下面的方法。"></a>先嘗試從 raspi-config expand filesystem，以及其他設定，無效或沒有 UI 能操作的再嘗試下面的方法。</h2><h2 id="關閉開機自動啟動的-GUI-desktop"><a href="#關閉開機自動啟動的-GUI-desktop" class="headerlink" title="關閉開機自動啟動的 GUI (desktop)"></a>關閉開機自動啟動的 GUI (desktop)</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo systemctl set-default multi-user.target</span><br></pre></td></tr></table></figure>
 
 <p><a href="https://www.raspberrypi.org/forums/viewtopic.php?f=66&amp;t=92727">https://www.raspberrypi.org/forums/viewtopic.php?f=66&amp;t=92727</a></p>
@@ -905,6 +893,7 @@ ABCDEFG<br />
     <url>//the-only-one-skill-that-if-you-have-will-completely-change-your-life-chinese-translation.html</url>
     <content><![CDATA[<p>在 Medium 上看到一篇<a href="https://medium.com/keep-learning-keep-growing/the-only-one-skill-that-if-you-have-will-completely-change-your-life-ba9b40b8fdf5#.tjk2mly1w">好文</a>，翻譯前半段。</p>
 <span id="more"></span>
+
 <p>我們都在找尋成功的要素，期待某個神秘的關鍵能改變既有的一切。</p>
 <p>標準答案並不存在，因為只要學會一種就能脫胎換骨的能力有很多。</p>
 <p>但我相信有一種能力在現在這個時代特別重要，同時也是大多數人所缺乏的：自制力。</p>
@@ -972,6 +961,7 @@ ABCDEFG<br />
     <content><![CDATA[<p><a href="https://github.com/strongloop/express">Express</a> 本身不管上傳，要透過 <a href="https://github.com/expressjs/multer">Multer</a> 來處理。</p>
 <p>Multer 手冊特別註明：</p>
 <span id="more"></span>
+
 <blockquote>
 <p><strong>NOTE</strong>: Multer will not process any form which is not multipart (multipart/form-data).</p>
 </blockquote>
@@ -1087,6 +1077,7 @@ ABCDEFG<br />
     <url>//what-are-the-characteristics-of-a-bad-software-engineer.html</url>
     <content><![CDATA[<p>在 <a href="http://www.quora.com/">Quora</a> 上看到一篇不錯的文章，原文為 <a href="http://www.quora.com/What-are-the-characteristics-of-a-bad-software-engineer/answer/Nachiket-Naik">What are the characteristics of a bad software engineer?</a>。</p>
 <span id="more"></span>
+
 <p>以下為筆者翻譯的版本，在 Quora 的授權條款下，譯文採<a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW">創用 CC 4.0 姓名標示</a>授權，轉載請註名原文出處及譯者姓名。Quora 原作保留收回授權的權利。</p>
 <p>以我個人的經驗，糟糕的程式設計師具有以下這些特質：</p>
 <ol>
@@ -1101,13 +1092,18 @@ ABCDEFG<br />
 </li>
 <li><p>程式碼很醜：我的程式碼可以跑，但是：</p>
 <ul>
-<li>我喜歡為變數取名叫 x、flag、str、arr 等等。</li>
-<li>我絕大多數的程式碼都集中在一個很長很長的函式裡。</li>
-<li>沒有縮排。</li>
-<li>沒有一致的風格和規則。</li>
-<li>到處都是全域變數。</li>
+<li><p>我喜歡為變數取名叫 x、flag、str、arr 等等。</p>
+</li>
+<li><p>我絕大多數的程式碼都集中在一個很長很長的函式裡。</p>
+</li>
+<li><p>沒有縮排。</p>
+</li>
+<li><p>沒有一致的風格和規則。</p>
+</li>
+<li><p>到處都是全域變數。</p>
+<p>這一項是最令我困擾的。也不是說程式寫得不好啦，這裡面還是有可能會有超猛的程式碼。但我打個比方，如果一串鑽石項鍊掛在像酷斯拉那麼大的超巨型噁心怪蟲的屍體上被埋葬於地底，就再也不會有人找到它了。就算被找到，也不會有人想要清理它甚或戴上它。</p>
+</li>
 </ul>
-<p> 這一項是最令我困擾的。也不是說程式寫得不好啦，這裡面還是有可能會有超猛的程式碼。但我打個比方，如果一串鑽石項鍊掛在像酷斯拉那麼大的超巨型噁心怪蟲的屍體上被埋葬於地底，就再也不會有人找到它了。就算被找到，也不會有人想要清理它甚或戴上它。</p>
 </li>
 <li><p>短線投機客：他會不斷地寫出程式給你，但是不會嘗試深入瞭解問題，對程式應用領域的背景知識也全無興趣。</p>
 <p> 給他一些工作，他就算加班也會使命必達地交給你一個會動的程式。但也僅止於此。有時候開發人員具備一些自私的心態，促使他不只關心截止日期，也想從處理的事物中學到東西是很重要的。</p>
@@ -1143,6 +1139,7 @@ ABCDEFG<br />
     <url>//when-hexo-static-site-meets-github-pages-and-travis-ci.html</url>
     <content><![CDATA[<p>JS 很有吸引力、Hexo 是台灣人寫的、速度比 Octopress 快、default 支援 GitHub Flavored Markdown，所以選 Hexo。</p>
 <span id="more"></span>
+
 <p>Hexo 是一個 static site generator，static site 是指 website 由 static web page 所組成。獲取 static web page 的 client 端得到的 web page，和儲存於 server 端的 web page 一模一樣。與 dynamic website 的 server 端即時產生 web page 傳送給 client 端不同，static site 的 server 端不需要具備即時生成不同 web page 的能力。</p>
 <p>Travis-CI 提供了 hook GitHub repository event 的功能。開啟 hook 後，便會依照 repository 裡 .travis.yml 內的設定來執行。</p>
 <p>GitHub repository 特定的 branch 會被 GitHub 當作 static web site 的內容來 render，render 的引擎是 Jekyll，因此可以放純 HTML 檔案也可以放 Jekyll 會 parse 的檔案。</p>
@@ -1220,8 +1217,10 @@ ABCDEFG<br />
     <content><![CDATA[<p>會盲打的人，在 shell 環境裡如果能找到方便的 tool 來幫助自己，操作速度甚至可以超過滑鼠 + GUI。</p>
 <p>舉二個例子：</p>
 <ol>
-<li>在 prompt 上列出前一指令的 return code 和 VCS 資訊。<br> <img src="/%E5%91%BD%E4%BB%A4%E5%88%97%E4%B8%8A%E5%BF%AB%E9%80%9F%E5%AE%9A%E4%BD%8D%E6%AA%94%E6%A1%88%E8%88%87%E7%9B%AE%E9%8C%84/powerlevel9k-demo.png"><span id="more"></span></li>
-<li>用 tig 來操作 git。 <iframe width="560" height="315" src="https://www.youtube.com/embed/udCXubFr5Yo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+<li><p>在 prompt 上列出前一指令的 return code 和 VCS 資訊。<br> <img src="/%E5%91%BD%E4%BB%A4%E5%88%97%E4%B8%8A%E5%BF%AB%E9%80%9F%E5%AE%9A%E4%BD%8D%E6%AA%94%E6%A1%88%E8%88%87%E7%9B%AE%E9%8C%84/powerlevel9k-demo.png"></p>
+<span id="more"></span></li>
+<li><p>用 tig 來操作 git。</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/udCXubFr5Yo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
 </ol>
 <p>在 shell 下，最常做的操作的就是找目錄、切目錄、找檔案、開檔案了。但是 <code>cd</code> 要到的目錄的路徑以及 <code>vim</code> 要開的檔案的位置在哪裡，一直都是個痛。就算記得，有時候路徑很深，光是打完就要老半天。</p>
 <p>以下介紹三個可以減輕日常路徑操作負擔的工具：</p>
@@ -1251,22 +1250,20 @@ ABCDEFG<br />
 <span id="more"></span>
 
 <p>我們知道密碼不應過於簡單、容易猜測：不該用生日、電話、常見的單字、人名等等。安全的做法是用密碼產生器產生隨機不同大小寫的字母、數字、符號組合。此外，網站被駭客入侵時有所聞，為了避免因為一個網站的密碼外洩而影響到所有的密碼，應該讓每個網站採用不同的密碼。密碼產生器產生的密碼極其複雜，於是有人發明了密碼管理軟體，來幫忙記住各組密碼。但是一旦我們把所有的密碼都放進同一套軟體，不就又將雞蛋丟進同一個籃子裡了嗎？</p>
-<p>一個不同的密碼產生方法：token + pattern。</p>
+<p>一個不同的密碼產生方法：<code>Token</code> + <code>Pattern</code>。</p>
 <p><strong>優點</strong></p>
 <ol>
-<li>不必將雞蛋放進同一個籠子</li>
-<li>容易記憶</li>
-<li>每一個網站都不同</li>
+<li>每一個網站都不同，不將雞蛋放進同一個籠子</li>
+<li>容易記憶，無需存放於密碼管理軟體</li>
 <li>較生日、電話等容易猜測的密碼安全</li>
-<li>快速方便地輸入密碼，不須透過額外軟體</li>
 </ol>
 <p><strong>缺點</strong></p>
 <ol>
 <li>複雜度較密碼產生器產生的密碼低</li>
 <li>有被全盤破解的風險</li>
 </ol>
-<p>Token 是一串自訂的密碼，例如 TAIPEI 的變形 T@iP31。<br>Pattern 是一種能套用到不同網站的規則。例如取網站名稱的尾 2 字和頭 2 字：產生的密碼要給 Google 使用就是 lego；給 Yahoo 就是 ooya。</p>
-<p>如此一來在 Google 的密碼就會是 T@iP31lego，在 Yahoo 的密碼是 T@iP31ooya。只要記 token 和 pattern 的規則即可，非常容易記憶。Pattern 的制定可以更加複雜，像是加上「<a href="http://zh.wikipedia.org/zh-tw/%E5%87%B1%E6%92%92%E5%AF%86%E7%A2%BC">凱撒密碼</a>」來混淆。整體的組合也能再加以變化，像是改成 token 1 + pattern 1 + token 2 + pattern 2。</p>
+<p>Token 是一串自訂的密碼，例如 TAIPEI 的變形 T@iP31。<br>Pattern 是一種能套用到不同網站的規則。例如取網站名稱的尾 2 字和頭 2 字：應用此 Pattern 在 Google 上便是 lego、應用到 Yahoo 則是 ooya。</p>
+<p>如此一來在 Google 的密碼就會是 T@iP31lego，在 Yahoo 的密碼是 T@iP31ooya。只要記住自訂的 token 和 pattern 規則即可，非常簡單。Pattern 的制定可以更加複雜，像是加上「<a href="http://zh.wikipedia.org/zh-tw/%E5%87%B1%E6%92%92%E5%AF%86%E7%A2%BC">凱撒密碼</a>」來混淆。整體的組合也能再加以變化，像是改成 token 1 + pattern 1 + token 2 + pattern 2。</p>
 <p>相關文章</p>
 <ul>
 <li><a href="http://www.pcworld.com/article/252024/create_a_different_secure_easy_to_remember_password_for_every_site.html">Create a Different, Secure, Easy-to-Remember Password for Every Site</a></li>
